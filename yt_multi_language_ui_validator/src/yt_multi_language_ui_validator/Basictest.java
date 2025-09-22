@@ -25,11 +25,13 @@ public class Basictest {
 		for(int i=0;i<listOfSideMenu.size();i++) {
 			System.out.println(listOfSideMenu.get(i).getText());
 		
-				WebElement test=listOfSideMenu.get(i);
-				WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(5));
-				wait.until(ExpectedConditions.elementToBeClickable(test));
-				test.click();
+//				WebElement test=listOfSideMenu.get(i);
+//				WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(5));
+//				wait.until(ExpectedConditions.elementToBeClickable(test));
+//				test.click();
 		}
+		
+		driver.findElement(By.xpath("//ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']")).click();
 	}
 	
 }
