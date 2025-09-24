@@ -37,38 +37,41 @@ public class BasicTest {
 		driver.findElement(By.xpath("//ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']")).click();
 		Thread.sleep(3000);
 		//language dropdown click
-		driver.findElement(By.xpath("//div[@id='primary-text-container']//yt-formatted-string[@id='label' and text()='Language:']")).click();
+	//	driver.findElement(By.xpath("//div[@id='primary-text-container']//yt-formatted-string[@id='label' and text()='Language:']")).click();
 		Thread.sleep(2000);
 		//Language list 
-		List<WebElement> languageList=	driver.findElements(By.xpath("//yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//ytd-compact-link-renderer"));
-		languageList.removeIf(el -> el.getText().trim().isEmpty());
+//		List<WebElement> languageList=	driver.findElements(By.xpath("//yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//ytd-compact-link-renderer"));
+//		languageList.removeIf(el -> el.getText().trim().isEmpty());
+		
+		String settingOptionsList=driver.findElement(By.xpath("//div[@id='contentWrapper']")).getText();
+		System.out.println(settingOptionsList);
 		
 	    //	driver.findElement(By.xpath("//yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Afrikaans']")).click();
-		for(int j=1;j<languageList.size();j++) {
-			
-		
-			languageList=	driver.findElements(By.xpath("//yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//ytd-compact-link-renderer"));
-			languageList.removeIf(el -> el.getText().trim().isEmpty());
-
-			String langText=languageList.get(j).getText();
-			System.out.println(langText+"    "+j);
-			
-			
-			    WebElement test=driver.findElement(By.xpath("//yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='" + langText + "']"));
-				WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(5));
-				wait.until(ExpectedConditions.elementToBeClickable(test));
-				test.click();
-				Thread.sleep(2000);
-			//	wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']")));
-				
-				driver.findElement(By.xpath("//ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']")).click();
-			//	wait.until(ExpectedConditions.elementToBeClickable(By.xpath("(//div[@id='content-icon'])[2]")));
-				Thread.sleep(2000);
-
-				driver.findElement(By.xpath("(//div[@id='content-icon'])[2]")).click();
-			
-				
-			}
+//		for(int j=1;j<languageList.size();j++) {
+//			
+//		
+//			languageList=	driver.findElements(By.xpath("//yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//ytd-compact-link-renderer"));
+//			languageList.removeIf(el -> el.getText().trim().isEmpty());
+//
+//			String langText=languageList.get(j).getText();
+//			System.out.println(langText+"    "+j);
+//			
+//			
+//			    WebElement test=driver.findElement(By.xpath("//yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='" + langText + "']"));
+//				WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(5));
+//				wait.until(ExpectedConditions.elementToBeClickable(test));
+//				test.click();
+//				Thread.sleep(2000);
+//			//	wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']")));
+//				
+//				driver.findElement(By.xpath("//ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']")).click();
+//			//	wait.until(ExpectedConditions.elementToBeClickable(By.xpath("(//div[@id='content-icon'])[2]")));
+//				Thread.sleep(2000);
+//
+//				driver.findElement(By.xpath("(//div[@id='content-icon'])[2]")).click();
+//			
+//				
+//			}
 			
 		
 		
