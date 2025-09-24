@@ -219,10 +219,14 @@ public class LinguaHelper {
 
     	LanguageDetector detector = LanguageDetectorBuilder.fromAllLanguages().build();
 
-    	for (String s : sentences) {
-    	    var detected = detector.detectLanguageOf(s);
-    	    System.out.printf("Text: %-60s | Detected: %s%n", s, detected);
-    	}
+//    	for (String s : sentences) {
+//    	    var detected = detector.detectLanguageOf(s);
+//    	    System.out.printf("Text: %-60s | Detected: %s%n", s, detected);
+//    	}
+    	String s="Palakasan";
+    	var detected = detector.detectLanguageOf(s);
+	    System.out.printf("Text: %-60s | Detected: %s%n", s, detected);
+    	
 
     }
 }

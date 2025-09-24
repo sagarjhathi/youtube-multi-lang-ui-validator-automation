@@ -16,6 +16,20 @@
 
 
 <dependency>
+  <groupId>org.json</groupId>
+  <artifactId>json</artifactId>
+  <version>20231013</version>
+</dependency>
+
+
+<!-- Optional: Apache Commons Text for Levenshtein distance -->
+<dependency>
+  <groupId>org.apache.commons</groupId>
+  <artifactId>commons-text</artifactId>
+  <version>1.10.0</version>
+</dependency>
+
+<dependency>
     <groupId>com.github.pemistahl</groupId>
     <artifactId>lingua</artifactId>
     <version>1.2.2</version>
