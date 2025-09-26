@@ -34,4 +34,10 @@ public class YtLandingPage  extends BasicTest{
 	By horizontalScrollBarLandingPage=By.xpath("//div[@id='scroll-container']");
 	
 	
+	
+	public By getLanguageElementByName(String Name) {
+		
+	    return  By.xpath("//yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='" + Name + "']");
+	}
+	
 }

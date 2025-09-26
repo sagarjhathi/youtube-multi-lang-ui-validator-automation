@@ -18,149 +18,17 @@ public class LinguaHelper {
      * @return Detected language name (or "Unknown" if none)
      */
     // --- your detectLanguage function ---
-    public static String detectLanguage(String text, List<Language> candidateLanguages) {
+    public static String detectLanguage(String text) {
         if (text == null || text.trim().isEmpty()) {
             return "Unknown";
         }
-
-        LanguageDetector detector = LanguageDetectorBuilder
-                .fromLanguages(candidateLanguages.toArray(new Language[0]))
-                .build();
-
+        LanguageDetector detector = LanguageDetectorBuilder.fromAllLanguages().build();
         Language detected = detector.detectLanguageOf(text);
-
+        System.out.printf("Text: %-60s | Detected: %s%n", text, detected);
         return detected != null ? detected.name() : "Unknown";
     }
     
-    
-    public static Map<String, Language> getMapping() {
-        Map<String, Language> map = new HashMap<>();
-
-        // --- A ---
-        map.put("Afrikaans", Language.AFRIKAANS);
-        map.put("Azərbaycanca", Language.AZERBAIJANI);
-
-        // --- B ---
-        map.put("Bahasa Indonesia", Language.INDONESIAN);
-        map.put("Bahasa Malaysia", Language.MALAY);
-        map.put("Bosanski", Language.BOSNIAN);
-
-        // --- C ---
-        map.put("Català", Language.CATALAN);
-        map.put("Čeština", Language.CZECH);
-
-        // --- D ---
-        map.put("Dansk", Language.DANISH);
-        map.put("Deutsch", Language.GERMAN);
-
-        // --- E ---
-        map.put("Eesti", Language.ESTONIAN);
-        map.put("English (India)", Language.ENGLISH);
-        map.put("English (UK)", Language.ENGLISH);
-        map.put("English (US)", Language.ENGLISH);
-        map.put("Español (España)", Language.SPANISH);
-        map.put("Español (Latinoamérica)", Language.SPANISH);
-        map.put("Español (US)", Language.SPANISH);
-        map.put("Euskara", Language.BASQUE);
-
-        // --- F ---
-        map.put("Filipino", Language.TAGALOG);
-        map.put("Français", Language.FRENCH);
-        map.put("Français (Canada)", Language.FRENCH);
-
-        // --- G ---
-     //   map.put("Galego", Language.GALICIAN);
-
-        // --- H ---
-        map.put("Hrvatski", Language.CROATIAN);
-        map.put("IsiZulu", Language.ZULU);
-        map.put("Íslenska", Language.ICELANDIC);
-
-        // --- I ---
-        map.put("Italiano", Language.ITALIAN);
-
-        // --- K ---
-        map.put("Kiswahili", Language.SWAHILI);
-        map.put("Latviešu valoda", Language.LATVIAN);
-        map.put("Lietuvių", Language.LITHUANIAN);
-
-        // --- M ---
-        map.put("Magyar", Language.HUNGARIAN);
-        map.put("Nederlands", Language.DUTCH);
-//        map.put("Norsk", Language.NORWEGIAN);
-//        map.put("O’zbek", Language.UZBEK);
-        map.put("Polski", Language.POLISH);
-        map.put("Português", Language.PORTUGUESE);
-        map.put("Português (Brasil)", Language.PORTUGUESE);
-
-        // --- R ---
-        map.put("Română", Language.ROMANIAN);
-        map.put("Shqip", Language.ALBANIAN);
-
-        // --- S ---
-        map.put("Slovenčina", Language.SLOVAK);
-    //    map.put("Slovenščina", Language.SLOVENIAN);
-        map.put("Srpski", Language.SERBIAN);
-        map.put("Suomi", Language.FINNISH);
-        map.put("Svenska", Language.SWEDISH);
-
-        // --- T ---
-        map.put("Tiếng Việt", Language.VIETNAMESE);
-        map.put("Türkçe", Language.TURKISH);
-
-        // --- Cyrillic block ---
-        map.put("Беларуская", Language.BELARUSIAN);
-        map.put("Български", Language.BULGARIAN);
-     //   map.put("Кыргызча", Language.KYRGYZ);
-        map.put("Қазақ Тілі", Language.KAZAKH);
-        map.put("Македонски", Language.MACEDONIAN);
-        map.put("Монгол", Language.MONGOLIAN);
-        map.put("Русский", Language.RUSSIAN);
-        map.put("Українська", Language.UKRAINIAN);
-
-        // --- Greek / Armenian ---
-        map.put("Ελληνικά", Language.GREEK);
-        map.put("Հայերեն", Language.ARMENIAN);
-
-        // --- RTL / Middle East ---
-        map.put("עברית", Language.HEBREW);
-        map.put("اردو", Language.URDU);
-        map.put("العربية", Language.ARABIC);
-        map.put("فارسی", Language.PERSIAN);
-
-        // --- Indic ---
-       // map.put("नेपाली", Language.NEPALI);
-        map.put("मराठी", Language.MARATHI);
-        map.put("हिन्दी", Language.HINDI);
-     //   map.put("অসমীয়া", Language.ASSAMESE);
-        map.put("বাংলা", Language.BENGALI);
-        map.put("ਪੰਜਾਬੀ", Language.PUNJABI);
-        map.put("ગુજરાતી", Language.GUJARATI);
-    //    map.put("ଓଡ଼ିଆ", Language.ORIYA);
-        map.put("தமிழ்", Language.TAMIL);
-        map.put("తెలుగు", Language.TELUGU);
-    //    map.put("ಕನ್ನಡ", Language.KANNADA);
-     //   map.put("മലയാളം", Language.MALAYALAM);
-     //   map.put("සිංහල", Language.SINHALA);
-
-        // --- SEA / East Asia ---
-        map.put("ภาษาไทย", Language.THAI);
-//        map.put("ລາວ", Language.LAO);
-//        map.put("မြန်မာ", Language.BURMESE);
-        map.put("ქართული", Language.GEORGIAN);
-//        map.put("አማርኛ", Language.AMHARIC);
-//        map.put("ខ្មែរ", Language.KHMER);
-        map.put("中文 (简体)", Language.CHINESE);
-        map.put("中文 (繁體)", Language.CHINESE);
-        map.put("中文 (香港)", Language.CHINESE);
-        map.put("日本語", Language.JAPANESE);
-        map.put("한국어", Language.KOREAN);
-
-        return map;
-    }
-    
-
-
+ 
     // Example usage
     public static void main(String[] args) {
     	
@@ -218,11 +86,6 @@ public class LinguaHelper {
 
 
     	LanguageDetector detector = LanguageDetectorBuilder.fromAllLanguages().build();
-
-//    	for (String s : sentences) {
-//    	    var detected = detector.detectLanguageOf(s);
-//    	    System.out.printf("Text: %-60s | Detected: %s%n", s, detected);
-//    	}
     	String s="Palakasan";
     	var detected = detector.detectLanguageOf(s);
 	    System.out.printf("Text: %-60s | Detected: %s%n", s, detected);

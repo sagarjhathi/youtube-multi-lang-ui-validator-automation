@@ -20,88 +20,73 @@ public class BasicTest {
 		WebDriver driver=new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://www.youtube.com/");
-		
-		
-//String recommendationsOnYoutube=	driver.findElement(By.xpath("//div[@id='scroll-container']")).getText();
-//		
-//		System.out.println(recommendationsOnYoutube);
+				
+		YtLandingPage yt=new YtLandingPage();
 		
 		
 		
-		List<WebElement> listOfSideMenu=driver.findElements(By.xpath("//ytd-guide-entry-renderer[@class='style-scope ytd-guide-section-renderer']"));
-		
-		for(int i=0;i<listOfSideMenu.size();i++) {
-			System.out.println(listOfSideMenu.get(i).getText());
-		}
-		
-		// ellipses three dot click
-		driver.findElement(By.xpath("//ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']")).click();
-		Thread.sleep(3000);
-		//language dropdown click
-	//	driver.findElement(By.xpath("//div[@id='primary-text-container']//yt-formatted-string[@id='label' and text()='Language:']")).click();
+		driver.findElement(yt.settingEllipsesButton).click();
 		Thread.sleep(2000);
-		//Language list 
-//		List<WebElement> languageList=	driver.findElements(By.xpath("//yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//ytd-compact-link-renderer"));
-//		languageList.removeIf(el -> el.getText().trim().isEmpty());
+		driver.findElement(yt.languageDropdownUnderSettings).click();
+		Thread.sleep(2000);
+//		WebElement test2=driver.findElement(yt.getLanguageElementByName("Filipino"));
+//		test2.click();
+//		Thread.sleep(3000);
 		
-		
-		String settingOptionsList=driver.findElement(By.xpath("//div[@id='contentWrapper']")).getText();
-		System.out.println(settingOptionsList);
-		
-		
-		
-		driver.findElement(By.xpath("//div[@id='primary-text-container']//yt-formatted-string[@id='label' and text()='Language:']")).click();
-		
-		
-		String langList=driver.findElement(By.xpath("//ytd-multi-page-menu-renderer[@slot='dropdown-content']")).getText();
-		
-		System.out.println(langList);
-		
-		
-	String recommendationsOnYoutube=	driver.findElement(By.xpath("//div[@id='scroll-container']")).getText();
-		
-		System.out.println(recommendationsOnYoutube);
-		
-		
-		
-		
-		
-		
-		
-		
+//		List<WebElement> listOfSideMenu=driver.findElements(yt.sideMenuExpandedList);
+//		StringBuilder sb=new StringBuilder();
+//		for(int i=0;i<listOfSideMenu.size();i++) {
+//			System.out.println(listOfSideMenu.get(i).getText());
+//			sb.append(listOfSideMenu.get(i).getText());
+//		}
+//		
+//		LinguaHelper.detectLanguage(sb.toString());
 		
 //		
+//		driver.findElement(yt.settingEllipsesButton).click();
+//		Thread.sleep(3000);
+//		String settingOptionsList=driver.findElement(yt.settingEllipsesOptionsListLandingPage).getText();
+//		System.out.println(settingOptionsList);
 //		
-//		String languageList=driver.findElement(By.xpath("//ytd-multi-page-menu-renderer[@slot='dropdown-content']")).getText();
+//		driver.findElement(yt.languageDropdownUnderSettings).click();
+//		Thread.sleep(2000);
 //		
-//
 //		
+//		String langList=driver.findElement(yt.languageList).getText();
+//		System.out.println(langList);
 //		
-//		for(int j=1;j<languageList.length();j++) {
+		List<WebElement> languageList=	driver.findElements(yt.languageList);
+     	languageList.removeIf(el -> el.getText().trim().isEmpty());
+//	
+//     	
 //			
-//		
-//			languageList=	driver.findElements(By.xpath("//yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//ytd-compact-link-renderer"));
-//			languageList.removeIf(el -> el.getText().trim().isEmpty());
-//
-//			String langText=languageList.get(j).getText();
-//			System.out.println(langText+"    "+j);
-//			
-//			
-//			    WebElement test=driver.findElement(By.xpath("//yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='" + langText + "']"));
-//				WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(5));
-//				wait.until(ExpectedConditions.elementToBeClickable(test));
-//				test.click();
-//				Thread.sleep(2000);
-//			//	wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']")));
-//				
-//				driver.findElement(By.xpath("//ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']")).click();
-//			//	wait.until(ExpectedConditions.elementToBeClickable(By.xpath("(//div[@id='content-icon'])[2]")));
-//				Thread.sleep(2000);
-//
-//				driver.findElement(By.xpath("(//div[@id='content-icon'])[2]")).click();
-//			
-//				
-//			}
+		for(int j=1;j<languageList.size();j++) {
+			
+		
+			languageList=	driver.findElements(yt.languageList);		
+			languageList.removeIf(el -> el.getText().trim().isEmpty());
+			String langText=languageList.get(j).getText();
+			System.out.println(langText+"    "+j);
+			
+			
+	     		WebElement test=driver.findElement(yt.getLanguageElementByName(langText));
+				WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(5));
+				wait.until(ExpectedConditions.elementToBeClickable(test));
+				test.click();
+				Thread.sleep(3000);
+				List<WebElement> listOfSideMenu=driver.findElements(yt.sideMenuExpandedList);
+				StringBuilder sb=new StringBuilder();
+				for(int i=0;i<listOfSideMenu.size();i++) {
+					System.out.println(listOfSideMenu.get(i).getText());
+					sb.append(listOfSideMenu.get(i).getText());
+				}
+				
+				LinguaHelper.detectLanguage(sb.toString());
+				Thread.sleep(2000);				
+				driver.findElement(yt.settingEllipsesButton).click();
+				Thread.sleep(2000);
+				driver.findElement(yt.languageDropdownUnderSettings).click();
+			}
 			
 		
 		
