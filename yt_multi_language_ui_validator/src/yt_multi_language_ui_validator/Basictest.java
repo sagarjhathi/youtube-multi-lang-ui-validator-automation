@@ -21,16 +21,17 @@ public class BasicTest {
 		driver.manage().window().maximize();
 		driver.get("https://www.youtube.com/");
 		
+		
+//String recommendationsOnYoutube=	driver.findElement(By.xpath("//div[@id='scroll-container']")).getText();
+//		
+//		System.out.println(recommendationsOnYoutube);
+		
+		
+		
 		List<WebElement> listOfSideMenu=driver.findElements(By.xpath("//ytd-guide-entry-renderer[@class='style-scope ytd-guide-section-renderer']"));
 		
 		for(int i=0;i<listOfSideMenu.size();i++) {
 			System.out.println(listOfSideMenu.get(i).getText());
-		
-//				WebElement test=listOfSideMenu.get(i);
-//				WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(5));
-//				wait.until(ExpectedConditions.elementToBeClickable(test));
-//				test.click();
-			
 		}
 		
 		// ellipses three dot click
@@ -43,11 +44,40 @@ public class BasicTest {
 //		List<WebElement> languageList=	driver.findElements(By.xpath("//yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//ytd-compact-link-renderer"));
 //		languageList.removeIf(el -> el.getText().trim().isEmpty());
 		
+		
 		String settingOptionsList=driver.findElement(By.xpath("//div[@id='contentWrapper']")).getText();
 		System.out.println(settingOptionsList);
 		
-	    //	driver.findElement(By.xpath("//yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Afrikaans']")).click();
-//		for(int j=1;j<languageList.size();j++) {
+		
+		
+		driver.findElement(By.xpath("//div[@id='primary-text-container']//yt-formatted-string[@id='label' and text()='Language:']")).click();
+		
+		
+		String langList=driver.findElement(By.xpath("//ytd-multi-page-menu-renderer[@slot='dropdown-content']")).getText();
+		
+		System.out.println(langList);
+		
+		
+	String recommendationsOnYoutube=	driver.findElement(By.xpath("//div[@id='scroll-container']")).getText();
+		
+		System.out.println(recommendationsOnYoutube);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+//		
+//		
+//		String languageList=driver.findElement(By.xpath("//ytd-multi-page-menu-renderer[@slot='dropdown-content']")).getText();
+//		
+//
+//		
+//		
+//		for(int j=1;j<languageList.length();j++) {
 //			
 //		
 //			languageList=	driver.findElements(By.xpath("//yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//ytd-compact-link-renderer"));
@@ -76,27 +106,5 @@ public class BasicTest {
 		
 		
 		
-	}
-	
-	
-	
-	 public static void waitForPageOrRefresh(WebDriver driver, int attempts, long sleepMillis) {
-	        JavascriptExecutor js = (JavascriptExecutor) driver;
-	        int tries = 0;
-
-	        while (tries < attempts) {
-	            String state = js.executeScript("return document.readyState").toString();
-	            if ("complete".equals(state)) {
-	                System.out.println("Page loaded!");
-	                return;
-	            }
-	            try { Thread.sleep(sleepMillis); } catch (InterruptedException e) { Thread.currentThread().interrupt(); }
-	            tries++;
-	        }
-
-	        // refresh once if not loaded
-	        System.out.println("Page not loaded after " + (attempts * sleepMillis / 1000) + "s. Refreshing once...");
-	        driver.navigate().refresh();
-	    }
-	
+	}	
 }

@@ -19,12 +19,19 @@ public class YtLandingPage  extends BasicTest{
 	
 	By languageList=By.xpath("//yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//ytd-compact-link-renderer");
 	
+	By ellipsesYtLandingPageTopLeft=By.xpath("//ytd-topbar-logo-renderer[@id='logo']/preceding-sibling::*[@id='guide-button']");
 	
-	public void getLanguageList() {
-//		Here because languageList gives 91 as output but 9 elements are empty and not visible on ui in youtube
-//		so to ignore those will have to process by removing the empty elemets within the list will have to cover that part.
-//		
-		
-		//languageList.removeIf(el -> el.getText().trim().isEmpty());
-	}
+	By sideMenuCollapsedList=By.xpath("//ytd-mini-guide-renderer[@class='style-scope ytd-app']//ytd-mini-guide-entry-renderer");
+	
+	By countryCodeOnYtLogoLandingPage=By.xpath("(//span[@id='country-code'])[1]");
+	
+	By settingEllipsesOptionsListLandingPage=By.xpath("//ytd-multi-page-menu-renderer");
+	
+	By languageListUpdated=By.xpath("//ytd-multi-page-menu-renderer[@slot='dropdown-content']");
+	
+	
+	//Cannot use this directly as this banner wouldnt show if yt does not have a search histroy so to show these recommendation banner
+	By horizontalScrollBarLandingPage=By.xpath("//div[@id='scroll-container']");
+	
+	
 }
