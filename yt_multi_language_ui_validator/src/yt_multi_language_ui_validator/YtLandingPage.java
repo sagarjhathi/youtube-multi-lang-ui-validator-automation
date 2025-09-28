@@ -34,6 +34,10 @@ public class YtLandingPage  extends BasicTest{
 	By horizontalScrollBarLandingPage=By.xpath("//div[@id='scroll-container']");
 	
 	
+	By locationDropdownUnderSettings=By.xpath("(//div[@id='content-icon'])[4]");
+	
+	//Have to follow the same process of find the location list similar to language list where will have to remove some elements 
+	By locationList=By.xpath("//yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//ytd-compact-link-renderer");
 	
 	public By getLanguageElementByName(String Name) {
 		
