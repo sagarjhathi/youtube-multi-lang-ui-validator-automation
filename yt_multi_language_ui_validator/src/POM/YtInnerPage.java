@@ -2,7 +2,9 @@ package POM;
 
 import org.openqa.selenium.By;
 
-public class YtInnerPage {
+import yt_multi_language_ui_validator.BasePage;
+
+public class YtInnerPage  extends BasePage{
 
 	public By youtuberMainInfoInnerPage=By.xpath("//div[@id='above-the-fold']//div[@id='top-row']");
 	

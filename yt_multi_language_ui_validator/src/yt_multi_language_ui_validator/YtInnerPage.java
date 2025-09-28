@@ -1,4 +1,4 @@
-git package yt_multi_language_ui_validator;
+package yt_multi_language_ui_validator;
 
 import org.openqa.selenium.By;
 

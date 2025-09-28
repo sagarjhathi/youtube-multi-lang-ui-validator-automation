@@ -1,8 +1,10 @@
 package POM;
 
-import java.time.Duration; 
+import java.time.Duration;  
 import java.util.List;
 
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.ThreadContext;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -10,8 +12,13 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+
+import yt_multi_language_ui_validator.BasePage;
 import yt_multi_language_ui_validator.BasicTest;
-public class YtLandingPage  extends BasicTest{
+public class YtLandingPage  extends BasePage{
+	
+	
+	private  final Logger log = yt_multi_language_ui_validator.LoggerUtility.getLogger(YtLandingPage.class);
 	
 	public By sideMenuExpandedList=By.xpath("//ytd-guide-entry-renderer[@class='style-scope ytd-guide-section-renderer']");
 	
@@ -44,6 +51,16 @@ public class YtLandingPage  extends BasicTest{
 	public By getLanguageElementByName(String Name) {
 		
 	    return  By.xpath("//yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='" + Name + "']");
+	}
+	
+	
+	
+	public void openingLandingPage() {
+	//	String url = yt_multi_language_ui_validator.ConfigManager.get("Url");
+		driver.get("https://www.youtube.com/");
+	//	driver.get(url);
+		log.info("[{}] Opening amazon Landing page", ThreadContext.get("testName"));
+
 	}
 	
 }

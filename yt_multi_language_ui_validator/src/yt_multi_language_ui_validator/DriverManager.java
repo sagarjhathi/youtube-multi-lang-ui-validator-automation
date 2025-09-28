@@ -18,29 +18,29 @@ public class DriverManager {
 			
 	     	ChromeOptions options = new ChromeOptions();
 			
-            String ua = ConfigManager.get("userAgent");
-            if (ua != null && !ua.isBlank()) {
-                options.addArguments("user-agent=" + ua);
-            }
+         //   String ua = ConfigManager.get("userAgent");
+        
+            //    options.addArguments("user-agent=" + ua);
+            
 
             // headless toggle
-            if (ConfigManager.getBoolean("headless", false)) {
+           
                 options.addArguments("--headless");
-            }
+            
 
             // language
-            String lang = ConfigManager.get("lang", "en");
-            options.addArguments("--lang=" + lang);
+//            String lang = ConfigManager.get("lang", "en");
+//            options.addArguments("--lang=" + lang);
 
             // start maximized
-            if (ConfigManager.getBoolean("startMaximized", true)) {
+           
                 options.addArguments("--start-maximized");
-            }
+            
 
             // disable GPU
-            if (ConfigManager.getBoolean("disableGpu", false)) {
+          
                 options.addArguments("--disable-gpu");
-            }
+            
             
 		
 		options.addArguments("--disable-blink-features=AutomationControlled");
@@ -53,4 +53,17 @@ public class DriverManager {
 		driver.get().manage().deleteAllCookies();
 		}
 	}
+	
+	
+	
+	
+	public static void quitDriver() {
+		if(driver.get()!=null) {
+			getDriver().quit();
+			driver.remove();
+		}
+	}
+	
+	
+	
 }
