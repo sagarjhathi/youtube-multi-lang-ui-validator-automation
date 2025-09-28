@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+<Properties>
+  <Property name="LOG_PATTERN">%d{yyyy-MM-dd hh:mm:ss.SSS a} [%t] %-5level [%X{logFileName}] %msg%n</Property>
+</Properties>
+
+
+  <Appenders>
+    <Console name="Console" target="SYSTEM_OUT">
+      <PatternLayout pattern="${LOG_PATTERN}" />
+    </Console>
+
+    <Routing name="RoutingAppender">
+      <Routes pattern="${ctx:logFileName}">
+        <Route>
+          <RollingFile name="RollingFile-${ctx:logFileName}"
+                       fileName="logs/${ctx:logFileName}.log"
+                       filePattern="logs/archive/${ctx:logFileName}-%d{yyyy-MM-dd-HH-mm}.log.gz"
+                       append="false">
+            <PatternLayout pattern="${LOG_PATTERN}" />
+            <Policies>
+              <SizeBasedTriggeringPolicy size="5MB"/>
+            </Policies>
+          </RollingFile>
+        </Route>
+      </Routes>
+    </Routing>
+  </Appenders>
+
+  <Loggers>
+    <Root level="info">
+      <AppenderRef ref="Console"/>
+      <AppenderRef ref="RoutingAppender"/>
+    </Root>
+  </Loggers>
+</Configuration>
