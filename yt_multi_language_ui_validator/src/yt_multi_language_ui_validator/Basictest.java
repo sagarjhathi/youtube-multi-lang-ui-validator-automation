@@ -11,6 +11,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+import POM.YtInnerPage;
+import POM.YtLandingPage;
  
 public class BasicTest {
 
@@ -185,7 +188,9 @@ public class BasicTest {
 //			driver.findElement(yt.locationDropdownUnderSettings).click();
 //		}
      	
-     	
+     
+		
+		
      	JavascriptExecutor js=(JavascriptExecutor)driver;
      	
      	
@@ -218,12 +223,8 @@ public class BasicTest {
 			WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(5));
 			wait.until(ExpectedConditions.elementToBeClickable(test));
 			test.click();
-			
-		
-		
 			Thread.sleep(2000);
-    		String sb =	driver.findElement(in.youtuberMainInfoInnerPage).getText();
-			
+    		String sb =	driver.findElement(in.youtuberMainInfoInnerPage).getText();	
 			LinguaHelper.detectLanguage(sb.toString());
 			Thread.sleep(2000);				
 			driver.findElement(yt.settingEllipsesButton).click();
