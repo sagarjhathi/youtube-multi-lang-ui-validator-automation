@@ -1,4 +1,17 @@
-# Eclipse workspace metadata
-.metadata/
-.target/
-.yt_multi_language_ui_validator\target
+# Build outputs
+yt_multi_language_ui_validator/target/
+yt_multi_language_ui_validator/test-output/
+
+# Logs
+*.log
+
+# IDE files
+.classpath
+.project
+.settings/
+.idea/
+*.iml
+
+# OS files
+.DS_Store
+Thumbs.db
