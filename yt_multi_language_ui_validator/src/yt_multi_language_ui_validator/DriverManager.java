@@ -25,7 +25,7 @@ public class DriverManager {
 
             // headless toggle
            
-                options.addArguments("--headless");
+               // options.addArguments("--headless");
             
 
             // language

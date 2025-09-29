@@ -1,7 +1,9 @@
 package POM;
 
-import java.time.Duration;  
+import java.time.Duration;   
 import java.util.List;
+import java.util.concurrent.TimeoutException;
+import java.util.stream.Collectors;
 
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.ThreadContext;
@@ -15,9 +17,10 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import yt_multi_language_ui_validator.BasePage;
 import yt_multi_language_ui_validator.BasicTest;
+import yt_multi_language_ui_validator.LinguaHelper;
 public class YtLandingPage  extends BasePage{
 	
-	
+//	
 	private  final Logger log = yt_multi_language_ui_validator.LoggerUtility.getLogger(YtLandingPage.class);
 	
 	public By sideMenuExpandedList=By.xpath("//ytd-guide-entry-renderer[@class='style-scope ytd-guide-section-renderer']");
@@ -52,15 +55,74 @@ public class YtLandingPage  extends BasePage{
 		
 	    return  By.xpath("//yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='" + Name + "']");
 	}
-	
-	
-	
-	public void openingLandingPage() {
-	//	String url = yt_multi_language_ui_validator.ConfigManager.get("Url");
-		driver.get("https://www.youtube.com/");
-	//	driver.get(url);
-		log.info("[{}] Opening amazon Landing page", ThreadContext.get("testName"));
 
-	}
 	
-}
+
+    private By langOptionLabel(String name) {
+        return By.xpath("//yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']" +
+                        "//yt-formatted-string[@id='label' and normalize-space(text())='" + name + "']");
+    }
+
+    public void openingLandingPage() {
+    	driver.get("https://www.youtube.com/");
+    }
+    
+    public void clickingSettingEllipsesButton() throws InterruptedException {
+   
+    	driver.findElement(settingEllipsesButton).click();
+    }
+    
+    public void clickingLanguageDropdownButton() throws InterruptedException {
+
+    	driver.findElement(languageDropdownUnderSettings).click();
+    	
+    }
+    
+    public List<WebElement> gettingLanguageList() throws InterruptedException{
+    
+    		 List<WebElement> langList=driver.findElements(languageList);
+    		 langList.removeIf(el -> el.getText().trim().isEmpty());
+    		 return langList;
+    }
+    
+    
+    public void applyingAllLanguagesFromList() throws InterruptedException {
+    	
+    	
+    	 List<WebElement> languageList = gettingLanguageList();
+    	
+    	
+    	for(int j=1;j<languageList.size();j++) {
+			
+			languageList =	gettingLanguageList();
+			String langText=languageList.get(j).getText();
+			System.out.println(langText+"    "+j);
+			
+			
+	     		WebElement test=driver.findElement(getLanguageElementByName(langText));
+				wait.until(ExpectedConditions.elementToBeClickable(test));
+				test.click();
+				Thread.sleep(3000);
+				List<WebElement> listOfSideMenu=driver.findElements(sideMenuExpandedList);
+				StringBuilder sb=new StringBuilder();
+				for(int i=0;i<listOfSideMenu.size();i++) {
+					System.out.println(listOfSideMenu.get(i).getText());
+					sb.append(listOfSideMenu.get(i).getText());
+				}
+				
+				LinguaHelper.detectLanguage(sb.toString());
+				Thread.sleep(2000);				
+				driver.findElement(settingEllipsesButton).click();
+				Thread.sleep(2000);
+				driver.findElement(languageDropdownUnderSettings).click();
+			}
+		
+	}
+    
+    
+    
+    
+    
+ }
+	
+

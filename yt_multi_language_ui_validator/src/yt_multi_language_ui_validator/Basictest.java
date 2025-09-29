@@ -185,52 +185,52 @@ public class BasicTest {
 //			Thread.sleep(2000);				
 //			driver.findElement(yt.settingEllipsesButton).click();
 //			Thread.sleep(2000);
-//			driver.findElement(yt.locationDropdownUnderSettings).click();
+////			driver.findElement(yt.locationDropdownUnderSettings).click();
+////		}
+//     	
+//     
+//		
+//		
+//     	JavascriptExecutor js=(JavascriptExecutor)driver;
+//     	
+//     	
+//     	
+//     	driver.findElement(yt.settingEllipsesButton).click();
+//		Thread.sleep(2000);
+//		driver.findElement(yt.languageDropdownUnderSettings).click();
+//		Thread.sleep(2000);
+//		
+//		YtInnerPage in=new YtInnerPage();
+//		
+//		
+//		List<WebElement> languageList=	driver.findElements(yt.languageList);
+//     	languageList.removeIf(el -> el.getText().trim().isEmpty());
+//     	
+//     	
+//		for(int j=1;j<languageList.size();j++) {
+//			
+//		languageList=	driver.findElements(yt.languageList);		
+//		System.out.println(js.executeScript("return document.readyState"));
+//
+//		languageList.removeIf(el -> el.getText().trim().isEmpty());
+//		String langText=languageList.get(j).getText();
+//		System.out.println(langText+"    "+j);
+//		System.out.println(js.executeScript("return document.readyState"));
+//
+//		
+//	  
+//     		WebElement test=driver.findElement(yt.getLanguageElementByName(langText));
+//			WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(5));
+//			wait.until(ExpectedConditions.elementToBeClickable(test));
+//			test.click();
+//			Thread.sleep(2000);
+//    		String sb =	driver.findElement(in.youtuberMainInfoInnerPage).getText();	
+//			LinguaHelper.detectLanguage(sb.toString());
+//			Thread.sleep(2000);				
+//			driver.findElement(yt.settingEllipsesButton).click();
+//			Thread.sleep(2000);
+//			driver.findElement(yt.languageDropdownUnderSettings).click();
 //		}
-     	
-     
-		
-		
-     	JavascriptExecutor js=(JavascriptExecutor)driver;
-     	
-     	
-     	
-     	driver.findElement(yt.settingEllipsesButton).click();
-		Thread.sleep(2000);
-		driver.findElement(yt.languageDropdownUnderSettings).click();
-		Thread.sleep(2000);
-		
-		YtInnerPage in=new YtInnerPage();
-		
-		
-		List<WebElement> languageList=	driver.findElements(yt.languageList);
-     	languageList.removeIf(el -> el.getText().trim().isEmpty());
-     	
-     	
-		for(int j=1;j<languageList.size();j++) {
-			
-		languageList=	driver.findElements(yt.languageList);		
-		System.out.println(js.executeScript("return document.readyState"));
-
-		languageList.removeIf(el -> el.getText().trim().isEmpty());
-		String langText=languageList.get(j).getText();
-		System.out.println(langText+"    "+j);
-		System.out.println(js.executeScript("return document.readyState"));
-
-		
-	  
-     		WebElement test=driver.findElement(yt.getLanguageElementByName(langText));
-			WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(5));
-			wait.until(ExpectedConditions.elementToBeClickable(test));
-			test.click();
-			Thread.sleep(2000);
-    		String sb =	driver.findElement(in.youtuberMainInfoInnerPage).getText();	
-			LinguaHelper.detectLanguage(sb.toString());
-			Thread.sleep(2000);				
-			driver.findElement(yt.settingEllipsesButton).click();
-			Thread.sleep(2000);
-			driver.findElement(yt.languageDropdownUnderSettings).click();
-		}
      	
 		
 	}	
