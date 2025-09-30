@@ -122,6 +122,45 @@ public class YtLandingPage  extends BasePage{
     
     
     
+    public void applyingLanguagesFromAddedList(List<WebElement> list) throws InterruptedException {
+    	
+    	
+   	 List<WebElement> languageList = list;
+   	
+   	
+   	for(int j=1;j<languageList.size();j++) {
+			
+			languageList =	list;
+			String langText=languageList.get(j).getText();
+			System.out.println(langText+"    "+j);
+			
+			
+	     		WebElement test=driver.findElement(getLanguageElementByName(langText));
+				wait.until(ExpectedConditions.elementToBeClickable(test));
+				test.click();
+				Thread.sleep(3000);
+				List<WebElement> listOfSideMenu=driver.findElements(sideMenuExpandedList);
+				StringBuilder sb=new StringBuilder();
+				for(int i=0;i<listOfSideMenu.size();i++) {
+					System.out.println(listOfSideMenu.get(i).getText());
+					sb.append(listOfSideMenu.get(i).getText());
+				}
+				
+				LinguaHelper.detectLanguage(sb.toString());
+				Thread.sleep(2000);				
+				driver.findElement(settingEllipsesButton).click();
+				Thread.sleep(2000);
+				driver.findElement(languageDropdownUnderSettings).click();
+			}
+		
+	}
+    
+    
+    
+    
+    
+    
+    
     
  }
 	
