@@ -122,16 +122,17 @@ public class YtLandingPage  extends BasePage{
     
     
     
-    public void applyingLanguagesFromAddedList(List<WebElement> list) throws InterruptedException {
+    
+    public void applyingLanguagesFromAddedList(List<String> list) throws InterruptedException {
     	
     	
-   	 List<WebElement> languageList = list;
+   	 List<String> languageList = list;
    	
    	
    	for(int j=1;j<languageList.size();j++) {
 			
 			languageList =	list;
-			String langText=languageList.get(j).getText();
+			String langText=languageList.get(j);
 			System.out.println(langText+"    "+j);
 			
 			

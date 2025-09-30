@@ -1,6 +1,7 @@
 package tests;
 
-import java.time.Duration; 
+import java.time.Duration;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -28,13 +29,18 @@ public class YtMasterTests extends BaseTest{
 		yt.clickingLanguageDropdownButton();
 	    Thread.sleep(2000);
 	    
-		List<WebElement> languageList=	yt.gettingLanguageList();     		
-		yt.applyingAllLanguagesFromList();
+	    
+		List<String> languageList=new ArrayList<>();
+		languageList.add("Afrikaans");
+		languageList.add("Azərbaycan");
+		languageList.add("Bahasa Indonesia");
+		
+		yt.applyingLanguagesFromAddedList(languageList);
 		
 	}
 	
 	
-	
+
 	@Test
 	public void verifyingSideMenuLanguageAsInSettings2() throws InterruptedException {
 		WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(15));
