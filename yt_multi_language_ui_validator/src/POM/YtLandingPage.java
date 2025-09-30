@@ -14,7 +14,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-
+import utilities.WaitUtility;
 import yt_multi_language_ui_validator.BasePage;
 import yt_multi_language_ui_validator.BasicTest;
 import yt_multi_language_ui_validator.LinguaHelper;
@@ -158,6 +158,45 @@ public class YtLandingPage  extends BasePage{
     
     
     
+    
+    
+    public void applyingAllLanguagesFromListTrial() {
+    	
+    	WaitUtility w=new WaitUtility();
+        // assume the language menu is already open when you call this
+        List<WebElement> languageListOptions = w.findVisibleElements(languageList);
+
+        for (int j = 0; j < languageListOptions.size(); j++) {
+            // refresh each iteration to avoid stale elements
+        	languageListOptions = w.findVisibleElements(languageList);
+            if (j >= languageListOptions.size()) break; // safety
+
+            String langText = languageListOptions.get(j).getText().trim();
+            if (langText.isEmpty()) continue;
+
+            System.out.println(langText + "    " + j);
+
+            // click the language option reliably
+            By langLocator = getLanguageElementByName(langText);
+            w.clickWhenReady(langLocator);
+
+            // wait for side menu to populate and collect text
+            List<WebElement> listOfSideMenu = w.findVisibleElements(sideMenuExpandedList);
+            StringBuilder sb = new StringBuilder();
+            for (WebElement el : listOfSideMenu) {
+                System.out.println(el.getText());
+                sb.append(el.getText());
+            }
+
+            // run language detection
+            LinguaHelper.detectLanguage(sb.toString());
+
+            // reopen settings + language menu for next iteration (use robust clicks)
+            w.clickWhenReady(settingEllipsesButton);
+            w.clickWhenReady(languageDropdownUnderSettings);
+        }
+    }
+
     
     
     

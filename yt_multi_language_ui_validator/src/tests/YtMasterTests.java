@@ -35,63 +35,63 @@ public class YtMasterTests extends BaseTest{
 		languageList.add("Azərbaycan");
 		languageList.add("Bahasa Indonesia");
 		
-		yt.applyingLanguagesFromAddedList(languageList);
+		yt.applyingAllLanguagesFromListTrial();
 		
 	}
 	
 	
 
-	@Test
-	public void verifyingSideMenuLanguageAsInSettings2() throws InterruptedException {
-		WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(15));
-		YtLandingPage yt=new YtLandingPage();
-		yt.openingLandingPage();
-		
-		yt.clickingSettingEllipsesButton();
-		Thread.sleep(2000);
-		wait.until(ExpectedConditions.elementToBeClickable(yt.languageDropdownUnderSettings));
-		yt.clickingLanguageDropdownButton();
-	    Thread.sleep(2000);
-	    
-		List<WebElement> languageList=	yt.gettingLanguageList();     		
-		yt.applyingAllLanguagesFromList();
-		
-	}
-	
-	@Test
-	public void verifyingSideMenuLanguageAsInSettings3() throws InterruptedException {
-		WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(15));
-		YtLandingPage yt=new YtLandingPage();
-		yt.openingLandingPage();
-		
-		yt.clickingSettingEllipsesButton();
-		Thread.sleep(2000);
-		wait.until(ExpectedConditions.elementToBeClickable(yt.languageDropdownUnderSettings));
-		yt.clickingLanguageDropdownButton();
-	    Thread.sleep(2000);
-	    
-		List<WebElement> languageList=	yt.gettingLanguageList();     		
-		yt.applyingAllLanguagesFromList();
-		
-	}
-	
-	
-	@Test
-	public void verifyingSideMenuLanguageAsInSettings4() throws InterruptedException {
-		WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(15));
-		YtLandingPage yt=new YtLandingPage();
-		yt.openingLandingPage();
-		
-		yt.clickingSettingEllipsesButton();
-		Thread.sleep(2000);
-		wait.until(ExpectedConditions.elementToBeClickable(yt.languageDropdownUnderSettings));
-		yt.clickingLanguageDropdownButton();
-	    Thread.sleep(2000);
-	    
-		List<WebElement> languageList=	yt.gettingLanguageList();     		
-		yt.applyingAllLanguagesFromList();
-		
-	}
+//	@Test
+//	public void verifyingSideMenuLanguageAsInSettings2() throws InterruptedException {
+//		WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(15));
+//		YtLandingPage yt=new YtLandingPage();
+//		yt.openingLandingPage();
+//		
+//		yt.clickingSettingEllipsesButton();
+//		Thread.sleep(2000);
+//		wait.until(ExpectedConditions.elementToBeClickable(yt.languageDropdownUnderSettings));
+//		yt.clickingLanguageDropdownButton();
+//	    Thread.sleep(2000);
+//	    
+//		List<WebElement> languageList=	yt.gettingLanguageList();     		
+//		yt.applyingAllLanguagesFromList();
+//		
+//	}
+//	
+//	@Test
+//	public void verifyingSideMenuLanguageAsInSettings3() throws InterruptedException {
+//		WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(15));
+//		YtLandingPage yt=new YtLandingPage();
+//		yt.openingLandingPage();
+//		
+//		yt.clickingSettingEllipsesButton();
+//		Thread.sleep(2000);
+//		wait.until(ExpectedConditions.elementToBeClickable(yt.languageDropdownUnderSettings));
+//		yt.clickingLanguageDropdownButton();
+//	    Thread.sleep(2000);
+//	    
+//		List<WebElement> languageList=	yt.gettingLanguageList();     		
+//		yt.applyingAllLanguagesFromList();
+//		
+//	}
+//	
+//	
+//	@Test
+//	public void verifyingSideMenuLanguageAsInSettings4() throws InterruptedException {
+//		WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(15));
+//		YtLandingPage yt=new YtLandingPage();
+//		yt.openingLandingPage();
+//		
+//		yt.clickingSettingEllipsesButton();
+//		Thread.sleep(2000);
+//		wait.until(ExpectedConditions.elementToBeClickable(yt.languageDropdownUnderSettings));
+//		yt.clickingLanguageDropdownButton();
+//	    Thread.sleep(2000);
+//	    
+//		List<WebElement> languageList=	yt.gettingLanguageList();     		
+//		yt.applyingAllLanguagesFromList();
+//		
+//	}
 	
 
 	
