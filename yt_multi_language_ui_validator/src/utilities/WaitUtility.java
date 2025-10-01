@@ -1,12 +1,15 @@
 package utilities;
 
 
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.ThreadContext;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import POM.YtLandingPage;
 import yt_multi_language_ui_validator.BasePage;
 
 import java.time.Duration;
@@ -16,7 +19,8 @@ import java.util.function.Function;
 public class WaitUtility extends BasePage {
 
 	
-	
+	private  final Logger log = yt_multi_language_ui_validator.LoggerUtility.getLogger(WaitUtility.class);
+
 
 	protected WebElement waitForElementReady(By by) {
 	    return waitForElementReady(by, Duration.ofSeconds(10), 3);
@@ -24,6 +28,8 @@ public class WaitUtility extends BasePage {
 
 	protected WebElement waitForElementReady(By by, Duration timeout, int maxRetries) {
 	    int attempts = 0;
+        log.info("[{}] within waitForElementReady method", ThreadContext.get("testName"));
+
 	    while (attempts < maxRetries) {
 	        try {
 	            WebDriverWait w = new WebDriverWait(driver, timeout);
@@ -35,10 +41,21 @@ public class WaitUtility extends BasePage {
 	            el = w.until(ExpectedConditions.elementToBeClickable(by));
 	            // final sanity checks
 	            if (el.isDisplayed() && el.isEnabled()) return el;
+	            else { driver.navigate().refresh(); 
+	            log.info("[{}]Refreshing the page in else section", ThreadContext.get("testName"));
+	            }
 	            // otherwise loop and retry
 	        } catch (StaleElementReferenceException | org.openqa.selenium.TimeoutException ignored) {
 	            // try again
+	        	if(attempts>=1) {
+	 	    	   driver.navigate().refresh();
+	 	    	   
+	 	    	   log.info("[{}] Refreshing the page catch section", ThreadContext.get("testName"));
+	 	    	   System.out.println("Refreshing the page to avoid longer loading of pages");
+	 	       }
 	        }
+	       
+	        log.info("[{}]Attempts ==",+attempts+ "  "+ThreadContext.get("testName"));
 	        attempts++;
 	    }
 	    throw new org.openqa.selenium.TimeoutException("Element not ready after retries: " + by);

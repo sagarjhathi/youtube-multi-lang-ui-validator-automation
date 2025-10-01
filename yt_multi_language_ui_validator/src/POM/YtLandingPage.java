@@ -1,6 +1,7 @@
 package POM;
 
-import java.time.Duration;   
+import java.time.Duration;
+import java.util.Arrays;
 import java.util.List;
 import java.util.concurrent.TimeoutException;
 import java.util.stream.Collectors;
@@ -51,17 +52,12 @@ public class YtLandingPage  extends BasePage{
 	//Have to follow the same process of find the location list similar to language list where will have to remove some elements 
 	public By locationList=By.xpath("//yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//ytd-compact-link-renderer");
 	
-	public By getLanguageElementByName(String Name) {
+	public WebElement getLanguageElementByName(String Name) {
 		
-	    return  By.xpath("//yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='" + Name + "']");
+		WebElement element=driver.findElement(By.xpath("//yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='" + Name + "']"));
+	    return  element;
 	}
 
-	
-
-    private By langOptionLabel(String name) {
-        return By.xpath("//yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']" +
-                        "//yt-formatted-string[@id='label' and normalize-space(text())='" + name + "']");
-    }
 
     public void openingLandingPage() {
     	driver.get("https://www.youtube.com/");
@@ -86,116 +82,189 @@ public class YtLandingPage  extends BasePage{
     }
     
     
-    public void applyingAllLanguagesFromList() throws InterruptedException {
-    	
-    	
-    	 List<WebElement> languageList = gettingLanguageList();
-    	
-    	
-    	for(int j=1;j<languageList.size();j++) {
-			
-			languageList =	gettingLanguageList();
-			String langText=languageList.get(j).getText();
-			System.out.println(langText+"    "+j);
-			
-			
-	     		WebElement test=driver.findElement(getLanguageElementByName(langText));
-				wait.until(ExpectedConditions.elementToBeClickable(test));
-				test.click();
-				Thread.sleep(3000);
-				List<WebElement> listOfSideMenu=driver.findElements(sideMenuExpandedList);
-				StringBuilder sb=new StringBuilder();
-				for(int i=0;i<listOfSideMenu.size();i++) {
-					System.out.println(listOfSideMenu.get(i).getText());
-					sb.append(listOfSideMenu.get(i).getText());
-				}
-				
-				LinguaHelper.detectLanguage(sb.toString());
-				Thread.sleep(2000);				
-				driver.findElement(settingEllipsesButton).click();
-				Thread.sleep(2000);
-				driver.findElement(languageDropdownUnderSettings).click();
-			}
-		
-	}
-    
-    
-    
-    
-    
-    public void applyingLanguagesFromAddedList(List<String> list) throws InterruptedException {
-    	
-    	
-   	 List<String> languageList = list;
-   	
-   	
-   	for(int j=1;j<languageList.size();j++) {
-			
-			languageList =	list;
-			String langText=languageList.get(j);
-			System.out.println(langText+"    "+j);
-			
-			
-	     		WebElement test=driver.findElement(getLanguageElementByName(langText));
-				wait.until(ExpectedConditions.elementToBeClickable(test));
-				test.click();
-				Thread.sleep(3000);
-				List<WebElement> listOfSideMenu=driver.findElements(sideMenuExpandedList);
-				StringBuilder sb=new StringBuilder();
-				for(int i=0;i<listOfSideMenu.size();i++) {
-					System.out.println(listOfSideMenu.get(i).getText());
-					sb.append(listOfSideMenu.get(i).getText());
-				}
-				
-				LinguaHelper.detectLanguage(sb.toString());
-				Thread.sleep(2000);				
-				driver.findElement(settingEllipsesButton).click();
-				Thread.sleep(2000);
-				driver.findElement(languageDropdownUnderSettings).click();
-			}
-		
-	}
-    
-    
-    
-    
-    
-    public void applyingAllLanguagesFromListTrial() {
-    	
-    	WaitUtility w=new WaitUtility();
-        // assume the language menu is already open when you call this
-        List<WebElement> languageListOptions = w.findVisibleElements(languageList);
-
-        for (int j = 0; j < languageListOptions.size(); j++) {
-            // refresh each iteration to avoid stale elements
-        	languageListOptions = w.findVisibleElements(languageList);
-            if (j >= languageListOptions.size()) break; // safety
-
-            String langText = languageListOptions.get(j).getText().trim();
-            if (langText.isEmpty()) continue;
-
-            System.out.println(langText + "    " + j);
-
-            // click the language option reliably
-            By langLocator = getLanguageElementByName(langText);
-            w.clickWhenReady(langLocator);
-
-            // wait for side menu to populate and collect text
-            List<WebElement> listOfSideMenu = w.findVisibleElements(sideMenuExpandedList);
-            StringBuilder sb = new StringBuilder();
-            for (WebElement el : listOfSideMenu) {
-                System.out.println(el.getText());
-                sb.append(el.getText());
-            }
-
-            // run language detection
-            LinguaHelper.detectLanguage(sb.toString());
-
-            // reopen settings + language menu for next iteration (use robust clicks)
-            w.clickWhenReady(settingEllipsesButton);
-            w.clickWhenReady(languageDropdownUnderSettings);
-        }
+    public List<WebElement> gettingSideMenuExpandedList() throws InterruptedException{
+        
+		 List<WebElement> sideMenuList=driver.findElements(sideMenuExpandedList);
+		 return sideMenuList;
     }
+    
+    public List<String> applyLanguagesFromInternalDataset(){
+    	List<String> linguaAccurateLanguages = Arrays.asList(
+    		    "Afrikaans",
+    		    "Azərbaycan",
+    		    "Bahasa Indonesia",
+    		    "Bosanski",
+    		    "Català",
+    		    "Čeština",
+    		    "Dansk",
+    		    "Deutsch",
+    		    "Eesti",
+    		    "English (India)",
+    		    "English (UK)",
+    		    "English (US)",
+    		    "Español (España)",
+    		    "Español (Latinoamérica)",
+    		    "Español (US)",
+    		    "Euskara",
+    		    "Français",
+    		    "Français (Canada)",
+    		    "Hrvatski",
+    		    "Íslenska",
+    		    "Italiano",
+    		    "Latviešu valoda",
+    		    "Lietuvių",
+    		    "Magyar",
+    		    "Nederlands",
+    		    "Polski",
+    		    "Português",
+    		    "Português (Brasil)",
+    		    "Română",
+    		    "Shqip",
+    		    "Slovenščina",
+    		    "Suomi",
+    		    "Svenska",
+    		    "Tiếng Việt",
+    		    "Türkçe",
+    		    "Беларуская",
+    		    "Български",
+    		    "Русский",
+    		    "Українська",
+    		    "Ελληνικά",
+    		    "Հայերեն",
+    		    "עברית",
+    		    "العربية",
+    		    "فارسی",
+    		    "हिन्दी",
+    		    "বাংলা",
+    		    "ਪੰਜਾਬੀ",
+    		    "ગુજરાતી",
+    		    "தமிழ்",
+    		    "తెలుగు",
+    		    "中文 (简体)",
+    		    "中文 (繁體)",
+    		    "中文 (香港)",
+    		    "日本語",
+    		    "한국어"
+    		);
+    	
+    	
+    		return linguaAccurateLanguages;
+    }
+
+    
+    
+//    public void applyingAllLanguagesFromList() throws InterruptedException {
+//    	
+//    	
+//    	 List<WebElement> languageList = gettingLanguageList();
+//    	
+//    	for(int j=1;j<languageList.size();j++) {
+//			
+//			languageList =	gettingLanguageList();
+//			String langText=languageList.get(j).getText();
+//			System.out.println(langText+"    "+j);
+//			
+//			
+//	     		WebElement test=driver.findElement(getLanguageElementByName(langText));
+//				wait.until(ExpectedConditions.elementToBeClickable(test));
+//				test.click();
+//				Thread.sleep(2000);
+//				List<WebElement> listOfSideMenu=driver.findElements(sideMenuExpandedList);
+//				StringBuilder sb=new StringBuilder();
+//				for(int i=0;i<listOfSideMenu.size();i++) {
+//					System.out.println(listOfSideMenu.get(i).getText());
+//					sb.append(listOfSideMenu.get(i).getText());
+//				}
+//				
+//				LinguaHelper.detectLanguage(sb.toString());
+//				Thread.sleep(2000);				
+//				driver.findElement(settingEllipsesButton).click();
+//				Thread.sleep(2000);
+//				driver.findElement(languageDropdownUnderSettings).click();
+//			}
+//		
+//	}
+//    
+//    
+//    
+//    
+//    
+//    public void applyingLanguagesFromAddedList(List<String> list) throws InterruptedException {
+//    	
+//    	
+//   	 List<String> languageList = list;
+//   	
+//   	
+//   	for(int j=1;j<languageList.size();j++) {
+//			
+//			languageList =	list;
+//			String langText=languageList.get(j);
+//			System.out.println(langText+"    "+j);
+//			
+//			
+//	     		WebElement test=driver.findElement(getLanguageElementByName(langText));
+//				wait.until(ExpectedConditions.elementToBeClickable(test));
+//				test.click();
+//				Thread.sleep(3000);
+//				List<WebElement> listOfSideMenu=driver.findElements(sideMenuExpandedList);
+//				StringBuilder sb=new StringBuilder();
+//				for(int i=0;i<listOfSideMenu.size();i++) {
+//					System.out.println(listOfSideMenu.get(i).getText());
+//					sb.append(listOfSideMenu.get(i).getText());
+//				}
+//				
+//				LinguaHelper.detectLanguage(sb.toString());
+//				Thread.sleep(2000);				
+//				driver.findElement(settingEllipsesButton).click();
+//				Thread.sleep(2000);
+//				driver.findElement(languageDropdownUnderSettings).click();
+//			}
+//		
+//	}
+//    
+//    
+//    
+//    
+//    
+//    public void applyingAllLanguagesFromListTrial() {
+//    	
+//    	WaitUtility w=new WaitUtility();
+//        // assume the language menu is already open when you call this
+//        List<WebElement> languageListOptions = w.findVisibleElements(languageList);
+//
+//        for (int j = 0; j < languageListOptions.size(); j++) {
+//        	
+//            // refresh each iteration to avoid stale elements
+//        	languageListOptions = w.findVisibleElements(languageList);
+//            if (j >= languageListOptions.size()) break; // safety
+//
+//            String langText = languageListOptions.get(j).getText().trim();
+//            if (langText.isEmpty()) continue;
+//
+//            System.out.println(langText + "    " + j);
+//
+//            // click the language option reliably
+//            By langLocator = getLanguageElementByName(langText);
+//            w.clickWhenReady(langLocator);
+//
+//            // wait for side menu to populate and collect text
+//            List<WebElement> listOfSideMenu = w.findVisibleElements(sideMenuExpandedList);
+//            StringBuilder sb = new StringBuilder();
+//            for (WebElement el : listOfSideMenu) {
+//                System.out.println(el.getText());
+//                sb.append(el.getText());
+//            }
+//
+//            // run language detection
+//            LinguaHelper.detectLanguage(sb.toString());
+//            
+//            
+//            // reopen settings + language menu for next iteration (use robust clicks)
+//            w.clickWhenReady(settingEllipsesButton);
+//            w.clickWhenReady(languageDropdownUnderSettings);
+//
+//        }
+//    }
 
     
     
