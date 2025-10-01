@@ -34,11 +34,11 @@ public class YtMasterTests extends BaseTest{
 	    
 	    
 	    Map<String, String> languageMap = new HashMap<>() {{
+	    	put("Afrikaans", "AFRIKAANS");
 	        put("Azərbaycan", "AZERBAIJANI");
 	        put("Bahasa Indonesia", "INDONESIAN");
 	        put("Bosanski", "CROATIAN");
 	        put("Català", "CATALAN");
-	        put("Čeština", "SLOVAK");
 	        put("Dansk", "DANISH");
 	        put("Deutsch", "GERMAN");
 	        put("Eesti", "ESTONIAN");
@@ -61,7 +61,6 @@ public class YtMasterTests extends BaseTest{
 	        put("Polski", "POLISH");
 	        put("Português", "PORTUGUESE");
 	        put("Português (Brasil)", "PORTUGUESE");
-	        put("Română", "SOTHO");
 	        put("Shqip", "ALBANIAN");
 	        put("Slovenščina", "SLOVENE");
 	        put("Suomi", "FINNISH");
@@ -94,7 +93,7 @@ public class YtMasterTests extends BaseTest{
 	    SoftAssert softAssert = new SoftAssert();
         List<String> languageList = yt.applyLanguagesFromInternalDataset();
     	
-    	for(int j=1;j<languageList.size();j++) {
+    	for(int j=0;j<languageList.size();j++) {
 			
 			String langText=languageList.get(j);
 			System.out.println(langText+"    "+j);
@@ -114,8 +113,6 @@ public class YtMasterTests extends BaseTest{
 				String expectedLanguage=languageMap.get(applicableLanguage);
 			
 				System.out.println("ApplicableLanguage  "+applicableLanguage+"     "+"Detected Language   "+detectedLanguage+"  "+"Expected Language  "+expectedLanguage);
-				
-				
 			    softAssert.assertEquals(detectedLanguage, expectedLanguage, "Page title mismatch");
 			    
 				Thread.sleep(2000);				
