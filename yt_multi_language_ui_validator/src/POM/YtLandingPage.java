@@ -90,6 +90,18 @@ public class YtLandingPage  extends BasePage{
 		 return sideMenuList;
     }
     
+    
+    public List<WebElement> gettingSideMenuCollapsedList() throws InterruptedException{
+        
+		 List<WebElement> sideMenuList=driver.findElements(sideMenuCollapsedList);
+		 return sideMenuList;
+   }
+    
+    
+    public void clickingLeftEllipses() {
+    	driver.findElement(ellipsesYtLandingPageTopLeft).click();
+    }
+    
     public List<String> applyLanguagesFromInternalDataset(){
     	List<String> linguaAccurateLanguages = Arrays.asList(
     		    	 "Afrikaans",
