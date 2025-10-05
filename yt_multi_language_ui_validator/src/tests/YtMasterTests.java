@@ -158,12 +158,7 @@ public class YtMasterTests extends BaseTest{
 			Thread.sleep(1000);
 			String sb=yt.getsettingEllipsesOptionsListLandingPage();
 			yt.clickingSettingEllipsesButton();
-//				StringBuilder sb=new StringBuilder();
-//				for(int i=0;i<listOfSideMenu.size();i++) {
-//					System.out.println(listOfSideMenu.get(i).getText());
-//					sb.append(listOfSideMenu.get(i).getText());
-//					sb.append(" ");
-//				}
+		
 				
 				String applicableLanguage=languageList.get(j);
 				String detectedLanguage=LinguaHelper.detectLanguage(sb.toString());

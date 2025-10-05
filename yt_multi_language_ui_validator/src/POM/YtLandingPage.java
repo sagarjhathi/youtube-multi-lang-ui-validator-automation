@@ -21,10 +21,13 @@ import utilities.WaitUtility;
 import yt_multi_language_ui_validator.BasePage;
 import yt_multi_language_ui_validator.BasicTest;
 import yt_multi_language_ui_validator.LinguaHelper;
+import yt_multi_language_ui_validator.SafeActions;
 public class YtLandingPage  extends BasePage{
 	
 //	
 	private  final Logger log = yt_multi_language_ui_validator.LoggerUtility.getLogger(YtLandingPage.class);
+	
+	SafeActions safeAct=new SafeActions();
 	
 	public By sideMenuExpandedList=By.xpath("//ytd-guide-entry-renderer[@class='style-scope ytd-guide-section-renderer']");
 	
@@ -54,10 +57,20 @@ public class YtLandingPage  extends BasePage{
 	//Have to follow the same process of find the location list similar to language list where will have to remove some elements 
 	public By locationList=By.xpath("//yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//ytd-compact-link-renderer");
 	
-	public WebElement getLanguageElementByName(String Name) {
+	public WebElement getLanguageElementByName(String name) {
 		
-		WebElement element=driver.findElement(By.xpath("//yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='" + Name + "']"));
-	    return  element;
+//		WebElement element= driver.findElement(By.xpath("//yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='" + Name + "']"));
+//		WebElement safeElement=safeAct.safeFindElement(element);
+//	    return  safeElement;
+		
+		By locator = By.xpath(
+		        "//yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']" +
+		        "//yt-formatted-string[@id='label' and text()='" + name + "']"
+		    );
+
+		    // now let SafeActions find it safely
+		    WebElement safeElement = safeAct.safeFindElement(locator);
+		    return safeElement;
 	}
 
 

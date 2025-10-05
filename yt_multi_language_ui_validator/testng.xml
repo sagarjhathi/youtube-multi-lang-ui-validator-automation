@@ -5,6 +5,11 @@
     <classes>
       <class name="tests.YtMasterTests">
   
+  <methods>
+  
+  <include name="verifyingSideMenuLanguageAsInSettings"></include>
+  <include name="verifyingSideMenuCollapsedLangAsInSettings"></include>
+  </methods>
       </class>
       
     </classes>

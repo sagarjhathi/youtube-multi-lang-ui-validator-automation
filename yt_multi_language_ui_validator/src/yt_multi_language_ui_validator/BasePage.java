@@ -10,12 +10,15 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import utilities.WaitUtility;
+
 
 
 public class BasePage {
 
 	public WebDriver driver;
 	protected WebDriverWait wait;
+
 
 	public BasePage() {
         this.driver = DriverManager.getDriver();

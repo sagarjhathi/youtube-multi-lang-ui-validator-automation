@@ -22,7 +22,7 @@ public class WaitUtility extends BasePage {
 	private  final Logger log = yt_multi_language_ui_validator.LoggerUtility.getLogger(WaitUtility.class);
 
 
-	protected WebElement waitForElementReady(By by) {
+	public WebElement waitForElementReady(By by) {
 	    return waitForElementReady(by, Duration.ofSeconds(10), 3);
 	}
 
@@ -41,9 +41,7 @@ public class WaitUtility extends BasePage {
 	            el = w.until(ExpectedConditions.elementToBeClickable(by));
 	            // final sanity checks
 	            if (el.isDisplayed() && el.isEnabled()) return el;
-	            else { driver.navigate().refresh(); 
-	            log.info("[{}]Refreshing the page in else section", ThreadContext.get("testName"));
-	            }
+	           
 	            // otherwise loop and retry
 	        } catch (StaleElementReferenceException | org.openqa.selenium.TimeoutException ignored) {
 	            // try again
