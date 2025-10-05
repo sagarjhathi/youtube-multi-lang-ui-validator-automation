@@ -61,6 +61,21 @@ public class YtLandingPage  extends BasePage{
 	}
 
 
+	public void clickingLocationDropdownUnderSettings() {
+		
+		driver.findElement(locationDropdownUnderSettings).click();
+		
+	}
+	
+	public List<WebElement> getLocationList() {
+		
+		List<WebElement>list=driver.findElements(locationList);
+		list.removeIf(el -> el.getText().trim().isEmpty());
+		return list;
+		
+	}
+	
+	
     public void openingLandingPage() {
     	driver.get("https://www.youtube.com/");
     }
@@ -81,6 +96,12 @@ public class YtLandingPage  extends BasePage{
     		 List<WebElement> langList=driver.findElements(languageList);
     		 langList.removeIf(el -> el.getText().trim().isEmpty());
     		 return langList;
+    }
+    
+    
+    public String getsettingEllipsesOptionsListLandingPage() {
+    	String str=driver.findElement(settingEllipsesOptionsListLandingPage).getText();
+    	return str;
     }
     
     
@@ -164,8 +185,137 @@ public class YtLandingPage  extends BasePage{
     }
     
     
+    public String getCountryCode() {
+	
+    	String str= driver.findElement(countryCodeOnYtLogoLandingPage).getText();
+    	return str;
+     }
 
 
+    public String getExpectedCountryCodeViaLocation(String location) {
+    	
+    	
+    	
+    	Map<String, String> countryCodeMap = new HashMap<>() {{
+    	    put("Argentina", "AR");
+    	    put("Australia", "AU");
+    	    put("Austria", "AT");
+    	    put("Azerbaijan", "AZ");
+    	    put("Bahrain", "BH");
+    	    put("Bangladesh", "BD");
+    	    put("Belarus", "BY");
+    	    put("Belgium", "BE");
+    	    put("Bolivia", "BO");
+    	    put("Bosnia and Herzegovina", "BA");
+    	    put("Brazil", "BR");
+    	    put("Bulgaria", "BG");
+    	    put("Cambodia", "KH");
+    	    put("Canada", "CA");
+    	    put("Chile", "CL");
+    	    put("Colombia", "CO");
+    	    put("Costa Rica", "CR");
+    	    put("Croatia", "HR");
+    	    put("Cyprus", "CY");
+    	    put("Czechia", "CZ");
+    	    put("Denmark", "DK");
+    	    put("Dominican Republic", "DO");
+    	    put("Ecuador", "EC");
+    	    put("Egypt", "EG");
+    	    put("El Salvador", "SV");
+    	    put("Estonia", "EE");
+    	    put("Finland", "FI");
+    	    put("France", "FR");
+    	    put("Georgia", "GE");
+    	    put("Germany", "DE");
+    	    put("Ghana", "GH");
+    	    put("Greece", "GR");
+    	    put("Guatemala", "GT");
+    	    put("Honduras", "HN");
+    	    put("Hong Kong", "HK");
+    	    put("Hungary", "HU");
+    	    put("Iceland", "IS");
+    	    put("India", "IN");
+    	    put("Indonesia", "ID");
+    	    put("Iraq", "IQ");
+    	    put("Ireland", "IE");
+    	    put("Israel", "IL");
+    	    put("Italy", "IT");
+    	    put("Jamaica", "JM");
+    	    put("Japan", "JP");
+    	    put("Jordan", "JO");
+    	    put("Kazakhstan", "KZ");
+    	    put("Kenya", "KE");
+    	    put("Kuwait", "");
+    	    put("Laos", "LA");
+    	    put("Latvia", "LV");
+    	    put("Lebanon", "LB");
+    	    put("Libya", "LY");
+    	    put("Liechtenstein", "LI");
+    	    put("Lithuania", "LT");
+    	    put("Luxembourg", "LU");
+    	    put("Malaysia", "MY");
+    	    put("Malta", "MT");
+    	    put("Mexico", "");
+    	    put("Moldova", "MD");
+    	    put("Montenegro", "ME");
+    	    put("Morocco", "MA");
+    	    put("Nepal", "NP");
+    	    put("Netherlands", "NL");
+    	    put("New Zealand", "NZ");
+    	    put("Nicaragua", "NI");
+    	    put("Nigeria", "NG");
+    	    put("North Macedonia", "MK");
+    	    put("Norway", "NO");
+    	    put("Oman", "OM");
+    	    put("Pakistan", "PK");
+    	    put("Panama", "PA");
+    	    put("Papua New Guinea", "");
+    	    put("Paraguay", "PY");
+    	    put("Peru", "PE");
+    	    put("Philippines", "PH");
+    	    put("Poland", "PL");
+    	    put("Portugal", "PT");
+    	    put("Puerto Rico", "PR");
+    	    put("Qatar", "QA");
+    	    put("Romania", "RO");
+    	    put("Russia", "RU");
+    	    put("Saudi Arabia", "SA");
+    	    put("Senegal", "SN");
+    	    put("Serbia", "RS");
+    	    put("Singapore", "SG");
+    	    put("Slovakia", "");
+    	    put("Slovenia", "SI");
+    	    put("South Africa", "ZA");
+    	    put("South Korea", "KR");
+    	    put("Spain", "ES");
+    	    put("Sri Lanka", "LK");
+    	    put("Sweden", "SE");
+    	    put("Switzerland", "");
+    	    put("Taiwan", "TW");
+    	    put("Tanzania", "TZ");
+    	    put("Thailand", "TH");
+    	    put("Tunisia", "TN");
+    	    put("Turkey", "TR");
+    	    put("Uganda", "UG");
+    	    put("Ukraine", "UA");
+    	    put("United Arab Emirates", "AE");
+    	    put("United Kingdom", "GB");
+    	    put("United States", "");
+    	    put("Uruguay", "UY");
+    	    put("Venezuela", "VE");
+    	    put("Vietnam", "VN");
+    	    put("Yemen", "YE");
+    	    put("Zimbabwe", "ZW");
+    	}};
+
+    	
+    	if(countryCodeMap.containsKey(location)) {
+    		return countryCodeMap.get(location);
+    	}else {
+    		System.out.println("Location input does not exist");
+    		return null;
+    	}
+    }
 
     
     

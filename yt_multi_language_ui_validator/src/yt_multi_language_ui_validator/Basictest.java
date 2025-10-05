@@ -24,10 +24,10 @@ public class BasicTest {
 		WebDriver driver=new ChromeDriver();
 		driver.manage().window().maximize();
 	//	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-		driver.get("https://www.youtube.com/watch?v=q0aFOxT6TNw");
+		driver.get("https://www.youtube.com");
 		
         
-		YtLandingPage yt=new YtLandingPage();
+		
 		
 		
 		

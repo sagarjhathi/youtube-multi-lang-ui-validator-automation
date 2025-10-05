@@ -16,6 +16,7 @@ import org.testng.asserts.SoftAssert;
 
 import POM.YtLandingPage;
 import yt_multi_language_ui_validator.BaseTest;
+import yt_multi_language_ui_validator.GenericUtility;
 import yt_multi_language_ui_validator.LinguaHelper;
 
 public class YtMasterTests extends BaseTest{
@@ -25,71 +26,13 @@ public class YtMasterTests extends BaseTest{
 	public void verifyingSideMenuLanguageAsInSettings() throws InterruptedException {
 
 		YtLandingPage yt=new YtLandingPage();
+		GenericUtility g=new GenericUtility();
 		yt.openingLandingPage();
 		yt.clickingSettingEllipsesButton();
 		Thread.sleep(2000);
 		yt.clickingLanguageDropdownButton();
 	    Thread.sleep(2000);
-	    	
-	    
-	    
-	    Map<String, String> languageMap = new HashMap<>() {{
-	    	put("Afrikaans", "AFRIKAANS");
-	        put("Azərbaycan", "AZERBAIJANI");
-	        put("Bahasa Indonesia", "INDONESIAN");
-	        put("Bosanski", "CROATIAN");
-	        put("Català", "CATALAN");
-	        put("Dansk", "DANISH");
-	        put("Deutsch", "GERMAN");
-	        put("Eesti", "ESTONIAN");
-	        put("English (India)", "ENGLISH");
-	        put("English (UK)", "ENGLISH");
-	        put("English (US)", "ENGLISH");
-	        put("Español (España)", "SPANISH");
-	        put("Español (Latinoamérica)", "SPANISH");
-	        put("Español (US)", "SPANISH");
-	        put("Euskara", "BASQUE");
-	        put("Français", "FRENCH");
-	        put("Français (Canada)", "FRENCH");
-	        put("Hrvatski", "CROATIAN");
-	        put("Íslenska", "ICELANDIC");
-	        put("Italiano", "ITALIAN");
-	        put("Latviešu valoda", "LATVIAN");
-	        put("Lietuvių", "LITHUANIAN");
-	        put("Magyar", "HUNGARIAN");
-	        put("Nederlands", "DUTCH");
-	        put("Polski", "POLISH");
-	        put("Português", "PORTUGUESE");
-	        put("Português (Brasil)", "PORTUGUESE");
-	        put("Shqip", "ALBANIAN");
-	        put("Slovenščina", "SLOVENE");
-	        put("Suomi", "FINNISH");
-	        put("Svenska", "SWEDISH");
-	        put("Tiếng Việt", "VIETNAMESE");
-	        put("Türkçe", "TURKISH");
-	        put("Беларуская", "BELARUSIAN");
-	        put("Български", "BULGARIAN");
-	        put("Русский", "RUSSIAN");
-	        put("Українська", "UKRAINIAN");
-	        put("Ελληνικά", "GREEK");
-	        put("Հայերեն", "ARMENIAN");
-	        put("עברית", "HEBREW");
-	        put("العربية", "ARABIC");
-	        put("فارسی", "PERSIAN");
-	        put("हिन्दी", "HINDI");
-	        put("বাংলা", "BENGALI");
-	        put("ਪੰਜਾਬੀ", "PUNJABI");
-	        put("ગુજરાતી", "GUJARATI");
-	        put("தமிழ்", "TAMIL");
-	        put("తెలుగు", "TELUGU");
-	        put("中文 (简体)", "CHINESE");
-	        put("中文 (繁體)", "CHINESE");
-	        put("中文 (香港)", "CHINESE");
-	        put("日本語", "JAPANESE");
-	        put("한국어", "KOREAN");
-	    }};
-	    
-	    
+	    		    
 	    SoftAssert softAssert = new SoftAssert();
         List<String> languageList = yt.applyLanguagesFromInternalDataset();
     	
@@ -106,14 +49,22 @@ public class YtMasterTests extends BaseTest{
 				for(int i=0;i<listOfSideMenu.size();i++) {
 					System.out.println(listOfSideMenu.get(i).getText());
 					sb.append(listOfSideMenu.get(i).getText());
+					sb.append(" ");
 				}
 				
 				String applicableLanguage=languageList.get(j);
 				String detectedLanguage=LinguaHelper.detectLanguage(sb.toString());
-				String expectedLanguage=languageMap.get(applicableLanguage);
+				String expectedLanguage=g.getExpectedLangageViaApplicableLangInput(applicableLanguage);
 			
+				String expectedLanguageAttribute=g.getLangAttributeViaLanguageInput(applicableLanguage);
+				String detectedLanguageAttribute=g.getLangAttribute();
+				
 				System.out.println("ApplicableLanguage  "+applicableLanguage+"     "+"Detected Language   "+detectedLanguage+"  "+"Expected Language  "+expectedLanguage);
+				System.out.println("ApplicableLanguage  "+applicableLanguage+"     "+"Detected Language attribute   "+detectedLanguageAttribute+"  "+"Expected Language attribute "+expectedLanguageAttribute);
+
 			    softAssert.assertEquals(detectedLanguage, expectedLanguage, "Page title mismatch");
+			    softAssert.assertEquals(detectedLanguageAttribute, expectedLanguageAttribute, "Language attributr mismatch");
+
 			    
 			    yt.clickingSettingEllipsesButton();
 				Thread.sleep(2000);
@@ -128,71 +79,14 @@ public class YtMasterTests extends BaseTest{
 	@Test(priority=-1)
 	public void verifyingSideMenuCollapsedLangAsInSettings() throws InterruptedException {
 		YtLandingPage yt=new YtLandingPage();
+		GenericUtility gn=new GenericUtility();
 		yt.openingLandingPage();
 		yt.clickingLeftEllipses();
 		Thread.sleep(1000);
 		yt.clickingSettingEllipsesButton();
 		Thread.sleep(2000);
 		yt.clickingLanguageDropdownButton();
-		
-		
-		  Map<String, String> languageMap = new HashMap<>() {{
-		    	put("Afrikaans", "AFRIKAANS");
-		        put("Azərbaycan", "AZERBAIJANI");
-		        put("Bahasa Indonesia", "INDONESIAN");
-		        put("Bosanski", "CROATIAN");
-		        put("Català", "CATALAN");
-		        put("Dansk", "DANISH");
-		        put("Deutsch", "GERMAN");
-		        put("Eesti", "ESTONIAN");
-		        put("English (India)", "ENGLISH");
-		        put("English (UK)", "ENGLISH");
-		        put("English (US)", "ENGLISH");
-		        put("Español (España)", "SPANISH");
-		        put("Español (Latinoamérica)", "SPANISH");
-		        put("Español (US)", "SPANISH");
-		        put("Euskara", "BASQUE");
-		        put("Français", "FRENCH");
-		        put("Français (Canada)", "FRENCH");
-		        put("Hrvatski", "CROATIAN");
-		        put("Íslenska", "ICELANDIC");
-		        put("Italiano", "ITALIAN");
-		        put("Latviešu valoda", "LATVIAN");
-		        put("Lietuvių", "LITHUANIAN");
-		        put("Magyar", "HUNGARIAN");
-		        put("Nederlands", "DUTCH");
-		        put("Polski", "POLISH");
-		        put("Português", "PORTUGUESE");
-		        put("Português (Brasil)", "PORTUGUESE");
-		        put("Shqip", "ALBANIAN");
-		        put("Slovenščina", "SLOVENE");
-		        put("Suomi", "FINNISH");
-		        put("Svenska", "SWEDISH");
-		        put("Tiếng Việt", "VIETNAMESE");
-		        put("Türkçe", "TURKISH");
-		        put("Беларуская", "BELARUSIAN");
-		        put("Български", "BULGARIAN");
-		        put("Русский", "RUSSIAN");
-		        put("Українська", "UKRAINIAN");
-		        put("Ελληνικά", "GREEK");
-		        put("Հայերեն", "ARMENIAN");
-		        put("עברית", "HEBREW");
-		        put("العربية", "ARABIC");
-		        put("فارسی", "PERSIAN");
-		        put("हिन्दी", "HINDI");
-		        put("বাংলা", "BENGALI");
-		        put("ਪੰਜਾਬੀ", "PUNJABI");
-		        put("ગુજરાતી", "GUJARATI");
-		        put("தமிழ்", "TAMIL");
-		        put("తెలుగు", "TELUGU");
-		        put("中文 (简体)", "CHINESE");
-		        put("中文 (繁體)", "CHINESE");
-		        put("中文 (香港)", "CHINESE");
-		        put("日本語", "JAPANESE");
-		        put("한국어", "KOREAN");
-		    }};
-		    
-		    
+				    
 		    SoftAssert softAssert = new SoftAssert();
 	        List<String> languageList = yt.applyLanguagesFromInternalDataset();
 	    	
@@ -202,6 +96,7 @@ public class YtMasterTests extends BaseTest{
 				System.out.println(langText+"    "+j);
 				
 		     	yt.getLanguageElementByName(langText).click();	
+		     	gn.getLangAttribute();
 				Thread.sleep(2000);
 				List<WebElement> listOfSideMenu=yt.gettingSideMenuCollapsedList();
 				
@@ -209,28 +104,134 @@ public class YtMasterTests extends BaseTest{
 					for(int i=0;i<listOfSideMenu.size();i++) {
 						System.out.println(listOfSideMenu.get(i).getText());
 						sb.append(listOfSideMenu.get(i).getText());
+						sb.append(" ");
 					}
 					
 					String applicableLanguage=languageList.get(j);
 					String detectedLanguage=LinguaHelper.detectLanguage(sb.toString());
-					String expectedLanguage=languageMap.get(applicableLanguage);
+					String expectedLanguage=gn.getExpectedLangageViaApplicableLangInput(applicableLanguage);
+
 				
+					String expectedLanguageAttribute=gn.getLangAttributeViaLanguageInput(applicableLanguage);
+					String detectedLanguageAttribute=gn.getLangAttribute();
+					
 					System.out.println("ApplicableLanguage  "+applicableLanguage+"     "+"Detected Language   "+detectedLanguage+"  "+"Expected Language  "+expectedLanguage);
-				    softAssert.assertEquals(detectedLanguage, expectedLanguage, "Page title mismatch");
+					System.out.println("ApplicableLanguage  "+applicableLanguage+"     "+"Detected Language attribute   "+detectedLanguageAttribute+"  "+"Expected Language attribute "+expectedLanguageAttribute);
+
+				    softAssert.assertEquals(detectedLanguage, expectedLanguage, "Language detection mismatch");
+				    softAssert.assertEquals(detectedLanguageAttribute, expectedLanguageAttribute, "Language attributr mismatch");
+				    
 				    
 				    yt.clickingSettingEllipsesButton();
 					Thread.sleep(2000);
 					yt.clickingLanguageDropdownButton();
 				    Thread.sleep(2000);
 				}
-	    	     softAssert.assertAll();
-		
-		
+	    	
+	    	    softAssert.assertAll();	
 	}
 	
 	
+	@Test
+	public void verifyingSettingOptionsLang() throws InterruptedException {
+		YtLandingPage yt=new YtLandingPage();
+		GenericUtility gn=new GenericUtility();
+		yt.openingLandingPage();
+		yt.clickingSettingEllipsesButton();
+		Thread.sleep(1000);
+		yt.clickingLanguageDropdownButton();
+		Thread.sleep(1000);
+		
+		SoftAssert softAssert=new SoftAssert();
+		
+		List<String> languageList=yt.applyLanguagesFromInternalDataset();
+		
+		for(int j=0;j<languageList.size();j++) {
+			
+			String langText=languageList.get(j);
+			System.out.println(langText+"    "+j);
+			
+	     	yt.getLanguageElementByName(langText).click();	
+			Thread.sleep(2000);
+			
+			yt.clickingSettingEllipsesButton();
+			Thread.sleep(1000);
+			String sb=yt.getsettingEllipsesOptionsListLandingPage();
+			yt.clickingSettingEllipsesButton();
+//				StringBuilder sb=new StringBuilder();
+//				for(int i=0;i<listOfSideMenu.size();i++) {
+//					System.out.println(listOfSideMenu.get(i).getText());
+//					sb.append(listOfSideMenu.get(i).getText());
+//					sb.append(" ");
+//				}
+				
+				String applicableLanguage=languageList.get(j);
+				String detectedLanguage=LinguaHelper.detectLanguage(sb.toString());
+				String expectedLanguage=gn.getExpectedLangageViaApplicableLangInput(applicableLanguage);
 
+			
+				String expectedLanguageAttribute=gn.getLangAttributeViaLanguageInput(applicableLanguage);
+				String detectedLanguageAttribute=gn.getLangAttribute();
+				
+				System.out.println("ApplicableLanguage  "+applicableLanguage+"     "+"Detected Language   "+detectedLanguage+"  "+"Expected Language  "+expectedLanguage);
+				System.out.println("ApplicableLanguage  "+applicableLanguage+"     "+"Detected Language attribute   "+detectedLanguageAttribute+"  "+"Expected Language attribute "+expectedLanguageAttribute);
+
+			    softAssert.assertEquals(detectedLanguage, expectedLanguage, "Language detection mismatch");
+			    softAssert.assertEquals(detectedLanguageAttribute, expectedLanguageAttribute, "Language attributr mismatch");
+			    
+			    
+			    yt.clickingSettingEllipsesButton();
+				Thread.sleep(2000);
+				yt.clickingLanguageDropdownButton();
+			    Thread.sleep(2000);
+			}
+    	
+    	    softAssert.assertAll();	
+	}
 	
+	
+	
+	
+	@Test
+	public void verifyCountryCodeAsBasedOnRegion() throws InterruptedException {
+		YtLandingPage yt=new YtLandingPage();
+		yt.openingLandingPage();
+		Thread.sleep(3000);
+		yt.clickingSettingEllipsesButton();
+		Thread.sleep(2000);
+		yt.clickingLocationDropdownUnderSettings();
+		Thread.sleep(2000);
+		
+		SoftAssert softAssert=new SoftAssert();
+		
+		List<WebElement> locationList=yt.getLocationList();
+		
+		for(int i=1;i<locationList.size();i++) {
+			locationList=yt.getLocationList();
+			String locationText=locationList.get(i).getText();
+			System.out.println(locationText+"    "+i);
+
+			locationList.get(i).click();
+			
+			String applicableLocation=locationText;
+			String expectedCountryCode=yt.getExpectedCountryCodeViaLocation(locationText);
+			String detectedCountryCode=yt.getCountryCode();
+			
+			System.out.println("applicable location is ==  "+applicableLocation+" Expected location  =="+expectedCountryCode+"  detected country code"+detectedCountryCode);
+			softAssert.assertEquals(detectedCountryCode, expectedCountryCode,"Country code mismacth");
+			
+				Thread.sleep(2000);
+		    	yt.clickingSettingEllipsesButton();
+				Thread.sleep(2000);
+				yt.clickingLocationDropdownUnderSettings();
+			    Thread.sleep(2000);
+			
+			
+		}
+		softAssert.assertAll();
+		
+		
+	}
 
 	
 	
