@@ -4,10 +4,14 @@ import java.util.HashMap;
 import java.util.Map;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 
-public class GenericUtility extends BasePage {
+import POM.YtLandingPage;
 
+public class GenericUtility extends BasePage {
+		SafeActions safeAct = new SafeActions();
+		
 	public  String getLangAttribute() {
 		WebElement html = driver.findElement(By.xpath("//html"));
 		String langProp = html.getDomProperty("lang"); 
@@ -87,6 +91,7 @@ public class GenericUtility extends BasePage {
 	
 	
 	public String getExpectedLangageViaApplicableLangInput(String langInput) {
+
 		
 		
 		 Map<String, String> languageMap = new HashMap<>() {{
@@ -156,6 +161,13 @@ public class GenericUtility extends BasePage {
 			}
 		    
 		    
-		    
 	}
+	
+	
+	public void clickEnter(By locator) {
+		
+		safeAct.safeFindElement(locator).sendKeys(Keys.ENTER);
+		
+	}
+	
 }

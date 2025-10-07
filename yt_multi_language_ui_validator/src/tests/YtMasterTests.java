@@ -86,7 +86,9 @@ public class YtMasterTests extends BaseTest{
 		yt.clickingSettingEllipsesButton();
 		Thread.sleep(2000);
 		yt.clickingLanguageDropdownButton();
-				    
+        Thread.sleep(2000);
+        
+        
 		    SoftAssert softAssert = new SoftAssert();
 	        List<String> languageList = yt.applyLanguagesFromInternalDataset();
 	    	
@@ -224,10 +226,33 @@ public class YtMasterTests extends BaseTest{
 			
 		}
 		softAssert.assertAll();
+	}
+
+	
+	
+	@Test
+	public void verifyingGlobalFilterLandingPage() {
+		GenericUtility genericUtility=new GenericUtility();
+		
+		YtLandingPage yt=new YtLandingPage();
+		yt.openingLandingPage();
+		yt.givingInputUnderSearchBar("video");
+		genericUtility.clickEnter(yt.searchInputLandinfPage);
+		yt.clickingGlobalFilterButton();
+		String str=yt.getDataFromGlobalFilterPopup();
+		System.out.println(str);
+		yt.closeGlobalFilterPopup();
+		
 		
 		
 	}
-
+	
+	
+	
+	
+	
+	
+	
 	
 	
 }

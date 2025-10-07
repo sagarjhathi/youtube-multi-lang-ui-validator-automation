@@ -47,42 +47,66 @@ public class YtLandingPage  extends BasePage{
 	
 	public By languageListUpdated=By.xpath("//ytd-multi-page-menu-renderer[@slot='dropdown-content']");
 	
+	public By searchInputLandinfPage=By.xpath("//input[@class='ytSearchboxComponentInput yt-searchbox-input title']");
 	
 	//Cannot use this directly as this banner wouldnt show if yt does not have a search histroy so to show these recommendation banner
 	public By horizontalScrollBarLandingPage=By.xpath("//div[@id='scroll-container']");
 	
-	
 	public By locationDropdownUnderSettings=By.xpath("(//div[@id='content-icon'])[4]");
 	
-	//Have to follow the same process of find the location list similar to language list where will have to remove some elements 
 	public By locationList=By.xpath("//yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//ytd-compact-link-renderer");
 	
+	public By globalFilterButton = By.xpath("//div[@id='filter-button']");
+	
+	public By globalFilterData=By.xpath("//ytd-search-filter-options-dialog-renderer[@class='style-scope ytd-popup-container']");
+	
+	public By closeButtonGlobalFilterPopup=By.xpath("//yt-icon[@icon='close']");
+	
+	
+	
+	
+	
 	public WebElement getLanguageElementByName(String name) {
-		
-//		WebElement element= driver.findElement(By.xpath("//yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='" + Name + "']"));
-//		WebElement safeElement=safeAct.safeFindElement(element);
-//	    return  safeElement;
-		
-		By locator = By.xpath(
-		        "//yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']" +
-		        "//yt-formatted-string[@id='label' and text()='" + name + "']"
-		    );
-
-		    // now let SafeActions find it safely
-		    WebElement safeElement = safeAct.safeFindElement(locator);
-		    return safeElement;
+		By locator=By.xpath("//yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='" + name + "']");
+		WebElement element=driver.findElement(locator);
+		return element;
+//		    WebElement safeElement = safeAct.safeFindElement(locator);
+//		    return safeElement;
 	}
 
+	public void clickingUnderSearchInput() {
+		safeAct.safeFindElement(searchInputLandinfPage);
+		safeAct.safeClick(searchInputLandinfPage);
+	}
+	
+	public void givingInputUnderSearchBar(String input) {
+		safeAct.safeClick(searchInputLandinfPage);
+		safeAct.safeFindElement(searchInputLandinfPage).sendKeys(input);
+	}
 
+	
+	public void clickingGlobalFilterButton() {
+		safeAct.safeClick(globalFilterButton);
+	}
+	
+	
 	public void clickingLocationDropdownUnderSettings() {
 		
-		driver.findElement(locationDropdownUnderSettings).click();
+		//driver.findElement(locationDropdownUnderSettings).click();
+		safeAct.safeClick(locationDropdownUnderSettings);
 		
 	}
+	
+	
+	
+	public void closeGlobalFilterPopup() {
+		safeAct.safeFindElement(closeButtonGlobalFilterPopup).click();
+	}
+	
 	
 	public List<WebElement> getLocationList() {
 		
-		List<WebElement>list=driver.findElements(locationList);
+		List<WebElement>list=safeAct.safeFindElements(locationList);
 		list.removeIf(el -> el.getText().trim().isEmpty());
 		return list;
 		
@@ -95,46 +119,58 @@ public class YtLandingPage  extends BasePage{
     
     public void clickingSettingEllipsesButton() throws InterruptedException {
    
-    	driver.findElement(settingEllipsesButton).click();
+    	//driver.findElement(settingEllipsesButton).click();
+        	safeAct.safeClick(settingEllipsesButton);
     }
     
     public void clickingLanguageDropdownButton() throws InterruptedException {
 
-    	driver.findElement(languageDropdownUnderSettings).click();
+//    	driver.findElement(languageDropdownUnderSettings).click();
+    	safeAct.safeClick(locationDropdownUnderSettings);
     	
     }
     
     public List<WebElement> gettingLanguageList() throws InterruptedException{
     
-    		 List<WebElement> langList=driver.findElements(languageList);
+    		 List<WebElement> langList=safeAct.safeFindElements(languageList);
     		 langList.removeIf(el -> el.getText().trim().isEmpty());
     		 return langList;
     }
     
     
     public String getsettingEllipsesOptionsListLandingPage() {
-    	String str=driver.findElement(settingEllipsesOptionsListLandingPage).getText();
+    	String str=safeAct.safeFindElement(settingEllipsesOptionsListLandingPage).getText();
     	return str;
     }
     
     
     public List<WebElement> gettingSideMenuExpandedList() throws InterruptedException{
         
-		 List<WebElement> sideMenuList=driver.findElements(sideMenuExpandedList);
+		 List<WebElement> sideMenuList=safeAct.safeFindElements(sideMenuExpandedList);
 		 return sideMenuList;
     }
     
     
     public List<WebElement> gettingSideMenuCollapsedList() throws InterruptedException{
         
-		 List<WebElement> sideMenuList=driver.findElements(sideMenuCollapsedList);
+		 List<WebElement> sideMenuList=safeAct.safeFindElements(sideMenuCollapsedList);
 		 return sideMenuList;
    }
     
     
     public void clickingLeftEllipses() {
-    	driver.findElement(ellipsesYtLandingPageTopLeft).click();
+    	safeAct.safeFindElement(ellipsesYtLandingPageTopLeft).click();
     }
+    
+    
+    
+    public String getDataFromGlobalFilterPopup() {
+    	String str=safeAct.safeFindElement(globalFilterData).getText();
+    	return str;
+    }
+    
+    
+    
     
     public List<String> applyLanguagesFromInternalDataset(){
     	List<String> linguaAccurateLanguages = Arrays.asList(
@@ -200,7 +236,7 @@ public class YtLandingPage  extends BasePage{
     
     public String getCountryCode() {
 	
-    	String str= driver.findElement(countryCodeOnYtLogoLandingPage).getText();
+    	String str= safeAct.safeFindElement(countryCodeOnYtLogoLandingPage).getText();
     	return str;
      }
 
