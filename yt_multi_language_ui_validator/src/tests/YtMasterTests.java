@@ -200,7 +200,6 @@ public class YtMasterTests extends BaseTest{
 		Thread.sleep(2000);
 		
 		SoftAssert softAssert=new SoftAssert();
-		
 		List<WebElement> locationList=yt.getLocationList();
 		
 		for(int i=1;i<locationList.size();i++) {
