@@ -1,5 +1,6 @@
 package yt_multi_language_ui_validator;
 
+import java.time.Duration;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -9,6 +10,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import POM.YtLandingPage;
@@ -191,4 +193,48 @@ public class GenericUtility extends BasePage {
 	
 	
       }
+	 
+	 
+	 
+	 
+	 
+	 public void waitForPageLoadSimple(long timeoutSeconds, String spinnerCssSelector) {
+		    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeoutSeconds));
+		    wait.pollingEvery(Duration.ofMillis(500));
+
+		    ExpectedCondition<Boolean> documentReady = drv -> {
+		        try {
+		            String state = ((JavascriptExecutor) drv).executeScript("return document.readyState").toString();
+		            return "complete".equals(state);
+		        } catch (Exception e) {
+		            return false;
+		        }
+		    };
+
+		    try {
+		        wait.until(documentReady);
+
+		        if (spinnerCssSelector != null && !spinnerCssSelector.isEmpty()) {
+		            // wait for spinner to go away if provided
+		            wait.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(spinnerCssSelector)));
+		        }
+		        return;
+		    } catch (org.openqa.selenium.TimeoutException e) {
+		        // one gentle retry: refresh + wait again
+		        try {
+		            driver.navigate().refresh();
+		            // small pause so browser begins to load after refresh
+		            Thread.sleep(800);
+		            wait.until(documentReady);
+		            if (spinnerCssSelector != null && !spinnerCssSelector.isEmpty()) {
+		                wait.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(spinnerCssSelector)));
+		            }
+		            return;
+		        } catch (Exception retryEx) {
+		            // final fallback: throw TimeoutException to let caller decide
+		            throw new org.openqa.selenium.TimeoutException(
+		                "Page did not finish loading (after one refresh).", retryEx);
+		        }
+		    }
+		}
 }

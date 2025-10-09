@@ -70,7 +70,7 @@ public class YtMasterTests extends BaseTest{
 				Thread.sleep(2000);
 				yt.clickingLanguageDropdownButton();
 			    Thread.sleep(2000);
-			    g.waitForPageLoad();
+			    g.waitForPageLoadSimple(5, ".spinner");
 			}
     	     softAssert.assertAll();
 	}
@@ -129,7 +129,7 @@ public class YtMasterTests extends BaseTest{
 					Thread.sleep(2000);
 					yt.clickingLanguageDropdownButton();
 				    Thread.sleep(2000);
-				    gn.waitForPageLoad();
+				    gn.waitForPageLoadSimple(5, ".spinner");
 				}
 	    	
 	    	    softAssert.assertAll();	
@@ -183,7 +183,7 @@ public class YtMasterTests extends BaseTest{
 				Thread.sleep(2000);
 				yt.clickingLanguageDropdownButton();
 			    Thread.sleep(2000);
-			    gn.waitForPageLoad();
+			   gn.waitForPageLoadSimple(5, ".spinner");
 			}
     	
     	    softAssert.assertAll();	
@@ -225,7 +225,7 @@ public class YtMasterTests extends BaseTest{
 				Thread.sleep(2000);
 				yt.clickingLocationDropdownUnderSettings();
 			    Thread.sleep(2000);
-			    gn.waitForPageLoad();
+			    gn.waitForPageLoadSimple(5, ".spinner");
 			
 			
 		}
