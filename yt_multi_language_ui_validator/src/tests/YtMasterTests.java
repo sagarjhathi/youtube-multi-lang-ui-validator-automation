@@ -70,6 +70,7 @@ public class YtMasterTests extends BaseTest{
 				Thread.sleep(2000);
 				yt.clickingLanguageDropdownButton();
 			    Thread.sleep(2000);
+			    g.waitForPageLoad();
 			}
     	     softAssert.assertAll();
 	}
@@ -128,6 +129,7 @@ public class YtMasterTests extends BaseTest{
 					Thread.sleep(2000);
 					yt.clickingLanguageDropdownButton();
 				    Thread.sleep(2000);
+				    gn.waitForPageLoad();
 				}
 	    	
 	    	    softAssert.assertAll();	
@@ -181,6 +183,7 @@ public class YtMasterTests extends BaseTest{
 				Thread.sleep(2000);
 				yt.clickingLanguageDropdownButton();
 			    Thread.sleep(2000);
+			    gn.waitForPageLoad();
 			}
     	
     	    softAssert.assertAll();	
@@ -192,6 +195,7 @@ public class YtMasterTests extends BaseTest{
 	@Test
 	public void verifyCountryCodeAsBasedOnRegion() throws InterruptedException {
 		YtLandingPage yt=new YtLandingPage();
+		GenericUtility gn=new GenericUtility();
 		yt.openingLandingPage();
 		Thread.sleep(3000);
 		yt.clickingSettingEllipsesButton();
@@ -221,6 +225,7 @@ public class YtMasterTests extends BaseTest{
 				Thread.sleep(2000);
 				yt.clickingLocationDropdownUnderSettings();
 			    Thread.sleep(2000);
+			    gn.waitForPageLoad();
 			
 			
 		}

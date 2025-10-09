@@ -4,8 +4,12 @@ import java.util.HashMap;
 import java.util.Map;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import POM.YtLandingPage;
 
@@ -170,4 +174,21 @@ public class GenericUtility extends BasePage {
 		
 	}
 	
+	
+	
+	 public  void waitForPageLoad() {
+	       
+	 String status=((JavascriptExecutor) driver).executeScript("return document.readyState").toString();
+	 if(status.equals("complete")){
+		System.out.println("Page has loaded");
+	 }else {
+		driver.navigate().refresh();
+		System.out.println("Refreshing the page to load the page");
+		
+	 }
+	            
+
+	
+	
+      }
 }

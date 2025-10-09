@@ -67,9 +67,7 @@ public class YtLandingPage  extends BasePage{
 	
 	
 	public WebElement getLanguageElementByName(String name) {
-		By locator=By.xpath("//yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='" + name + "']");
-//		WebElement element=driver.findElement(locator);
-//		return element;
+	    	By locator=By.xpath("//yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='" + name + "']");
 		    WebElement safeElement = safeAct.safeFindElement(locator);
 		    return safeElement;
 	}
@@ -92,7 +90,6 @@ public class YtLandingPage  extends BasePage{
 	
 	public void clickingLocationDropdownUnderSettings() {
 		
-		//driver.findElement(locationDropdownUnderSettings).click();
 		safeAct.safeClick(locationDropdownUnderSettings);
 		
 	}
@@ -119,13 +116,11 @@ public class YtLandingPage  extends BasePage{
     
     public void clickingSettingEllipsesButton() throws InterruptedException {
    
-    	//driver.findElement(settingEllipsesButton).click();
         	safeAct.safeFindElement(settingEllipsesButton).click();
     }
     
     public void clickingLanguageDropdownButton() throws InterruptedException {
 
-   //	driver.findElement(languageDropdownUnderSettings).click();
     	safeAct.safeFindElement(languageDropdownUnderSettings).click();
     	
     }
