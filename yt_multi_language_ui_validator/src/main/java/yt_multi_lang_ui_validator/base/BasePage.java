@@ -1,4 +1,4 @@
-package yt_multi_language_ui_validator;
+package main.java.yt_multi_lang_ui_validator.base;
 
 import java.time.Duration;
 
@@ -10,7 +10,8 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import utilities.WaitUtility;
+import main.java.yt_multi_lang_ui_validator.driverManager.DriverManager;
+import main.java.yt_multi_lang_ui_validator.utilities.WaitUtility;
 
 
 

@@ -1,4 +1,4 @@
-package main.java.pages;
+package main.java.yt_multi_lang_ui_validator.pages;
 
 import java.time.Duration;
 import java.util.Arrays;
@@ -17,15 +17,15 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import utilities.WaitUtility;
-import yt_multi_language_ui_validator.BasePage;
+import main.java.yt_multi_lang_ui_validator.base.BasePage;
+import main.java.yt_multi_lang_ui_validator.lingua.LinguaHelper;
+import main.java.yt_multi_lang_ui_validator.safeActions.SafeActions;
+import main.java.yt_multi_lang_ui_validator.utilities.WaitUtility;
 import yt_multi_language_ui_validator.BasicTest;
-import yt_multi_language_ui_validator.LinguaHelper;
-import yt_multi_language_ui_validator.SafeActions;
 public class YtLandingPage  extends BasePage{
 	
 //	
-	private  final Logger log = yt_multi_language_ui_validator.LoggerUtility.getLogger(YtLandingPage.class);
+	private  final Logger log = main.java.yt_multi_lang_ui_validator.logger.LoggerUtility.getLogger(YtLandingPage.class);
 	
 	SafeActions safeAct=new SafeActions();
 	

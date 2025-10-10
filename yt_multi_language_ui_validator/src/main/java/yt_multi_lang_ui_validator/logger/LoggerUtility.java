@@ -1,4 +1,4 @@
-package yt_multi_language_ui_validator;
+package main.java.yt_multi_lang_ui_validator.logger;
 
 
 

@@ -1,8 +1,8 @@
-package main.java.pages;
+package main.java.yt_multi_lang_ui_validator.pages;
 
 import org.openqa.selenium.By;
 
-import yt_multi_language_ui_validator.BasePage;
+import main.java.yt_multi_lang_ui_validator.base.BasePage;
 
 public class YtInnerPage  extends BasePage{
 

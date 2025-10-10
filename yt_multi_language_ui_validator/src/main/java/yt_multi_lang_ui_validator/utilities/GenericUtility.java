@@ -1,4 +1,4 @@
-package yt_multi_language_ui_validator;
+package main.java.yt_multi_lang_ui_validator.utilities;
 
 import java.time.Duration;
 import java.util.HashMap;
@@ -13,7 +13,9 @@ import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import main.java.pages.YtLandingPage;
+import main.java.yt_multi_lang_ui_validator.base.BasePage;
+import main.java.yt_multi_lang_ui_validator.pages.YtLandingPage;
+import main.java.yt_multi_lang_ui_validator.safeActions.SafeActions;
 
 public class GenericUtility extends BasePage {
 		SafeActions safeAct = new SafeActions();

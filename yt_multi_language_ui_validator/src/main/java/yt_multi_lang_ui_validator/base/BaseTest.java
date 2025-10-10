@@ -1,4 +1,4 @@
-package yt_multi_language_ui_validator;
+package main.java.yt_multi_lang_ui_validator.base;
 
 import java.lang.reflect.Method; 
 
@@ -9,6 +9,9 @@ import org.openqa.selenium.WebDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+
+import main.java.yt_multi_lang_ui_validator.driverManager.DriverManager;
+import main.java.yt_multi_lang_ui_validator.logger.LoggerUtility;
 
 
 public class BaseTest {

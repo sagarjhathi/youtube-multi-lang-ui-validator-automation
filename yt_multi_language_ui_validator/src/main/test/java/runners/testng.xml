@@ -3,13 +3,7 @@
 <suite thread-count="2" parallel="methods" name="Suite">
   <test thread-count="2" parallel="methods" name="Test">
     <classes>
-    
-      <class name="tests.YtMasterTests">
- 
-  	
-      </class>
-      
+      <class name="main.test.java.tests.YtMasterTests"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
-

@@ -1,4 +1,4 @@
-package utilities;
+package main.java.yt_multi_lang_ui_validator.utilities;
 
 
 import org.apache.logging.log4j.Logger;
@@ -9,8 +9,8 @@ import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import main.java.pages.YtLandingPage;
-import yt_multi_language_ui_validator.BasePage;
+import main.java.yt_multi_lang_ui_validator.base.BasePage;
+import main.java.yt_multi_lang_ui_validator.pages.YtLandingPage;
 
 import java.time.Duration;
 import java.util.List;
@@ -19,7 +19,7 @@ import java.util.function.Function;
 public class WaitUtility extends BasePage {
 
 	
-	private  final Logger log = yt_multi_language_ui_validator.LoggerUtility.getLogger(WaitUtility.class);
+	private  final Logger log = main.java.yt_multi_lang_ui_validator.logger.LoggerUtility.getLogger(WaitUtility.class);
 
 
 	public WebElement waitForElementReady(By by) {

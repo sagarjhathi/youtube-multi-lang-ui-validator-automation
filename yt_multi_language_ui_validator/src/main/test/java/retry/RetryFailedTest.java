@@ -1,4 +1,4 @@
-package yt_multi_language_ui_validator;
+package main.test.java.retry;
 
 
 import org.testng.IRetryAnalyzer;

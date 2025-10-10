@@ -1,4 +1,4 @@
-package tests;
+package main.test.java.tests;
 
 import java.time.Duration;
 import java.util.ArrayList;
@@ -14,10 +14,10 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
-import main.java.pages.YtLandingPage;
-import yt_multi_language_ui_validator.BaseTest;
-import yt_multi_language_ui_validator.GenericUtility;
-import yt_multi_language_ui_validator.LinguaHelper;
+import main.java.yt_multi_lang_ui_validator.base.BaseTest;
+import main.java.yt_multi_lang_ui_validator.lingua.LinguaHelper;
+import main.java.yt_multi_lang_ui_validator.pages.YtLandingPage;
+import main.java.yt_multi_lang_ui_validator.utilities.GenericUtility;
 
 public class YtMasterTests extends BaseTest{
 
