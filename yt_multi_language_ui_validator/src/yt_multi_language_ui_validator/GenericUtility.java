@@ -237,4 +237,50 @@ public class GenericUtility extends BasePage {
 		        }
 		    }
 		}
+	 
+	 
+	 
+	 
+	 
+	 
+	 public  void waitForPageLoadOrHardRefresh( int timeoutSec) {
+		    JavascriptExecutor js = (JavascriptExecutor) driver;
+		    long end = System.currentTimeMillis() + timeoutSec * 1000L;
+
+		    while (System.currentTimeMillis() < end) {
+		        try {
+		            if ("complete".equals(js.executeScript("return document.readyState"))) {
+		            	System.out.println("Page loaded");
+		            	return; // Page loaded fine
+		            }
+		        } catch (Exception ignored) {}
+		        try { Thread.sleep(200); } catch (InterruptedException ignored) {}
+		    }
+
+		    // If we reach here, page didn't load in time → perform a hard refresh
+		    System.out.println("⚠️ Page load timeout — performing hard refresh...");
+		    try {
+		        // Try a hard reload (Ctrl+F5)
+		        new org.openqa.selenium.interactions.Actions(driver)
+		                .sendKeys(org.openqa.selenium.Keys.chord(org.openqa.selenium.Keys.CONTROL, org.openqa.selenium.Keys.F5))
+		                .perform();
+		    } catch (Exception e) {
+		        // Fallback to normal refresh
+		        driver.navigate().refresh();
+		    }
+
+		    // Optional: wait again a bit after refresh
+		    end = System.currentTimeMillis() + timeoutSec * 1000L;
+		    while (System.currentTimeMillis() < end) {
+		        try {
+		            if ("complete".equals(js.executeScript("return document.readyState"))) {
+		                return;
+		            }
+		        } catch (Exception ignored) {}
+		        try { Thread.sleep(200); } catch (InterruptedException ignored) {}
+		    }
+
+		    System.out.println("❌ Page still not fully loaded after hard refresh.");
+		}
+
 }

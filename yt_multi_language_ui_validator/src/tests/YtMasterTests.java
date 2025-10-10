@@ -41,7 +41,9 @@ public class YtMasterTests extends BaseTest{
 			String langText=languageList.get(j);
 			System.out.println(langText+"    "+j);
 			
+			 g.waitForPageLoadOrHardRefresh(5);
 	     	yt.getLanguageElementByName(langText).click();	
+	     	 g.waitForPageLoadOrHardRefresh(5);
 			Thread.sleep(2000);
 			List<WebElement> listOfSideMenu=yt.gettingSideMenuExpandedList();
 			
@@ -70,7 +72,7 @@ public class YtMasterTests extends BaseTest{
 				Thread.sleep(2000);
 				yt.clickingLanguageDropdownButton();
 			    Thread.sleep(2000);
-			    g.waitForPageLoadSimple(5, ".spinner");
+			    g.waitForPageLoadOrHardRefresh(5);
 			}
     	     softAssert.assertAll();
 	}
@@ -98,7 +100,9 @@ public class YtMasterTests extends BaseTest{
 				String langText=languageList.get(j);
 				System.out.println(langText+"    "+j);
 				
+				 gn.waitForPageLoadOrHardRefresh(5);
 		     	yt.getLanguageElementByName(langText).click();	
+		     	 gn.waitForPageLoadOrHardRefresh(5);
 		     	gn.getLangAttribute();
 				Thread.sleep(2000);
 				List<WebElement> listOfSideMenu=yt.gettingSideMenuCollapsedList();
@@ -129,7 +133,7 @@ public class YtMasterTests extends BaseTest{
 					Thread.sleep(2000);
 					yt.clickingLanguageDropdownButton();
 				    Thread.sleep(2000);
-				    gn.waitForPageLoadSimple(5, ".spinner");
+				    gn.waitForPageLoadOrHardRefresh(5);
 				}
 	    	
 	    	    softAssert.assertAll();	
@@ -155,7 +159,9 @@ public class YtMasterTests extends BaseTest{
 			String langText=languageList.get(j);
 			System.out.println(langText+"    "+j);
 			
+			 gn.waitForPageLoadOrHardRefresh(5);
 	     	yt.getLanguageElementByName(langText).click();	
+	     	 gn.waitForPageLoadOrHardRefresh(5);
 			Thread.sleep(2000);
 			
 			yt.clickingSettingEllipsesButton();
@@ -183,7 +189,7 @@ public class YtMasterTests extends BaseTest{
 				Thread.sleep(2000);
 				yt.clickingLanguageDropdownButton();
 			    Thread.sleep(2000);
-			   gn.waitForPageLoadSimple(5, ".spinner");
+			   gn.waitForPageLoadOrHardRefresh(5);
 			}
     	
     	    softAssert.assertAll();	
@@ -211,7 +217,9 @@ public class YtMasterTests extends BaseTest{
 			String locationText=locationList.get(i).getText();
 			System.out.println(locationText+"    "+i);
 
-			locationList.get(i).click();
+			 gn.waitForPageLoadOrHardRefresh(5);
+			 locationList.get(i).click();
+			 gn.waitForPageLoadOrHardRefresh(5);
 			
 			String applicableLocation=locationText;
 			String expectedCountryCode=yt.getExpectedCountryCodeViaLocation(locationText);
@@ -225,7 +233,7 @@ public class YtMasterTests extends BaseTest{
 				Thread.sleep(2000);
 				yt.clickingLocationDropdownUnderSettings();
 			    Thread.sleep(2000);
-			    gn.waitForPageLoadSimple(5, ".spinner");
+			    gn.waitForPageLoadOrHardRefresh(5);
 			
 			
 		}
