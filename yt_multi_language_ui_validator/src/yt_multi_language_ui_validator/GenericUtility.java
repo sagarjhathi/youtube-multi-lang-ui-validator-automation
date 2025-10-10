@@ -13,7 +13,7 @@ import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import POM.YtLandingPage;
+import main.java.pages.YtLandingPage;
 
 public class GenericUtility extends BasePage {
 		SafeActions safeAct = new SafeActions();
@@ -178,109 +178,54 @@ public class GenericUtility extends BasePage {
 	
 	
 	
-	 public  void waitForPageLoad() {
-	       
-	 String status=((JavascriptExecutor) driver).executeScript("return document.readyState").toString();
-	 if(status.equals("complete")){
-		System.out.println("Page has loaded");
-	 }else {
-		driver.navigate().refresh();
-		System.out.println("Refreshing the page to load the page");
-		
+
+	 
+	 
+	 
+	 
+
+	public void ensurePageLoadedOrRefresh() throws InterruptedException {
+	    // --- Inner function: checks if page finished loading within timeout ---
+	    JavascriptExecutor js = (JavascriptExecutor) driver;
+	    long endTime = System.currentTimeMillis() + 8000L; // 8 seconds
+
+	    while (System.currentTimeMillis() < endTime) {
+	        try {
+	            String readyState = js.executeScript("return document.readyState").toString();
+	            if ("complete".equalsIgnoreCase(readyState)) {
+	                System.out.println("✅ Page loaded successfully within 8 seconds.");
+	                return;
+	            }
+	        } catch (Exception ignored) {}
+	        Thread.sleep(200);
+	    }
+
+	    // --- If we reach here, page didn’t load in time ---
+	    System.out.println("⚠️ Page load taking too long — stopping and refreshing...");
+
+	    try {
+	        js.executeScript("window.stop();");
+	        Thread.sleep(2000);
+	        driver.navigate().refresh();
+	        System.out.println("🔄 Page refreshed successfully.");
+	    } catch (Exception e) {
+	        System.out.println("❌ Failed to refresh page: " + e.getMessage());
+	    }
+	}
+
+	 
+	 
+	 
+	 public void stopPageLoadRefreshPage() throws InterruptedException {
+		 JavascriptExecutor js = (JavascriptExecutor) driver;
+		 js.executeScript("window.stop();");
+		 Thread.sleep(2000);
+		 driver.navigate().refresh();
 	 }
-	            
-
+	 
+	 
+	 
+	 
 	
-	
-      }
-	 
-	 
-	 
-	 
-	 
-	 public void waitForPageLoadSimple(long timeoutSeconds, String spinnerCssSelector) {
-		    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeoutSeconds));
-		    wait.pollingEvery(Duration.ofMillis(500));
-
-		    ExpectedCondition<Boolean> documentReady = drv -> {
-		        try {
-		            String state = ((JavascriptExecutor) drv).executeScript("return document.readyState").toString();
-		            return "complete".equals(state);
-		        } catch (Exception e) {
-		            return false;
-		        }
-		    };
-
-		    try {
-		        wait.until(documentReady);
-
-		        if (spinnerCssSelector != null && !spinnerCssSelector.isEmpty()) {
-		            // wait for spinner to go away if provided
-		            wait.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(spinnerCssSelector)));
-		        }
-		        return;
-		    } catch (org.openqa.selenium.TimeoutException e) {
-		        // one gentle retry: refresh + wait again
-		        try {
-		            driver.navigate().refresh();
-		            // small pause so browser begins to load after refresh
-		            Thread.sleep(800);
-		            wait.until(documentReady);
-		            if (spinnerCssSelector != null && !spinnerCssSelector.isEmpty()) {
-		                wait.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(spinnerCssSelector)));
-		            }
-		            return;
-		        } catch (Exception retryEx) {
-		            // final fallback: throw TimeoutException to let caller decide
-		            throw new org.openqa.selenium.TimeoutException(
-		                "Page did not finish loading (after one refresh).", retryEx);
-		        }
-		    }
-		}
-	 
-	 
-	 
-	 
-	 
-	 
-	 public  void waitForPageLoadOrHardRefresh( int timeoutSec) {
-		    JavascriptExecutor js = (JavascriptExecutor) driver;
-		    long end = System.currentTimeMillis() + timeoutSec * 1000L;
-
-		    while (System.currentTimeMillis() < end) {
-		        try {
-		            if ("complete".equals(js.executeScript("return document.readyState"))) {
-		            	System.out.println("Page loaded");
-		            	return; // Page loaded fine
-		            }
-		        } catch (Exception ignored) {}
-		        try { Thread.sleep(200); } catch (InterruptedException ignored) {}
-		    }
-
-		    // If we reach here, page didn't load in time → perform a hard refresh
-		    System.out.println("⚠️ Page load timeout — performing hard refresh...");
-		    try {
-		        // Try a hard reload (Ctrl+F5)
-		        new org.openqa.selenium.interactions.Actions(driver)
-		                .sendKeys(org.openqa.selenium.Keys.chord(org.openqa.selenium.Keys.CONTROL, org.openqa.selenium.Keys.F5))
-		                .perform();
-		    } catch (Exception e) {
-		        // Fallback to normal refresh
-		        driver.navigate().refresh();
-		    }
-
-		    // Optional: wait again a bit after refresh
-		    end = System.currentTimeMillis() + timeoutSec * 1000L;
-		    while (System.currentTimeMillis() < end) {
-		        try {
-		            if ("complete".equals(js.executeScript("return document.readyState"))) {
-		                return;
-		            }
-		        } catch (Exception ignored) {}
-		        try { Thread.sleep(200); } catch (InterruptedException ignored) {}
-		    }
-
-		    System.out.println("❌ Page still not fully loaded after hard refresh.");
-		}
 
 }

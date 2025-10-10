@@ -1,4 +1,4 @@
-package POM;
+package main.java.pages;
 
 import org.openqa.selenium.By;
 

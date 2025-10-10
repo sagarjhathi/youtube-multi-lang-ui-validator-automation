@@ -9,7 +9,7 @@ import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import POM.YtLandingPage;
+import main.java.pages.YtLandingPage;
 import yt_multi_language_ui_validator.BasePage;
 
 import java.time.Duration;

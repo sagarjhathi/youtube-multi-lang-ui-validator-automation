@@ -1,4 +1,4 @@
-package POM;
+package main.java.pages;
 
 import java.time.Duration;
 import java.util.Arrays;
@@ -289,7 +289,7 @@ public class YtLandingPage  extends BasePage{
     	    put("Jordan", "JO");
     	    put("Kazakhstan", "KZ");
     	    put("Kenya", "KE");
-    	    put("Kuwait", "");
+    	    put("Kuwait", "KW");
     	    put("Laos", "LA");
     	    put("Latvia", "LV");
     	    put("Lebanon", "LB");
@@ -299,7 +299,7 @@ public class YtLandingPage  extends BasePage{
     	    put("Luxembourg", "LU");
     	    put("Malaysia", "MY");
     	    put("Malta", "MT");
-    	    put("Mexico", "");
+    	    put("Mexico", "MX");
     	    put("Moldova", "MD");
     	    put("Montenegro", "ME");
     	    put("Morocco", "MA");
@@ -313,7 +313,7 @@ public class YtLandingPage  extends BasePage{
     	    put("Oman", "OM");
     	    put("Pakistan", "PK");
     	    put("Panama", "PA");
-    	    put("Papua New Guinea", "");
+    	    put("Papua New Guinea", "PG");
     	    put("Paraguay", "PY");
     	    put("Peru", "PE");
     	    put("Philippines", "PH");
@@ -327,14 +327,14 @@ public class YtLandingPage  extends BasePage{
     	    put("Senegal", "SN");
     	    put("Serbia", "RS");
     	    put("Singapore", "SG");
-    	    put("Slovakia", "");
+    	    put("Slovakia", "SK");
     	    put("Slovenia", "SI");
     	    put("South Africa", "ZA");
     	    put("South Korea", "KR");
     	    put("Spain", "ES");
     	    put("Sri Lanka", "LK");
     	    put("Sweden", "SE");
-    	    put("Switzerland", "");
+    	    put("Switzerland", "CH");
     	    put("Taiwan", "TW");
     	    put("Tanzania", "TZ");
     	    put("Thailand", "TH");

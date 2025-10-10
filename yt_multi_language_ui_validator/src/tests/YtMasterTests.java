@@ -14,7 +14,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
-import POM.YtLandingPage;
+import main.java.pages.YtLandingPage;
 import yt_multi_language_ui_validator.BaseTest;
 import yt_multi_language_ui_validator.GenericUtility;
 import yt_multi_language_ui_validator.LinguaHelper;
@@ -41,9 +41,9 @@ public class YtMasterTests extends BaseTest{
 			String langText=languageList.get(j);
 			System.out.println(langText+"    "+j);
 			
-			 g.waitForPageLoadOrHardRefresh(5);
+			 g.ensurePageLoadedOrRefresh();
 	     	yt.getLanguageElementByName(langText).click();	
-	     	 g.waitForPageLoadOrHardRefresh(5);
+	     	 g.ensurePageLoadedOrRefresh();
 			Thread.sleep(2000);
 			List<WebElement> listOfSideMenu=yt.gettingSideMenuExpandedList();
 			
@@ -72,7 +72,7 @@ public class YtMasterTests extends BaseTest{
 				Thread.sleep(2000);
 				yt.clickingLanguageDropdownButton();
 			    Thread.sleep(2000);
-			    g.waitForPageLoadOrHardRefresh(5);
+			    g.ensurePageLoadedOrRefresh();
 			}
     	     softAssert.assertAll();
 	}
@@ -100,9 +100,9 @@ public class YtMasterTests extends BaseTest{
 				String langText=languageList.get(j);
 				System.out.println(langText+"    "+j);
 				
-				 gn.waitForPageLoadOrHardRefresh(5);
+				 gn.ensurePageLoadedOrRefresh();
 		     	yt.getLanguageElementByName(langText).click();	
-		     	 gn.waitForPageLoadOrHardRefresh(5);
+		     	 gn.ensurePageLoadedOrRefresh();
 		     	gn.getLangAttribute();
 				Thread.sleep(2000);
 				List<WebElement> listOfSideMenu=yt.gettingSideMenuCollapsedList();
@@ -133,7 +133,7 @@ public class YtMasterTests extends BaseTest{
 					Thread.sleep(2000);
 					yt.clickingLanguageDropdownButton();
 				    Thread.sleep(2000);
-				    gn.waitForPageLoadOrHardRefresh(5);
+				    gn.ensurePageLoadedOrRefresh();
 				}
 	    	
 	    	    softAssert.assertAll();	
@@ -159,9 +159,9 @@ public class YtMasterTests extends BaseTest{
 			String langText=languageList.get(j);
 			System.out.println(langText+"    "+j);
 			
-			 gn.waitForPageLoadOrHardRefresh(5);
+			 gn.ensurePageLoadedOrRefresh();
 	     	yt.getLanguageElementByName(langText).click();	
-	     	 gn.waitForPageLoadOrHardRefresh(5);
+	     	 gn.ensurePageLoadedOrRefresh();
 			Thread.sleep(2000);
 			
 			yt.clickingSettingEllipsesButton();
@@ -189,7 +189,7 @@ public class YtMasterTests extends BaseTest{
 				Thread.sleep(2000);
 				yt.clickingLanguageDropdownButton();
 			    Thread.sleep(2000);
-			   gn.waitForPageLoadOrHardRefresh(5);
+			   gn.ensurePageLoadedOrRefresh();
 			}
     	
     	    softAssert.assertAll();	
@@ -217,9 +217,9 @@ public class YtMasterTests extends BaseTest{
 			String locationText=locationList.get(i).getText();
 			System.out.println(locationText+"    "+i);
 
-			 gn.waitForPageLoadOrHardRefresh(5);
+			 gn.ensurePageLoadedOrRefresh();
 			 locationList.get(i).click();
-			 gn.waitForPageLoadOrHardRefresh(5);
+			 gn.ensurePageLoadedOrRefresh();
 			
 			String applicableLocation=locationText;
 			String expectedCountryCode=yt.getExpectedCountryCodeViaLocation(locationText);
@@ -233,7 +233,7 @@ public class YtMasterTests extends BaseTest{
 				Thread.sleep(2000);
 				yt.clickingLocationDropdownUnderSettings();
 			    Thread.sleep(2000);
-			    gn.waitForPageLoadOrHardRefresh(5);
+			    gn.ensurePageLoadedOrRefresh();
 			
 			
 		}
@@ -243,13 +243,61 @@ public class YtMasterTests extends BaseTest{
 	
 	
 	@Test
-	public void verifyingGlobalFilterLandingPage() {
-		GenericUtility genericUtility=new GenericUtility();
+	public void verifyingGlobalFilterLandingPage() throws InterruptedException {
+		GenericUtility gn=new GenericUtility();
 		
 		YtLandingPage yt=new YtLandingPage();
 		yt.openingLandingPage();
 		yt.givingInputUnderSearchBar("video");
-		genericUtility.clickEnter(yt.searchInputLandinfPage);
+		gn.clickEnter(yt.searchInputLandinfPage);
+		
+		List<String> languageList=yt.applyLanguagesFromInternalDataset();
+		SoftAssert softAssert =new SoftAssert();
+		
+		
+		
+         for(int j=0;j<languageList.size();j++) {
+        	 yt.clickingSettingEllipsesButton();
+				Thread.sleep(2000);
+				yt.clickingLanguageDropdownButton();
+			    Thread.sleep(2000);
+			   gn.ensurePageLoadedOrRefresh();
+			   
+			String langText=languageList.get(j);
+			System.out.println(langText+"    "+j);
+			
+			 gn.ensurePageLoadedOrRefresh();
+	     	yt.getLanguageElementByName(langText).click();	
+	     	 gn.ensurePageLoadedOrRefresh();
+			Thread.sleep(2000);
+			
+			yt.clickingGlobalFilterButton();
+			String str=yt.getDataFromGlobalFilterPopup();
+		//	System.out.println(str);
+			yt.closeGlobalFilterPopup();
+				
+				String applicableLanguage=languageList.get(j);
+				String detectedLanguage=LinguaHelper.detectLanguage(str);
+				String expectedLanguage=gn.getExpectedLangageViaApplicableLangInput(applicableLanguage);
+
+			
+				String expectedLanguageAttribute=gn.getLangAttributeViaLanguageInput(applicableLanguage);
+				String detectedLanguageAttribute=gn.getLangAttribute();
+				
+				System.out.println("ApplicableLanguage  "+applicableLanguage+"     "+"Detected Language   "+detectedLanguage+"  "+"Expected Language  "+expectedLanguage);
+				System.out.println("ApplicableLanguage  "+applicableLanguage+"     "+"Detected Language attribute   "+detectedLanguageAttribute+"  "+"Expected Language attribute "+expectedLanguageAttribute);
+
+			    softAssert.assertEquals(detectedLanguage, expectedLanguage, "Language detection mismatch");
+			    softAssert.assertEquals(detectedLanguageAttribute, expectedLanguageAttribute, "Language attributr mismatch");
+			    
+			    
+			   
+			}
+    	
+    	    softAssert.assertAll();	
+		
+		
+		
 		yt.clickingGlobalFilterButton();
 		String str=yt.getDataFromGlobalFilterPopup();
 		System.out.println(str);

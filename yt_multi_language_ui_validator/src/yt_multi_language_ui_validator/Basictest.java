@@ -12,8 +12,8 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import POM.YtInnerPage;
-import POM.YtLandingPage;
+import main.java.pages.YtInnerPage;
+import main.java.pages.YtLandingPage;
  
 public class BasicTest {
 
