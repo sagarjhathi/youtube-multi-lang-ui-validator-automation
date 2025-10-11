@@ -1,6 +1,6 @@
 package main.test.java.tests;
 
-import java.time.Duration;
+import java.time.Duration; 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -13,12 +13,14 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
-
+import main.test.java.retry.*;
 import main.java.yt_multi_lang_ui_validator.base.BaseTest;
 import main.java.yt_multi_lang_ui_validator.lingua.LinguaHelper;
 import main.java.yt_multi_lang_ui_validator.pages.YtLandingPage;
 import main.java.yt_multi_lang_ui_validator.utilities.GenericUtility;
 
+
+@Test(retryAnalyzer = RetryFailedTest.class)
 public class YtMasterTests extends BaseTest{
 
 	

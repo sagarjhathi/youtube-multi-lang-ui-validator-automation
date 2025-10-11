@@ -1,7 +1,5 @@
 package main.test.java.retry;
-
-
-import org.testng.IRetryAnalyzer;
+import org.testng.IRetryAnalyzer; 
 import org.testng.ITestResult;
 import java.util.Arrays;
 import java.util.List;
