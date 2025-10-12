@@ -17,32 +17,55 @@ import main.java.yt_multi_lang_ui_validator.logger.LoggerUtility;
 public class BaseTest {
 
 	
-	private   Logger log = LoggerUtility.getLogger(BaseTest.class);
+	private  static  Logger log = LoggerUtility.getLogger(BaseTest.class);
 	public WebDriver driver;
 
 	    @BeforeMethod
 	    public void setUp(Method method) {
-	        // ✅ Assign unique thread name for routing log
-	    	    String testName = method.getName(); // The actual test method name
-	    	    String threadName = testName + "-" + Thread.currentThread().threadId();
-	    	    String logName = method.getName() + "_" + Thread.currentThread().getId();
-//	    	    ThreadContext.put("logFileName", logName);  // ✅ Very important
-//	    	    ThreadContext.put("threadName", threadName); // Used in file name routing (if needed)
-//	    	    ThreadContext.put("testName", testName);     // ✅ Add this for use in logs
-//	    	    ThreadContext.put("logFileName", testName); // ✅ must come before logger is called
+	       
+	    	
+	    	    String testName = method.getName();
+	    	    String threadId = String.valueOf(Thread.currentThread().threadId());
+	    	    String logFileName = testName + "_" + threadId;
+
+	    	    ThreadContext.put("logFileName", logFileName);
+	    	    ThreadContext.put("testName", testName);
+	    	    ThreadContext.put("threadId", threadId);
+	    	
 	    	    log = LogManager.getLogger(testName); 
-	    	    System.out.println("🧪 logFileName: " + ThreadContext.get("logFileName"));	    	   
-	    	    log.info("🔹 Starting test method: " + testName);
+	    	    log.info("Starting test: " + testName + " on thread " + threadId);	    	   
 	    	    
-	        DriverManager.initDriver();
-	        driver = DriverManager.getDriver();
+	    	    
+	            DriverManager.initDriver();
+	            driver = DriverManager.getDriver();
 	    }
 	 
-	    @AfterMethod
-	    public void tearDown(ITestResult result) {
-	        log.info("✅ Finished test method: " + result.getName());
-	        ThreadContext.clearAll();  // ✅ Critical to avoid context bleed
-	        DriverManager.quitDriver();
+	
+	    	@AfterMethod
+	    	public void tearDown(ITestResult result) {
+	    	    try {
+	    	        switch (result.getStatus()) {
+	    	            case ITestResult.FAILURE ->
+	    	                log.error("Test FAILED: {} - {}", result.getName(), result.getThrowable());
+	    	            case ITestResult.SKIP ->
+	    	                log.warn("Test SKIPPED: {}", result.getName());
+	    	            default ->
+	    	                log.info("Test PASSED: {}", result.getName());
+	    	        }
+	    	    } catch (Exception e) {
+	    	        System.err.println("Error while logging test result: " + e.getMessage());
+	    	    } finally {
+	    	        try {
+	    	            DriverManager.quitDriver();
+	    	        } catch (Exception e) {
+	    	            System.err.println("Error while quitting driver: " + e.getMessage());
+	    	        } finally {
+	    	            ThreadContext.clearAll();
+	    	        }
+	    	    }
+	    	    	    	    
+	    	}
+	
 	    }
 	   
-}
+
