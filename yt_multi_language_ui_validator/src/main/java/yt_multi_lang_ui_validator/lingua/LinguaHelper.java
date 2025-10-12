@@ -16,16 +16,48 @@ import org.apache.logging.log4j.Logger;
 public class LinguaHelper {
 	
 	
-	private static final  Logger log=LoggerUtility.getLogger(LinguaHelper.class);
+	  private static final Logger log = LoggerUtility.getLogger(LinguaHelper.class);
 
-    public static String detectLanguage(String text) {
-        if (text == null || text.trim().isEmpty()) {
-            return "Unknown";
-        }
-        LanguageDetector detector = LanguageDetectorBuilder.fromAllLanguages().build();
-        Language detected = detector.detectLanguageOf(text);
-        System.out.printf("Text: %-60s | Detected: %s%n", text, detected);
-        return detected != null ? detected.name() : "Unknown";
-    }
+	    // Build detector once — expensive to create, cheap to reuse.
+	    private static final LanguageDetector DETECTOR =
+	            LanguageDetectorBuilder.fromAllLanguages().build();
+
+	    private LinguaHelper() {
+	        // Prevent instantiation
+	    }
+
+	    /**
+	     * Detect the language of the given text.
+	     * Returns "Unknown" if detection fails or text is blank.
+	     */
+	    public static String detectLanguage(String text) {
+	        try {
+	            if (text == null || text.trim().isEmpty()) {
+	                log.debug("detectLanguage called with empty text.");
+	                return "Unknown";
+	            }
+
+	            // Clean up text input
+	            String cleanText = text.trim();
+
+	            // Detect language
+	            Language detected = DETECTOR.detectLanguageOf(cleanText);
+	            if (detected == null) {
+	                log.debug("No language detected for text: {}", cleanText);
+	                return "Unknown";
+	            }
+
+	            log.info("Detected language: {} for sample: {}", detected.name(), shorten(cleanText));
+	            return detected.name(); // e.g. "ENGLISH", "SPANISH", etc.
+	        } catch (Exception e) {
+	            log.error("Language detection failed: {}", e.getMessage());
+	            return "Unknown";
+	        }
+	    }
+
+	    /** Utility to log only a small preview of the text */
+	    private static String shorten(String text) {
+	        return text.length() > 60 ? text.substring(0, 60) + "..." : text;
+	    }
     
 }
