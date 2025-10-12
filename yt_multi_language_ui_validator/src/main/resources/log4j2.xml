@@ -1,36 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Configuration status="WARN">
-<Properties>
-  <Property name="LOG_PATTERN">%d{yyyy-MM-dd hh:mm:ss.SSS a} [%t] %-5level [%X{logFileName}] %msg%n</Property>
-</Properties>
-
+  <Properties>
+    <!-- base folder for logs; can be overridden via system property -Dlogs.dir=... -->
+    <Property name="logs.dir">logs</Property>
+    <!-- default pattern: timestamp thread level [logFileName] message -->
+    <Property name="pattern">%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level [%X{logFileName}] %msg%n</Property>
+  </Properties>
 
   <Appenders>
+
+    <!-- Console appender: explicit SYSTEM_OUT so you always get visible console logs -->
     <Console name="Console" target="SYSTEM_OUT">
-      <PatternLayout pattern="${LOG_PATTERN}" />
+      <PatternLayout pattern="${pattern}"/>
     </Console>
 
+    <!-- Rolling file for a default fallback file (if ThreadContext logFileName is not set) -->
+    <RollingFile name="DefaultFile"
+                 fileName="${logs.dir}/default.log"
+                 filePattern="${logs.dir}/archive/default-%d{yyyy-MM-dd-HH-mm}.log.gz"
+                 append="true">
+      <PatternLayout pattern="${pattern}"/>
+      <Policies>
+        <SizeBasedTriggeringPolicy size="10MB"/>
+      </Policies>
+    </RollingFile>
+
+    <!-- Routing appender routes logs to per-test file based on ctx:logFileName -->
     <Routing name="RoutingAppender">
       <Routes pattern="${ctx:logFileName}">
+        <!-- when logFileName is present -->
         <Route>
           <RollingFile name="RollingFile-${ctx:logFileName}"
-                       fileName="logs/${ctx:logFileName}.log"
-                       filePattern="logs/archive/${ctx:logFileName}-%d{yyyy-MM-dd-HH-mm}.log.gz"
-                       append="false">
-            <PatternLayout pattern="${LOG_PATTERN}" />
+                       fileName="${logs.dir}/${ctx:logFileName}.log"
+                       filePattern="${logs.dir}/archive/${ctx:logFileName}-%d{yyyy-MM-dd-HH-mm}.log.gz"
+                       append="true">
+            <PatternLayout pattern="${pattern}"/>
             <Policies>
-              <SizeBasedTriggeringPolicy size="5MB"/>
+              <SizeBasedTriggeringPolicy size="10MB"/>
             </Policies>
           </RollingFile>
         </Route>
+
+        <!-- fallback route if ctx:logFileName is not set -->
+        <Route ref="DefaultFile"/>
       </Routes>
     </Routing>
+
   </Appenders>
 
   <Loggers>
+    <!-- Default root logger: console + routing (per-test files) -->
     <Root level="info">
       <AppenderRef ref="Console"/>
       <AppenderRef ref="RoutingAppender"/>
     </Root>
+
+    <!-- Optional: enable debug for your own logger package while troubleshooting -->
+    <!--
+    <Logger name="main.java.yt_multi_lang_ui_validator" level="debug" additivity="false">
+      <AppenderRef ref="Console"/>
+      <AppenderRef ref="RoutingAppender"/>
+    </Logger>
+    -->
   </Loggers>
 </Configuration>
