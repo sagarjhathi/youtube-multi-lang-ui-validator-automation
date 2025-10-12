@@ -16,8 +16,8 @@ import main.java.yt_multi_lang_ui_validator.logger.LoggerUtility;
 
 public class BaseTest {
 
+	
 	private   Logger log = LoggerUtility.getLogger(BaseTest.class);
-
 	public WebDriver driver;
 
 	    @BeforeMethod
@@ -26,10 +26,10 @@ public class BaseTest {
 	    	    String testName = method.getName(); // The actual test method name
 	    	    String threadName = testName + "-" + Thread.currentThread().threadId();
 	    	    String logName = method.getName() + "_" + Thread.currentThread().getId();
-	    	    ThreadContext.put("logFileName", logName);  // ✅ Very important
-	    	    ThreadContext.put("threadName", threadName); // Used in file name routing (if needed)
-	    	    ThreadContext.put("testName", testName);     // ✅ Add this for use in logs
-	    	    ThreadContext.put("logFileName", testName); // ✅ must come before logger is called
+//	    	    ThreadContext.put("logFileName", logName);  // ✅ Very important
+//	    	    ThreadContext.put("threadName", threadName); // Used in file name routing (if needed)
+//	    	    ThreadContext.put("testName", testName);     // ✅ Add this for use in logs
+//	    	    ThreadContext.put("logFileName", testName); // ✅ must come before logger is called
 	    	    log = LogManager.getLogger(testName); 
 	    	    System.out.println("🧪 logFileName: " + ThreadContext.get("logFileName"));	    	   
 	    	    log.info("🔹 Starting test method: " + testName);

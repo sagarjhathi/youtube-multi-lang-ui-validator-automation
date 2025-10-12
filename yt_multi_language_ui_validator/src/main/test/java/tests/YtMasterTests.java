@@ -20,11 +20,11 @@ import main.java.yt_multi_lang_ui_validator.pages.YtLandingPage;
 import main.java.yt_multi_lang_ui_validator.utilities.GenericUtility;
 
 
-@Test(retryAnalyzer = RetryFailedTest.class)
+
 public class YtMasterTests extends BaseTest{
 
 	
-	@Test
+	@Test(retryAnalyzer = RetryFailedTest.class)
 	public void verifyingSideMenuLanguageAsInSettings() throws InterruptedException {
 
 		YtLandingPage yt=new YtLandingPage();
@@ -81,7 +81,7 @@ public class YtMasterTests extends BaseTest{
 	
 
 	
-	@Test(priority=-1)
+	@Test(retryAnalyzer = RetryFailedTest.class)
 	public void verifyingSideMenuCollapsedLangAsInSettings() throws InterruptedException {
 		YtLandingPage yt=new YtLandingPage();
 		GenericUtility gn=new GenericUtility();
@@ -142,7 +142,7 @@ public class YtMasterTests extends BaseTest{
 	}
 	
 	
-	@Test
+	@Test(retryAnalyzer = RetryFailedTest.class)
 	public void verifyingSettingOptionsLang() throws InterruptedException {
 		YtLandingPage yt=new YtLandingPage();
 		GenericUtility gn=new GenericUtility();
@@ -200,7 +200,7 @@ public class YtMasterTests extends BaseTest{
 	
 	
 	
-	@Test
+	@Test(retryAnalyzer = RetryFailedTest.class)
 	public void verifyCountryCodeAsBasedOnRegion() throws InterruptedException {
 		YtLandingPage yt=new YtLandingPage();
 		GenericUtility gn=new GenericUtility();
@@ -244,7 +244,7 @@ public class YtMasterTests extends BaseTest{
 
 	
 	
-	@Test
+	@Test(retryAnalyzer = RetryFailedTest.class)
 	public void verifyingGlobalFilterLandingPage() throws InterruptedException {
 		GenericUtility gn=new GenericUtility();
 		
@@ -275,7 +275,6 @@ public class YtMasterTests extends BaseTest{
 			
 			yt.clickingGlobalFilterButton();
 			String str=yt.getDataFromGlobalFilterPopup();
-		//	System.out.println(str);
 			yt.closeGlobalFilterPopup();
 				
 				String applicableLanguage=languageList.get(j);
@@ -298,14 +297,10 @@ public class YtMasterTests extends BaseTest{
     	
     	    softAssert.assertAll();	
 		
-		
-		
 		yt.clickingGlobalFilterButton();
 		String str=yt.getDataFromGlobalFilterPopup();
 		System.out.println(str);
 		yt.closeGlobalFilterPopup();
-		
-		
 		
 	}
 	
