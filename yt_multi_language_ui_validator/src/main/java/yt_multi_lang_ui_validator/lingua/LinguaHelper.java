@@ -16,7 +16,7 @@ import org.apache.logging.log4j.Logger;
 public class LinguaHelper {
 	
 	
-	private final  Logger log=LoggerUtility.getLogger(LinguaHelper.class);
+	private static final  Logger log=LoggerUtility.getLogger(LinguaHelper.class);
 
     public static String detectLanguage(String text) {
         if (text == null || text.trim().isEmpty()) {

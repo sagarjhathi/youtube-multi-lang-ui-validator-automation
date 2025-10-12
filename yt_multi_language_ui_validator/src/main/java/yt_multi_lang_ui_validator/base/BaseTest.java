@@ -16,7 +16,7 @@ import main.java.yt_multi_lang_ui_validator.logger.LoggerUtility;
 
 public class BaseTest {
 
-	
+	//This logger is at framework / class level currently nothing is being logged at class level so loggers at test level are created and used.
 	private  static  Logger log = LoggerUtility.getLogger(BaseTest.class);
 	public WebDriver driver;
 
@@ -32,35 +32,50 @@ public class BaseTest {
 	    	    ThreadContext.put("testName", testName);
 	    	    ThreadContext.put("threadId", threadId);
 	    	
-	    	    log = LogManager.getLogger(testName); 
-	    	    log.info("Starting test: " + testName + " on thread " + threadId);	    	   
+	    	    // Get a logger specifically for this test method
+	            Logger testLog = LogManager.getLogger(testName);
+	            testLog.info("===== STARTING TEST: {}  | Thread: {} =====", testName, threadId);
 	    	    
 	    	    
-	            DriverManager.initDriver();
-	            driver = DriverManager.getDriver();
+	            // Initialize WebDriver
+	            try {
+	                DriverManager.initDriver();
+	                driver = DriverManager.getDriver();
+	                testLog.info("Driver initialized successfully for test: {}", testName);
+	            } catch (Exception e) {
+	            	testLog.error("Failed to initialize WebDriver for test: {}", testName, e);
+	                throw e;
+	            }
 	    }
 	 
 	
+	    
+	    
 	    	@AfterMethod
 	    	public void tearDown(ITestResult result) {
+	    		
+	    		 Logger testLog = LogManager.getLogger(result.getName());
+	    		 
 	    	    try {
 	    	        switch (result.getStatus()) {
 	    	            case ITestResult.FAILURE ->
-	    	                log.error("Test FAILED: {} - {}", result.getName(), result.getThrowable());
+	    	                  testLog.error("Test FAILED: {} - {}", result.getName(), result.getThrowable());
 	    	            case ITestResult.SKIP ->
-	    	                log.warn("Test SKIPPED: {}", result.getName());
+	    	                  testLog.warn("Test SKIPPED: {}", result.getName());
 	    	            default ->
-	    	                log.info("Test PASSED: {}", result.getName());
+	    	                  testLog.info("Test PASSED: {}", result.getName());
 	    	        }
 	    	    } catch (Exception e) {
-	    	        System.err.println("Error while logging test result: " + e.getMessage());
+	    	    	testLog.error("Error while logging test result: {}", e.getMessage(), e);
 	    	    } finally {
 	    	        try {
 	    	            DriverManager.quitDriver();
+	    	            testLog.info("Driver closed for test: {}", result.getName());
 	    	        } catch (Exception e) {
-	    	            System.err.println("Error while quitting driver: " + e.getMessage());
+	    	        	 testLog.error("Error while quitting driver: {}", e.getMessage(), e);
 	    	        } finally {
 	    	            ThreadContext.clearAll();
+	    	            testLog.info("===== FINISHED TEST: {} =====", result.getName());
 	    	        }
 	    	    }
 	    	    	    	    

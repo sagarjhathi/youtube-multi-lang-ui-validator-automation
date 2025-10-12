@@ -9,7 +9,7 @@ import main.java.yt_multi_lang_ui_validator.logger.LoggerUtility;
 
 public class YtInnerPage  extends BasePage{
 
-	private final  Logger log=LoggerUtility.getLogger(YtInnerPage.class);
+	private static final  Logger log=LoggerUtility.getLogger(YtInnerPage.class);
 
 	
 	public By youtuberMainInfoInnerPage=By.xpath("//div[@id='above-the-fold']//div[@id='top-row']");

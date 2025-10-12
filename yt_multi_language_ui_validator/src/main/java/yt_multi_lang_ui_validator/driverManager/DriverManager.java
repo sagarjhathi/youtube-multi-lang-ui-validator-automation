@@ -11,7 +11,7 @@ import main.java.yt_multi_lang_ui_validator.logger.LoggerUtility;
 public class DriverManager {
 
 	public static final ThreadLocal<WebDriver> driver=new ThreadLocal<>();
-	  private final  Logger log=LoggerUtility.getLogger(DriverManager.class);
+	private static final  Logger log=LoggerUtility.getLogger(DriverManager.class);
 	  
 	public static WebDriver getDriver() {
 		return driver.get();

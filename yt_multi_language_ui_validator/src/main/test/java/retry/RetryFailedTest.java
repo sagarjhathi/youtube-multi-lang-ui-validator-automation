@@ -13,7 +13,7 @@ public class RetryFailedTest implements IRetryAnalyzer {
 
     private int retryCount = 0;
     private static final int maxRetryCount = 1; // Retry only once
-    private final  Logger log=LoggerUtility.getLogger(RetryFailedTest.class);
+    private static final  Logger log=LoggerUtility.getLogger(RetryFailedTest.class);
     
     // List of exceptions to retry on (excluding assertion errors)
     private static final List<Class<? extends Throwable>> nonRetryableExceptions =

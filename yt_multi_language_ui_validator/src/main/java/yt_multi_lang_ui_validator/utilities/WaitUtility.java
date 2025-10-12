@@ -19,7 +19,7 @@ import java.util.function.Function;
 public class WaitUtility extends BasePage {
 
 	
-	private  final Logger log = main.java.yt_multi_lang_ui_validator.logger.LoggerUtility.getLogger(WaitUtility.class);
+	private static final Logger log = main.java.yt_multi_lang_ui_validator.logger.LoggerUtility.getLogger(WaitUtility.class);
 
 
 	public WebElement waitForElementReady(By by) {

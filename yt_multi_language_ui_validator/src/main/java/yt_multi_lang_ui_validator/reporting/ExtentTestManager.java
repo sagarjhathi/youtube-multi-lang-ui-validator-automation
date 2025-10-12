@@ -16,7 +16,7 @@ public class ExtentTestManager {
 
     private static ThreadLocal<ExtentTest> extentTest = new ThreadLocal<>();
     private static Map<String, ExtentTest> testMap = new HashMap<>();
-    private final  Logger log=LoggerUtility.getLogger(ExtentTestManager.class);
+    private static final  Logger log=LoggerUtility.getLogger(ExtentTestManager.class);
 
     
     public static synchronized ExtentTest startTest(String testName) {

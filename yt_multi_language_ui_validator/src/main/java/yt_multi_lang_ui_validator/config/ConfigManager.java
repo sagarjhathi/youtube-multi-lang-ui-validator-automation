@@ -21,7 +21,7 @@ public final class ConfigManager {
     private static final Properties props = new Properties();
     private static final String RESOURCE = "UtilData.properties";
 
-    private final  Logger log=LoggerUtility.getLogger(ConfigManager.class);
+    private static final  Logger log=LoggerUtility.getLogger(ConfigManager.class);
     static {
         // 1) External file override (useful for CI): -Dconfig.file=/path/UtilData.properties
         String external = System.getProperty("config.file");

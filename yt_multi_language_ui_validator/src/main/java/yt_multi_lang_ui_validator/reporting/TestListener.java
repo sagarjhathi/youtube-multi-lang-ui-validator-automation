@@ -23,7 +23,7 @@ public class TestListener implements ITestListener {
 
     private static final String RUN_TIMESTAMP = new SimpleDateFormat("yyyy-MM-dd_HHmmss").format(new Date());
     private static final String SCREENSHOT_BASE_DIR = System.getProperty("user.dir") + "/test-output/screenshots/Run_" + RUN_TIMESTAMP;
-    private final  Logger log=LoggerUtility.getLogger(TestListener.class);
+    private static final  Logger log=LoggerUtility.getLogger(TestListener.class);
     
 
     

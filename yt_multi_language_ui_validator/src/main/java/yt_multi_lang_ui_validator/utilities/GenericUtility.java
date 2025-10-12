@@ -23,7 +23,7 @@ import main.java.yt_multi_lang_ui_validator.safeActions.SafeActions;
 public class GenericUtility extends BasePage {
 	
 	
-	 private final  Logger log=LoggerUtility.getLogger(GenericUtility.class);
+	 private static final  Logger log=LoggerUtility.getLogger(GenericUtility.class);
 		SafeActions safeAct = new SafeActions();
 		
 	public  String getLangAttribute() {

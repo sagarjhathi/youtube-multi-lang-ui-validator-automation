@@ -21,40 +21,20 @@ public class BasePage {
 
 	private static final  Logger log=LoggerUtility.getLogger(BasePage.class);
 	
-	public WebDriver driver;
+	protected WebDriver driver;
 	protected WebDriverWait wait;
 	
-	public BasePage() {
-		
-        this.driver = DriverManager.getDriver();
-        PageFactory.initElements(driver, this);
-        log.info("In the BasePage called driverManager.getDriver");
-        this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-    }	
-	
-	
-	
-    protected void click(WebElement element) {
-        wait.until(ExpectedConditions.elementToBeClickable(element)).click();
-    }
+	 public BasePage() {
+		 
+	        this.driver = DriverManager.getDriver();
 
-    protected void type(WebElement element, String text) {
-        WebElement e = wait.until(ExpectedConditions.visibilityOf(element));
-        e.clear();
-        e.sendKeys(text);
-    }
-    
+	        if (driver == null) {
+	            log.error("Driver is null in BasePage. Did you call DriverManager.initDriver()?");
+	            throw new IllegalStateException("WebDriver not initialized!");
+	        }
 
-    protected WebElement waitVisible(By by) {
-        return wait.until(ExpectedConditions.visibilityOfElementLocated(by));
-    }
+	        this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+	        log.info("BasePage initialized successfully for thread {}", Thread.currentThread().threadId());
+	    }
 
-    protected WebElement waitClickable(By by) {
-        return wait.until(ExpectedConditions.elementToBeClickable(by));
-    }
-
-    protected void jsClick(By by) {
-        WebElement e = waitClickable(by);
-        ((JavascriptExecutor) driver).executeScript("arguments[0].click();", e);
-    }
 }

@@ -24,7 +24,7 @@ import main.java.yt_multi_lang_ui_validator.utilities.GenericUtility;
 
 
 public class YtMasterTests extends BaseTest{
-	 private final  Logger log=LoggerUtility.getLogger(YtMasterTests.class);
+	 private static final  Logger log=LoggerUtility.getLogger(YtMasterTests.class);
 	
 	@Test(retryAnalyzer = RetryFailedTest.class)
 	public void verifyingSideMenuLanguageAsInSettings() throws InterruptedException {

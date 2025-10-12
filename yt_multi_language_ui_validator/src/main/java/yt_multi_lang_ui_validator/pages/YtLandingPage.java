@@ -25,7 +25,7 @@ import yt_multi_language_ui_validator.BasicTest;
 public class YtLandingPage  extends BasePage{
 	
 //	
-	private  final Logger log = main.java.yt_multi_lang_ui_validator.logger.LoggerUtility.getLogger(YtLandingPage.class);
+	private static  final Logger log = main.java.yt_multi_lang_ui_validator.logger.LoggerUtility.getLogger(YtLandingPage.class);
 	
 	SafeActions safeAct=new SafeActions();
 	

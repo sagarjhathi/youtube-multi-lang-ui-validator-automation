@@ -16,7 +16,7 @@ import java.util.NoSuchElementException;
 
 public class SafeActions extends BasePage{
    
-	private  final Logger log = LoggerUtility.getLogger(SafeActions.class);
+	private  static final Logger log = LoggerUtility.getLogger(SafeActions.class);
 
 
 	public void safeClick(By locator) {
