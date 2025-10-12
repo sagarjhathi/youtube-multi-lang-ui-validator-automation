@@ -1,13 +1,18 @@
 package main.java.yt_multi_lang_ui_validator.driverManager;
 
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
+import main.java.yt_multi_lang_ui_validator.config.ConfigManager;
+import main.java.yt_multi_lang_ui_validator.logger.LoggerUtility;
+
 public class DriverManager {
 
 	public static final ThreadLocal<WebDriver> driver=new ThreadLocal<>();
-	
+	  private final  Logger log=LoggerUtility.getLogger(DriverManager.class);
+	  
 	public static WebDriver getDriver() {
 		return driver.get();
 	}

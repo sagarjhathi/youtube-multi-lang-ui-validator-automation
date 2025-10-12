@@ -12,10 +12,16 @@ import java.util.List;
 import java.util.Properties;
 import java.util.stream.Collectors;
 
+import org.apache.logging.log4j.Logger;
+
+import main.java.yt_multi_lang_ui_validator.base.BasePage;
+import main.java.yt_multi_lang_ui_validator.logger.LoggerUtility;
+
 public final class ConfigManager {
     private static final Properties props = new Properties();
     private static final String RESOURCE = "UtilData.properties";
 
+    private final  Logger log=LoggerUtility.getLogger(ConfigManager.class);
     static {
         // 1) External file override (useful for CI): -Dconfig.file=/path/UtilData.properties
         String external = System.getProperty("config.file");

@@ -5,14 +5,21 @@ package main.java.yt_multi_lang_ui_validator.reporting;
 import java.text.SimpleDateFormat; 
 import java.util.Date;
 
+import org.apache.logging.log4j.Logger;
+
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
+import main.java.yt_multi_lang_ui_validator.logger.LoggerUtility;
+import main.java.yt_multi_lang_ui_validator.pages.YtInnerPage;
+
 public class ExtentManager {
 
-	 public static ExtentReports extent;
 	
+	private static final  Logger log=LoggerUtility.getLogger(ExtentManager.class);
+	
+	 public static ExtentReports extent;
 	 public static final String RUN_TIMESTAMP = new SimpleDateFormat("yyyy-MM-dd_HHmm").format(new Date());
 	 public static final String BASE_SCREENSHOT_DIR = System.getProperty("user.dir") + "/test-output/ExtentReports/screenshots/Run_" + RUN_TIMESTAMP;
 

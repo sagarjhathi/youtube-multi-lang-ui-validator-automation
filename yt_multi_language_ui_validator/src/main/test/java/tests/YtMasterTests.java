@@ -7,6 +7,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -16,13 +17,14 @@ import org.testng.asserts.SoftAssert;
 import main.test.java.retry.*;
 import main.java.yt_multi_lang_ui_validator.base.BaseTest;
 import main.java.yt_multi_lang_ui_validator.lingua.LinguaHelper;
+import main.java.yt_multi_lang_ui_validator.logger.LoggerUtility;
 import main.java.yt_multi_lang_ui_validator.pages.YtLandingPage;
 import main.java.yt_multi_lang_ui_validator.utilities.GenericUtility;
 
 
 
 public class YtMasterTests extends BaseTest{
-
+	 private final  Logger log=LoggerUtility.getLogger(YtMasterTests.class);
 	
 	@Test(retryAnalyzer = RetryFailedTest.class)
 	public void verifyingSideMenuLanguageAsInSettings() throws InterruptedException {

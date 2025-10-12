@@ -2,6 +2,7 @@ package main.java.yt_multi_lang_ui_validator.base;
 
 import java.time.Duration;
 
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -11,12 +12,15 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import main.java.yt_multi_lang_ui_validator.driverManager.DriverManager;
+import main.java.yt_multi_lang_ui_validator.logger.LoggerUtility;
 import main.java.yt_multi_lang_ui_validator.utilities.WaitUtility;
 
 
 
 public class BasePage {
 
+	private static final  Logger log=LoggerUtility.getLogger(BasePage.class);
+	
 	public WebDriver driver;
 	protected WebDriverWait wait;
 	
@@ -24,13 +28,12 @@ public class BasePage {
 		
         this.driver = DriverManager.getDriver();
         PageFactory.initElements(driver, this);
+        log.info("In the BasePage called driverManager.getDriver");
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        
-        
     }	
 	
 	
-	// ---- Common reusable helpers available to all POMs ----
+	
     protected void click(WebElement element) {
         wait.until(ExpectedConditions.elementToBeClickable(element)).click();
     }
