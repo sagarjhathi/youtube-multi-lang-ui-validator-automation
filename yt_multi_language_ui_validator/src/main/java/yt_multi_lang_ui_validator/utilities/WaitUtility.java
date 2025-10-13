@@ -10,6 +10,7 @@ import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import main.java.yt_multi_lang_ui_validator.base.BasePage;
+import main.java.yt_multi_lang_ui_validator.logger.LoggerUtility;
 import main.java.yt_multi_lang_ui_validator.pages.YtLandingPage;
 
 import java.time.Duration;
@@ -19,7 +20,7 @@ import java.util.function.Function;
 public class WaitUtility extends BasePage {
 
 	
-	private static final Logger log = main.java.yt_multi_lang_ui_validator.logger.LoggerUtility.getLogger(WaitUtility.class);
+	private static final Logger log = LoggerUtility.getLogger(WaitUtility.class);
 
 
 	public WebElement waitForElementReady(By by) {

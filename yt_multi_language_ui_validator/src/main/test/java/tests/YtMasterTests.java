@@ -222,7 +222,9 @@ public class YtMasterTests extends BaseTest{
 			System.out.println(locationText+"    "+i);
 
 			 gn.ensurePageLoadedOrRefresh();
+			 Thread.sleep(2000);
 			 locationList.get(i).click();
+			 Thread.sleep(2000);
 			 gn.ensurePageLoadedOrRefresh();
 			
 			String applicableLocation=locationText;
