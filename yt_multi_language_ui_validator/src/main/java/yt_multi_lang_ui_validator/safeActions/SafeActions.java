@@ -21,6 +21,10 @@ public class SafeActions{
 
 	    private final WebDriver driver;
 	    private final WebDriverWait wait;
+	    
+	    private static final int MAX_ATTEMPTS = 3;
+	    private static final int TIMEOUT_SEC = 10;
+
 
 	    public SafeActions(WebDriver driver) {
 	        this.driver = driver;
@@ -29,99 +33,214 @@ public class SafeActions{
 	    }
 	    
 	    
-	public void safeClick(By locator) {
-		log.info("[{}] Within safeClick method", ThreadContext.get("testName"));
+	    
+	    // ---------- CORE CHECKS ----------
 
-	    int attempts = 0;
-	    while (attempts < 2) {
+	    private boolean isReady(WebElement element) {
 	        try {
-	        	
-	            WebElement element = wait.until(ExpectedConditions.elementToBeClickable(locator));
-	            Thread.sleep(2000);
-	            element.click();
-	    		log.info("[{}] Clicked the  "+element+"   using safeClick", ThreadContext.get("testName"));
-	            System.out.println("Clicked using safeClick");
-	            return;
-	        } catch (TimeoutException |ElementClickInterceptedException | StaleElementReferenceException | InterruptedException e) {
-	            System.out.println("Retrying click for: " + locator + " - Attempt " + (attempts + 1));
-	    		log.info("[{}] Cannot click the butto using safeClick, trying again", ThreadContext.get("testName"));
-	            attempts++;
-	            try {
-	                driver.navigate().refresh();
-	                Thread.sleep(1000); // small delay before retry
-	            } catch (InterruptedException ignored) {}
+	            return element != null && element.isDisplayed() && element.isEnabled();
+	        } catch (StaleElementReferenceException e) {
+	            return false;
 	        }
 	    }
-	    // After 3 attempts, skip the action without throwing exception
-		log.info("[{}] Skipping click action: Element not clickable after- "+attempts, ThreadContext.get("testName"));
-	    System.out.println("Skipping click action: Element not clickable after 3 attempts - " + locator);
-	}
 
-	
-	public List<WebElement> safeFindElements(By locator) {
-		log.info("[{}] Within safeFindElements ", ThreadContext.get("testName"));
+	    // ---------- SAFE FIND ELEMENT ----------
 
-	    int attempts = 0;
-	    while (attempts < 2) {
-	        try {
-	            List<WebElement> elements = wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(locator));
-	    		log.info("[{}] Returning the  "+elements+" from the safeFindElements method", ThreadContext.get("testName"));
+	    public WebElement safeFindElement(By locator) {
+	        log.info("[{}] Trying to find element: {}", ThreadContext.get("testName"), locator);
 
-	            System.out.println("Found the elements: " + locator);
-	            return elements;
-	        } catch (TimeoutException | NoSuchElementException | StaleElementReferenceException e) {
-	    		log.info("[{}] Retrying findElements for:"+locator, ThreadContext.get("testName"));
-	            System.out.println("Retrying findElements for: " + locator + " - Attempt " + (attempts + 1));
-	            attempts++;
+	        for (int attempt = 1; attempt <= MAX_ATTEMPTS; attempt++) {
+	            try {
+	                WebElement element = wait.until(ExpectedConditions.presenceOfElementLocated(locator));
+
+	                if (isReady(element)) {
+	                    log.info("[{}] Element found and ready (attempt {}): {}", ThreadContext.get("testName"), attempt, locator);
+	                    return element;
+	                } else {
+	                    log.warn("[{}] Element found but not ready (attempt {}): {}", ThreadContext.get("testName"), attempt, locator);
+	                }
+	            } catch (TimeoutException e) {
+	                log.warn("[{}] Timeout finding element (attempt {}): {}", ThreadContext.get("testName"), attempt, locator);
+	            } catch (Exception e) {
+	                log.warn("[{}] Error while finding element (attempt {}): {} -> {}", ThreadContext.get("testName"), attempt, locator, e.toString());
+	            }
+
+	            refreshIfNeeded(attempt);
+	        }
+
+	        log.error("[{}] Element not found after {} attempts: {}", ThreadContext.get("testName"), MAX_ATTEMPTS, locator);
+	        return null;
+	    }
+
+	    // ---------- SAFE FIND ELEMENTS ----------
+
+	    public List<WebElement> safeFindElements(By locator) {
+	        log.info("[{}] Finding elements list: {}", ThreadContext.get("testName"), locator);
+
+	        for (int attempt = 1; attempt <= MAX_ATTEMPTS; attempt++) {
+	            try {
+	                List<WebElement> elements = wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(locator));
+
+	                if (!elements.isEmpty()) {
+	                    elements.removeIf(el -> !isReady(el));
+	                    if (!elements.isEmpty()) {
+	                        log.info("[{}] Found {} ready elements (attempt {}): {}", ThreadContext.get("testName"), elements.size(), attempt, locator);
+	                        return elements;
+	                    }
+	                }
+	            } catch (Exception e) {
+	                log.warn("[{}] Attempt {} failed to find elements: {} -> {}", ThreadContext.get("testName"), attempt, locator, e.toString());
+	            }
+
+	            refreshIfNeeded(attempt);
+	        }
+
+	        log.error("[{}] No elements ready after {} attempts: {}", ThreadContext.get("testName"), MAX_ATTEMPTS, locator);
+	        return List.of();
+	    }
+
+	    // ---------- SAFE CLICK ----------
+
+	    public boolean safeClick(By locator) {
+	        log.info("[{}] Trying to click element: {}", ThreadContext.get("testName"), locator);
+
+	        for (int attempt = 1; attempt <= MAX_ATTEMPTS; attempt++) {
+	            try {
+	                WebElement element = wait.until(ExpectedConditions.presenceOfElementLocated(locator));
+
+	                if (isReady(element)) {
+	                    element.click();
+	                    log.info("[{}] Clicked successfully (attempt {}): {}", ThreadContext.get("testName"), attempt, locator);
+	                    return true;
+	                } else {
+	                    log.warn("[{}] Element not ready to click (attempt {}): {}", ThreadContext.get("testName"), attempt, locator);
+	                }
+
+	            } catch (ElementClickInterceptedException e) {
+	                log.warn("[{}] Element intercepted (attempt {}): {}", ThreadContext.get("testName"), attempt, locator);
+	            } catch (TimeoutException e) {
+	                log.warn("[{}] Timeout waiting for click (attempt {}): {}", ThreadContext.get("testName"), attempt, locator);
+	            } catch (WebDriverException e) {
+	                log.warn("[{}] WebDriver exception on click (attempt {}): {} -> {}", ThreadContext.get("testName"), attempt, locator, e.toString());
+	            }
+
+	            refreshIfNeeded(attempt);
+	        }
+
+	        log.error("[{}] Failed to click element after {} attempts: {}", ThreadContext.get("testName"), MAX_ATTEMPTS, locator);
+	        return false;
+	    }
+
+	    // ---------- HELPER ----------
+
+	    private void refreshIfNeeded(int attempt) {
+	        if (attempt < MAX_ATTEMPTS) {
 	            try {
 	                driver.navigate().refresh();
-		    		log.info("[{}] Refreshing the page while trying to find :"+locator, ThreadContext.get("testName"));
-
-	                System.out.println("Refreshing the page in safeFindElements Method");
+	                log.info("[{}] Refreshed page (attempt {})", ThreadContext.get("testName"), attempt);
 	                Thread.sleep(1000);
 	            } catch (InterruptedException ignored) {}
 	        }
 	    }
-	    // After 3 attempts, return null instead of throwing exception
-	    System.out.println("Skipping action: Elements not found after 3 attempts - " + locator);
-		log.info("[{}] Skipping action Elements not found after"+attempts+"  Attempts", ThreadContext.get("testName"));
-
-	    return null;
-	}
-
-		
-		
-		public WebElement safeFindElement(By locator) {
-			log.info("[{}] Within safeFindElement method", ThreadContext.get("testName"));
-
-		    int attempts = 0;
-		    while (attempts < 2) {
-		        try {
-		        	
-		            WebElement element = wait.until(ExpectedConditions.presenceOfElementLocated(locator));
-					log.info("[{}]Found the element returning it ,element ->"+element, ThreadContext.get("testName"));
-		            System.out.println("Found the element: " + locator);
-		            return element;
-		        } catch (Exception e) {
-					log.info("[{}]Retrying findElement for: ->"+locator, ThreadContext.get("testName"));
-
-		            System.out.println("Retrying findElement for: " + locator + " - Attempt " + (attempts + 1));
-		            attempts++;
-		            try {
-		                driver.navigate().refresh();
-						log.info("[{}]Refrehsing the page , while trying to safely find : ->"+locator, ThreadContext.get("testName"));
-		                System.out.println("Refreshing the page in safeFindElement Method");
-		                Thread.sleep(1000);
-		            } catch (InterruptedException ignored) {}
-		        }
-		    }
-
-
-			log.info("[{}] Skipping action: Element not found after "+attempts+"   attemps", ThreadContext.get("testName"));
-
-		    System.out.println("Skipping action: Element not found after 3 attempts - " + locator);
-		    return null;
-		}
+	    
+	    
+	    
+	    
+	    
+	    
+//	public void safeClick(By locator) {
+//		log.info("[{}] Within safeClick method", ThreadContext.get("testName"));
+//
+//	    int attempts = 0;
+//	    while (attempts < 2) {
+//	        try {
+//	        	
+//	            WebElement element = wait.until(ExpectedConditions.elementToBeClickable(locator));
+//	            Thread.sleep(2000);
+//	            element.click();
+//	    		log.info("[{}] Clicked the  "+element+"   using safeClick", ThreadContext.get("testName"));
+//	            System.out.println("Clicked using safeClick");
+//	            return;
+//	        } catch (TimeoutException |ElementClickInterceptedException | StaleElementReferenceException | InterruptedException e) {
+//	            System.out.println("Retrying click for: " + locator + " - Attempt " + (attempts + 1));
+//	    		log.info("[{}] Cannot click the butto using safeClick, trying again", ThreadContext.get("testName"));
+//	            attempts++;
+//	            try {
+//	                driver.navigate().refresh();
+//	                Thread.sleep(1000); // small delay before retry
+//	            } catch (InterruptedException ignored) {}
+//	        }
+//	    }
+//	    // After 3 attempts, skip the action without throwing exception
+//		log.info("[{}] Skipping click action: Element not clickable after- "+attempts, ThreadContext.get("testName"));
+//	    System.out.println("Skipping click action: Element not clickable after 3 attempts - " + locator);
+//	}
+//
+//	
+//	public List<WebElement> safeFindElements(By locator) {
+//		log.info("[{}] Within safeFindElements ", ThreadContext.get("testName"));
+//
+//	    int attempts = 0;
+//	    while (attempts < 2) {
+//	        try {
+//	            List<WebElement> elements = wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(locator));
+//	    		log.info("[{}] Returning the  "+elements+" from the safeFindElements method", ThreadContext.get("testName"));
+//
+//	            System.out.println("Found the elements: " + locator);
+//	            return elements;
+//	        } catch (TimeoutException | NoSuchElementException | StaleElementReferenceException e) {
+//	    		log.info("[{}] Retrying findElements for:"+locator, ThreadContext.get("testName"));
+//	            System.out.println("Retrying findElements for: " + locator + " - Attempt " + (attempts + 1));
+//	            attempts++;
+//	            try {
+//	                driver.navigate().refresh();
+//		    		log.info("[{}] Refreshing the page while trying to find :"+locator, ThreadContext.get("testName"));
+//
+//	                System.out.println("Refreshing the page in safeFindElements Method");
+//	                Thread.sleep(1000);
+//	            } catch (InterruptedException ignored) {}
+//	        }
+//	    }
+//	    // After 3 attempts, return null instead of throwing exception
+//	    System.out.println("Skipping action: Elements not found after 3 attempts - " + locator);
+//		log.info("[{}] Skipping action Elements not found after"+attempts+"  Attempts", ThreadContext.get("testName"));
+//
+//	    return null;
+//	}
+//
+//		
+//		
+//		public WebElement safeFindElement(By locator) {
+//			log.info("[{}] Within safeFindElement method", ThreadContext.get("testName"));
+//
+//		    int attempts = 0;
+//		    while (attempts < 2) {
+//		        try {
+//		        	
+//		            WebElement element = wait.until(ExpectedConditions.presenceOfElementLocated(locator));
+//					log.info("[{}]Found the element returning it ,element ->"+element, ThreadContext.get("testName"));
+//		            System.out.println("Found the element: " + locator);
+//		            return element;
+//		        } catch (Exception e) {
+//					log.info("[{}]Retrying findElement for: ->"+locator, ThreadContext.get("testName"));
+//
+//		            System.out.println("Retrying findElement for: " + locator + " - Attempt " + (attempts + 1));
+//		            attempts++;
+//		            try {
+//		                driver.navigate().refresh();
+//						log.info("[{}]Refrehsing the page , while trying to safely find : ->"+locator, ThreadContext.get("testName"));
+//		                System.out.println("Refreshing the page in safeFindElement Method");
+//		                Thread.sleep(1000);
+//		            } catch (InterruptedException ignored) {}
+//		        }
+//		    }
+//
+//
+//			log.info("[{}] Skipping action: Element not found after "+attempts+"   attemps", ThreadContext.get("testName"));
+//
+//		    System.out.println("Skipping action: Element not found after 3 attempts - " + locator);
+//		    return null;
+//		}
 		
 		
 		
