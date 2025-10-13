@@ -14,11 +14,21 @@ import java.time.Duration;
 import java.util.List;
 import java.util.NoSuchElementException;
 
-public class SafeActions extends BasePage{
+public class SafeActions{
    
 	private  static final Logger log = LoggerUtility.getLogger(SafeActions.class);
 
 
+	    private final WebDriver driver;
+	    private final WebDriverWait wait;
+
+	    public SafeActions(WebDriver driver) {
+	        this.driver = driver;
+	        this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+	        log.info("SafeActions initialized with driver {}", driver);
+	    }
+	    
+	    
 	public void safeClick(By locator) {
 		log.info("[{}] Within safeClick method", ThreadContext.get("testName"));
 
@@ -27,11 +37,12 @@ public class SafeActions extends BasePage{
 	        try {
 	        	
 	            WebElement element = wait.until(ExpectedConditions.elementToBeClickable(locator));
+	            Thread.sleep(2000);
 	            element.click();
 	    		log.info("[{}] Clicked the  "+element+"   using safeClick", ThreadContext.get("testName"));
 	            System.out.println("Clicked using safeClick");
 	            return;
-	        } catch (TimeoutException |ElementClickInterceptedException | StaleElementReferenceException e) {
+	        } catch (TimeoutException |ElementClickInterceptedException | StaleElementReferenceException | InterruptedException e) {
 	            System.out.println("Retrying click for: " + locator + " - Attempt " + (attempts + 1));
 	    		log.info("[{}] Cannot click the butto using safeClick, trying again", ThreadContext.get("testName"));
 	            attempts++;

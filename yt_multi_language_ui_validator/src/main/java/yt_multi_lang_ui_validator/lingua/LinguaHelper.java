@@ -37,27 +37,30 @@ public class LinguaHelper {
 	                return "Unknown";
 	            }
 
-	            // Clean up text input
 	            String cleanText = text.trim();
 
-	            // Detect language
 	            Language detected = DETECTOR.detectLanguageOf(cleanText);
 	            if (detected == null) {
 	                log.debug("No language detected for text: {}", cleanText);
 	                return "Unknown";
 	            }
 
-	            log.info("Detected language: {} for sample: {}", detected.name(), shorten(cleanText));
-	            return detected.name(); // e.g. "ENGLISH", "SPANISH", etc.
+	            // 👇 clean, readable log format showing detected language + full text clearly
+	            log.info("\n========== LANGUAGE DETECTION ==========\n" +
+	                     "Detected Language : {}\n" +
+	                     "Input Text        : {}\n" +
+	                     "========================================", 
+	                     detected.name(), cleanText);
+
+	            return detected.name();
+
 	        } catch (Exception e) {
 	            log.error("Language detection failed: {}", e.getMessage());
 	            return "Unknown";
 	        }
 	    }
 
-	    /** Utility to log only a small preview of the text */
-	    private static String shorten(String text) {
-	        return text.length() > 60 ? text.substring(0, 60) + "..." : text;
-	    }
+
+	   
     
 }

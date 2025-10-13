@@ -19,15 +19,21 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import main.java.yt_multi_lang_ui_validator.base.BasePage;
 import main.java.yt_multi_lang_ui_validator.lingua.LinguaHelper;
+import main.java.yt_multi_lang_ui_validator.logger.LoggerUtility;
 import main.java.yt_multi_lang_ui_validator.safeActions.SafeActions;
 import main.java.yt_multi_lang_ui_validator.utilities.WaitUtility;
 import yt_multi_language_ui_validator.BasicTest;
 public class YtLandingPage  extends BasePage{
 	
-//	
-	private static  final Logger log = main.java.yt_multi_lang_ui_validator.logger.LoggerUtility.getLogger(YtLandingPage.class);
-	
-	SafeActions safeAct=new SafeActions();
+     private static final Logger log = LoggerUtility.getLogger(YtLandingPage.class);
+	 private final SafeActions safeAct;
+
+	 public YtLandingPage() {
+	        super();
+	        this.safeAct = new SafeActions(driver);
+	        log.info("Initialized YtLandingPage with driver: {}", driver);
+	    }
+
 	
 	public By sideMenuExpandedList=By.xpath("//ytd-guide-entry-renderer[@class='style-scope ytd-guide-section-renderer']");
 	
@@ -68,28 +74,32 @@ public class YtLandingPage  extends BasePage{
 	
 	public WebElement getLanguageElementByName(String name) {
 	    	By locator=By.xpath("//yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='" + name + "']");
+	    	log.info("Looking for language element with name: {}", name);
 		    WebElement safeElement = safeAct.safeFindElement(locator);
 		    return safeElement;
 	}
 
 	public void clickingUnderSearchInput() {
+		log.info("Clicking into the search bar...");
 		safeAct.safeFindElement(searchInputLandinfPage);
 		safeAct.safeClick(searchInputLandinfPage);
 	}
 	
 	public void givingInputUnderSearchBar(String input) {
+		log.info("Giving input into the search bar with input as  = "+input);
 		safeAct.safeClick(searchInputLandinfPage);
 		safeAct.safeFindElement(searchInputLandinfPage).sendKeys(input);
 	}
 
 	
 	public void clickingGlobalFilterButton() {
+		log.info("Clicking on global filter button in landing page..");
 		safeAct.safeClick(globalFilterButton);
 	}
 	
 	
 	public void clickingLocationDropdownUnderSettings() {
-		
+		log.info("Clicking on location dropdown under settings..");
 		safeAct.safeClick(locationDropdownUnderSettings);
 		
 	}
@@ -97,14 +107,16 @@ public class YtLandingPage  extends BasePage{
 	
 	
 	public void closeGlobalFilterPopup() {
+		log.info("Closing the global filter pop-up in landing page..");
 		safeAct.safeFindElement(closeButtonGlobalFilterPopup).click();
 	}
 	
 	
 	public List<WebElement> getLocationList() {
-		
+		log.info("Fetching the location list ...");
 		List<WebElement>list=safeAct.safeFindElements(locationList);
 		list.removeIf(el -> el.getText().trim().isEmpty());
+		log.info("Fetched  the location list == "+list);
 		return list;
 		
 	}
@@ -112,54 +124,59 @@ public class YtLandingPage  extends BasePage{
 	
     public void openingLandingPage() {
     	driver.get("https://www.youtube.com/");
+    	log.info("Opened YouTube landing page.");
     }
     
     public void clickingSettingEllipsesButton() throws InterruptedException {
-   
+    	    log.info("Clicking settings ellipses button...");
         	safeAct.safeFindElement(settingEllipsesButton).click();
     }
     
     public void clickingLanguageDropdownButton() throws InterruptedException {
-
+    	 log.info("Clicking language dropdown...");
     	safeAct.safeFindElement(languageDropdownUnderSettings).click();
     	
     }
     
     public List<WebElement> gettingLanguageList() throws InterruptedException{
-    
+          	log.info("Fetching available language list...");
     		 List<WebElement> langList=safeAct.safeFindElements(languageList);
     		 langList.removeIf(el -> el.getText().trim().isEmpty());
+    		 log.info("Found {} languages.", langList.size());
     		 return langList;
     }
     
     
     public String getsettingEllipsesOptionsListLandingPage() {
+    	log.info("Getting the setting ellipses options");
     	String str=safeAct.safeFindElement(settingEllipsesOptionsListLandingPage).getText();
     	return str;
     }
     
     
     public List<WebElement> gettingSideMenuExpandedList() throws InterruptedException{
-        
+        log.info("Fetching the side menu in expanded view");
 		 List<WebElement> sideMenuList=safeAct.safeFindElements(sideMenuExpandedList);
 		 return sideMenuList;
     }
     
     
     public List<WebElement> gettingSideMenuCollapsedList() throws InterruptedException{
-        
+    	 log.info("Fetching the side menu in collapsed view");
 		 List<WebElement> sideMenuList=safeAct.safeFindElements(sideMenuCollapsedList);
 		 return sideMenuList;
    }
     
     
     public void clickingLeftEllipses() {
+    	log.info("Clicking left ellipses in the landing page");
     	safeAct.safeFindElement(ellipsesYtLandingPageTopLeft).click();
     }
     
     
     
     public String getDataFromGlobalFilterPopup() {
+    	log.info("Fetching the data from the global filter in landing page");
     	String str=safeAct.safeFindElement(globalFilterData).getText();
     	return str;
     }
@@ -168,6 +185,7 @@ public class YtLandingPage  extends BasePage{
     
     
     public List<String> applyLanguagesFromInternalDataset(){
+    	log.info("In the applyLanguagesFromInternalDataset ");
     	List<String> linguaAccurateLanguages = Arrays.asList(
     		    	 "Afrikaans",
     		        "Azərbaycan",
@@ -230,15 +248,16 @@ public class YtLandingPage  extends BasePage{
     
     
     public String getCountryCode() {
-	
-    	String str= safeAct.safeFindElement(countryCodeOnYtLogoLandingPage).getText();
-    	return str;
+    	log.info("Retrieving country code from YouTube logo...");
+    	String code= safeAct.safeFindElement(countryCodeOnYtLogoLandingPage).getText();
+    	log.info("Detected country code: {}", code);
+    	return code;
      }
 
 
     public String getExpectedCountryCodeViaLocation(String location) {
     	
-    	
+    	log.info("In the getExpectedCountryCodeViaLocation ");
     	
     	Map<String, String> countryCodeMap = new HashMap<>() {{
     	    put("Argentina", "AR");
@@ -354,131 +373,13 @@ public class YtLandingPage  extends BasePage{
 
     	
     	if(countryCodeMap.containsKey(location)) {
+    		log.info("Country code exists in the data set , value is ="+countryCodeMap.get(location));
     		return countryCodeMap.get(location);
     	}else {
-    		System.out.println("Location input does not exist");
+    		log.info("Country code does not exists in the data set, returning null");
     		return null;
     	}
     }
-
-    
-    
-//    public void applyingAllLanguagesFromList() throws InterruptedException {
-//    	
-//    	
-//    	 List<WebElement> languageList = gettingLanguageList();
-//    	
-//    	for(int j=1;j<languageList.size();j++) {
-//			
-//			languageList =	gettingLanguageList();
-//			String langText=languageList.get(j).getText();
-//			System.out.println(langText+"    "+j);
-//			
-//			
-//	     		WebElement test=driver.findElement(getLanguageElementByName(langText));
-//				wait.until(ExpectedConditions.elementToBeClickable(test));
-//				test.click();
-//				Thread.sleep(2000);
-//				List<WebElement> listOfSideMenu=driver.findElements(sideMenuExpandedList);
-//				StringBuilder sb=new StringBuilder();
-//				for(int i=0;i<listOfSideMenu.size();i++) {
-//					System.out.println(listOfSideMenu.get(i).getText());
-//					sb.append(listOfSideMenu.get(i).getText());
-//				}
-//				
-//				LinguaHelper.detectLanguage(sb.toString());
-//				Thread.sleep(2000);				
-//				driver.findElement(settingEllipsesButton).click();
-//				Thread.sleep(2000);
-//				driver.findElement(languageDropdownUnderSettings).click();
-//			}
-//		
-//	}
-//    
-//    
-//    
-//    
-//    
-//    public void applyingLanguagesFromAddedList(List<String> list) throws InterruptedException {
-//    	
-//    	
-//   	 List<String> languageList = list;
-//   	
-//   	
-//   	for(int j=1;j<languageList.size();j++) {
-//			
-//			languageList =	list;
-//			String langText=languageList.get(j);
-//			System.out.println(langText+"    "+j);
-//			
-//			
-//	     		WebElement test=driver.findElement(getLanguageElementByName(langText));
-//				wait.until(ExpectedConditions.elementToBeClickable(test));
-//				test.click();
-//				Thread.sleep(3000);
-//				List<WebElement> listOfSideMenu=driver.findElements(sideMenuExpandedList);
-//				StringBuilder sb=new StringBuilder();
-//				for(int i=0;i<listOfSideMenu.size();i++) {
-//					System.out.println(listOfSideMenu.get(i).getText());
-//					sb.append(listOfSideMenu.get(i).getText());
-//				}
-//				
-//				LinguaHelper.detectLanguage(sb.toString());
-//				Thread.sleep(2000);				
-//				driver.findElement(settingEllipsesButton).click();
-//				Thread.sleep(2000);
-//				driver.findElement(languageDropdownUnderSettings).click();
-//			}
-//		
-//	}
-//    
-//    
-//    
-//    
-//    
-//    public void applyingAllLanguagesFromListTrial() {
-//    	
-//    	WaitUtility w=new WaitUtility();
-//        // assume the language menu is already open when you call this
-//        List<WebElement> languageListOptions = w.findVisibleElements(languageList);
-//
-//        for (int j = 0; j < languageListOptions.size(); j++) {
-//        	
-//            // refresh each iteration to avoid stale elements
-//        	languageListOptions = w.findVisibleElements(languageList);
-//            if (j >= languageListOptions.size()) break; // safety
-//
-//            String langText = languageListOptions.get(j).getText().trim();
-//            if (langText.isEmpty()) continue;
-//
-//            System.out.println(langText + "    " + j);
-//
-//            // click the language option reliably
-//            By langLocator = getLanguageElementByName(langText);
-//            w.clickWhenReady(langLocator);
-//
-//            // wait for side menu to populate and collect text
-//            List<WebElement> listOfSideMenu = w.findVisibleElements(sideMenuExpandedList);
-//            StringBuilder sb = new StringBuilder();
-//            for (WebElement el : listOfSideMenu) {
-//                System.out.println(el.getText());
-//                sb.append(el.getText());
-//            }
-//
-//            // run language detection
-//            LinguaHelper.detectLanguage(sb.toString());
-//            
-//            
-//            // reopen settings + language menu for next iteration (use robust clicks)
-//            w.clickWhenReady(settingEllipsesButton);
-//            w.clickWhenReady(languageDropdownUnderSettings);
-//
-//        }
-//    }
-
-    
-    
-    
     
     
  }

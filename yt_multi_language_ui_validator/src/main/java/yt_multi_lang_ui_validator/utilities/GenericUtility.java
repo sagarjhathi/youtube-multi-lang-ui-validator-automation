@@ -24,7 +24,7 @@ public class GenericUtility extends BasePage {
 	
 	
 	 private static final  Logger log=LoggerUtility.getLogger(GenericUtility.class);
-		SafeActions safeAct = new SafeActions();
+		SafeActions safeAct = new SafeActions(driver);
 		
 	public  String getLangAttribute() {
 		WebElement html = driver.findElement(By.xpath("//html"));
