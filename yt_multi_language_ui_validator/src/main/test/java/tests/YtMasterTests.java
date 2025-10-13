@@ -45,7 +45,7 @@ public class YtMasterTests extends BaseTest{
 			String langText=languageList.get(j);
 			System.out.println(langText+"    "+j);
 			
-			
+			Thread.sleep(1000);
 	     	yt.getLanguageElementByName(langText).click();	
 	     	
 			Thread.sleep(2000);
@@ -104,7 +104,7 @@ public class YtMasterTests extends BaseTest{
 				String langText=languageList.get(j);
 				System.out.println(langText+"    "+j);
 				
-				
+				Thread.sleep(1000);
 		     	yt.getLanguageElementByName(langText).click();	
 		     	 
 		     	gn.getLangAttribute();
@@ -163,7 +163,7 @@ public class YtMasterTests extends BaseTest{
 			String langText=languageList.get(j);
 			System.out.println(langText+"    "+j);
 			
-			 
+			 Thread.sleep(1000);
 	     	yt.getLanguageElementByName(langText).click();	
 	     	
 			Thread.sleep(2000);
@@ -271,7 +271,7 @@ public class YtMasterTests extends BaseTest{
 			String langText=languageList.get(j);
 			System.out.println(langText+"    "+j);
 			
-			
+			Thread.sleep(1000);
 	     	yt.getLanguageElementByName(langText).click();	
 	     
 			Thread.sleep(2000);

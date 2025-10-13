@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Configuration status="WARN">
   <Properties>
-    <Property name="logs.dir">logs</Property>
+   <Property name="logs.dir">${sys:logs.dir:-logs}</Property>
     <Property name="pattern">%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level [%X{logFileName}] %msg%n</Property>
   </Properties>
 
@@ -15,8 +15,8 @@
         <!-- per-test route when ctx:logFileName is set -->
         <Route>
           <RollingFile name="RollingFile-${ctx:logFileName}"
-                       fileName="${logs.dir}/$${ctx:logFileName}.log"
-                       filePattern="${logs.dir}/archive/$${ctx:logFileName}-%d{yyyy-MM-dd-HH-mm}.log.gz"
+                       fileName="${logs.dir}/${ctx:logFileName:-default}.log"
+                       filePattern="${logs.dir}/archive/${ctx:logFileName:-default}-%d{yyyy-MM-dd-HH-mm}.log"
                        append="true">
             <PatternLayout pattern="${pattern}"/>
             <Policies>

@@ -3,6 +3,8 @@
 <suite thread-count="2" parallel="methods" name="Suite">
   <test thread-count="2" parallel="methods" name="Test">
     <classes>
+      <class name="main.java.yt_multi_lang_ui_validator.logger.LogFolderSetup"/>
+
       <class name="main.test.java.tests.YtMasterTests"/>
     </classes>
   </test> <!-- Test -->
