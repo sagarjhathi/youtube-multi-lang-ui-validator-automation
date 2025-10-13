@@ -45,9 +45,9 @@ public class YtMasterTests extends BaseTest{
 			String langText=languageList.get(j);
 			System.out.println(langText+"    "+j);
 			
-			 g.ensurePageLoadedOrRefresh();
+			
 	     	yt.getLanguageElementByName(langText).click();	
-	     	 g.ensurePageLoadedOrRefresh();
+	     	
 			Thread.sleep(2000);
 			List<WebElement> listOfSideMenu=yt.gettingSideMenuExpandedList();
 			
@@ -76,7 +76,7 @@ public class YtMasterTests extends BaseTest{
 				Thread.sleep(2000);
 				yt.clickingLanguageDropdownButton();
 			    Thread.sleep(2000);
-			    g.ensurePageLoadedOrRefresh();
+			  
 			}
     	     softAssert.assertAll();
 	}
@@ -104,9 +104,9 @@ public class YtMasterTests extends BaseTest{
 				String langText=languageList.get(j);
 				System.out.println(langText+"    "+j);
 				
-				 gn.ensurePageLoadedOrRefresh();
+				
 		     	yt.getLanguageElementByName(langText).click();	
-		     	 gn.ensurePageLoadedOrRefresh();
+		     	 
 		     	gn.getLangAttribute();
 				Thread.sleep(2000);
 				List<WebElement> listOfSideMenu=yt.gettingSideMenuCollapsedList();
@@ -137,7 +137,7 @@ public class YtMasterTests extends BaseTest{
 					Thread.sleep(2000);
 					yt.clickingLanguageDropdownButton();
 				    Thread.sleep(2000);
-				    gn.ensurePageLoadedOrRefresh();
+				   
 				}
 	    	
 	    	    softAssert.assertAll();	
@@ -163,9 +163,9 @@ public class YtMasterTests extends BaseTest{
 			String langText=languageList.get(j);
 			System.out.println(langText+"    "+j);
 			
-			 gn.ensurePageLoadedOrRefresh();
+			 
 	     	yt.getLanguageElementByName(langText).click();	
-	     	 gn.ensurePageLoadedOrRefresh();
+	     	
 			Thread.sleep(2000);
 			
 			yt.clickingSettingEllipsesButton();
@@ -193,7 +193,7 @@ public class YtMasterTests extends BaseTest{
 				Thread.sleep(2000);
 				yt.clickingLanguageDropdownButton();
 			    Thread.sleep(2000);
-			   gn.ensurePageLoadedOrRefresh();
+			  
 			}
     	
     	    softAssert.assertAll();	
@@ -221,11 +221,11 @@ public class YtMasterTests extends BaseTest{
 			String locationText=locationList.get(i).getText();
 			System.out.println(locationText+"    "+i);
 
-			 gn.ensurePageLoadedOrRefresh();
+			
 			 Thread.sleep(2000);
 			 locationList.get(i).click();
 			 Thread.sleep(2000);
-			 gn.ensurePageLoadedOrRefresh();
+			
 			
 			String applicableLocation=locationText;
 			String expectedCountryCode=yt.getExpectedCountryCodeViaLocation(locationText);
@@ -239,7 +239,7 @@ public class YtMasterTests extends BaseTest{
 				Thread.sleep(2000);
 				yt.clickingLocationDropdownUnderSettings();
 			    Thread.sleep(2000);
-			    gn.ensurePageLoadedOrRefresh();
+			   
 			
 			
 		}
@@ -267,14 +267,13 @@ public class YtMasterTests extends BaseTest{
 				Thread.sleep(2000);
 				yt.clickingLanguageDropdownButton();
 			    Thread.sleep(2000);
-			   gn.ensurePageLoadedOrRefresh();
-			   
+						   
 			String langText=languageList.get(j);
 			System.out.println(langText+"    "+j);
 			
-			 gn.ensurePageLoadedOrRefresh();
+			
 	     	yt.getLanguageElementByName(langText).click();	
-	     	 gn.ensurePageLoadedOrRefresh();
+	     
 			Thread.sleep(2000);
 			
 			yt.clickingGlobalFilterButton();

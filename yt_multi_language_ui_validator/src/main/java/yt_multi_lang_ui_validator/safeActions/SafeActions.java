@@ -28,7 +28,7 @@ public class SafeActions{
 
 	    public SafeActions(WebDriver driver) {
 	        this.driver = driver;
-	        this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+	        this.wait = new WebDriverWait(driver, Duration.ofSeconds(TIMEOUT_SEC));
 	        log.info("SafeActions initialized with driver {}", driver);
 	    }
 	    

@@ -24,17 +24,26 @@ public class GenericUtility extends BasePage {
 	
 	
 	 private static final  Logger log=LoggerUtility.getLogger(GenericUtility.class);
-		SafeActions safeAct = new SafeActions(driver);
+	 SafeActions safeAct = new SafeActions(driver);
 		
-	public  String getLangAttribute() {
-		WebElement html = driver.findElement(By.xpath("//html"));
-		String langProp = html.getDomProperty("lang"); 
-		// ✅ "en"
-		System.out.println("Language attribute is ===  "+langProp);
-		return langProp;
-	}
+	
+	public String getLangAttribute() {
+        log.info("getLangAttribute() - locating <html> and reading lang property");
+        try {
+            WebElement html = driver.findElement(By.xpath("//html"));
+            String langProp = html.getDomProperty("lang");
+            log.info("Language attribute read: {}", langProp);
+            return langProp;
+        } catch (Exception e) {
+            log.error("Failed to read html lang attribute: {}", e.getMessage());
+            return null;
+        }
+    }
+	
+	
 	
 	public String getLangAttributeViaLanguageInput(String langInput) {
+		log.info("getLangAttributeViaLanguageInput({})", langInput);
 		Map<String, String> languageAttributeMap = new HashMap<>() {{
 		    put("Afrikaans", "af-ZA");
 		    put("Azərbaycan", "az-Latn-AZ");
@@ -94,9 +103,10 @@ public class GenericUtility extends BasePage {
 		
 		if(languageAttributeMap.containsKey(langInput)) {
 			String langAttribute=languageAttributeMap.get(langInput);
+			 log.info("Mapped {} -> {}", langInput, langAttribute);
 			return langAttribute;
 		}else {
-			String notAvailable="no lang attribute available for the given input language";
+			log.warn("No lang attribute mapping for '{}'", langInput);
 			return null;
 		}
 
@@ -106,7 +116,7 @@ public class GenericUtility extends BasePage {
 	
 	public String getExpectedLangageViaApplicableLangInput(String langInput) {
 
-		
+		 log.info("getExpectedLangageViaApplicableLangInput({})", langInput);
 		
 		 Map<String, String> languageMap = new HashMap<>() {{
 		    	put("Afrikaans", "AFRIKAANS");
@@ -168,72 +178,26 @@ public class GenericUtility extends BasePage {
 		    
 		    if(languageMap.containsKey(langInput)) {
 				String lang=languageMap.get(langInput);
+				 log.info("Expected language for '{}' -> {}", langInput, lang);
 				return lang;
 			}else {
-				String notAvailable="No Expected language available for the given input language";
+				log.warn("No expected language mapping for '{}'", langInput);
 				return null;
 			}
 		    
 		    
 	}
-	
-	
-	public void clickEnter(By locator) {
-		
-		safeAct.safeFindElement(locator).sendKeys(Keys.ENTER);
-		
-	}
-	
-	
-	
-
-	 
-	 
-	 
-	 
-
-	public void ensurePageLoadedOrRefresh() throws InterruptedException {
-	    // --- Inner function: checks if page finished loading within timeout ---
-	    JavascriptExecutor js = (JavascriptExecutor) driver;
-	    long endTime = System.currentTimeMillis() + 8000L; // 8 seconds
-
-	    while (System.currentTimeMillis() < endTime) {
-	        try {
-	            String readyState = js.executeScript("return document.readyState").toString();
-	            if ("complete".equalsIgnoreCase(readyState)) {
-	                System.out.println("✅ Page loaded successfully within 8 seconds.");
-	                return;
-	            }
-	        } catch (Exception ignored) {}
-	        Thread.sleep(200);
-	    }
-
-	    // --- If we reach here, page didn’t load in time ---
-	    System.out.println("⚠️ Page load taking too long — stopping and refreshing...");
-
-	    try {
-	        js.executeScript("window.stop();");
-	        Thread.sleep(2000);
-	        driver.navigate().refresh();
-	        System.out.println("🔄 Page refreshed successfully.");
-	    } catch (Exception e) {
-	        System.out.println("❌ Failed to refresh page: " + e.getMessage());
-	    }
-	}
-
-	 
-	 
-	 
-	 public void stopPageLoadRefreshPage() throws InterruptedException {
-		 JavascriptExecutor js = (JavascriptExecutor) driver;
-		 js.executeScript("window.stop();");
-		 Thread.sleep(2000);
-		 driver.navigate().refresh();
-	 }
-	 
-	 
-	 
-	 
-	
+ 
+	// ---- convenience methods ----
+    public void clickEnter(By locator) {
+        log.info("clickEnter({})", locator);
+        WebElement el = safeAct.safeFindElement(locator);
+        if (el != null) {
+            el.sendKeys(Keys.ENTER);
+            log.info("Sent ENTER to {}", locator);
+        } else {
+            log.warn("clickEnter - element not found: {}", locator);
+        }
+    }
 
 }
