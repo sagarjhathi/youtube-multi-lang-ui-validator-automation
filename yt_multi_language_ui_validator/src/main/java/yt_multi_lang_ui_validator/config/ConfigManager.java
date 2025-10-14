@@ -1,87 +1,132 @@
 package main.java.yt_multi_lang_ui_validator.config;
 
 
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.util.Properties;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Properties;
-import java.util.stream.Collectors;
-
+import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import main.java.yt_multi_lang_ui_validator.base.BasePage;
-import main.java.yt_multi_lang_ui_validator.logger.LoggerUtility;
+import java.io.InputStream;
+import java.time.Duration;
+import java.util.Locale;
+import java.util.Properties;
 
-public final class ConfigManager {
-    private static final Properties props = new Properties();
-    private static final String RESOURCE = "UtilData.properties";
+/**
+ * Simple and easy-to-understand configuration manager.
+ * 
+ * Loads values from:
+ *   1. src/test/resources/utildata.properties
+ * 
+ * (If you later want, you can extend it to check system properties and env vars.)
+ *
+ * Usage:
+ *   ConfigManager cfg = ConfigManager.getInstance();
+ *   String url = cfg.getString("base.url");
+ *   int wait = cfg.getInt("explicit.wait", 10);
+ *   boolean headless = cfg.getBoolean("chrome.headless", false);
+ */
+public class ConfigManager {
 
-    private static final  Logger log=LoggerUtility.getLogger(ConfigManager.class);
-    static {
-        // 1) External file override (useful for CI): -Dconfig.file=/path/UtilData.properties
-        String external = System.getProperty("config.file");
-        if (external != null && !external.isBlank()) {
-            try (FileInputStream fis = new FileInputStream(external)) {
-                props.load(fis);
-                System.out.println("Loaded config from external file: " + external);
-            } catch (IOException e) {
-                throw new RuntimeException("Failed to load external config: " + external, e);
-            }
-        } else {
-            // 2) Try classpath resource (src/test/resources/UtilData.properties)
-            try (InputStream in = ConfigManager.class.getClassLoader().getResourceAsStream(RESOURCE)) {
-                if (in != null) {
-                    props.load(in);
-                    System.out.println("Loaded config from classpath: " + RESOURCE);
-                } else {
-                    System.out.println("Config not found on classpath: " + RESOURCE);
+    private static final Logger log = LogManager.getLogger(ConfigManager.class);
+
+    private static ConfigManager instance;
+    private final Properties props = new Properties();
+
+    // --- Constructor: load file once ---
+    private ConfigManager() {
+        loadProperties();
+    }
+
+    // --- Singleton accessor ---
+    public static synchronized ConfigManager getInstance() {
+        if (instance == null) {
+            instance = new ConfigManager();
+        }
+        return instance;
+    }
+
+    // --- Load from src/test/resources/utildata.properties ---
+    private void loadProperties() {
+        try (InputStream input = getClass().getClassLoader().getResourceAsStream("utildata.properties")) {
+            if (input != null) {
+                props.load(input);
+                log.info("Loaded utildata.properties from classpath ({} keys).", props.size());
+                if (log.isDebugEnabled()) {
+                    props.forEach((k, v) -> log.debug("{} = {}", k, v));
                 }
-            } catch (IOException e) {
-                throw new RuntimeException("Failed to load config from classpath: " + RESOURCE, e);
+            } else {
+                log.warn("utildata.properties not found in classpath! Using only defaults and hardcoded values.");
             }
+        } catch (Exception e) {
+            log.error("Error loading utildata.properties: {}", e.getMessage(), e);
         }
     }
 
-    private ConfigManager() { /* utility class */ }
-
-    /** Simple get: system property -> env var -> properties file */
-    public static String get(String key) {
-        String sys = System.getProperty(key);
-        System.out.printf("ConfigManager.get(): %s = %s%n", key, sys);
-        if (sys != null) return sys;
-        String env = System.getenv(key.toUpperCase().replace('.', '_'));
-        if (env != null) return env;
-        return props.getProperty(key);
+    // --- Internal helper: simple resolver ---
+    private String resolveValue(String key) {
+        String val = props.getProperty(key);
+        if (val != null && !val.isEmpty()) {
+            log.debug("Resolved key '{}' = '{}'", key, val);
+            return val;
+        } else {
+            log.debug("Key '{}' not found in properties file.", key);
+            return null;
+        }
     }
 
-    public static String get(String key, String defaultValue) {
-        String v = get(key);
-        System.out.printf("ConfigManager.get(): %s = %s%n", key, v);
+    // --- Public getters ---
 
+    public String getString(String key) {
+        return resolveValue(key);
+    }
+
+    public String getString(String key, String defaultValue) {
+        String v = resolveValue(key);
+        if (v == null) {
+            log.debug("Key '{}' missing, using default '{}'", key, defaultValue);
+        }
         return v != null ? v : defaultValue;
     }
 
-    public static boolean getBoolean(String key, boolean defaultValue) {
-        String v = get(key);
-        System.out.printf("ConfigManager.get(): %s = %s%n", key, v);
-
-        return v == null || v.isBlank() ? defaultValue : Boolean.parseBoolean(v.trim());
+    public int getInt(String key, int defaultValue) {
+        String v = resolveValue(key);
+        try {
+            int result = (v != null) ? Integer.parseInt(v.trim()) : defaultValue;
+            log.debug("Integer key '{}' = {}", key, result);
+            return result;
+        } catch (NumberFormatException e) {
+            log.warn("Invalid integer for key '{}': '{}'. Using default {}", key, v, defaultValue);
+            return defaultValue;
+        }
     }
 
-    public static int getInt(String key, int defaultValue) {
-        String v = get(key);
-        System.out.printf("ConfigManager.get(): %s = %s%n", key, v);
-
-        if (v == null || v.isBlank()) return defaultValue;
-        try { return Integer.parseInt(v.trim()); } catch (NumberFormatException e) { return defaultValue; }
+    public boolean getBoolean(String key, boolean defaultValue) {
+        String v = resolveValue(key);
+        if (v == null) {
+            log.debug("Boolean key '{}' not found. Using default {}", key, defaultValue);
+            return defaultValue;
+        }
+        boolean result = v.equalsIgnoreCase("true") || v.equalsIgnoreCase("yes") || v.equals("1");
+        log.debug("Boolean key '{}' = {}", key, result);
+        return result;
     }
- 
+
+    public Duration getDuration(String key, int defaultSeconds) {
+        String v = resolveValue(key);
+        try {
+            Duration result = (v != null)
+                    ? Duration.ofSeconds(Long.parseLong(v.trim()))
+                    : Duration.ofSeconds(defaultSeconds);
+            log.debug("Duration key '{}' = {} seconds", key, result.getSeconds());
+            return result;
+        } catch (Exception e) {
+            log.warn("Invalid duration for key '{}': '{}'. Using default {}s", key, v, defaultSeconds);
+            return Duration.ofSeconds(defaultSeconds);
+        }
+    }
+
+    // --- Debug helper ---
+    public void printAll() {
+        log.info("------ Loaded Config ({} entries) ------", props.size());
+        props.forEach((k, v) -> log.info("{} = {}", k, v));
+        log.info("----------------------------------------");
+    }
 }
-
-
-
