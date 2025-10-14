@@ -18,6 +18,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import main.java.yt_multi_lang_ui_validator.base.BasePage;
+import main.java.yt_multi_lang_ui_validator.config.ConfigManager;
 import main.java.yt_multi_lang_ui_validator.lingua.LinguaHelper;
 import main.java.yt_multi_lang_ui_validator.logger.LoggerUtility;
 import main.java.yt_multi_lang_ui_validator.safeActions.SafeActions;
@@ -123,8 +124,10 @@ public class YtLandingPage  extends BasePage{
 	
 	
     public void openingLandingPage() {
-    	driver.get("https://www.youtube.com/");
-    	log.info("Opened YouTube landing page.");
+    	    ConfigManager cfg = ConfigManager.getInstance();  
+        	String url=cfg.getString("Url");
+    		driver.get(url);
+    	    log.info("Opened YouTube landing page.");
     }
     
     public void clickingSettingEllipsesButton() throws InterruptedException {

@@ -8,6 +8,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import main.java.yt_multi_lang_ui_validator.base.BasePage;
+import main.java.yt_multi_lang_ui_validator.config.ConfigManager;
 import main.java.yt_multi_lang_ui_validator.logger.LoggerUtility;
 
 import java.time.Duration;
@@ -22,13 +23,21 @@ public class SafeActions{
 	    private final WebDriver driver;
 	    private final WebDriverWait wait;
 	    
-	    private static final int MAX_ATTEMPTS = 3;
-	    private static final int TIMEOUT_SEC = 10;
+	    
+	    
+	    	
 
-
+	    int timeoutSec;
+	    int attempts;
+	    
 	    public SafeActions(WebDriver driver) {
 	        this.driver = driver;
-	        this.wait = new WebDriverWait(driver, Duration.ofSeconds(TIMEOUT_SEC));
+	        
+	         ConfigManager cfg = ConfigManager.getInstance();
+	         timeoutSec = cfg.getInt("explicit.wait", 10); // seconds
+	         attempts = cfg.getInt("element.retry.attempts", 2);
+	        
+	        this.wait = new WebDriverWait(driver, Duration.ofSeconds(timeoutSec));
 	        log.info("SafeActions initialized with driver {}", driver);
 	    }
 	    
@@ -49,7 +58,7 @@ public class SafeActions{
 	    public WebElement safeFindElement(By locator) {
 	        log.info("[{}] Trying to find element: {}", ThreadContext.get("testName"), locator);
 
-	        for (int attempt = 1; attempt <= MAX_ATTEMPTS; attempt++) {
+	        for (int attempt = 1; attempt <= attempts; attempt++) {
 	            try {
 	                WebElement element = wait.until(ExpectedConditions.presenceOfElementLocated(locator));
 
@@ -68,7 +77,7 @@ public class SafeActions{
 	            refreshIfNeeded(attempt);
 	        }
 
-	        log.error("[{}] Element not found after {} attempts: {}", ThreadContext.get("testName"), MAX_ATTEMPTS, locator);
+	        log.error("[{}] Element not found after {} attempts: {}", ThreadContext.get("testName"), attempts, locator);
 	        return null;
 	    }
 
@@ -77,7 +86,7 @@ public class SafeActions{
 	    public List<WebElement> safeFindElements(By locator) {
 	        log.info("[{}] Finding elements list: {}", ThreadContext.get("testName"), locator);
 
-	        for (int attempt = 1; attempt <= MAX_ATTEMPTS; attempt++) {
+	        for (int attempt = 1; attempt <= attempts; attempt++) {
 	            try {
 	                List<WebElement> elements = wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(locator));
 
@@ -95,7 +104,7 @@ public class SafeActions{
 	            refreshIfNeeded(attempt);
 	        }
 
-	        log.error("[{}] No elements ready after {} attempts: {}", ThreadContext.get("testName"), MAX_ATTEMPTS, locator);
+	        log.error("[{}] No elements ready after {} attempts: {}", ThreadContext.get("testName"), attempts, locator);
 	        return List.of();
 	    }
 
@@ -104,7 +113,7 @@ public class SafeActions{
 	    public boolean safeClick(By locator) {
 	        log.info("[{}] Trying to click element: {}", ThreadContext.get("testName"), locator);
 
-	        for (int attempt = 1; attempt <= MAX_ATTEMPTS; attempt++) {
+	        for (int attempt = 1; attempt <= attempts; attempt++) {
 	            try {
 	                WebElement element = wait.until(ExpectedConditions.presenceOfElementLocated(locator));
 
@@ -127,14 +136,14 @@ public class SafeActions{
 	            refreshIfNeeded(attempt);
 	        }
 
-	        log.error("[{}] Failed to click element after {} attempts: {}", ThreadContext.get("testName"), MAX_ATTEMPTS, locator);
+	        log.error("[{}] Failed to click element after {} attempts: {}", ThreadContext.get("testName"), attempts, locator);
 	        return false;
 	    }
 
 	    // ---------- HELPER ----------
 
 	    private void refreshIfNeeded(int attempt) {
-	        if (attempt < MAX_ATTEMPTS) {
+	        if (attempt < attempts) {
 	            try {
 	                driver.navigate().refresh();
 	                log.info("[{}] Refreshed page (attempt {})", ThreadContext.get("testName"), attempt);

@@ -2,6 +2,9 @@ package main.java.yt_multi_lang_ui_validator.logger;
 
 
 import org.testng.annotations.BeforeSuite;
+
+import main.java.yt_multi_lang_ui_validator.config.ConfigManager;
+
 import java.io.File;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
@@ -19,6 +22,7 @@ public class LogFolderSetup {
 
         new File(logDir + "/archive").mkdirs();
         System.out.println("✅ Logs will be stored under: " + logDir);
+
     }
 }
 

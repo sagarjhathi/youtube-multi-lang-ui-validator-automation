@@ -45,18 +45,18 @@ public class ConfigManager {
 
     // --- Load from src/test/resources/utildata.properties ---
     private void loadProperties() {
-        try (InputStream input = getClass().getClassLoader().getResourceAsStream("utildata.properties")) {
+        try (InputStream input = getClass().getClassLoader().getResourceAsStream("masterdata.properties")) {
             if (input != null) {
                 props.load(input);
-                log.info("Loaded utildata.properties from classpath ({} keys).", props.size());
+                log.info("Loaded masterdata.properties from classpath ({} keys).", props.size());
                 if (log.isDebugEnabled()) {
                     props.forEach((k, v) -> log.debug("{} = {}", k, v));
                 }
             } else {
-                log.warn("utildata.properties not found in classpath! Using only defaults and hardcoded values.");
+                log.warn("masterdata.properties not found in classpath! Using only defaults and hardcoded values.");
             }
         } catch (Exception e) {
-            log.error("Error loading utildata.properties: {}", e.getMessage(), e);
+            log.error("Error loading masterdata.properties: {}", e.getMessage(), e);
         }
     }
 

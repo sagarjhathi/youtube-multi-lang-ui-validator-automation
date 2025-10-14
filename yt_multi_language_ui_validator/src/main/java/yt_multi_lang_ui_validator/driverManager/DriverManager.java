@@ -1,5 +1,8 @@
 package main.java.yt_multi_lang_ui_validator.driverManager;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -26,18 +29,40 @@ public class DriverManager {
         if (driver.get() == null) {
             log.info("No existing WebDriver found for current thread. Initializing a new ChromeDriver...");
 
+            ConfigManager cfg = ConfigManager.getInstance();  
             try {
                 ChromeOptions options = new ChromeOptions();
 
-                // Browser startup configurations
-                options.addArguments("--start-maximized");
-                options.addArguments("--disable-gpu");
-                options.addArguments("--disable-blink-features=AutomationControlled");
-                options.addArguments("--disable-dev-shm-usage");
-                options.addArguments("--no-sandbox");
-                options.setExperimentalOption("excludeSwitches", new String[]{"enable-automation"});
-                options.setExperimentalOption("useAutomationExtension", false);
-                options.addArguments("--disable-extensions");
+                List<String> appliedFlags = new ArrayList<>();
+
+                if (cfg.getBoolean("chrome.arg.start_maximized", true)) {
+                    options.addArguments("--start-maximized");
+                    appliedFlags.add("--start-maximized");
+                }
+                if (cfg.getBoolean("chrome.arg.disable_gpu", true)) {
+                    options.addArguments("--disable-gpu");
+                    appliedFlags.add("--disable-gpu");
+                }
+                if (cfg.getBoolean("chrome.arg.disable_blink_features_automation_controlled", true)) {
+                    options.addArguments("--disable-blink-features=AutomationControlled");
+                    appliedFlags.add("--disable-blink-features=AutomationControlled");
+                }
+                if (cfg.getBoolean("chrome.arg.disable_dev_shm_usage", true)) {
+                    options.addArguments("--disable-dev-shm-usage");
+                    appliedFlags.add("--disable-dev-shm-usage");
+                }
+                if (cfg.getBoolean("chrome.arg.no_sandbox", true)) {
+                    options.addArguments("--no-sandbox");
+                    appliedFlags.add("--no-sandbox");
+                }
+                if (cfg.getBoolean("chrome.arg.disable_extensions", true)) {
+                    options.addArguments("--disable-extensions");
+                    appliedFlags.add("--disable-extensions");
+                }
+
+                // 👇 Simple one-line log — easy to read in console or log file
+                log.info("Chrome flags applied: {}", String.join(", ", appliedFlags));
+               
 
                 // Initialize and store driver for this thread
                 WebDriver chromeDriver = new ChromeDriver(options);

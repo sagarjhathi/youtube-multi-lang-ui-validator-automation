@@ -11,6 +11,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import main.java.yt_multi_lang_ui_validator.config.ConfigManager;
 import main.java.yt_multi_lang_ui_validator.driverManager.DriverManager;
 import main.java.yt_multi_lang_ui_validator.logger.LoggerUtility;
 import main.java.yt_multi_lang_ui_validator.utilities.WaitUtility;
@@ -32,8 +33,11 @@ public class BasePage {
 	            log.error("Driver is null in BasePage. Did you call DriverManager.initDriver()?");
 	            throw new IllegalStateException("WebDriver not initialized!");
 	        }
-
-	        this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+	        ConfigManager cfg = ConfigManager.getInstance();  
+	        int waitDuration= cfg.getInt("explicit.wait", 10);
+	        System.out.println(waitDuration+"   wait in the base page added");
+	        
+	        this.wait = new WebDriverWait(driver, Duration.ofSeconds(waitDuration));
 	        log.info("BasePage initialized successfully for thread {}", Thread.currentThread().threadId());
 	    }
 
