@@ -23,9 +23,6 @@ public class SafeActions{
 	    private final WebDriver driver;
 	    private final WebDriverWait wait;
 	    
-	    
-	    
-	    	
 
 	    int timeoutSec;
 	    int attempts;
