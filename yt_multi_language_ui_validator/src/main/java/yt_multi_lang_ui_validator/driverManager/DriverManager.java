@@ -157,14 +157,18 @@ public class DriverManager {
             	        edgeOptions.setExperimentalOption("useAutomationExtension", useExtEdge);
 
             	        try {
-            	            io.github.bonigarcia.wdm.WebDriverManager.edgedriver().setup();
+            	        	
+            	            io.github.bonigarcia.wdm.WebDriverManager.edgedriver().browserVersion("17134").setup();
             	            log.info("WebDriverManager: edgedriver setup OK");
             	        } catch (Exception e) {
             	            log.warn("WDM edgedriver setup failed: {}. Will try local fallback if configured.", e.getMessage());
             	            String local = cfg.getString("webdriver.edge.local.path", "");
             	            if (!local.isBlank()) System.setProperty("webdriver.edge.driver", local);
             	        }
-
+            	        System.setProperty("SE_MSEDGEDRIVER_MIRROR_URL", "https://msedgedriver.microsoft.com");
+            	        log.info("Trying local fallback with == System.setProperty(\"SE_MSEDGEDRIVER_MIRROR_URL\", \"https://msedgedriver.microsoft.com\")");
+            	       
+            	        
             	        WebDriver edgeDriver = new org.openqa.selenium.edge.EdgeDriver(edgeOptions);
             	        driver.set(edgeDriver);
             	        try { edgeDriver.manage().deleteAllCookies(); } catch (Exception ignored) {}
