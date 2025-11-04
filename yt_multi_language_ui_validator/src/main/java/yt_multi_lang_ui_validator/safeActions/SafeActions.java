@@ -106,30 +106,100 @@ public class SafeActions{
 	    }
 
 	    // ---------- SAFE CLICK ----------
+//
+//	    public boolean safeClick(By locator) {
+//	        log.info("[{}] Trying to click element: {}", ThreadContext.get("testName"), locator);
+//
+//	        for (int attempt = 1; attempt <= attempts; attempt++) {
+//	            try {
+//	                WebElement element = wait.until(ExpectedConditions.presenceOfElementLocated(locator));
+//
+//	                if (isReady(element)) {
+//	                    element.click();
+//	                    log.info("[{}] Clicked successfully (attempt {}): {}", ThreadContext.get("testName"), attempt, locator);
+//	                    return true;
+//	                } else {
+//	                    log.warn("[{}] Element not ready to click (attempt {}): {}", ThreadContext.get("testName"), attempt, locator);
+//	                }
+//
+//	            } catch (ElementClickInterceptedException e) {
+//	                log.warn("[{}] Element intercepted (attempt {}): {}", ThreadContext.get("testName"), attempt, locator);
+//	            } catch (TimeoutException e) {
+//	                log.warn("[{}] Timeout waiting for click (attempt {}): {}", ThreadContext.get("testName"), attempt, locator);
+//	            } catch (WebDriverException e) {
+//	                log.warn("[{}] WebDriver exception on click (attempt {}): {} -> {}", ThreadContext.get("testName"), attempt, locator, e.toString());
+//	            }
+//
+//	            refreshIfNeeded(attempt);
+//	        }
+//
+//	        log.error("[{}] Failed to click element after {} attempts: {}", ThreadContext.get("testName"), attempts, locator);
+//	        return false;
+//	    }
 
+	    // ---------- HELPER ----------
+
+//	    private void refreshIfNeeded(int attempt) {
+//	        if (attempt < attempts) {
+//	            try {
+//	                driver.navigate().refresh();
+//	                log.info("[{}] Refreshed page (attempt {})", ThreadContext.get("testName"), attempt);
+//	                Thread.sleep(1000);
+//	            } catch (InterruptedException ignored) {}
+//	        }
+//	    }
+	    
+	    
 	    public boolean safeClick(By locator) {
 	        log.info("[{}] Trying to click element: {}", ThreadContext.get("testName"), locator);
 
 	        for (int attempt = 1; attempt <= attempts; attempt++) {
 	            try {
+	                // Wait for the element to be present, visible, and clickable
 	                WebElement element = wait.until(ExpectedConditions.presenceOfElementLocated(locator));
+	                element = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+	                element = wait.until(ExpectedConditions.elementToBeClickable(locator));
 
 	                if (isReady(element)) {
-	                    element.click();
-	                    log.info("[{}] Clicked successfully (attempt {}): {}", ThreadContext.get("testName"), attempt, locator);
-	                    return true;
+	                    try {
+	                        // Try the normal native click first
+	                        element.click();
+	                        log.info("[{}] Clicked successfully (attempt {}): {}", ThreadContext.get("testName"), attempt, locator);
+	                        Thread.sleep(250); // small buffer for SPA stability
+	                        return true;
+
+	                    } catch ( WebDriverException e) {
+	                        // These include cases where browser driver times out internally
+	                        log.warn("[{}] Native click failed (attempt {}): {} -> {}", 
+	                                 ThreadContext.get("testName"), attempt, locator, e.toString());
+
+	                        // Fallback to JS click (handles overlays / stalled drivers)
+	                        try {
+	                            log.info("[{}] Trying JS click fallback for: {}", ThreadContext.get("testName"), locator);
+	                            ((JavascriptExecutor) driver).executeScript("arguments[0].click();", element);
+	                            Thread.sleep(200);
+	                            return true;
+	                        } catch (Exception jsEx) {
+	                            log.error("[{}] JS click fallback failed (attempt {}): {} -> {}", 
+	                                      ThreadContext.get("testName"), attempt, locator, jsEx.toString());
+	                        }
+	                    }
+
 	                } else {
 	                    log.warn("[{}] Element not ready to click (attempt {}): {}", ThreadContext.get("testName"), attempt, locator);
 	                }
 
-	            } catch (ElementClickInterceptedException e) {
-	                log.warn("[{}] Element intercepted (attempt {}): {}", ThreadContext.get("testName"), attempt, locator);
-	            } catch (TimeoutException e) {
-	                log.warn("[{}] Timeout waiting for click (attempt {}): {}", ThreadContext.get("testName"), attempt, locator);
-	            } catch (WebDriverException e) {
-	                log.warn("[{}] WebDriver exception on click (attempt {}): {} -> {}", ThreadContext.get("testName"), attempt, locator, e.toString());
+	            } catch (StaleElementReferenceException stale) {
+	                log.warn("[{}] Stale element detected (attempt {}): {}", ThreadContext.get("testName"), attempt, locator);
+	            } catch (org.openqa.selenium.TimeoutException timeout) {
+	                log.warn("[{}] Timeout waiting for element (attempt {}): {}", ThreadContext.get("testName"), attempt, locator);
+	            } catch (Exception e) {
+	                // This block also catches java.net.http.HttpTimeoutException indirectly
+	                log.warn("[{}] Unexpected WebDriver exception (attempt {}): {} -> {}", 
+	                         ThreadContext.get("testName"), attempt, locator, e.toString());
 	            }
 
+	            // Refresh the page only after multiple failed attempts
 	            refreshIfNeeded(attempt);
 	        }
 
@@ -137,18 +207,58 @@ public class SafeActions{
 	        return false;
 	    }
 
-	    // ---------- HELPER ----------
-
-	    private void refreshIfNeeded(int attempt) {
-	        if (attempt < attempts) {
+	    
+	    
+	    protected void refreshIfNeeded(int attempt) {
+	        // refresh only after multiple failed attempts
+	        if (attempt >= 2) {
 	            try {
+	                log.warn("[{}] Attempt {} failed — refreshing the page to recover...", 
+	                         ThreadContext.get("testName"), attempt);
+
+	                // print current URL to help debug which page failed
+	                String currentUrl = driver.getCurrentUrl();
+	                log.info("[{}] Current URL before refresh: {}", ThreadContext.get("testName"), currentUrl);
+
+	                // refresh the page
 	                driver.navigate().refresh();
-	                log.info("[{}] Refreshed page (attempt {})", ThreadContext.get("testName"), attempt);
-	                Thread.sleep(1000);
-	            } catch (InterruptedException ignored) {}
+	                log.info("[{}] Page refreshed successfully.", ThreadContext.get("testName"));
+
+	                // wait briefly for the DOM to reload and stabilize
+	                Thread.sleep(1500);
+
+	                // optional: verify the page is ready again via JS readiness check
+	                boolean pageReady = false;
+	                try {
+	                    WebDriverWait shortWait = new WebDriverWait(driver, Duration.ofSeconds(8));
+	                    pageReady = shortWait.until(drv ->
+	                        ((JavascriptExecutor) drv)
+	                            .executeScript("return document.readyState")
+	                            .toString()
+	                            .equals("complete")
+	                    );
+	                } catch (Exception jsWaitEx) {
+	                    log.warn("[{}] Page readiness check failed after refresh (non-fatal): {}", 
+	                             ThreadContext.get("testName"), jsWaitEx.getMessage());
+	                }
+
+	                if (pageReady) {
+	                    log.info("[{}] Page fully loaded after refresh.", ThreadContext.get("testName"));
+	                } else {
+	                    log.warn("[{}] Page not fully loaded even after refresh — proceeding with caution.", 
+	                             ThreadContext.get("testName"));
+	                }
+
+	            } catch (InterruptedException ie) {
+	                Thread.currentThread().interrupt();
+	                log.error("[{}] Interrupted while waiting after refresh.", ThreadContext.get("testName"));
+	            } catch (Exception e) {
+	                log.error("[{}] Unexpected error during refresh (attempt {}): {}", 
+	                          ThreadContext.get("testName"), attempt, e.toString());
+	            }
 	        }
 	    }
-	    
+
 	    
 	    
 	    

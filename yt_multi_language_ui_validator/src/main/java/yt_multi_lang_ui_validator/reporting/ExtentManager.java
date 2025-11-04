@@ -37,7 +37,7 @@ public class ExtentManager {
 
         ExtentSparkReporter sparkReporter = new ExtentSparkReporter(reportPath);
         sparkReporter.config().setDocumentTitle("Automation Test Report");
-        sparkReporter.config().setReportName("Amazon Filter Automation Report");
+        sparkReporter.config().setReportName("Youtube multi lang ui validator");
         sparkReporter.config().setTheme(Theme.STANDARD); // Use Theme.DARK for dark mode
 
         ExtentReports extent = new ExtentReports();
@@ -49,6 +49,12 @@ public class ExtentManager {
         extent.setSystemInfo("Tester", "Sagar Hathi");
 
         return extent;
+    }
+    
+    public synchronized static void flush() {
+        if (extent != null) {
+            extent.flush();
+        }
     }
 }
 
