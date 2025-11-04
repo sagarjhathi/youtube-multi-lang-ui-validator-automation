@@ -37,63 +37,14 @@ public class DriverManager {
 
             
             
-            try {
-            	
-//            	ConfigManager cfg = ConfigManager.getInstance();  
-//                String browser = cfg.getString("browser", "chrome");
-            	
-//                ChromeOptions options = new ChromeOptions();
-//
-//                List<String> appliedFlags = new ArrayList<>();
-//
-//                if (cfg.getBoolean("chrome.arg.start_maximized", true)) {
-//                    options.addArguments("--start-maximized");
-//                    appliedFlags.add("--start-maximized");
-//                }
-//                if (cfg.getBoolean("chrome.arg.disable_gpu", true)) {
-//                    options.addArguments("--disable-gpu");
-//                    appliedFlags.add("--disable-gpu");
-//                }
-//                if (cfg.getBoolean("chrome.arg.disable_blink_features_automation_controlled", true)) {
-//                    options.addArguments("--disable-blink-features=AutomationControlled");
-//                    appliedFlags.add("--disable-blink-features=AutomationControlled");
-//                }
-//                if (cfg.getBoolean("chrome.arg.disable_dev_shm_usage", true)) {
-//                    options.addArguments("--disable-dev-shm-usage");
-//                    appliedFlags.add("--disable-dev-shm-usage");
-//                }
-//                if (cfg.getBoolean("chrome.arg.no_sandbox", true)) {
-//                    options.addArguments("--no-sandbox");
-//                    appliedFlags.add("--no-sandbox");
-//                }
-//                if (cfg.getBoolean("chrome.arg.disable_extensions", true)) {
-//                    options.addArguments("--disable-extensions");
-//                    appliedFlags.add("--disable-extensions");
-//                }
-//
-//                // 👇 Simple one-line log — easy to read in console or log file
-//                log.info("Chrome flags applied: {}", String.join(", ", appliedFlags));
-//               
-//
-//                // Initialize and store driver for this thread
-//                WebDriver chromeDriver = new ChromeDriver(options);
-//                driver.set(chromeDriver);
-//                driver.get().manage().deleteAllCookies();
-//
-//                log.info("ChromeDriver initialized successfully for thread: {}", Thread.currentThread().threadId());
-//            } catch (Exception e) {
-//                log.error("Failed to initialize WebDriver: {}", e.getMessage());
-//                throw new RuntimeException("WebDriver initialization failed", e);
-          
-            	
-            	
+            try {            	
             	ConfigManager cfg = ConfigManager.getInstance();
             	String browser = cfg.getString("browser", "chrome");
             	if (browser != null) browser = browser.trim().toLowerCase(Locale.ENGLISH);
 
             	switch (browser) {
             	    case "firefox": {
-            	        // ---------- Firefox ----------
+            	       
             	        org.openqa.selenium.firefox.FirefoxOptions firefoxOptions = new org.openqa.selenium.firefox.FirefoxOptions();
 
             	        if (cfg.getBoolean("firefox.arg.disable_gpu", true)) {
@@ -112,7 +63,6 @@ public class DriverManager {
             	            firefoxOptions.addArguments("-headless");
             	        }
 
-            	        // ensure driver binary available (try WebDriverManager, fallback to local path)
             	        try {
             	            io.github.bonigarcia.wdm.WebDriverManager.firefoxdriver().setup();
             	            log.info("WebDriverManager: geckodriver setup OK");
@@ -125,7 +75,7 @@ public class DriverManager {
             	        WebDriver firefoxDriver = new org.openqa.selenium.firefox.FirefoxDriver(firefoxOptions);
             	        driver.set(firefoxDriver);
             	        try { firefoxDriver.manage().deleteAllCookies(); } catch (Exception ignored) {}
-            	        // maximize explicitly for Firefox (more reliable)
+            	       
             	        if (cfg.getBoolean("firefox.arg.start_maximized", true)) {
             	            try { firefoxDriver.manage().window().maximize(); } catch (Exception ignored) {}
             	        }
@@ -134,7 +84,7 @@ public class DriverManager {
             	    }
 
             	    case "edge": {
-            	        // ---------- Edge ----------
+            	       
             	        org.openqa.selenium.edge.EdgeOptions edgeOptions = new org.openqa.selenium.edge.EdgeOptions();
 
             	        if (cfg.getBoolean("edge.arg.start_maximized", true)) {
@@ -178,7 +128,7 @@ public class DriverManager {
 
             	    case "chrome":
             	    default: {
-            	        // ---------- Chrome ----------
+            	       
             	        org.openqa.selenium.chrome.ChromeOptions options = new org.openqa.selenium.chrome.ChromeOptions();
 
             	        if (cfg.getBoolean("chrome.arg.start_maximized", true)) {
@@ -199,7 +149,7 @@ public class DriverManager {
             	        if (cfg.getBoolean("chrome.arg.disable_extensions", true)) {
             	            options.addArguments("--disable-extensions");
             	        }
-            	        // optional experimental options
+            	        
             	        options.setExperimentalOption("excludeSwitches", new String[]{"enable-automation"});
             	        options.setExperimentalOption("useAutomationExtension", false);
 
