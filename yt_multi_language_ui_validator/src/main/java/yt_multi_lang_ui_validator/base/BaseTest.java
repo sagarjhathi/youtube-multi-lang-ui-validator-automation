@@ -26,7 +26,7 @@ public class BaseTest {
 	    	
 	    	    String testName = method.getName();
 	    	    String threadId = String.valueOf(Thread.currentThread().threadId());
-	    	    String logFileName = testName + "_" + threadId;
+	    	    String logFileName = testName;
 
 	    	    ThreadContext.put("logFileName", logFileName);
 	    	    ThreadContext.put("testName", testName);

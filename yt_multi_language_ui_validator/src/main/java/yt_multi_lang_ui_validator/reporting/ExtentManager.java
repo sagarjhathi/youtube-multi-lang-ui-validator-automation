@@ -17,45 +17,45 @@ import main.java.yt_multi_lang_ui_validator.pages.YtInnerPage;
 public class ExtentManager {
 
 	
-	private static final  Logger log=LoggerUtility.getLogger(ExtentManager.class);
-	
-	 public static ExtentReports extent;
-	 public static final String RUN_TIMESTAMP = new SimpleDateFormat("yyyy-MM-dd_HHmm").format(new Date());
-	 public static final String BASE_SCREENSHOT_DIR = System.getProperty("user.dir") + "/test-output/ExtentReports/screenshots/Run_" + RUN_TIMESTAMP;
+	 private static ExtentReports extent; 
+		
+	    public static final String RUN_TIMESTAMP =
+	        (System.getProperty("runTimestamp") != null && !System.getProperty("runTimestamp").isEmpty())
+	            ? System.getProperty("runTimestamp")
+	            : new SimpleDateFormat("yyyy-MM-dd_HH-mm-ss").format(new Date());
 
-    
-   
-    public static ExtentReports getInstance() {
-        if (extent == null) {
-            extent = createInstance();
-        }
-        return extent;
-    }
+	    
+	    public static final String BASE_SCREENSHOT_DIR = System.getProperty("user.dir") + "/test-output/ExtentReports/screenshots/Run_" + RUN_TIMESTAMP;
+	    public static final String REPORT_PATH = System.getProperty("user.dir") + "/test-output/ExtentReports/ExtentReport.html";
 
-    private static ExtentReports createInstance() {
-        String reportPath = "test-output/ExtentReports/ExtentReport.html";
+	   
+	    public synchronized static ExtentReports getInstance() {
+	        if (extent == null) {
+	        	
+	   
+	            ExtentSparkReporter sparkReporter = new ExtentSparkReporter(REPORT_PATH);
+	            sparkReporter.config().setDocumentTitle("Automation Report");
+	            sparkReporter.config().setReportName("Youtube multi lang ui validator");
+	            sparkReporter.config().setTheme(Theme.STANDARD);
+	            
+	            extent = new ExtentReports();
+	            extent.attachReporter(sparkReporter);
 
-        ExtentSparkReporter sparkReporter = new ExtentSparkReporter(reportPath);
-        sparkReporter.config().setDocumentTitle("Automation Test Report");
-        sparkReporter.config().setReportName("Youtube multi lang ui validator");
-        sparkReporter.config().setTheme(Theme.STANDARD); // Use Theme.DARK for dark mode
+	            extent.setSystemInfo("OS", System.getProperty("os.name"));
+	            extent.setSystemInfo("Java Version", System.getProperty("java.version"));
+	            extent.setSystemInfo("Tester", "Sagar Hathi");
+	            System.setProperty("logs.dir", System.getProperty("user.dir") + "/logs/run_" + ExtentManager.RUN_TIMESTAMP);
 
-        ExtentReports extent = new ExtentReports();
-        extent.attachReporter(sparkReporter);
+	        }
+	        return extent;
+	    }
 
-        // Optional system info
-        extent.setSystemInfo("OS", System.getProperty("os.name"));
-        extent.setSystemInfo("Java Version", System.getProperty("java.version"));
-        extent.setSystemInfo("Tester", "Sagar Hathi");
-
-        return extent;
-    }
-    
-    public synchronized static void flush() {
-        if (extent != null) {
-            extent.flush();
-        }
-    }
+	   
+	    public synchronized static void flush() {
+	        if (extent != null) {
+	            extent.flush();
+	        }
+	    }
 }
 
 
