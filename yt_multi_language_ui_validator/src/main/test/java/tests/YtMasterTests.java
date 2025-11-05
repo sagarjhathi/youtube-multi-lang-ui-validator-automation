@@ -8,6 +8,7 @@ import java.util.Map;
 import java.util.stream.Collectors;
 
 import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.ThreadContext;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -20,6 +21,7 @@ import main.java.yt_multi_lang_ui_validator.lingua.LinguaHelper;
 import main.java.yt_multi_lang_ui_validator.logger.LoggerUtility;
 import main.java.yt_multi_lang_ui_validator.pages.YtLandingPage;
 import main.java.yt_multi_lang_ui_validator.utilities.GenericUtility;
+import main.java.yt_multi_lang_ui_validator.utilities.ScreenshotUtil;
 
 
 
@@ -44,7 +46,8 @@ public class YtMasterTests extends BaseTest{
 			
 			String langText=languageList.get(j);
 			System.out.println(langText+"    "+j);
-			
+			String testName = ThreadContext.get("logFileName");
+			ScreenshotUtil.capture(testName, langText);
 			Thread.sleep(1000);
 	     	yt.getLanguageElementByName(langText).click();	
 	     	

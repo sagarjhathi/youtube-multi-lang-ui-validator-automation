@@ -217,9 +217,7 @@ public class TestListener implements ITestListener {
     
     
     
-    
-    
-    
+  
     
     private void attachScreenshotFolder(ITestResult result) {
         try {
@@ -273,12 +271,26 @@ public class TestListener implements ITestListener {
                          if (chosenLocalLink == null) {
                              chosenLocalLink = ("../" + relFolder + "/" + fileName).replace("\\", "/");
                          }
+                         
+                         
+                      // defensive sanitization: remove any accidental HTML tokens that may have leaked into the path
+                         if (chosenLocalLink != null) {
+                             // remove any embedded anchor markup or tags (e.g. "<a href=...")
+                             chosenLocalLink = chosenLocalLink.replaceAll("(?i)<a\\s+href=.*", "");
+                             // remove any stray angle brackets
+                             chosenLocalLink = chosenLocalLink.replace("<", "").replace(">", "");
+                             // trim whitespace
+                             chosenLocalLink = chosenLocalLink.trim();
+                             // ensure forward slashes
+                             chosenLocalLink = chosenLocalLink.replace("\\", "/");
+                         }
+
 
                          html.append("<div style='margin-top:10px; border:1px solid #ccc; padding:5px;'>")
                              .append("<div style='font-weight:bold; margin-bottom:5px;'>").append(fileName).append("</div>")
                              // show Pages link (works on CI/Pages)
                              .append("<div style='margin-bottom:6px;'><a href='").append(ciLink)
-                           //  .append("' target='_blank'>View on GitHub Pages</a></div>")
+                             .append("' target='_blank'>View on GitHub Pages</a></div>")
                              // show thumbnail (local/artifact-friendly link)
                              .append("<a href='").append(chosenLocalLink).append("' target='_blank'>")
                              .append("<img src='").append(chosenLocalLink)
