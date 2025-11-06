@@ -1,0 +1,97 @@
+2025-11-06 13:21:00.721 [TestNG-test-Test-1] INFO  [verifyingSideMenuLanguageAsInSettings] ===== STARTING TEST: verifyingSideMenuLanguageAsInSettings  | Thread: 30 =====
+2025-11-06 13:21:00.735 [TestNG-test-Test-1] INFO  [verifyingSideMenuLanguageAsInSettings] No existing WebDriver found for current thread. Initializing a new ChromeDriver...
+2025-11-06 13:21:00.736 [TestNG-test-Test-1] INFO  [verifyingSideMenuLanguageAsInSettings] Loaded masterdata.properties from classpath (32 keys).
+2025-11-06 13:21:00.972 [TestNG-test-Test-1] WARN  [verifyingSideMenuLanguageAsInSettings] WDM edgedriver setup failed: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net. Will try local fallback if configured.
+2025-11-06 13:21:00.972 [TestNG-test-Test-1] INFO  [verifyingSideMenuLanguageAsInSettings] Trying local fallback with == System.setProperty("SE_MSEDGEDRIVER_MIRROR_URL", "https://msedgedriver.microsoft.com")
+2025-11-06 13:21:14.001 [TestNG-test-Test-1] ERROR [verifyingSideMenuLanguageAsInSettings] Failed to initialize WebDriver: Could not start a new session. Response code 500. Message: session not created: probably user data directory is already in use, please specify a unique value for --user-data-dir argument, or don't use --user-data-dir 
+Host info: host: 'runnervmf2e7y', ip: '10.1.0.187'
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.11.0-1018-azure', java.version: '24.0.2'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: MicrosoftEdge, ms:edgeOptions: {args: [--start-maximized, --disable-gpu, --disable-dev-shm-usage, --no-sandbox, --disable-extensions], binary: /usr/bin/microsoft-edge, extensions: [], useAutomationExtension: false}}]}]
+org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: probably user data directory is already in use, please specify a unique value for --user-data-dir argument, or don't use --user-data-dir 
+Host info: host: 'runnervmf2e7y', ip: '10.1.0.187'
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.11.0-1018-azure', java.version: '24.0.2'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: MicrosoftEdge, ms:edgeOptions: {args: [--start-maximized, --disable-gpu, --disable-dev-shm-usage, --no-sandbox, --disable-extensions], binary: /usr/bin/microsoft-edge, extensions: [], useAutomationExtension: false}}]}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114) ~[selenium-remote-driver-4.27.0.jar:?]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75) ~[selenium-remote-driver-4.27.0.jar:?]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61) ~[selenium-remote-driver-4.27.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162) ~[selenium-remote-driver-4.27.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.27.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.27.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545) ~[selenium-remote-driver-4.27.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:245) ~[selenium-remote-driver-4.27.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:174) ~[selenium-remote-driver-4.27.0.jar:?]
+	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:114) ~[selenium-chromium-driver-4.27.0.jar:?]
+	at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:60) ~[selenium-edge-driver-4.27.0.jar:?]
+	at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:56) ~[selenium-edge-driver-4.27.0.jar:?]
+	at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:48) ~[selenium-edge-driver-4.27.0.jar:?]
+	at main.java.yt_multi_lang_ui_validator.driverManager.DriverManager.initDriver(DriverManager.java:122) [classes/:?]
+	at main.java.yt_multi_lang_ui_validator.base.BaseTest.setUp(BaseTest.java:42) [classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:565) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:600) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) [testng-7.10.2.jar:7.10.2]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:328) [?:?]
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22) [testng-7.10.2.jar:7.10.2]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619) [?:?]
+	at java.lang.Thread.run(Thread.java:1447) [?:?]
+2025-11-06 13:21:14.007 [TestNG-test-Test-1] ERROR [verifyingSideMenuLanguageAsInSettings] Failed to initialize WebDriver for test: verifyingSideMenuLanguageAsInSettings
+java.lang.RuntimeException: WebDriver initialization failed
+	at main.java.yt_multi_lang_ui_validator.driverManager.DriverManager.initDriver(DriverManager.java:177) ~[classes/:?]
+	at main.java.yt_multi_lang_ui_validator.base.BaseTest.setUp(BaseTest.java:42) [classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:565) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:600) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) [testng-7.10.2.jar:7.10.2]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:328) [?:?]
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22) [testng-7.10.2.jar:7.10.2]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619) [?:?]
+	at java.lang.Thread.run(Thread.java:1447) [?:?]
+Caused by: org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: probably user data directory is already in use, please specify a unique value for --user-data-dir argument, or don't use --user-data-dir 
+Host info: host: 'runnervmf2e7y', ip: '10.1.0.187'
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.11.0-1018-azure', java.version: '24.0.2'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: MicrosoftEdge, ms:edgeOptions: {args: [--start-maximized, --disable-gpu, --disable-dev-shm-usage, --no-sandbox, --disable-extensions], binary: /usr/bin/microsoft-edge, extensions: [], useAutomationExtension: false}}]}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114) ~[selenium-remote-driver-4.27.0.jar:?]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75) ~[selenium-remote-driver-4.27.0.jar:?]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61) ~[selenium-remote-driver-4.27.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162) ~[selenium-remote-driver-4.27.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.27.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.27.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545) ~[selenium-remote-driver-4.27.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:245) ~[selenium-remote-driver-4.27.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:174) ~[selenium-remote-driver-4.27.0.jar:?]
+	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:114) ~[selenium-chromium-driver-4.27.0.jar:?]
+	at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:60) ~[selenium-edge-driver-4.27.0.jar:?]
+	at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:56) ~[selenium-edge-driver-4.27.0.jar:?]
+	at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:48) ~[selenium-edge-driver-4.27.0.jar:?]
+	at main.java.yt_multi_lang_ui_validator.driverManager.DriverManager.initDriver(DriverManager.java:122) ~[classes/:?]
+	... 21 more
