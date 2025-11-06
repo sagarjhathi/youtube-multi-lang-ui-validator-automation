@@ -21,7 +21,7 @@ public class BaseTest {
 	public WebDriver driver;
 
 	    @BeforeMethod
-	    public void setUp(Method method) {
+	    public void setUp(Method method) throws InterruptedException {
 	       
 	    	
 	    	    String testName = method.getName();
@@ -31,7 +31,7 @@ public class BaseTest {
 	    	    ThreadContext.put("logFileName", logFileName);
 	    	    ThreadContext.put("testName", testName);
 	    	    ThreadContext.put("threadId", threadId);
-	    	
+	    	    Thread.sleep(2000);
 	    	    // Get a logger specifically for this test method
 	            Logger testLog = LogManager.getLogger(testName);
 	            testLog.info("===== STARTING TEST: {}  | Thread: {} =====", testName, threadId);
