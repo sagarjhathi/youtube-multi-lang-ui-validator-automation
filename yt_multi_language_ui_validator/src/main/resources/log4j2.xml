@@ -7,7 +7,7 @@
 
   <Appenders>
     <Console name="Console" target="SYSTEM_OUT">
-      <PatternLayout pattern="${pattern}"/>
+      <PatternLayout pattern="${pattern}" charset="UTF-8"/>
     </Console>
 
     <Routing name="RoutingAppender">
@@ -18,7 +18,7 @@
                        fileName="${logs.dir}/${ctx:logFileName:-default}.log"
                        filePattern="${logs.dir}/archive/${ctx:logFileName:-default}-%d{yyyy-MM-dd-HH-mm}.log"
                        append="true">
-            <PatternLayout pattern="${pattern}"/>
+            <PatternLayout pattern="${pattern}" charset="UTF-8"/>
             <Policies>
               <SizeBasedTriggeringPolicy size="10MB"/>
             </Policies>
@@ -31,7 +31,7 @@
                        fileName="${logs.dir}/default.log"
                        filePattern="${logs.dir}/archive/default-%d{yyyy-MM-dd-HH-mm}.log.gz"
                        append="true">
-            <PatternLayout pattern="${pattern}"/>
+            <PatternLayout pattern="${pattern}" charset="UTF-8"/>
             <Policies>
               <SizeBasedTriggeringPolicy size="10MB"/>
             </Policies>
