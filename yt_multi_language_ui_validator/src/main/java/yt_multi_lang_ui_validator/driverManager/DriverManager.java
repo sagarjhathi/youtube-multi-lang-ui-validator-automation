@@ -26,183 +26,241 @@ public class DriverManager {
     private static final Logger log = LoggerUtility.getLogger(DriverManager.class);
 
     /** Get current thread's WebDriver instance */
+//    public static WebDriver getDriver() {
+//        return driver.get();
+//    }
+//
+//    /** Initialize a new WebDriver instance if not already present for this thread */
+//    public static void initDriver() {
+//        if (driver.get() == null) {
+//            log.info("No existing WebDriver found for current thread. Initializing a new ChromeDriver...");
+//
+//            
+//            
+//            try {            	
+//            	ConfigManager cfg = ConfigManager.getInstance();
+//            	String browser = cfg.getString("browser", "chrome");
+//            	if (browser != null) browser = browser.trim().toLowerCase(Locale.ENGLISH);
+//
+//            	switch (browser) {
+//            	    case "firefox": {
+//            	       
+//            	        org.openqa.selenium.firefox.FirefoxOptions firefoxOptions = new org.openqa.selenium.firefox.FirefoxOptions();
+//
+//            	        if (cfg.getBoolean("firefox.arg.disable_gpu", true)) {
+//            	            firefoxOptions.addArguments("--disable-gpu");
+//            	        }
+//            	        if (cfg.getBoolean("firefox.arg.disable_dev_shm_usage", true)) {
+//            	            firefoxOptions.addArguments("--disable-dev-shm-usage");
+//            	        }
+//            	        if (cfg.getBoolean("firefox.arg.no_sandbox", true)) {
+//            	            firefoxOptions.addArguments("--no-sandbox");
+//            	        }
+//            	        if (cfg.getBoolean("firefox.arg.disable_extensions", true)) {
+//            	            firefoxOptions.addArguments("--disable-extensions");
+//            	        }
+//            	        if (cfg.getBoolean("firefox.headless", false)) {
+//            	            firefoxOptions.addArguments("-headless");
+//            	        }
+//
+//            	        try {
+//            	            io.github.bonigarcia.wdm.WebDriverManager.firefoxdriver().setup();
+//            	            log.info("WebDriverManager: geckodriver setup OK");
+//            	        } catch (Exception e) {
+//            	            log.warn("WDM geckodriver setup failed: {}. Will try local fallback if configured.", e.getMessage());
+//            	            String local = cfg.getString("webdriver.firefox.local.path", "");
+//            	            if (!local.isBlank()) System.setProperty("webdriver.gecko.driver", local);
+//            	        }
+//
+//            	        WebDriver firefoxDriver = new org.openqa.selenium.firefox.FirefoxDriver(firefoxOptions);
+//            	        driver.set(firefoxDriver);
+//            	        try { firefoxDriver.manage().deleteAllCookies(); } catch (Exception ignored) {}
+//            	       
+//            	        if (cfg.getBoolean("firefox.arg.start_maximized", true)) {
+//            	            try { firefoxDriver.manage().window().maximize(); } catch (Exception ignored) {}
+//            	        }
+//            	        log.info("FirefoxDriver initialized successfully for thread: {}", Thread.currentThread().threadId());
+//            	        break;
+//            	    }
+//
+//            	    case "edge": {
+//            	       
+//            	        org.openqa.selenium.edge.EdgeOptions edgeOptions = new org.openqa.selenium.edge.EdgeOptions();
+//
+//            	        if (cfg.getBoolean("edge.arg.start_maximized", true)) {
+//            	            edgeOptions.addArguments("--start-maximized");
+//            	        }
+//            	        if (cfg.getBoolean("edge.arg.disable_gpu", true)) {
+//            	            edgeOptions.addArguments("--disable-gpu");
+//            	        }
+//            	        if (cfg.getBoolean("edge.arg.disable_dev_shm_usage", true)) {
+//            	            edgeOptions.addArguments("--disable-dev-shm-usage");
+//            	        }
+//            	        if (cfg.getBoolean("edge.arg.no_sandbox", true)) {
+//            	            edgeOptions.addArguments("--no-sandbox");
+//            	        }
+//            	        if (cfg.getBoolean("edge.arg.disable_extensions", true)) {
+//            	            edgeOptions.addArguments("--disable-extensions");
+//            	        }
+//
+//            	        boolean useExtEdge = cfg.getBoolean("edge.use.automation.extension", false);
+//            	        edgeOptions.setExperimentalOption("useAutomationExtension", useExtEdge);
+//
+//            	        try {
+//            	        	
+//            	            io.github.bonigarcia.wdm.WebDriverManager.edgedriver().browserVersion("17134").setup();
+//            	            log.info("WebDriverManager: edgedriver setup OK");
+//            	        } catch (Exception e) {
+//            	            log.warn("WDM edgedriver setup failed: {}. Will try local fallback if configured.", e.getMessage());
+//            	            String local = cfg.getString("webdriver.edge.local.path", "");
+//            	            if (!local.isBlank()) System.setProperty("webdriver.edge.driver", local);
+//            	        }
+//            	        System.setProperty("SE_MSEDGEDRIVER_MIRROR_URL", "https://msedgedriver.microsoft.com");
+//            	        log.info("Trying local fallback with == System.setProperty(\"SE_MSEDGEDRIVER_MIRROR_URL\", \"https://msedgedriver.microsoft.com\")");
+//            	       
+//            	        
+//            	        WebDriver edgeDriver = new org.openqa.selenium.edge.EdgeDriver(edgeOptions);
+//            	        driver.set(edgeDriver);
+//            	        try { edgeDriver.manage().deleteAllCookies(); } catch (Exception ignored) {}
+//            	        log.info("EdgeDriver initialized successfully for thread: {}", Thread.currentThread().threadId());
+//            	        break;
+//            	    }
+//
+//            	    
+//            	    default: {
+//            	       
+//            	        org.openqa.selenium.chrome.ChromeOptions options = new org.openqa.selenium.chrome.ChromeOptions();
+//
+//            	        if (cfg.getBoolean("chrome.arg.start_maximized", true)) {
+//            	            options.addArguments("--start-maximized");
+//            	        }
+//            	        if (cfg.getBoolean("chrome.arg.disable_gpu", true)) {
+//            	            options.addArguments("--disable-gpu");
+//            	        }
+//            	        if (cfg.getBoolean("chrome.arg.disable_blink_features_automation_controlled", true)) {
+//            	            options.addArguments("--disable-blink-features=AutomationControlled");
+//            	        }
+//            	        if (cfg.getBoolean("chrome.arg.disable_dev_shm_usage", true)) {
+//            	            options.addArguments("--disable-dev-shm-usage");
+//            	        }
+//            	        if (cfg.getBoolean("chrome.arg.no_sandbox", true)) {
+//            	            options.addArguments("--no-sandbox");
+//            	        }
+//            	        if (cfg.getBoolean("chrome.arg.disable_extensions", true)) {
+//            	            options.addArguments("--disable-extensions");
+//            	        }
+//            	        
+//            	        options.setExperimentalOption("excludeSwitches", new String[]{"enable-automation"});
+//            	        options.setExperimentalOption("useAutomationExtension", false);
+//
+//            	        try {
+//            	            io.github.bonigarcia.wdm.WebDriverManager.chromedriver().setup();
+//            	            log.info("WebDriverManager: chromedriver setup OK");
+//            	        } catch (Exception e) {
+//            	            log.warn("WDM chromedriver setup failed: {}. Will try local fallback if configured.", e.getMessage());
+//            	            String local = cfg.getString("webdriver.chrome.local.path", "");
+//            	            if (!local.isBlank()) System.setProperty("webdriver.chrome.driver", local);
+//            	        }
+//
+//            	        WebDriver chromeDriver = new org.openqa.selenium.chrome.ChromeDriver(options);
+//            	        driver.set(chromeDriver);
+//            	        try { chromeDriver.manage().deleteAllCookies(); } catch (Exception ignored) {}
+//            	        log.info("ChromeDriver initialized successfully for thread: {}", Thread.currentThread().threadId());
+//            	        break;
+//            	    }
+//            	}
+//
+//                
+//                
+//            }catch(Exception e) {
+//            	log.error("Failed to initialize WebDriver: {}", e.getMessage(), e);
+//                throw new RuntimeException("WebDriver initialization failed", e);
+//            }
+//            
+//        } 
+//         else {
+//            log.info("Reusing existing WebDriver instance for thread: {}", Thread.currentThread().threadId());
+//        }
+//    }
+//
+//
+//    /** Quit and clean up WebDriver for current thread */
+//    public static void quitDriver() {
+//        WebDriver currentDriver = driver.get();
+//
+//        if (currentDriver != null) {
+//            try {
+//                log.info("Closing WebDriver for thread: {}", Thread.currentThread().threadId());
+//                currentDriver.quit();
+//            } catch (Exception e) {
+//                log.error("Error while quitting WebDriver for thread {}: {}", Thread.currentThread().threadId(), e.getMessage());
+//            } finally {
+//                driver.remove();
+//                log.info("WebDriver instance removed from ThreadLocal for thread: {}", Thread.currentThread().threadId());
+//            }
+//        } else {
+//            log.warn("quitDriver() called but no WebDriver was found for thread: {}", Thread.currentThread().threadId());
+//        }
+//    }
+	
+	
+	
+    
+    
     public static WebDriver getDriver() {
-        return driver.get();
-    }
-
-    /** Initialize a new WebDriver instance if not already present for this thread */
-    public static void initDriver() {
-        if (driver.get() == null) {
-            log.info("No existing WebDriver found for current thread. Initializing a new ChromeDriver...");
-
-            
-            
-            try {            	
-            	ConfigManager cfg = ConfigManager.getInstance();
-            	String browser = cfg.getString("browser", "chrome");
-            	if (browser != null) browser = browser.trim().toLowerCase(Locale.ENGLISH);
-
-            	switch (browser) {
-            	    case "firefox": {
-            	       
-            	        org.openqa.selenium.firefox.FirefoxOptions firefoxOptions = new org.openqa.selenium.firefox.FirefoxOptions();
-
-            	        if (cfg.getBoolean("firefox.arg.disable_gpu", true)) {
-            	            firefoxOptions.addArguments("--disable-gpu");
-            	        }
-            	        if (cfg.getBoolean("firefox.arg.disable_dev_shm_usage", true)) {
-            	            firefoxOptions.addArguments("--disable-dev-shm-usage");
-            	        }
-            	        if (cfg.getBoolean("firefox.arg.no_sandbox", true)) {
-            	            firefoxOptions.addArguments("--no-sandbox");
-            	        }
-            	        if (cfg.getBoolean("firefox.arg.disable_extensions", true)) {
-            	            firefoxOptions.addArguments("--disable-extensions");
-            	        }
-            	        if (cfg.getBoolean("firefox.headless", false)) {
-            	            firefoxOptions.addArguments("-headless");
-            	        }
-
-            	        try {
-            	            io.github.bonigarcia.wdm.WebDriverManager.firefoxdriver().setup();
-            	            log.info("WebDriverManager: geckodriver setup OK");
-            	        } catch (Exception e) {
-            	            log.warn("WDM geckodriver setup failed: {}. Will try local fallback if configured.", e.getMessage());
-            	            String local = cfg.getString("webdriver.firefox.local.path", "");
-            	            if (!local.isBlank()) System.setProperty("webdriver.gecko.driver", local);
-            	        }
-
-            	        WebDriver firefoxDriver = new org.openqa.selenium.firefox.FirefoxDriver(firefoxOptions);
-            	        driver.set(firefoxDriver);
-            	        try { firefoxDriver.manage().deleteAllCookies(); } catch (Exception ignored) {}
-            	       
-            	        if (cfg.getBoolean("firefox.arg.start_maximized", true)) {
-            	            try { firefoxDriver.manage().window().maximize(); } catch (Exception ignored) {}
-            	        }
-            	        log.info("FirefoxDriver initialized successfully for thread: {}", Thread.currentThread().threadId());
-            	        break;
-            	    }
-
-            	    case "edge": {
-            	       
-            	        org.openqa.selenium.edge.EdgeOptions edgeOptions = new org.openqa.selenium.edge.EdgeOptions();
-
-            	        if (cfg.getBoolean("edge.arg.start_maximized", true)) {
-            	            edgeOptions.addArguments("--start-maximized");
-            	        }
-            	        if (cfg.getBoolean("edge.arg.disable_gpu", true)) {
-            	            edgeOptions.addArguments("--disable-gpu");
-            	        }
-            	        if (cfg.getBoolean("edge.arg.disable_dev_shm_usage", true)) {
-            	            edgeOptions.addArguments("--disable-dev-shm-usage");
-            	        }
-            	        if (cfg.getBoolean("edge.arg.no_sandbox", true)) {
-            	            edgeOptions.addArguments("--no-sandbox");
-            	        }
-            	        if (cfg.getBoolean("edge.arg.disable_extensions", true)) {
-            	            edgeOptions.addArguments("--disable-extensions");
-            	        }
-
-            	        boolean useExtEdge = cfg.getBoolean("edge.use.automation.extension", false);
-            	        edgeOptions.setExperimentalOption("useAutomationExtension", useExtEdge);
-
-            	        try {
-            	        	
-            	            io.github.bonigarcia.wdm.WebDriverManager.edgedriver().browserVersion("17134").setup();
-            	            log.info("WebDriverManager: edgedriver setup OK");
-            	        } catch (Exception e) {
-            	            log.warn("WDM edgedriver setup failed: {}. Will try local fallback if configured.", e.getMessage());
-            	            String local = cfg.getString("webdriver.edge.local.path", "");
-            	            if (!local.isBlank()) System.setProperty("webdriver.edge.driver", local);
-            	        }
-            	        System.setProperty("SE_MSEDGEDRIVER_MIRROR_URL", "https://msedgedriver.microsoft.com");
-            	        log.info("Trying local fallback with == System.setProperty(\"SE_MSEDGEDRIVER_MIRROR_URL\", \"https://msedgedriver.microsoft.com\")");
-            	       
-            	        
-            	        WebDriver edgeDriver = new org.openqa.selenium.edge.EdgeDriver(edgeOptions);
-            	        driver.set(edgeDriver);
-            	        try { edgeDriver.manage().deleteAllCookies(); } catch (Exception ignored) {}
-            	        log.info("EdgeDriver initialized successfully for thread: {}", Thread.currentThread().threadId());
-            	        break;
-            	    }
-
-            	    
-            	    default: {
-            	       
-            	        org.openqa.selenium.chrome.ChromeOptions options = new org.openqa.selenium.chrome.ChromeOptions();
-
-            	        if (cfg.getBoolean("chrome.arg.start_maximized", true)) {
-            	            options.addArguments("--start-maximized");
-            	        }
-            	        if (cfg.getBoolean("chrome.arg.disable_gpu", true)) {
-            	            options.addArguments("--disable-gpu");
-            	        }
-            	        if (cfg.getBoolean("chrome.arg.disable_blink_features_automation_controlled", true)) {
-            	            options.addArguments("--disable-blink-features=AutomationControlled");
-            	        }
-            	        if (cfg.getBoolean("chrome.arg.disable_dev_shm_usage", true)) {
-            	            options.addArguments("--disable-dev-shm-usage");
-            	        }
-            	        if (cfg.getBoolean("chrome.arg.no_sandbox", true)) {
-            	            options.addArguments("--no-sandbox");
-            	        }
-            	        if (cfg.getBoolean("chrome.arg.disable_extensions", true)) {
-            	            options.addArguments("--disable-extensions");
-            	        }
-            	        
-            	        options.setExperimentalOption("excludeSwitches", new String[]{"enable-automation"});
-            	        options.setExperimentalOption("useAutomationExtension", false);
-
-            	        try {
-            	            io.github.bonigarcia.wdm.WebDriverManager.chromedriver().setup();
-            	            log.info("WebDriverManager: chromedriver setup OK");
-            	        } catch (Exception e) {
-            	            log.warn("WDM chromedriver setup failed: {}. Will try local fallback if configured.", e.getMessage());
-            	            String local = cfg.getString("webdriver.chrome.local.path", "");
-            	            if (!local.isBlank()) System.setProperty("webdriver.chrome.driver", local);
-            	        }
-
-            	        WebDriver chromeDriver = new org.openqa.selenium.chrome.ChromeDriver(options);
-            	        driver.set(chromeDriver);
-            	        try { chromeDriver.manage().deleteAllCookies(); } catch (Exception ignored) {}
-            	        log.info("ChromeDriver initialized successfully for thread: {}", Thread.currentThread().threadId());
-            	        break;
-            	    }
-            	}
-
-                
-                
-            }catch(Exception e) {
-            	log.error("Failed to initialize WebDriver: {}", e.getMessage(), e);
-                throw new RuntimeException("WebDriver initialization failed", e);
-            }
-            
-        } 
-         else {
-            log.info("Reusing existing WebDriver instance for thread: {}", Thread.currentThread().threadId());
-        }
-    }
-
-
-    /** Quit and clean up WebDriver for current thread */
-    public static void quitDriver() {
-        WebDriver currentDriver = driver.get();
-
-        if (currentDriver != null) {
-            try {
-                log.info("Closing WebDriver for thread: {}", Thread.currentThread().threadId());
-                currentDriver.quit();
-            } catch (Exception e) {
-                log.error("Error while quitting WebDriver for thread {}: {}", Thread.currentThread().threadId(), e.getMessage());
-            } finally {
-                driver.remove();
-                log.info("WebDriver instance removed from ThreadLocal for thread: {}", Thread.currentThread().threadId());
-            }
-        } else {
-            log.warn("quitDriver() called but no WebDriver was found for thread: {}", Thread.currentThread().threadId());
-        }
-    }
+		return driver.get();
+	}
 	
+	public static void initDriver() {
+		if(driver.get()==null) {
+
+		     	ChromeOptions options = new ChromeOptions();
+					
+//	            String ua = ConfigManager.get("userAgent");
+//	            if (ua != null && !ua.isBlank()) {
+//	                options.addArguments("user-agent=" + ua);
+//	            }
+//
+//	            // headless toggle
+//	            if (ConfigManager.getBoolean("headless", false)) {
+//	                options.addArguments("--headless");
+//	            }
+//
+//	            // language
+//	            String lang = ConfigManager.get("lang", "en");
+//	            options.addArguments("--lang=" + lang);
+//
+//	            // start maximized
+//	            if (ConfigManager.getBoolean("startMaximized", true)) {
+	                options.addArguments("--start-maximized");
+//	            }
+//
+//	            // disable GPU
+//	            if (ConfigManager.getBoolean("disableGpu", false)) {
+//	                options.addArguments("--disable-gpu");
+//	            }
+//	            
+			
+			options.addArguments("--disable-blink-features=AutomationControlled");
+			options.addArguments("--disable-dev-shm-usage");
+			options.addArguments("--no-sandbox");
+			options.setExperimentalOption("excludeSwitches", new String[]{"enable-automation"});
+			options.setExperimentalOption("useAutomationExtension", false);
+			options.addArguments("--disable-extensions");
+			
+			options.setCapability("se:commandTimeout", 180); // seconds — increase default 60s to 180s
+
+			driver.set(new ChromeDriver(options));
+			driver.get().manage().deleteAllCookies();
+		}
+	}
 	
+
 	
+	public static void quitDriver() {
+		if(driver.get()!=null) {
+			getDriver().quit();
+			driver.remove();
+		}
+	}
 }
