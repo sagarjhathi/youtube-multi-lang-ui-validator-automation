@@ -22,7 +22,7 @@ env:
 
 jobs:
   test:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     timeout-minutes: 300
     env:
       REPORT_BASE: "/youtube-multi-lang-ui-validator-automation/"
