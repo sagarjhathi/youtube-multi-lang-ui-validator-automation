@@ -126,7 +126,7 @@ public class DriverManager {
             	        break;
             	    }
 
-            	    case "chrome":
+            	    
             	    default: {
             	       
             	        org.openqa.selenium.chrome.ChromeOptions options = new org.openqa.selenium.chrome.ChromeOptions();
