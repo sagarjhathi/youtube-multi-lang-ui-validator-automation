@@ -17,15 +17,15 @@ permissions:
 env:
   JAVA_DISTRIBUTION: temurin
   JAVA_VERSION: 24
-  WORKDIR: eclipse-workspace/Intro
+  WORKDIR: youtube-multi-language-ui-validator-automation/yt_multi_language_ui_validator 
   ARTIFACT_RETENTION_DAYS: 7
 
 jobs:
   test:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     timeout-minutes: 300
     env:
-      REPORT_BASE: "/amazon-filter-e2e-automation/"
+      REPORT_BASE: "/youtube-multi-lang-ui-validator-automation/"
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
