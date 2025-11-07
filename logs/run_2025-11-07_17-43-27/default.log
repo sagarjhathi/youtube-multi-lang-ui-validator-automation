@@ -1,6 +1,0 @@
-2025-11-07 17:44:16.716 [TestNG-test-Test-2] INFO  [] CI DEBUG: sys.runTimestamp='2025-11-07_17-43-27' env.RUN_TIMESTAMP='2025-11-07_17-43-27' sys.logs.dir='D:\a\youtube-multi-lang-ui-validator-automation\youtube-multi-lang-ui-validator-automation/yt_multi_language_ui_validator/logs/run_2025-11-07_17-43-27'
-2025-11-07 17:44:16.716 [TestNG-test-Test-1] INFO  [] CI DEBUG: sys.runTimestamp='2025-11-07_17-43-27' env.RUN_TIMESTAMP='2025-11-07_17-43-27' sys.logs.dir='D:\a\youtube-multi-lang-ui-validator-automation\youtube-multi-lang-ui-validator-automation/yt_multi_language_ui_validator/logs/run_2025-11-07_17-43-27'
-2025-11-07 17:50:12.864 [TestNG-test-Test-2] INFO  [] ===== FINISHED TEST: verifyingSettingOptionsLang =====
-2025-11-07 17:50:12.866 [TestNG-test-Test-2] INFO  [] CI DEBUG: sys.runTimestamp='2025-11-07_17-43-27' env.RUN_TIMESTAMP='2025-11-07_17-43-27' sys.logs.dir='D:\a\youtube-multi-lang-ui-validator-automation\youtube-multi-lang-ui-validator-automation\yt_multi_language_ui_validator/logs/run_2025-11-07_17-43-27'
-2025-11-07 17:55:37.554 [TestNG-test-Test-1] INFO  [] ===== FINISHED TEST: verifyingGlobalFilterLandingPage =====
-2025-11-07 17:59:39.738 [TestNG-test-Test-2] INFO  [] ===== FINISHED TEST: verifyingSettingOptionsLang =====
