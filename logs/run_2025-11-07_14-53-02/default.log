@@ -1,4 +1,0 @@
-2025-11-07 14:53:02.582 [TestNG-test-Test-1] INFO  [] CI DEBUG: sys.runTimestamp='2025-11-07_14-52-24' env.RUN_TIMESTAMP='2025-11-07_14-52-24' sys.logs.dir='logs/run_2025-11-07_14-53-02'
-2025-11-07 14:53:02.582 [TestNG-test-Test-2] INFO  [] CI DEBUG: sys.runTimestamp='2025-11-07_14-52-24' env.RUN_TIMESTAMP='2025-11-07_14-52-24' sys.logs.dir='logs/run_2025-11-07_14-53-02'
-2025-11-07 15:03:18.389 [TestNG-test-Test-2] INFO  [] ===== FINISHED TEST: verifyingSettingOptionsLang =====
-2025-11-07 15:03:40.738 [TestNG-test-Test-1] INFO  [] ===== FINISHED TEST: verifyingGlobalFilterLandingPage =====
