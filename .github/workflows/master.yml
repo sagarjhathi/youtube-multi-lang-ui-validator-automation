@@ -85,24 +85,24 @@ jobs:
           # export to GITHUB_ENV for subsequent steps
           Add-Content -Path $env:GITHUB_ENV -Value "RUN_TIMESTAMP=$ts"
 
-      # - name: Run Maven Tests
-      #   working-directory: ${{ env.WORKDIR }}
-      #   shell: bash
-      #   run: |
-      #       ABS_LOGS_DIR="${GITHUB_WORKSPACE}/${{ env.WORKDIR }}/logs/run_${{ env.RUN_TIMESTAMP }}"
-      #       echo "Setting logs.dir = $ABS_LOGS_DIR"
-      #       mvn -B -ntp clean test -DrunTimestamp="${{ env.RUN_TIMESTAMP }}" -Dlogs.dir="$ABS_LOGS_DIR"
-
       - name: Run Maven Tests
         working-directory: ${{ env.WORKDIR }}
         shell: bash
         run: |
-          ABS_LOGS_DIR="${GITHUB_WORKSPACE}/${{ env.WORKDIR }}/logs/run_${{ env.RUN_TIMESTAMP }}"
-          echo "Setting logs.dir = $ABS_LOGS_DIR"
-          mvn -B -ntp clean test \
-            -DrunTimestamp="${{ env.RUN_TIMESTAMP }}" \
-            -Dlogs.dir="$ABS_LOGS_DIR" \
-            -Dchrome.headless=true
+            ABS_LOGS_DIR="${GITHUB_WORKSPACE}/${{ env.WORKDIR }}/logs/run_${{ env.RUN_TIMESTAMP }}"
+            echo "Setting logs.dir = $ABS_LOGS_DIR"
+            mvn -B -ntp clean test -DrunTimestamp="${{ env.RUN_TIMESTAMP }}" -Dlogs.dir="$ABS_LOGS_DIR"
+
+      # - name: Run Maven Tests
+      #   working-directory: ${{ env.WORKDIR }}
+      #   shell: bash
+      #   run: |
+      #     ABS_LOGS_DIR="${GITHUB_WORKSPACE}/${{ env.WORKDIR }}/logs/run_${{ env.RUN_TIMESTAMP }}"
+      #     echo "Setting logs.dir = $ABS_LOGS_DIR"
+      #     mvn -B -ntp clean test \
+      #       -DrunTimestamp="${{ env.RUN_TIMESTAMP }}" \
+      #       -Dlogs.dir="$ABS_LOGS_DIR" \
+      #       -Dchrome.headless=true
 
 
       - name: Copy ExtentReport and publish to gh-pages (fixed)
