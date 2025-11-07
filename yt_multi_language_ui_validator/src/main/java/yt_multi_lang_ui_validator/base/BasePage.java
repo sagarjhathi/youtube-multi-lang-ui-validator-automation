@@ -27,6 +27,9 @@ public class BasePage {
 	
 	 public BasePage() {
 		 
+		 log.info("CI DEBUG: sys.runTimestamp='{}' env.RUN_TIMESTAMP='{}' sys.logs.dir='{}'",
+		         System.getProperty("runTimestamp"), System.getenv("RUN_TIMESTAMP"), System.getProperty("logs.dir"));
+
 	        this.driver = DriverManager.getDriver();
 
 	        if (driver == null) {
