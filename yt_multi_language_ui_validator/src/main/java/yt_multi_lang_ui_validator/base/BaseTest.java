@@ -22,7 +22,10 @@ public class BaseTest {
 
 	    @BeforeMethod
 	    public void setUp(Method method) throws InterruptedException {
-	       
+	    	
+	    	log.info("CI DEBUG: sys.runTimestamp='{}' env.RUN_TIMESTAMP='{}' sys.logs.dir='{}'",
+	    	         System.getProperty("runTimestamp"), System.getenv("RUN_TIMESTAMP"), System.getProperty("logs.dir"));
+
 	    	
 	    	    String testName = method.getName();
 	    	    String threadId = String.valueOf(Thread.currentThread().threadId());

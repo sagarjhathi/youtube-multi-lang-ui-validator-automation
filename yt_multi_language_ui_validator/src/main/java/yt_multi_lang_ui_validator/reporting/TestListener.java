@@ -27,7 +27,7 @@ import java.util.stream.Stream;
 
 public class TestListener implements ITestListener {
 
-	 private static final String RUN_FOLDER = "run_" + ExtentManager.RUN_TIMESTAMP;
+	private static final String RUN_FOLDER = "run_" + ExtentManager.RUN_TIMESTAMP;
     private static final  Logger log=LoggerUtility.getLogger(TestListener.class);
     
     

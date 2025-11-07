@@ -25,7 +25,7 @@ import java.util.Properties;
  */
 public class ConfigManager {
 
-    private static final Logger log = LogManager.getLogger(ConfigManager.class);
+    private static  final Logger log = LogManager.getLogger(ConfigManager.class);
 
     private static ConfigManager instance;
     private final Properties props = new Properties();

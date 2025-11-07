@@ -10,7 +10,13 @@
 
       <class name="main.test.java.tests.YtMasterTests">
   
-   
+   		<methods>
+   		
+   		<include name="verifyingGlobalFilterLandingPage"></include>
+   		
+   		<include name="verifyingSettingOptionsLang"></include>
+   		
+   		</methods>
       </class>
       
     </classes>

@@ -20,7 +20,7 @@ import main.java.yt_multi_lang_ui_validator.utilities.WaitUtility;
 
 public class BasePage {
 
-	private static final  Logger log=LoggerUtility.getLogger(BasePage.class);
+	private static  final  Logger log=LoggerUtility.getLogger(BasePage.class);
 	
 	protected WebDriver driver;
 	protected WebDriverWait wait;

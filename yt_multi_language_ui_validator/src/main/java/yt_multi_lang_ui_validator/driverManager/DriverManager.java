@@ -23,7 +23,7 @@ public class DriverManager {
     private static final ThreadLocal<WebDriver> driver = new ThreadLocal<>();
 
     // Logger for this class
-    private static final Logger log = LoggerUtility.getLogger(DriverManager.class);
+    private  static Logger log = LoggerUtility.getLogger(DriverManager.class);
 
     /** Get current thread's WebDriver instance */
     public static WebDriver getDriver() {
