@@ -34,6 +34,7 @@ public class BasePage {
 	        if (driver == null) {
 	            throw new IllegalStateException("WebDriver not initialized!");
 	        }
+	        
 	        ConfigManager cfg = ConfigManager.getInstance();  
 	        int waitDuration= cfg.getInt("explicit.wait", 10);
 	        System.out.println(waitDuration+"   wait in the base page added");
