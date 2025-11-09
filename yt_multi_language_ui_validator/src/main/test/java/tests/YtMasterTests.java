@@ -1,5 +1,9 @@
 package main.test.java.tests;
 
+import java.io.File;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.time.Duration; 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -9,6 +13,7 @@ import java.util.stream.Collectors;
 
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.ThreadContext;
+import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -17,6 +22,7 @@ import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 import main.test.java.retry.*;
 import main.java.yt_multi_lang_ui_validator.base.BaseTest;
+import main.java.yt_multi_lang_ui_validator.fileReader.FileReader;
 import main.java.yt_multi_lang_ui_validator.lingua.LinguaHelper;
 import main.java.yt_multi_lang_ui_validator.logger.LoggerUtility;
 import main.java.yt_multi_lang_ui_validator.pages.YtLandingPage;
@@ -31,6 +37,12 @@ public class YtMasterTests extends BaseTest{
 	@Test(retryAnalyzer = RetryFailedTest.class)
 	public void verifyingSideMenuLanguageAsInSettings() throws InterruptedException {
 
+		
+		FileReader reader=new FileReader();
+	    reader.loadWorkbook("data/LanguagesList.xlsx");
+	    reader.loadSheet("LanguagesList");
+	    int LanguagesRowCount= reader.getRowCount();
+	    
 		YtLandingPage yt=new YtLandingPage();
 		GenericUtility g=new GenericUtility();
 		yt.openingLandingPage();
@@ -39,13 +51,21 @@ public class YtMasterTests extends BaseTest{
 		yt.clickingLanguageDropdownButton();
 	    Thread.sleep(2000);
 	    		    
+	    
+	    
+	    
+	    
+	    
 	    SoftAssert softAssert = new SoftAssert();
-        List<String> languageList = yt.applyLanguagesFromInternalDataset();
+    //    List<String> languageList = yt.applyLanguagesFromInternalDataset();
+	      
     	
-    	for(int j=0;j<languageList.size();j++) {
+    	for(int j=1;j<LanguagesRowCount;j++) {
 			
-			String langText=languageList.get(j);
-			System.out.println(langText+"    "+j);
+		//	String langText=languageList.get(j);
+    		String langText=reader.getCellValue(j, 0);
+    		
+			System.out.println(langText+" lang text from the sheet   "+j);
 			String testName = ThreadContext.get("logFileName");
 			ScreenshotUtil.capture(testName, langText);
 			Thread.sleep(1000);
@@ -61,7 +81,7 @@ public class YtMasterTests extends BaseTest{
 					sb.append(" ");
 				}
 				
-				String applicableLanguage=languageList.get(j);
+				String applicableLanguage=reader.getCellValue(j, 0);
 				String detectedLanguage=LinguaHelper.detectLanguage(sb.toString());
 				String expectedLanguage=g.getExpectedLangageViaApplicableLangInput(applicableLanguage);
 			
@@ -87,7 +107,10 @@ public class YtMasterTests extends BaseTest{
 
 	
 	@Test(retryAnalyzer = RetryFailedTest.class)
-	public void verifyingSideMenuCollapsedLangAsInSettings() throws InterruptedException {
+	public void verifyingSideMenuCollapsedLangAsInSettings() throws InterruptedException, InvalidFormatException, IOException {
+		
+	
+		
 		YtLandingPage yt=new YtLandingPage();
 		GenericUtility gn=new GenericUtility();
 		yt.openingLandingPage();
@@ -102,11 +125,14 @@ public class YtMasterTests extends BaseTest{
 		    SoftAssert softAssert = new SoftAssert();
 	        List<String> languageList = yt.applyLanguagesFromInternalDataset();
 	    	
+	       
+
 	    	for(int j=0;j<languageList.size();j++) {
 				
 				String langText=languageList.get(j);
 				System.out.println(langText+"    "+j);
 				
+	    	
 				Thread.sleep(1000);
 		     	yt.getLanguageElementByName(langText).click();	
 		     	 
@@ -207,6 +233,19 @@ public class YtMasterTests extends BaseTest{
 	
 	@Test(retryAnalyzer = RetryFailedTest.class)
 	public void verifyCountryCodeAsBasedOnRegion() throws InterruptedException {
+		
+		
+		FileReader reader=new FileReader();
+		reader.loadWorkbook("data/Country_Name_Code.xlsx");
+		reader.loadSheet("CountryNameCode");
+		int rowCount=reader.getRowCount();
+		String FifthRowFirstCol=reader.getCellValue(5, 1);
+
+		System.out.println(rowCount);
+		System.out.println(FifthRowFirstCol);
+		
+		
+		
 		YtLandingPage yt=new YtLandingPage();
 		GenericUtility gn=new GenericUtility();
 		yt.openingLandingPage();
@@ -223,6 +262,9 @@ public class YtMasterTests extends BaseTest{
 			locationList=yt.getLocationList();
 			String locationText=locationList.get(i).getText();
 			System.out.println(locationText+"    "+i);
+			
+			String locationTextFromSheet=reader.getCellValue(i, 0);
+    		System.out.println(locationTextFromSheet+"  location text from sheet  "+i);
 
 			
 			 Thread.sleep(2000);
@@ -231,7 +273,8 @@ public class YtMasterTests extends BaseTest{
 			
 			
 			String applicableLocation=locationText;
-			String expectedCountryCode=yt.getExpectedCountryCodeViaLocation(locationText);
+		//	String expectedCountryCode=yt.getExpectedCountryCodeViaLocation(locationText);
+			String expectedCountryCode=reader.getCellValue(i, 1);
 			String detectedCountryCode=yt.getCountryCode();
 			
 			System.out.println("applicable location is ==  "+applicableLocation+" Expected location  =="+expectedCountryCode+"  detected country code"+detectedCountryCode);
