@@ -1,23 +1,11 @@
 package main.test.java.tests;
 
-import java.io.File;
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Paths;
-import java.time.Duration; 
-import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
-import java.util.stream.Collectors;
-
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.ThreadContext;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 import main.test.java.retry.*;
@@ -32,7 +20,8 @@ import main.java.yt_multi_lang_ui_validator.utilities.ScreenshotUtil;
 
 
 public class YtMasterTests extends BaseTest{
-	 private static final  Logger log=LoggerUtility.getLogger(YtMasterTests.class);
+	
+	private static final  Logger log=LoggerUtility.getLogger(YtMasterTests.class);
 	
 	@Test(retryAnalyzer = RetryFailedTest.class)
 	public void verifyingSideMenuLanguageAsInSettings() throws InterruptedException {
@@ -374,9 +363,6 @@ public class YtMasterTests extends BaseTest{
 	
 	
 	
-	
-	
-	
-	
+
 	
 }
