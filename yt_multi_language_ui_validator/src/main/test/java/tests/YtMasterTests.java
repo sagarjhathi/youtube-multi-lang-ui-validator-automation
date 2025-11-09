@@ -109,7 +109,10 @@ public class YtMasterTests extends BaseTest{
 	@Test(retryAnalyzer = RetryFailedTest.class)
 	public void verifyingSideMenuCollapsedLangAsInSettings() throws InterruptedException, InvalidFormatException, IOException {
 		
-	
+		FileReader reader=new FileReader();
+	    reader.loadWorkbook("data/LanguagesList.xlsx");
+	    reader.loadSheet("LanguagesList");
+	    int LanguagesRowCount= reader.getRowCount();
 		
 		YtLandingPage yt=new YtLandingPage();
 		GenericUtility gn=new GenericUtility();
@@ -123,13 +126,13 @@ public class YtMasterTests extends BaseTest{
         
         
 		    SoftAssert softAssert = new SoftAssert();
-	        List<String> languageList = yt.applyLanguagesFromInternalDataset();
+	     //   List<String> languageList = yt.applyLanguagesFromInternalDataset();
 	    	
 	       
 
-	    	for(int j=0;j<languageList.size();j++) {
+	    	for(int j=1;j<LanguagesRowCount;j++) {
 				
-				String langText=languageList.get(j);
+				String langText=reader.getCellValue(j, 0);
 				System.out.println(langText+"    "+j);
 				
 	    	
@@ -147,7 +150,7 @@ public class YtMasterTests extends BaseTest{
 						sb.append(" ");
 					}
 					
-					String applicableLanguage=languageList.get(j);
+					String applicableLanguage=reader.getCellValue(j, 0);
 					String detectedLanguage=LinguaHelper.detectLanguage(sb.toString());
 					String expectedLanguage=gn.getExpectedLangageViaApplicableLangInput(applicableLanguage);
 
@@ -175,6 +178,14 @@ public class YtMasterTests extends BaseTest{
 	
 	@Test(retryAnalyzer = RetryFailedTest.class)
 	public void verifyingSettingOptionsLang() throws InterruptedException {
+		
+		
+		FileReader reader=new FileReader();
+	    reader.loadWorkbook("data/LanguagesList.xlsx");
+	    reader.loadSheet("LanguagesList");
+	    int LanguagesRowCount= reader.getRowCount();
+	    
+	    
 		YtLandingPage yt=new YtLandingPage();
 		GenericUtility gn=new GenericUtility();
 		yt.openingLandingPage();
@@ -185,11 +196,11 @@ public class YtMasterTests extends BaseTest{
 		
 		SoftAssert softAssert=new SoftAssert();
 		
-		List<String> languageList=yt.applyLanguagesFromInternalDataset();
+		//List<String> languageList=yt.applyLanguagesFromInternalDataset();
 		
-		for(int j=0;j<languageList.size();j++) {
+		for(int j=1;j<LanguagesRowCount;j++) {
 			
-			String langText=languageList.get(j);
+			String langText=reader.getCellValue(j, 0);
 			System.out.println(langText+"    "+j);
 			
 			 Thread.sleep(1000);
@@ -203,7 +214,7 @@ public class YtMasterTests extends BaseTest{
 			yt.clickingSettingEllipsesButton();
 		
 				
-				String applicableLanguage=languageList.get(j);
+				String applicableLanguage=reader.getCellValue(j, 0);
 				String detectedLanguage=LinguaHelper.detectLanguage(sb.toString());
 				String expectedLanguage=gn.getExpectedLangageViaApplicableLangInput(applicableLanguage);
 
@@ -296,6 +307,13 @@ public class YtMasterTests extends BaseTest{
 	
 	@Test(retryAnalyzer = RetryFailedTest.class)
 	public void verifyingGlobalFilterLandingPage() throws InterruptedException {
+		
+		FileReader reader=new FileReader();
+	    reader.loadWorkbook("data/LanguagesList.xlsx");
+	    reader.loadSheet("LanguagesList");
+	    int LanguagesRowCount= reader.getRowCount();
+	    
+	    
 		GenericUtility gn=new GenericUtility();
 		
 		YtLandingPage yt=new YtLandingPage();
@@ -303,18 +321,18 @@ public class YtMasterTests extends BaseTest{
 		yt.givingInputUnderSearchBar("video");
 		gn.clickEnter(yt.searchInputLandinfPage);
 		
-		List<String> languageList=yt.applyLanguagesFromInternalDataset();
+	//	List<String> languageList=yt.applyLanguagesFromInternalDataset();
 		SoftAssert softAssert =new SoftAssert();
 		
 		
 		
-         for(int j=0;j<languageList.size();j++) {
+         for(int j=1;j<LanguagesRowCount;j++) {
         	 yt.clickingSettingEllipsesButton();
 				Thread.sleep(2000);
 				yt.clickingLanguageDropdownButton();
 			    Thread.sleep(2000);
 						   
-			String langText=languageList.get(j);
+			String langText=reader.getCellValue(j, 0);
 			System.out.println(langText+"    "+j);
 			
 			Thread.sleep(1000);
@@ -326,7 +344,7 @@ public class YtMasterTests extends BaseTest{
 			String str=yt.getDataFromGlobalFilterPopup();
 			yt.closeGlobalFilterPopup();
 				
-				String applicableLanguage=languageList.get(j);
+				String applicableLanguage=reader.getCellValue(j, 0);
 				String detectedLanguage=LinguaHelper.detectLanguage(str);
 				String expectedLanguage=gn.getExpectedLangageViaApplicableLangInput(applicableLanguage);
 
