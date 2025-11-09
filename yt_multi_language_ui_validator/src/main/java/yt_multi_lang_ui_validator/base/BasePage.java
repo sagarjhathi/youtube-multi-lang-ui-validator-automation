@@ -27,13 +27,11 @@ public class BasePage {
 	
 	 public BasePage() {
 		 
-		 log.info("CI DEBUG: sys.runTimestamp='{}' env.RUN_TIMESTAMP='{}' sys.logs.dir='{}'",
-		         System.getProperty("runTimestamp"), System.getenv("RUN_TIMESTAMP"), System.getProperty("logs.dir"));
 
 	        this.driver = DriverManager.getDriver();
 
+	        
 	        if (driver == null) {
-	            log.error("Driver is null in BasePage. Did you call DriverManager.initDriver()?");
 	            throw new IllegalStateException("WebDriver not initialized!");
 	        }
 	        ConfigManager cfg = ConfigManager.getInstance();  
@@ -41,7 +39,6 @@ public class BasePage {
 	        System.out.println(waitDuration+"   wait in the base page added");
 	        
 	        this.wait = new WebDriverWait(driver, Duration.ofSeconds(waitDuration));
-	        log.info("BasePage initialized successfully for thread {}", Thread.currentThread().threadId());
 	    }
 
 }

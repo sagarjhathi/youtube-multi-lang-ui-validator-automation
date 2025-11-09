@@ -1,12 +1,6 @@
 package main.java.yt_multi_lang_ui_validator.reporting;
-
-
-
-import java.text.SimpleDateFormat; 
+import java.text.SimpleDateFormat;  
 import java.util.Date;
-
-import org.apache.logging.log4j.Logger;
-
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
@@ -48,6 +42,7 @@ public class ExtentManager {
 
 	        }
 	        return extent;
+	        
 	    }
 
 	   
@@ -56,6 +51,7 @@ public class ExtentManager {
 	            extent.flush();
 	        }
 	    }
+	    
 }
 
 
