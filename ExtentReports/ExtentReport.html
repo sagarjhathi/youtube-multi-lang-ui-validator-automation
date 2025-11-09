@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Youtube multi lang ui validator</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Nov 9, 2025 06:19:23 PM</span></a>
+<a href="#"><span class="badge badge-primary">Nov 9, 2025 05:55:03 PM</span></a>
 </li>
 </ul>
 </div>
@@ -66,6 +66,7 @@
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
 <a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
 <a class="dropdown-item" status="skip" href="#"><span>Skip</span><span class="status warning"></span></a>
 <div class="dropdown-divider"></div>
@@ -75,25 +76,25 @@
 </ul>
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
-        <li class="test-item"  status="skip" test-id="1"
+        <li class="test-item"  status="pass" test-id="1"
           author=""
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">verifyingSideMenuCollapsedLangAsInSettings</p>
+            <p class="name">verifyCountryCodeAsBasedOnRegion</p>
             <p class="text-sm">
-              <span>6:19:23 PM</span> / <span>00:00:05:035</span>
-              <span class="badge skip-bg log float-right">Skip</span>
+              <span>5:55:03 PM</span> / <span>00:29:33:478</span>
+              <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-skip">verifyingSideMenuCollapsedLangAsInSettings</h5>
-<span class='badge badge-success'>11.09.2025 6:19:23 PM</span>
-<span class='badge badge-danger'>11.09.2025 6:19:28 PM</span>
-<span class='badge badge-default'>00:00:05:035</span>
+<h5 class="test-status text-pass">verifyCountryCodeAsBasedOnRegion</h5>
+<span class='badge badge-success'>11.09.2025 5:55:03 PM</span>
+<span class='badge badge-danger'>11.09.2025 6:24:37 PM</span>
+<span class='badge badge-default'>00:29:33:478</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -106,43 +107,23 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>6:19:23 PM</td>
+        <td>5:55:03 PM</td>
         <td>
-          🔹 Test Started: verifyingSideMenuCollapsedLangAsInSettings
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log skip-bg">Skip</span></td>
-        <td>6:19:28 PM</td>
-        <td>
-          <b>Test skipped:</b> verifyingSideMenuCollapsedLangAsInSettings<br/><b>Reason:</b> element click intercepted: Element &lt;ytd-topbar-menu-button-renderer class=&quot;style-scope ytd-masthead style-default&quot; use-keyboard-focused=&quot;&quot; is-icon-button=&quot;&quot; has-no-text=&quot;&quot;&gt;...&lt;/ytd-topbar-menu-button-renderer&gt; is not clickable at point (866, 28). Other element would receive the click: &lt;div id=&quot;scrim&quot; class=&quot;style-scope tp-yt-app-drawer visible&quot; style=&quot;transition-duration: 200ms;&quot;&gt;&lt;/div&gt;
-  (Session info: chrome=142.0.7444.60)
-Build info: version: &#39;4.27.0&#39;, revision: &#39;d6e718d134&#39;
-System info: os.name: &#39;Windows Server 2025&#39;, os.arch: &#39;amd64&#39;, os.version: &#39;10.0&#39;, java.version: &#39;24.0.2&#39;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [469885c918d791a446331f8085110fa1, clickElement {id=f.585AAFB5C667E22088BA635E4919C9C7.d.009D7E09DF065C5839B4B5905420C65D.e.17}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.60, chrome: {chromedriverVersion: 142.0.7444.61 (9884f628acbc..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64969}, goog:processID: 6608, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64969/devtoo..., se:cdpVersion: 142.0.7444.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (469885c918d791a446331f8085110fa1)] -&gt; xpath: //ytd-topbar-menu-button-renderer[@class=&#39;style-scope ytd-masthead style-default&#39;]]
-Session ID: 469885c918d791a446331f8085110fa1<br/><pre>java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-... (25 more frames)</pre>
+          🔹 Test Started: verifyCountryCodeAsBasedOnRegion
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>6:19:28 PM</td>
+        <td>6:24:37 PM</td>
         <td>
-          <div style='margin:6px 0; padding:6px; border-left:3px solid #999;'><div style='font-weight:bold; margin-bottom:4px;'>Open log — choose the link that works in your environment</div><div><a href='/youtube-multi-lang-ui-validator-automation/logs/run_2025-11-09_18-18-18/verifyingSideMenuCollapsedLangAsInSettings.log' target='_blank'>Open (GitHub Pages)</a></div><div><a href='./logs/run_2025-11-09_18-18-18/verifyingSideMenuCollapsedLangAsInSettings.log' target='_blank'>Open (artifact root / index.html)</a></div><div><a href='../logs/run_2025-11-09_18-18-18/verifyingSideMenuCollapsedLangAsInSettings.log' target='_blank'>Open (report one level deep)</a></div><div><a href='../../logs/run_2025-11-09_18-18-18/verifyingSideMenuCollapsedLangAsInSettings.log' target='_blank'>Open (report inside ExtentReports/test-output)</a></div><div style='margin-top:6px;color:#666;font-size:0.9em;'>Detected log on disk: D:\a\youtube-multi-lang-ui-validator-automation\youtube-multi-lang-ui-validator-automation\yt_multi_language_ui_validator\logs\run_2025-11-09_18-18-18\verifyingSideMenuCollapsedLangAsInSettings.log</div></div>
+          <div style='margin:6px 0; padding:6px; border-left:3px solid #999;'><div style='font-weight:bold; margin-bottom:4px;'>Open log — choose the link that works in your environment</div><div><a href='/youtube-multi-lang-ui-validator-automation/logs/run_2025-11-09_17-54-17/verifyCountryCodeAsBasedOnRegion.log' target='_blank'>Open (GitHub Pages)</a></div><div><a href='./logs/run_2025-11-09_17-54-17/verifyCountryCodeAsBasedOnRegion.log' target='_blank'>Open (artifact root / index.html)</a></div><div><a href='../logs/run_2025-11-09_17-54-17/verifyCountryCodeAsBasedOnRegion.log' target='_blank'>Open (report one level deep)</a></div><div><a href='../../logs/run_2025-11-09_17-54-17/verifyCountryCodeAsBasedOnRegion.log' target='_blank'>Open (report inside ExtentReports/test-output)</a></div><div style='margin-top:6px;color:#666;font-size:0.9em;'>Detected log on disk: D:\a\youtube-multi-lang-ui-validator-automation\youtube-multi-lang-ui-validator-automation\yt_multi_language_ui_validator\logs\run_2025-11-09_17-54-17\verifyCountryCodeAsBasedOnRegion.log</div></div>
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>6:19:28 PM</td>
+        <td>6:24:37 PM</td>
         <td>
-          Screenshot folder not found: screenshots/Run_2025-11-09_18-18-18/verifyingSideMenuCollapsedLangAsInSettings
+          Screenshot folder not found: screenshots/Run_2025-11-09_17-54-17/verifyCountryCodeAsBasedOnRegion
         </td>
       </tr>
   </tbody>
@@ -155,9 +136,9 @@ org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponse
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">verifyingSideMenuCollapsedLangAsInSettings</p>
+            <p class="name">verifyingGlobalFilterLandingPage</p>
             <p class="text-sm">
-              <span>6:19:32 PM</span> / <span>00:00:04:264</span>
+              <span>5:55:03 PM</span> / <span>00:10:54:381</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -165,10 +146,10 @@ org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponse
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">verifyingSideMenuCollapsedLangAsInSettings</h5>
-<span class='badge badge-success'>11.09.2025 6:19:32 PM</span>
-<span class='badge badge-danger'>11.09.2025 6:19:36 PM</span>
-<span class='badge badge-default'>00:00:04:264</span>
+<h5 class="test-status text-fail">verifyingGlobalFilterLandingPage</h5>
+<span class='badge badge-success'>11.09.2025 5:55:03 PM</span>
+<span class='badge badge-danger'>11.09.2025 6:05:58 PM</span>
+<span class='badge badge-default'>00:10:54:381</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -181,24 +162,247 @@ org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponse
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>6:19:32 PM</td>
+        <td>5:55:03 PM</td>
+        <td>
+          🔹 Test Started: verifyingGlobalFilterLandingPage
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>6:05:58 PM</td>
+        <td>
+          <div><b>Failure:</b> The following asserts failed:
+	Language detection mismatch expected [CROATIAN] but found [BOSNIAN]</div><pre style='margin-top:8px; font-size:12px;'>org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+main.test.java.tests.YtMasterTests.verifyingGlobalFilterLandingPage(YtMasterTests.java:347)
+java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+java.base/java.lang.reflect.Method.invoke(Method.java:565)
+org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+... (9 more stack frames)
+</pre>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:05:58 PM</td>
+        <td>
+          <div style='margin:6px 0; padding:6px; border-left:3px solid #999;'><div style='font-weight:bold; margin-bottom:4px;'>Open log — choose the link that works in your environment</div><div><a href='/youtube-multi-lang-ui-validator-automation/logs/run_2025-11-09_17-54-17/verifyingGlobalFilterLandingPage.log' target='_blank'>Open (GitHub Pages)</a></div><div><a href='./logs/run_2025-11-09_17-54-17/verifyingGlobalFilterLandingPage.log' target='_blank'>Open (artifact root / index.html)</a></div><div><a href='../logs/run_2025-11-09_17-54-17/verifyingGlobalFilterLandingPage.log' target='_blank'>Open (report one level deep)</a></div><div><a href='../../logs/run_2025-11-09_17-54-17/verifyingGlobalFilterLandingPage.log' target='_blank'>Open (report inside ExtentReports/test-output)</a></div><div style='margin-top:6px;color:#666;font-size:0.9em;'>Detected log on disk: D:\a\youtube-multi-lang-ui-validator-automation\youtube-multi-lang-ui-validator-automation\yt_multi_language_ui_validator\logs\run_2025-11-09_17-54-17\verifyingGlobalFilterLandingPage.log</div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:05:58 PM</td>
+        <td>
+          Screenshot folder not found: screenshots/Run_2025-11-09_17-54-17/verifyingGlobalFilterLandingPage
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="3"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">verifyingSettingOptionsLang</p>
+            <p class="text-sm">
+              <span>5:55:03 PM</span> / <span>00:12:52:288</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">verifyingSettingOptionsLang</h5>
+<span class='badge badge-success'>11.09.2025 5:55:03 PM</span>
+<span class='badge badge-danger'>11.09.2025 6:07:56 PM</span>
+<span class='badge badge-default'>00:12:52:288</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:55:03 PM</td>
+        <td>
+          🔹 Test Started: verifyingSettingOptionsLang
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>6:07:56 PM</td>
+        <td>
+          <b>Test skipped:</b> verifyingSettingOptionsLang<br/><b>Reason:</b> java.util.concurrent.TimeoutException
+Build info: version: &#39;4.27.0&#39;, revision: &#39;d6e718d134&#39;
+System info: os.name: &#39;Windows Server 2025&#39;, os.arch: &#39;amd64&#39;, os.version: &#39;10.0&#39;, java.version: &#39;24.0.2&#39;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a144b7626cb45adfad334b5732a3fc16, clickElement {id=f.7F5E350F75AC5D0D4563497EB1D265BD.d.DE3CF0E9B25E05534EF44A7301CA0FF1.e.1455}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.60, chrome: {chromedriverVersion: 142.0.7444.61 (9884f628acbc..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55552}, goog:processID: 9124, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55552/devtoo..., se:cdpVersion: 142.0.7444.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (a144b7626cb45adfad334b5732a3fc16)] -&gt; xpath: //yt-multi-page-menu-section-renderer[@class=&#39;style-scope ytd-multi-page-menu-renderer&#39;]//yt-formatted-string[@id=&#39;label&#39; and text()=&#39;日本語&#39;]]
+Session ID: a144b7626cb45adfad334b5732a3fc16<br/><pre>org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:423)
+org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+... (19 more frames)</pre>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:07:56 PM</td>
+        <td>
+          <div style='margin:6px 0; padding:6px; border-left:3px solid #999;'><div style='font-weight:bold; margin-bottom:4px;'>Open log — choose the link that works in your environment</div><div><a href='/youtube-multi-lang-ui-validator-automation/logs/run_2025-11-09_17-54-17/verifyingSettingOptionsLang.log' target='_blank'>Open (GitHub Pages)</a></div><div><a href='./logs/run_2025-11-09_17-54-17/verifyingSettingOptionsLang.log' target='_blank'>Open (artifact root / index.html)</a></div><div><a href='../logs/run_2025-11-09_17-54-17/verifyingSettingOptionsLang.log' target='_blank'>Open (report one level deep)</a></div><div><a href='../../logs/run_2025-11-09_17-54-17/verifyingSettingOptionsLang.log' target='_blank'>Open (report inside ExtentReports/test-output)</a></div><div style='margin-top:6px;color:#666;font-size:0.9em;'>Detected log on disk: D:\a\youtube-multi-lang-ui-validator-automation\youtube-multi-lang-ui-validator-automation\yt_multi_language_ui_validator\logs\run_2025-11-09_17-54-17\verifyingSettingOptionsLang.log</div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:07:56 PM</td>
+        <td>
+          Screenshot folder not found: screenshots/Run_2025-11-09_17-54-17/verifyingSettingOptionsLang
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="4"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">verifyingSideMenuCollapsedLangAsInSettings</p>
+            <p class="text-sm">
+              <span>6:06:02 PM</span> / <span>00:00:05:628</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">verifyingSideMenuCollapsedLangAsInSettings</h5>
+<span class='badge badge-success'>11.09.2025 6:06:02 PM</span>
+<span class='badge badge-danger'>11.09.2025 6:06:08 PM</span>
+<span class='badge badge-default'>00:00:05:628</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:06:02 PM</td>
+        <td>
+          🔹 Test Started: verifyingSideMenuCollapsedLangAsInSettings
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>6:06:08 PM</td>
+        <td>
+          <b>Test skipped:</b> verifyingSideMenuCollapsedLangAsInSettings<br/><b>Reason:</b> element click intercepted: Element &lt;ytd-topbar-menu-button-renderer class=&quot;style-scope ytd-masthead style-default&quot; use-keyboard-focused=&quot;&quot; is-icon-button=&quot;&quot; has-no-text=&quot;&quot;&gt;...&lt;/ytd-topbar-menu-button-renderer&gt; is not clickable at point (866, 28). Other element would receive the click: &lt;div id=&quot;scrim&quot; class=&quot;style-scope tp-yt-app-drawer visible&quot; style=&quot;transition-duration: 200ms;&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=142.0.7444.60)
+Build info: version: &#39;4.27.0&#39;, revision: &#39;d6e718d134&#39;
+System info: os.name: &#39;Windows Server 2025&#39;, os.arch: &#39;amd64&#39;, os.version: &#39;10.0&#39;, java.version: &#39;24.0.2&#39;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [639140107a39d87bea050964df16155e, clickElement {id=f.2ADAC2072BEE8388FDA0B66A80E6E07C.d.20EE1BFD08FB2D647244BF8DC719ABB0.e.19}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.60, chrome: {chromedriverVersion: 142.0.7444.61 (9884f628acbc..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61547}, goog:processID: 9440, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61547/devtoo..., se:cdpVersion: 142.0.7444.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (639140107a39d87bea050964df16155e)] -&gt; xpath: //ytd-topbar-menu-button-renderer[@class=&#39;style-scope ytd-masthead style-default&#39;]]
+Session ID: 639140107a39d87bea050964df16155e<br/><pre>java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+... (25 more frames)</pre>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:06:08 PM</td>
+        <td>
+          <div style='margin:6px 0; padding:6px; border-left:3px solid #999;'><div style='font-weight:bold; margin-bottom:4px;'>Open log — choose the link that works in your environment</div><div><a href='/youtube-multi-lang-ui-validator-automation/logs/run_2025-11-09_17-54-17/verifyingSideMenuCollapsedLangAsInSettings.log' target='_blank'>Open (GitHub Pages)</a></div><div><a href='./logs/run_2025-11-09_17-54-17/verifyingSideMenuCollapsedLangAsInSettings.log' target='_blank'>Open (artifact root / index.html)</a></div><div><a href='../logs/run_2025-11-09_17-54-17/verifyingSideMenuCollapsedLangAsInSettings.log' target='_blank'>Open (report one level deep)</a></div><div><a href='../../logs/run_2025-11-09_17-54-17/verifyingSideMenuCollapsedLangAsInSettings.log' target='_blank'>Open (report inside ExtentReports/test-output)</a></div><div style='margin-top:6px;color:#666;font-size:0.9em;'>Detected log on disk: D:\a\youtube-multi-lang-ui-validator-automation\youtube-multi-lang-ui-validator-automation\yt_multi_language_ui_validator\logs\run_2025-11-09_17-54-17\verifyingSideMenuCollapsedLangAsInSettings.log</div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:06:08 PM</td>
+        <td>
+          Screenshot folder not found: screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuCollapsedLangAsInSettings
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="5"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">verifyingSideMenuCollapsedLangAsInSettings</p>
+            <p class="text-sm">
+              <span>6:06:11 PM</span> / <span>00:00:04:979</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">verifyingSideMenuCollapsedLangAsInSettings</h5>
+<span class='badge badge-success'>11.09.2025 6:06:11 PM</span>
+<span class='badge badge-danger'>11.09.2025 6:06:16 PM</span>
+<span class='badge badge-default'>00:00:04:979</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:06:11 PM</td>
         <td>
           🔹 Test Started: verifyingSideMenuCollapsedLangAsInSettings
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>6:19:36 PM</td>
+        <td>6:06:16 PM</td>
         <td>
           <div><b>Failure:</b> element click intercepted: Element &lt;ytd-topbar-menu-button-renderer class=&quot;style-scope ytd-masthead style-default&quot; use-keyboard-focused=&quot;&quot; is-icon-button=&quot;&quot; has-no-text=&quot;&quot;&gt;...&lt;/ytd-topbar-menu-button-renderer&gt; is not clickable at point (866, 28). Other element would receive the click: &lt;div id=&quot;scrim&quot; class=&quot;style-scope tp-yt-app-drawer visible&quot; style=&quot;transition-duration: 200ms;&quot;&gt;&lt;/div&gt;
   (Session info: chrome=142.0.7444.60)
 Build info: version: &#39;4.27.0&#39;, revision: &#39;d6e718d134&#39;
 System info: os.name: &#39;Windows Server 2025&#39;, os.arch: &#39;amd64&#39;, os.version: &#39;10.0&#39;, java.version: &#39;24.0.2&#39;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [56cecf0af8a1cf2f92ac7830d51ada84, clickElement {id=f.20520C5C938F73A142ED6FF712C56478.d.BC8AC5AACCECBB6B60613BF4FF781130.e.17}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.60, chrome: {chromedriverVersion: 142.0.7444.61 (9884f628acbc..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62420}, goog:processID: 816, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62420/devtoo..., se:cdpVersion: 142.0.7444.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (56cecf0af8a1cf2f92ac7830d51ada84)] -&gt; xpath: //ytd-topbar-menu-button-renderer[@class=&#39;style-scope ytd-masthead style-default&#39;]]
-Session ID: 56cecf0af8a1cf2f92ac7830d51ada84</div><pre style='margin-top:8px; font-size:12px;'>java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+Command: [7bb3c61bfed895867ca4b3ea22dd0fe9, clickElement {id=f.5ACE89A9232EA8421E6EC83A9B59D14B.d.A9137BB669FDA61556F7EC6448ED9797.e.18}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.60, chrome: {chromedriverVersion: 142.0.7444.61 (9884f628acbc..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56912}, goog:processID: 10692, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56912/devtoo..., se:cdpVersion: 142.0.7444.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (7bb3c61bfed895867ca4b3ea22dd0fe9)] -&gt; xpath: //ytd-topbar-menu-button-renderer[@class=&#39;style-scope ytd-masthead style-default&#39;]]
+Session ID: 7bb3c61bfed895867ca4b3ea22dd0fe9</div><pre style='margin-top:8px; font-size:12px;'>java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
 java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
 org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
@@ -214,16 +418,216 @@ org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>6:19:36 PM</td>
+        <td>6:06:16 PM</td>
         <td>
-          <div style='margin:6px 0; padding:6px; border-left:3px solid #999;'><div style='font-weight:bold; margin-bottom:4px;'>Open log — choose the link that works in your environment</div><div><a href='/youtube-multi-lang-ui-validator-automation/logs/run_2025-11-09_18-18-18/verifyingSideMenuCollapsedLangAsInSettings.log' target='_blank'>Open (GitHub Pages)</a></div><div><a href='./logs/run_2025-11-09_18-18-18/verifyingSideMenuCollapsedLangAsInSettings.log' target='_blank'>Open (artifact root / index.html)</a></div><div><a href='../logs/run_2025-11-09_18-18-18/verifyingSideMenuCollapsedLangAsInSettings.log' target='_blank'>Open (report one level deep)</a></div><div><a href='../../logs/run_2025-11-09_18-18-18/verifyingSideMenuCollapsedLangAsInSettings.log' target='_blank'>Open (report inside ExtentReports/test-output)</a></div><div style='margin-top:6px;color:#666;font-size:0.9em;'>Detected log on disk: D:\a\youtube-multi-lang-ui-validator-automation\youtube-multi-lang-ui-validator-automation\yt_multi_language_ui_validator\logs\run_2025-11-09_18-18-18\verifyingSideMenuCollapsedLangAsInSettings.log</div></div>
+          <div style='margin:6px 0; padding:6px; border-left:3px solid #999;'><div style='font-weight:bold; margin-bottom:4px;'>Open log — choose the link that works in your environment</div><div><a href='/youtube-multi-lang-ui-validator-automation/logs/run_2025-11-09_17-54-17/verifyingSideMenuCollapsedLangAsInSettings.log' target='_blank'>Open (GitHub Pages)</a></div><div><a href='./logs/run_2025-11-09_17-54-17/verifyingSideMenuCollapsedLangAsInSettings.log' target='_blank'>Open (artifact root / index.html)</a></div><div><a href='../logs/run_2025-11-09_17-54-17/verifyingSideMenuCollapsedLangAsInSettings.log' target='_blank'>Open (report one level deep)</a></div><div><a href='../../logs/run_2025-11-09_17-54-17/verifyingSideMenuCollapsedLangAsInSettings.log' target='_blank'>Open (report inside ExtentReports/test-output)</a></div><div style='margin-top:6px;color:#666;font-size:0.9em;'>Detected log on disk: D:\a\youtube-multi-lang-ui-validator-automation\youtube-multi-lang-ui-validator-automation\yt_multi_language_ui_validator\logs\run_2025-11-09_17-54-17\verifyingSideMenuCollapsedLangAsInSettings.log</div></div>
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>6:19:36 PM</td>
+        <td>6:06:16 PM</td>
         <td>
-          Screenshot folder not found: screenshots/Run_2025-11-09_18-18-18/verifyingSideMenuCollapsedLangAsInSettings
+          Screenshot folder not found: screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuCollapsedLangAsInSettings
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="6"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">verifyingSideMenuLanguageAsInSettings</p>
+            <p class="text-sm">
+              <span>6:06:20 PM</span> / <span>00:38:53:576</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">verifyingSideMenuLanguageAsInSettings</h5>
+<span class='badge badge-success'>11.09.2025 6:06:20 PM</span>
+<span class='badge badge-danger'>11.09.2025 6:45:13 PM</span>
+<span class='badge badge-default'>00:38:53:576</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:06:20 PM</td>
+        <td>
+          🔹 Test Started: verifyingSideMenuLanguageAsInSettings
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>6:45:13 PM</td>
+        <td>
+          <div><b>Failure:</b> The following asserts failed:
+	Page title mismatch expected [AFRIKAANS] but found [Unknown],
+	Page title mismatch expected [AZERBAIJANI] but found [Unknown],
+	Page title mismatch expected [INDONESIAN] but found [Unknown],
+	Page title mismatch expected [CROATIAN] but found [Unknown],
+	Page title mismatch expected [CATALAN] but found [Unknown],
+	Page title mismatch expected [DANISH] but found [Unknown],
+	Page title mismatch expected [GERMAN] but found [Unknown],
+	Page title mismatch expected [ESTONIAN] but found [Unknown],
+	Page title mismatch expected [ENGLISH] but found [Unknown],
+	Page title mismatch expected [ENGLISH] but found [Unknown],
+	Page title mismatch expected [ENGLISH] but found [Unknown],
+	Page title mismatch expected [SPANISH] but found [Unknown],
+	Page title mismatch expected [SPANISH] but found [Unknown],
+	Page title mismatch expected [SPANISH] but found [Unknown],
+	Page title mismatch expected [BASQUE] but found [Unknown],
+	Page title mismatch expected [FRENCH] but found [Unknown],
+	Page title mismatch expected [FRENCH] but found [Unknown],
+	Page title mismatch expected [CROATIAN] but found [Unknown],
+	Page title mismatch expected [ICELANDIC] but found [Unknown],
+	Page title mismatch expected [ITALIAN] but found [Unknown],
+	Page title mismatch expected [LATVIAN] but found [Unknown],
+	Page title mismatch expected [LITHUANIAN] but found [Unknown],
+	Page title mismatch expected [HUNGARIAN] but found [Unknown],
+	Page title mismatch expected [DUTCH] but found [Unknown],
+	Page title mismatch expected [POLISH] but found [Unknown],
+	Page title mismatch expected [PORTUGUESE] but found [Unknown],
+	Page title mismatch expected [PORTUGUESE] but found [Unknown],
+	Page title mismatch expected [ALBANIAN] but found [Unknown],
+	Page title mismatch expected [SLOVENE] but found [Unknown],
+	Page title mismatch expected [FINNISH] but found [Unknown],
+	Page title mismatch expected [SWEDISH] but found [Unknown],
+	Page title mismatch expected [VIETNAMESE] but found [Unknown],
+	Page title mismatch expected [TURKISH] but found [Unknown],
+	Page title mismatch expected [BELARUSIAN] but found [Unknown],
+	Page title mismatch expected [BULGARIAN] but found [Unknown],
+	Page title mismatch expected [RUSSIAN] but found [Unknown],
+	Page title mismatch expected [UKRAINIAN] but found [Unknown],
+	Page title mismatch expected [GREEK] but found [Unknown],
+	Page title mismatch expected [ARMENIAN] but found [Unknown],
+	Page title mismatch expected [HEBREW] but found [Unknown],
+	Page title mismatch expected [ARABIC] but found [Unknown],
+	Page title mismatch expected [PERSIAN] but found [Unknown],
+	Page title mismatch expected [HINDI] but found [Unknown],
+	Page title mismatch expected [BENGALI] but found [Unknown],
+	Page title mismatch expected [PUNJABI] but found [Unknown],
+	Page title mismatch expected [GUJARATI] but found [Unknown],
+	Page title mismatch expected [TAMIL] but found [Unknown],
+	Page title mismatch expected [TELUGU] but found [Unknown],
+	Page title mismatch expected [CHINESE] but found [Unknown],
+	Page title mismatch expected [CHINESE] but found [Unknown],
+	Page title mismatch expected [CHINESE] but found [Unknown],
+	Page title mismatch expected [JAPANESE] but found [Unknown],
+	Page title mismatch expected [KOREAN] but found [Unknown]</div><pre style='margin-top:8px; font-size:12px;'>org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+main.test.java.tests.YtMasterTests.verifyingSideMenuLanguageAsInSettings(YtMasterTests.java:104)
+java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+java.base/java.lang.reflect.Method.invoke(Method.java:565)
+org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+... (9 more stack frames)
+</pre>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:45:13 PM</td>
+        <td>
+          <div style='margin:6px 0; padding:6px; border-left:3px solid #999;'><div style='font-weight:bold; margin-bottom:4px;'>Open log — choose the link that works in your environment</div><div><a href='/youtube-multi-lang-ui-validator-automation/logs/run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings.log' target='_blank'>Open (GitHub Pages)</a></div><div><a href='./logs/run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings.log' target='_blank'>Open (artifact root / index.html)</a></div><div><a href='../logs/run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings.log' target='_blank'>Open (report one level deep)</a></div><div><a href='../../logs/run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings.log' target='_blank'>Open (report inside ExtentReports/test-output)</a></div><div style='margin-top:6px;color:#666;font-size:0.9em;'>Detected log on disk: D:\a\youtube-multi-lang-ui-validator-automation\youtube-multi-lang-ui-validator-automation\yt_multi_language_ui_validator\logs\run_2025-11-09_17-54-17\verifyingSideMenuLanguageAsInSettings.log</div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:45:13 PM</td>
+        <td>
+          <details><summary>Screenshots for verifyingSideMenuLanguageAsInSettings</summary><div style='margin-top:10px; border:1px solid #ccc; padding:5px;'><div style='font-weight:bold; margin-bottom:5px;'>Filter Applied is Afrikaans__2025-11-09_180629.png</div><div style='margin-bottom:6px;'><a href='/youtube-multi-lang-ui-validator-automation/screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is Afrikaans__2025-11-09_180629.png' target='_blank'>View on GitHub Pages</a></div><a href='../screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is Afrikaans__2025-11-09_180629.png' target='_blank'><img src='../screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is Afrikaans__2025-11-09_180629.png' style='max-width:600px; border:1px solid #ddd;'/></a></div><div style='margin-top:10px; border:1px solid #ccc; padding:5px;'><div style='font-weight:bold; margin-bottom:5px;'>Filter Applied is Azərbaycan__2025-11-09_180714.png</div><div style='margin-bottom:6px;'><a href='/youtube-multi-lang-ui-validator-automation/screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is Azərbaycan__2025-11-09_180714.png' target='_blank'>View on GitHub Pages</a></div><a href='../screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is Azərbaycan__2025-11-09_180714.png' target='_blank'><img src='../screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is Azərbaycan__2025-11-09_180714.png' style='max-width:600px; border:1px solid #ddd;'/></a></div><div style='margin-top:10px; border:1px solid #ccc; padding:5px;'><div style='font-weight:bold; margin-bottom:5px;'>Filter Applied is Bahasa Indonesia__2025-11-09_180758.png</div><div style='margin-bottom:6px;'><a href='/youtube-multi-lang-ui-validator-automation/screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is Bahasa Indonesia__2025-11-09_180758.png' target='_blank'>View on GitHub Pages</a></div><a href='../screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is Bahasa Indonesia__2025-11-09_180758.png' target='_blank'><img src='../screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is Bahasa Indonesia__2025-11-09_180758.png' style='max-width:600px; border:1px solid #ddd;'/></a></div><div style='margin-top:10px; border:1px solid #ccc; padding:5px;'><div style='font-weight:bold; margin-bottom:5px;'>Filter Applied is Bosanski__2025-11-09_180846.png</div><div style='margin-bottom:6px;'><a href='/youtube-multi-lang-ui-validator-automation/screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is Bosanski__2025-11-09_180846.png' target='_blank'>View on GitHub Pages</a></div><a href='../screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is Bosanski__2025-11-09_180846.png' target='_blank'><img src='../screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is Bosanski__2025-11-09_180846.png' style='max-width:600px; border:1px solid #ddd;'/></a></div><div style='margin-top:10px; border:1px solid #ccc; padding:5px;'><div style='font-weight:bold; margin-bottom:5px;'>Filter Applied is Català__2025-11-09_180935.png</div><div style='margin-bottom:6px;'><a href='/youtube-multi-lang-ui-validator-automation/screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is Català__2025-11-09_180935.png' target='_blank'>View on GitHub Pages</a></div><a href='../screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is Català__2025-11-09_180935.png' target='_blank'><img src='../screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is Català__2025-11-09_180935.png' style='max-width:600px; border:1px solid #ddd;'/></a></div><div style='margin-top:10px; border:1px solid #ccc; padding:5px;'><div style='font-weight:bold; margin-bottom:5px;'>Filter Applied is Dansk__2025-11-09_181023.png</div><div style='margin-bottom:6px;'><a href='/youtube-multi-lang-ui-validator-automation/screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is Dansk__2025-11-09_181023.png' target='_blank'>View on GitHub Pages</a></div><a href='../screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is Dansk__2025-11-09_181023.png' target='_blank'><img src='../screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is Dansk__2025-11-09_181023.png' style='max-width:600px; border:1px solid #ddd;'/></a></div><div style='margin-top:10px; border:1px solid #ccc; padding:5px;'><div style='font-weight:bold; margin-bottom:5px;'>Filter Applied is Deutsch__2025-11-09_181108.png</div><div style='margin-bottom:6px;'><a href='/youtube-multi-lang-ui-validator-automation/screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is Deutsch__2025-11-09_181108.png' target='_blank'>View on GitHub Pages</a></div><a href='../screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is Deutsch__2025-11-09_181108.png' target='_blank'><img src='../screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is Deutsch__2025-11-09_181108.png' style='max-width:600px; border:1px solid #ddd;'/></a></div><div style='margin-top:10px; border:1px solid #ccc; padding:5px;'><div style='font-weight:bold; margin-bottom:5px;'>Filter Applied is Eesti__2025-11-09_181156.png</div><div style='margin-bottom:6px;'><a href='/youtube-multi-lang-ui-validator-automation/screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is Eesti__2025-11-09_181156.png' target='_blank'>View on GitHub Pages</a></div><a href='../screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is Eesti__2025-11-09_181156.png' target='_blank'><img src='../screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is Eesti__2025-11-09_181156.png' style='max-width:600px; border:1px solid #ddd;'/></a></div><div style='margin-top:10px; border:1px solid #ccc; padding:5px;'><div style='font-weight:bold; margin-bottom:5px;'>Filter Applied is English (India)__2025-11-09_181244.png</div><div style='margin-bottom:6px;'><a href='/youtube-multi-lang-ui-validator-automation/screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is English (India)__2025-11-09_181244.png' target='_blank'>View on GitHub Pages</a></div><a href='../screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is English (India)__2025-11-09_181244.png' target='_blank'><img src='../screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is English (India)__2025-11-09_181244.png' style='max-width:600px; border:1px solid #ddd;'/></a></div><div style='margin-top:10px; border:1px solid #ccc; padding:5px;'><div style='font-weight:bold; margin-bottom:5px;'>Filter Applied is English (UK)__2025-11-09_181330.png</div><div style='margin-bottom:6px;'><a href='/youtube-multi-lang-ui-validator-automation/screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is English (UK)__2025-11-09_181330.png' target='_blank'>View on GitHub Pages</a></div><a href='../screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is English (UK)__2025-11-09_181330.png' target='_blank'><img src='../screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is English (UK)__2025-11-09_181330.png' style='max-width:600px; border:1px solid #ddd;'/></a></div><div style='margin-top:10px; border:1px solid #ccc; padding:5px;'><div style='font-weight:bold; margin-bottom:5px;'>Filter Applied is English (US)__2025-11-09_181417.png</div><div style='margin-bottom:6px;'><a href='/youtube-multi-lang-ui-validator-automation/screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is English (US)__2025-11-09_181417.png' target='_blank'>View on GitHub Pages</a></div><a href='../screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is English (US)__2025-11-09_181417.png' target='_blank'><img src='../screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is English (US)__2025-11-09_181417.png' style='max-width:600px; border:1px solid #ddd;'/></a></div><div style='margin-top:10px; border:1px solid #ccc; padding:5px;'><div style='font-weight:bold; margin-bottom:5px;'>Filter Applied is Español (España)__2025-11-09_181504.png</div><div style='margin-bottom:6px;'><a href='/youtube-multi-lang-ui-validator-automation/screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is Español (España)__2025-11-09_181504.png' target='_blank'>View on GitHub Pages</a></div><a href='../screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is Español (España)__2025-11-09_181504.png' target='_blank'><img src='../screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is Español (España)__2025-11-09_181504.png' style='max-width:600px; border:1px solid #ddd;'/></a></div><div style='margin-top:10px; border:1px solid #ccc; padding:5px;'><div style='font-weight:bold; margin-bottom:5px;'>Filter Applied is Español (Latinoamérica)__2025-11-09_181548.png</div><div style='margin-bottom:6px;'><a href='/youtube-multi-lang-ui-validator-automation/screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is Español (Latinoamérica)__2025-11-09_181548.png' target='_blank'>View on GitHub Pages</a></div><a href='../screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is Español (Latinoamérica)__2025-11-09_181548.png' target='_blank'><img src='../screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is Español (Latinoamérica)__2025-11-09_181548.png' style='max-width:600px; border:1px solid #ddd;'/></a></div><div style='margin-top:10px; border:1px solid #ccc; padding:5px;'><div style='font-weight:bold; margin-bottom:5px;'>Filter Applied is Español (US)__2025-11-09_181633.png</div><div style='margin-bottom:6px;'><a href='/youtube-multi-lang-ui-validator-automation/screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is Español (US)__2025-11-09_181633.png' target='_blank'>View on GitHub Pages</a></div><a href='../screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is Español (US)__2025-11-09_181633.png' target='_blank'><img src='../screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is Español (US)__2025-11-09_181633.png' style='max-width:600px; border:1px solid #ddd;'/></a></div><div style='margin-top:10px; border:1px solid #ccc; padding:5px;'><div style='font-weight:bold; margin-bottom:5px;'>Filter Applied is Euskara__2025-11-09_181719.png</div><div style='margin-bottom:6px;'><a href='/youtube-multi-lang-ui-validator-automation/screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is Euskara__2025-11-09_181719.png' target='_blank'>View on GitHub Pages</a></div><a href='../screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is Euskara__2025-11-09_181719.png' target='_blank'><img src='../screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is Euskara__2025-11-09_181719.png' style='max-width:600px; border:1px solid #ddd;'/></a></div><div style='margin-top:10px; border:1px solid #ccc; padding:5px;'><div style='font-weight:bold; margin-bottom:5px;'>Filter Applied is Français (Canada)__2025-11-09_181847.png</div><div style='margin-bottom:6px;'><a href='/youtube-multi-lang-ui-validator-automation/screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is Français (Canada)__2025-11-09_181847.png' target='_blank'>View on GitHub Pages</a></div><a href='../screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is Français (Canada)__2025-11-09_181847.png' target='_blank'><img src='../screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is Français (Canada)__2025-11-09_181847.png' style='max-width:600px; border:1px solid #ddd;'/></a></div><div style='margin-top:10px; border:1px solid #ccc; padding:5px;'><div style='font-weight:bold; margin-bottom:5px;'>Filter Applied is Français__2025-11-09_181803.png</div><div style='margin-bottom:6px;'><a href='/youtube-multi-lang-ui-validator-automation/screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is Français__2025-11-09_181803.png' target='_blank'>View on GitHub Pages</a></div><a href='../screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is Français__2025-11-09_181803.png' target='_blank'><img src='../screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is Français__2025-11-09_181803.png' style='max-width:600px; border:1px solid #ddd;'/></a></div><div style='margin-top:10px; border:1px solid #ccc; padding:5px;'><div style='font-weight:bold; margin-bottom:5px;'>Filter Applied is Hrvatski__2025-11-09_181931.png</div><div style='margin-bottom:6px;'><a href='/youtube-multi-lang-ui-validator-automation/screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is Hrvatski__2025-11-09_181931.png' target='_blank'>View on GitHub Pages</a></div><a href='../screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is Hrvatski__2025-11-09_181931.png' target='_blank'><img src='../screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is Hrvatski__2025-11-09_181931.png' style='max-width:600px; border:1px solid #ddd;'/></a></div><div style='margin-top:10px; border:1px solid #ccc; padding:5px;'><div style='font-weight:bold; margin-bottom:5px;'>Filter Applied is Italiano__2025-11-09_182057.png</div><div style='margin-bottom:6px;'><a href='/youtube-multi-lang-ui-validator-automation/screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is Italiano__2025-11-09_182057.png' target='_blank'>View on GitHub Pages</a></div><a href='../screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is Italiano__2025-11-09_182057.png' target='_blank'><img src='../screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is Italiano__2025-11-09_182057.png' style='max-width:600px; border:1px solid #ddd;'/></a></div><div style='margin-top:10px; border:1px solid #ccc; padding:5px;'><div style='font-weight:bold; margin-bottom:5px;'>Filter Applied is Latviešu valoda__2025-11-09_182140.png</div><div style='margin-bottom:6px;'><a href='/youtube-multi-lang-ui-validator-automation/screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is Latviešu valoda__2025-11-09_182140.png' target='_blank'>View on GitHub Pages</a></div><a href='../screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is Latviešu valoda__2025-11-09_182140.png' target='_blank'><img src='../screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is Latviešu valoda__2025-11-09_182140.png' style='max-width:600px; border:1px solid #ddd;'/></a></div><div style='margin-top:10px; border:1px solid #ccc; padding:5px;'><div style='font-weight:bold; margin-bottom:5px;'>Filter Applied is Lietuvių__2025-11-09_182223.png</div><div style='margin-bottom:6px;'><a href='/youtube-multi-lang-ui-validator-automation/screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is Lietuvių__2025-11-09_182223.png' target='_blank'>View on GitHub Pages</a></div><a href='../screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is Lietuvių__2025-11-09_182223.png' target='_blank'><img src='../screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is Lietuvių__2025-11-09_182223.png' style='max-width:600px; border:1px solid #ddd;'/></a></div><div style='margin-top:10px; border:1px solid #ccc; padding:5px;'><div style='font-weight:bold; margin-bottom:5px;'>Filter Applied is Magyar__2025-11-09_182306.png</div><div style='margin-bottom:6px;'><a href='/youtube-multi-lang-ui-validator-automation/screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is Magyar__2025-11-09_182306.png' target='_blank'>View on GitHub Pages</a></div><a href='../screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is Magyar__2025-11-09_182306.png' target='_blank'><img src='../screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is Magyar__2025-11-09_182306.png' style='max-width:600px; border:1px solid #ddd;'/></a></div><div style='margin-top:10px; border:1px solid #ccc; padding:5px;'><div style='font-weight:bold; margin-bottom:5px;'>Filter Applied is Nederlands__2025-11-09_182350.png</div><div style='margin-bottom:6px;'><a href='/youtube-multi-lang-ui-validator-automation/screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is Nederlands__2025-11-09_182350.png' target='_blank'>View on GitHub Pages</a></div><a href='../screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is Nederlands__2025-11-09_182350.png' target='_blank'><img src='../screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is Nederlands__2025-11-09_182350.png' style='max-width:600px; border:1px solid #ddd;'/></a></div><div style='margin-top:10px; border:1px solid #ccc; padding:5px;'><div style='font-weight:bold; margin-bottom:5px;'>Filter Applied is Polski__2025-11-09_182434.png</div><div style='margin-bottom:6px;'><a href='/youtube-multi-lang-ui-validator-automation/screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is Polski__2025-11-09_182434.png' target='_blank'>View on GitHub Pages</a></div><a href='../screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is Polski__2025-11-09_182434.png' target='_blank'><img src='../screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is Polski__2025-11-09_182434.png' style='max-width:600px; border:1px solid #ddd;'/></a></div><div style='margin-top:10px; border:1px solid #ccc; padding:5px;'><div style='font-weight:bold; margin-bottom:5px;'>Filter Applied is Português (Brasil)__2025-11-09_182600.png</div><div style='margin-bottom:6px;'><a href='/youtube-multi-lang-ui-validator-automation/screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is Português (Brasil)__2025-11-09_182600.png' target='_blank'>View on GitHub Pages</a></div><a href='../screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is Português (Brasil)__2025-11-09_182600.png' target='_blank'><img src='../screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is Português (Brasil)__2025-11-09_182600.png' style='max-width:600px; border:1px solid #ddd;'/></a></div><div style='margin-top:10px; border:1px solid #ccc; padding:5px;'><div style='font-weight:bold; margin-bottom:5px;'>Filter Applied is Português__2025-11-09_182517.png</div><div style='margin-bottom:6px;'><a href='/youtube-multi-lang-ui-validator-automation/screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is Português__2025-11-09_182517.png' target='_blank'>View on GitHub Pages</a></div><a href='../screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is Português__2025-11-09_182517.png' target='_blank'><img src='../screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is Português__2025-11-09_182517.png' style='max-width:600px; border:1px solid #ddd;'/></a></div><div style='margin-top:10px; border:1px solid #ccc; padding:5px;'><div style='font-weight:bold; margin-bottom:5px;'>Filter Applied is Shqip__2025-11-09_182642.png</div><div style='margin-bottom:6px;'><a href='/youtube-multi-lang-ui-validator-automation/screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is Shqip__2025-11-09_182642.png' target='_blank'>View on GitHub Pages</a></div><a href='../screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is Shqip__2025-11-09_182642.png' target='_blank'><img src='../screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is Shqip__2025-11-09_182642.png' style='max-width:600px; border:1px solid #ddd;'/></a></div><div style='margin-top:10px; border:1px solid #ccc; padding:5px;'><div style='font-weight:bold; margin-bottom:5px;'>Filter Applied is Slovenščina__2025-11-09_182725.png</div><div style='margin-bottom:6px;'><a href='/youtube-multi-lang-ui-validator-automation/screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is Slovenščina__2025-11-09_182725.png' target='_blank'>View on GitHub Pages</a></div><a href='../screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is Slovenščina__2025-11-09_182725.png' target='_blank'><img src='../screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is Slovenščina__2025-11-09_182725.png' style='max-width:600px; border:1px solid #ddd;'/></a></div><div style='margin-top:10px; border:1px solid #ccc; padding:5px;'><div style='font-weight:bold; margin-bottom:5px;'>Filter Applied is Suomi__2025-11-09_182807.png</div><div style='margin-bottom:6px;'><a href='/youtube-multi-lang-ui-validator-automation/screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is Suomi__2025-11-09_182807.png' target='_blank'>View on GitHub Pages</a></div><a href='../screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is Suomi__2025-11-09_182807.png' target='_blank'><img src='../screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is Suomi__2025-11-09_182807.png' style='max-width:600px; border:1px solid #ddd;'/></a></div><div style='margin-top:10px; border:1px solid #ccc; padding:5px;'><div style='font-weight:bold; margin-bottom:5px;'>Filter Applied is Svenska__2025-11-09_182850.png</div><div style='margin-bottom:6px;'><a href='/youtube-multi-lang-ui-validator-automation/screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is Svenska__2025-11-09_182850.png' target='_blank'>View on GitHub Pages</a></div><a href='../screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is Svenska__2025-11-09_182850.png' target='_blank'><img src='../screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is Svenska__2025-11-09_182850.png' style='max-width:600px; border:1px solid #ddd;'/></a></div><div style='margin-top:10px; border:1px solid #ccc; padding:5px;'><div style='font-weight:bold; margin-bottom:5px;'>Filter Applied is Tiếng Việt__2025-11-09_182933.png</div><div style='margin-bottom:6px;'><a href='/youtube-multi-lang-ui-validator-automation/screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is Tiếng Việt__2025-11-09_182933.png' target='_blank'>View on GitHub Pages</a></div><a href='../screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is Tiếng Việt__2025-11-09_182933.png' target='_blank'><img src='../screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is Tiếng Việt__2025-11-09_182933.png' style='max-width:600px; border:1px solid #ddd;'/></a></div><div style='margin-top:10px; border:1px solid #ccc; padding:5px;'><div style='font-weight:bold; margin-bottom:5px;'>Filter Applied is Türkçe__2025-11-09_183015.png</div><div style='margin-bottom:6px;'><a href='/youtube-multi-lang-ui-validator-automation/screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is Türkçe__2025-11-09_183015.png' target='_blank'>View on GitHub Pages</a></div><a href='../screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is Türkçe__2025-11-09_183015.png' target='_blank'><img src='../screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is Türkçe__2025-11-09_183015.png' style='max-width:600px; border:1px solid #ddd;'/></a></div><div style='margin-top:10px; border:1px solid #ccc; padding:5px;'><div style='font-weight:bold; margin-bottom:5px;'>Filter Applied is Íslenska__2025-11-09_182014.png</div><div style='margin-bottom:6px;'><a href='/youtube-multi-lang-ui-validator-automation/screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is Íslenska__2025-11-09_182014.png' target='_blank'>View on GitHub Pages</a></div><a href='../screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is Íslenska__2025-11-09_182014.png' target='_blank'><img src='../screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is Íslenska__2025-11-09_182014.png' style='max-width:600px; border:1px solid #ddd;'/></a></div><div style='margin-top:10px; border:1px solid #ccc; padding:5px;'><div style='font-weight:bold; margin-bottom:5px;'>Filter Applied is Ελληνικά__2025-11-09_183349.png</div><div style='margin-bottom:6px;'><a href='/youtube-multi-lang-ui-validator-automation/screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is Ελληνικά__2025-11-09_183349.png' target='_blank'>View on GitHub Pages</a></div><a href='../screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is Ελληνικά__2025-11-09_183349.png' target='_blank'><img src='../screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is Ελληνικά__2025-11-09_183349.png' style='max-width:600px; border:1px solid #ddd;'/></a></div><div style='margin-top:10px; border:1px solid #ccc; padding:5px;'><div style='font-weight:bold; margin-bottom:5px;'>Filter Applied is Беларуская__2025-11-09_183058.png</div><div style='margin-bottom:6px;'><a href='/youtube-multi-lang-ui-validator-automation/screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is Беларуская__2025-11-09_183058.png' target='_blank'>View on GitHub Pages</a></div><a href='../screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is Беларуская__2025-11-09_183058.png' target='_blank'><img src='../screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is Беларуская__2025-11-09_183058.png' style='max-width:600px; border:1px solid #ddd;'/></a></div><div style='margin-top:10px; border:1px solid #ccc; padding:5px;'><div style='font-weight:bold; margin-bottom:5px;'>Filter Applied is Български__2025-11-09_183141.png</div><div style='margin-bottom:6px;'><a href='/youtube-multi-lang-ui-validator-automation/screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is Български__2025-11-09_183141.png' target='_blank'>View on GitHub Pages</a></div><a href='../screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is Български__2025-11-09_183141.png' target='_blank'><img src='../screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is Български__2025-11-09_183141.png' style='max-width:600px; border:1px solid #ddd;'/></a></div><div style='margin-top:10px; border:1px solid #ccc; padding:5px;'><div style='font-weight:bold; margin-bottom:5px;'>Filter Applied is Русский__2025-11-09_183224.png</div><div style='margin-bottom:6px;'><a href='/youtube-multi-lang-ui-validator-automation/screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is Русский__2025-11-09_183224.png' target='_blank'>View on GitHub Pages</a></div><a href='../screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is Русский__2025-11-09_183224.png' target='_blank'><img src='../screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is Русский__2025-11-09_183224.png' style='max-width:600px; border:1px solid #ddd;'/></a></div><div style='margin-top:10px; border:1px solid #ccc; padding:5px;'><div style='font-weight:bold; margin-bottom:5px;'>Filter Applied is Українська__2025-11-09_183306.png</div><div style='margin-bottom:6px;'><a href='/youtube-multi-lang-ui-validator-automation/screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is Українська__2025-11-09_183306.png' target='_blank'>View on GitHub Pages</a></div><a href='../screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is Українська__2025-11-09_183306.png' target='_blank'><img src='../screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is Українська__2025-11-09_183306.png' style='max-width:600px; border:1px solid #ddd;'/></a></div><div style='margin-top:10px; border:1px solid #ccc; padding:5px;'><div style='font-weight:bold; margin-bottom:5px;'>Filter Applied is Հայերեն__2025-11-09_183432.png</div><div style='margin-bottom:6px;'><a href='/youtube-multi-lang-ui-validator-automation/screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is Հայերեն__2025-11-09_183432.png' target='_blank'>View on GitHub Pages</a></div><a href='../screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is Հայերեն__2025-11-09_183432.png' target='_blank'><img src='../screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is Հայերեն__2025-11-09_183432.png' style='max-width:600px; border:1px solid #ddd;'/></a></div><div style='margin-top:10px; border:1px solid #ccc; padding:5px;'><div style='font-weight:bold; margin-bottom:5px;'>Filter Applied is עברית__2025-11-09_183515.png</div><div style='margin-bottom:6px;'><a href='/youtube-multi-lang-ui-validator-automation/screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is עברית__2025-11-09_183515.png' target='_blank'>View on GitHub Pages</a></div><a href='../screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is עברית__2025-11-09_183515.png' target='_blank'><img src='../screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is עברית__2025-11-09_183515.png' style='max-width:600px; border:1px solid #ddd;'/></a></div><div style='margin-top:10px; border:1px solid #ccc; padding:5px;'><div style='font-weight:bold; margin-bottom:5px;'>Filter Applied is العربية__2025-11-09_183558.png</div><div style='margin-bottom:6px;'><a href='/youtube-multi-lang-ui-validator-automation/screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is العربية__2025-11-09_183558.png' target='_blank'>View on GitHub Pages</a></div><a href='../screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is العربية__2025-11-09_183558.png' target='_blank'><img src='../screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is العربية__2025-11-09_183558.png' style='max-width:600px; border:1px solid #ddd;'/></a></div><div style='margin-top:10px; border:1px solid #ccc; padding:5px;'><div style='font-weight:bold; margin-bottom:5px;'>Filter Applied is فارسی__2025-11-09_183642.png</div><div style='margin-bottom:6px;'><a href='/youtube-multi-lang-ui-validator-automation/screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is فارسی__2025-11-09_183642.png' target='_blank'>View on GitHub Pages</a></div><a href='../screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is فارسی__2025-11-09_183642.png' target='_blank'><img src='../screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is فارسی__2025-11-09_183642.png' style='max-width:600px; border:1px solid #ddd;'/></a></div><div style='margin-top:10px; border:1px solid #ccc; padding:5px;'><div style='font-weight:bold; margin-bottom:5px;'>Filter Applied is हिन्दी__2025-11-09_183724.png</div><div style='margin-bottom:6px;'><a href='/youtube-multi-lang-ui-validator-automation/screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is हिन्दी__2025-11-09_183724.png' target='_blank'>View on GitHub Pages</a></div><a href='../screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is हिन्दी__2025-11-09_183724.png' target='_blank'><img src='../screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is हिन्दी__2025-11-09_183724.png' style='max-width:600px; border:1px solid #ddd;'/></a></div><div style='margin-top:10px; border:1px solid #ccc; padding:5px;'><div style='font-weight:bold; margin-bottom:5px;'>Filter Applied is বাংলা__2025-11-09_183807.png</div><div style='margin-bottom:6px;'><a href='/youtube-multi-lang-ui-validator-automation/screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is বাংলা__2025-11-09_183807.png' target='_blank'>View on GitHub Pages</a></div><a href='../screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is বাংলা__2025-11-09_183807.png' target='_blank'><img src='../screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is বাংলা__2025-11-09_183807.png' style='max-width:600px; border:1px solid #ddd;'/></a></div><div style='margin-top:10px; border:1px solid #ccc; padding:5px;'><div style='font-weight:bold; margin-bottom:5px;'>Filter Applied is ਪੰਜਾਬੀ__2025-11-09_183850.png</div><div style='margin-bottom:6px;'><a href='/youtube-multi-lang-ui-validator-automation/screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is ਪੰਜਾਬੀ__2025-11-09_183850.png' target='_blank'>View on GitHub Pages</a></div><a href='../screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is ਪੰਜਾਬੀ__2025-11-09_183850.png' target='_blank'><img src='../screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is ਪੰਜਾਬੀ__2025-11-09_183850.png' style='max-width:600px; border:1px solid #ddd;'/></a></div><div style='margin-top:10px; border:1px solid #ccc; padding:5px;'><div style='font-weight:bold; margin-bottom:5px;'>Filter Applied is ગુજરાતી__2025-11-09_183932.png</div><div style='margin-bottom:6px;'><a href='/youtube-multi-lang-ui-validator-automation/screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is ગુજરાતી__2025-11-09_183932.png' target='_blank'>View on GitHub Pages</a></div><a href='../screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is ગુજરાતી__2025-11-09_183932.png' target='_blank'><img src='../screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is ગુજરાતી__2025-11-09_183932.png' style='max-width:600px; border:1px solid #ddd;'/></a></div><div style='margin-top:10px; border:1px solid #ccc; padding:5px;'><div style='font-weight:bold; margin-bottom:5px;'>Filter Applied is தமிழ்__2025-11-09_184015.png</div><div style='margin-bottom:6px;'><a href='/youtube-multi-lang-ui-validator-automation/screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is தமிழ்__2025-11-09_184015.png' target='_blank'>View on GitHub Pages</a></div><a href='../screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is தமிழ்__2025-11-09_184015.png' target='_blank'><img src='../screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is தமிழ்__2025-11-09_184015.png' style='max-width:600px; border:1px solid #ddd;'/></a></div><div style='margin-top:10px; border:1px solid #ccc; padding:5px;'><div style='font-weight:bold; margin-bottom:5px;'>Filter Applied is తెలుగు__2025-11-09_184058.png</div><div style='margin-bottom:6px;'><a href='/youtube-multi-lang-ui-validator-automation/screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is తెలుగు__2025-11-09_184058.png' target='_blank'>View on GitHub Pages</a></div><a href='../screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is తెలుగు__2025-11-09_184058.png' target='_blank'><img src='../screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is తెలుగు__2025-11-09_184058.png' style='max-width:600px; border:1px solid #ddd;'/></a></div><div style='margin-top:10px; border:1px solid #ccc; padding:5px;'><div style='font-weight:bold; margin-bottom:5px;'>Filter Applied is 中文 (简体)__2025-11-09_184140.png</div><div style='margin-bottom:6px;'><a href='/youtube-multi-lang-ui-validator-automation/screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is 中文 (简体)__2025-11-09_184140.png' target='_blank'>View on GitHub Pages</a></div><a href='../screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is 中文 (简体)__2025-11-09_184140.png' target='_blank'><img src='../screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is 中文 (简体)__2025-11-09_184140.png' style='max-width:600px; border:1px solid #ddd;'/></a></div><div style='margin-top:10px; border:1px solid #ccc; padding:5px;'><div style='font-weight:bold; margin-bottom:5px;'>Filter Applied is 中文 (繁體)__2025-11-09_184223.png</div><div style='margin-bottom:6px;'><a href='/youtube-multi-lang-ui-validator-automation/screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is 中文 (繁體)__2025-11-09_184223.png' target='_blank'>View on GitHub Pages</a></div><a href='../screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is 中文 (繁體)__2025-11-09_184223.png' target='_blank'><img src='../screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is 中文 (繁體)__2025-11-09_184223.png' style='max-width:600px; border:1px solid #ddd;'/></a></div><div style='margin-top:10px; border:1px solid #ccc; padding:5px;'><div style='font-weight:bold; margin-bottom:5px;'>Filter Applied is 中文 (香港)__2025-11-09_184306.png</div><div style='margin-bottom:6px;'><a href='/youtube-multi-lang-ui-validator-automation/screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is 中文 (香港)__2025-11-09_184306.png' target='_blank'>View on GitHub Pages</a></div><a href='../screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is 中文 (香港)__2025-11-09_184306.png' target='_blank'><img src='../screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is 中文 (香港)__2025-11-09_184306.png' style='max-width:600px; border:1px solid #ddd;'/></a></div><div style='margin-top:10px; border:1px solid #ccc; padding:5px;'><div style='font-weight:bold; margin-bottom:5px;'>Filter Applied is 日本語__2025-11-09_184348.png</div><div style='margin-bottom:6px;'><a href='/youtube-multi-lang-ui-validator-automation/screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is 日本語__2025-11-09_184348.png' target='_blank'>View on GitHub Pages</a></div><a href='../screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is 日本語__2025-11-09_184348.png' target='_blank'><img src='../screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is 日本語__2025-11-09_184348.png' style='max-width:600px; border:1px solid #ddd;'/></a></div><div style='margin-top:10px; border:1px solid #ccc; padding:5px;'><div style='font-weight:bold; margin-bottom:5px;'>Filter Applied is 한국어__2025-11-09_184431.png</div><div style='margin-bottom:6px;'><a href='/youtube-multi-lang-ui-validator-automation/screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is 한국어__2025-11-09_184431.png' target='_blank'>View on GitHub Pages</a></div><a href='../screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is 한국어__2025-11-09_184431.png' target='_blank'><img src='../screenshots/Run_2025-11-09_17-54-17/verifyingSideMenuLanguageAsInSettings/Filter Applied is 한국어__2025-11-09_184431.png' style='max-width:600px; border:1px solid #ddd;'/></a></div></details>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="7"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">verifyingSettingOptionsLang</p>
+            <p class="text-sm">
+              <span>6:08:31 PM</span> / <span>00:10:14:709</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">verifyingSettingOptionsLang</h5>
+<span class='badge badge-success'>11.09.2025 6:08:31 PM</span>
+<span class='badge badge-danger'>11.09.2025 6:18:45 PM</span>
+<span class='badge badge-default'>00:10:14:709</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=7</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:08:31 PM</td>
+        <td>
+          🔹 Test Started: verifyingSettingOptionsLang
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>6:18:45 PM</td>
+        <td>
+          <div><b>Failure:</b> The following asserts failed:
+	Language detection mismatch expected [CROATIAN] but found [BOSNIAN]</div><pre style='margin-top:8px; font-size:12px;'>org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+main.test.java.tests.YtMasterTests.verifyingSettingOptionsLang(YtMasterTests.java:228)
+java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+java.base/java.lang.reflect.Method.invoke(Method.java:565)
+org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+... (9 more stack frames)
+</pre>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:18:45 PM</td>
+        <td>
+          <div style='margin:6px 0; padding:6px; border-left:3px solid #999;'><div style='font-weight:bold; margin-bottom:4px;'>Open log — choose the link that works in your environment</div><div><a href='/youtube-multi-lang-ui-validator-automation/logs/run_2025-11-09_17-54-17/verifyingSettingOptionsLang.log' target='_blank'>Open (GitHub Pages)</a></div><div><a href='./logs/run_2025-11-09_17-54-17/verifyingSettingOptionsLang.log' target='_blank'>Open (artifact root / index.html)</a></div><div><a href='../logs/run_2025-11-09_17-54-17/verifyingSettingOptionsLang.log' target='_blank'>Open (report one level deep)</a></div><div><a href='../../logs/run_2025-11-09_17-54-17/verifyingSettingOptionsLang.log' target='_blank'>Open (report inside ExtentReports/test-output)</a></div><div style='margin-top:6px;color:#666;font-size:0.9em;'>Detected log on disk: D:\a\youtube-multi-lang-ui-validator-automation\youtube-multi-lang-ui-validator-automation\yt_multi_language_ui_validator\logs\run_2025-11-09_17-54-17\verifyingSettingOptionsLang.log</div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:18:45 PM</td>
+        <td>
+          Screenshot folder not found: screenshots/Run_2025-11-09_17-54-17/verifyingSettingOptionsLang
         </td>
       </tr>
   </tbody>
@@ -245,25 +649,25 @@ org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Nov 9, 2025 06:19:23 PM</h3>
+<h3>Nov 9, 2025 05:55:03 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Nov 9, 2025 06:19:36 PM</h3>
+<h3>Nov 9, 2025 06:45:14 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Tests Passed</p>
-<h3>0</h3>
+<h3>1</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-fail">Tests Failed</p>
-<h3>1</h3>
+<h3>4</h3>
 </div></div>
 </div>
 </div>
@@ -279,13 +683,13 @@ org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='0%'>
-<b>0</b> tests passed
+<div><small data-tooltip='14%'>
+<b>1</b> tests passed
 </small>
 </div>
 <div>
-<small data-tooltip='50%'><b>1</b> tests failed,
-<b>1</b> skipped, <b data-tooltip='0%'>0</b> others
+<small data-tooltip='57%'><b>4</b> tests failed,
+<b>2</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
 </div>
@@ -304,8 +708,8 @@ org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
 <div class="card-footer">
 <div><small data-tooltip='0%'><b>0</b> events passed</small></div>
 <div>
-<small data-tooltip='12%'><b>1</b> events failed,
-<b data-tooltip='%'>7</b> others
+<small data-tooltip='14%'><b>4</b> events failed,
+<b data-tooltip='%'>23</b> others
 </small>
 </div>
 </div>
@@ -321,7 +725,7 @@ org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
 </div></div>
 <script>
 var timeline = {
-"verifyingSideMenuCollapsedLangAsInSettings":5.035,"verifyingSideMenuCollapsedLangAsInSettings":4.264
+"verifyCountryCodeAsBasedOnRegion":1773.478,"verifyingGlobalFilterLandingPage":654.381,"verifyingSettingOptionsLang":772.288,"verifyingSideMenuCollapsedLangAsInSettings":5.628,"verifyingSideMenuCollapsedLangAsInSettings":4.979,"verifyingSideMenuLanguageAsInSettings":2333.576,"verifyingSettingOptionsLang":614.709
 };
 </script>
 <div class="row">
@@ -352,10 +756,10 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 0,
-failParent: 1,
+passParent: 1,
+failParent: 4,
 warningParent: 0,
-skipParent: 1,
+skipParent: 2,
 childCount: 5,
 passChild: 0,
 failChild: 0,
@@ -370,10 +774,10 @@ skipGrandChild: 0,
 infoGrandChild: 0,
 eventsCount: 5,
 passEvents: 0,
-failEvents: 1,
+failEvents: 4,
 warningEvents: 0,
-skipEvents: 1,
-infoEvents: 6
+skipEvents: 2,
+infoEvents: 21
 };
 </script>        </div>
       </div>
