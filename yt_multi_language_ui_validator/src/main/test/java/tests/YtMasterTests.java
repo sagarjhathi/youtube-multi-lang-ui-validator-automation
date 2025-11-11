@@ -113,14 +113,18 @@ public class YtMasterTests extends BaseTest{
 		GenericUtility gn=new GenericUtility();
 		String testName = ThreadContext.get("logFileName");
 		yt.openingLandingPage();
+		ScreenshotUtil.capture(testName);
 		
 		yt.clickingLeftEllipses();
+		ScreenshotUtil.capture(testName);
 		Thread.sleep(1000);
 		
 		yt.clickingSettingEllipsesButton();
+		ScreenshotUtil.capture(testName);
 		Thread.sleep(2000);
 		
 		yt.clickingLanguageDropdownButton();
+		ScreenshotUtil.capture(testName);
         Thread.sleep(2000);
         
         
