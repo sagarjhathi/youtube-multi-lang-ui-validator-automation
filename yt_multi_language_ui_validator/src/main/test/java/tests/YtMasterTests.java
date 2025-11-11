@@ -112,8 +112,10 @@ public class YtMasterTests extends BaseTest{
 		YtLandingPage yt=new YtLandingPage();
 		GenericUtility gn=new GenericUtility();
 		String testName = ThreadContext.get("logFileName");
+		gn.maximizeDisplay();
 		yt.openingLandingPage();
 		ScreenshotUtil.capture(testName);
+		
 		
 		yt.clickingLeftEllipses();
 		ScreenshotUtil.capture(testName);

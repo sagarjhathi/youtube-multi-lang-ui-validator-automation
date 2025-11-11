@@ -114,6 +114,11 @@ public class GenericUtility extends BasePage {
 	
 	
 	
+	public void maximizeDisplay() {
+		driver.manage().window().maximize();
+	}
+	
+	
 	public String getExpectedLangageViaApplicableLangInput(String langInput) {
 
 		 log.info("getExpectedLangageViaApplicableLangInput({})", langInput);
