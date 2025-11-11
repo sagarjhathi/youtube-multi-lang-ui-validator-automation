@@ -151,7 +151,8 @@ public class DriverManager {
             	            
             	        }
             	        
-            	        options.addArguments("--headless");
+            	        //options.addArguments("--headless");
+            	        options.addArguments("--window-size=1920,1080");
             	        options.setExperimentalOption("excludeSwitches", new String[]{"enable-automation"});
             	        options.setExperimentalOption("useAutomationExtension", false);
 

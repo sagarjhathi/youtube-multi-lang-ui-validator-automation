@@ -187,67 +187,67 @@ public class YtLandingPage  extends BasePage{
     
     
     
-    public List<String> applyLanguagesFromInternalDataset(){
-    	log.info("In the applyLanguagesFromInternalDataset ");
-    	List<String> linguaAccurateLanguages = Arrays.asList(
-    		    	 "Afrikaans",
-    		        "Azərbaycan",
-    		        "Bahasa Indonesia",
-    		        "Bosanski",
-    		        "Català",
-    		        "Dansk",
-    		        "Deutsch",
-    		        "Eesti",
-    		        "English (India)",
-    		        "English (UK)",
-    		        "English (US)",
-    		        "Español (España)",
-    		        "Español (Latinoamérica)",
-    		        "Español (US)",
-    		        "Euskara",
-    		        "Français",
-    		        "Français (Canada)",
-    		        "Hrvatski",
-    		        "Íslenska",
-    		        "Italiano",
-    		        "Latviešu valoda",
-    		        "Lietuvių",
-    		        "Magyar",
-    		        "Nederlands",
-    		        "Polski",
-    		        "Português",
-    		        "Português (Brasil)",
-    		        "Shqip",
-    		        "Slovenščina",
-    		        "Suomi",
-    		        "Svenska",
-    		        "Tiếng Việt",
-    		        "Türkçe",
-    		        "Беларуская",
-    		        "Български",
-    		        "Русский",
-    		        "Українська",
-    		        "Ελληνικά",
-    		        "Հայերեն",
-    		        "עברית",
-    		        "العربية",
-    		        "فارسی",
-    		        "हिन्दी",
-    		        "বাংলা",
-    		        "ਪੰਜਾਬੀ",
-    		        "ગુજરાતી",
-    		        "தமிழ்",
-    		        "తెలుగు",
-    		        "中文 (简体)",
-    		        "中文 (繁體)",
-    		        "中文 (香港)",
-    		        "日本語",
-    		        "한국어"
-    		);
-    	
-    	
-    		return linguaAccurateLanguages;
-    }
+//    public List<String> applyLanguagesFromInternalDataset(){
+//    	log.info("In the applyLanguagesFromInternalDataset ");
+//    	List<String> linguaAccurateLanguages = Arrays.asList(
+//    		    	 "Afrikaans",
+//    		        "Azərbaycan",
+//    		        "Bahasa Indonesia",
+//    		        "Bosanski",
+//    		        "Català",
+//    		        "Dansk",
+//    		        "Deutsch",
+//    		        "Eesti",
+//    		        "English (India)",
+//    		        "English (UK)",
+//    		        "English (US)",
+//    		        "Español (España)",
+//    		        "Español (Latinoamérica)",
+//    		        "Español (US)",
+//    		        "Euskara",
+//    		        "Français",
+//    		        "Français (Canada)",
+//    		        "Hrvatski",
+//    		        "Íslenska",
+//    		        "Italiano",
+//    		        "Latviešu valoda",
+//    		        "Lietuvių",
+//    		        "Magyar",
+//    		        "Nederlands",
+//    		        "Polski",
+//    		        "Português",
+//    		        "Português (Brasil)",
+//    		        "Shqip",
+//    		        "Slovenščina",
+//    		        "Suomi",
+//    		        "Svenska",
+//    		        "Tiếng Việt",
+//    		        "Türkçe",
+//    		        "Беларуская",
+//    		        "Български",
+//    		        "Русский",
+//    		        "Українська",
+//    		        "Ελληνικά",
+//    		        "Հայերեն",
+//    		        "עברית",
+//    		        "العربية",
+//    		        "فارسی",
+//    		        "हिन्दी",
+//    		        "বাংলা",
+//    		        "ਪੰਜਾਬੀ",
+//    		        "ગુજરાતી",
+//    		        "தமிழ்",
+//    		        "తెలుగు",
+//    		        "中文 (简体)",
+//    		        "中文 (繁體)",
+//    		        "中文 (香港)",
+//    		        "日本語",
+//    		        "한국어"
+//    		);
+//    	
+//    	
+//    		return linguaAccurateLanguages;
+//    }
     
     
     public String getCountryCode() {

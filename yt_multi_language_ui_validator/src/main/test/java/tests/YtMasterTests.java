@@ -102,16 +102,27 @@ public class YtMasterTests extends BaseTest{
 	    reader.loadWorkbook("data/LanguagesList.xlsx");
 	    reader.loadSheet("LanguagesList");
 	    int LanguagesRowCount= reader.getRowCount();
+	    
+	    FileReader applicableExpectedReader=new FileReader();
+	    applicableExpectedReader.loadWorkbook("data/ApplicableLanguageExpectedLanguage.xlsx");
+	    applicableExpectedReader.loadSheet("AppVExpectLanguages");
+	    
 		
+	    
 		YtLandingPage yt=new YtLandingPage();
 		GenericUtility gn=new GenericUtility();
+		String testName = ThreadContext.get("logFileName");
 		yt.openingLandingPage();
+		
 		yt.clickingLeftEllipses();
 		Thread.sleep(1000);
+		
 		yt.clickingSettingEllipsesButton();
 		Thread.sleep(2000);
+		
 		yt.clickingLanguageDropdownButton();
         Thread.sleep(2000);
+        
         
         
 		    SoftAssert softAssert = new SoftAssert();
@@ -126,8 +137,9 @@ public class YtMasterTests extends BaseTest{
 				
 	    	
 				Thread.sleep(1000);
+				ScreenshotUtil.capture(testName, langText);
 		     	yt.getLanguageElementByName(langText).click();	
-		     	 
+		     	ScreenshotUtil.capture(testName, langText);
 		     	gn.getLangAttribute();
 				Thread.sleep(2000);
 				List<WebElement> listOfSideMenu=yt.gettingSideMenuCollapsedList();
@@ -141,7 +153,8 @@ public class YtMasterTests extends BaseTest{
 					
 					String applicableLanguage=reader.getCellValue(j, 0);
 					String detectedLanguage=LinguaHelper.detectLanguage(sb.toString());
-					String expectedLanguage=gn.getExpectedLangageViaApplicableLangInput(applicableLanguage);
+				//	String expectedLanguage=gn.getExpectedLangageViaApplicableLangInput(applicableLanguage);
+				    String expectedLanguage=applicableExpectedReader.getCellValue(j, 1);
 
 				
 					String expectedLanguageAttribute=gn.getLangAttributeViaLanguageInput(applicableLanguage);
@@ -153,10 +166,13 @@ public class YtMasterTests extends BaseTest{
 				    softAssert.assertEquals(detectedLanguage, expectedLanguage, "Language detection mismatch");
 				    softAssert.assertEquals(detectedLanguageAttribute, expectedLanguageAttribute, "Language attributr mismatch");
 				    
-				    
+				    ScreenshotUtil.capture(testName, langText);
 				    yt.clickingSettingEllipsesButton();
+				   
 					Thread.sleep(2000);
+					
 					yt.clickingLanguageDropdownButton();
+					
 				    Thread.sleep(2000);
 				   
 				}
