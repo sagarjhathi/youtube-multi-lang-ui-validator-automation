@@ -159,6 +159,7 @@ public class YtMasterTests extends BaseTest{
 					
 					String applicableLanguage=reader.getCellValue(j, 0);
 					String detectedLanguage=LinguaHelper.detectLanguage(sb.toString());
+					log.info("text sent to lingua is "+"      "+sb.toString());
 				//	String expectedLanguage=gn.getExpectedLangageViaApplicableLangInput(applicableLanguage);
 				    String expectedLanguage=applicableExpectedReader.getCellValue(j, 1);
 
