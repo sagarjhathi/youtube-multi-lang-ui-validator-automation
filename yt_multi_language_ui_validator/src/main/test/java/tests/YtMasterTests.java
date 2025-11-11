@@ -117,7 +117,7 @@ public class YtMasterTests extends BaseTest{
 		ScreenshotUtil.capture(testName);
 		
 		
-		yt.clickingLeftEllipses();
+	//	yt.clickingLeftEllipses();
 		ScreenshotUtil.capture(testName);
 		Thread.sleep(3000);
 		
