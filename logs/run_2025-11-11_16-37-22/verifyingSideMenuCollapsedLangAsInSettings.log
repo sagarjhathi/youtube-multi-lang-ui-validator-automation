@@ -1,0 +1,65 @@
+2025-11-11 16:37:51.517 [TestNG-test-Test-1] INFO  [verifyingSideMenuCollapsedLangAsInSettings] ===== STARTING TEST: verifyingSideMenuCollapsedLangAsInSettings  | Thread: 31 =====
+2025-11-11 16:37:51.536 [TestNG-test-Test-1] INFO  [verifyingSideMenuCollapsedLangAsInSettings] No existing WebDriver found for current thread. Initializing a new ChromeDriver...
+2025-11-11 16:37:51.537 [TestNG-test-Test-1] INFO  [verifyingSideMenuCollapsedLangAsInSettings] Loaded masterdata.properties from classpath (32 keys).
+2025-11-11 16:37:53.054 [TestNG-test-Test-1] INFO  [verifyingSideMenuCollapsedLangAsInSettings] WebDriverManager: chromedriver setup OK
+2025-11-11 16:37:59.895 [TestNG-test-Test-1] INFO  [verifyingSideMenuCollapsedLangAsInSettings] ChromeDriver initialized successfully for thread: 31
+2025-11-11 16:37:59.896 [TestNG-test-Test-1] INFO  [verifyingSideMenuCollapsedLangAsInSettings] Driver initialized successfully for test: verifyingSideMenuCollapsedLangAsInSettings
+2025-11-11 16:38:00.685 [TestNG-test-Test-1] INFO  [verifyingSideMenuCollapsedLangAsInSettings] SafeActions initialized with driver ChromeDriver: chrome on windows (fb637f360e7fd27e556fa4c63dc3c4ad)
+2025-11-11 16:38:00.685 [TestNG-test-Test-1] INFO  [verifyingSideMenuCollapsedLangAsInSettings] Initialized YtLandingPage with driver: ChromeDriver: chrome on windows (fb637f360e7fd27e556fa4c63dc3c4ad)
+2025-11-11 16:38:00.686 [TestNG-test-Test-1] INFO  [verifyingSideMenuCollapsedLangAsInSettings] SafeActions initialized with driver ChromeDriver: chrome on windows (fb637f360e7fd27e556fa4c63dc3c4ad)
+2025-11-11 16:38:02.453 [TestNG-test-Test-1] INFO  [verifyingSideMenuCollapsedLangAsInSettings] Opened YouTube landing page.
+2025-11-11 16:38:02.453 [TestNG-test-Test-1] INFO  [verifyingSideMenuCollapsedLangAsInSettings] Clicking left ellipses in the landing page
+2025-11-11 16:38:02.453 [TestNG-test-Test-1] INFO  [verifyingSideMenuCollapsedLangAsInSettings] [verifyingSideMenuCollapsedLangAsInSettings] Trying to find element: By.xpath: //ytd-topbar-logo-renderer[@id='logo']/preceding-sibling::*[@id='guide-button']
+2025-11-11 16:38:02.770 [TestNG-test-Test-1] INFO  [verifyingSideMenuCollapsedLangAsInSettings] [verifyingSideMenuCollapsedLangAsInSettings] Element found and ready (attempt 1): By.xpath: //ytd-topbar-logo-renderer[@id='logo']/preceding-sibling::*[@id='guide-button']
+2025-11-11 16:38:04.327 [TestNG-test-Test-1] INFO  [verifyingSideMenuCollapsedLangAsInSettings] Clicking settings ellipses button...
+2025-11-11 16:38:04.327 [TestNG-test-Test-1] INFO  [verifyingSideMenuCollapsedLangAsInSettings] [verifyingSideMenuCollapsedLangAsInSettings] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2025-11-11 16:38:04.356 [TestNG-test-Test-1] INFO  [verifyingSideMenuCollapsedLangAsInSettings] [verifyingSideMenuCollapsedLangAsInSettings] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2025-11-11 16:38:05.446 [TestNG-test-Test-1] WARN  [verifyingSideMenuCollapsedLangAsInSettings] [verifyingSideMenuCollapsedLangAsInSettings] Retrying test 'verifyingSideMenuCollapsedLangAsInSettings' (attempt 1) due to: element click intercepted: Element <ytd-topbar-menu-button-renderer class="style-scope ytd-masthead style-default" use-keyboard-focused="" is-icon-button="" has-no-text="">...</ytd-topbar-menu-button-renderer> is not clickable at point (870, 28). Other element would receive the click: <div id="scrim" class="style-scope tp-yt-app-drawer visible" style="transition-duration: 200ms;"></div>
+  (Session info: chrome=142.0.7444.60)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows Server 2025', os.arch: 'amd64', os.version: '10.0', java.version: '24.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [fb637f360e7fd27e556fa4c63dc3c4ad, clickElement {id=f.854EB30A2F8FB80E8487AD0F58EBE3B5.d.DCF8C8B7CA253345CDD16320B9883664.e.16}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.60, chrome: {chromedriverVersion: 142.0.7444.61 (9884f628acbc..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58695}, goog:processID: 6236, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58695/devtoo..., se:cdpVersion: 142.0.7444.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (fb637f360e7fd27e556fa4c63dc3c4ad)] -> xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']]
+Session ID: fb637f360e7fd27e556fa4c63dc3c4ad
+2025-11-11 16:38:05.460 [TestNG-test-Test-1] WARN  [verifyingSideMenuCollapsedLangAsInSettings] Test SKIPPED: verifyingSideMenuCollapsedLangAsInSettings
+2025-11-11 16:38:05.460 [TestNG-test-Test-1] INFO  [verifyingSideMenuCollapsedLangAsInSettings] Closing WebDriver for thread: 31
+2025-11-11 16:38:05.651 [TestNG-test-Test-1] INFO  [verifyingSideMenuCollapsedLangAsInSettings] WebDriver instance removed from ThreadLocal for thread: 31
+2025-11-11 16:38:05.651 [TestNG-test-Test-1] INFO  [verifyingSideMenuCollapsedLangAsInSettings] Driver closed for test: verifyingSideMenuCollapsedLangAsInSettings
+2025-11-11 16:38:07.657 [TestNG-test-Test-1] INFO  [verifyingSideMenuCollapsedLangAsInSettings] ===== STARTING TEST: verifyingSideMenuCollapsedLangAsInSettings  | Thread: 31 =====
+2025-11-11 16:38:07.657 [TestNG-test-Test-1] INFO  [verifyingSideMenuCollapsedLangAsInSettings] No existing WebDriver found for current thread. Initializing a new ChromeDriver...
+2025-11-11 16:38:07.823 [TestNG-test-Test-1] INFO  [verifyingSideMenuCollapsedLangAsInSettings] WebDriverManager: chromedriver setup OK
+2025-11-11 16:38:08.768 [TestNG-test-Test-1] INFO  [verifyingSideMenuCollapsedLangAsInSettings] ChromeDriver initialized successfully for thread: 31
+2025-11-11 16:38:08.768 [TestNG-test-Test-1] INFO  [verifyingSideMenuCollapsedLangAsInSettings] Driver initialized successfully for test: verifyingSideMenuCollapsedLangAsInSettings
+2025-11-11 16:38:08.855 [TestNG-test-Test-1] INFO  [verifyingSideMenuCollapsedLangAsInSettings] SafeActions initialized with driver ChromeDriver: chrome on windows (24fc48058a0503355e6420d8815b061a)
+2025-11-11 16:38:08.855 [TestNG-test-Test-1] INFO  [verifyingSideMenuCollapsedLangAsInSettings] Initialized YtLandingPage with driver: ChromeDriver: chrome on windows (24fc48058a0503355e6420d8815b061a)
+2025-11-11 16:38:08.855 [TestNG-test-Test-1] INFO  [verifyingSideMenuCollapsedLangAsInSettings] SafeActions initialized with driver ChromeDriver: chrome on windows (24fc48058a0503355e6420d8815b061a)
+2025-11-11 16:38:10.443 [TestNG-test-Test-1] INFO  [verifyingSideMenuCollapsedLangAsInSettings] Opened YouTube landing page.
+2025-11-11 16:38:10.448 [TestNG-test-Test-1] INFO  [verifyingSideMenuCollapsedLangAsInSettings] Clicking left ellipses in the landing page
+2025-11-11 16:38:10.450 [TestNG-test-Test-1] INFO  [verifyingSideMenuCollapsedLangAsInSettings] [verifyingSideMenuCollapsedLangAsInSettings] Trying to find element: By.xpath: //ytd-topbar-logo-renderer[@id='logo']/preceding-sibling::*[@id='guide-button']
+2025-11-11 16:38:10.595 [TestNG-test-Test-1] INFO  [verifyingSideMenuCollapsedLangAsInSettings] [verifyingSideMenuCollapsedLangAsInSettings] Element found and ready (attempt 1): By.xpath: //ytd-topbar-logo-renderer[@id='logo']/preceding-sibling::*[@id='guide-button']
+2025-11-11 16:38:11.928 [TestNG-test-Test-1] INFO  [verifyingSideMenuCollapsedLangAsInSettings] Clicking settings ellipses button...
+2025-11-11 16:38:11.928 [TestNG-test-Test-1] INFO  [verifyingSideMenuCollapsedLangAsInSettings] [verifyingSideMenuCollapsedLangAsInSettings] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2025-11-11 16:38:11.958 [TestNG-test-Test-1] INFO  [verifyingSideMenuCollapsedLangAsInSettings] [verifyingSideMenuCollapsedLangAsInSettings] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2025-11-11 16:38:13.054 [TestNG-test-Test-1] INFO  [verifyingSideMenuCollapsedLangAsInSettings] [verifyingSideMenuCollapsedLangAsInSettings] Not retrying test 'verifyingSideMenuCollapsedLangAsInSettings'. Retry count: 1, Cause: element click intercepted: Element <ytd-topbar-menu-button-renderer class="style-scope ytd-masthead style-default" use-keyboard-focused="" is-icon-button="" has-no-text="">...</ytd-topbar-menu-button-renderer> is not clickable at point (870, 28). Other element would receive the click: <div id="scrim" class="style-scope tp-yt-app-drawer visible" style="transition-duration: 200ms;"></div>
+  (Session info: chrome=142.0.7444.60)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows Server 2025', os.arch: 'amd64', os.version: '10.0', java.version: '24.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [24fc48058a0503355e6420d8815b061a, clickElement {id=f.7BFCD0FFBDB3AA29A8A5BA2A02B39F89.d.433D5B799A998E306D78AEF61DEF7C81.e.19}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.60, chrome: {chromedriverVersion: 142.0.7444.61 (9884f628acbc..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60280}, goog:processID: 5016, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60280/devtoo..., se:cdpVersion: 142.0.7444.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (24fc48058a0503355e6420d8815b061a)] -> xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']]
+Session ID: 24fc48058a0503355e6420d8815b061a
+2025-11-11 16:38:13.059 [TestNG-test-Test-1] ERROR [verifyingSideMenuCollapsedLangAsInSettings] Test FAILED: verifyingSideMenuCollapsedLangAsInSettings - org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <ytd-topbar-menu-button-renderer class="style-scope ytd-masthead style-default" use-keyboard-focused="" is-icon-button="" has-no-text="">...</ytd-topbar-menu-button-renderer> is not clickable at point (870, 28). Other element would receive the click: <div id="scrim" class="style-scope tp-yt-app-drawer visible" style="transition-duration: 200ms;"></div>
+  (Session info: chrome=142.0.7444.60)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows Server 2025', os.arch: 'amd64', os.version: '10.0', java.version: '24.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [24fc48058a0503355e6420d8815b061a, clickElement {id=f.7BFCD0FFBDB3AA29A8A5BA2A02B39F89.d.433D5B799A998E306D78AEF61DEF7C81.e.19}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.60, chrome: {chromedriverVersion: 142.0.7444.61 (9884f628acbc..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60280}, goog:processID: 5016, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60280/devtoo..., se:cdpVersion: 142.0.7444.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (24fc48058a0503355e6420d8815b061a)] -> xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']]
+Session ID: 24fc48058a0503355e6420d8815b061a
+2025-11-11 16:38:13.059 [TestNG-test-Test-1] INFO  [verifyingSideMenuCollapsedLangAsInSettings] Closing WebDriver for thread: 31
+2025-11-11 16:38:13.233 [TestNG-test-Test-1] INFO  [verifyingSideMenuCollapsedLangAsInSettings] WebDriver instance removed from ThreadLocal for thread: 31
+2025-11-11 16:38:13.233 [TestNG-test-Test-1] INFO  [verifyingSideMenuCollapsedLangAsInSettings] Driver closed for test: verifyingSideMenuCollapsedLangAsInSettings
