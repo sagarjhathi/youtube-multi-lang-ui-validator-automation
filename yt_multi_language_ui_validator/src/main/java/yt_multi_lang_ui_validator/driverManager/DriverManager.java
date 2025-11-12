@@ -130,7 +130,7 @@ public class DriverManager {
             	    default: {
             	       
             	        org.openqa.selenium.chrome.ChromeOptions options = new org.openqa.selenium.chrome.ChromeOptions();
-
+            	        
             	        if (cfg.getBoolean("chrome.arg.start_maximized", true)) {
             	            options.addArguments("--start-maximized");
             	        }
@@ -152,7 +152,7 @@ public class DriverManager {
             	        }
             	        
             	        //options.addArguments("--headless");
-            	       // options.addArguments("--window-size=1920,1080");
+            	        options.addArguments("--window-size=1552,850");
             	        options.setExperimentalOption("excludeSwitches", new String[]{"enable-automation"});
             	        options.setExperimentalOption("useAutomationExtension", false);
 
