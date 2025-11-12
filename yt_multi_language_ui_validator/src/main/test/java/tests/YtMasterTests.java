@@ -114,26 +114,24 @@ public class YtMasterTests extends BaseTest{
 		String testName = ThreadContext.get("logFileName");
 		gn.maximizeDisplay();
 		yt.openingLandingPage();
-		ScreenshotUtil.capture(testName);
 		
 		
 		
 		List<Integer> sizes=gn.getWindowHeightWidth();
 		if(sizes.get(1)==1552) {
 			yt.clickingLeftEllipses();
-			ScreenshotUtil.capture(testName);
-			Thread.sleep(3000);
+			Thread.sleep(2000);
 		}
 		
 		
 		
 		yt.clickingSettingEllipsesButton();
 		ScreenshotUtil.capture(testName);
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 		
 		yt.clickingLanguageDropdownButton();
 		ScreenshotUtil.capture(testName);
-        Thread.sleep(3000);
+        Thread.sleep(2000);
         
         
         
