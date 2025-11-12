@@ -11,6 +11,7 @@ import java.util.stream.Collectors;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.ThreadContext;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -127,6 +128,7 @@ public class YtLandingPage  extends BasePage{
     	    ConfigManager cfg = ConfigManager.getInstance();  
         	String url=cfg.getString("Url");
     		driver.get(url);
+    		driver.manage().window().setSize(new Dimension(1920,1080));
     	    log.info("Opened YouTube landing page.");
     }
     
