@@ -150,6 +150,9 @@ public class DriverManager {
             	            options.addArguments("--disable-extensions");
             	            
             	        }
+            	        if(cfg.getBoolean("chrome.headless", false)) {
+            	        	options.addArguments("--headless");
+            	        }
             	        
             	        //options.addArguments("--headless");
             	       
