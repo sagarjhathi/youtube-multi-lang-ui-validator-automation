@@ -1,7 +1,9 @@
 package main.java.yt_multi_lang_ui_validator.utilities;
 
 import java.time.Duration;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import org.apache.logging.log4j.Logger;
@@ -203,6 +205,18 @@ public class GenericUtility extends BasePage {
         } else {
             log.warn("clickEnter - element not found: {}", locator);
         }
+    }
+    
+    
+    
+    public List<Integer> getWindowHeightWidth() {
+		int height=driver.manage().window().getSize().getHeight();
+		int width=driver.manage().window().getSize().getWidth();
+		System.out.println("height is "+height+"     width is"+width);
+		List<Integer> list=new ArrayList<>();
+		list.add(height);
+		list.add(width);
+		return list;	
     }
 
 }

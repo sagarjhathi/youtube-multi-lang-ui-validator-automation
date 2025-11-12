@@ -36,6 +36,8 @@ public class YtLandingPage  extends BasePage{
 	        log.info("Initialized YtLandingPage with driver: {}", driver);
 	    }
 
+	 
+	public By sideMenu=By.xpath("//div[@class='style-scope ytd-mini-guide-renderer']");
 	
 	public By sideMenuExpandedList=By.xpath("//ytd-guide-entry-renderer[@class='style-scope ytd-guide-section-renderer']");
 	
@@ -106,6 +108,8 @@ public class YtLandingPage  extends BasePage{
 		
 	}
 	
+
+	
 	
 	
 	public void closeGlobalFilterPopup() {
@@ -128,9 +132,9 @@ public class YtLandingPage  extends BasePage{
     	    ConfigManager cfg = ConfigManager.getInstance();  
         	String url=cfg.getString("Url");
     		driver.get(url);
-    		driver.manage().window().setSize(new Dimension(1920,1080));
     	    log.info("Opened YouTube landing page.");
     }
+    
     
     public void clickingSettingEllipsesButton() throws InterruptedException {
     	    log.info("Clicking settings ellipses button...");

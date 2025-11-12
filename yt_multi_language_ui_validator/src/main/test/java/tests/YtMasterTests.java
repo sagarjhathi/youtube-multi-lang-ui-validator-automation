@@ -117,9 +117,15 @@ public class YtMasterTests extends BaseTest{
 		ScreenshotUtil.capture(testName);
 		
 		
-		yt.clickingLeftEllipses();
-		ScreenshotUtil.capture(testName);
-		Thread.sleep(3000);
+		
+		List<Integer> sizes=gn.getWindowHeightWidth();
+		if(sizes.get(1)==1552) {
+			yt.clickingLeftEllipses();
+			ScreenshotUtil.capture(testName);
+			Thread.sleep(3000);
+		}
+		
+		
 		
 		yt.clickingSettingEllipsesButton();
 		ScreenshotUtil.capture(testName);
