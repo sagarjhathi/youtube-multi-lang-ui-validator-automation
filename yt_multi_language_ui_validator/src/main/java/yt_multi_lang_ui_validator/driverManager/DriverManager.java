@@ -105,7 +105,7 @@ public class DriverManager {
 
             	        boolean useExtEdge = cfg.getBoolean("edge.use.automation.extension", false);
             	        edgeOptions.setExperimentalOption("useAutomationExtension", useExtEdge);
-
+            	        
             	        try {
             	        	
             	            io.github.bonigarcia.wdm.WebDriverManager.edgedriver().browserVersion("17134").setup();

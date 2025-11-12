@@ -4,6 +4,7 @@ import java.time.Duration;
 
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -38,7 +39,7 @@ public class BasePage {
 	        ConfigManager cfg = ConfigManager.getInstance();  
 	        int waitDuration= cfg.getInt("explicit.wait", 10);
 	        System.out.println(waitDuration+"   wait in the base page added");
-	        
+	        driver.manage().window().setSize(new Dimension(1350,800));
 	        this.wait = new WebDriverWait(driver, Duration.ofSeconds(waitDuration));
 	    }
 
