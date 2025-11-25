@@ -1,0 +1,5 @@
+2025-11-25 18:04:42.093 [TestNG-test-Test-3] INFO  [] ===== FINISHED TEST: verifyingSettingOptionsLang =====
+2025-11-25 18:05:15.078 [TestNG-test-Test-2] INFO  [] ===== FINISHED TEST: verifyingGlobalFilterLandingPage =====
+2025-11-25 18:15:18.307 [TestNG-test-Test-1] INFO  [] ===== FINISHED TEST: verifyCountryCodeAsBasedOnRegion =====
+2025-11-25 18:42:40.288 [TestNG-test-Test-3] INFO  [] ===== FINISHED TEST: verifyingSideMenuCollapsedLangAsInSettings =====
+2025-11-25 18:43:04.481 [TestNG-test-Test-2] INFO  [] ===== FINISHED TEST: verifyingSideMenuLanguageAsInSettings =====
