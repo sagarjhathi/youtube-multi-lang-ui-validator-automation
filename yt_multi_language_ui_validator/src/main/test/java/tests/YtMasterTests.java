@@ -28,21 +28,26 @@ public class YtMasterTests extends BaseTest{
 
 		
 		FileReader reader=new FileReader();
+		YtLandingPage yt=new YtLandingPage();
+		GenericUtility g=new GenericUtility();
+		SoftAssert softAssert = new SoftAssert();
+		
+		
 		reader.loadWorkbook("data/LanguagesList.xlsx");
 		reader.loadSheet("LanguagesList");
+		
 		int LanguagesRowCount= reader.getRowCount();
 
 		
-		YtLandingPage yt=new YtLandingPage();
-		GenericUtility g=new GenericUtility();
 		yt.openingLandingPage();
 		yt.clickingSettingEllipsesButton();
 		Thread.sleep(2000);
 		yt.clickingLanguageDropdownButton();
 		Thread.sleep(2000);
+		String testName = ThreadContext.get("logFileName");
 
 		
-		SoftAssert softAssert = new SoftAssert();
+		
 
 
 		for(int j=1;j<LanguagesRowCount;j++) {
@@ -50,7 +55,7 @@ public class YtMasterTests extends BaseTest{
 			String langText=reader.getCellValue(j, 0);
 
 			System.out.println(langText+" lang text from the sheet   "+j);
-			String testName = ThreadContext.get("logFileName");
+			
 			ScreenshotUtil.capture(testName, langText);
 			Thread.sleep(1000);
 			yt.getLanguageElementByName(langText).click();	
@@ -94,6 +99,11 @@ public class YtMasterTests extends BaseTest{
 	public void verifyingSideMenuCollapsedLangAsInSettings() throws InterruptedException, InvalidFormatException, IOException {
 		
 		FileReader reader=new FileReader();
+		YtLandingPage yt=new YtLandingPage();
+		GenericUtility gn=new GenericUtility();
+		SoftAssert softAssert = new SoftAssert();
+		
+		
 		reader.loadWorkbook("data/LanguagesList.xlsx");
 		reader.loadSheet("LanguagesList");
 		int LanguagesRowCount= reader.getRowCount();
@@ -104,8 +114,7 @@ public class YtMasterTests extends BaseTest{
 		applicableExpectedReader.loadSheet("AppVExpectLanguages");
 
 
-		YtLandingPage yt=new YtLandingPage();
-		GenericUtility gn=new GenericUtility();
+		
 		String testName = ThreadContext.get("logFileName");
 		gn.maximizeDisplay();
 		yt.openingLandingPage();
@@ -124,7 +133,7 @@ public class YtMasterTests extends BaseTest{
 		yt.clickingLanguageDropdownButton();
 		Thread.sleep(2000);
 
-		SoftAssert softAssert = new SoftAssert();
+		
 
 		for(int j=1;j<LanguagesRowCount;j++) {
 
@@ -175,20 +184,24 @@ public class YtMasterTests extends BaseTest{
 		
 		
 		FileReader reader=new FileReader();
+		YtLandingPage yt=new YtLandingPage();
+		GenericUtility gn=new GenericUtility();
+		SoftAssert softAssert=new SoftAssert();
+		
+		
 		reader.loadWorkbook("data/LanguagesList.xlsx");
 		reader.loadSheet("LanguagesList");
 		int LanguagesRowCount= reader.getRowCount();
 
 
-		YtLandingPage yt=new YtLandingPage();
-		GenericUtility gn=new GenericUtility();
+		
 		yt.openingLandingPage();
 		yt.clickingSettingEllipsesButton();
 		Thread.sleep(1000);
 		yt.clickingLanguageDropdownButton();
 		Thread.sleep(1000);
 
-		SoftAssert softAssert=new SoftAssert();
+		
 
 		for(int j=1;j<LanguagesRowCount;j++) {
 
@@ -239,12 +252,16 @@ public class YtMasterTests extends BaseTest{
 		
 		
 		FileReader reader=new FileReader();
+		YtLandingPage yt=new YtLandingPage();
+		GenericUtility gn=new GenericUtility();
+		SoftAssert softAssert=new SoftAssert();
+		
+		
 		reader.loadWorkbook("data/Country_Name_Code.xlsx");
 		reader.loadSheet("CountryNameCode");
 
 
-		YtLandingPage yt=new YtLandingPage();
-		GenericUtility gn=new GenericUtility();
+		
 		yt.openingLandingPage();
 		Thread.sleep(2000);
 		yt.clickingSettingEllipsesButton();
@@ -252,7 +269,7 @@ public class YtMasterTests extends BaseTest{
 		yt.clickingLocationDropdownUnderSettings();
 		Thread.sleep(2000);
 
-		SoftAssert softAssert=new SoftAssert();
+		
 		List<WebElement> locationList=yt.getLocationList();
 
 		for(int i=1;i<locationList.size();i++) {
@@ -292,17 +309,21 @@ public class YtMasterTests extends BaseTest{
 	public void verifyingGlobalFilterLandingPage() throws InterruptedException {
 
 		FileReader reader=new FileReader();
+		GenericUtility gn=new GenericUtility();
+		YtLandingPage yt=new YtLandingPage();
+		SoftAssert softAssert =new SoftAssert();
+		
+		
 		reader.loadWorkbook("data/LanguagesList.xlsx");
 		reader.loadSheet("LanguagesList");
 		int LanguagesRowCount= reader.getRowCount();
 
-		GenericUtility gn=new GenericUtility();
-		YtLandingPage yt=new YtLandingPage();
+		
 		yt.openingLandingPage();
 		yt.givingInputUnderSearchBar("video");
 		gn.clickEnter(yt.searchInputLandinfPage);
 
-		SoftAssert softAssert =new SoftAssert();
+		
 
 		for(int j=1;j<LanguagesRowCount;j++) {
 			

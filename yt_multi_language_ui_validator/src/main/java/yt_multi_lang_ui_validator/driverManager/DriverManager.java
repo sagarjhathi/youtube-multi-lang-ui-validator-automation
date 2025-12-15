@@ -38,7 +38,6 @@ public class DriverManager {
             
             
             try {            	
-//            	ConfigManager cfg = ConfigManager.getInstance();
             	String browser = ConfigManager.get("browser", "chrome");
             	if (browser != null) browser = browser.trim().toLowerCase(Locale.ENGLISH);
 

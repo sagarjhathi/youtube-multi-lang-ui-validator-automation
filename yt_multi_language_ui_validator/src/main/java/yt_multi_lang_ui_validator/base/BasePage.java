@@ -27,13 +27,11 @@ public class BasePage {
 	protected WebDriverWait wait;
 	
 	 public BasePage() {
-		 
-
+	
 	        this.driver = DriverManager.getDriver();
 	        if (driver == null) {
 	            throw new IllegalStateException("WebDriver not initialized!");
 	        }
-	        
 	        
 	        int waitDuration= ConfigManager.getInt("explicit.wait", 10);
 	        System.out.println(waitDuration+"   wait in the base page added");

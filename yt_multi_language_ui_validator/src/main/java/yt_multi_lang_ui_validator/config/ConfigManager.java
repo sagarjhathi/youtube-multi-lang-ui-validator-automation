@@ -11,20 +11,7 @@ import java.time.Duration;
 import java.util.Locale;
 import java.util.Properties;
 
-/**
- * Simple and easy-to-understand configuration manager.
- * 
- * Loads values from:
- *   1. src/test/resources/utildata.properties
- * 
- * (If you later want, you can extend it to check system properties and env vars.)
- *
- * Usage:
- *   ConfigManager cfg = ConfigManager.getInstance();
- *   String url = cfg.getString("base.url");
- *   int wait = cfg.getInt("explicit.wait", 10);
- *   boolean headless = cfg.getBoolean("chrome.headless", false);
- */
+
 public class ConfigManager {
 	
 	

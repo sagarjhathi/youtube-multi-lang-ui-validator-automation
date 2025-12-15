@@ -16,17 +16,12 @@ import main.java.yt_multi_lang_ui_validator.logger.LoggerUtility;
 @Listeners(main.java.yt_multi_lang_ui_validator.reporting.TestListener.class)
 public class BaseTest {
 
-	//This logger is at framework / class level currently nothing is being logged at class level so loggers at test level are created and used.
 	private  static  Logger log = LoggerUtility.getLogger(BaseTest.class);
 	public WebDriver driver;
 
 	    @BeforeMethod
 	    public void setUp(Method method) throws InterruptedException {
-	    	
-//	    	log.info("CI DEBUG: sys.runTimestamp='{}' env.RUN_TIMESTAMP='{}' sys.logs.dir='{}'",
-//	    	         System.getProperty("runTimestamp"), System.getenv("RUN_TIMESTAMP"), System.getProperty("logs.dir"));
-
-	    	
+	    		    	
 	    	    String testName = method.getName();
 	    	    String threadId = String.valueOf(Thread.currentThread().threadId());
 	    	    String logFileName = testName;
@@ -35,7 +30,6 @@ public class BaseTest {
 	    	    ThreadContext.put("testName", testName);
 	    	    ThreadContext.put("threadId", threadId);
 	    	    Thread.sleep(2000);
-	    	    // Get a logger specifically for this test method
 	            Logger testLog = LogManager.getLogger(testName);
 	            testLog.info("===== STARTING TEST: {}  | Thread: {} =====", testName, threadId);
 	    	    
