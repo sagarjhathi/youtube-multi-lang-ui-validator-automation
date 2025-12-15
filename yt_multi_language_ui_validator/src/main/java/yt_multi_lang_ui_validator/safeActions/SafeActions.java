@@ -30,9 +30,9 @@ public class SafeActions{
 	    public SafeActions(WebDriver driver) {
 	        this.driver = driver;
 	        
-	         ConfigManager cfg = ConfigManager.getInstance();
-	         timeoutSec = cfg.getInt("explicit.wait", 10); // seconds
-	         attempts = cfg.getInt("element.retry.attempts", 2);
+//	         ConfigManager cfg = ConfigManager.getInstance();
+	         timeoutSec = ConfigManager.getInt("explicit.wait", 10); // seconds
+	         attempts = ConfigManager.getInt("element.retry.attempts", 2);
 	        
 	        this.wait = new WebDriverWait(driver, Duration.ofSeconds(timeoutSec));
 	        log.info("SafeActions initialized with driver {}", driver);

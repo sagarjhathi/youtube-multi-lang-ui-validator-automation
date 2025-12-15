@@ -38,8 +38,8 @@ public class DriverManager {
             
             
             try {            	
-            	ConfigManager cfg = ConfigManager.getInstance();
-            	String browser = cfg.getString("browser", "chrome");
+//            	ConfigManager cfg = ConfigManager.getInstance();
+            	String browser = ConfigManager.get("browser", "chrome");
             	if (browser != null) browser = browser.trim().toLowerCase(Locale.ENGLISH);
 
             	switch (browser) {
@@ -47,19 +47,19 @@ public class DriverManager {
             	       
             	        org.openqa.selenium.firefox.FirefoxOptions firefoxOptions = new org.openqa.selenium.firefox.FirefoxOptions();
 
-            	        if (cfg.getBoolean("firefox.arg.disable_gpu", true)) {
+            	        if (ConfigManager.getBoolean("firefox.arg.disable_gpu", true)) {
             	            firefoxOptions.addArguments("--disable-gpu");
             	        }
-            	        if (cfg.getBoolean("firefox.arg.disable_dev_shm_usage", true)) {
+            	        if (ConfigManager.getBoolean("firefox.arg.disable_dev_shm_usage", true)) {
             	            firefoxOptions.addArguments("--disable-dev-shm-usage");
             	        }
-            	        if (cfg.getBoolean("firefox.arg.no_sandbox", true)) {
+            	        if (ConfigManager.getBoolean("firefox.arg.no_sandbox", true)) {
             	            firefoxOptions.addArguments("--no-sandbox");
             	        }
-            	        if (cfg.getBoolean("firefox.arg.disable_extensions", true)) {
+            	        if (ConfigManager.getBoolean("firefox.arg.disable_extensions", true)) {
             	            firefoxOptions.addArguments("--disable-extensions");
             	        }
-            	        if (cfg.getBoolean("firefox.headless", false)) {
+            	        if (ConfigManager.getBoolean("firefox.headless", false)) {
             	            firefoxOptions.addArguments("-headless");
             	        }
 
@@ -68,7 +68,7 @@ public class DriverManager {
             	            log.info("WebDriverManager: geckodriver setup OK");
             	        } catch (Exception e) {
             	            log.warn("WDM geckodriver setup failed: {}. Will try local fallback if configured.", e.getMessage());
-            	            String local = cfg.getString("webdriver.firefox.local.path", "");
+            	            String local = ConfigManager.get("webdriver.firefox.local.path", "");
             	            if (!local.isBlank()) System.setProperty("webdriver.gecko.driver", local);
             	        }
 
@@ -76,7 +76,7 @@ public class DriverManager {
             	        driver.set(firefoxDriver);
             	        try { firefoxDriver.manage().deleteAllCookies(); } catch (Exception ignored) {}
             	       
-            	        if (cfg.getBoolean("firefox.arg.start_maximized", true)) {
+            	        if (ConfigManager.getBoolean("firefox.arg.start_maximized", true)) {
             	            try { firefoxDriver.manage().window().maximize(); } catch (Exception ignored) {}
             	        }
             	        log.info("FirefoxDriver initialized successfully for thread: {}", Thread.currentThread().threadId());
@@ -87,23 +87,23 @@ public class DriverManager {
             	       
             	        org.openqa.selenium.edge.EdgeOptions edgeOptions = new org.openqa.selenium.edge.EdgeOptions();
 
-            	        if (cfg.getBoolean("edge.arg.start_maximized", true)) {
+            	        if (ConfigManager.getBoolean("edge.arg.start_maximized", true)) {
             	            edgeOptions.addArguments("--start-maximized");
             	        }
-            	        if (cfg.getBoolean("edge.arg.disable_gpu", true)) {
+            	        if (ConfigManager.getBoolean("edge.arg.disable_gpu", true)) {
             	            edgeOptions.addArguments("--disable-gpu");
             	        }
-            	        if (cfg.getBoolean("edge.arg.disable_dev_shm_usage", true)) {
+            	        if (ConfigManager.getBoolean("edge.arg.disable_dev_shm_usage", true)) {
             	            edgeOptions.addArguments("--disable-dev-shm-usage");
             	        }
-            	        if (cfg.getBoolean("edge.arg.no_sandbox", true)) {
+            	        if (ConfigManager.getBoolean("edge.arg.no_sandbox", true)) {
             	            edgeOptions.addArguments("--no-sandbox");
             	        }
-            	        if (cfg.getBoolean("edge.arg.disable_extensions", true)) {
+            	        if (ConfigManager.getBoolean("edge.arg.disable_extensions", true)) {
             	            edgeOptions.addArguments("--disable-extensions");
             	        }
 
-            	        boolean useExtEdge = cfg.getBoolean("edge.use.automation.extension", false);
+            	        boolean useExtEdge = ConfigManager.getBoolean("edge.use.automation.extension", false);
             	        edgeOptions.setExperimentalOption("useAutomationExtension", useExtEdge);
 
             	        try {
@@ -112,7 +112,7 @@ public class DriverManager {
             	            log.info("WebDriverManager: edgedriver setup OK");
             	        } catch (Exception e) {
             	            log.warn("WDM edgedriver setup failed: {}. Will try local fallback if configured.", e.getMessage());
-            	            String local = cfg.getString("webdriver.edge.local.path", "");
+            	            String local = ConfigManager.get("webdriver.edge.local.path", "");
             	            if (!local.isBlank()) System.setProperty("webdriver.edge.driver", local);
             	        }
             	        System.setProperty("SE_MSEDGEDRIVER_MIRROR_URL", "https://msedgedriver.microsoft.com");
@@ -131,28 +131,26 @@ public class DriverManager {
             	       
             	        org.openqa.selenium.chrome.ChromeOptions options = new org.openqa.selenium.chrome.ChromeOptions();
 
-            	        if (cfg.getBoolean("chrome.arg.start_maximized", true)) {
+            	        if (ConfigManager.getBoolean("chrome.arg.start_maximized", true)) {
             	            options.addArguments("--start-maximized");
             	        }
-            	        if (cfg.getBoolean("chrome.arg.disable_gpu", true)) {
+            	        if (ConfigManager.getBoolean("chrome.arg.disable_gpu", true)) {
             	            options.addArguments("--disable-gpu");
             	        }
-            	        if (cfg.getBoolean("chrome.arg.disable_blink_features_automation_controlled", true)) {
+            	        if (ConfigManager.getBoolean("chrome.arg.disable_blink_features_automation_controlled", true)) {
             	            options.addArguments("--disable-blink-features=AutomationControlled");
             	        }
-            	        if (cfg.getBoolean("chrome.arg.disable_dev_shm_usage", true)) {
+            	        if (ConfigManager.getBoolean("chrome.arg.disable_dev_shm_usage", true)) {
             	            options.addArguments("--disable-dev-shm-usage");
             	        }
-            	        if (cfg.getBoolean("chrome.arg.no_sandbox", true)) {
+            	        if (ConfigManager.getBoolean("chrome.arg.no_sandbox", true)) {
             	            options.addArguments("--no-sandbox");
             	        }
-            	        if (cfg.getBoolean("chrome.arg.disable_extensions", true)) {
+            	        if (ConfigManager.getBoolean("chrome.arg.disable_extensions", true)) {
             	            options.addArguments("--disable-extensions");
             	            
             	        }
             	        
-            	        //options.addArguments("--headless");
-            	       // options.addArguments("--window-size=1920,1080");
             	        options.setExperimentalOption("excludeSwitches", new String[]{"enable-automation"});
             	        options.setExperimentalOption("useAutomationExtension", false);
 
@@ -161,7 +159,7 @@ public class DriverManager {
             	            log.info("WebDriverManager: chromedriver setup OK");
             	        } catch (Exception e) {
             	            log.warn("WDM chromedriver setup failed: {}. Will try local fallback if configured.", e.getMessage());
-            	            String local = cfg.getString("webdriver.chrome.local.path", "");
+            	            String local = ConfigManager.get("webdriver.chrome.local.path", "");
             	            if (!local.isBlank()) System.setProperty("webdriver.chrome.driver", local);
             	        }
 

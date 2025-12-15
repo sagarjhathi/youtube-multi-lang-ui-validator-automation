@@ -21,8 +21,8 @@ import main.java.yt_multi_lang_ui_validator.utilities.WaitUtility;
 
 public class BasePage {
 
-	private static  final  Logger log=LoggerUtility.getLogger(BasePage.class);
 	
+	private static  final  Logger log=LoggerUtility.getLogger(BasePage.class);
 	protected WebDriver driver;
 	protected WebDriverWait wait;
 	
@@ -30,14 +30,12 @@ public class BasePage {
 		 
 
 	        this.driver = DriverManager.getDriver();
-
-	        
 	        if (driver == null) {
 	            throw new IllegalStateException("WebDriver not initialized!");
 	        }
 	        
-	        ConfigManager cfg = ConfigManager.getInstance();  
-	        int waitDuration= cfg.getInt("explicit.wait", 10);
+	        
+	        int waitDuration= ConfigManager.getInt("explicit.wait", 10);
 	        System.out.println(waitDuration+"   wait in the base page added");
 	        this.wait = new WebDriverWait(driver, Duration.ofSeconds(waitDuration));
 	    }
