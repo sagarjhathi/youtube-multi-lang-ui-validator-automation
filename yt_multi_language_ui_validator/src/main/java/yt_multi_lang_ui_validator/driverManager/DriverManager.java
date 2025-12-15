@@ -105,7 +105,7 @@ public class DriverManager {
 
             	        boolean useExtEdge = cfg.getBoolean("edge.use.automation.extension", false);
             	        edgeOptions.setExperimentalOption("useAutomationExtension", useExtEdge);
-            	        
+
             	        try {
             	        	
             	            io.github.bonigarcia.wdm.WebDriverManager.edgedriver().browserVersion("17134").setup();
@@ -130,7 +130,7 @@ public class DriverManager {
             	    default: {
             	       
             	        org.openqa.selenium.chrome.ChromeOptions options = new org.openqa.selenium.chrome.ChromeOptions();
-            	        
+
             	        if (cfg.getBoolean("chrome.arg.start_maximized", true)) {
             	            options.addArguments("--start-maximized");
             	        }
@@ -150,12 +150,9 @@ public class DriverManager {
             	            options.addArguments("--disable-extensions");
             	            
             	        }
-            	        if(cfg.getBoolean("chrome.headless", false)) {
-            	        	options.addArguments("--headless");
-            	        }
             	        
             	        //options.addArguments("--headless");
-            	       
+            	       // options.addArguments("--window-size=1920,1080");
             	        options.setExperimentalOption("excludeSwitches", new String[]{"enable-automation"});
             	        options.setExperimentalOption("useAutomationExtension", false);
 
