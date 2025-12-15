@@ -129,7 +129,7 @@ public class YtLandingPage  extends BasePage{
 
 
 	public void openingLandingPage() {
-//		ConfigManager cfg = ConfigManager.getInstance();  
+
 		String url=ConfigManager.get("Url");
 		driver.get(url);
 		log.info("Opened YouTube landing page.");
