@@ -149,6 +149,10 @@ public class DriverManager {
             	            options.addArguments("--disable-extensions");
             	            
             	        }
+            	        if (ConfigManager.getBoolean("chrome.headless", false)) {
+            	            options.addArguments("--headless");
+            	            
+            	        }
             	        
             	        options.setExperimentalOption("excludeSwitches", new String[]{"enable-automation"});
             	        options.setExperimentalOption("useAutomationExtension", false);
