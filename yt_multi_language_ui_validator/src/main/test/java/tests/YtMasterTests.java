@@ -107,7 +107,10 @@ public class YtMasterTests extends BaseTest{
 		reader.loadWorkbook("data/LanguagesList.xlsx");
 		reader.loadSheet("LanguagesList");
 		int LanguagesRowCount= reader.getRowCount();
-
+		
+		FileReader dataReader=new FileReader();
+		dataReader.loadWorkbook("data/ExpectedDataGlobalForEnglish.xlsx");
+		dataReader.loadSheet("English");
 
 		FileReader applicableExpectedReader=new FileReader();
 		applicableExpectedReader.loadWorkbook("data/ApplicableLanguageExpectedLanguage.xlsx");
@@ -157,14 +160,17 @@ public class YtMasterTests extends BaseTest{
 			String detectedLanguage=LinguaHelper.detectLanguage(sb.toString());
 			log.info("text sent to lingua is "+"      "+sb.toString());
 			String expectedLanguage=applicableExpectedReader.getCellValue(j, 1);
+			String expectedSideMenuCollapsedData=dataReader.getCellValue(1, 0);
 
-
+			System.out.println(expectedSideMenuCollapsedData+"     expectedSideMenuCollapsedData Here from the Sheet");
 			String expectedLanguageAttribute=gn.getLangAttributeViaLanguageInput(applicableLanguage);
 			String detectedLanguageAttribute=gn.getLangAttribute();
 
 			System.out.println("ApplicableLanguage  "+applicableLanguage+"     "+"Detected Language   "+detectedLanguage+"  "+"Expected Language  "+expectedLanguage);
 			System.out.println("ApplicableLanguage  "+applicableLanguage+"     "+"Detected Language attribute   "+detectedLanguageAttribute+"  "+"Expected Language attribute "+expectedLanguageAttribute);
 
+			
+			softAssert.assertEquals(sb.toString(), expectedSideMenuCollapsedData,"Data Mismatch");
 			softAssert.assertEquals(detectedLanguage, expectedLanguage, "Language detection mismatch");
 			softAssert.assertEquals(detectedLanguageAttribute, expectedLanguageAttribute, "Language attributr mismatch");
 

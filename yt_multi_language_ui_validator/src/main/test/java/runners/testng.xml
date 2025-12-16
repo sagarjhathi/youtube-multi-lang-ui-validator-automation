@@ -10,6 +10,12 @@
 
       <class name="main.test.java.tests.YtMasterTests">
  
+ 
+ 		<methods>
+ 		
+ 		<include name="verifyingSideMenuCollapsedLangAsInSettings"></include>
+ 		
+ 		</methods>
       </class>
       
     </classes>
