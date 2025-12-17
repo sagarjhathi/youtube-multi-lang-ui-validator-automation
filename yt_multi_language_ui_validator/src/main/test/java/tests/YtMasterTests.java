@@ -42,9 +42,9 @@ public class YtMasterTests extends BaseTest{
 
 		
 		
-		ExcelFileWriter writer = new ExcelFileWriter();
-		writer.createWorkbook();
-		writer.createSheet("verifyingSideMenuLanguageAsInSettings");
+//		ExcelFileWriter writer = new ExcelFileWriter();
+//		writer.createWorkbook();
+//		writer.createSheet("verifyingSideMenuLanguageAsInSettings");
 		
 		yt.openingLandingPage();
 		yt.clickingSettingEllipsesButton();
@@ -78,8 +78,8 @@ public class YtMasterTests extends BaseTest{
 			}
 			
 			
-			writer.writeCell(j, 0, langText);
-			writer.writeCell(j, 1, sb.toString());
+//			writer.writeCell(j, 0, langText);
+//			writer.writeCell(j, 1, sb.toString());
 
 			String applicableLanguage=reader.getCellValue(j, 0);
 			String detectedLanguage=LinguaHelper.detectLanguage(sb.toString());
@@ -103,7 +103,7 @@ public class YtMasterTests extends BaseTest{
 		}
 		
 		
-		writer.save("src/main/resources/data/verifyingSideMenuLanguageAsInSettings.xlsx");
+		//writer.save("src/main/resources/data/verifyingSideMenuLanguageAsInSettings.xlsx");
 		softAssert.assertAll();
 	}
 	
@@ -118,9 +118,9 @@ public class YtMasterTests extends BaseTest{
 		SoftAssert softAssert = new SoftAssert();
 		
 		
-		ExcelFileWriter writer = new ExcelFileWriter();
-		writer.createWorkbook();
-		writer.createSheet("Results");
+//		ExcelFileWriter writer = new ExcelFileWriter();
+//		writer.createWorkbook();
+//		writer.createSheet("Results");
 		
 		
 		
@@ -177,8 +177,8 @@ public class YtMasterTests extends BaseTest{
 				sb.append(" ");
 			}
 			
-			writer.writeCell(j, 0, langText);
-			writer.writeCell(j, 1, sb.toString());
+//			writer.writeCell(j, 0, langText);
+//			writer.writeCell(j, 1, sb.toString());
 			
 			
 
@@ -208,7 +208,7 @@ public class YtMasterTests extends BaseTest{
 		}
 		
 		
-		writer.save("src/main/resources/data/results.xlsx");
+	//	writer.save("src/main/resources/data/results.xlsx");
 
 		softAssert.assertAll();	
 	}
@@ -363,9 +363,9 @@ public class YtMasterTests extends BaseTest{
 		gn.clickEnter(yt.searchInputLandinfPage);
 
 		
-		ExcelFileWriter writer = new ExcelFileWriter();
-		writer.createWorkbook();
-		writer.createSheet("verifyingGlobalFilterLandingPage");
+//		ExcelFileWriter writer = new ExcelFileWriter();
+//		writer.createWorkbook();
+//		writer.createSheet("verifyingGlobalFilterLandingPage");
 
 		for(int j=1;j<LanguagesRowCount;j++) {
 			
@@ -392,8 +392,8 @@ public class YtMasterTests extends BaseTest{
 			String expectedLanguage=gn.getExpectedLangageViaApplicableLangInput(applicableLanguage);
 
 
-			writer.writeCell(j, 0, langText);
-			writer.writeCell(j, 1, str);
+//			writer.writeCell(j, 0, langText);
+//			writer.writeCell(j, 1, str);
 			String expectedLanguageAttribute=gn.getLangAttributeViaLanguageInput(applicableLanguage);
 			String detectedLanguageAttribute=gn.getLangAttribute();
 
@@ -407,7 +407,7 @@ public class YtMasterTests extends BaseTest{
 
 		}
 
-		writer.save("src/main/resources/data/verifyingGlobalFilterLandingPage.xlsx");
+		//writer.save("src/main/resources/data/verifyingGlobalFilterLandingPage.xlsx");
 		softAssert.assertAll();	
 
 		yt.clickingGlobalFilterButton();
