@@ -29,22 +29,21 @@ public class YtMasterTests extends BaseTest{
 	public void verifyingSideMenuLanguageAsInSettings() throws InterruptedException {
 
 		
-		FileReader reader=new FileReader();
+		
 		YtLandingPage yt=new YtLandingPage();
 		GenericUtility g=new GenericUtility();
 		SoftAssert softAssert = new SoftAssert();
 		
 		
+		FileReader reader=new FileReader();
 		reader.loadWorkbook("data/LanguagesList.xlsx");
 		reader.loadSheet("LanguagesList");
 		
-		int LanguagesRowCount= reader.getRowCount();
+        
+		FileReader verifyingSideMenuLanguageAsInSettingsDataReader=new FileReader();
+		verifyingSideMenuLanguageAsInSettingsDataReader.loadWorkbook("data/verifyingSideMenuLanguageAsInSettings.xlsx");
+		verifyingSideMenuLanguageAsInSettingsDataReader.loadSheet("verifyingSideMenuLanguageAsInSe");
 
-		
-		
-//		ExcelFileWriter writer = new ExcelFileWriter();
-//		writer.createWorkbook();
-//		writer.createSheet("verifyingSideMenuLanguageAsInSettings");
 		
 		yt.openingLandingPage();
 		yt.clickingSettingEllipsesButton();
@@ -52,19 +51,17 @@ public class YtMasterTests extends BaseTest{
 		yt.clickingLanguageDropdownButton();
 		Thread.sleep(2000);
 		String testName = ThreadContext.get("logFileName");
-
-		
-		
+		int LanguagesRowCount= reader.getRowCount();
 
 
 		for(int j=1;j<LanguagesRowCount;j++) {
 
 			String langText=reader.getCellValue(j, 0);
-
 			System.out.println(langText+" lang text from the sheet   "+j);
 			
 			ScreenshotUtil.capture(testName, langText);
 			Thread.sleep(1000);
+			
 			yt.getLanguageElementByName(langText).click();	
 
 			Thread.sleep(2000);
@@ -78,9 +75,13 @@ public class YtMasterTests extends BaseTest{
 			}
 			
 			
-//			writer.writeCell(j, 0, langText);
-//			writer.writeCell(j, 1, sb.toString());
-
+			
+			String expectedData=verifyingSideMenuLanguageAsInSettingsDataReader.getCellValue(j, 1);
+			String actualData=sb.toString();
+			
+			System.out.println(expectedData+"   Expected data from the sheet");
+			
+			
 			String applicableLanguage=reader.getCellValue(j, 0);
 			String detectedLanguage=LinguaHelper.detectLanguage(sb.toString());
 			String expectedLanguage=g.getExpectedLangageViaApplicableLangInput(applicableLanguage);
@@ -91,6 +92,7 @@ public class YtMasterTests extends BaseTest{
 			System.out.println("ApplicableLanguage  "+applicableLanguage+"     "+"Detected Language   "+detectedLanguage+"  "+"Expected Language  "+expectedLanguage);
 			System.out.println("ApplicableLanguage  "+applicableLanguage+"     "+"Detected Language attribute   "+detectedLanguageAttribute+"  "+"Expected Language attribute "+expectedLanguageAttribute);
 
+			softAssert.assertEquals(actualData,expectedData,"Mismatch in the Actual and Expected data");
 			softAssert.assertEquals(detectedLanguage, expectedLanguage, "Page title mismatch");
 			softAssert.assertEquals(detectedLanguageAttribute, expectedLanguageAttribute, "Language attributr mismatch");
 
@@ -103,7 +105,7 @@ public class YtMasterTests extends BaseTest{
 		}
 		
 		
-		//writer.save("src/main/resources/data/verifyingSideMenuLanguageAsInSettings.xlsx");
+		
 		softAssert.assertAll();
 	}
 	
@@ -118,20 +120,13 @@ public class YtMasterTests extends BaseTest{
 		SoftAssert softAssert = new SoftAssert();
 		
 		
-//		ExcelFileWriter writer = new ExcelFileWriter();
-//		writer.createWorkbook();
-//		writer.createSheet("Results");
-		
-		
+
 		
 		FileReader reader=new FileReader();
 		reader.loadWorkbook("data/LanguagesList.xlsx");
 		reader.loadSheet("LanguagesList");
 		
-		
-
-
-		
+	
 	
 		FileReader applicableExpectedReader=new FileReader();
 		applicableExpectedReader.loadWorkbook("data/ApplicableLanguageExpectedLanguage.xlsx");
@@ -177,8 +172,6 @@ public class YtMasterTests extends BaseTest{
 				sb.append(" ");
 			}
 			
-//			writer.writeCell(j, 0, langText);
-//			writer.writeCell(j, 1, sb.toString());
 			
 			
 
@@ -208,7 +201,6 @@ public class YtMasterTests extends BaseTest{
 		}
 		
 		
-	//	writer.save("src/main/resources/data/results.xlsx");
 
 		softAssert.assertAll();	
 	}
@@ -363,9 +355,7 @@ public class YtMasterTests extends BaseTest{
 		gn.clickEnter(yt.searchInputLandinfPage);
 
 		
-//		ExcelFileWriter writer = new ExcelFileWriter();
-//		writer.createWorkbook();
-//		writer.createSheet("verifyingGlobalFilterLandingPage");
+
 
 		for(int j=1;j<LanguagesRowCount;j++) {
 			
@@ -392,8 +382,6 @@ public class YtMasterTests extends BaseTest{
 			String expectedLanguage=gn.getExpectedLangageViaApplicableLangInput(applicableLanguage);
 
 
-//			writer.writeCell(j, 0, langText);
-//			writer.writeCell(j, 1, str);
 			String expectedLanguageAttribute=gn.getLangAttributeViaLanguageInput(applicableLanguage);
 			String detectedLanguageAttribute=gn.getLangAttribute();
 
@@ -407,7 +395,6 @@ public class YtMasterTests extends BaseTest{
 
 		}
 
-		//writer.save("src/main/resources/data/verifyingGlobalFilterLandingPage.xlsx");
 		softAssert.assertAll();	
 
 		yt.clickingGlobalFilterButton();
