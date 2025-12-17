@@ -11,6 +11,8 @@ import org.testng.asserts.SoftAssert;
 import main.test.java.retry.*;
 import main.java.yt_multi_lang_ui_validator.base.BaseTest;
 import main.java.yt_multi_lang_ui_validator.fileReader.FileReader;
+import main.java.yt_multi_lang_ui_validator.fileWriter.ExcelFileWriter;
+import main.java.yt_multi_lang_ui_validator.fileWriter.FileWriter;
 import main.java.yt_multi_lang_ui_validator.lingua.LinguaHelper;
 import main.java.yt_multi_lang_ui_validator.logger.LoggerUtility;
 import main.java.yt_multi_lang_ui_validator.pages.YtLandingPage;
@@ -98,20 +100,31 @@ public class YtMasterTests extends BaseTest{
 	@Test(retryAnalyzer = RetryFailedTest.class)
 	public void verifyingSideMenuCollapsedLangAsInSettings() throws InterruptedException, InvalidFormatException, IOException {
 		
-		FileReader reader=new FileReader();
+		
 		YtLandingPage yt=new YtLandingPage();
 		GenericUtility gn=new GenericUtility();
 		SoftAssert softAssert = new SoftAssert();
 		
 		
+		ExcelFileWriter writer = new ExcelFileWriter();
+		writer.createWorkbook();
+		writer.createSheet("Results");
+		
+		
+		
+		FileReader reader=new FileReader();
 		reader.loadWorkbook("data/LanguagesList.xlsx");
 		reader.loadSheet("LanguagesList");
-		int LanguagesRowCount= reader.getRowCount();
+		
+		
+		
 		
 		FileReader dataReader=new FileReader();
 		dataReader.loadWorkbook("data/ExpectedDataGlobalForEnglish.xlsx");
 		dataReader.loadSheet("English");
 
+		
+		int LanguagesRowCount= reader.getRowCount();
 		FileReader applicableExpectedReader=new FileReader();
 		applicableExpectedReader.loadWorkbook("data/ApplicableLanguageExpectedLanguage.xlsx");
 		applicableExpectedReader.loadSheet("AppVExpectLanguages");
@@ -155,6 +168,11 @@ public class YtMasterTests extends BaseTest{
 				sb.append(listOfSideMenu.get(i).getText());
 				sb.append(" ");
 			}
+			
+			writer.writeCell(j, 0, langText);
+			writer.writeCell(j, 1, sb.toString());
+			
+			
 
 			String applicableLanguage=reader.getCellValue(j, 0);
 			String detectedLanguage=LinguaHelper.detectLanguage(sb.toString());
@@ -180,6 +198,9 @@ public class YtMasterTests extends BaseTest{
 			yt.clickingLanguageDropdownButton();
 			Thread.sleep(2000);
 		}
+		
+		
+		writer.save("src/main/resources/data/results.xlsx");
 
 		softAssert.assertAll();	
 	}
