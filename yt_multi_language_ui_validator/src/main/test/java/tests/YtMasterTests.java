@@ -186,8 +186,8 @@ public class YtMasterTests extends BaseTest{
 	public void verifyingSideMenuCollapsedLangAsInSettings() throws InterruptedException, InvalidFormatException, IOException {
 		
 		
-		YtLandingPage yt=new YtLandingPage();
-		GenericUtility gn=new GenericUtility();
+		YtLandingPage landingPage=new YtLandingPage();
+		GenericUtility genericUtility=new GenericUtility();
 		SoftAssert softAssert = new SoftAssert();
 		
 		
@@ -210,53 +210,53 @@ public class YtMasterTests extends BaseTest{
 
 		int LanguagesRowCount= reader.getRowCount();
 		String testName = ThreadContext.get("logFileName");
-		gn.maximizeDisplay();
-		yt.openingLandingPage();
+		genericUtility.maximizeDisplay();
+		landingPage.openingLandingPage();
 
 		
-		List<Integer> sizes=gn.getWindowHeightWidth();
+		List<Integer> sizes=genericUtility.getWindowHeightWidth();
 		if(sizes.get(1)==1552) {
-			yt.clickingLeftEllipses();
+			landingPage.clickingLeftEllipses();
 			Thread.sleep(2000);
 		}
 
 
-		yt.clickingSettingEllipsesButton();
+		landingPage.clickingSettingEllipsesButton();
 		Thread.sleep(2000);
 
-		yt.clickingLanguageDropdownButton();
+		landingPage.clickingLanguageDropdownButton();
 		Thread.sleep(2000);
 
 		
 
-		for(int j=1;j<LanguagesRowCount;j++) {
+		for(int languageIndex=1;languageIndex<LanguagesRowCount;languageIndex++) {
 
-			String langText=reader.getCellValue(j, 0);
-			System.out.println(langText+"    "+j);
+			String langText=reader.getCellValue(languageIndex, 0);
+			System.out.println(langText+"    "+languageIndex);
 			Thread.sleep(1000);
 		
-			yt.getLanguageElementByName(langText).click();	
-			gn.getLangAttribute();
+			landingPage.getLanguageElementByName(langText).click();	
+			genericUtility.getLangAttribute();
 			Thread.sleep(2000);
-			List<WebElement> listOfSideMenu=yt.gettingSideMenuCollapsedList();
+			List<WebElement> listOfSideMenu=landingPage.gettingSideMenuCollapsedList();
 
-			StringBuilder sb=new StringBuilder();
-			for(int i=0;i<listOfSideMenu.size();i++) {
-				System.out.println(listOfSideMenu.get(i).getText());
-				sb.append(listOfSideMenu.get(i).getText());
-				sb.append(" ");
+			StringBuilder sideMenuItems=new StringBuilder();
+			for(int sideMenuItem=0;sideMenuItem<listOfSideMenu.size();sideMenuItem++) {
+				System.out.println(listOfSideMenu.get(sideMenuItem).getText());
+				sideMenuItems.append(listOfSideMenu.get(sideMenuItem).getText());
+				sideMenuItems.append(" ");
 			}
 			
-		  String expectedData =	verifyingSideMenuCollapsedLangAsInSettingsDataReader.getCellValue(j, 1);
-		  String actualData=sb.toString();
+		  String expectedData =	verifyingSideMenuCollapsedLangAsInSettingsDataReader.getCellValue(languageIndex, 1);
+		  String actualData=sideMenuItems.toString();
 		  
 		  
 		  softAssert.assertEquals(actualData, expectedData, "Mismatch in the Expected and actual Data");
 			
 		
-			yt.clickingSettingEllipsesButton();
+		  landingPage.clickingSettingEllipsesButton();
 			Thread.sleep(2000);
-			yt.clickingLanguageDropdownButton();
+			landingPage.clickingLanguageDropdownButton();
 			Thread.sleep(2000);
 		}
 		
@@ -277,8 +277,8 @@ public class YtMasterTests extends BaseTest{
 	public void verifyingSideMenuCollapsedLangAsInSettingsLingua() throws InterruptedException, InvalidFormatException, IOException {
 		
 		
-		YtLandingPage yt=new YtLandingPage();
-		GenericUtility gn=new GenericUtility();
+		YtLandingPage landingPage=new YtLandingPage();
+		GenericUtility genericUtility=new GenericUtility();
 		SoftAssert softAssert = new SoftAssert();
 		
 		
@@ -297,55 +297,55 @@ public class YtMasterTests extends BaseTest{
 
 		int LanguagesRowCount= reader.getRowCount();
 		String testName = ThreadContext.get("logFileName");
-		gn.maximizeDisplay();
-		yt.openingLandingPage();
+		genericUtility.maximizeDisplay();
+		landingPage.openingLandingPage();
 
 		
-		List<Integer> sizes=gn.getWindowHeightWidth();
+		List<Integer> sizes=genericUtility.getWindowHeightWidth();
 		if(sizes.get(1)==1552) {
-			yt.clickingLeftEllipses();
+			landingPage.clickingLeftEllipses();
 			Thread.sleep(2000);
 		}
 
 
-		yt.clickingSettingEllipsesButton();
+		landingPage.clickingSettingEllipsesButton();
 		Thread.sleep(2000);
 
-		yt.clickingLanguageDropdownButton();
+		landingPage.clickingLanguageDropdownButton();
 		Thread.sleep(2000);
 
 		
 
-		for(int j=1;j<LanguagesRowCount;j++) {
+		for(int languageIndex=1;languageIndex<LanguagesRowCount;languageIndex++) {
 
-			String langText=reader.getCellValue(j, 0);
-			System.out.println(langText+"    "+j);
+			String langText=reader.getCellValue(languageIndex, 0);
+			System.out.println(langText+"    "+languageIndex);
 			Thread.sleep(1000);
 		
-			yt.getLanguageElementByName(langText).click();	
-			gn.getLangAttribute();
+			landingPage.getLanguageElementByName(langText).click();	
+			genericUtility.getLangAttribute();
 			Thread.sleep(2000);
-			List<WebElement> listOfSideMenu=yt.gettingSideMenuCollapsedList();
+			List<WebElement> listOfSideMenu=landingPage.gettingSideMenuCollapsedList();
 
-			StringBuilder sb=new StringBuilder();
-			for(int i=0;i<listOfSideMenu.size();i++) {
-				System.out.println(listOfSideMenu.get(i).getText());
-				sb.append(listOfSideMenu.get(i).getText());
-				sb.append(" ");
+			StringBuilder sideMenuItems=new StringBuilder();
+			for(int sideMenuItem=0;sideMenuItem<listOfSideMenu.size();sideMenuItem++) {
+				System.out.println(listOfSideMenu.get(sideMenuItem).getText());
+				sideMenuItems.append(listOfSideMenu.get(sideMenuItem).getText());
+				sideMenuItems.append(" ");
 			}
 			
 			
 			
 
-			String applicableLanguage=reader.getCellValue(j, 0);
-			String detectedLanguage=LinguaHelper.detectLanguage(sb.toString());
-			log.info("text sent to lingua is "+"      "+sb.toString());
-			String expectedLanguage=applicableExpectedReader.getCellValue(j, 1);
+			String applicableLanguage=reader.getCellValue(languageIndex, 0);
+			String detectedLanguage=LinguaHelper.detectLanguage(sideMenuItems.toString());
+			log.info("text sent to lingua is "+"      "+sideMenuItems.toString());
+			String expectedLanguage=applicableExpectedReader.getCellValue(languageIndex, 1);
 		
 
 			
-			String expectedLanguageAttribute=gn.getLangAttributeViaLanguageInput(applicableLanguage);
-			String detectedLanguageAttribute=gn.getLangAttribute();
+			String expectedLanguageAttribute=genericUtility.getLangAttributeViaLanguageInput(applicableLanguage);
+			String detectedLanguageAttribute=genericUtility.getLangAttribute();
 
 			System.out.println("ApplicableLanguage  "+applicableLanguage+"     "+"Detected Language   "+detectedLanguage+"  "+"Expected Language  "+expectedLanguage);
 			System.out.println("ApplicableLanguage  "+applicableLanguage+"     "+"Detected Language attribute   "+detectedLanguageAttribute+"  "+"Expected Language attribute "+expectedLanguageAttribute);
@@ -356,9 +356,9 @@ public class YtMasterTests extends BaseTest{
 			softAssert.assertEquals(detectedLanguageAttribute, expectedLanguageAttribute, "Language attributr mismatch");
 
 			
-			yt.clickingSettingEllipsesButton();
+			landingPage.clickingSettingEllipsesButton();
 			Thread.sleep(2000);
-			yt.clickingLanguageDropdownButton();
+			landingPage.clickingLanguageDropdownButton();
 			Thread.sleep(2000);
 		}
 		
@@ -373,8 +373,8 @@ public class YtMasterTests extends BaseTest{
 		
 		
 		FileReader reader=new FileReader();
-		YtLandingPage yt=new YtLandingPage();
-		GenericUtility gn=new GenericUtility();
+		YtLandingPage landingPage=new YtLandingPage();
+		GenericUtility genericUtility=new GenericUtility();
 		SoftAssert softAssert=new SoftAssert();
 		
 		
@@ -388,37 +388,37 @@ public class YtMasterTests extends BaseTest{
 		
 
 		
-		yt.openingLandingPage();
-		yt.clickingSettingEllipsesButton();
+		landingPage.openingLandingPage();
+		landingPage.clickingSettingEllipsesButton();
 		Thread.sleep(1000);
-		yt.clickingLanguageDropdownButton();
+		landingPage.clickingLanguageDropdownButton();
 		Thread.sleep(1000);
 
 		
 
-		for(int j=1;j<LanguagesRowCount;j++) {
+		for(int languageIndex=1;languageIndex<LanguagesRowCount;languageIndex++) {
 
-			String langText=reader.getCellValue(j, 0);
-			System.out.println(langText+"    "+j);
+			String langText=reader.getCellValue(languageIndex, 0);
+			System.out.println(langText+"    "+languageIndex);
 
 			Thread.sleep(1000);
-			yt.getLanguageElementByName(langText).click();	
+			landingPage.getLanguageElementByName(langText).click();	
 
 			Thread.sleep(2000);
 
-			yt.clickingSettingEllipsesButton();
+			landingPage.clickingSettingEllipsesButton();
 			Thread.sleep(1000);
-			String sb=yt.getsettingEllipsesOptionsListLandingPage();
-			yt.clickingSettingEllipsesButton();
+			String languageFromSettings=landingPage.getsettingEllipsesOptionsListLandingPage();
+			landingPage.clickingSettingEllipsesButton();
 
 
-			String applicableLanguage=reader.getCellValue(j, 0);
-			String detectedLanguage=LinguaHelper.detectLanguage(sb.toString());
-			String expectedLanguage=gn.getExpectedLangageViaApplicableLangInput(applicableLanguage);
+			String applicableLanguage=reader.getCellValue(languageIndex, 0);
+			String detectedLanguage=LinguaHelper.detectLanguage(languageFromSettings);
+			String expectedLanguage=genericUtility.getExpectedLangageViaApplicableLangInput(applicableLanguage);
 
 
-			String expectedLanguageAttribute=gn.getLangAttributeViaLanguageInput(applicableLanguage);
-			String detectedLanguageAttribute=gn.getLangAttribute();
+			String expectedLanguageAttribute=genericUtility.getLangAttributeViaLanguageInput(applicableLanguage);
+			String detectedLanguageAttribute=genericUtility.getLangAttribute();
 
 			System.out.println("ApplicableLanguage  "+applicableLanguage+"     "+"Detected Language   "+detectedLanguage+"  "+"Expected Language  "+expectedLanguage);
 			System.out.println("ApplicableLanguage  "+applicableLanguage+"     "+"Detected Language attribute   "+detectedLanguageAttribute+"  "+"Expected Language attribute "+expectedLanguageAttribute);
@@ -427,9 +427,9 @@ public class YtMasterTests extends BaseTest{
 			softAssert.assertEquals(detectedLanguageAttribute, expectedLanguageAttribute, "Language attributr mismatch");
 
 
-			yt.clickingSettingEllipsesButton();
+			landingPage.clickingSettingEllipsesButton();
 			Thread.sleep(2000);
-			yt.clickingLanguageDropdownButton();
+			landingPage.clickingLanguageDropdownButton();
 			Thread.sleep(2000);
 
 		}
@@ -445,8 +445,7 @@ public class YtMasterTests extends BaseTest{
 		
 		
 		FileReader reader=new FileReader();
-		YtLandingPage yt=new YtLandingPage();
-		GenericUtility gn=new GenericUtility();
+		YtLandingPage landingPage=new YtLandingPage();
 		SoftAssert softAssert=new SoftAssert();
 		
 		
@@ -455,40 +454,40 @@ public class YtMasterTests extends BaseTest{
 
 
 		
-		yt.openingLandingPage();
+		landingPage.openingLandingPage();
 		Thread.sleep(2000);
-		yt.clickingSettingEllipsesButton();
+		landingPage.clickingSettingEllipsesButton();
 		Thread.sleep(2000);
-		yt.clickingLocationDropdownUnderSettings();
+		landingPage.clickingLocationDropdownUnderSettings();
 		Thread.sleep(2000);
 
 		
-		List<WebElement> locationList=yt.getLocationList();
+		List<WebElement> locationList=landingPage.getLocationList();
 
-		for(int i=1;i<locationList.size();i++) {
-			locationList=yt.getLocationList();
-			String locationText=locationList.get(i).getText();
-			System.out.println(locationText+"    "+i);
+		for(int locationIndex=1;locationIndex<locationList.size();locationIndex++) {
+			locationList=landingPage.getLocationList();
+			String locationText=locationList.get(locationIndex).getText();
+			System.out.println(locationText+"    "+locationIndex);
 
-			String locationTextFromSheet=reader.getCellValue(i, 0);
-			System.out.println(locationTextFromSheet+"  location text from sheet  "+i);
+			String locationTextFromSheet=reader.getCellValue(locationIndex, 0);
+			System.out.println(locationTextFromSheet+"  location text from sheet  "+locationIndex);
 
 
 			Thread.sleep(1000);
-			locationList.get(i).click();
+			locationList.get(locationIndex).click();
 			Thread.sleep(1000);
 
 
 			String applicableLocation=locationText;
-			String expectedCountryCode=reader.getCellValue(i, 1);
-			String detectedCountryCode=yt.getCountryCode();
+			String expectedCountryCode=reader.getCellValue(locationIndex, 1);
+			String detectedCountryCode=landingPage.getCountryCode();
 
 			System.out.println("applicable location is ==  "+applicableLocation+" Expected location  =="+expectedCountryCode+"  detected country code"+detectedCountryCode);
 			softAssert.assertEquals(detectedCountryCode, expectedCountryCode,"Country code mismacth");
 
-			yt.clickingSettingEllipsesButton();
+			landingPage.clickingSettingEllipsesButton();
 			Thread.sleep(2000);
-			yt.clickingLocationDropdownUnderSettings();
+			landingPage.clickingLocationDropdownUnderSettings();
 			Thread.sleep(2000);
 
 
@@ -502,8 +501,8 @@ public class YtMasterTests extends BaseTest{
 	public void verifyingGlobalFilterLandingPage() throws InterruptedException {
 
 		FileReader reader=new FileReader();
-		GenericUtility gn=new GenericUtility();
-		YtLandingPage yt=new YtLandingPage();
+		GenericUtility genericUtility=new GenericUtility();
+		YtLandingPage landingPage=new YtLandingPage();
 		SoftAssert softAssert =new SoftAssert();
 		
 		
@@ -518,35 +517,35 @@ public class YtMasterTests extends BaseTest{
 		verifyingGlobalFilterLandingPageDataReader.loadSheet("verifyingGlobalFilterLandingPag");
 
 		
-		yt.openingLandingPage();
-		yt.givingInputUnderSearchBar("video");
-		gn.clickEnter(yt.searchInputLandinfPage);
+		landingPage.openingLandingPage();
+		landingPage.givingInputUnderSearchBar("video");
+		genericUtility.clickEnter(landingPage.searchInputLandinfPage);
 
 		
 
 
-		for(int j=1;j<LanguagesRowCount;j++) {
+		for(int languageIndex=1;languageIndex<LanguagesRowCount;languageIndex++) {
 			
-			yt.clickingSettingEllipsesButton();
+			landingPage.clickingSettingEllipsesButton();
 			Thread.sleep(2000);
-			yt.clickingLanguageDropdownButton();
+			landingPage.clickingLanguageDropdownButton();
 			Thread.sleep(2000);
 
-			String langText=reader.getCellValue(j, 0);
-			System.out.println(langText+"    "+j);
+			String langText=reader.getCellValue(languageIndex, 0);
+			System.out.println(langText+"    "+languageIndex);
 
 			Thread.sleep(1000);
-			yt.getLanguageElementByName(langText).click();	
+			landingPage.getLanguageElementByName(langText).click();	
 
 			Thread.sleep(2000);
 
-			yt.clickingGlobalFilterButton();
-			String str=yt.getDataFromGlobalFilterPopup();
-			yt.closeGlobalFilterPopup();
+			landingPage.clickingGlobalFilterButton();
+			String globalSettingText=landingPage.getDataFromGlobalFilterPopup();
+			landingPage.closeGlobalFilterPopup();
 
 			
-			String expectedData=verifyingGlobalFilterLandingPageDataReader.getCellValue(j, 1);
-			String actualValue=str;
+			String expectedData=verifyingGlobalFilterLandingPageDataReader.getCellValue(languageIndex, 1);
+			String actualValue=globalSettingText;
 			
 			
 			softAssert.assertEquals(actualValue, expectedData, "Mismatch in the Expected and Actual Data");
@@ -557,10 +556,10 @@ public class YtMasterTests extends BaseTest{
 
 		softAssert.assertAll();	
 
-		yt.clickingGlobalFilterButton();
-		String str=yt.getDataFromGlobalFilterPopup();
-		System.out.println(str);
-		yt.closeGlobalFilterPopup();
+		landingPage.clickingGlobalFilterButton();
+		String globalSettingText=landingPage.getDataFromGlobalFilterPopup();
+		System.out.println(globalSettingText);
+		landingPage.closeGlobalFilterPopup();
 		
 	}
 	
@@ -573,8 +572,8 @@ public class YtMasterTests extends BaseTest{
 	public void verifyingGlobalFilterLandingPageLingua() throws InterruptedException {
 
 		
-		GenericUtility gn=new GenericUtility();
-		YtLandingPage yt=new YtLandingPage();
+		GenericUtility genericUtility=new GenericUtility();
+		YtLandingPage landingPage=new YtLandingPage();
 		SoftAssert softAssert =new SoftAssert();
 		
 		
@@ -586,40 +585,40 @@ public class YtMasterTests extends BaseTest{
 		
 		
 
-		yt.openingLandingPage();
-		yt.givingInputUnderSearchBar("video");
-		gn.clickEnter(yt.searchInputLandinfPage);
+		landingPage.openingLandingPage();
+		landingPage.givingInputUnderSearchBar("video");
+		genericUtility.clickEnter(landingPage.searchInputLandinfPage);
 
 		
 
 
-		for(int j=1;j<LanguagesRowCount;j++) {
+		for(int languageIndex=1;languageIndex<LanguagesRowCount;languageIndex++) {
 			
-			yt.clickingSettingEllipsesButton();
+			landingPage.clickingSettingEllipsesButton();
 			Thread.sleep(2000);
-			yt.clickingLanguageDropdownButton();
+			landingPage.clickingLanguageDropdownButton();
 			Thread.sleep(2000);
 
-			String langText=reader.getCellValue(j, 0);
-			System.out.println(langText+"    "+j);
+			String langText=reader.getCellValue(languageIndex, 0);
+			System.out.println(langText+"    "+languageIndex);
 
 			Thread.sleep(1000);
-			yt.getLanguageElementByName(langText).click();	
+			landingPage.getLanguageElementByName(langText).click();	
 
 			Thread.sleep(2000);
 
-			yt.clickingGlobalFilterButton();
-			String str=yt.getDataFromGlobalFilterPopup();
-			yt.closeGlobalFilterPopup();
+			landingPage.clickingGlobalFilterButton();
+			String globalSettingText=landingPage.getDataFromGlobalFilterPopup();
+			landingPage.closeGlobalFilterPopup();
 
 			
-			String applicableLanguage=reader.getCellValue(j, 0);
-			String detectedLanguage=LinguaHelper.detectLanguage(str);
-			String expectedLanguage=gn.getExpectedLangageViaApplicableLangInput(applicableLanguage);
+			String applicableLanguage=reader.getCellValue(languageIndex, 0);
+			String detectedLanguage=LinguaHelper.detectLanguage(globalSettingText);
+			String expectedLanguage=genericUtility.getExpectedLangageViaApplicableLangInput(applicableLanguage);
 
 
-			String expectedLanguageAttribute=gn.getLangAttributeViaLanguageInput(applicableLanguage);
-			String detectedLanguageAttribute=gn.getLangAttribute();
+			String expectedLanguageAttribute=genericUtility.getLangAttributeViaLanguageInput(applicableLanguage);
+			String detectedLanguageAttribute=genericUtility.getLangAttribute();
 
 			System.out.println("ApplicableLanguage  "+applicableLanguage+"     "+"Detected Language   "+detectedLanguage+"  "+"Expected Language  "+expectedLanguage);
 			System.out.println("ApplicableLanguage  "+applicableLanguage+"     "+"Detected Language attribute   "+detectedLanguageAttribute+"  "+"Expected Language attribute "+expectedLanguageAttribute);
@@ -633,10 +632,10 @@ public class YtMasterTests extends BaseTest{
 
 		softAssert.assertAll();	
 
-		yt.clickingGlobalFilterButton();
-		String str=yt.getDataFromGlobalFilterPopup();
-		System.out.println(str);
-		yt.closeGlobalFilterPopup();
+		landingPage.clickingGlobalFilterButton();
+		String globalSettingText=landingPage.getDataFromGlobalFilterPopup();
+		System.out.println(globalSettingText);
+		landingPage.closeGlobalFilterPopup();
 		
 	}
 	
