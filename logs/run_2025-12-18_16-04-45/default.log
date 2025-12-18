@@ -1,0 +1,9 @@
+2025-12-18 16:15:31.450 [TestNG-test-Test-2] INFO  [] ===== FINISHED TEST: verifyingGlobalFilterLandingPage =====
+2025-12-18 16:25:44.156 [TestNG-test-Test-2] INFO  [] ===== FINISHED TEST: verifyingGlobalFilterLandingPageLingua =====
+2025-12-18 16:25:52.247 [TestNG-test-Test-1] INFO  [] ===== FINISHED TEST: verifyCountryCodeAsBasedOnRegion =====
+2025-12-18 16:32:46.243 [TestNG-test-Test-2] INFO  [] ===== FINISHED TEST: verifyingSettingOptionsLang =====
+2025-12-18 16:34:06.684 [TestNG-test-Test-1] INFO  [] ===== FINISHED TEST: verifyingSideMenuCollapsedLangAsInSettings =====
+2025-12-18 16:41:50.339 [TestNG-test-Test-2] INFO  [] ===== FINISHED TEST: verifyingSettingOptionsLang =====
+2025-12-18 16:42:31.089 [TestNG-test-Test-1] INFO  [] ===== FINISHED TEST: verifyingSideMenuCollapsedLangAsInSettingsLingua =====
+2025-12-18 17:20:47.702 [TestNG-test-Test-2] INFO  [] ===== FINISHED TEST: verifyingSideMenuLanguageAsInSettings =====
+2025-12-18 17:21:11.509 [TestNG-test-Test-1] INFO  [] ===== FINISHED TEST: verifyingSideMenuLanguageAsInSettingsLingua =====
