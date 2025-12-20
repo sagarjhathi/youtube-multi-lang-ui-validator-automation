@@ -1,6 +1,0 @@
-2025-12-20 18:30:45.731 [TestNG-test-Test-1] WARN  [] [null] Retrying test 'verifyingGlobalFilterLandingPageLingua' (attempt 1) due to: WebDriver not initialized!
-2025-12-20 18:30:45.733 [TestNG-test-Test-2] WARN  [] [null] Retrying test 'verifyingSideMenuCollapsedLangAsInSettingsLingua' (attempt 1) due to: WebDriver not initialized!
-2025-12-20 18:30:45.767 [TestNG-test-Test-2] INFO  [] [null] Not retrying test 'verifyingSideMenuCollapsedLangAsInSettingsLingua'. Retry count: 1, Cause: WebDriver not initialized!
-2025-12-20 18:30:45.767 [TestNG-test-Test-1] INFO  [] [null] Not retrying test 'verifyingGlobalFilterLandingPageLingua'. Retry count: 1, Cause: WebDriver not initialized!
-2025-12-20 18:30:45.779 [TestNG-test-Test-1] WARN  [] [null] Retrying test 'verifyingSideMenuLanguageAsInSettingsLingua' (attempt 1) due to: WebDriver not initialized!
-2025-12-20 18:30:45.783 [TestNG-test-Test-1] INFO  [] [null] Not retrying test 'verifyingSideMenuLanguageAsInSettingsLingua'. Retry count: 1, Cause: WebDriver not initialized!
