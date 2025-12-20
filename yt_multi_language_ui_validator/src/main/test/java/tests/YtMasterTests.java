@@ -104,7 +104,7 @@ public class YtMasterTests extends BaseTest{
 	
 	
 	
-	@Test(retryAnalyzer = RetryFailedTest.class)
+	@Test(retryAnalyzer = RetryFailedTest.class,groups = {"lingua"})
 	public void verifyingSideMenuLanguageAsInSettingsLingua() throws InterruptedException {
 
 		
@@ -273,7 +273,7 @@ public class YtMasterTests extends BaseTest{
 	
 	
 	
-	@Test(retryAnalyzer = RetryFailedTest.class)
+	@Test(retryAnalyzer = RetryFailedTest.class,groups = {"lingua"})
 	public void verifyingSideMenuCollapsedLangAsInSettingsLingua() throws InterruptedException, InvalidFormatException, IOException {
 		
 		
@@ -568,7 +568,7 @@ public class YtMasterTests extends BaseTest{
 	
 	
 	
-	@Test(retryAnalyzer = RetryFailedTest.class)
+	@Test(retryAnalyzer = RetryFailedTest.class,groups = {"lingua"})
 	public void verifyingGlobalFilterLandingPageLingua() throws InterruptedException {
 
 		
