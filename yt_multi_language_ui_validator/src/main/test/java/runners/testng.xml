@@ -13,7 +13,7 @@
  
  <methods>
  
-
+	<include name="verifyingSideMenuCollapsedLangAsInSettingsLingua"></include>
  
  
  </methods>
