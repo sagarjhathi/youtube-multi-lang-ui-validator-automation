@@ -5,11 +5,7 @@
   <test thread-count="2" parallel="methods" name="Test">
   
   
-  <groups>
-            <run>
-                <include name="lingua" />
-            </run>
-        </groups>
+         
     <classes>
     
       <class name="main.java.yt_multi_lang_ui_validator.logger.LogFolderSetup"/>
