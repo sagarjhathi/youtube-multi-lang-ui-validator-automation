@@ -19,7 +19,7 @@ public class BaseTest {
 	private  static  Logger log = LoggerUtility.getLogger(BaseTest.class);
 	public WebDriver driver;
 
-	    @BeforeMethod
+	    @BeforeMethod(alwaysRun = true)
 	    public void setUp(Method method) throws InterruptedException {
 	    		    	
 	    	    String testName = method.getName();
@@ -48,7 +48,7 @@ public class BaseTest {
 	
 	    
 	    
-	    	@AfterMethod
+	    	@AfterMethod(alwaysRun = true)
 	    	public void tearDown(ITestResult result) {
 	    		
 	    		 Logger testLog = LogManager.getLogger(result.getName());
