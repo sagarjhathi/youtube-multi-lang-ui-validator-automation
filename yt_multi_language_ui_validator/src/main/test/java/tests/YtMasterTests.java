@@ -53,14 +53,36 @@ public class YtMasterTests extends BaseTest{
 		String testName = ThreadContext.get("logFileName");
 		int LanguagesRowCount= reader.getRowCount();
 		
-		
-		int defaultLanguageCount=ConfigManager.getInt("overideLanguageCountDefault");
-		boolean runForAllLanguages=ConfigManager.getBoolean("runForAllLanguages", false);
-		
-		if(runForAllLanguages==false) {
-			System.out.println("In the run for all languages if condition");
-			LanguagesRowCount=ConfigManager.getInt("overideLanguageCount", defaultLanguageCount);
-			System.out.println("Row count is =="+LanguagesRowCount);
+		boolean isCron = Boolean.parseBoolean(System.getenv("IS_CRON"));
+		if(isCron) {
+			
+			log.info("[{}] Execution is scheduled type /CRON Job on CI Hence refering to CI keys from UtilData", ThreadContext.get("testName"));
+
+			System.out.println("Execution is scheduled type /CRON Job on CI Hence refering to CI keys from UtilData");
+			
+			int defaultLanguageCount=ConfigManager.getInt("overideLanguageCountDefaultCI");
+			boolean runForAllLanguages=ConfigManager.getBoolean("runForAllLanguagesCI", false);
+			
+			if(runForAllLanguages==false) {
+				System.out.println("In the run for all languages if condition");
+				LanguagesRowCount=ConfigManager.getInt("overideLanguageCountCI", defaultLanguageCount);
+				System.out.println("Row count is =="+LanguagesRowCount);
+			}
+		}else {
+			
+			log.info("[{}] Execution is Not CRON Job Hence refering to normal keys from UtilData", ThreadContext.get("testName"));
+
+	    	System.out.println("Execution is Not CRON Job Hence refering to normal keys from UtilData");
+			
+			int defaultLanguageCount=ConfigManager.getInt("overideLanguageCountDefault");
+			boolean runForAllLanguages=ConfigManager.getBoolean("runForAllLanguages", false);
+			
+			if(runForAllLanguages==false) {
+				System.out.println("In the run for all languages if condition");
+				LanguagesRowCount=ConfigManager.getInt("overideLanguageCount", defaultLanguageCount);
+				System.out.println("Row count is =="+LanguagesRowCount);
+			}
+			
 		}
 		
 
@@ -138,13 +160,36 @@ public class YtMasterTests extends BaseTest{
 		String testName = ThreadContext.get("logFileName");
 		int LanguagesRowCount= reader.getRowCount();
 		
-		int defaultLanguageCount=ConfigManager.getInt("overideLanguageCountDefault");
-		boolean runForAllLanguages=ConfigManager.getBoolean("runForAllLanguages", false);
-		
-		if(runForAllLanguages==false) {
-			System.out.println("In the run for all languages if condition");
-			LanguagesRowCount=ConfigManager.getInt("overideLanguageCount", defaultLanguageCount);
-			System.out.println("Row count is =="+LanguagesRowCount);
+		boolean isCron = Boolean.parseBoolean(System.getenv("IS_CRON"));
+		if(isCron) {
+			
+			log.info("[{}] Execution is scheduled type /CRON Job on CI Hence refering to CI keys from UtilData", ThreadContext.get("testName"));
+
+			System.out.println("Execution is scheduled type /CRON Job on CI Hence refering to CI keys from UtilData");
+			
+			int defaultLanguageCount=ConfigManager.getInt("overideLanguageCountDefaultCI");
+			boolean runForAllLanguages=ConfigManager.getBoolean("runForAllLanguagesCI", false);
+			
+			if(runForAllLanguages==false) {
+				System.out.println("In the run for all languages if condition");
+				LanguagesRowCount=ConfigManager.getInt("overideLanguageCountCI", defaultLanguageCount);
+				System.out.println("Row count is =="+LanguagesRowCount);
+			}
+		}else {
+			
+			log.info("[{}] Execution is Not CRON Job Hence refering to normal keys from UtilData", ThreadContext.get("testName"));
+
+	    	System.out.println("Execution is Not CRON Job Hence refering to normal keys from UtilData");
+			
+			int defaultLanguageCount=ConfigManager.getInt("overideLanguageCountDefault");
+			boolean runForAllLanguages=ConfigManager.getBoolean("runForAllLanguages", false);
+			
+			if(runForAllLanguages==false) {
+				System.out.println("In the run for all languages if condition");
+				LanguagesRowCount=ConfigManager.getInt("overideLanguageCount", defaultLanguageCount);
+				System.out.println("Row count is =="+LanguagesRowCount);
+			}
+			
 		}
 
 
@@ -247,13 +292,36 @@ public class YtMasterTests extends BaseTest{
 		landingPage.clickingLanguageDropdownButton();
 		Thread.sleep(2000);
 
-		int defaultLanguageCount=ConfigManager.getInt("overideLanguageCountDefault");
-		boolean runForAllLanguages=ConfigManager.getBoolean("runForAllLanguages", false);
-		
-		if(runForAllLanguages==false) {
-			System.out.println("In the run for all languages if condition");
-			LanguagesRowCount=ConfigManager.getInt("overideLanguageCount", defaultLanguageCount);
-			System.out.println("Row count is =="+LanguagesRowCount);
+		boolean isCron = Boolean.parseBoolean(System.getenv("IS_CRON"));
+		if(isCron) {
+			
+			log.info("[{}] Execution is scheduled type /CRON Job on CI Hence refering to CI keys from UtilData", ThreadContext.get("testName"));
+
+			System.out.println("Execution is scheduled type /CRON Job on CI Hence refering to CI keys from UtilData");
+			
+			int defaultLanguageCount=ConfigManager.getInt("overideLanguageCountDefaultCI");
+			boolean runForAllLanguages=ConfigManager.getBoolean("runForAllLanguagesCI", false);
+			
+			if(runForAllLanguages==false) {
+				System.out.println("In the run for all languages if condition");
+				LanguagesRowCount=ConfigManager.getInt("overideLanguageCountCI", defaultLanguageCount);
+				System.out.println("Row count is =="+LanguagesRowCount);
+			}
+		}else {
+			
+			log.info("[{}] Execution is Not CRON Job Hence refering to normal keys from UtilData", ThreadContext.get("testName"));
+
+	    	System.out.println("Execution is Not CRON Job Hence refering to normal keys from UtilData");
+			
+			int defaultLanguageCount=ConfigManager.getInt("overideLanguageCountDefault");
+			boolean runForAllLanguages=ConfigManager.getBoolean("runForAllLanguages", false);
+			
+			if(runForAllLanguages==false) {
+				System.out.println("In the run for all languages if condition");
+				LanguagesRowCount=ConfigManager.getInt("overideLanguageCount", defaultLanguageCount);
+				System.out.println("Row count is =="+LanguagesRowCount);
+			}
+			
 		}
 		
 
@@ -343,13 +411,36 @@ public class YtMasterTests extends BaseTest{
 		Thread.sleep(2000);
 
 		
-		int defaultLanguageCount=ConfigManager.getInt("overideLanguageCountDefault");
-		boolean runForAllLanguages=ConfigManager.getBoolean("runForAllLanguages", false);
-		
-		if(runForAllLanguages==false) {
-			System.out.println("In the run for all languages if condition");
-			LanguagesRowCount=ConfigManager.getInt("overideLanguageCount", defaultLanguageCount);
-			System.out.println("Row count is =="+LanguagesRowCount);
+		boolean isCron = Boolean.parseBoolean(System.getenv("IS_CRON"));
+		if(isCron) {
+			
+			log.info("[{}] Execution is scheduled type /CRON Job on CI Hence refering to CI keys from UtilData", ThreadContext.get("testName"));
+
+			System.out.println("Execution is scheduled type /CRON Job on CI Hence refering to CI keys from UtilData");
+			
+			int defaultLanguageCount=ConfigManager.getInt("overideLanguageCountDefaultCI");
+			boolean runForAllLanguages=ConfigManager.getBoolean("runForAllLanguagesCI", false);
+			
+			if(runForAllLanguages==false) {
+				System.out.println("In the run for all languages if condition");
+				LanguagesRowCount=ConfigManager.getInt("overideLanguageCountCI", defaultLanguageCount);
+				System.out.println("Row count is =="+LanguagesRowCount);
+			}
+		}else {
+			
+			log.info("[{}] Execution is Not CRON Job Hence refering to normal keys from UtilData", ThreadContext.get("testName"));
+
+	    	System.out.println("Execution is Not CRON Job Hence refering to normal keys from UtilData");
+			
+			int defaultLanguageCount=ConfigManager.getInt("overideLanguageCountDefault");
+			boolean runForAllLanguages=ConfigManager.getBoolean("runForAllLanguages", false);
+			
+			if(runForAllLanguages==false) {
+				System.out.println("In the run for all languages if condition");
+				LanguagesRowCount=ConfigManager.getInt("overideLanguageCount", defaultLanguageCount);
+				System.out.println("Row count is =="+LanguagesRowCount);
+			}
+			
 		}
 
 		for(int languageIndex=1;languageIndex<LanguagesRowCount;languageIndex++) {
@@ -432,13 +523,36 @@ public class YtMasterTests extends BaseTest{
 
 		
 
-		int defaultLanguageCount=ConfigManager.getInt("overideLanguageCountDefault");
-		boolean runForAllLanguages=ConfigManager.getBoolean("runForAllLanguages", false);
-		
-		if(runForAllLanguages==false) {
-			System.out.println("In the run for all languages if condition");
-			LanguagesRowCount=ConfigManager.getInt("overideLanguageCount", defaultLanguageCount);
-			System.out.println("Row count is =="+LanguagesRowCount);
+		boolean isCron = Boolean.parseBoolean(System.getenv("IS_CRON"));
+		if(isCron) {
+			
+			log.info("[{}] Execution is scheduled type /CRON Job on CI Hence refering to CI keys from UtilData", ThreadContext.get("testName"));
+
+			System.out.println("Execution is scheduled type /CRON Job on CI Hence refering to CI keys from UtilData");
+			
+			int defaultLanguageCount=ConfigManager.getInt("overideLanguageCountDefaultCI");
+			boolean runForAllLanguages=ConfigManager.getBoolean("runForAllLanguagesCI", false);
+			
+			if(runForAllLanguages==false) {
+				System.out.println("In the run for all languages if condition");
+				LanguagesRowCount=ConfigManager.getInt("overideLanguageCountCI", defaultLanguageCount);
+				System.out.println("Row count is =="+LanguagesRowCount);
+			}
+		}else {
+			
+			log.info("[{}] Execution is Not CRON Job Hence refering to normal keys from UtilData", ThreadContext.get("testName"));
+
+	    	System.out.println("Execution is Not CRON Job Hence refering to normal keys from UtilData");
+			
+			int defaultLanguageCount=ConfigManager.getInt("overideLanguageCountDefault");
+			boolean runForAllLanguages=ConfigManager.getBoolean("runForAllLanguages", false);
+			
+			if(runForAllLanguages==false) {
+				System.out.println("In the run for all languages if condition");
+				LanguagesRowCount=ConfigManager.getInt("overideLanguageCount", defaultLanguageCount);
+				System.out.println("Row count is =="+LanguagesRowCount);
+			}
+			
 		}
 		
 		for(int languageIndex=1;languageIndex<LanguagesRowCount;languageIndex++) {
@@ -511,14 +625,45 @@ public class YtMasterTests extends BaseTest{
 		List<WebElement> locationList=landingPage.getLocationList();
 		int locationListSize=locationList.size();
 		
-		int defaultCountriesCount=ConfigManager.getInt("overideCountriesCountDefault");
-		boolean runForAllCountries=ConfigManager.getBoolean("runForAllCountries", false);
 		
-		if(runForAllCountries==false) {
-			System.out.println("In the run for all languages if condition");
-			locationListSize=ConfigManager.getInt("overideCountriesCount", defaultCountriesCount);
-			System.out.println("Row count is =="+locationListSize);
+		
+		
+		
+		boolean isCron = Boolean.parseBoolean(System.getenv("IS_CRON"));
+		if(isCron) {
+			
+			log.info("[{}] Execution is scheduled type /CRON Job on CI Hence refering to CI keys from UtilData", ThreadContext.get("testName"));
+
+			System.out.println("Execution is scheduled type /CRON Job on CI Hence refering to CI keys from UtilData");
+			
+			int defaultCountriesCount=ConfigManager.getInt("overideCountriesCountDefaultCI");
+			boolean runForAllCountries=ConfigManager.getBoolean("runForAllCountriesCI", false);
+			
+			if(runForAllCountries==false) {
+				System.out.println("In the run for all languages if condition");
+				locationListSize=ConfigManager.getInt("overideCountriesCountCI", defaultCountriesCount);
+				System.out.println("Row count is =="+locationListSize);
+			}
+		}else {
+			
+			log.info("[{}] Execution is Not CRON Job Hence refering to normal keys from UtilData", ThreadContext.get("testName"));
+
+	    	System.out.println("Execution is Not CRON Job Hence refering to normal keys from UtilData");
+			
+			int defaultLanguageCount=ConfigManager.getInt("overideLanguageCountDefault");
+			boolean runForAllLanguages=ConfigManager.getBoolean("runForAllLanguages", false);
+			
+			if(runForAllLanguages==false) {
+				System.out.println("In the run for all languages if condition");
+				locationListSize=ConfigManager.getInt("overideLanguageCount", defaultLanguageCount);
+				System.out.println("Row count is =="+locationListSize);
+			}
+			
 		}
+		
+		
+		
+		
 		
 		for(int locationIndex=1;locationIndex<locationListSize;locationIndex++) {
 			locationList=landingPage.getLocationList();
@@ -580,13 +725,36 @@ public class YtMasterTests extends BaseTest{
 		
 
 
-		int defaultLanguageCount=ConfigManager.getInt("overideLanguageCountDefault");
-		boolean runForAllLanguages=ConfigManager.getBoolean("runForAllLanguages", false);
-		
-		if(runForAllLanguages==false) {
-			System.out.println("In the run for all languages if condition");
-			LanguagesRowCount=ConfigManager.getInt("overideLanguageCount", defaultLanguageCount);
-			System.out.println("Row count is =="+LanguagesRowCount);
+		boolean isCron = Boolean.parseBoolean(System.getenv("IS_CRON"));
+		if(isCron) {
+			
+			log.info("[{}] Execution is scheduled type /CRON Job on CI Hence refering to CI keys from UtilData", ThreadContext.get("testName"));
+
+			System.out.println("Execution is scheduled type /CRON Job on CI Hence refering to CI keys from UtilData");
+			
+			int defaultLanguageCount=ConfigManager.getInt("overideLanguageCountDefaultCI");
+			boolean runForAllLanguages=ConfigManager.getBoolean("runForAllLanguagesCI", false);
+			
+			if(runForAllLanguages==false) {
+				System.out.println("In the run for all languages if condition");
+				LanguagesRowCount=ConfigManager.getInt("overideLanguageCountCI", defaultLanguageCount);
+				System.out.println("Row count is =="+LanguagesRowCount);
+			}
+		}else {
+			
+			log.info("[{}] Execution is Not CRON Job Hence refering to normal keys from UtilData", ThreadContext.get("testName"));
+
+	    	System.out.println("Execution is Not CRON Job Hence refering to normal keys from UtilData");
+			
+			int defaultLanguageCount=ConfigManager.getInt("overideLanguageCountDefault");
+			boolean runForAllLanguages=ConfigManager.getBoolean("runForAllLanguages", false);
+			
+			if(runForAllLanguages==false) {
+				System.out.println("In the run for all languages if condition");
+				LanguagesRowCount=ConfigManager.getInt("overideLanguageCount", defaultLanguageCount);
+				System.out.println("Row count is =="+LanguagesRowCount);
+			}
+			
 		}
 		
 		for(int languageIndex=1;languageIndex<LanguagesRowCount;languageIndex++) {
@@ -655,14 +823,36 @@ public class YtMasterTests extends BaseTest{
 		genericUtility.clickEnter(landingPage.searchInputLandinfPage);
 
 		
-		
-		int defaultLanguageCount=ConfigManager.getInt("overideLanguageCountDefault");
-		boolean runForAllLanguages=ConfigManager.getBoolean("runForAllLanguages", false);
-		
-		if(runForAllLanguages==false) {
-			System.out.println("In the run for all languages if condition");
-			LanguagesRowCount=ConfigManager.getInt("overideLanguageCount", defaultLanguageCount);
-			System.out.println("Row count is =="+LanguagesRowCount);
+		boolean isCron = Boolean.parseBoolean(System.getenv("IS_CRON"));
+		if(isCron) {
+			
+			log.info("[{}] Execution is scheduled type /CRON Job on CI Hence refering to CI keys from UtilData", ThreadContext.get("testName"));
+
+			System.out.println("Execution is scheduled type /CRON Job on CI Hence refering to CI keys from UtilData");
+			
+			int defaultLanguageCount=ConfigManager.getInt("overideLanguageCountDefaultCI");
+			boolean runForAllLanguages=ConfigManager.getBoolean("runForAllLanguagesCI", false);
+			
+			if(runForAllLanguages==false) {
+				System.out.println("In the run for all languages if condition");
+				LanguagesRowCount=ConfigManager.getInt("overideLanguageCountCI", defaultLanguageCount);
+				System.out.println("Row count is =="+LanguagesRowCount);
+			}
+		}else {
+			
+			log.info("[{}] Execution is Not CRON Job Hence refering to normal keys from UtilData", ThreadContext.get("testName"));
+
+	    	System.out.println("Execution is Not CRON Job Hence refering to normal keys from UtilData");
+			
+			int defaultLanguageCount=ConfigManager.getInt("overideLanguageCountDefault");
+			boolean runForAllLanguages=ConfigManager.getBoolean("runForAllLanguages", false);
+			
+			if(runForAllLanguages==false) {
+				System.out.println("In the run for all languages if condition");
+				LanguagesRowCount=ConfigManager.getInt("overideLanguageCount", defaultLanguageCount);
+				System.out.println("Row count is =="+LanguagesRowCount);
+			}
+			
 		}
 
 
