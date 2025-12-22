@@ -1,0 +1,8 @@
+2025-12-22 11:12:23.213 [TestNG-test-Smoke Tests-2] INFO  [] ===== FINISHED TEST: verifyingGlobalFilterLandingPage =====
+2025-12-22 11:12:35.204 [TestNG-test-Smoke Tests-1] INFO  [] ===== FINISHED TEST: verifyCountryCodeAsBasedOnRegion =====
+2025-12-22 11:14:10.874 [TestNG-test-Smoke Tests-2] INFO  [] ===== FINISHED TEST: verifyingGlobalFilterLandingPageLingua =====
+2025-12-22 11:14:18.772 [TestNG-test-Smoke Tests-1] INFO  [] ===== FINISHED TEST: verifyingSettingOptionsLang =====
+2025-12-22 11:15:50.846 [TestNG-test-Smoke Tests-2] INFO  [] ===== FINISHED TEST: verifyingSideMenuCollapsedLangAsInSettings =====
+2025-12-22 11:16:04.586 [TestNG-test-Smoke Tests-1] INFO  [] ===== FINISHED TEST: verifyingSideMenuCollapsedLangAsInSettingsLingua =====
+2025-12-22 11:22:39.098 [TestNG-test-Smoke Tests-2] INFO  [] ===== FINISHED TEST: verifyingSideMenuLanguageAsInSettings =====
+2025-12-22 11:23:04.369 [TestNG-test-Smoke Tests-1] INFO  [] ===== FINISHED TEST: verifyingSideMenuLanguageAsInSettingsLingua =====
