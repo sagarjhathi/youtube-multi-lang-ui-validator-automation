@@ -137,6 +137,15 @@ public class YtMasterTests extends BaseTest{
 		Thread.sleep(2000);
 		String testName = ThreadContext.get("logFileName");
 		int LanguagesRowCount= reader.getRowCount();
+		
+		int defaultLanguageCount=ConfigManager.getInt("overideLanguageCountDefault");
+		boolean runForAllLanguages=ConfigManager.getBoolean("runForAllLanguages", false);
+		
+		if(runForAllLanguages==false) {
+			System.out.println("In the run for all languages if condition");
+			LanguagesRowCount=ConfigManager.getInt("overideLanguageCount", defaultLanguageCount);
+			System.out.println("Row count is =="+LanguagesRowCount);
+		}
 
 
 		for(int languageIndex=1;languageIndex<LanguagesRowCount;languageIndex++) {
@@ -238,6 +247,14 @@ public class YtMasterTests extends BaseTest{
 		landingPage.clickingLanguageDropdownButton();
 		Thread.sleep(2000);
 
+		int defaultLanguageCount=ConfigManager.getInt("overideLanguageCountDefault");
+		boolean runForAllLanguages=ConfigManager.getBoolean("runForAllLanguages", false);
+		
+		if(runForAllLanguages==false) {
+			System.out.println("In the run for all languages if condition");
+			LanguagesRowCount=ConfigManager.getInt("overideLanguageCount", defaultLanguageCount);
+			System.out.println("Row count is =="+LanguagesRowCount);
+		}
 		
 
 		for(int languageIndex=1;languageIndex<LanguagesRowCount;languageIndex++) {
@@ -326,6 +343,14 @@ public class YtMasterTests extends BaseTest{
 		Thread.sleep(2000);
 
 		
+		int defaultLanguageCount=ConfigManager.getInt("overideLanguageCountDefault");
+		boolean runForAllLanguages=ConfigManager.getBoolean("runForAllLanguages", false);
+		
+		if(runForAllLanguages==false) {
+			System.out.println("In the run for all languages if condition");
+			LanguagesRowCount=ConfigManager.getInt("overideLanguageCount", defaultLanguageCount);
+			System.out.println("Row count is =="+LanguagesRowCount);
+		}
 
 		for(int languageIndex=1;languageIndex<LanguagesRowCount;languageIndex++) {
 
@@ -407,6 +432,15 @@ public class YtMasterTests extends BaseTest{
 
 		
 
+		int defaultLanguageCount=ConfigManager.getInt("overideLanguageCountDefault");
+		boolean runForAllLanguages=ConfigManager.getBoolean("runForAllLanguages", false);
+		
+		if(runForAllLanguages==false) {
+			System.out.println("In the run for all languages if condition");
+			LanguagesRowCount=ConfigManager.getInt("overideLanguageCount", defaultLanguageCount);
+			System.out.println("Row count is =="+LanguagesRowCount);
+		}
+		
 		for(int languageIndex=1;languageIndex<LanguagesRowCount;languageIndex++) {
 
 			String langText=reader.getCellValue(languageIndex, 0);
@@ -473,9 +507,20 @@ public class YtMasterTests extends BaseTest{
 		Thread.sleep(2000);
 
 		
+		
 		List<WebElement> locationList=landingPage.getLocationList();
-
-		for(int locationIndex=1;locationIndex<locationList.size();locationIndex++) {
+		int locationListSize=locationList.size();
+		
+		int defaultCountriesCount=ConfigManager.getInt("overideCountriesCountDefault");
+		boolean runForAllCountries=ConfigManager.getBoolean("runForAllCountries", false);
+		
+		if(runForAllCountries==false) {
+			System.out.println("In the run for all languages if condition");
+			locationListSize=ConfigManager.getInt("overideCountriesCount", defaultCountriesCount);
+			System.out.println("Row count is =="+locationListSize);
+		}
+		
+		for(int locationIndex=1;locationIndex<locationListSize;locationIndex++) {
 			locationList=landingPage.getLocationList();
 			String locationText=locationList.get(locationIndex).getText();
 			System.out.println(locationText+"    "+locationIndex);
@@ -535,6 +580,15 @@ public class YtMasterTests extends BaseTest{
 		
 
 
+		int defaultLanguageCount=ConfigManager.getInt("overideLanguageCountDefault");
+		boolean runForAllLanguages=ConfigManager.getBoolean("runForAllLanguages", false);
+		
+		if(runForAllLanguages==false) {
+			System.out.println("In the run for all languages if condition");
+			LanguagesRowCount=ConfigManager.getInt("overideLanguageCount", defaultLanguageCount);
+			System.out.println("Row count is =="+LanguagesRowCount);
+		}
+		
 		for(int languageIndex=1;languageIndex<LanguagesRowCount;languageIndex++) {
 			
 			landingPage.clickingSettingEllipsesButton();
@@ -601,6 +655,15 @@ public class YtMasterTests extends BaseTest{
 		genericUtility.clickEnter(landingPage.searchInputLandinfPage);
 
 		
+		
+		int defaultLanguageCount=ConfigManager.getInt("overideLanguageCountDefault");
+		boolean runForAllLanguages=ConfigManager.getBoolean("runForAllLanguages", false);
+		
+		if(runForAllLanguages==false) {
+			System.out.println("In the run for all languages if condition");
+			LanguagesRowCount=ConfigManager.getInt("overideLanguageCount", defaultLanguageCount);
+			System.out.println("Row count is =="+LanguagesRowCount);
+		}
 
 
 		for(int languageIndex=1;languageIndex<LanguagesRowCount;languageIndex++) {
