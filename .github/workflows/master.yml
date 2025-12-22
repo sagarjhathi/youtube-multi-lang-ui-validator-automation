@@ -26,6 +26,7 @@ jobs:
     timeout-minutes: 300
     env:
       REPORT_BASE: "/youtube-multi-lang-ui-validator-automation/"
+      IS_CRON: ${{ github.event_name == 'schedule' }}  # <-- "true" only for cron
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
