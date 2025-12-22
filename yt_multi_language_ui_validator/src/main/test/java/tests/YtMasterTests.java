@@ -10,6 +10,7 @@ import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 import main.test.java.retry.*;
 import main.java.yt_multi_lang_ui_validator.base.BaseTest;
+import main.java.yt_multi_lang_ui_validator.config.ConfigManager;
 import main.java.yt_multi_lang_ui_validator.fileReader.FileReader;
 import main.java.yt_multi_lang_ui_validator.fileWriter.ExcelFileWriter;
 import main.java.yt_multi_lang_ui_validator.fileWriter.FileWriter;
@@ -51,7 +52,17 @@ public class YtMasterTests extends BaseTest{
 		Thread.sleep(2000);
 		String testName = ThreadContext.get("logFileName");
 		int LanguagesRowCount= reader.getRowCount();
-
+		
+		
+		int defaultLanguageCount=ConfigManager.getInt("overideLanguageCountDefault");
+		boolean runForAllLanguages=ConfigManager.getBoolean("runForAllLanguages", false);
+		
+		if(runForAllLanguages==false) {
+			System.out.println("In the run for all languages if condition");
+			LanguagesRowCount=ConfigManager.getInt("overideLanguageCount", defaultLanguageCount);
+			System.out.println("Row count is =="+LanguagesRowCount);
+		}
+		
 
 		for(int languageIndex=1;languageIndex<LanguagesRowCount;languageIndex++) {
 
