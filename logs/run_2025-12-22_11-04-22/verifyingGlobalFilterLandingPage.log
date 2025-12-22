@@ -1,0 +1,194 @@
+2025-12-22 11:04:46.903 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] ===== STARTING TEST: verifyingGlobalFilterLandingPage  | Thread: 35 =====
+2025-12-22 11:04:46.923 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] No existing WebDriver found for current thread. Initializing a new ChromeDriver...
+2025-12-22 11:04:46.925 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] Loaded config from classpath: masterdata.properties
+2025-12-22 11:04:48.970 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] WebDriverManager: chromedriver setup OK
+2025-12-22 11:04:57.056 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] ChromeDriver initialized successfully for thread: 35
+2025-12-22 11:04:57.057 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] Driver initialized successfully for test: verifyingGlobalFilterLandingPage
+2025-12-22 11:04:57.212 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] SafeActions initialized with driver ChromeDriver: chrome on windows (f53a1d961b9b53dfd2aba06fbcb5adcb)
+2025-12-22 11:04:57.213 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] SafeActions initialized with driver ChromeDriver: chrome on windows (f53a1d961b9b53dfd2aba06fbcb5adcb)
+2025-12-22 11:04:57.213 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] Initialized YtLandingPage with driver: ChromeDriver: chrome on windows (f53a1d961b9b53dfd2aba06fbcb5adcb)
+2025-12-22 11:05:05.306 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] Opened YouTube landing page.
+2025-12-22 11:05:05.307 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] Giving input into the search bar with input as  = video
+2025-12-22 11:05:05.307 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Trying to click element: By.xpath: //input[@class='ytSearchboxComponentInput yt-searchbox-input title']
+2025-12-22 11:05:05.804 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Clicked successfully (attempt 1): By.xpath: //input[@class='ytSearchboxComponentInput yt-searchbox-input title']
+2025-12-22 11:05:06.055 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Trying to find element: By.xpath: //input[@class='ytSearchboxComponentInput yt-searchbox-input title']
+2025-12-22 11:05:06.223 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Element found and ready (attempt 1): By.xpath: //input[@class='ytSearchboxComponentInput yt-searchbox-input title']
+2025-12-22 11:05:07.441 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] clickEnter(By.xpath: //input[@class='ytSearchboxComponentInput yt-searchbox-input title'])
+2025-12-22 11:05:07.441 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Trying to find element: By.xpath: //input[@class='ytSearchboxComponentInput yt-searchbox-input title']
+2025-12-22 11:05:07.767 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Element found and ready (attempt 1): By.xpath: //input[@class='ytSearchboxComponentInput yt-searchbox-input title']
+2025-12-22 11:05:07.883 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] Sent ENTER to By.xpath: //input[@class='ytSearchboxComponentInput yt-searchbox-input title']
+2025-12-22 11:05:07.883 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] Clicking settings ellipses button...
+2025-12-22 11:05:07.884 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2025-12-22 11:05:07.977 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2025-12-22 11:05:10.191 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] Clicking language dropdown...
+2025-12-22 11:05:10.191 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Trying to find element: By.xpath: (//div[@id='content-icon'])[2]
+2025-12-22 11:05:11.277 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Element found and ready (attempt 1): By.xpath: (//div[@id='content-icon'])[2]
+2025-12-22 11:05:15.428 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] Looking for language element with name: Afrikaans
+2025-12-22 11:05:15.428 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Trying to find element: By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Afrikaans']
+2025-12-22 11:05:15.458 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Element found and ready (attempt 1): By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Afrikaans']
+2025-12-22 11:05:19.534 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] Clicking on global filter button in landing page..
+2025-12-22 11:05:19.535 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Trying to click element: By.xpath: //div[@id='filter-button']
+2025-12-22 11:05:19.996 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Clicked successfully (attempt 1): By.xpath: //div[@id='filter-button']
+2025-12-22 11:05:20.249 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] Fetching the data from the global filter in landing page
+2025-12-22 11:05:20.249 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Trying to find element: By.xpath: //ytd-search-filter-options-dialog-renderer[@class='style-scope ytd-popup-container']
+2025-12-22 11:05:20.282 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Element found and ready (attempt 1): By.xpath: //ytd-search-filter-options-dialog-renderer[@class='style-scope ytd-popup-container']
+2025-12-22 11:05:20.327 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] Closing the global filter pop-up in landing page..
+2025-12-22 11:05:20.328 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Trying to find element: By.xpath: //yt-icon[@icon='close']
+2025-12-22 11:05:20.365 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Element found and ready (attempt 1): By.xpath: //yt-icon[@icon='close']
+2025-12-22 11:05:20.438 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] Clicking settings ellipses button...
+2025-12-22 11:05:20.438 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2025-12-22 11:05:20.477 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2025-12-22 11:05:22.652 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] Clicking language dropdown...
+2025-12-22 11:05:22.652 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Trying to find element: By.xpath: (//div[@id='content-icon'])[2]
+2025-12-22 11:05:22.675 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Element found and ready (attempt 1): By.xpath: (//div[@id='content-icon'])[2]
+2025-12-22 11:05:26.028 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] Looking for language element with name: Azərbaycan
+2025-12-22 11:05:26.028 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Trying to find element: By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Azərbaycan']
+2025-12-22 11:05:26.055 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Element found and ready (attempt 1): By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Azərbaycan']
+2025-12-22 11:05:30.483 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] Clicking on global filter button in landing page..
+2025-12-22 11:05:30.483 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Trying to click element: By.xpath: //div[@id='filter-button']
+2025-12-22 11:05:30.913 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Clicked successfully (attempt 1): By.xpath: //div[@id='filter-button']
+2025-12-22 11:05:31.166 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] Fetching the data from the global filter in landing page
+2025-12-22 11:05:31.166 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Trying to find element: By.xpath: //ytd-search-filter-options-dialog-renderer[@class='style-scope ytd-popup-container']
+2025-12-22 11:05:31.192 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Element found and ready (attempt 1): By.xpath: //ytd-search-filter-options-dialog-renderer[@class='style-scope ytd-popup-container']
+2025-12-22 11:05:31.226 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] Closing the global filter pop-up in landing page..
+2025-12-22 11:05:31.227 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Trying to find element: By.xpath: //yt-icon[@icon='close']
+2025-12-22 11:05:31.252 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Element found and ready (attempt 1): By.xpath: //yt-icon[@icon='close']
+2025-12-22 11:05:31.322 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] Clicking settings ellipses button...
+2025-12-22 11:05:31.322 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2025-12-22 11:05:31.351 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2025-12-22 11:05:33.452 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] Clicking language dropdown...
+2025-12-22 11:05:33.452 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Trying to find element: By.xpath: (//div[@id='content-icon'])[2]
+2025-12-22 11:05:33.490 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Element found and ready (attempt 1): By.xpath: (//div[@id='content-icon'])[2]
+2025-12-22 11:05:36.785 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] Looking for language element with name: Bahasa Indonesia
+2025-12-22 11:05:36.785 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Trying to find element: By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Bahasa Indonesia']
+2025-12-22 11:05:36.810 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Element found and ready (attempt 1): By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Bahasa Indonesia']
+2025-12-22 11:05:40.729 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] Clicking on global filter button in landing page..
+2025-12-22 11:05:40.730 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Trying to click element: By.xpath: //div[@id='filter-button']
+2025-12-22 11:05:41.304 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Clicked successfully (attempt 1): By.xpath: //div[@id='filter-button']
+2025-12-22 11:05:41.555 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] Fetching the data from the global filter in landing page
+2025-12-22 11:05:41.555 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Trying to find element: By.xpath: //ytd-search-filter-options-dialog-renderer[@class='style-scope ytd-popup-container']
+2025-12-22 11:05:41.576 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Element found and ready (attempt 1): By.xpath: //ytd-search-filter-options-dialog-renderer[@class='style-scope ytd-popup-container']
+2025-12-22 11:05:41.602 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] Closing the global filter pop-up in landing page..
+2025-12-22 11:05:41.602 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Trying to find element: By.xpath: //yt-icon[@icon='close']
+2025-12-22 11:05:41.628 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Element found and ready (attempt 1): By.xpath: //yt-icon[@icon='close']
+2025-12-22 11:05:41.684 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] Clicking settings ellipses button...
+2025-12-22 11:05:41.684 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2025-12-22 11:05:41.713 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2025-12-22 11:05:43.844 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] Clicking language dropdown...
+2025-12-22 11:05:43.844 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Trying to find element: By.xpath: (//div[@id='content-icon'])[2]
+2025-12-22 11:05:43.923 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Element found and ready (attempt 1): By.xpath: (//div[@id='content-icon'])[2]
+2025-12-22 11:05:47.387 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] Looking for language element with name: Bosanski
+2025-12-22 11:05:47.387 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Trying to find element: By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Bosanski']
+2025-12-22 11:05:47.412 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Element found and ready (attempt 1): By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Bosanski']
+2025-12-22 11:05:51.343 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] Clicking on global filter button in landing page..
+2025-12-22 11:05:51.343 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Trying to click element: By.xpath: //div[@id='filter-button']
+2025-12-22 11:05:51.570 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Clicked successfully (attempt 1): By.xpath: //div[@id='filter-button']
+2025-12-22 11:05:51.821 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] Fetching the data from the global filter in landing page
+2025-12-22 11:05:51.821 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Trying to find element: By.xpath: //ytd-search-filter-options-dialog-renderer[@class='style-scope ytd-popup-container']
+2025-12-22 11:05:51.848 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Element found and ready (attempt 1): By.xpath: //ytd-search-filter-options-dialog-renderer[@class='style-scope ytd-popup-container']
+2025-12-22 11:05:51.896 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] Closing the global filter pop-up in landing page..
+2025-12-22 11:05:51.897 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Trying to find element: By.xpath: //yt-icon[@icon='close']
+2025-12-22 11:05:51.919 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Element found and ready (attempt 1): By.xpath: //yt-icon[@icon='close']
+2025-12-22 11:05:51.966 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] Clicking settings ellipses button...
+2025-12-22 11:05:51.967 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2025-12-22 11:05:52.000 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2025-12-22 11:05:54.090 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] Clicking language dropdown...
+2025-12-22 11:05:54.090 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Trying to find element: By.xpath: (//div[@id='content-icon'])[2]
+2025-12-22 11:05:54.127 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Element found and ready (attempt 1): By.xpath: (//div[@id='content-icon'])[2]
+2025-12-22 11:05:57.521 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] Looking for language element with name: Català
+2025-12-22 11:05:57.521 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Trying to find element: By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Català']
+2025-12-22 11:05:57.558 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Element found and ready (attempt 1): By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Català']
+2025-12-22 11:06:01.728 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] Clicking on global filter button in landing page..
+2025-12-22 11:06:01.728 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Trying to click element: By.xpath: //div[@id='filter-button']
+2025-12-22 11:06:01.949 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Clicked successfully (attempt 1): By.xpath: //div[@id='filter-button']
+2025-12-22 11:06:02.201 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] Fetching the data from the global filter in landing page
+2025-12-22 11:06:02.201 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Trying to find element: By.xpath: //ytd-search-filter-options-dialog-renderer[@class='style-scope ytd-popup-container']
+2025-12-22 11:06:02.233 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Element found and ready (attempt 1): By.xpath: //ytd-search-filter-options-dialog-renderer[@class='style-scope ytd-popup-container']
+2025-12-22 11:06:02.265 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] Closing the global filter pop-up in landing page..
+2025-12-22 11:06:02.265 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Trying to find element: By.xpath: //yt-icon[@icon='close']
+2025-12-22 11:06:02.294 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Element found and ready (attempt 1): By.xpath: //yt-icon[@icon='close']
+2025-12-22 11:06:02.357 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] Clicking settings ellipses button...
+2025-12-22 11:06:02.357 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2025-12-22 11:06:02.398 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2025-12-22 11:06:04.501 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] Clicking language dropdown...
+2025-12-22 11:06:04.501 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Trying to find element: By.xpath: (//div[@id='content-icon'])[2]
+2025-12-22 11:06:04.527 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Element found and ready (attempt 1): By.xpath: (//div[@id='content-icon'])[2]
+2025-12-22 11:06:08.170 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] Looking for language element with name: Dansk
+2025-12-22 11:06:08.171 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Trying to find element: By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Dansk']
+2025-12-22 11:06:08.208 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Element found and ready (attempt 1): By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Dansk']
+2025-12-22 11:06:12.189 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] Clicking on global filter button in landing page..
+2025-12-22 11:06:12.189 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Trying to click element: By.xpath: //div[@id='filter-button']
+2025-12-22 11:06:12.412 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Clicked successfully (attempt 1): By.xpath: //div[@id='filter-button']
+2025-12-22 11:06:12.664 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] Fetching the data from the global filter in landing page
+2025-12-22 11:06:12.664 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Trying to find element: By.xpath: //ytd-search-filter-options-dialog-renderer[@class='style-scope ytd-popup-container']
+2025-12-22 11:06:12.692 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Element found and ready (attempt 1): By.xpath: //ytd-search-filter-options-dialog-renderer[@class='style-scope ytd-popup-container']
+2025-12-22 11:06:12.728 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] Closing the global filter pop-up in landing page..
+2025-12-22 11:06:12.729 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Trying to find element: By.xpath: //yt-icon[@icon='close']
+2025-12-22 11:06:12.761 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Element found and ready (attempt 1): By.xpath: //yt-icon[@icon='close']
+2025-12-22 11:06:12.867 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] Clicking settings ellipses button...
+2025-12-22 11:06:12.868 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2025-12-22 11:06:12.897 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2025-12-22 11:06:15.004 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] Clicking language dropdown...
+2025-12-22 11:06:15.004 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Trying to find element: By.xpath: (//div[@id='content-icon'])[2]
+2025-12-22 11:06:15.062 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Element found and ready (attempt 1): By.xpath: (//div[@id='content-icon'])[2]
+2025-12-22 11:06:18.634 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] Looking for language element with name: Deutsch
+2025-12-22 11:06:18.634 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Trying to find element: By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Deutsch']
+2025-12-22 11:06:18.660 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Element found and ready (attempt 1): By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Deutsch']
+2025-12-22 11:06:23.012 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] Clicking on global filter button in landing page..
+2025-12-22 11:06:23.012 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Trying to click element: By.xpath: //div[@id='filter-button']
+2025-12-22 11:06:23.236 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Clicked successfully (attempt 1): By.xpath: //div[@id='filter-button']
+2025-12-22 11:06:23.487 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] Fetching the data from the global filter in landing page
+2025-12-22 11:06:23.487 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Trying to find element: By.xpath: //ytd-search-filter-options-dialog-renderer[@class='style-scope ytd-popup-container']
+2025-12-22 11:06:23.518 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Element found and ready (attempt 1): By.xpath: //ytd-search-filter-options-dialog-renderer[@class='style-scope ytd-popup-container']
+2025-12-22 11:06:23.554 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] Closing the global filter pop-up in landing page..
+2025-12-22 11:06:23.554 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Trying to find element: By.xpath: //yt-icon[@icon='close']
+2025-12-22 11:06:23.586 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Element found and ready (attempt 1): By.xpath: //yt-icon[@icon='close']
+2025-12-22 11:06:23.682 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] Clicking settings ellipses button...
+2025-12-22 11:06:23.683 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2025-12-22 11:06:23.715 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2025-12-22 11:06:25.832 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] Clicking language dropdown...
+2025-12-22 11:06:25.832 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Trying to find element: By.xpath: (//div[@id='content-icon'])[2]
+2025-12-22 11:06:25.857 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Element found and ready (attempt 1): By.xpath: (//div[@id='content-icon'])[2]
+2025-12-22 11:06:29.346 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] Looking for language element with name: Eesti
+2025-12-22 11:06:29.346 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Trying to find element: By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Eesti']
+2025-12-22 11:06:29.371 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Element found and ready (attempt 1): By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Eesti']
+2025-12-22 11:06:33.662 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] Clicking on global filter button in landing page..
+2025-12-22 11:06:33.662 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Trying to click element: By.xpath: //div[@id='filter-button']
+2025-12-22 11:06:33.905 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Clicked successfully (attempt 1): By.xpath: //div[@id='filter-button']
+2025-12-22 11:06:34.156 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] Fetching the data from the global filter in landing page
+2025-12-22 11:06:34.156 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Trying to find element: By.xpath: //ytd-search-filter-options-dialog-renderer[@class='style-scope ytd-popup-container']
+2025-12-22 11:06:34.194 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Element found and ready (attempt 1): By.xpath: //ytd-search-filter-options-dialog-renderer[@class='style-scope ytd-popup-container']
+2025-12-22 11:06:34.234 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] Closing the global filter pop-up in landing page..
+2025-12-22 11:06:34.235 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Trying to find element: By.xpath: //yt-icon[@icon='close']
+2025-12-22 11:06:34.264 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Element found and ready (attempt 1): By.xpath: //yt-icon[@icon='close']
+2025-12-22 11:06:34.327 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] Clicking settings ellipses button...
+2025-12-22 11:06:34.327 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2025-12-22 11:06:34.367 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2025-12-22 11:06:36.466 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] Clicking language dropdown...
+2025-12-22 11:06:36.466 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Trying to find element: By.xpath: (//div[@id='content-icon'])[2]
+2025-12-22 11:06:36.489 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Element found and ready (attempt 1): By.xpath: (//div[@id='content-icon'])[2]
+2025-12-22 11:06:39.947 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] Looking for language element with name: English (India)
+2025-12-22 11:06:39.947 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Trying to find element: By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='English (India)']
+2025-12-22 11:06:39.973 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Element found and ready (attempt 1): By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='English (India)']
+2025-12-22 11:06:43.829 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] Clicking on global filter button in landing page..
+2025-12-22 11:06:43.829 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Trying to click element: By.xpath: //div[@id='filter-button']
+2025-12-22 11:06:44.226 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Clicked successfully (attempt 1): By.xpath: //div[@id='filter-button']
+2025-12-22 11:06:44.476 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] Fetching the data from the global filter in landing page
+2025-12-22 11:06:44.476 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Trying to find element: By.xpath: //ytd-search-filter-options-dialog-renderer[@class='style-scope ytd-popup-container']
+2025-12-22 11:06:44.503 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Element found and ready (attempt 1): By.xpath: //ytd-search-filter-options-dialog-renderer[@class='style-scope ytd-popup-container']
+2025-12-22 11:06:44.539 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] Closing the global filter pop-up in landing page..
+2025-12-22 11:06:44.539 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Trying to find element: By.xpath: //yt-icon[@icon='close']
+2025-12-22 11:06:44.566 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Element found and ready (attempt 1): By.xpath: //yt-icon[@icon='close']
+2025-12-22 11:06:44.651 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] Clicking on global filter button in landing page..
+2025-12-22 11:06:44.651 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Trying to click element: By.xpath: //div[@id='filter-button']
+2025-12-22 11:06:44.820 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Clicked successfully (attempt 1): By.xpath: //div[@id='filter-button']
+2025-12-22 11:06:45.071 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] Fetching the data from the global filter in landing page
+2025-12-22 11:06:45.071 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Trying to find element: By.xpath: //ytd-search-filter-options-dialog-renderer[@class='style-scope ytd-popup-container']
+2025-12-22 11:06:45.096 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Element found and ready (attempt 1): By.xpath: //ytd-search-filter-options-dialog-renderer[@class='style-scope ytd-popup-container']
+2025-12-22 11:06:45.129 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] Closing the global filter pop-up in landing page..
+2025-12-22 11:06:45.129 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Trying to find element: By.xpath: //yt-icon[@icon='close']
+2025-12-22 11:06:45.153 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] [verifyingGlobalFilterLandingPage] Element found and ready (attempt 1): By.xpath: //yt-icon[@icon='close']
+2025-12-22 11:06:45.226 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] Test PASSED: verifyingGlobalFilterLandingPage
+2025-12-22 11:06:45.226 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] Closing WebDriver for thread: 35
+2025-12-22 11:06:45.833 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] WebDriver instance removed from ThreadLocal for thread: 35
+2025-12-22 11:06:45.833 [TestNG-test-Smoke Tests-2] INFO  [verifyingGlobalFilterLandingPage] Driver closed for test: verifyingGlobalFilterLandingPage
