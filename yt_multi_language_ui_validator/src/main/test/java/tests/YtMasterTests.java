@@ -719,7 +719,7 @@ public class YtMasterTests extends BaseTest{
 
 		
 		landingPage.openingLandingPage();
-		landingPage.givingInputUnderSearchBar("video");
+		landingPage.givingInputUnderSearchBar("youtube");
 		genericUtility.clickEnter(landingPage.searchInputLandinfPage);
 
 		
@@ -819,7 +819,7 @@ public class YtMasterTests extends BaseTest{
 		
 
 		landingPage.openingLandingPage();
-		landingPage.givingInputUnderSearchBar("video");
+		landingPage.givingInputUnderSearchBar("youtube");
 		genericUtility.clickEnter(landingPage.searchInputLandinfPage);
 
 		
