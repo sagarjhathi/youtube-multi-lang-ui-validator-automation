@@ -67,25 +67,159 @@ This enables reliable **localization testing** for a highly dynamic, real-world 
 
 ## 4. Project Architecture Overview
 
-yt_multi_language_ui_validator/
-│
-├── base/ # Base test and page setup
-├── config/ # Configuration management
-├── driverManager/ # WebDriver lifecycle & thread safety
-├── pages/ # Page Object Model (YouTube UI)
-├── safeActions/ # Resilient UI interactions
-├── utilities/ # Common helpers (language, waits, screenshots)
-├── lingua/ # Language detection utilities
-├── fileReader/ # Excel data reader
-├── fileWriter/ # Excel output utilities
-├── reporting/ # Extent Reports & TestNG listeners
-├── logger/ # Logging setup
-├── tests/ # Test scenarios
-├── resources/ # Test data & configuration
-└── .github/workflows/ # CI pipeline
+┌───────────────────────────────────────────┐
+│               Test Layer                  │
+│                                           │
+│  tests/                                   │
+│  └── Yt*Tests.java                        │
+│       └─ Orchestrates test scenarios      │
+└───────────────────────────────────────────┘
+                    │
+                    ▼
+┌───────────────────────────────────────────┐
+│           Base & Framework Layer           │
+│                                           │
+│  base/                                    │
+│  ├── BaseTest                             │
+│  └── BasePage                             │
+│                                           │
+│  driverManager/                           │
+│  └── DriverManager (Thread-Safe)          │
+└───────────────────────────────────────────┘
+                    │
+                    ▼
+┌───────────────────────────────────────────┐
+│            Page Object Layer               │
+│                                           │
+│  pages/                                   │
+│  ├── YtLandingPage                        │
+│  └── YtInnerPage                          │
+│                                           │
+│  safeActions/                             │
+│  └── SafeActions (Retry / JS fallback)    │
+└───────────────────────────────────────────┘
+                    │
+                    ▼
+┌───────────────────────────────────────────┐
+│         Validation & Utility Layer         │
+│                                           │
+│  fileReader/                              │
+│  └── ExcelFileReader                      │
+│                                           │
+│  lingua/                                  │
+│  └── LinguaHelper                         │
+│                                           │
+│  utilities/                               │
+│  ├── WaitUtility                          │
+│  ├── GenericUtility                      │
+│  └── ScreenshotUtility                   │
+└───────────────────────────────────────────┘
+                    │
+                    ▼
+┌───────────────────────────────────────────┐
+│        Reporting & Observability           │
+│                                           │
+│  reporting/                               │
+│  ├── ExtentManager                        │
+│  └── TestNGListeners                     │
+│                                           │
+│  logger/                                  │
+│  └── Log4j2 Configuration                 │
+└───────────────────────────────────────────┘
+                    │
+                    ▼
+┌───────────────────────────────────────────┐
+│              CI / Execution                │
+│                                           │
+│  .github/workflows/                        │
+│  └── GitHub Actions Pipeline               │
+│                                           │
+│  resources/                                │
+│  ├── config.properties                    │
+│  └── testdata (Excel files)               │
+└───────────────────────────────────────────┘
+
 
 
 ---
+
+┌──────────────┐
+│ TestNG XML   │
+│ (CI / Local) │
+└──────┬───────┘
+       ▼
+┌────────────────────┐
+│ BaseTest.setUp()   │
+│ - Load config      │
+│ - Init Driver      │
+│ - Init logging     │
+└──────┬─────────────┘
+       ▼
+┌────────────────────┐
+│ DriverManager      │
+│ - ThreadLocal WD   │
+│ - Browser setup    │
+└──────┬─────────────┘
+       ▼
+┌────────────────────┐
+│ Test Class         │
+│ (Yt*Tests)         │
+└──────┬─────────────┘
+       ▼
+┌────────────────────┐
+│ Page Objects       │
+│ - YtLandingPage    │
+│ - YtInnerPage      │
+└──────┬─────────────┘
+       ▼
+┌────────────────────┐
+│ SafeActions        │
+│ - Retry clicks     │
+│ - Explicit waits   │
+│ - JS fallback      │
+└──────┬─────────────┘
+       ▼
+┌──────────────────────────┐
+│ Read Expected Data       │
+│ - Excel (FileReader)    │
+└──────┬──────────────────┘
+       ▼
+┌──────────────────────────┐
+│ Apply Language / Region  │
+│ - UI interaction         │
+└──────┬──────────────────┘
+       ▼
+┌──────────────────────────┐
+│ Capture Actual UI Text   │
+│ - Menus / Filters        │
+└──────┬──────────────────┘
+       ▼
+┌──────────────────────────┐
+│ Localization Validation  │
+│ - Language Detection     │
+│ - HTML lang attribute    │
+└──────┬──────────────────┘
+       ▼
+┌──────────────────────────┐
+│ Assertions               │
+│ - Expected vs Actual     │
+└──────┬──────────────────┘
+       ▼
+┌──────────────────────────┐
+│ Reporting & Logging      │
+│ - Extent Report          │
+│ - Screenshots            │
+│ - Log4j logs             │
+└──────┬──────────────────┘
+       ▼
+┌──────────────────────────┐
+│ BaseTest.tearDown()      │
+│ - Quit driver            │
+│ - Flush reports          │
+└──────────────────────────┘
+
+
+
 
 ## 5. Core Components Explained
 
