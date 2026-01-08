@@ -67,7 +67,6 @@ This enables reliable **localization testing** for a highly dynamic, real-world 
 
 ## 4. Project Architecture Overview
 
-```text
 yt_multi_language_ui_validator/
 ├── base/
 │   ├── BaseTest.java
@@ -120,6 +119,8 @@ yt_multi_language_ui_validator/
 └── .github/
     └── workflows/
         └── ci.yml
+
+
 
 
 
