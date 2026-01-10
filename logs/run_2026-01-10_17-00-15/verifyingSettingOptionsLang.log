@@ -1,0 +1,464 @@
+2026-01-10 17:04:50.613 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] ===== STARTING TEST: verifyingSettingOptionsLang  | Thread: 35 =====
+2026-01-10 17:04:50.618 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] No existing WebDriver found for current thread. Initializing a new ChromeDriver...
+2026-01-10 17:04:50.638 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] WebDriverManager: chromedriver setup OK
+2026-01-10 17:04:52.102 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] ChromeDriver initialized successfully for thread: 35
+2026-01-10 17:04:52.102 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] Driver initialized successfully for test: verifyingSettingOptionsLang
+2026-01-10 17:04:52.104 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] SafeActions initialized with driver ChromeDriver: chrome on windows (accf1c38b5ad9df693033852c757d86c)
+2026-01-10 17:04:52.104 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] Initialized YtLandingPage with driver: ChromeDriver: chrome on windows (accf1c38b5ad9df693033852c757d86c)
+2026-01-10 17:04:52.104 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] SafeActions initialized with driver ChromeDriver: chrome on windows (accf1c38b5ad9df693033852c757d86c)
+2026-01-10 17:04:52.361 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] Opened YouTube landing page.
+2026-01-10 17:04:52.362 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] Clicking settings ellipses button...
+2026-01-10 17:04:52.362 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-10 17:04:54.204 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-10 17:04:55.461 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] Clicking language dropdown...
+2026-01-10 17:04:55.461 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Trying to find element: By.xpath: (//div[@id='content-icon'])[2]
+2026-01-10 17:04:55.595 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Element found and ready (attempt 1): By.xpath: (//div[@id='content-icon'])[2]
+2026-01-10 17:04:57.068 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Execution is Not CRON Job Hence refering to normal keys from UtilData
+2026-01-10 17:04:58.117 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] Looking for language element with name: Afrikaans
+2026-01-10 17:04:58.117 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Trying to find element: By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Afrikaans']
+2026-01-10 17:04:58.303 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Element found and ready (attempt 1): By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Afrikaans']
+2026-01-10 17:05:00.766 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] Clicking settings ellipses button...
+2026-01-10 17:05:00.767 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-10 17:05:00.853 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-10 17:05:01.323 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] Looking for language element with name: Afrikaans
+2026-01-10 17:05:01.325 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Waiting until element is visible in viewport
+2026-01-10 17:05:11.688 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Capturing screenshot: Filter Applied is Afrikaans__2026-01-10_170511.png
+2026-01-10 17:05:11.786 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Screenshot saved at: test-output/screenshots/Run_2026-01-10_17-00-15/verifyingSettingOptionsLang/Filter Applied is Afrikaans__2026-01-10_170511.png
+2026-01-10 17:05:11.786 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] Clicking settings ellipses button...
+2026-01-10 17:05:11.786 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-10 17:05:11.809 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-10 17:05:13.865 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] Clicking settings ellipses button...
+2026-01-10 17:05:13.865 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-10 17:05:13.888 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-10 17:05:14.961 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] Getting the setting ellipses options
+2026-01-10 17:05:14.962 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Trying to find element: By.xpath: //ytd-multi-page-menu-renderer
+2026-01-10 17:05:14.993 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Element found and ready (attempt 1): By.xpath: //ytd-multi-page-menu-renderer
+2026-01-10 17:05:15.065 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] Clicking settings ellipses button...
+2026-01-10 17:05:15.065 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-10 17:05:15.089 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-10 17:05:15.186 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] 
+========== LANGUAGE DETECTION ==========
+Detected Language : AFRIKAANS
+Input Text        : Jou data in YouTube
+Voorkoms: Toesteltema
+Vertoontaal:
+Afrikaans
+Beperkmodus: Af
+Ligging:
+Verenigde State
+Kortpadsleutels
+Instellings
+Hulp
+Stuur terugvoer
+========================================
+2026-01-10 17:05:15.187 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] getExpectedLangageViaApplicableLangInput(Afrikaans)
+2026-01-10 17:05:15.187 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] Expected language for 'Afrikaans' -> AFRIKAANS
+2026-01-10 17:05:15.187 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] getLangAttributeViaLanguageInput(Afrikaans)
+2026-01-10 17:05:15.188 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] Mapped Afrikaans -> af-ZA
+2026-01-10 17:05:15.188 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] getLangAttribute() - locating <html> and reading lang property
+2026-01-10 17:05:15.213 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] Language attribute read: af-ZA
+2026-01-10 17:05:15.213 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] Clicking settings ellipses button...
+2026-01-10 17:05:15.213 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-10 17:05:15.242 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-10 17:05:17.320 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] Clicking language dropdown...
+2026-01-10 17:05:17.320 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Trying to find element: By.xpath: (//div[@id='content-icon'])[2]
+2026-01-10 17:05:17.340 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Element found and ready (attempt 1): By.xpath: (//div[@id='content-icon'])[2]
+2026-01-10 17:05:20.741 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] Looking for language element with name: Azərbaycan
+2026-01-10 17:05:20.741 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Trying to find element: By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Azərbaycan']
+2026-01-10 17:05:20.768 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Element found and ready (attempt 1): By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Azərbaycan']
+2026-01-10 17:05:22.138 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] Clicking settings ellipses button...
+2026-01-10 17:05:22.138 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-10 17:05:22.396 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-10 17:05:23.061 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] Looking for language element with name: Azərbaycan
+2026-01-10 17:05:23.063 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Waiting until element is visible in viewport
+2026-01-10 17:05:33.476 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Capturing screenshot: Filter Applied is Azərbaycan__2026-01-10_170533.png
+2026-01-10 17:05:33.542 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Screenshot saved at: test-output/screenshots/Run_2026-01-10_17-00-15/verifyingSettingOptionsLang/Filter Applied is Azərbaycan__2026-01-10_170533.png
+2026-01-10 17:05:33.542 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] Clicking settings ellipses button...
+2026-01-10 17:05:33.542 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-10 17:05:33.563 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-10 17:05:35.619 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] Clicking settings ellipses button...
+2026-01-10 17:05:35.619 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-10 17:05:35.641 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-10 17:05:36.707 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] Getting the setting ellipses options
+2026-01-10 17:05:36.707 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Trying to find element: By.xpath: //ytd-multi-page-menu-renderer
+2026-01-10 17:05:36.729 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Element found and ready (attempt 1): By.xpath: //ytd-multi-page-menu-renderer
+2026-01-10 17:05:36.781 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] Clicking settings ellipses button...
+2026-01-10 17:05:36.781 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-10 17:05:36.800 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-10 17:05:36.867 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] 
+========== LANGUAGE DETECTION ==========
+Detected Language : AZERBAIJANI
+Input Text        : YouTube Datanız
+Görünüş: Cihaz teması
+Displey dili:
+azərbaycan
+Limitli Rejim: Deaktiv
+Məkan:
+Amerika Birləşmiş Ştatları
+Klaviatura qısayolları
+Ayarlar
+Yardım
+Rəy göndərin
+========================================
+2026-01-10 17:05:36.867 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] getExpectedLangageViaApplicableLangInput(Azərbaycan)
+2026-01-10 17:05:36.867 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] Expected language for 'Azərbaycan' -> AZERBAIJANI
+2026-01-10 17:05:36.867 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] getLangAttributeViaLanguageInput(Azərbaycan)
+2026-01-10 17:05:36.867 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] Mapped Azərbaycan -> az-Latn-AZ
+2026-01-10 17:05:36.867 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] getLangAttribute() - locating <html> and reading lang property
+2026-01-10 17:05:36.882 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] Language attribute read: az-Latn-AZ
+2026-01-10 17:05:36.882 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] Clicking settings ellipses button...
+2026-01-10 17:05:36.882 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-10 17:05:36.905 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-10 17:05:38.965 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] Clicking language dropdown...
+2026-01-10 17:05:38.965 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Trying to find element: By.xpath: (//div[@id='content-icon'])[2]
+2026-01-10 17:05:39.056 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Element found and ready (attempt 1): By.xpath: (//div[@id='content-icon'])[2]
+2026-01-10 17:05:42.721 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] Looking for language element with name: Bahasa Indonesia
+2026-01-10 17:05:42.721 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Trying to find element: By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Bahasa Indonesia']
+2026-01-10 17:05:42.747 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Element found and ready (attempt 1): By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Bahasa Indonesia']
+2026-01-10 17:05:43.888 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] Clicking settings ellipses button...
+2026-01-10 17:05:43.889 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-10 17:05:44.215 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-10 17:05:44.449 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] Looking for language element with name: Bahasa Indonesia
+2026-01-10 17:05:44.449 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Waiting until element is visible in viewport
+2026-01-10 17:05:54.468 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Capturing screenshot: Filter Applied is Bahasa Indonesia__2026-01-10_170554.png
+2026-01-10 17:05:54.579 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Screenshot saved at: test-output/screenshots/Run_2026-01-10_17-00-15/verifyingSettingOptionsLang/Filter Applied is Bahasa Indonesia__2026-01-10_170554.png
+2026-01-10 17:05:54.579 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] Clicking settings ellipses button...
+2026-01-10 17:05:54.579 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-10 17:05:54.601 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-10 17:05:56.653 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] Clicking settings ellipses button...
+2026-01-10 17:05:56.653 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-10 17:05:56.671 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-10 17:05:57.727 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] Getting the setting ellipses options
+2026-01-10 17:05:57.727 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Trying to find element: By.xpath: //ytd-multi-page-menu-renderer
+2026-01-10 17:05:57.808 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Element found and ready (attempt 1): By.xpath: //ytd-multi-page-menu-renderer
+2026-01-10 17:05:57.843 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] Clicking settings ellipses button...
+2026-01-10 17:05:57.843 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-10 17:05:57.862 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-10 17:05:57.919 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] 
+========== LANGUAGE DETECTION ==========
+Detected Language : INDONESIAN
+Input Text        : Data Anda di YouTube
+Tampilan: Tema perangkat
+Bahasa tampilan:
+Indonesia
+Mode Terbatas: Nonaktif
+Lokasi:
+Amerika Serikat
+Pintasan keyboard
+Setelan
+Bantuan
+Kirim masukan
+========================================
+2026-01-10 17:05:57.919 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] getExpectedLangageViaApplicableLangInput(Bahasa Indonesia)
+2026-01-10 17:05:57.920 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] Expected language for 'Bahasa Indonesia' -> INDONESIAN
+2026-01-10 17:05:57.920 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] getLangAttributeViaLanguageInput(Bahasa Indonesia)
+2026-01-10 17:05:57.920 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] Mapped Bahasa Indonesia -> id-ID
+2026-01-10 17:05:57.920 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] getLangAttribute() - locating <html> and reading lang property
+2026-01-10 17:05:57.936 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] Language attribute read: id-ID
+2026-01-10 17:05:57.936 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] Clicking settings ellipses button...
+2026-01-10 17:05:57.937 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-10 17:05:57.958 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-10 17:06:00.024 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] Clicking language dropdown...
+2026-01-10 17:06:00.025 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Trying to find element: By.xpath: (//div[@id='content-icon'])[2]
+2026-01-10 17:06:00.050 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Element found and ready (attempt 1): By.xpath: (//div[@id='content-icon'])[2]
+2026-01-10 17:06:03.389 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] Looking for language element with name: Bosanski
+2026-01-10 17:06:03.389 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Trying to find element: By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Bosanski']
+2026-01-10 17:06:03.413 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Element found and ready (attempt 1): By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Bosanski']
+2026-01-10 17:06:04.474 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] Clicking settings ellipses button...
+2026-01-10 17:06:04.476 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-10 17:06:05.053 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-10 17:06:05.365 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] Looking for language element with name: Bosanski
+2026-01-10 17:06:05.365 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Waiting until element is visible in viewport
+2026-01-10 17:06:15.576 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Capturing screenshot: Filter Applied is Bosanski__2026-01-10_170615.png
+2026-01-10 17:06:15.687 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Screenshot saved at: test-output/screenshots/Run_2026-01-10_17-00-15/verifyingSettingOptionsLang/Filter Applied is Bosanski__2026-01-10_170615.png
+2026-01-10 17:06:15.687 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] Clicking settings ellipses button...
+2026-01-10 17:06:15.687 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-10 17:06:15.710 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-10 17:06:17.765 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] Clicking settings ellipses button...
+2026-01-10 17:06:17.765 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-10 17:06:17.784 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-10 17:06:18.839 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] Getting the setting ellipses options
+2026-01-10 17:06:18.839 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Trying to find element: By.xpath: //ytd-multi-page-menu-renderer
+2026-01-10 17:06:18.858 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Element found and ready (attempt 1): By.xpath: //ytd-multi-page-menu-renderer
+2026-01-10 17:06:18.896 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] Clicking settings ellipses button...
+2026-01-10 17:06:18.896 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-10 17:06:18.914 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-10 17:06:18.967 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] 
+========== LANGUAGE DETECTION ==========
+Detected Language : BOSNIAN
+Input Text        : Vaši podaci na YouTubeu
+Izgled: tema uređaja
+Jezik prikaza:
+bosanski
+Ograničeni način rada: isključeno
+Lokacija:
+Sjedinjene Američke Države
+Prečice na tastaturi
+Postavke
+Pomoć
+Pošaljite povratne informacije
+========================================
+2026-01-10 17:06:18.967 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] getExpectedLangageViaApplicableLangInput(Bosanski)
+2026-01-10 17:06:18.967 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] Expected language for 'Bosanski' -> CROATIAN
+2026-01-10 17:06:18.967 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] getLangAttributeViaLanguageInput(Bosanski)
+2026-01-10 17:06:18.967 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] Mapped Bosanski -> bs-Latn-BA
+2026-01-10 17:06:18.967 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] getLangAttribute() - locating <html> and reading lang property
+2026-01-10 17:06:18.981 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] Language attribute read: bs-Latn-BA
+2026-01-10 17:06:18.981 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] Clicking settings ellipses button...
+2026-01-10 17:06:18.981 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-10 17:06:19.000 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-10 17:06:21.053 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] Clicking language dropdown...
+2026-01-10 17:06:21.053 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Trying to find element: By.xpath: (//div[@id='content-icon'])[2]
+2026-01-10 17:06:21.074 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Element found and ready (attempt 1): By.xpath: (//div[@id='content-icon'])[2]
+2026-01-10 17:06:24.474 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] Looking for language element with name: Català
+2026-01-10 17:06:24.474 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Trying to find element: By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Català']
+2026-01-10 17:06:24.499 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Element found and ready (attempt 1): By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Català']
+2026-01-10 17:06:25.743 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] Clicking settings ellipses button...
+2026-01-10 17:06:25.743 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-10 17:06:26.166 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-10 17:06:26.477 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] Looking for language element with name: Català
+2026-01-10 17:06:26.477 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Waiting until element is visible in viewport
+2026-01-10 17:06:36.808 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Capturing screenshot: Filter Applied is Català__2026-01-10_170636.png
+2026-01-10 17:06:36.915 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Screenshot saved at: test-output/screenshots/Run_2026-01-10_17-00-15/verifyingSettingOptionsLang/Filter Applied is Català__2026-01-10_170636.png
+2026-01-10 17:06:36.915 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] Clicking settings ellipses button...
+2026-01-10 17:06:36.915 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-10 17:06:36.940 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-10 17:06:38.998 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] Clicking settings ellipses button...
+2026-01-10 17:06:38.998 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-10 17:06:39.018 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-10 17:06:40.080 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] Getting the setting ellipses options
+2026-01-10 17:06:40.080 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Trying to find element: By.xpath: //ytd-multi-page-menu-renderer
+2026-01-10 17:06:40.100 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Element found and ready (attempt 1): By.xpath: //ytd-multi-page-menu-renderer
+2026-01-10 17:06:40.185 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] Clicking settings ellipses button...
+2026-01-10 17:06:40.185 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-10 17:06:40.204 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-10 17:06:40.259 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] 
+========== LANGUAGE DETECTION ==========
+Detected Language : CATALAN
+Input Text        : Les teves dades a YouTube
+Aparença: tema del dispositiu
+Idioma de visualització:
+català
+Mode restringit: desactivat
+Ubicació:
+Estats Units
+Tecles de drecera
+Configuració
+Ajuda
+Envia suggeriments
+========================================
+2026-01-10 17:06:40.259 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] getExpectedLangageViaApplicableLangInput(Català)
+2026-01-10 17:06:40.260 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] Expected language for 'Català' -> CATALAN
+2026-01-10 17:06:40.260 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] getLangAttributeViaLanguageInput(Català)
+2026-01-10 17:06:40.260 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] Mapped Català -> ca-ES
+2026-01-10 17:06:40.260 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] getLangAttribute() - locating <html> and reading lang property
+2026-01-10 17:06:40.274 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] Language attribute read: ca-ES
+2026-01-10 17:06:40.274 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] Clicking settings ellipses button...
+2026-01-10 17:06:40.274 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-10 17:06:40.303 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-10 17:06:42.361 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] Clicking language dropdown...
+2026-01-10 17:06:42.361 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Trying to find element: By.xpath: (//div[@id='content-icon'])[2]
+2026-01-10 17:06:42.381 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Element found and ready (attempt 1): By.xpath: (//div[@id='content-icon'])[2]
+2026-01-10 17:06:45.782 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] Looking for language element with name: Dansk
+2026-01-10 17:06:45.782 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Trying to find element: By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Dansk']
+2026-01-10 17:06:45.806 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Element found and ready (attempt 1): By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Dansk']
+2026-01-10 17:06:47.050 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] Clicking settings ellipses button...
+2026-01-10 17:06:47.050 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-10 17:06:47.335 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-10 17:06:47.594 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] Looking for language element with name: Dansk
+2026-01-10 17:06:47.594 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Waiting until element is visible in viewport
+2026-01-10 17:06:58.019 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Capturing screenshot: Filter Applied is Dansk__2026-01-10_170658.png
+2026-01-10 17:06:58.152 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Screenshot saved at: test-output/screenshots/Run_2026-01-10_17-00-15/verifyingSettingOptionsLang/Filter Applied is Dansk__2026-01-10_170658.png
+2026-01-10 17:06:58.152 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] Clicking settings ellipses button...
+2026-01-10 17:06:58.153 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-10 17:06:58.182 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-10 17:07:00.246 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] Clicking settings ellipses button...
+2026-01-10 17:07:00.246 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-10 17:07:00.266 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-10 17:07:01.331 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] Getting the setting ellipses options
+2026-01-10 17:07:01.331 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Trying to find element: By.xpath: //ytd-multi-page-menu-renderer
+2026-01-10 17:07:01.355 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Element found and ready (attempt 1): By.xpath: //ytd-multi-page-menu-renderer
+2026-01-10 17:07:01.401 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] Clicking settings ellipses button...
+2026-01-10 17:07:01.401 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-10 17:07:01.420 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-10 17:07:01.473 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] 
+========== LANGUAGE DETECTION ==========
+Detected Language : DANISH
+Input Text        : Dine data på YouTube
+Udseende: Enhedens tema
+Visningssprog:
+dansk
+Begrænset tilstand: Fra
+Lokation:
+USA
+Tastaturgenveje
+Indstillinger
+Hjælp
+Send feedback
+========================================
+2026-01-10 17:07:01.473 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] getExpectedLangageViaApplicableLangInput(Dansk)
+2026-01-10 17:07:01.473 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] Expected language for 'Dansk' -> DANISH
+2026-01-10 17:07:01.473 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] getLangAttributeViaLanguageInput(Dansk)
+2026-01-10 17:07:01.473 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] Mapped Dansk -> da-DK
+2026-01-10 17:07:01.473 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] getLangAttribute() - locating <html> and reading lang property
+2026-01-10 17:07:01.491 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] Language attribute read: da-DK
+2026-01-10 17:07:01.491 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] Clicking settings ellipses button...
+2026-01-10 17:07:01.491 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-10 17:07:01.514 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-10 17:07:03.567 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] Clicking language dropdown...
+2026-01-10 17:07:03.567 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Trying to find element: By.xpath: (//div[@id='content-icon'])[2]
+2026-01-10 17:07:03.591 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Element found and ready (attempt 1): By.xpath: (//div[@id='content-icon'])[2]
+2026-01-10 17:07:06.957 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] Looking for language element with name: Deutsch
+2026-01-10 17:07:06.957 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Trying to find element: By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Deutsch']
+2026-01-10 17:07:06.988 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Element found and ready (attempt 1): By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Deutsch']
+2026-01-10 17:07:08.131 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] Clicking settings ellipses button...
+2026-01-10 17:07:08.131 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-10 17:07:08.626 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-10 17:07:08.791 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] Looking for language element with name: Deutsch
+2026-01-10 17:07:08.792 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Waiting until element is visible in viewport
+2026-01-10 17:07:19.137 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Capturing screenshot: Filter Applied is Deutsch__2026-01-10_170719.png
+2026-01-10 17:07:19.290 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Screenshot saved at: test-output/screenshots/Run_2026-01-10_17-00-15/verifyingSettingOptionsLang/Filter Applied is Deutsch__2026-01-10_170719.png
+2026-01-10 17:07:19.290 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] Clicking settings ellipses button...
+2026-01-10 17:07:19.290 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-10 17:07:19.313 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-10 17:07:21.369 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] Clicking settings ellipses button...
+2026-01-10 17:07:21.369 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-10 17:07:21.487 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-10 17:07:22.599 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] Getting the setting ellipses options
+2026-01-10 17:07:22.599 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Trying to find element: By.xpath: //ytd-multi-page-menu-renderer
+2026-01-10 17:07:22.623 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Element found and ready (attempt 1): By.xpath: //ytd-multi-page-menu-renderer
+2026-01-10 17:07:22.666 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] Clicking settings ellipses button...
+2026-01-10 17:07:22.667 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-10 17:07:22.690 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-10 17:07:22.748 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] 
+========== LANGUAGE DETECTION ==========
+Detected Language : GERMAN
+Input Text        : Meine Daten auf YouTube
+Darstellung: Gerätedesign
+Anzeigesprache:
+Deutsch
+Eingeschränkter Modus: Deaktiviert
+Ort:
+USA
+Tastenkombinationen
+Einstellungen
+Hilfe
+Feedback senden
+========================================
+2026-01-10 17:07:22.748 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] getExpectedLangageViaApplicableLangInput(Deutsch)
+2026-01-10 17:07:22.748 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] Expected language for 'Deutsch' -> GERMAN
+2026-01-10 17:07:22.748 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] getLangAttributeViaLanguageInput(Deutsch)
+2026-01-10 17:07:22.748 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] Mapped Deutsch -> de-DE
+2026-01-10 17:07:22.748 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] getLangAttribute() - locating <html> and reading lang property
+2026-01-10 17:07:22.767 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] Language attribute read: de-DE
+2026-01-10 17:07:22.768 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] Clicking settings ellipses button...
+2026-01-10 17:07:22.768 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-10 17:07:22.789 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-10 17:07:24.852 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] Clicking language dropdown...
+2026-01-10 17:07:24.852 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Trying to find element: By.xpath: (//div[@id='content-icon'])[2]
+2026-01-10 17:07:24.874 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Element found and ready (attempt 1): By.xpath: (//div[@id='content-icon'])[2]
+2026-01-10 17:07:28.251 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] Looking for language element with name: Eesti
+2026-01-10 17:07:28.251 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Trying to find element: By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Eesti']
+2026-01-10 17:07:28.278 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Element found and ready (attempt 1): By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Eesti']
+2026-01-10 17:07:29.431 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] Clicking settings ellipses button...
+2026-01-10 17:07:29.431 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-10 17:07:29.694 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-10 17:07:29.989 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] Looking for language element with name: Eesti
+2026-01-10 17:07:29.989 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Waiting until element is visible in viewport
+2026-01-10 17:07:40.274 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Capturing screenshot: Filter Applied is Eesti__2026-01-10_170740.png
+2026-01-10 17:07:40.361 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Screenshot saved at: test-output/screenshots/Run_2026-01-10_17-00-15/verifyingSettingOptionsLang/Filter Applied is Eesti__2026-01-10_170740.png
+2026-01-10 17:07:40.361 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] Clicking settings ellipses button...
+2026-01-10 17:07:40.361 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-10 17:07:40.384 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-10 17:07:42.436 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] Clicking settings ellipses button...
+2026-01-10 17:07:42.436 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-10 17:07:42.485 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-10 17:07:43.561 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] Getting the setting ellipses options
+2026-01-10 17:07:43.561 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Trying to find element: By.xpath: //ytd-multi-page-menu-renderer
+2026-01-10 17:07:43.585 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Element found and ready (attempt 1): By.xpath: //ytd-multi-page-menu-renderer
+2026-01-10 17:07:43.643 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] Clicking settings ellipses button...
+2026-01-10 17:07:43.644 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-10 17:07:43.669 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-10 17:07:43.772 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] 
+========== LANGUAGE DETECTION ==========
+Detected Language : ESTONIAN
+Input Text        : Teie andmed YouTube'is
+Välimus: seadme teema
+Kuvamiskeel:
+eesti
+Piiratud režiim: väljas
+Asukoht:
+Ameerika Ühendriigid
+Klaviatuuri otseteed
+Seaded
+Abi
+Tagasiside saatmine
+========================================
+2026-01-10 17:07:43.772 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] getExpectedLangageViaApplicableLangInput(Eesti)
+2026-01-10 17:07:43.772 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] Expected language for 'Eesti' -> ESTONIAN
+2026-01-10 17:07:43.772 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] getLangAttributeViaLanguageInput(Eesti)
+2026-01-10 17:07:43.772 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] Mapped Eesti -> et-EE
+2026-01-10 17:07:43.772 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] getLangAttribute() - locating <html> and reading lang property
+2026-01-10 17:07:43.790 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] Language attribute read: et-EE
+2026-01-10 17:07:43.790 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] Clicking settings ellipses button...
+2026-01-10 17:07:43.790 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-10 17:07:43.837 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-10 17:07:45.938 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] Clicking language dropdown...
+2026-01-10 17:07:45.938 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Trying to find element: By.xpath: (//div[@id='content-icon'])[2]
+2026-01-10 17:07:45.958 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Element found and ready (attempt 1): By.xpath: (//div[@id='content-icon'])[2]
+2026-01-10 17:07:49.282 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] Looking for language element with name: English (India)
+2026-01-10 17:07:49.282 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Trying to find element: By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='English (India)']
+2026-01-10 17:07:49.310 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Element found and ready (attempt 1): By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='English (India)']
+2026-01-10 17:07:50.510 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] Clicking settings ellipses button...
+2026-01-10 17:07:50.510 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-10 17:07:50.786 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-10 17:07:51.063 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] Looking for language element with name: English (India)
+2026-01-10 17:07:51.063 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Waiting until element is visible in viewport
+2026-01-10 17:08:01.479 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Capturing screenshot: Filter Applied is English (India)__2026-01-10_170801.png
+2026-01-10 17:08:01.572 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Screenshot saved at: test-output/screenshots/Run_2026-01-10_17-00-15/verifyingSettingOptionsLang/Filter Applied is English (India)__2026-01-10_170801.png
+2026-01-10 17:08:01.572 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] Clicking settings ellipses button...
+2026-01-10 17:08:01.572 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-10 17:08:01.591 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-10 17:08:03.643 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] Clicking settings ellipses button...
+2026-01-10 17:08:03.643 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-10 17:08:03.662 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-10 17:08:04.730 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] Getting the setting ellipses options
+2026-01-10 17:08:04.730 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Trying to find element: By.xpath: //ytd-multi-page-menu-renderer
+2026-01-10 17:08:04.751 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Element found and ready (attempt 1): By.xpath: //ytd-multi-page-menu-renderer
+2026-01-10 17:08:04.791 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] Clicking settings ellipses button...
+2026-01-10 17:08:04.793 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-10 17:08:04.815 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-10 17:08:04.871 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] 
+========== LANGUAGE DETECTION ==========
+Detected Language : ENGLISH
+Input Text        : Your data in YouTube
+Appearance: Device theme
+Display language:
+English (India)
+Restricted Mode: Off
+Location:
+United States
+Keyboard shortcuts
+Settings
+Help
+Send feedback
+========================================
+2026-01-10 17:08:04.871 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] getExpectedLangageViaApplicableLangInput(English (India))
+2026-01-10 17:08:04.871 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] Expected language for 'English (India)' -> ENGLISH
+2026-01-10 17:08:04.871 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] getLangAttributeViaLanguageInput(English (India))
+2026-01-10 17:08:04.871 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] Mapped English (India) -> en-IN
+2026-01-10 17:08:04.871 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] getLangAttribute() - locating <html> and reading lang property
+2026-01-10 17:08:04.898 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] Language attribute read: en-IN
+2026-01-10 17:08:04.898 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] Clicking settings ellipses button...
+2026-01-10 17:08:04.898 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-10 17:08:04.934 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-10 17:08:06.992 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] Clicking language dropdown...
+2026-01-10 17:08:06.992 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Trying to find element: By.xpath: (//div[@id='content-icon'])[2]
+2026-01-10 17:08:07.024 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Element found and ready (attempt 1): By.xpath: (//div[@id='content-icon'])[2]
+2026-01-10 17:08:09.703 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Not retrying test 'verifyingSettingOptionsLang'. Retry count: 0, Cause: The following asserts failed:
+	Language detection mismatch expected [CROATIAN] but found [BOSNIAN]
+2026-01-10 17:08:09.709 [TestNG-test-Smoke Tests-2] ERROR [verifyingSettingOptionsLang] Test FAILED: verifyingSettingOptionsLang - java.lang.AssertionError: The following asserts failed:
+	Language detection mismatch expected [CROATIAN] but found [BOSNIAN]
+2026-01-10 17:08:09.709 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] Closing WebDriver for thread: 35
+2026-01-10 17:08:10.136 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] WebDriver instance removed from ThreadLocal for thread: 35
+2026-01-10 17:08:10.136 [TestNG-test-Smoke Tests-2] INFO  [verifyingSettingOptionsLang] Driver closed for test: verifyingSettingOptionsLang
