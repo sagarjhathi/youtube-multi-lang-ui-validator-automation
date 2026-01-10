@@ -7,6 +7,7 @@ import java.util.List;
 import java.util.Map;
 
 import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.ThreadContext;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
@@ -217,6 +218,43 @@ public class GenericUtility extends BasePage {
 		list.add(height);
 		list.add(width);
 		return list;	
+    }
+    
+    
+    
+    public void smoothScrollToElement(By locator) {
+        log.info("[{}] Within smoothScrollToElement method", ThreadContext.get("testName"));
+
+        try {
+            SafeActions safeAct = new SafeActions(driver);
+            WebElement element = safeAct.safeFindElement(locator);
+
+            if (element != null) {
+                ((JavascriptExecutor) driver).executeScript(
+                    "arguments[0].scrollIntoView({ behavior: 'smooth', block: 'center' });", 
+                    element
+                );
+                log.info("[{}] Successfully scrolled to element: {}", ThreadContext.get("testName"), locator);
+            } else {
+                log.warn("[{}] Element not found for locator: {}", ThreadContext.get("testName"), locator);
+            }
+
+        } catch (Exception e) {
+            log.error("[{}] Error while scrolling to element: {} - {}", ThreadContext.get("testName"), locator, e.getMessage());
+        }
+    }  
+    
+    
+ public void scrollByPixel(int x, int y) {
+    	
+		log.info("[{}] Within scrollByPixel method", ThreadContext.get("testName"));
+        ((JavascriptExecutor) driver).executeScript("window.scrollBy(arguments[0], arguments[1]);", x, y);
+        try {
+            Thread.sleep(2000); // Wait to allow scroll animation to complete
+        } catch (InterruptedException e) {
+            Thread.currentThread().interrupt(); // Best practice to preserve interrupt status
+            e.printStackTrace();
+        }
     }
 
 }
