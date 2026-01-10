@@ -33,7 +33,8 @@ public class YtMasterTests extends BaseTest{
 
 		YtLandingPage landingPage=new YtLandingPage();
 		SoftAssert softAssert = new SoftAssert();
-
+		GenericUtility genericUtility= new GenericUtility();
+		
 
 		FileReader reader=new FileReader();
 		reader.loadWorkbook("data/LanguagesList.xlsx");
@@ -95,6 +96,11 @@ public class YtMasterTests extends BaseTest{
 			Thread.sleep(1000);
 
 			landingPage.getLanguageElementByName(langText).click();	
+			
+			landingPage.clickingSettingEllipsesButton();
+			genericUtility.isElementInViewport(landingPage.getLanguageElementByNameBy(langText));
+			ScreenshotUtil.capture(testName, langText);
+			landingPage.clickingSettingEllipsesButton();
 
 			Thread.sleep(2000);
 			List<WebElement> listOfSideMenu=landingPage.gettingSideMenuExpandedList();
@@ -339,6 +345,12 @@ public class YtMasterTests extends BaseTest{
 			Thread.sleep(1000);
 
 			landingPage.getLanguageElementByName(langText).click();	
+			
+			landingPage.clickingSettingEllipsesButton();
+			genericUtility.isElementInViewport(landingPage.getLanguageElementByNameBy(langText));
+			ScreenshotUtil.capture(testName, langText);
+			landingPage.clickingSettingEllipsesButton();
+			
 			genericUtility.getLangAttribute();
 			Thread.sleep(2000);
 			List<WebElement> listOfSideMenu=landingPage.gettingSideMenuCollapsedList();
@@ -457,6 +469,12 @@ public class YtMasterTests extends BaseTest{
 			Thread.sleep(1000);
 
 			landingPage.getLanguageElementByName(langText).click();	
+			
+			landingPage.clickingSettingEllipsesButton();
+			genericUtility.isElementInViewport(landingPage.getLanguageElementByNameBy(langText));
+			ScreenshotUtil.capture(testName, langText);
+			landingPage.clickingSettingEllipsesButton();
+			
 			genericUtility.getLangAttribute();
 			Thread.sleep(2000);
 			List<WebElement> listOfSideMenu=landingPage.gettingSideMenuCollapsedList();
@@ -518,7 +536,7 @@ public class YtMasterTests extends BaseTest{
 
 
 
-
+		String testName= ThreadContext.get("testName");
 
 
 
@@ -569,6 +587,11 @@ public class YtMasterTests extends BaseTest{
 
 			Thread.sleep(1000);
 			landingPage.getLanguageElementByName(langText).click();	
+			
+			landingPage.clickingSettingEllipsesButton();
+			genericUtility.isElementInViewport(landingPage.getLanguageElementByNameBy(langText));
+			ScreenshotUtil.capture(testName, langText);
+			landingPage.clickingSettingEllipsesButton();
 
 			Thread.sleep(2000);
 
@@ -613,7 +636,7 @@ public class YtMasterTests extends BaseTest{
 		FileReader reader=new FileReader();
 		YtLandingPage landingPage=new YtLandingPage();
 		SoftAssert softAssert=new SoftAssert();
-
+		GenericUtility genericUtility = new GenericUtility();
 
 		reader.loadWorkbook("data/Country_Name_Code.xlsx");
 		reader.loadSheet("CountryNameCode");
@@ -634,6 +657,7 @@ public class YtMasterTests extends BaseTest{
 
 
 
+		String testName= ThreadContext.get("testName");
 
 
 		boolean isCron = Boolean.parseBoolean(System.getenv("IS_CRON"));
@@ -682,7 +706,13 @@ public class YtMasterTests extends BaseTest{
 
 
 			Thread.sleep(1000);
+			
 			locationList.get(locationIndex).click();
+			
+			landingPage.clickingSettingEllipsesButton();
+			genericUtility.isElementInViewport(landingPage.getLanguageElementByNameBy(locationText));
+			ScreenshotUtil.capture(testName, locationText);
+			landingPage.clickingSettingEllipsesButton();
 			Thread.sleep(1000);
 
 
@@ -731,7 +761,9 @@ public class YtMasterTests extends BaseTest{
 
 
 
+		String testName= ThreadContext.get("testName");
 
+		
 		boolean isCron = Boolean.parseBoolean(System.getenv("IS_CRON"));
 		if(isCron) {
 
@@ -776,6 +808,11 @@ public class YtMasterTests extends BaseTest{
 
 			Thread.sleep(1000);
 			landingPage.getLanguageElementByName(langText).click();	
+			
+			landingPage.clickingSettingEllipsesButton();
+			genericUtility.isElementInViewport(landingPage.getLanguageElementByNameBy(langText));
+			ScreenshotUtil.capture(testName, langText);
+			landingPage.clickingSettingEllipsesButton();
 
 			Thread.sleep(2000);
 
@@ -822,6 +859,8 @@ public class YtMasterTests extends BaseTest{
 		reader.loadSheet("LanguagesList");
 		int LanguagesRowCount= reader.getRowCount();
 
+
+		String testName= ThreadContext.get("testName");
 
 
 
@@ -875,6 +914,11 @@ public class YtMasterTests extends BaseTest{
 
 			Thread.sleep(1000);
 			landingPage.getLanguageElementByName(langText).click();	
+			
+			landingPage.clickingSettingEllipsesButton();
+			genericUtility.isElementInViewport(landingPage.getLanguageElementByNameBy(langText));
+			ScreenshotUtil.capture(testName, langText);
+			landingPage.clickingSettingEllipsesButton();
 
 			Thread.sleep(2000);
 
