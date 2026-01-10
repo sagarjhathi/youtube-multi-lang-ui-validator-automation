@@ -256,5 +256,33 @@ public class GenericUtility extends BasePage {
             e.printStackTrace();
         }
     }
+ 
+ 
+ 
+ 
+ public boolean isElementInViewport(By locator){
+	    log.info("[{}] Waiting until element is visible in viewport", ThreadContext.get("testName"));
+
+	    try {
+	        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+	        WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+
+	        JavascriptExecutor js = (JavascriptExecutor) driver;
+	        return (Boolean) js.executeScript(
+	            "var elem = arguments[0],                 " +
+	            "  box = elem.getBoundingClientRect(),    " +
+	            "  cx = box.left + box.width / 2,         " +
+	            "  cy = box.top + box.height / 2,         " +
+	            "  e = document.elementFromPoint(cx, cy); " +
+	            "for (; e; e = e.parentElement) {         " +
+	            "  if (e === elem)                        " +
+	            "    return true;                         " +
+	            "}                                        " +
+	            "return false;", element);
+
+	    } catch (Exception e) {
+	        return false;
+	    }
+	}
 
 }

@@ -198,10 +198,17 @@ public class YtMasterTests extends BaseTest{
 			String langText=reader.getCellValue(languageIndex, 0);
 			System.out.println(langText+" lang text from the sheet   "+languageIndex);
 
-			ScreenshotUtil.capture(testName, langText);
 			Thread.sleep(1000);
 
+		
+			
+			
 			landingPage.getLanguageElementByName(langText).click();	
+			
+			landingPage.clickingSettingEllipsesButton();
+			genericUtility.isElementInViewport(landingPage.getLanguageElementByNameBy(langText));
+			ScreenshotUtil.capture(testName, langText);
+			landingPage.clickingSettingEllipsesButton();
 
 			Thread.sleep(2000);
 			List<WebElement> listOfSideMenu=landingPage.gettingSideMenuExpandedList();
