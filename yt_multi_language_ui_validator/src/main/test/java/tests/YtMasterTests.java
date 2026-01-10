@@ -817,6 +817,8 @@ public class YtMasterTests extends BaseTest{
 			Thread.sleep(2000);
 
 			landingPage.clickingGlobalFilterButton();
+			genericUtility.isElementInViewport(landingPage.globalFilterButton);
+			ScreenshotUtil.capture(testName, langText);
 			String globalSettingText=landingPage.getDataFromGlobalFilterPopup();
 			landingPage.closeGlobalFilterPopup();
 
@@ -923,6 +925,8 @@ public class YtMasterTests extends BaseTest{
 			Thread.sleep(2000);
 
 			landingPage.clickingGlobalFilterButton();
+			genericUtility.isElementInViewport(landingPage.globalFilterButton);
+			ScreenshotUtil.capture(testName, langText);
 			String globalSettingText=landingPage.getDataFromGlobalFilterPopup();
 			landingPage.closeGlobalFilterPopup();
 
