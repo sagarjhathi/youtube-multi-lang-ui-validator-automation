@@ -13,7 +13,6 @@ import main.java.yt_multi_lang_ui_validator.base.BaseTest;
 import main.java.yt_multi_lang_ui_validator.config.ConfigManager;
 import main.java.yt_multi_lang_ui_validator.fileReader.FileReader;
 import main.java.yt_multi_lang_ui_validator.fileWriter.ExcelFileWriter;
-import main.java.yt_multi_lang_ui_validator.fileWriter.FileWriter;
 import main.java.yt_multi_lang_ui_validator.lingua.LinguaHelper;
 import main.java.yt_multi_lang_ui_validator.logger.LoggerUtility;
 import main.java.yt_multi_lang_ui_validator.pages.YtLandingPage;
