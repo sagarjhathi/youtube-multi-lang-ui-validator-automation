@@ -56,8 +56,8 @@ public class LinguaHelper {
 
 	        } catch (Exception e) {
 	            log.error("Language detection failed: {}", e.getMessage());
-	            return "Unknown";
-	        }
+	            return "Unknown , error msg is "+e.getMessage()	 ;
+	            }
 	    }
 
 
