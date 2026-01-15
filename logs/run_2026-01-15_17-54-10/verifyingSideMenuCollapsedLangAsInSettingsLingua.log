@@ -1,0 +1,335 @@
+2026-01-15 18:02:23.838 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] ===== STARTING TEST: verifyingSideMenuCollapsedLangAsInSettingsLingua  | Thread: 34 =====
+2026-01-15 18:02:23.845 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] No existing WebDriver found for current thread. Initializing a new ChromeDriver...
+2026-01-15 18:02:23.871 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] WebDriverManager: chromedriver setup OK
+2026-01-15 18:02:25.240 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] ChromeDriver initialized successfully for thread: 34
+2026-01-15 18:02:25.240 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] Driver initialized successfully for test: verifyingSideMenuCollapsedLangAsInSettingsLingua
+2026-01-15 18:02:25.241 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] SafeActions initialized with driver ChromeDriver: chrome on windows (5a55b9d771a0d0de7cc21214265b54a7)
+2026-01-15 18:02:25.241 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] Initialized YtLandingPage with driver: ChromeDriver: chrome on windows (5a55b9d771a0d0de7cc21214265b54a7)
+2026-01-15 18:02:25.242 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] SafeActions initialized with driver ChromeDriver: chrome on windows (5a55b9d771a0d0de7cc21214265b54a7)
+2026-01-15 18:02:29.201 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] Opened YouTube landing page.
+2026-01-15 18:02:29.223 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] Clicking settings ellipses button...
+2026-01-15 18:02:29.223 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-15 18:02:29.262 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-15 18:02:31.406 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] Clicking language dropdown...
+2026-01-15 18:02:31.406 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Trying to find element: By.xpath: (//div[@id='content-icon'])[2]
+2026-01-15 18:02:31.430 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Element found and ready (attempt 1): By.xpath: (//div[@id='content-icon'])[2]
+2026-01-15 18:02:33.898 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Execution is Not CRON Job Hence refering to normal keys from UtilData
+2026-01-15 18:02:34.901 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] Looking for language element with name: Afrikaans
+2026-01-15 18:02:34.901 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Trying to find element: By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Afrikaans']
+2026-01-15 18:02:34.927 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Element found and ready (attempt 1): By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Afrikaans']
+2026-01-15 18:02:36.229 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] Clicking settings ellipses button...
+2026-01-15 18:02:36.229 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-15 18:02:36.787 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-15 18:02:37.047 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] Looking for language element with name: Afrikaans
+2026-01-15 18:02:37.047 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Waiting until element is visible in viewport
+2026-01-15 18:02:47.291 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Capturing screenshot: Filter Applied is Afrikaans__2026-01-15_180247.png
+2026-01-15 18:02:47.387 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Screenshot saved at: test-output/screenshots/Run_2026-01-15_17-54-10/verifyingSideMenuCollapsedLangAsInSettingsLingua/Filter Applied is Afrikaans__2026-01-15_180247.png
+2026-01-15 18:02:47.387 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] Clicking settings ellipses button...
+2026-01-15 18:02:47.387 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-15 18:02:47.408 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-15 18:02:47.458 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] getLangAttribute() - locating <html> and reading lang property
+2026-01-15 18:02:47.475 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] Language attribute read: af-ZA
+2026-01-15 18:02:49.477 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] Fetching the side menu in collapsed view
+2026-01-15 18:02:49.477 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Finding elements list: By.xpath: //ytd-mini-guide-renderer[@class='style-scope ytd-app']//ytd-mini-guide-entry-renderer
+2026-01-15 18:02:49.536 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Found 4 ready elements (attempt 1): By.xpath: //ytd-mini-guide-renderer[@class='style-scope ytd-app']//ytd-mini-guide-entry-renderer
+2026-01-15 18:02:54.341 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] 
+========== LANGUAGE DETECTION ==========
+Detected Language : BOKMAL
+Input Text        : Tuis Kortvideo's Intekeninge Myne
+========================================
+2026-01-15 18:02:54.343 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] text sent to lingua is       Tuis Kortvideo's Intekeninge Myne 
+2026-01-15 18:02:54.344 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] getLangAttributeViaLanguageInput(Afrikaans)
+2026-01-15 18:02:54.344 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] Mapped Afrikaans -> af-ZA
+2026-01-15 18:02:54.345 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] getLangAttribute() - locating <html> and reading lang property
+2026-01-15 18:02:54.357 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] Language attribute read: af-ZA
+2026-01-15 18:02:54.357 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] Clicking settings ellipses button...
+2026-01-15 18:02:54.357 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-15 18:02:54.376 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-15 18:02:56.434 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] Clicking language dropdown...
+2026-01-15 18:02:56.434 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Trying to find element: By.xpath: (//div[@id='content-icon'])[2]
+2026-01-15 18:02:56.455 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Element found and ready (attempt 1): By.xpath: (//div[@id='content-icon'])[2]
+2026-01-15 18:02:59.814 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] Looking for language element with name: Azərbaycan
+2026-01-15 18:02:59.814 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Trying to find element: By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Azərbaycan']
+2026-01-15 18:02:59.839 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Element found and ready (attempt 1): By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Azərbaycan']
+2026-01-15 18:03:00.836 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] Clicking settings ellipses button...
+2026-01-15 18:03:00.836 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-15 18:03:01.495 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-15 18:03:01.653 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] Looking for language element with name: Azərbaycan
+2026-01-15 18:03:01.654 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Waiting until element is visible in viewport
+2026-01-15 18:03:11.981 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Capturing screenshot: Filter Applied is Azərbaycan__2026-01-15_180311.png
+2026-01-15 18:03:12.095 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Screenshot saved at: test-output/screenshots/Run_2026-01-15_17-54-10/verifyingSideMenuCollapsedLangAsInSettingsLingua/Filter Applied is Azərbaycan__2026-01-15_180311.png
+2026-01-15 18:03:12.095 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] Clicking settings ellipses button...
+2026-01-15 18:03:12.095 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-15 18:03:12.118 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-15 18:03:12.173 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] getLangAttribute() - locating <html> and reading lang property
+2026-01-15 18:03:12.189 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] Language attribute read: az-Latn-AZ
+2026-01-15 18:03:14.190 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] Fetching the side menu in collapsed view
+2026-01-15 18:03:14.190 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Finding elements list: By.xpath: //ytd-mini-guide-renderer[@class='style-scope ytd-app']//ytd-mini-guide-entry-renderer
+2026-01-15 18:03:14.250 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Found 4 ready elements (attempt 1): By.xpath: //ytd-mini-guide-renderer[@class='style-scope ytd-app']//ytd-mini-guide-entry-renderer
+2026-01-15 18:03:14.330 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] 
+========== LANGUAGE DETECTION ==========
+Detected Language : TURKISH
+Input Text        : Ev Shorts Abunəliklər Siz
+========================================
+2026-01-15 18:03:14.330 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] text sent to lingua is       Ev Shorts Abunəliklər Siz 
+2026-01-15 18:03:14.331 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] getLangAttributeViaLanguageInput(Azərbaycan)
+2026-01-15 18:03:14.331 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] Mapped Azərbaycan -> az-Latn-AZ
+2026-01-15 18:03:14.331 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] getLangAttribute() - locating <html> and reading lang property
+2026-01-15 18:03:14.350 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] Language attribute read: az-Latn-AZ
+2026-01-15 18:03:14.350 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] Clicking settings ellipses button...
+2026-01-15 18:03:14.350 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-15 18:03:14.371 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-15 18:03:16.438 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] Clicking language dropdown...
+2026-01-15 18:03:16.438 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Trying to find element: By.xpath: (//div[@id='content-icon'])[2]
+2026-01-15 18:03:16.460 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Element found and ready (attempt 1): By.xpath: (//div[@id='content-icon'])[2]
+2026-01-15 18:03:20.038 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] Looking for language element with name: Bahasa Indonesia
+2026-01-15 18:03:20.038 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Trying to find element: By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Bahasa Indonesia']
+2026-01-15 18:03:20.063 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Element found and ready (attempt 1): By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Bahasa Indonesia']
+2026-01-15 18:03:21.241 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] Clicking settings ellipses button...
+2026-01-15 18:03:21.241 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-15 18:03:21.630 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-15 18:03:21.913 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] Looking for language element with name: Bahasa Indonesia
+2026-01-15 18:03:21.913 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Waiting until element is visible in viewport
+2026-01-15 18:03:32.015 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Capturing screenshot: Filter Applied is Bahasa Indonesia__2026-01-15_180332.png
+2026-01-15 18:03:32.121 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Screenshot saved at: test-output/screenshots/Run_2026-01-15_17-54-10/verifyingSideMenuCollapsedLangAsInSettingsLingua/Filter Applied is Bahasa Indonesia__2026-01-15_180332.png
+2026-01-15 18:03:32.121 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] Clicking settings ellipses button...
+2026-01-15 18:03:32.121 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-15 18:03:32.147 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-15 18:03:32.201 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] getLangAttribute() - locating <html> and reading lang property
+2026-01-15 18:03:32.217 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] Language attribute read: id-ID
+2026-01-15 18:03:34.218 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] Fetching the side menu in collapsed view
+2026-01-15 18:03:34.218 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Finding elements list: By.xpath: //ytd-mini-guide-renderer[@class='style-scope ytd-app']//ytd-mini-guide-entry-renderer
+2026-01-15 18:03:34.281 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Found 4 ready elements (attempt 1): By.xpath: //ytd-mini-guide-renderer[@class='style-scope ytd-app']//ytd-mini-guide-entry-renderer
+2026-01-15 18:03:34.365 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] 
+========== LANGUAGE DETECTION ==========
+Detected Language : ENGLISH
+Input Text        : Beranda Shorts Subscription Anda
+========================================
+2026-01-15 18:03:34.366 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] text sent to lingua is       Beranda Shorts Subscription Anda 
+2026-01-15 18:03:34.366 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] getLangAttributeViaLanguageInput(Bahasa Indonesia)
+2026-01-15 18:03:34.366 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] Mapped Bahasa Indonesia -> id-ID
+2026-01-15 18:03:34.366 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] getLangAttribute() - locating <html> and reading lang property
+2026-01-15 18:03:34.377 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] Language attribute read: id-ID
+2026-01-15 18:03:34.377 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] Clicking settings ellipses button...
+2026-01-15 18:03:34.377 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-15 18:03:34.398 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-15 18:03:36.464 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] Clicking language dropdown...
+2026-01-15 18:03:36.464 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Trying to find element: By.xpath: (//div[@id='content-icon'])[2]
+2026-01-15 18:03:36.487 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Element found and ready (attempt 1): By.xpath: (//div[@id='content-icon'])[2]
+2026-01-15 18:03:39.903 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] Looking for language element with name: Bosanski
+2026-01-15 18:03:39.903 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Trying to find element: By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Bosanski']
+2026-01-15 18:03:39.929 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Element found and ready (attempt 1): By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Bosanski']
+2026-01-15 18:03:41.105 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] Clicking settings ellipses button...
+2026-01-15 18:03:41.105 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-15 18:03:41.742 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-15 18:03:41.899 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] Looking for language element with name: Bosanski
+2026-01-15 18:03:41.899 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Waiting until element is visible in viewport
+2026-01-15 18:03:52.216 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Capturing screenshot: Filter Applied is Bosanski__2026-01-15_180352.png
+2026-01-15 18:03:52.325 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Screenshot saved at: test-output/screenshots/Run_2026-01-15_17-54-10/verifyingSideMenuCollapsedLangAsInSettingsLingua/Filter Applied is Bosanski__2026-01-15_180352.png
+2026-01-15 18:03:52.325 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] Clicking settings ellipses button...
+2026-01-15 18:03:52.325 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-15 18:03:52.345 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-15 18:03:52.393 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] getLangAttribute() - locating <html> and reading lang property
+2026-01-15 18:03:52.405 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] Language attribute read: bs-Latn-BA
+2026-01-15 18:03:54.407 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] Fetching the side menu in collapsed view
+2026-01-15 18:03:54.407 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Finding elements list: By.xpath: //ytd-mini-guide-renderer[@class='style-scope ytd-app']//ytd-mini-guide-entry-renderer
+2026-01-15 18:03:54.458 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Found 4 ready elements (attempt 1): By.xpath: //ytd-mini-guide-renderer[@class='style-scope ytd-app']//ytd-mini-guide-entry-renderer
+2026-01-15 18:03:54.524 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] 
+========== LANGUAGE DETECTION ==========
+Detected Language : BOSNIAN
+Input Text        : Početna stranica Shorts Pretplate Vi
+========================================
+2026-01-15 18:03:54.524 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] text sent to lingua is       Početna stranica Shorts Pretplate Vi 
+2026-01-15 18:03:54.525 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] getLangAttributeViaLanguageInput(Bosanski)
+2026-01-15 18:03:54.525 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] Mapped Bosanski -> bs-Latn-BA
+2026-01-15 18:03:54.525 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] getLangAttribute() - locating <html> and reading lang property
+2026-01-15 18:03:54.536 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] Language attribute read: bs-Latn-BA
+2026-01-15 18:03:54.536 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] Clicking settings ellipses button...
+2026-01-15 18:03:54.536 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-15 18:03:54.556 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-15 18:03:56.616 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] Clicking language dropdown...
+2026-01-15 18:03:56.616 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Trying to find element: By.xpath: (//div[@id='content-icon'])[2]
+2026-01-15 18:03:56.636 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Element found and ready (attempt 1): By.xpath: (//div[@id='content-icon'])[2]
+2026-01-15 18:04:00.014 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] Looking for language element with name: Català
+2026-01-15 18:04:00.014 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Trying to find element: By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Català']
+2026-01-15 18:04:00.039 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Element found and ready (attempt 1): By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Català']
+2026-01-15 18:04:01.128 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] Clicking settings ellipses button...
+2026-01-15 18:04:01.128 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-15 18:04:01.286 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-15 18:04:01.612 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] Looking for language element with name: Català
+2026-01-15 18:04:01.612 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Waiting until element is visible in viewport
+2026-01-15 18:04:11.983 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Capturing screenshot: Filter Applied is Català__2026-01-15_180411.png
+2026-01-15 18:04:12.158 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Screenshot saved at: test-output/screenshots/Run_2026-01-15_17-54-10/verifyingSideMenuCollapsedLangAsInSettingsLingua/Filter Applied is Català__2026-01-15_180411.png
+2026-01-15 18:04:12.158 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] Clicking settings ellipses button...
+2026-01-15 18:04:12.158 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-15 18:04:12.179 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-15 18:04:12.236 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] getLangAttribute() - locating <html> and reading lang property
+2026-01-15 18:04:12.254 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] Language attribute read: ca-ES
+2026-01-15 18:04:14.255 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] Fetching the side menu in collapsed view
+2026-01-15 18:04:14.255 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Finding elements list: By.xpath: //ytd-mini-guide-renderer[@class='style-scope ytd-app']//ytd-mini-guide-entry-renderer
+2026-01-15 18:04:14.309 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Found 4 ready elements (attempt 1): By.xpath: //ytd-mini-guide-renderer[@class='style-scope ytd-app']//ytd-mini-guide-entry-renderer
+2026-01-15 18:04:14.375 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] 
+========== LANGUAGE DETECTION ==========
+Detected Language : CATALAN
+Input Text        : Inici YouTube Shorts Subscripcions Tu
+========================================
+2026-01-15 18:04:14.375 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] text sent to lingua is       Inici YouTube Shorts Subscripcions Tu 
+2026-01-15 18:04:14.375 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] getLangAttributeViaLanguageInput(Català)
+2026-01-15 18:04:14.375 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] Mapped Català -> ca-ES
+2026-01-15 18:04:14.375 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] getLangAttribute() - locating <html> and reading lang property
+2026-01-15 18:04:14.385 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] Language attribute read: ca-ES
+2026-01-15 18:04:14.385 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] Clicking settings ellipses button...
+2026-01-15 18:04:14.386 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-15 18:04:14.402 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-15 18:04:16.458 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] Clicking language dropdown...
+2026-01-15 18:04:16.458 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Trying to find element: By.xpath: (//div[@id='content-icon'])[2]
+2026-01-15 18:04:16.478 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Element found and ready (attempt 1): By.xpath: (//div[@id='content-icon'])[2]
+2026-01-15 18:04:19.826 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] Looking for language element with name: Dansk
+2026-01-15 18:04:19.826 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Trying to find element: By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Dansk']
+2026-01-15 18:04:19.850 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Element found and ready (attempt 1): By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Dansk']
+2026-01-15 18:04:20.910 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] Clicking settings ellipses button...
+2026-01-15 18:04:20.910 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-15 18:04:21.153 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-15 18:04:21.423 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] Looking for language element with name: Dansk
+2026-01-15 18:04:21.423 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Waiting until element is visible in viewport
+2026-01-15 18:04:31.733 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Capturing screenshot: Filter Applied is Dansk__2026-01-15_180431.png
+2026-01-15 18:04:31.822 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Screenshot saved at: test-output/screenshots/Run_2026-01-15_17-54-10/verifyingSideMenuCollapsedLangAsInSettingsLingua/Filter Applied is Dansk__2026-01-15_180431.png
+2026-01-15 18:04:31.823 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] Clicking settings ellipses button...
+2026-01-15 18:04:31.823 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-15 18:04:31.846 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-15 18:04:31.894 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] getLangAttribute() - locating <html> and reading lang property
+2026-01-15 18:04:31.906 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] Language attribute read: da-DK
+2026-01-15 18:04:33.907 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] Fetching the side menu in collapsed view
+2026-01-15 18:04:33.907 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Finding elements list: By.xpath: //ytd-mini-guide-renderer[@class='style-scope ytd-app']//ytd-mini-guide-entry-renderer
+2026-01-15 18:04:33.959 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Found 4 ready elements (attempt 1): By.xpath: //ytd-mini-guide-renderer[@class='style-scope ytd-app']//ytd-mini-guide-entry-renderer
+2026-01-15 18:04:34.025 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] 
+========== LANGUAGE DETECTION ==========
+Detected Language : DANISH
+Input Text        : Start Shorts Abonnementer Dig
+========================================
+2026-01-15 18:04:34.025 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] text sent to lingua is       Start Shorts Abonnementer Dig 
+2026-01-15 18:04:34.025 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] getLangAttributeViaLanguageInput(Dansk)
+2026-01-15 18:04:34.025 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] Mapped Dansk -> da-DK
+2026-01-15 18:04:34.025 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] getLangAttribute() - locating <html> and reading lang property
+2026-01-15 18:04:34.036 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] Language attribute read: da-DK
+2026-01-15 18:04:34.036 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] Clicking settings ellipses button...
+2026-01-15 18:04:34.036 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-15 18:04:34.053 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-15 18:04:36.111 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] Clicking language dropdown...
+2026-01-15 18:04:36.111 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Trying to find element: By.xpath: (//div[@id='content-icon'])[2]
+2026-01-15 18:04:36.130 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Element found and ready (attempt 1): By.xpath: (//div[@id='content-icon'])[2]
+2026-01-15 18:04:39.435 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] Looking for language element with name: Deutsch
+2026-01-15 18:04:39.435 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Trying to find element: By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Deutsch']
+2026-01-15 18:04:39.478 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Element found and ready (attempt 1): By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Deutsch']
+2026-01-15 18:04:40.641 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] Clicking settings ellipses button...
+2026-01-15 18:04:40.641 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-15 18:04:40.919 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-15 18:04:41.191 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] Looking for language element with name: Deutsch
+2026-01-15 18:04:41.191 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Waiting until element is visible in viewport
+2026-01-15 18:04:51.483 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Capturing screenshot: Filter Applied is Deutsch__2026-01-15_180451.png
+2026-01-15 18:04:51.572 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Screenshot saved at: test-output/screenshots/Run_2026-01-15_17-54-10/verifyingSideMenuCollapsedLangAsInSettingsLingua/Filter Applied is Deutsch__2026-01-15_180451.png
+2026-01-15 18:04:51.572 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] Clicking settings ellipses button...
+2026-01-15 18:04:51.572 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-15 18:04:51.593 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-15 18:04:51.641 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] getLangAttribute() - locating <html> and reading lang property
+2026-01-15 18:04:51.655 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] Language attribute read: de-DE
+2026-01-15 18:04:53.655 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] Fetching the side menu in collapsed view
+2026-01-15 18:04:53.655 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Finding elements list: By.xpath: //ytd-mini-guide-renderer[@class='style-scope ytd-app']//ytd-mini-guide-entry-renderer
+2026-01-15 18:04:53.708 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Found 4 ready elements (attempt 1): By.xpath: //ytd-mini-guide-renderer[@class='style-scope ytd-app']//ytd-mini-guide-entry-renderer
+2026-01-15 18:04:53.777 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] 
+========== LANGUAGE DETECTION ==========
+Detected Language : GERMAN
+Input Text        : Startseite Shorts Abos Mein YouTube
+========================================
+2026-01-15 18:04:53.777 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] text sent to lingua is       Startseite Shorts Abos Mein YouTube 
+2026-01-15 18:04:53.778 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] getLangAttributeViaLanguageInput(Deutsch)
+2026-01-15 18:04:53.778 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] Mapped Deutsch -> de-DE
+2026-01-15 18:04:53.778 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] getLangAttribute() - locating <html> and reading lang property
+2026-01-15 18:04:53.789 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] Language attribute read: de-DE
+2026-01-15 18:04:53.789 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] Clicking settings ellipses button...
+2026-01-15 18:04:53.789 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-15 18:04:53.808 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-15 18:04:55.875 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] Clicking language dropdown...
+2026-01-15 18:04:55.875 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Trying to find element: By.xpath: (//div[@id='content-icon'])[2]
+2026-01-15 18:04:55.894 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Element found and ready (attempt 1): By.xpath: (//div[@id='content-icon'])[2]
+2026-01-15 18:04:59.256 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] Looking for language element with name: Eesti
+2026-01-15 18:04:59.256 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Trying to find element: By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Eesti']
+2026-01-15 18:04:59.290 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Element found and ready (attempt 1): By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Eesti']
+2026-01-15 18:05:00.425 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] Clicking settings ellipses button...
+2026-01-15 18:05:00.425 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-15 18:05:00.651 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-15 18:05:00.909 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] Looking for language element with name: Eesti
+2026-01-15 18:05:00.909 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Waiting until element is visible in viewport
+2026-01-15 18:05:11.216 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Capturing screenshot: Filter Applied is Eesti__2026-01-15_180511.png
+2026-01-15 18:05:11.306 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Screenshot saved at: test-output/screenshots/Run_2026-01-15_17-54-10/verifyingSideMenuCollapsedLangAsInSettingsLingua/Filter Applied is Eesti__2026-01-15_180511.png
+2026-01-15 18:05:11.306 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] Clicking settings ellipses button...
+2026-01-15 18:05:11.306 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-15 18:05:11.327 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-15 18:05:11.382 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] getLangAttribute() - locating <html> and reading lang property
+2026-01-15 18:05:11.398 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] Language attribute read: et-EE
+2026-01-15 18:05:13.400 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] Fetching the side menu in collapsed view
+2026-01-15 18:05:13.400 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Finding elements list: By.xpath: //ytd-mini-guide-renderer[@class='style-scope ytd-app']//ytd-mini-guide-entry-renderer
+2026-01-15 18:05:13.455 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Found 4 ready elements (attempt 1): By.xpath: //ytd-mini-guide-renderer[@class='style-scope ytd-app']//ytd-mini-guide-entry-renderer
+2026-01-15 18:05:13.521 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] 
+========== LANGUAGE DETECTION ==========
+Detected Language : ESTONIAN
+Input Text        : Avaleht Shorts Tellimused Teie
+========================================
+2026-01-15 18:05:13.521 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] text sent to lingua is       Avaleht Shorts Tellimused Teie 
+2026-01-15 18:05:13.521 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] getLangAttributeViaLanguageInput(Eesti)
+2026-01-15 18:05:13.521 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] Mapped Eesti -> et-EE
+2026-01-15 18:05:13.521 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] getLangAttribute() - locating <html> and reading lang property
+2026-01-15 18:05:13.533 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] Language attribute read: et-EE
+2026-01-15 18:05:13.533 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] Clicking settings ellipses button...
+2026-01-15 18:05:13.533 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-15 18:05:13.551 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-15 18:05:15.607 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] Clicking language dropdown...
+2026-01-15 18:05:15.607 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Trying to find element: By.xpath: (//div[@id='content-icon'])[2]
+2026-01-15 18:05:15.629 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Element found and ready (attempt 1): By.xpath: (//div[@id='content-icon'])[2]
+2026-01-15 18:05:19.056 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] Looking for language element with name: English (India)
+2026-01-15 18:05:19.056 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Trying to find element: By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='English (India)']
+2026-01-15 18:05:19.096 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Element found and ready (attempt 1): By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='English (India)']
+2026-01-15 18:05:20.350 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] Clicking settings ellipses button...
+2026-01-15 18:05:20.350 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-15 18:05:20.700 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-15 18:05:20.869 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] Looking for language element with name: English (India)
+2026-01-15 18:05:20.869 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Waiting until element is visible in viewport
+2026-01-15 18:05:31.083 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Capturing screenshot: Filter Applied is English (India)__2026-01-15_180531.png
+2026-01-15 18:05:31.179 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Screenshot saved at: test-output/screenshots/Run_2026-01-15_17-54-10/verifyingSideMenuCollapsedLangAsInSettingsLingua/Filter Applied is English (India)__2026-01-15_180531.png
+2026-01-15 18:05:31.179 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] Clicking settings ellipses button...
+2026-01-15 18:05:31.179 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-15 18:05:31.201 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-15 18:05:31.256 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] getLangAttribute() - locating <html> and reading lang property
+2026-01-15 18:05:31.271 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] Language attribute read: en-IN
+2026-01-15 18:05:33.272 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] Fetching the side menu in collapsed view
+2026-01-15 18:05:33.272 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Finding elements list: By.xpath: //ytd-mini-guide-renderer[@class='style-scope ytd-app']//ytd-mini-guide-entry-renderer
+2026-01-15 18:05:33.338 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Found 4 ready elements (attempt 1): By.xpath: //ytd-mini-guide-renderer[@class='style-scope ytd-app']//ytd-mini-guide-entry-renderer
+2026-01-15 18:05:33.428 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] 
+========== LANGUAGE DETECTION ==========
+Detected Language : ENGLISH
+Input Text        : Home Shorts Subscriptions You
+========================================
+2026-01-15 18:05:33.428 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] text sent to lingua is       Home Shorts Subscriptions You 
+2026-01-15 18:05:33.429 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] getLangAttributeViaLanguageInput(English (India))
+2026-01-15 18:05:33.429 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] Mapped English (India) -> en-IN
+2026-01-15 18:05:33.429 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] getLangAttribute() - locating <html> and reading lang property
+2026-01-15 18:05:33.440 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] Language attribute read: en-IN
+2026-01-15 18:05:33.440 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] Clicking settings ellipses button...
+2026-01-15 18:05:33.440 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-15 18:05:33.459 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-01-15 18:05:35.704 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] Clicking language dropdown...
+2026-01-15 18:05:35.704 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Trying to find element: By.xpath: (//div[@id='content-icon'])[2]
+2026-01-15 18:05:35.729 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Element found and ready (attempt 1): By.xpath: (//div[@id='content-icon'])[2]
+2026-01-15 18:05:38.323 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] [verifyingSideMenuCollapsedLangAsInSettingsLingua] Not retrying test 'verifyingSideMenuCollapsedLangAsInSettingsLingua'. Retry count: 0, Cause: The following asserts failed:
+	Language detection mismatch expected [AFRIKAANS] but found [BOKMAL],
+	Language detection mismatch expected [AZERBAIJANI] but found [TURKISH],
+	Language detection mismatch expected [INDONESIAN] but found [ENGLISH],
+	Language detection mismatch expected [CROATIAN] but found [BOSNIAN]
+2026-01-15 18:05:38.326 [TestNG-test-Yt Master Tests-1] ERROR [verifyingSideMenuCollapsedLangAsInSettingsLingua] Test FAILED: verifyingSideMenuCollapsedLangAsInSettingsLingua - java.lang.AssertionError: The following asserts failed:
+	Language detection mismatch expected [AFRIKAANS] but found [BOKMAL],
+	Language detection mismatch expected [AZERBAIJANI] but found [TURKISH],
+	Language detection mismatch expected [INDONESIAN] but found [ENGLISH],
+	Language detection mismatch expected [CROATIAN] but found [BOSNIAN]
+2026-01-15 18:05:38.326 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] Closing WebDriver for thread: 34
+2026-01-15 18:05:38.636 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] WebDriver instance removed from ThreadLocal for thread: 34
+2026-01-15 18:05:38.636 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSideMenuCollapsedLangAsInSettingsLingua] Driver closed for test: verifyingSideMenuCollapsedLangAsInSettingsLingua
