@@ -1,83 +1,322 @@
-# YouTube Localization UI Validator
+# 🎥 YouTube Multi-Language UI Validator Automation
 
-![Java](https://img.shields.io/badge/Java-21+-blue.svg)
-![Selenium](https://img.shields.io/badge/Selenium-4.x-green.svg)
-![TestNG](https://img.shields.io/badge/TestNG-Framework-orange.svg)
-![CI](https://img.shields.io/badge/CI-GitHub%20Actions-success.svg)
-![Status](https://img.shields.io/badge/Project-Active-brightgreen.svg)
+A **production-grade end-to-end UI automation framework** engineered to **validate YouTube’s multi-language behavior across UI surfaces, menus, filters, and regional settings**.
 
-A **Java-based UI automation framework for localization testing**, designed to validate **YouTube’s user interface across multiple languages and regions** using data-driven assertions, automated language detection, and CI/CD execution.
+This project is intentionally designed to behave like a **software system**, not a loose collection of Selenium scripts.  
+It validates **language correctness, localization integrity, and regional behavior** using **real browser sessions**, **real UI text**, and **language detection intelligence**.
 
-This project focuses on verifying that **UI content, language attributes, and region-specific indicators** update correctly when localization settings change.
+Every interaction is **safely executed**, **fully logged**, **screenshot-captured**, and **reported**, with **CI intelligence and public report hosting** built in.
 
 ---
 
-## 1. What This Project Does
+## 📌 What This Project Validates
 
-The framework automatically:
+This framework performs **real-world validation** of YouTube’s UI across multiple languages and regions:
 
-- Switches **YouTube language and region settings**
-- Reads **expected UI content from Excel files**
-- Captures **actual UI text dynamically**
-- Asserts **actual vs expected UI behavior**
-- Detects the rendered language programmatically
-- Verifies the HTML `lang` attribute at the DOM level
-- Generates **detailed execution reports with logs and screenshots**
-- Runs locally or via **CI/CD pipelines (GitHub Actions)**
+- Side menu language correctness (expanded & collapsed)
+- Settings menu localization
+- Global filter localization on search results
+- `<html lang>` attribute correctness
+- Region → country code mapping on YouTube logo
+- Language correctness via **automatic language detection**
+- UI stability across screen sizes and layouts
 
-This enables reliable **localization testing** for a highly dynamic, real-world web application.
-
----
-
-## 2. Key Features
-
-- Localization testing across **multiple languages and regions**
-- Excel-driven test data for expected UI content
-- Automated language detection for rendered UI text
-- DOM-level validation of accessibility language attributes
-- Page Object Model (POM) based framework design
-- Safe, retry-based UI interactions for dynamic pages
-- Parallel test execution with thread-safe drivers
-- Rich HTML reporting with screenshots and logs
-- CI-ready execution with scheduled runs
+All validations are **data-driven**, **configuration-controlled**, and **CI-aware**.
 
 ---
 
-## 3. Tech Stack & Tools
+## 🧠 Why This Project Stands Out
 
-### Core Technologies
-- Java
-- Selenium WebDriver (4.x)
-- TestNG
+This project demonstrates:
 
-### Data & Validation
-- Excel-driven testing using Apache POI
-- Lingua for automated language detection
-
-### Reporting & Observability
-- Extent Reports (HTML reports with screenshots)
-- Log4j2 (per-test log files)
-
-### CI/CD
-- GitHub Actions
-- Scheduled and on-demand execution
-- Artifact publishing and GitHub Pages deployment
+- How to design **UI automation as a maintainable system**
+- How to test **highly dynamic, real-world SPAs**
+- How to build **deep observability** into automation
+- How to validate **language correctness beyond string matching**
+- How to integrate **CI, reporting, and notifications cleanly**
 
 ---
 
-## 4. Project Architecture Overview
+## 📑 Table of Contents
 
-```text
+- Technology Stack
+- Key Highlights
+- Architecture
+- Architecture Diagrams
+- Execution Flow
+- Language Intelligence (Lingua)
+- CI & Reporting Intelligence
+- Discord Notifications
+- Folder Structure
+- Running Tests
+- Engineering Decisions Explained
+- Extending the Framework
+- Troubleshooting
+
+---
+
+## 🧰 Technology Stack
+
+### Core Language & Build
+- **Java 21**
+- **Maven**
+
+### Browser Automation
+- **Selenium 4.27**
+- **WebDriverManager**
+- Chrome, Firefox, Edge
+- Configurable headless, GPU, sandbox, extensions
+
+### Test Execution Engine
+- **TestNG 7.10**
+  - Parallel execution
+  - Retry analyzers
+  - Custom listeners
+  - Suite-based execution
+
+### Data & Configuration
+- **Apache POI** (Excel-driven tests)
+- Centralized `masterdata.properties`
+- Environment variable overrides
+- CI-trigger-aware configuration
+
+### Stability & Reliability Layer
+- **SafeActions (custom abstraction)**:
+  - Intelligent retries
+  - JS click fallback
+  - Page refresh recovery
+  - Centralized waits
+  - Structured logging
+
+### Language Intelligence
+- **Lingua Language Detector**
+  - Detects real language from UI text
+  - Validates localization correctness
+  - Prevents partial-translation false positives
+
+### Logging & Diagnostics
+- **Log4j2 Routing Appender**
+  - Per-test logs
+  - Per-run folders
+  - Thread-safe logging
+
+### Reporting
+- **ExtentReports (Spark HTML)**
+  - Embedded screenshots
+  - Linked logs
+  - Failure stack traces
+  - Public hosting compatible
+
+### CI/CD & DevOps
+- **GitHub Actions**
+  - Push
+  - Pull Request
+  - Manual dispatch
+  - Nightly CRON
+- Artifact storage
+- GitHub Pages hosting
+
+### Notifications
+- **Discord Webhooks**
+  - Start & completion alerts
+  - Status indicators
+  - Direct links to reports
+
+---
+
+## ✨ Key Highlights
+
+### 🧾 Fully Isolated Per-Run Artifacts
+
+Each execution produces clean, timestamped artifacts:
+
+```
+logs/run_<timestamp>/<testName>.log
+
+test-output/screenshots/Run_<timestamp>/<testName>/<step>.png
+```
+
+No log mixing. No ambiguity.
+
+---
+
+### ⚙️ Configuration-Driven Execution
+
+Execution depth is centrally controlled:
+
+- Fast runs for pushes
+- Deep coverage for nightly CRON
+- No code changes required
+
+---
+
+### 🧠 CI-Aware Decision Making
+
+The framework adapts based on trigger source:
+
+| Trigger Type | Behavior |
+|-------------|---------|
+| Push / PR | Reduced language coverage |
+| Nightly CRON | Full language & region validation |
+| Manual | Developer-controlled |
+
+---
+
+### 🌍 Language Detection (Beyond Text Matching)
+
+UI text is validated using **actual language detection**, not assumptions.
+
+This catches:
+- Mixed-language UIs
+- Partial translations
+- Incorrect `<html lang>` attributes
+
+---
+
+### 🌐 Public GitHub Pages Reports
+
+The latest execution report is always browser-accessible:
+- No downloads
+- Shareable links
+- Embedded screenshots and logs
+
+---
+
+## 🏗 Architecture
+
+### High-Level Architecture
+
+```
+Tests (TestNG)
+  |
+BaseTest
+  |
+Page Objects (YouTube UI)
+  |
+SafeActions (Resilience Layer)
+  |
+Driver + Utilities
+  |
+Lingua (Language Detection)
+  |
+Logging & Reporting
+```
+
+---
+
+## 📐 Architecture Diagrams
+
+### 1️⃣ System Layered Architecture
+
+```mermaid
+flowchart TD
+    A[TestNG Tests] --> B[BaseTest]
+    B --> C[Page Objects]
+    C --> D[SafeActions]
+    D --> E[WebDriver]
+    D --> F[WaitUtility]
+    C --> G[GenericUtility]
+    G --> H[Lingua Language Detector]
+    B --> I[Reporting Listener]
+    I --> J[ExtentReports]
+    I --> K[Log4j2 Routing Logs]
+```
+
+### 2️⃣ Execution & Observability Flow
+
+```mermaid
+sequenceDiagram
+    participant CI as CI Trigger
+    participant Test as TestNG
+    participant Driver as WebDriver
+    participant UI as YouTube UI
+    participant Lingua as Lingua
+    participant Report as Extent Report
+
+    CI->>Test: Trigger execution
+    Test->>Driver: Initialize browser
+    Driver->>UI: Load YouTube
+    Test->>UI: Apply language / region
+    UI->>Test: Render UI text
+    Test->>Lingua: Detect language
+    Lingua->>Test: Detected language
+    Test->>Report: Log + Screenshot
+    Report->>CI: Publish artifacts
+```
+
+### 3️⃣ CI & Notification Architecture
+
+```mermaid
+flowchart LR
+    A[GitHub Action Trigger] --> B[Maven Test Run]
+    B --> C[Logs + Screenshots]
+    B --> D[Extent Report]
+    D --> E[GitHub Pages]
+    B --> F[Artifacts Upload]
+    B --> G[Discord Webhook]
+```
+
+---
+
+## 🔁 Execution Flow
+
+```
+CI Trigger (Push / CRON / Manual)
+        |
+Load configuration
+        |
+Initialize WebDriver
+        |
+Open YouTube
+        |
+Iterate languages / regions
+        |
+Apply UI actions safely
+        |
+Extract UI text
+        |
+Detect language & attributes
+        |
+Validate expected data
+        |
+Capture screenshots
+        |
+Generate logs & report
+        |
+Publish artifacts
+        |
+Notify Discord
+```
+
+---
+
+## 🧪 Language Intelligence (Lingua)
+
+The framework uses Lingua to:
+
+- Detect the actual language rendered in UI text
+- Compare against expected language mappings
+- Validate `<html lang>` attribute
+- Detect localization regressions early
+
+This approach is far stronger than string comparison.
+
+---
+
+## 📦 Folder Structure
+
+```bash
 yt_multi_language_ui_validator/
+│
 ├── base/
 │   ├── BaseTest.java
 │   └── BasePage.java
 │
-├── config/
-│   └── ConfigManager.java
-│
 ├── driverManager/
 │   └── DriverManager.java
+│
+├── config/
+│   └── ConfigManager.java
 │
 ├── pages/
 │   ├── YtLandingPage.java
@@ -87,190 +326,127 @@ yt_multi_language_ui_validator/
 │   └── SafeActions.java
 │
 ├── utilities/
-│   ├── WaitUtility.java
 │   ├── GenericUtility.java
-│   └── ScreenshotUtility.java
+│   ├── WaitUtility.java
+│   └── ScreenshotUtil.java
 │
 ├── lingua/
 │   └── LinguaHelper.java
 │
-├── fileReader/
-│   └── ExcelFileReader.java
-│
-├── fileWriter/
-│   └── ExcelFileWriter.java
-│
 ├── reporting/
 │   ├── ExtentManager.java
+│   ├── ExtentTestManager.java
 │   └── TestListener.java
 │
 ├── logger/
-│   └── log4j2.xml
+│   ├── LogFolderSetup.java
+│   └── LoggerUtility.java
 │
-├── tests/
-│   └── YtLocalizationTests.java
+├── test/
+│   ├── tests/
+│   │   └── YtMasterTests.java
+│   ├── retry/
+│   │   └── RetryFailedTest.java
+│   └── runners/
 │
 ├── resources/
-│   ├── config.properties
-│   └── testdata/
-│       ├── languages.xlsx
-│       ├── side_menu_text.xlsx
-│       └── filters.xlsx
+│   ├── data/*.xlsx
+│   └── masterdata.properties
 │
-└── .github/
-    └── workflows/
-        └── ci.yml
-
-
-
-
-
-
-## 5. Core Components Explained
-
-### Base Layer
-- **BaseTest**  
-  Manages WebDriver lifecycle, logging context, and test setup/teardown.
-- **BasePage**  
-  Provides shared driver and wait configuration for all page objects.
+└── .github/workflows/master.yml
+```
 
 ---
 
-### Driver Management
-- **DriverManager**
-  - Thread-safe WebDriver handling
-  - Supports parallel execution
-  - Browser configuration via properties
-  - CI-friendly setup using WebDriverManager
+## ▶️ Running Tests
+
+### Quick Smoke Run
+
+```bash
+mvn clean test
+```
+
+### Reduced Language Coverage
+
+```bash
+mvn clean test -DrunForAllLanguages=false
+```
+
+### Full Language Regression
+
+```bash
+mvn clean test -DrunForAllLanguages=true
+```
 
 ---
 
-### Page Object Model (POM)
-- **YtLandingPage**
-  - Encapsulates YouTube landing page interactions
-  - Language, region, filters, menus
-- **YtInnerPage**
-  - Handles inner YouTube page interactions
+## 🧩 Engineering Decisions Explained
 
-This keeps **locators and UI actions isolated from test logic**.
+### SafeActions Abstraction
 
----
+Centralizes all browser interactions to:
 
-### Data-Driven Testing
-- **FileReader**
-  - Reads expected UI values from Excel sheets
-- **Excel test data**
-  - Languages list
-  - Expected UI text per language
-  - Region-to-country code mappings
+- Reduce flakiness
+- Standardize retries
+- Enable recovery via refresh
+- Improve observability
 
-Test logic remains unchanged when expected values change.
+### TestNG Over JUnit
 
----
+Chosen for:
 
-### Localization Validation
-- **LinguaHelper**
-  - Detects rendered language from UI text
-- **GenericUtility**
-  - Maps expected language values
-  - Validates HTML `lang` attribute
-  - Cross-verifies UI language correctness
+- Parallel execution
+- Retry analyzers
+- Listener ecosystem
+- Suite flexibility
 
-Validation happens at:
-1. UI content level  
-2. Programmatic language detection  
-3. DOM-level language attribute  
+### ExtentReports Over Allure
 
----
+- Self-contained HTML
+- CI-friendly
+- Screenshot-first debugging
+- Easy GitHub Pages hosting
 
-### Safe UI Interactions
-- **SafeActions**
-  - Retry-based element interactions
-  - Explicit waits
-  - JavaScript click fallback
-  - Page refresh recovery
+### Log4j2 Routing
 
-Designed to handle **dynamic SPA behavior and UI flakiness**.
+- Per-test log isolation
+- Clean debugging
+- No cross-thread log pollution
+
+### CI Mode Switching
+
+- Fast feedback for developers
+- Deep coverage for nightly runs
+- Zero manual toggling
 
 ---
 
-### Reporting & Logging
-- **Extent Reports**
-  - Test execution summary
-  - Screenshots per test
-  - Failure context
-- **Log4j2**
-  - Per-test log files
-  - Thread-aware logging
-  - CI-compatible log storage
+## ➕ Extending the Framework
+
+- Add new UI checks in `GenericUtility`
+- Extend Page Objects for new YouTube surfaces
+- Add new language mappings via Excel
+- Tune retries and waits centrally
+- Enable new browsers via `DriverManager`
 
 ---
 
-## 6. Test Scenarios Covered
+## 🛠 Troubleshooting
 
-- Side menu language validation (expanded and collapsed)
-- Settings menu localization
-- Search filter localization
-- Country code validation based on region
-- Language attribute validation (`<html lang="">`)
-- Localization checks using automated language detection
+- CAPTCHA may appear on YouTube → retry usually resolves it
+- Increase waits only when absolutely necessary
+- Verify GitHub Pages deployment if report links fail
+- Logs are always linked inside the Extent report
 
 ---
 
-## 7. CI/CD Pipeline
+## 🏁 Final Note
 
-- Implemented using **GitHub Actions**
-- Supports:
-  - Manual execution
-  - Pull request validation
-  - Scheduled (cron) runs
-- Generates:
-  - HTML reports
-  - Screenshots
-  - Logs
-- Publishes reports to **GitHub Pages**
-- Uploads artifacts for later analysis
+This project reflects real-world automation engineering:
 
----
+- Observable
+- Configurable
+- Resilient
+- CI-native
+- Debug-friendly
 
-## 8. Configuration Management
-
-- All environment-specific settings are externalized:
-  - Browser selection
-  - Execution scope (full vs limited)
-  - CI vs local execution
-  - Wait times and retries
-
-Configuration is managed via **properties files and environment variables**.
-
----
-
-## 9. Skills Demonstrated
-
-- UI Automation Engineering
-- Localization Testing
-- Data-Driven Test Design
-- Java & Selenium Framework Development
-- TestNG-based Execution Strategy
-- Resilient Automation for Dynamic UIs
-- CI/CD Integration
-- Logging, Reporting, and Debugging
-- Scalable Test Architecture Design
-
----
-
-## 10. Project Intent
-
-This project demonstrates **real-world automation engineering practices**, focusing on:
-
-- Maintainability
-- Reliability
-- Clear separation of concerns
-- Practical localization testing challenges
-- CI-ready automation design
-
----
-
-## 11. Demo
-
-A private execution demo video is available and linked externally for resume and portfolio review.
