@@ -1,0 +1,9 @@
+2026-01-19 18:39:36.773 [TestNG-test-Yt Master Tests-2] INFO  [verifyingSideMenuLanguageAsInSettingsLingua] ===== STARTING TEST: verifyingSideMenuLanguageAsInSettingsLingua  | Thread: 35 =====
+2026-01-19 18:39:36.776 [TestNG-test-Yt Master Tests-2] INFO  [verifyingSideMenuLanguageAsInSettingsLingua] No existing WebDriver found for current thread. Initializing a new ChromeDriver...
+2026-01-19 18:39:36.785 [TestNG-test-Yt Master Tests-2] INFO  [verifyingSideMenuLanguageAsInSettingsLingua] WebDriverManager: chromedriver setup OK
+2026-01-19 18:39:37.866 [TestNG-test-Yt Master Tests-2] INFO  [verifyingSideMenuLanguageAsInSettingsLingua] ChromeDriver initialized successfully for thread: 35
+2026-01-19 18:39:37.866 [TestNG-test-Yt Master Tests-2] INFO  [verifyingSideMenuLanguageAsInSettingsLingua] Driver initialized successfully for test: verifyingSideMenuLanguageAsInSettingsLingua
+2026-01-19 18:39:37.868 [TestNG-test-Yt Master Tests-2] WARN  [verifyingSideMenuLanguageAsInSettingsLingua] Test SKIPPED: verifyingSideMenuLanguageAsInSettingsLingua
+2026-01-19 18:39:37.868 [TestNG-test-Yt Master Tests-2] INFO  [verifyingSideMenuLanguageAsInSettingsLingua] Closing WebDriver for thread: 35
+2026-01-19 18:39:37.972 [TestNG-test-Yt Master Tests-2] INFO  [verifyingSideMenuLanguageAsInSettingsLingua] WebDriver instance removed from ThreadLocal for thread: 35
+2026-01-19 18:39:37.972 [TestNG-test-Yt Master Tests-2] INFO  [verifyingSideMenuLanguageAsInSettingsLingua] Driver closed for test: verifyingSideMenuLanguageAsInSettingsLingua
