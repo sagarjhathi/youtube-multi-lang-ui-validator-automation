@@ -16,6 +16,7 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import main.java.yt_multi_lang_ui_validator.config.ConfigManager;
 import main.java.yt_multi_lang_ui_validator.logger.LoggerUtility;
+import main.java.yt_multi_lang_ui_validator.seleniumGrid.GlobalGridUtility;
 
 public class DriverManager {
 
@@ -72,6 +73,10 @@ public class DriverManager {
             	        }
 
             	        WebDriver firefoxDriver = new org.openqa.selenium.firefox.FirefoxDriver(firefoxOptions);
+            	        
+            	        if(ConfigManager.getBoolean("firefox.runOnGrid", false)) {
+        					firefoxDriver=GlobalGridUtility.createRemoteFirefoxDriver(ConfigManager.get("gridHubUrl"), firefoxOptions);
+        					}
             	        driver.set(firefoxDriver);
             	        try { firefoxDriver.manage().deleteAllCookies(); } catch (Exception ignored) {}
             	       
@@ -119,6 +124,9 @@ public class DriverManager {
             	       
             	        
             	        WebDriver edgeDriver = new org.openqa.selenium.edge.EdgeDriver(edgeOptions);
+            	        if(ConfigManager.getBoolean("edge.runOnGrid", false)) {
+    						edgeDriver=GlobalGridUtility.createRemoteEdgeDriver(ConfigManager.get("gridHubUrl"), edgeOptions);
+    					}
             	        driver.set(edgeDriver);
             	        try { edgeDriver.manage().deleteAllCookies(); } catch (Exception ignored) {}
             	        log.info("EdgeDriver initialized successfully for thread: {}", Thread.currentThread().threadId());
@@ -167,6 +175,11 @@ public class DriverManager {
             	        }
 
             	        WebDriver chromeDriver = new org.openqa.selenium.chrome.ChromeDriver(options);
+            	        
+            	    	if(ConfigManager.getBoolean("chrome.runOnGrid", false)) {
+    						chromeDriver=GlobalGridUtility.createRemoteChromeDriver(ConfigManager.get("gridHubUrl"), options);
+    					}
+            	    	
             	        driver.set(chromeDriver);
             	        try { chromeDriver.manage().deleteAllCookies(); } catch (Exception ignored) {}
             	        log.info("ChromeDriver initialized successfully for thread: {}", Thread.currentThread().threadId());
