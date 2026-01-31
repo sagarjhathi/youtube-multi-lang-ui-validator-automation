@@ -1,0 +1,26 @@
+2026-01-31 17:37:39.889 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSettingOptionsLang] ===== STARTING TEST: verifyingSettingOptionsLang  | Thread: 34 =====
+2026-01-31 17:37:39.892 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSettingOptionsLang] No existing WebDriver found for current thread. Initializing a new ChromeDriver...
+2026-01-31 17:37:39.902 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSettingOptionsLang] WebDriverManager: chromedriver setup OK
+2026-01-31 17:37:40.878 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSettingOptionsLang] ChromeDriver initialized successfully for thread: 34
+2026-01-31 17:37:40.878 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSettingOptionsLang] Driver initialized successfully for test: verifyingSettingOptionsLang
+2026-01-31 17:37:40.879 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSettingOptionsLang] SafeActions initialized with driver ChromeDriver: chrome on windows (4d8970e6b1f1f48aec40bf4dbe76bb41)
+2026-01-31 17:37:40.879 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSettingOptionsLang] Initialized YtLandingPage with driver: ChromeDriver: chrome on windows (4d8970e6b1f1f48aec40bf4dbe76bb41)
+2026-01-31 17:37:40.879 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSettingOptionsLang] SafeActions initialized with driver ChromeDriver: chrome on windows (4d8970e6b1f1f48aec40bf4dbe76bb41)
+2026-01-31 17:37:41.008 [TestNG-test-Yt Master Tests-1] WARN  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Retrying test 'verifyingSettingOptionsLang' (attempt 1) due to: ❌ Sheet not found: Attribute
+2026-01-31 17:37:41.011 [TestNG-test-Yt Master Tests-1] WARN  [verifyingSettingOptionsLang] Test SKIPPED: verifyingSettingOptionsLang
+2026-01-31 17:37:41.011 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSettingOptionsLang] Closing WebDriver for thread: 34
+2026-01-31 17:37:41.147 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSettingOptionsLang] WebDriver instance removed from ThreadLocal for thread: 34
+2026-01-31 17:37:41.147 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSettingOptionsLang] Driver closed for test: verifyingSettingOptionsLang
+2026-01-31 17:37:43.149 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSettingOptionsLang] ===== STARTING TEST: verifyingSettingOptionsLang  | Thread: 34 =====
+2026-01-31 17:37:43.149 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSettingOptionsLang] No existing WebDriver found for current thread. Initializing a new ChromeDriver...
+2026-01-31 17:37:43.161 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSettingOptionsLang] WebDriverManager: chromedriver setup OK
+2026-01-31 17:37:44.223 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSettingOptionsLang] ChromeDriver initialized successfully for thread: 34
+2026-01-31 17:37:44.223 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSettingOptionsLang] Driver initialized successfully for test: verifyingSettingOptionsLang
+2026-01-31 17:37:44.224 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSettingOptionsLang] SafeActions initialized with driver ChromeDriver: chrome on windows (4ab95baa1e02a3a5a4816924461cf16a)
+2026-01-31 17:37:44.224 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSettingOptionsLang] Initialized YtLandingPage with driver: ChromeDriver: chrome on windows (4ab95baa1e02a3a5a4816924461cf16a)
+2026-01-31 17:37:44.224 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSettingOptionsLang] SafeActions initialized with driver ChromeDriver: chrome on windows (4ab95baa1e02a3a5a4816924461cf16a)
+2026-01-31 17:37:44.275 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSettingOptionsLang] [verifyingSettingOptionsLang] Not retrying test 'verifyingSettingOptionsLang'. Retry count: 1, Cause: ❌ Sheet not found: Attribute
+2026-01-31 17:37:44.277 [TestNG-test-Yt Master Tests-1] ERROR [verifyingSettingOptionsLang] Test FAILED: verifyingSettingOptionsLang - java.lang.RuntimeException: ❌ Sheet not found: Attribute
+2026-01-31 17:37:44.277 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSettingOptionsLang] Closing WebDriver for thread: 34
+2026-01-31 17:37:44.717 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSettingOptionsLang] WebDriver instance removed from ThreadLocal for thread: 34
+2026-01-31 17:37:44.717 [TestNG-test-Yt Master Tests-1] INFO  [verifyingSettingOptionsLang] Driver closed for test: verifyingSettingOptionsLang
