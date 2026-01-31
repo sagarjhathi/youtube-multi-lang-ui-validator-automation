@@ -29,7 +29,7 @@ public class BaseTest {
 	    	    ThreadContext.put("logFileName", logFileName);
 	    	    ThreadContext.put("testName", testName);
 	    	    ThreadContext.put("threadId", threadId);
-	    	    Thread.sleep(2000);
+
 	            Logger testLog = LogManager.getLogger(testName);
 	            testLog.info("===== STARTING TEST: {}  | Thread: {} =====", testName, threadId);
 	    	    
