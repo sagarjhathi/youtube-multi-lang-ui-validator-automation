@@ -636,7 +636,7 @@ public class YtMasterTests extends BaseTest{
 
 			String applicableLanguage=applicableExpectedLangReader.getCellValue(languageIndex, 0);
 			String detectedLanguage=LinguaHelper.detectLanguage(languageFromSettings);
-			String expectedLanguage=applicableExpectedLangReader.getCellValue(languageIndex, 0);
+			String expectedLanguage=applicableExpectedLangReader.getCellValue(languageIndex, 1);
 	//		String expectedLanguage=genericUtility.getExpectedLangageViaApplicableLangInput(applicableLanguage);
 
 
@@ -976,10 +976,11 @@ public class YtMasterTests extends BaseTest{
 			String globalSettingText=landingPage.getDataFromGlobalFilterPopup();
 			landingPage.closeGlobalFilterPopup();
 
+		
 
 			String applicableLanguage=applicableExpectedLangReader.getCellValue(languageIndex, 0);
 			String detectedLanguage=LinguaHelper.detectLanguage(globalSettingText);
-			String expectedLanguage=applicableExpectedLangReader.getCellValue(languageIndex, 0);
+			String expectedLanguage=applicableExpectedLangReader.getCellValue(languageIndex, 1);
 		//	String expectedLanguage=genericUtility.getExpectedLangageViaApplicableLangInput(applicableLanguage);
 
 
@@ -992,7 +993,7 @@ public class YtMasterTests extends BaseTest{
 
 			softAssert.assertEquals(detectedLanguage, expectedLanguage, "Language detection mismatch");
 			softAssert.assertEquals(detectedLanguageAttribute, expectedLanguageAttribute, "Language attributr mismatch");
-
+			
 
 
 		}
