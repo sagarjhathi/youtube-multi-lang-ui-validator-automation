@@ -155,6 +155,13 @@ public class YtMasterTests extends BaseTest{
 		FileReader reader=new FileReader();
 		reader.loadWorkbook("data/LanguagesList.xlsx");
 		reader.loadSheet("LanguagesList");
+		
+		
+		FileReader applicableExpectedLangReader=new FileReader();
+		applicableExpectedLangReader.loadWorkbook("data/ApplicableLanguageExpectedLanguage.xlsx");
+		applicableExpectedLangReader.loadSheet("AppVExpectLanguages");
+		
+		
 
 
 		landingPage.openingLandingPage();
@@ -233,7 +240,8 @@ public class YtMasterTests extends BaseTest{
 
 			String applicableLanguage=reader.getCellValue(languageIndex, 0);
 			String detectedLanguage=LinguaHelper.detectLanguage(sideMenuItems.toString());
-			String expectedLanguage=genericUtility.getExpectedLangageViaApplicableLangInput(applicableLanguage);
+			String expectedLanguage=applicableExpectedLangReader.getCellValue(languageIndex, 1);
+		//	String expectedLanguage=genericUtility.getExpectedLangageViaApplicableLangInput(applicableLanguage);
 
 			String expectedLanguageAttribute=genericUtility.getLangAttributeViaLanguageInput(applicableLanguage);
 			String detectedLanguageAttribute=genericUtility.getLangAttribute();
@@ -532,6 +540,11 @@ public class YtMasterTests extends BaseTest{
 		reader.loadWorkbook("data/LanguagesList.xlsx");
 		reader.loadSheet("LanguagesList");
 		int LanguagesRowCount= reader.getRowCount();
+		
+		
+		FileReader applicableExpectedLangReader=new FileReader();
+		applicableExpectedLangReader.loadWorkbook("data/ApplicableLanguageExpectedLanguage.xlsx");
+		applicableExpectedLangReader.loadSheet("AppVExpectLanguages");
 
 
 
@@ -602,7 +615,8 @@ public class YtMasterTests extends BaseTest{
 
 			String applicableLanguage=reader.getCellValue(languageIndex, 0);
 			String detectedLanguage=LinguaHelper.detectLanguage(languageFromSettings);
-			String expectedLanguage=genericUtility.getExpectedLangageViaApplicableLangInput(applicableLanguage);
+			String expectedLanguage=applicableExpectedLangReader.getCellValue(languageIndex, 0);
+	//		String expectedLanguage=genericUtility.getExpectedLangageViaApplicableLangInput(applicableLanguage);
 
 
 			String expectedLanguageAttribute=genericUtility.getLangAttributeViaLanguageInput(applicableLanguage);
@@ -858,6 +872,11 @@ public class YtMasterTests extends BaseTest{
 		FileReader reader=new FileReader();
 		reader.loadWorkbook("data/LanguagesList.xlsx");
 		reader.loadSheet("LanguagesList");
+		
+		FileReader applicableExpectedLangReader=new FileReader();
+		applicableExpectedLangReader.loadWorkbook("data/ApplicableLanguageExpectedLanguage.xlsx");
+		applicableExpectedLangReader.loadSheet("AppVExpectLanguages");
+		
 		int LanguagesRowCount= reader.getRowCount();
 
 
@@ -932,7 +951,8 @@ public class YtMasterTests extends BaseTest{
 
 			String applicableLanguage=reader.getCellValue(languageIndex, 0);
 			String detectedLanguage=LinguaHelper.detectLanguage(globalSettingText);
-			String expectedLanguage=genericUtility.getExpectedLangageViaApplicableLangInput(applicableLanguage);
+			String expectedLanguage=applicableExpectedLangReader.getCellValue(languageIndex, 0);
+		//	String expectedLanguage=genericUtility.getExpectedLangageViaApplicableLangInput(applicableLanguage);
 
 
 			String expectedLanguageAttribute=genericUtility.getLangAttributeViaLanguageInput(applicableLanguage);
