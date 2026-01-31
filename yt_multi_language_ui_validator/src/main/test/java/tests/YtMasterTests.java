@@ -35,9 +35,9 @@ public class YtMasterTests extends BaseTest{
 		GenericUtility genericUtility= new GenericUtility();
 		
 
-		FileReader reader=new FileReader();
-		reader.loadWorkbook("data/LanguagesList.xlsx");
-		reader.loadSheet("LanguagesList");
+//		FileReader reader=new FileReader();
+//		reader.loadWorkbook("data/LanguagesList.xlsx");
+//		reader.loadSheet("LanguagesList");
 
 
 		FileReader verifyingSideMenuLanguageAsInSettingsDataReader=new FileReader();
@@ -51,7 +51,7 @@ public class YtMasterTests extends BaseTest{
 		landingPage.clickingLanguageDropdownButton();
 		Thread.sleep(2000);
 		String testName = ThreadContext.get("logFileName");
-		int LanguagesRowCount= reader.getRowCount();
+		int LanguagesRowCount= verifyingSideMenuLanguageAsInSettingsDataReader.getRowCount();
 
 		boolean isCron = Boolean.parseBoolean(System.getenv("IS_CRON"));
 		if(isCron) {
@@ -88,7 +88,7 @@ public class YtMasterTests extends BaseTest{
 
 		for(int languageIndex=1;languageIndex<LanguagesRowCount;languageIndex++) {
 
-			String langText=reader.getCellValue(languageIndex, 0);
+			String langText=verifyingSideMenuLanguageAsInSettingsDataReader.getCellValue(languageIndex, 0);
 			System.out.println(langText+" lang text from the sheet   "+languageIndex);
 
 			ScreenshotUtil.capture(testName, langText);
@@ -152,14 +152,19 @@ public class YtMasterTests extends BaseTest{
 		SoftAssert softAssert = new SoftAssert();
 
 
-		FileReader reader=new FileReader();
-		reader.loadWorkbook("data/LanguagesList.xlsx");
-		reader.loadSheet("LanguagesList");
+//		FileReader reader=new FileReader();
+//		reader.loadWorkbook("data/LanguagesList.xlsx");
+//		reader.loadSheet("LanguagesList");
 		
 		
 		FileReader applicableExpectedLangReader=new FileReader();
 		applicableExpectedLangReader.loadWorkbook("data/ApplicableLanguageExpectedLanguage.xlsx");
 		applicableExpectedLangReader.loadSheet("AppVExpectLanguages");
+		
+		FileReader applicableExpectedAttributeReader=new FileReader();
+		applicableExpectedAttributeReader.loadWorkbook("data/ApplicableLanguageExpectedAttibute.xlsx");
+		applicableExpectedAttributeReader.loadSheet("Attribute");
+		
 		
 		
 
@@ -170,7 +175,7 @@ public class YtMasterTests extends BaseTest{
 		landingPage.clickingLanguageDropdownButton();
 		Thread.sleep(2000);
 		String testName = ThreadContext.get("logFileName");
-		int LanguagesRowCount= reader.getRowCount();
+		int LanguagesRowCount= applicableExpectedLangReader.getRowCount();
 
 		boolean isCron = Boolean.parseBoolean(System.getenv("IS_CRON"));
 		if(isCron) {
@@ -207,7 +212,7 @@ public class YtMasterTests extends BaseTest{
 
 		for(int languageIndex=1;languageIndex<LanguagesRowCount;languageIndex++) {
 
-			String langText=reader.getCellValue(languageIndex, 0);
+			String langText=applicableExpectedLangReader.getCellValue(languageIndex, 0);
 			System.out.println(langText+" lang text from the sheet   "+languageIndex);
 
 			Thread.sleep(1000);
@@ -238,12 +243,14 @@ public class YtMasterTests extends BaseTest{
 
 
 
-			String applicableLanguage=reader.getCellValue(languageIndex, 0);
+			String applicableLanguage=applicableExpectedLangReader.getCellValue(languageIndex, 0);
 			String detectedLanguage=LinguaHelper.detectLanguage(sideMenuItems.toString());
 			String expectedLanguage=applicableExpectedLangReader.getCellValue(languageIndex, 1);
 		//	String expectedLanguage=genericUtility.getExpectedLangageViaApplicableLangInput(applicableLanguage);
 
-			String expectedLanguageAttribute=genericUtility.getLangAttributeViaLanguageInput(applicableLanguage);
+			
+			String expectedLanguageAttribute=applicableExpectedAttributeReader.getCellValue(languageIndex, 1);
+		//	String expectedLanguageAttribute=genericUtility.getLangAttributeViaLanguageInput(applicableLanguage);
 			String detectedLanguageAttribute=genericUtility.getLangAttribute();
 
 			System.out.println("ApplicableLanguage  "+applicableLanguage+"     "+"Detected Language   "+detectedLanguage+"  "+"Expected Language  "+expectedLanguage);
@@ -278,9 +285,9 @@ public class YtMasterTests extends BaseTest{
 
 
 
-		FileReader reader=new FileReader();
-		reader.loadWorkbook("data/LanguagesList.xlsx");
-		reader.loadSheet("LanguagesList");
+//		FileReader reader=new FileReader();
+//		reader.loadWorkbook("data/LanguagesList.xlsx");
+//		reader.loadSheet("LanguagesList");
 
 
 		FileReader verifyingSideMenuCollapsedLangAsInSettingsDataReader=new FileReader();
@@ -293,7 +300,7 @@ public class YtMasterTests extends BaseTest{
 		applicableExpectedReader.loadSheet("AppVExpectLanguages");
 
 
-		int LanguagesRowCount= reader.getRowCount();
+		int LanguagesRowCount= verifyingSideMenuCollapsedLangAsInSettingsDataReader.getRowCount();
 		String testName = ThreadContext.get("logFileName");
 		genericUtility.maximizeDisplay();
 		landingPage.openingLandingPage();
@@ -347,7 +354,7 @@ public class YtMasterTests extends BaseTest{
 
 		for(int languageIndex=1;languageIndex<LanguagesRowCount;languageIndex++) {
 
-			String langText=reader.getCellValue(languageIndex, 0);
+			String langText=verifyingSideMenuCollapsedLangAsInSettingsDataReader.getCellValue(languageIndex, 0);
 			System.out.println(langText+"    "+languageIndex);
 			Thread.sleep(1000);
 
@@ -406,9 +413,9 @@ public class YtMasterTests extends BaseTest{
 
 
 
-		FileReader reader=new FileReader();
-		reader.loadWorkbook("data/LanguagesList.xlsx");
-		reader.loadSheet("LanguagesList");
+//		FileReader reader=new FileReader();
+//		reader.loadWorkbook("data/LanguagesList.xlsx");
+//		reader.loadSheet("LanguagesList");
 
 
 
@@ -417,10 +424,18 @@ public class YtMasterTests extends BaseTest{
 		applicableExpectedReader.loadSheet("AppVExpectLanguages");
 
 
-		int LanguagesRowCount= reader.getRowCount();
+		
+		FileReader applicableExpectedAttributeReader=new FileReader();
+		applicableExpectedAttributeReader.loadWorkbook("data/ApplicableLanguageExpectedAttibute.xlsx");
+		applicableExpectedAttributeReader.loadSheet("Attribute");
+		
+		int LanguagesRowCount= applicableExpectedReader.getRowCount();
 		String testName = ThreadContext.get("logFileName");
 		genericUtility.maximizeDisplay();
 		landingPage.openingLandingPage();
+		
+		
+		
 
 
 		List<Integer> sizes=genericUtility.getWindowHeightWidth();
@@ -471,7 +486,7 @@ public class YtMasterTests extends BaseTest{
 
 		for(int languageIndex=1;languageIndex<LanguagesRowCount;languageIndex++) {
 
-			String langText=reader.getCellValue(languageIndex, 0);
+			String langText=applicableExpectedReader.getCellValue(languageIndex, 0);
 			System.out.println(langText+"    "+languageIndex);
 			Thread.sleep(1000);
 
@@ -496,14 +511,15 @@ public class YtMasterTests extends BaseTest{
 
 
 
-			String applicableLanguage=reader.getCellValue(languageIndex, 0);
+			String applicableLanguage=applicableExpectedReader.getCellValue(languageIndex, 0);
 			String detectedLanguage=LinguaHelper.detectLanguage(sideMenuItems.toString());
 			log.info("text sent to lingua is "+"      "+sideMenuItems.toString());
 			String expectedLanguage=applicableExpectedReader.getCellValue(languageIndex, 1);
 
 
+			String expectedLanguageAttribute=applicableExpectedAttributeReader.getCellValue(languageIndex, 1);
 
-			String expectedLanguageAttribute=genericUtility.getLangAttributeViaLanguageInput(applicableLanguage);
+	//		String expectedLanguageAttribute=genericUtility.getLangAttributeViaLanguageInput(applicableLanguage);
 			String detectedLanguageAttribute=genericUtility.getLangAttribute();
 
 			System.out.println("ApplicableLanguage  "+applicableLanguage+"     "+"Detected Language   "+detectedLanguage+"  "+"Expected Language  "+expectedLanguage);
@@ -531,27 +547,32 @@ public class YtMasterTests extends BaseTest{
 	public void verifyingSettingOptionsLang() throws InterruptedException {
 
 
-		FileReader reader=new FileReader();
+		
 		YtLandingPage landingPage=new YtLandingPage();
 		GenericUtility genericUtility=new GenericUtility();
 		SoftAssert softAssert=new SoftAssert();
 
 
-		reader.loadWorkbook("data/LanguagesList.xlsx");
-		reader.loadSheet("LanguagesList");
-		int LanguagesRowCount= reader.getRowCount();
+//		FileReader reader=new FileReader();
+//		reader.loadWorkbook("data/LanguagesList.xlsx");
+//		reader.loadSheet("LanguagesList");
+		
+		
 		
 		
 		FileReader applicableExpectedLangReader=new FileReader();
 		applicableExpectedLangReader.loadWorkbook("data/ApplicableLanguageExpectedLanguage.xlsx");
 		applicableExpectedLangReader.loadSheet("AppVExpectLanguages");
 
-
+		FileReader applicableExpectedAttributeReader=new FileReader();
+		applicableExpectedAttributeReader.loadWorkbook("data/ApplicableLanguageExpectedAttibute.xlsx");
+		applicableExpectedAttributeReader.loadSheet("Attribute");
 
 		String testName= ThreadContext.get("testName");
 
 
-
+		int LanguagesRowCount= applicableExpectedLangReader.getRowCount();
+		
 		landingPage.openingLandingPage();
 		landingPage.clickingSettingEllipsesButton();
 		Thread.sleep(1000);
@@ -594,7 +615,7 @@ public class YtMasterTests extends BaseTest{
 
 		for(int languageIndex=1;languageIndex<LanguagesRowCount;languageIndex++) {
 
-			String langText=reader.getCellValue(languageIndex, 0);
+			String langText=applicableExpectedLangReader.getCellValue(languageIndex, 0);
 			System.out.println(langText+"    "+languageIndex);
 
 			Thread.sleep(1000);
@@ -613,13 +634,14 @@ public class YtMasterTests extends BaseTest{
 			landingPage.clickingSettingEllipsesButton();
 
 
-			String applicableLanguage=reader.getCellValue(languageIndex, 0);
+			String applicableLanguage=applicableExpectedLangReader.getCellValue(languageIndex, 0);
 			String detectedLanguage=LinguaHelper.detectLanguage(languageFromSettings);
 			String expectedLanguage=applicableExpectedLangReader.getCellValue(languageIndex, 0);
 	//		String expectedLanguage=genericUtility.getExpectedLangageViaApplicableLangInput(applicableLanguage);
 
 
-			String expectedLanguageAttribute=genericUtility.getLangAttributeViaLanguageInput(applicableLanguage);
+			String expectedLanguageAttribute=applicableExpectedAttributeReader.getCellValue(languageIndex, 1);
+		//	String expectedLanguageAttribute=genericUtility.getLangAttributeViaLanguageInput(applicableLanguage);
 			String detectedLanguageAttribute=genericUtility.getLangAttribute();
 
 			System.out.println("ApplicableLanguage  "+applicableLanguage+"     "+"Detected Language   "+detectedLanguage+"  "+"Expected Language  "+expectedLanguage);
@@ -751,16 +773,16 @@ public class YtMasterTests extends BaseTest{
 	@Test(retryAnalyzer = RetryFailedTest.class)
 	public void verifyingGlobalFilterLandingPage() throws InterruptedException {
 
-		FileReader reader=new FileReader();
+		
 		GenericUtility genericUtility=new GenericUtility();
 		YtLandingPage landingPage=new YtLandingPage();
 		SoftAssert softAssert =new SoftAssert();
 
 
-		reader.loadWorkbook("data/LanguagesList.xlsx");
-		reader.loadSheet("LanguagesList");
-		int LanguagesRowCount= reader.getRowCount();
-
+//		FileReader reader=new FileReader();
+//		reader.loadWorkbook("data/LanguagesList.xlsx");
+//		reader.loadSheet("LanguagesList");
+//		
 
 
 		FileReader verifyingGlobalFilterLandingPageDataReader=new FileReader();
@@ -771,6 +793,8 @@ public class YtMasterTests extends BaseTest{
 		landingPage.openingLandingPage();
 		landingPage.givingInputUnderSearchBar("youtube");
 		genericUtility.clickEnter(landingPage.searchInputLandinfPage);
+
+		int LanguagesRowCount= verifyingGlobalFilterLandingPageDataReader.getRowCount();
 
 
 
@@ -816,7 +840,7 @@ public class YtMasterTests extends BaseTest{
 			landingPage.clickingLanguageDropdownButton();
 			Thread.sleep(2000);
 
-			String langText=reader.getCellValue(languageIndex, 0);
+			String langText=verifyingGlobalFilterLandingPageDataReader.getCellValue(languageIndex, 0);
 			System.out.println(langText+"    "+languageIndex);
 
 			Thread.sleep(1000);
@@ -869,15 +893,19 @@ public class YtMasterTests extends BaseTest{
 		SoftAssert softAssert =new SoftAssert();
 
 
-		FileReader reader=new FileReader();
-		reader.loadWorkbook("data/LanguagesList.xlsx");
-		reader.loadSheet("LanguagesList");
+//		FileReader reader=new FileReader();
+//		reader.loadWorkbook("data/LanguagesList.xlsx");
+//		reader.loadSheet("LanguagesList");
 		
 		FileReader applicableExpectedLangReader=new FileReader();
 		applicableExpectedLangReader.loadWorkbook("data/ApplicableLanguageExpectedLanguage.xlsx");
 		applicableExpectedLangReader.loadSheet("AppVExpectLanguages");
 		
-		int LanguagesRowCount= reader.getRowCount();
+		FileReader applicableExpectedAttributeReader=new FileReader();
+		applicableExpectedAttributeReader.loadWorkbook("data/ApplicableLanguageExpectedAttibute.xlsx");
+		applicableExpectedAttributeReader.loadSheet("Attribute");
+		
+		int LanguagesRowCount= applicableExpectedLangReader.getRowCount();
 
 
 		String testName= ThreadContext.get("testName");
@@ -929,7 +957,7 @@ public class YtMasterTests extends BaseTest{
 			landingPage.clickingLanguageDropdownButton();
 			Thread.sleep(2000);
 
-			String langText=reader.getCellValue(languageIndex, 0);
+			String langText=applicableExpectedLangReader.getCellValue(languageIndex, 0);
 			System.out.println(langText+"    "+languageIndex);
 
 			Thread.sleep(1000);
@@ -949,13 +977,14 @@ public class YtMasterTests extends BaseTest{
 			landingPage.closeGlobalFilterPopup();
 
 
-			String applicableLanguage=reader.getCellValue(languageIndex, 0);
+			String applicableLanguage=applicableExpectedLangReader.getCellValue(languageIndex, 0);
 			String detectedLanguage=LinguaHelper.detectLanguage(globalSettingText);
 			String expectedLanguage=applicableExpectedLangReader.getCellValue(languageIndex, 0);
 		//	String expectedLanguage=genericUtility.getExpectedLangageViaApplicableLangInput(applicableLanguage);
 
 
-			String expectedLanguageAttribute=genericUtility.getLangAttributeViaLanguageInput(applicableLanguage);
+			String expectedLanguageAttribute=applicableExpectedAttributeReader.getCellValue(languageIndex, 1);
+		//	String expectedLanguageAttribute=genericUtility.getLangAttributeViaLanguageInput(applicableLanguage);
 			String detectedLanguageAttribute=genericUtility.getLangAttribute();
 
 			System.out.println("ApplicableLanguage  "+applicableLanguage+"     "+"Detected Language   "+detectedLanguage+"  "+"Expected Language  "+expectedLanguage);
