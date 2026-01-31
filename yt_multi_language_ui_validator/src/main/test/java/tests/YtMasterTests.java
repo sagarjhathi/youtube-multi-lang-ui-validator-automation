@@ -35,11 +35,6 @@ public class YtMasterTests extends BaseTest{
 		GenericUtility genericUtility= new GenericUtility();
 		
 
-//		FileReader reader=new FileReader();
-//		reader.loadWorkbook("data/LanguagesList.xlsx");
-//		reader.loadSheet("LanguagesList");
-
-
 		FileReader verifyingSideMenuLanguageAsInSettingsDataReader=new FileReader();
 		verifyingSideMenuLanguageAsInSettingsDataReader.loadWorkbook("data/verifyingSideMenuLanguageAsInSettings.xlsx");
 		verifyingSideMenuLanguageAsInSettingsDataReader.loadSheet("verifyingSideMenuLanguageAsInSe");
@@ -150,11 +145,6 @@ public class YtMasterTests extends BaseTest{
 		YtLandingPage landingPage=new YtLandingPage();
 		GenericUtility genericUtility=new GenericUtility();
 		SoftAssert softAssert = new SoftAssert();
-
-
-//		FileReader reader=new FileReader();
-//		reader.loadWorkbook("data/LanguagesList.xlsx");
-//		reader.loadSheet("LanguagesList");
 		
 		
 		FileReader applicableExpectedLangReader=new FileReader();
@@ -166,8 +156,7 @@ public class YtMasterTests extends BaseTest{
 		applicableExpectedAttributeReader.loadSheet("Attribute");
 		
 		
-		
-
+	
 
 		landingPage.openingLandingPage();
 		landingPage.clickingSettingEllipsesButton();
@@ -282,12 +271,6 @@ public class YtMasterTests extends BaseTest{
 		GenericUtility genericUtility=new GenericUtility();
 		SoftAssert softAssert = new SoftAssert();
 
-
-
-
-//		FileReader reader=new FileReader();
-//		reader.loadWorkbook("data/LanguagesList.xlsx");
-//		reader.loadSheet("LanguagesList");
 
 
 		FileReader verifyingSideMenuCollapsedLangAsInSettingsDataReader=new FileReader();
@@ -410,12 +393,6 @@ public class YtMasterTests extends BaseTest{
 		GenericUtility genericUtility=new GenericUtility();
 		SoftAssert softAssert = new SoftAssert();
 
-
-
-
-//		FileReader reader=new FileReader();
-//		reader.loadWorkbook("data/LanguagesList.xlsx");
-//		reader.loadSheet("LanguagesList");
 
 
 
@@ -551,12 +528,6 @@ public class YtMasterTests extends BaseTest{
 		YtLandingPage landingPage=new YtLandingPage();
 		GenericUtility genericUtility=new GenericUtility();
 		SoftAssert softAssert=new SoftAssert();
-
-
-//		FileReader reader=new FileReader();
-//		reader.loadWorkbook("data/LanguagesList.xlsx");
-//		reader.loadSheet("LanguagesList");
-		
 		
 		
 		
@@ -779,11 +750,6 @@ public class YtMasterTests extends BaseTest{
 		SoftAssert softAssert =new SoftAssert();
 
 
-//		FileReader reader=new FileReader();
-//		reader.loadWorkbook("data/LanguagesList.xlsx");
-//		reader.loadSheet("LanguagesList");
-//		
-
 
 		FileReader verifyingGlobalFilterLandingPageDataReader=new FileReader();
 		verifyingGlobalFilterLandingPageDataReader.loadWorkbook("data/verifyingGlobalFilterLandingPage.xlsx");
@@ -892,10 +858,6 @@ public class YtMasterTests extends BaseTest{
 		YtLandingPage landingPage=new YtLandingPage();
 		SoftAssert softAssert =new SoftAssert();
 
-
-//		FileReader reader=new FileReader();
-//		reader.loadWorkbook("data/LanguagesList.xlsx");
-//		reader.loadSheet("LanguagesList");
 		
 		FileReader applicableExpectedLangReader=new FileReader();
 		applicableExpectedLangReader.loadWorkbook("data/ApplicableLanguageExpectedLanguage.xlsx");
