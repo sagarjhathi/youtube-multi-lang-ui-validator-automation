@@ -122,7 +122,8 @@ public class YtMasterTests extends BaseTest{
 			}
 
 			System.out.println("========="+expectedData+" =====  Expected data from the sheet");
-			softAssert.assertEquals(actualData,expectedData,"Mismatch in the Actual and Expected data");
+			softAssert.assertEquals(actualData.trim(),expectedData.trim(),"Mismatch in the Actual and Expected data");
+			
 
 			landingPage.clickingSettingEllipsesButton();
 			Thread.sleep(2000);

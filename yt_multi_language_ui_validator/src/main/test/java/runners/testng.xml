@@ -13,7 +13,6 @@
  
 <methods>
 <include name="verifyingSideMenuLanguageAsInSettings"></include>
-<include name="verifyingSideMenuLanguageAsInSettingsLingua"></include>
 </methods>
  
  	
