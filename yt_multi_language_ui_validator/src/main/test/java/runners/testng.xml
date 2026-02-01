@@ -11,7 +11,10 @@
       <class name="main.java.yt_multi_lang_ui_validator.logger.LogFolderSetup"/>
       <class name="main.test.java.tests.YtMasterTests">
  
-
+<methods>
+<include name="verifyingSideMenuLanguageAsInSettings"></include>
+<include name="verifyingSideMenuLanguageAsInSettingsLingua"></include>
+</methods>
  
  	
       </class>
