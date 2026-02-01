@@ -103,16 +103,23 @@ public class YtMasterTests extends BaseTest{
 			for(int sideMenuItem=0;sideMenuItem<listOfSideMenu.size();sideMenuItem++) {
 				System.out.println(listOfSideMenu.get(sideMenuItem).getText());
 				sideMenuItems.append(listOfSideMenu.get(sideMenuItem).getText());
+				
 				if(sideMenuItem!=listOfSideMenu.size()-1) {
 					sideMenuItems.append(" ");
 				}
 
 			}
 
+			System.out.println(sideMenuItems.toString()+"        Append text from list");
 
 
-			String expectedData=verifyingSideMenuLanguageAsInSettingsDataReader.getCellValue(languageIndex, 1);
+			String expectedData=verifyingSideMenuLanguageAsInSettingsDataReader.getCellValue(languageIndex, 1).trim();
 			String actualData=sideMenuItems.toString();
+			
+			
+			if(sideMenuItems.toString().trim().equals(expectedData.trim())) {
+				System.out.println("Checking if both data are true here    ");
+			}
 
 			System.out.println("========="+expectedData+" =====  Expected data from the sheet");
 			softAssert.assertEquals(actualData,expectedData,"Mismatch in the Actual and Expected data");
@@ -354,10 +361,13 @@ public class YtMasterTests extends BaseTest{
 			for(int sideMenuItem=0;sideMenuItem<listOfSideMenu.size();sideMenuItem++) {
 				System.out.println(listOfSideMenu.get(sideMenuItem).getText());
 				sideMenuItems.append(listOfSideMenu.get(sideMenuItem).getText());
-				sideMenuItems.append(" ");
+				
+				if(sideMenuItem!=listOfSideMenu.size()-1) {
+					sideMenuItems.append(" ");
+				}
 			}
 
-			String expectedData =	verifyingSideMenuCollapsedLangAsInSettingsDataReader.getCellValue(languageIndex, 1);
+			String expectedData =	verifyingSideMenuCollapsedLangAsInSettingsDataReader.getCellValue(languageIndex, 1).trim();
 			String actualData=sideMenuItems.toString();
 
 
@@ -480,7 +490,9 @@ public class YtMasterTests extends BaseTest{
 			for(int sideMenuItem=0;sideMenuItem<listOfSideMenu.size();sideMenuItem++) {
 				System.out.println(listOfSideMenu.get(sideMenuItem).getText());
 				sideMenuItems.append(listOfSideMenu.get(sideMenuItem).getText());
-				sideMenuItems.append(" ");
+				if(sideMenuItem!=listOfSideMenu.size()-1) {
+					sideMenuItems.append(" ");
+				}
 			}
 
 
@@ -821,7 +833,7 @@ public class YtMasterTests extends BaseTest{
 			landingPage.closeGlobalFilterPopup();
 
 
-			String expectedData=verifyingGlobalFilterLandingPageDataReader.getCellValue(languageIndex, 1);
+			String expectedData=verifyingGlobalFilterLandingPageDataReader.getCellValue(languageIndex, 1).trim();
 			String actualValue=globalSettingText;
 
 
