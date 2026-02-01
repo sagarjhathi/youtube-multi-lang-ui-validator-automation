@@ -235,11 +235,9 @@ public class YtMasterTests extends BaseTest{
 			String applicableLanguage=applicableExpectedLangReader.getCellValue(languageIndex, 0);
 			String detectedLanguage=LinguaHelper.detectLanguage(sideMenuItems.toString());
 			String expectedLanguage=applicableExpectedLangReader.getCellValue(languageIndex, 1);
-		//	String expectedLanguage=genericUtility.getExpectedLangageViaApplicableLangInput(applicableLanguage);
 
 			
 			String expectedLanguageAttribute=applicableExpectedAttributeReader.getCellValue(languageIndex, 1);
-		//	String expectedLanguageAttribute=genericUtility.getLangAttributeViaLanguageInput(applicableLanguage);
 			String detectedLanguageAttribute=genericUtility.getLangAttribute();
 
 			System.out.println("ApplicableLanguage  "+applicableLanguage+"     "+"Detected Language   "+detectedLanguage+"  "+"Expected Language  "+expectedLanguage);
@@ -496,7 +494,6 @@ public class YtMasterTests extends BaseTest{
 
 			String expectedLanguageAttribute=applicableExpectedAttributeReader.getCellValue(languageIndex, 1);
 
-	//		String expectedLanguageAttribute=genericUtility.getLangAttributeViaLanguageInput(applicableLanguage);
 			String detectedLanguageAttribute=genericUtility.getLangAttribute();
 
 			System.out.println("ApplicableLanguage  "+applicableLanguage+"     "+"Detected Language   "+detectedLanguage+"  "+"Expected Language  "+expectedLanguage);
@@ -608,11 +605,9 @@ public class YtMasterTests extends BaseTest{
 			String applicableLanguage=applicableExpectedLangReader.getCellValue(languageIndex, 0);
 			String detectedLanguage=LinguaHelper.detectLanguage(languageFromSettings);
 			String expectedLanguage=applicableExpectedLangReader.getCellValue(languageIndex, 1);
-	//		String expectedLanguage=genericUtility.getExpectedLangageViaApplicableLangInput(applicableLanguage);
 
 
 			String expectedLanguageAttribute=applicableExpectedAttributeReader.getCellValue(languageIndex, 1);
-		//	String expectedLanguageAttribute=genericUtility.getLangAttributeViaLanguageInput(applicableLanguage);
 			String detectedLanguageAttribute=genericUtility.getLangAttribute();
 
 			System.out.println("ApplicableLanguage  "+applicableLanguage+"     "+"Detected Language   "+detectedLanguage+"  "+"Expected Language  "+expectedLanguage);
@@ -943,11 +938,9 @@ public class YtMasterTests extends BaseTest{
 			String applicableLanguage=applicableExpectedLangReader.getCellValue(languageIndex, 0);
 			String detectedLanguage=LinguaHelper.detectLanguage(globalSettingText);
 			String expectedLanguage=applicableExpectedLangReader.getCellValue(languageIndex, 1);
-		//	String expectedLanguage=genericUtility.getExpectedLangageViaApplicableLangInput(applicableLanguage);
 
 
 			String expectedLanguageAttribute=applicableExpectedAttributeReader.getCellValue(languageIndex, 1);
-		//	String expectedLanguageAttribute=genericUtility.getLangAttributeViaLanguageInput(applicableLanguage);
 			String detectedLanguageAttribute=genericUtility.getLangAttribute();
 
 			System.out.println("ApplicableLanguage  "+applicableLanguage+"     "+"Detected Language   "+detectedLanguage+"  "+"Expected Language  "+expectedLanguage);
