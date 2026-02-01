@@ -172,7 +172,7 @@ public class YtLandingPage  extends BasePage{
 
 	public String getsettingEllipsesOptionsListLandingPage() {
 		log.info("Getting the setting ellipses options");
-		String str=safeAct.safeFindElement(settingEllipsesOptionsListLandingPage).getText();
+		String str=safeAct.safeFindElement(settingEllipsesOptionsListLandingPage).getText().trim();
 		return str;
 	}
 
@@ -203,7 +203,7 @@ public class YtLandingPage  extends BasePage{
 
 	public String getDataFromGlobalFilterPopup() {
 		log.info("Fetching the data from the global filter in landing page");
-		String str=safeAct.safeFindElement(globalFilterData).getText();
+		String str=safeAct.safeFindElement(globalFilterData).getText().trim();
 		return str;
 	}
 
