@@ -19,6 +19,7 @@ public class BaseTest {
 	private  static  Logger log = LoggerUtility.getLogger(BaseTest.class);
 	public WebDriver driver;
 
+	
 	    @BeforeMethod(alwaysRun = true)
 	    public void setUp(Method method) throws InterruptedException {
 	    		    	
