@@ -13,6 +13,7 @@ import java.util.List;
 import java.util.Map;
 
 import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.ThreadContext;
 
 public class LinguaHelper {
 	
@@ -168,6 +169,8 @@ public class LinguaHelper {
 
 	    
 	    public static String detectLanguage(String text) {
+	    	log.info("[{}]detectLanguage called here with text ==",text,ThreadContext.get("testName"));
+	    	
         try {
             if (text == null || text.trim().isEmpty()) {
                 log.debug("detectLanguage called with empty text.");
@@ -178,7 +181,7 @@ public class LinguaHelper {
 
             Language detected = DETECTOR.detectLanguageOf(cleanText);
             if (detected == null) {
-                log.debug("No language detected for text: {}", cleanText);
+                log.debug("[{}]No language detected for text===", cleanText,ThreadContext.get("testName"));
                 return "Unknown";
             }
 
@@ -192,7 +195,7 @@ public class LinguaHelper {
             return detected.name();
 
         } catch (Exception e) {
-            log.error("Language detection failed: {}", e.getMessage());
+            log.error("[{}]Language detection failed: {}", e.getMessage(),ThreadContext.get("testName"));
             return "Unknown , error msg is "+e.getMessage()	 ;
             }
     }
