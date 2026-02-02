@@ -137,6 +137,7 @@ public class DriverManager {
             	    default: {
             	       
             	        org.openqa.selenium.chrome.ChromeOptions options = new org.openqa.selenium.chrome.ChromeOptions();
+            	        options.addArguments("--window-size=1920,1080");
 
             	        if (ConfigManager.getBoolean("chrome.arg.start_maximized", true)) {
             	            options.addArguments("--start-maximized");
