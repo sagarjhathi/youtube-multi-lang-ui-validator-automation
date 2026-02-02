@@ -1,5 +1,6 @@
 package main.java.yt_multi_lang_ui_validator.lingua;
 
+import com.github.pemistahl.lingua.api.*; 
 import com.github.pemistahl.lingua.api.*;
 
 import main.java.yt_multi_lang_ui_validator.driverManager.DriverManager;
@@ -78,7 +79,4 @@ public class LinguaHelper {
 	    }
 	    
 	    
-	    
-	 
-
 }
