@@ -142,10 +142,13 @@ public class LinguaHelper {
 
 	        try {
 	            String cleanText = text.trim();
+	            
+	            log.error("Clean Text in detection: =="+cleanText);
 
 	            // sanitize once (not retry)
 	            String sanitized = cleanText.replaceAll("[^\\p{L}\\s]", "");
 
+	            log.error("sanitized Text in detection: =="+sanitized);
 	            Map<Language, Double> scores =
 	                    DETECTOR.computeLanguageConfidenceValues(sanitized);
 
@@ -157,6 +160,8 @@ public class LinguaHelper {
 	                    .orElse("Unknown");
 
 	        } catch (Exception e) {
+	        	
+	        	 log.error("In the catch block of detection=="+e.getMessage());
 	            return "Unknown";
 	        }
 	    }
