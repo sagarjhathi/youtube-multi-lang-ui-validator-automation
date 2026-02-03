@@ -19,13 +19,7 @@ public class LinguaHelper {
 	
 	
 	  private static final Logger log = LoggerUtility.getLogger(LinguaHelper.class);
-
-	    // Build detector once — expensive to create, cheap to reuse.
-//	    private static final LanguageDetector DETECTOR =
-//	            LanguageDetectorBuilder.fromAllLanguages().build();
-	  
-	  
-	  
+	  	  
 	  private static final LanguageDetector DETECTOR =
 			    LanguageDetectorBuilder.fromLanguages(
 
@@ -133,39 +127,6 @@ public class LinguaHelper {
 	        }
 	    }
 	    
-	    
-	    
-//	    public static String detectLanguage(String text) {
-//
-//	        if (text == null || text.trim().isEmpty()) {
-//	            return "Unknown";
-//	        }
-//
-//	        try {
-//	            String cleanText = text.trim();
-//	            
-//	            log.info("Clean Text in detection: =="+cleanText+"      "   +cleanText.length());
-//
-//	            // sanitize once (not retry)
-//	              String sanitized = cleanText.replaceAll("[^\\p{L}\\s]", "");
-//
-//	           log.info("sanitized Text in detection: =="+sanitized+"      "   +sanitized.length());
-//	            Map<Language, Double> scores =
-//	                    DETECTOR.computeLanguageConfidenceValues(sanitized);
-//
-//	            return scores.entrySet()
-//	                    .stream()
-//	                    .max(Map.Entry.comparingByValue())
-//	                    .filter(e -> e.getValue() > 0.30)   // threshold
-//	                    .map(e -> e.getKey().name())
-//	                    .orElse("Unknown");
-//
-//	        } catch (Exception e) {
-//	        	
-//	        	 log.info("In the catch block of detection=="+e.getMessage());
-//	            return "Unknown";
-//	        }
-//	    }
 
 	    
 //	    public static String detectLanguage(String text) {
