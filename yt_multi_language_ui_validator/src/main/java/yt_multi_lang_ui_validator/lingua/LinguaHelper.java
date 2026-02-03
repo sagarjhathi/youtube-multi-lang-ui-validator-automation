@@ -147,11 +147,11 @@ public class LinguaHelper {
 	            log.info("Clean Text in detection: =="+cleanText+"      "   +cleanText.length());
 
 	            // sanitize once (not retry)
-	      //      String sanitized = cleanText.replaceAll("[^\\p{L}\\s]", "");
+	              String sanitized = cleanText.replaceAll("[^\\p{L}\\s]", "");
 
-	        //    log.info("sanitized Text in detection: =="+sanitized+"      "   +sanitized.length());
+	           log.info("sanitized Text in detection: =="+sanitized+"      "   +sanitized.length());
 	            Map<Language, Double> scores =
-	                    DETECTOR.computeLanguageConfidenceValues(cleanText);
+	                    DETECTOR.computeLanguageConfidenceValues(sanitized);
 
 	            return scores.entrySet()
 	                    .stream()
