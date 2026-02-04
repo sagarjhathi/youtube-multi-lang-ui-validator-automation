@@ -127,39 +127,6 @@ public class LinguaHelper {
 	        }
 	    }
 	    
-
-	    
-//	    public static String detectLanguage(String text) {
-//	    	log.info("[{}]detectLanguage called here with text ==",text,ThreadContext.get("testName"));
-//	    	
-//        try {
-//            if (text == null || text.trim().isEmpty()) {
-//                log.debug("detectLanguage called with empty text.");
-//                return "Unknown";
-//            }
-//
-//            String cleanText = text.trim();
-//
-//            Language detected = DETECTOR.detectLanguageOf(cleanText);
-//            if (detected == null) {
-//                log.debug("[{}]No language detected for text===", cleanText,ThreadContext.get("testName"));
-//                return "Unknown";
-//            }
-//
-//            // 👇 clean, readable log format showing detected language + full text clearly
-//            log.info("\n========== LANGUAGE DETECTION ==========\n" +
-//                     "Detected Language : {}\n" +
-//                     "Input Text        : {}\n" +
-//                     "========================================", 
-//                     detected.name(), cleanText);
-//
-//            return detected.name();
-//
-//        } catch (Exception e) {
-//            log.error("[{}]Language detection failed: {}", e.getMessage(),ThreadContext.get("testName"));
-//            return "Unknown , error msg is "+e.getMessage()	 ;
-//            }
-//    }
 	    
 	    
 }
