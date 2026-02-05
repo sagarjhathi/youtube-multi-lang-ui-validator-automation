@@ -47,6 +47,11 @@ public class DriverManager {
             	       
             	        org.openqa.selenium.firefox.FirefoxOptions firefoxOptions = new org.openqa.selenium.firefox.FirefoxOptions();
 
+            	        
+            	        String windowSize= ConfigManager.get("firefox.window-size");
+            	           if(windowSize!=null) {
+            	        	   firefoxOptions.addArguments(windowSize);
+            	         }
             	        if (ConfigManager.getBoolean("firefox.arg.disable_gpu", true)) {
             	            firefoxOptions.addArguments("--disable-gpu");
             	        }
@@ -91,6 +96,10 @@ public class DriverManager {
             	       
             	        org.openqa.selenium.edge.EdgeOptions edgeOptions = new org.openqa.selenium.edge.EdgeOptions();
 
+            	        String windowSize= ConfigManager.get("edge.window-size");
+           	           if(windowSize!=null) {
+           	        	edgeOptions.addArguments(windowSize);
+           	         }
             	        if (ConfigManager.getBoolean("edge.arg.start_maximized", true)) {
             	            edgeOptions.addArguments("--start-maximized");
             	        }
@@ -137,7 +146,12 @@ public class DriverManager {
             	    default: {
             	       
             	        org.openqa.selenium.chrome.ChromeOptions options = new org.openqa.selenium.chrome.ChromeOptions();
-            	        options.addArguments("--window-size=1920,1080");
+            	        
+            	        
+            	         String windowSize= ConfigManager.get("chrome.window-size");
+            	         if(windowSize!=null) {
+            	        	 options.addArguments(windowSize);
+            	         }
 
             	        if (ConfigManager.getBoolean("chrome.arg.start_maximized", true)) {
             	            options.addArguments("--start-maximized");
