@@ -122,7 +122,7 @@ public class YtMasterTests extends BaseTest{
 			}
 
 			System.out.println("========="+expectedData+" =====  Expected data from the sheet");
-			softAssert.assertEquals(actualData.trim(),expectedData.trim(),"Mismatch in the Actual and Expected data");
+			softAssert.assertEquals(actualData.trim(),expectedData.trim(),"Mismatch in the Actual and Expected data for language="+langText);
 			
 
 			landingPage.clickingSettingEllipsesButton();
@@ -253,8 +253,8 @@ public class YtMasterTests extends BaseTest{
 
 			log.info("[{}] ApplicableLanguage==  "+applicableLanguage+"     "+"Detected Language ==  "+detectedLanguage+"  "+"Expected Language == "+expectedLanguage, ThreadContext.get("testName"));
 
-			softAssert.assertEquals(detectedLanguage, expectedLanguage, "Page title mismatch");
-			softAssert.assertEquals(detectedLanguageAttribute, expectedLanguageAttribute, "Language attributr mismatch");
+			softAssert.assertEquals(detectedLanguage, expectedLanguage, "Page title mismatch for language="+langText);
+			softAssert.assertEquals(detectedLanguageAttribute, expectedLanguageAttribute, "Language attributr mismatch for language"+langText);
 
 
 			landingPage.clickingSettingEllipsesButton();
@@ -374,7 +374,7 @@ public class YtMasterTests extends BaseTest{
 			String actualData=sideMenuItems.toString();
 
 
-			softAssert.assertEquals(actualData, expectedData, "Mismatch in the Expected and actual Data");
+			softAssert.assertEquals(actualData.trim(),expectedData.trim(),"Mismatch in the Actual and Expected data for language="+langText);
 
 
 			landingPage.clickingSettingEllipsesButton();
@@ -516,8 +516,8 @@ public class YtMasterTests extends BaseTest{
 
 
 
-			softAssert.assertEquals(detectedLanguage, expectedLanguage, "Language detection mismatch");
-			softAssert.assertEquals(detectedLanguageAttribute, expectedLanguageAttribute, "Language attributr mismatch");
+			softAssert.assertEquals(detectedLanguage, expectedLanguage, "Language detection mismatch for language="+langText);
+			softAssert.assertEquals(detectedLanguageAttribute, expectedLanguageAttribute, "Language attributr mismatch for language="+langText);
 
 
 			landingPage.clickingSettingEllipsesButton();
@@ -628,8 +628,8 @@ public class YtMasterTests extends BaseTest{
 			System.out.println("ApplicableLanguage  "+applicableLanguage+"     "+"Detected Language   "+detectedLanguage+"  "+"Expected Language  "+expectedLanguage);
 			System.out.println("ApplicableLanguage  "+applicableLanguage+"     "+"Detected Language attribute   "+detectedLanguageAttribute+"  "+"Expected Language attribute "+expectedLanguageAttribute);
 
-			softAssert.assertEquals(detectedLanguage, expectedLanguage, "Language detection mismatch");
-			softAssert.assertEquals(detectedLanguageAttribute, expectedLanguageAttribute, "Language attributr mismatch");
+			softAssert.assertEquals(detectedLanguage, expectedLanguage, "Language detection mismatch for language="+langText);
+			softAssert.assertEquals(detectedLanguageAttribute, expectedLanguageAttribute, "Language attributr mismatch for language="+langText);
 
 
 			landingPage.clickingSettingEllipsesButton();
@@ -737,7 +737,7 @@ public class YtMasterTests extends BaseTest{
 			String detectedCountryCode=landingPage.getCountryCode();
 
 			System.out.println("applicable location is ==  "+applicableLocation+" Expected location  =="+expectedCountryCode+"  detected country code"+detectedCountryCode);
-			softAssert.assertEquals(detectedCountryCode, expectedCountryCode,"Country code mismacth");
+			softAssert.assertEquals(detectedCountryCode, expectedCountryCode,"Country code mismacth for location="+locationText);
 
 			landingPage.clickingSettingEllipsesButton();
 			Thread.sleep(2000);
@@ -840,7 +840,7 @@ public class YtMasterTests extends BaseTest{
 			String actualValue=globalSettingText;
 
 
-			softAssert.assertEquals(actualValue, expectedData, "Mismatch in the Expected and Actual Data");
+			softAssert.assertEquals(actualValue, expectedData, "Mismatch in the Expected and Actual Data for language"+langText);
 
 
 
@@ -961,8 +961,8 @@ public class YtMasterTests extends BaseTest{
 			System.out.println("ApplicableLanguage  "+applicableLanguage+"     "+"Detected Language   "+detectedLanguage+"  "+"Expected Language  "+expectedLanguage);
 			System.out.println("ApplicableLanguage  "+applicableLanguage+"     "+"Detected Language attribute   "+detectedLanguageAttribute+"  "+"Expected Language attribute "+expectedLanguageAttribute);
 
-			softAssert.assertEquals(detectedLanguage, expectedLanguage, "Language detection mismatch");
-			softAssert.assertEquals(detectedLanguageAttribute, expectedLanguageAttribute, "Language attributr mismatch");
+			softAssert.assertEquals(detectedLanguage, expectedLanguage, "Language detection mismatch for language="+langText);
+			softAssert.assertEquals(detectedLanguageAttribute, expectedLanguageAttribute, "Language attributr mismatch for language"+langText);
 			
 
 
