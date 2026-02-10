@@ -18,7 +18,13 @@
  
  	
 
-
+	<methods>
+	
+	<include name="verifyingSideMenuLanguageAsInSettingsLingua"></include>
+	<include name="verifyingSideMenuCollapsedLangAsInSettingsLingua"></include>
+	<include name="verifyingGlobalFilterLandingPageLingua"></include>
+	
+	</methods>
 
  
  		
