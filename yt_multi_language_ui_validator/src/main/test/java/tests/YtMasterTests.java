@@ -949,6 +949,7 @@ public class YtMasterTests extends BaseTest{
 			landingPage.closeGlobalFilterPopup();
 
 		
+		
 
 			String applicableLanguage=applicableExpectedLangReader.getCellValue(languageIndex, 0);
 			String detectedLanguage=LinguaHelper.detectLanguage(globalSettingText);
