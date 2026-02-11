@@ -1,0 +1,639 @@
+2026-02-11 17:47:15.637 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] ===== STARTING TEST: verifyingGlobalFilterLandingPageLingua  | Thread: 31 =====
+2026-02-11 17:47:15.662 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] No existing WebDriver found for current thread. Initializing a new ChromeDriver...
+2026-02-11 17:47:15.663 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] Loaded config from classpath: masterdata.properties
+2026-02-11 17:47:17.277 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] WebDriverManager: chromedriver setup OK
+2026-02-11 17:47:40.672 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] ChromeDriver initialized successfully for thread: 31
+2026-02-11 17:47:40.673 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] Driver initialized successfully for test: verifyingGlobalFilterLandingPageLingua
+2026-02-11 17:47:40.844 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] SafeActions initialized with driver ChromeDriver: chrome on windows (c462a1c284fb535e885a0055c26c940f)
+2026-02-11 17:47:40.845 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] SafeActions initialized with driver ChromeDriver: chrome on windows (c462a1c284fb535e885a0055c26c940f)
+2026-02-11 17:47:40.845 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] Initialized YtLandingPage with driver: ChromeDriver: chrome on windows (c462a1c284fb535e885a0055c26c940f)
+2026-02-11 17:47:49.189 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] Opened YouTube landing page.
+2026-02-11 17:47:49.190 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] Giving input into the search bar with input as  = youtube
+2026-02-11 17:47:49.190 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Trying to click element: By.xpath: //input[@class='ytSearchboxComponentInput yt-searchbox-input title']
+2026-02-11 17:47:49.664 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Clicked successfully (attempt 1): By.xpath: //input[@class='ytSearchboxComponentInput yt-searchbox-input title']
+2026-02-11 17:47:49.915 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Trying to find element: By.xpath: //input[@class='ytSearchboxComponentInput yt-searchbox-input title']
+2026-02-11 17:47:49.946 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Element found and ready (attempt 1): By.xpath: //input[@class='ytSearchboxComponentInput yt-searchbox-input title']
+2026-02-11 17:47:49.994 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] clickEnter(By.xpath: //input[@class='ytSearchboxComponentInput yt-searchbox-input title'])
+2026-02-11 17:47:49.995 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Trying to find element: By.xpath: //input[@class='ytSearchboxComponentInput yt-searchbox-input title']
+2026-02-11 17:47:50.022 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Element found and ready (attempt 1): By.xpath: //input[@class='ytSearchboxComponentInput yt-searchbox-input title']
+2026-02-11 17:47:50.097 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] Sent ENTER to By.xpath: //input[@class='ytSearchboxComponentInput yt-searchbox-input title']
+2026-02-11 17:47:50.098 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Execution is Not CRON Job Hence refering to normal keys from UtilData
+2026-02-11 17:47:50.098 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] Clicking settings ellipses button...
+2026-02-11 17:47:50.098 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-02-11 17:47:50.138 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-02-11 17:47:52.244 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] Clicking language dropdown...
+2026-02-11 17:47:52.244 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Trying to find element: By.xpath: (//div[@id='content-icon'])[2]
+2026-02-11 17:47:54.323 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Element found and ready (attempt 1): By.xpath: (//div[@id='content-icon'])[2]
+2026-02-11 17:47:59.883 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] Looking for language element with name: Afrikaans
+2026-02-11 17:47:59.883 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Trying to find element: By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Afrikaans']
+2026-02-11 17:47:59.915 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Element found and ready (attempt 1): By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Afrikaans']
+2026-02-11 17:48:02.826 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] Clicking settings ellipses button...
+2026-02-11 17:48:02.826 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-02-11 17:48:04.346 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-02-11 17:48:04.811 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] Looking for language element with name: Afrikaans
+2026-02-11 17:48:04.811 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Waiting until element is visible in viewport
+2026-02-11 17:48:15.121 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Capturing screenshot: Filter Applied is Afrikaans__2026-02-11_174815.png
+2026-02-11 17:48:15.375 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Screenshot saved at: test-output/screenshots/Run_2026-02-11_17-46-50/verifyingGlobalFilterLandingPageLingua/Filter Applied is Afrikaans__2026-02-11_174815.png
+2026-02-11 17:48:15.375 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] Clicking settings ellipses button...
+2026-02-11 17:48:15.375 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-02-11 17:48:15.402 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-02-11 17:48:17.462 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] Clicking on global filter button in landing page..
+2026-02-11 17:48:17.462 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Trying to click element: By.xpath: //div[@id='filter-button']
+2026-02-11 17:48:17.656 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Clicked successfully (attempt 1): By.xpath: //div[@id='filter-button']
+2026-02-11 17:48:17.907 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Waiting until element is visible in viewport
+2026-02-11 17:48:17.939 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Capturing screenshot: Filter Applied is Afrikaans__2026-02-11_174817.png
+2026-02-11 17:48:18.154 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Screenshot saved at: test-output/screenshots/Run_2026-02-11_17-46-50/verifyingGlobalFilterLandingPageLingua/Filter Applied is Afrikaans__2026-02-11_174817.png
+2026-02-11 17:48:18.154 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] Fetching the data from the global filter in landing page
+2026-02-11 17:48:18.155 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Trying to find element: By.xpath: //ytd-search-filter-options-dialog-renderer[@class='style-scope ytd-popup-container']
+2026-02-11 17:48:18.187 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Element found and ready (attempt 1): By.xpath: //ytd-search-filter-options-dialog-renderer[@class='style-scope ytd-popup-container']
+2026-02-11 17:48:18.217 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] Closing the global filter pop-up in landing page..
+2026-02-11 17:48:18.218 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Trying to find element: By.xpath: //yt-icon[@icon='close']
+2026-02-11 17:48:18.247 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Element found and ready (attempt 1): By.xpath: //yt-icon[@icon='close']
+2026-02-11 17:48:18.888 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] 
+========== LANGUAGE DETECTION ==========
+Detected Language : AFRIKAANS
+Input Text        : Soekfilters
+TIPE
+Video’s
+Kortvideo’s
+Kanale
+Snitlyste
+Flieks
+TYDSDUUR
+Korter as 3 minute
+3-20 minute
+Langer as 20 minute
+OPLAAIDATUM
+Vandag
+Vandeesweek
+Vandeesmaand
+Hierdie jaar
+KENMERKE
+Regstreeks
+4K
+HD
+Onderskrifte
+Creative Commons
+360°
+VR180
+3D
+HDR
+Ligging
+Gekoop
+PRIORITISEER
+Relevansie
+Gewildheid
+========================================
+2026-02-11 17:48:18.890 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] getLangAttribute() - locating <html> and reading lang property
+2026-02-11 17:48:18.911 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] Language attribute read: af-ZA
+2026-02-11 17:48:18.915 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] Clicking settings ellipses button...
+2026-02-11 17:48:18.915 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-02-11 17:48:18.939 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-02-11 17:48:21.015 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] Clicking language dropdown...
+2026-02-11 17:48:21.015 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Trying to find element: By.xpath: (//div[@id='content-icon'])[2]
+2026-02-11 17:48:21.045 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Element found and ready (attempt 1): By.xpath: (//div[@id='content-icon'])[2]
+2026-02-11 17:48:24.411 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] Looking for language element with name: Azərbaycan
+2026-02-11 17:48:24.411 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Trying to find element: By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Azərbaycan']
+2026-02-11 17:48:24.445 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Element found and ready (attempt 1): By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Azərbaycan']
+2026-02-11 17:48:26.945 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] Clicking settings ellipses button...
+2026-02-11 17:48:26.945 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-02-11 17:48:28.306 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-02-11 17:48:28.555 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] Looking for language element with name: Azərbaycan
+2026-02-11 17:48:28.555 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Waiting until element is visible in viewport
+2026-02-11 17:48:38.933 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Capturing screenshot: Filter Applied is Azərbaycan__2026-02-11_174838.png
+2026-02-11 17:48:39.166 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Screenshot saved at: test-output/screenshots/Run_2026-02-11_17-46-50/verifyingGlobalFilterLandingPageLingua/Filter Applied is Azərbaycan__2026-02-11_174838.png
+2026-02-11 17:48:39.166 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] Clicking settings ellipses button...
+2026-02-11 17:48:39.167 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-02-11 17:48:39.192 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-02-11 17:48:41.252 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] Clicking on global filter button in landing page..
+2026-02-11 17:48:41.252 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Trying to click element: By.xpath: //div[@id='filter-button']
+2026-02-11 17:48:41.439 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Clicked successfully (attempt 1): By.xpath: //div[@id='filter-button']
+2026-02-11 17:48:41.691 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Waiting until element is visible in viewport
+2026-02-11 17:48:41.721 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Capturing screenshot: Filter Applied is Azərbaycan__2026-02-11_174841.png
+2026-02-11 17:48:41.958 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Screenshot saved at: test-output/screenshots/Run_2026-02-11_17-46-50/verifyingGlobalFilterLandingPageLingua/Filter Applied is Azərbaycan__2026-02-11_174841.png
+2026-02-11 17:48:41.959 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] Fetching the data from the global filter in landing page
+2026-02-11 17:48:41.959 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Trying to find element: By.xpath: //ytd-search-filter-options-dialog-renderer[@class='style-scope ytd-popup-container']
+2026-02-11 17:48:41.984 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Element found and ready (attempt 1): By.xpath: //ytd-search-filter-options-dialog-renderer[@class='style-scope ytd-popup-container']
+2026-02-11 17:48:42.009 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] Closing the global filter pop-up in landing page..
+2026-02-11 17:48:42.009 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Trying to find element: By.xpath: //yt-icon[@icon='close']
+2026-02-11 17:48:42.031 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Element found and ready (attempt 1): By.xpath: //yt-icon[@icon='close']
+2026-02-11 17:48:42.164 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] 
+========== LANGUAGE DETECTION ==========
+Detected Language : AZERBAIJANI
+Input Text        : Axtarış filtrləri
+NÖV
+Videolar
+Shorts
+Kanallar
+Mahnı siyahıları
+Filmlər
+MÜDDƏT
+3 dəqiqədən az
+3 - 20 dəqiqə
+20 dəqiqədən çox
+YÜKLƏMƏ TARIXI
+Bu gün
+Bu həftə
+Bu ay
+Bu il
+FUNKSIYALAR
+Canlı
+4K
+HD
+Altyazılar/gizli altyazılar
+Creative Commons lisenziyalı
+360°
+VR180
+3D
+HDR
+Məkan
+Satın alınmış
+PRIORITETLƏŞDIRIN
+uyğunluq
+Populyarlıq
+========================================
+2026-02-11 17:48:42.168 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] getLangAttribute() - locating <html> and reading lang property
+2026-02-11 17:48:42.190 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] Language attribute read: az-Latn-AZ
+2026-02-11 17:48:42.193 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] Clicking settings ellipses button...
+2026-02-11 17:48:42.193 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-02-11 17:48:42.227 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-02-11 17:48:44.304 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] Clicking language dropdown...
+2026-02-11 17:48:44.304 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Trying to find element: By.xpath: (//div[@id='content-icon'])[2]
+2026-02-11 17:48:44.330 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Element found and ready (attempt 1): By.xpath: (//div[@id='content-icon'])[2]
+2026-02-11 17:48:47.724 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] Looking for language element with name: Bahasa Indonesia
+2026-02-11 17:48:47.724 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Trying to find element: By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Bahasa Indonesia']
+2026-02-11 17:48:47.766 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Element found and ready (attempt 1): By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Bahasa Indonesia']
+2026-02-11 17:48:50.069 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] Clicking settings ellipses button...
+2026-02-11 17:48:50.070 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-02-11 17:48:52.686 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-02-11 17:48:53.237 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] Looking for language element with name: Bahasa Indonesia
+2026-02-11 17:48:53.237 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Waiting until element is visible in viewport
+2026-02-11 17:49:03.626 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Capturing screenshot: Filter Applied is Bahasa Indonesia__2026-02-11_174903.png
+2026-02-11 17:49:03.872 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Screenshot saved at: test-output/screenshots/Run_2026-02-11_17-46-50/verifyingGlobalFilterLandingPageLingua/Filter Applied is Bahasa Indonesia__2026-02-11_174903.png
+2026-02-11 17:49:03.873 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] Clicking settings ellipses button...
+2026-02-11 17:49:03.873 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-02-11 17:49:03.898 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-02-11 17:49:05.957 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] Clicking on global filter button in landing page..
+2026-02-11 17:49:05.957 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Trying to click element: By.xpath: //div[@id='filter-button']
+2026-02-11 17:49:06.147 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Clicked successfully (attempt 1): By.xpath: //div[@id='filter-button']
+2026-02-11 17:49:06.398 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Waiting until element is visible in viewport
+2026-02-11 17:49:06.430 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Capturing screenshot: Filter Applied is Bahasa Indonesia__2026-02-11_174906.png
+2026-02-11 17:49:06.666 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Screenshot saved at: test-output/screenshots/Run_2026-02-11_17-46-50/verifyingGlobalFilterLandingPageLingua/Filter Applied is Bahasa Indonesia__2026-02-11_174906.png
+2026-02-11 17:49:06.667 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] Fetching the data from the global filter in landing page
+2026-02-11 17:49:06.667 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Trying to find element: By.xpath: //ytd-search-filter-options-dialog-renderer[@class='style-scope ytd-popup-container']
+2026-02-11 17:49:06.692 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Element found and ready (attempt 1): By.xpath: //ytd-search-filter-options-dialog-renderer[@class='style-scope ytd-popup-container']
+2026-02-11 17:49:06.718 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] Closing the global filter pop-up in landing page..
+2026-02-11 17:49:06.719 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Trying to find element: By.xpath: //yt-icon[@icon='close']
+2026-02-11 17:49:06.744 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Element found and ready (attempt 1): By.xpath: //yt-icon[@icon='close']
+2026-02-11 17:49:06.819 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] 
+========== LANGUAGE DETECTION ==========
+Detected Language : INDONESIAN
+Input Text        : Filter penelusuran
+JENIS
+Video
+Shorts
+Channel
+Playlist
+Film
+DURASI
+Kurang dari 3 menit
+3—20 menit
+Lebih dari 20 menit
+TANGGAL UPLOAD
+Hari ini
+Minggu ini
+Bulan ini
+Tahun ini
+FITUR
+Live
+4K
+HD
+Subtitel/CC
+Creative Commons
+360°
+VR180
+3D
+HDR
+Lokasi
+Dibeli
+PRIORITASKAN
+Relevansi
+Popularitas
+========================================
+2026-02-11 17:49:06.821 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] getLangAttribute() - locating <html> and reading lang property
+2026-02-11 17:49:06.840 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] Language attribute read: id-ID
+2026-02-11 17:49:06.840 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] Clicking settings ellipses button...
+2026-02-11 17:49:06.840 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-02-11 17:49:06.867 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-02-11 17:49:08.953 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] Clicking language dropdown...
+2026-02-11 17:49:08.953 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Trying to find element: By.xpath: (//div[@id='content-icon'])[2]
+2026-02-11 17:49:08.980 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Element found and ready (attempt 1): By.xpath: (//div[@id='content-icon'])[2]
+2026-02-11 17:49:12.356 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] Looking for language element with name: Bosanski
+2026-02-11 17:49:12.356 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Trying to find element: By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Bosanski']
+2026-02-11 17:49:12.385 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Element found and ready (attempt 1): By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Bosanski']
+2026-02-11 17:49:14.967 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] Clicking settings ellipses button...
+2026-02-11 17:49:14.968 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-02-11 17:49:15.992 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-02-11 17:49:16.374 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] Looking for language element with name: Bosanski
+2026-02-11 17:49:16.375 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Waiting until element is visible in viewport
+2026-02-11 17:49:26.643 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Capturing screenshot: Filter Applied is Bosanski__2026-02-11_174926.png
+2026-02-11 17:49:26.889 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Screenshot saved at: test-output/screenshots/Run_2026-02-11_17-46-50/verifyingGlobalFilterLandingPageLingua/Filter Applied is Bosanski__2026-02-11_174926.png
+2026-02-11 17:49:26.889 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] Clicking settings ellipses button...
+2026-02-11 17:49:26.889 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-02-11 17:49:26.919 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-02-11 17:49:28.985 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] Clicking on global filter button in landing page..
+2026-02-11 17:49:28.985 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Trying to click element: By.xpath: //div[@id='filter-button']
+2026-02-11 17:49:29.170 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Clicked successfully (attempt 1): By.xpath: //div[@id='filter-button']
+2026-02-11 17:49:29.422 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Waiting until element is visible in viewport
+2026-02-11 17:49:29.451 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Capturing screenshot: Filter Applied is Bosanski__2026-02-11_174929.png
+2026-02-11 17:49:29.681 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Screenshot saved at: test-output/screenshots/Run_2026-02-11_17-46-50/verifyingGlobalFilterLandingPageLingua/Filter Applied is Bosanski__2026-02-11_174929.png
+2026-02-11 17:49:29.682 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] Fetching the data from the global filter in landing page
+2026-02-11 17:49:29.682 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Trying to find element: By.xpath: //ytd-search-filter-options-dialog-renderer[@class='style-scope ytd-popup-container']
+2026-02-11 17:49:29.708 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Element found and ready (attempt 1): By.xpath: //ytd-search-filter-options-dialog-renderer[@class='style-scope ytd-popup-container']
+2026-02-11 17:49:29.737 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] Closing the global filter pop-up in landing page..
+2026-02-11 17:49:29.737 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Trying to find element: By.xpath: //yt-icon[@icon='close']
+2026-02-11 17:49:29.759 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Element found and ready (attempt 1): By.xpath: //yt-icon[@icon='close']
+2026-02-11 17:49:29.834 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] 
+========== LANGUAGE DETECTION ==========
+Detected Language : BOSNIAN
+Input Text        : Filteri pretraživanja
+VRSTA
+Videozapisi
+Shortsi
+Kanali
+Plejliste
+Filmovi
+TRAJANJE
+Manje od 3 minute
+3–20 minuta
+Više od 20 minuta
+DATUM OTPREMANJA
+Danas
+Ova sedmica
+Ovog mjeseca
+Ove godine
+FUNKCIJE
+Uživo
+4K
+HD
+Titlovi
+Creative Commons
+360°
+VR180
+3D
+HDR
+Lokacija
+Kupljeno
+DAVANJE PRIORITETA
+Relevantnost
+Popularnost
+========================================
+2026-02-11 17:49:29.835 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] getLangAttribute() - locating <html> and reading lang property
+2026-02-11 17:49:29.854 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] Language attribute read: bs-Latn-BA
+2026-02-11 17:49:29.857 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] Clicking settings ellipses button...
+2026-02-11 17:49:29.857 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-02-11 17:49:29.889 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-02-11 17:49:31.968 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] Clicking language dropdown...
+2026-02-11 17:49:31.968 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Trying to find element: By.xpath: (//div[@id='content-icon'])[2]
+2026-02-11 17:49:31.996 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Element found and ready (attempt 1): By.xpath: (//div[@id='content-icon'])[2]
+2026-02-11 17:49:35.296 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] Looking for language element with name: Català
+2026-02-11 17:49:35.296 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Trying to find element: By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Català']
+2026-02-11 17:49:35.340 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Element found and ready (attempt 1): By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Català']
+2026-02-11 17:49:38.842 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] Clicking settings ellipses button...
+2026-02-11 17:49:38.843 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-02-11 17:49:40.047 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-02-11 17:49:40.887 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] Looking for language element with name: Català
+2026-02-11 17:49:40.894 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Waiting until element is visible in viewport
+2026-02-11 17:49:50.929 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Capturing screenshot: Filter Applied is Català__2026-02-11_174950.png
+2026-02-11 17:49:51.145 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Screenshot saved at: test-output/screenshots/Run_2026-02-11_17-46-50/verifyingGlobalFilterLandingPageLingua/Filter Applied is Català__2026-02-11_174950.png
+2026-02-11 17:49:51.145 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] Clicking settings ellipses button...
+2026-02-11 17:49:51.145 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-02-11 17:49:51.172 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-02-11 17:49:53.229 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] Clicking on global filter button in landing page..
+2026-02-11 17:49:53.229 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Trying to click element: By.xpath: //div[@id='filter-button']
+2026-02-11 17:49:53.413 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Clicked successfully (attempt 1): By.xpath: //div[@id='filter-button']
+2026-02-11 17:49:53.664 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Waiting until element is visible in viewport
+2026-02-11 17:49:53.693 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Capturing screenshot: Filter Applied is Català__2026-02-11_174953.png
+2026-02-11 17:49:53.893 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Screenshot saved at: test-output/screenshots/Run_2026-02-11_17-46-50/verifyingGlobalFilterLandingPageLingua/Filter Applied is Català__2026-02-11_174953.png
+2026-02-11 17:49:53.894 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] Fetching the data from the global filter in landing page
+2026-02-11 17:49:53.894 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Trying to find element: By.xpath: //ytd-search-filter-options-dialog-renderer[@class='style-scope ytd-popup-container']
+2026-02-11 17:49:53.927 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Element found and ready (attempt 1): By.xpath: //ytd-search-filter-options-dialog-renderer[@class='style-scope ytd-popup-container']
+2026-02-11 17:49:53.954 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] Closing the global filter pop-up in landing page..
+2026-02-11 17:49:53.954 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Trying to find element: By.xpath: //yt-icon[@icon='close']
+2026-02-11 17:49:53.976 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Element found and ready (attempt 1): By.xpath: //yt-icon[@icon='close']
+2026-02-11 17:49:54.041 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] 
+========== LANGUAGE DETECTION ==========
+Detected Language : CATALAN
+Input Text        : Filtres de cerca
+TIPUS
+Vídeos
+Curts
+Canals
+Llistes de reproducció
+Pel·lícules
+DURADA
+Menys de 3 minuts
+Entre 3 i 20 de minuts
+Més de 20 minuts
+DATA DE PUJADA
+Avui
+Aquesta setmana
+Aquest mes
+Aquest any
+FUNCIONS
+En directe
+4K
+HD
+Subtítols
+Creative Commons
+360°
+VR180
+3D
+HDR
+Ubicació
+Comprat
+PRIORITZA
+Rellevància
+Popularitat
+========================================
+2026-02-11 17:49:54.042 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] getLangAttribute() - locating <html> and reading lang property
+2026-02-11 17:49:54.060 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] Language attribute read: ca-ES
+2026-02-11 17:49:54.060 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] Clicking settings ellipses button...
+2026-02-11 17:49:54.060 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-02-11 17:49:54.089 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-02-11 17:49:56.172 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] Clicking language dropdown...
+2026-02-11 17:49:56.172 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Trying to find element: By.xpath: (//div[@id='content-icon'])[2]
+2026-02-11 17:49:56.197 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Element found and ready (attempt 1): By.xpath: (//div[@id='content-icon'])[2]
+2026-02-11 17:49:59.552 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] Looking for language element with name: Dansk
+2026-02-11 17:49:59.552 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Trying to find element: By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Dansk']
+2026-02-11 17:49:59.581 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Element found and ready (attempt 1): By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Dansk']
+2026-02-11 17:50:01.807 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] Clicking settings ellipses button...
+2026-02-11 17:50:01.808 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-02-11 17:50:03.315 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-02-11 17:50:03.507 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] Looking for language element with name: Dansk
+2026-02-11 17:50:03.507 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Waiting until element is visible in viewport
+2026-02-11 17:50:13.858 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Capturing screenshot: Filter Applied is Dansk__2026-02-11_175013.png
+2026-02-11 17:50:14.054 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Screenshot saved at: test-output/screenshots/Run_2026-02-11_17-46-50/verifyingGlobalFilterLandingPageLingua/Filter Applied is Dansk__2026-02-11_175013.png
+2026-02-11 17:50:14.054 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] Clicking settings ellipses button...
+2026-02-11 17:50:14.055 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-02-11 17:50:14.078 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-02-11 17:50:16.135 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] Clicking on global filter button in landing page..
+2026-02-11 17:50:16.135 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Trying to click element: By.xpath: //div[@id='filter-button']
+2026-02-11 17:50:16.320 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Clicked successfully (attempt 1): By.xpath: //div[@id='filter-button']
+2026-02-11 17:50:16.572 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Waiting until element is visible in viewport
+2026-02-11 17:50:16.599 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Capturing screenshot: Filter Applied is Dansk__2026-02-11_175016.png
+2026-02-11 17:50:16.796 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Screenshot saved at: test-output/screenshots/Run_2026-02-11_17-46-50/verifyingGlobalFilterLandingPageLingua/Filter Applied is Dansk__2026-02-11_175016.png
+2026-02-11 17:50:16.797 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] Fetching the data from the global filter in landing page
+2026-02-11 17:50:16.797 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Trying to find element: By.xpath: //ytd-search-filter-options-dialog-renderer[@class='style-scope ytd-popup-container']
+2026-02-11 17:50:16.821 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Element found and ready (attempt 1): By.xpath: //ytd-search-filter-options-dialog-renderer[@class='style-scope ytd-popup-container']
+2026-02-11 17:50:16.845 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] Closing the global filter pop-up in landing page..
+2026-02-11 17:50:16.845 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Trying to find element: By.xpath: //yt-icon[@icon='close']
+2026-02-11 17:50:16.867 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Element found and ready (attempt 1): By.xpath: //yt-icon[@icon='close']
+2026-02-11 17:50:16.930 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] 
+========== LANGUAGE DETECTION ==========
+Detected Language : DANISH
+Input Text        : Søgefiltre
+TYPE
+Videoer
+Shorts
+Kanaler
+Playlister
+Film
+VARIGHED
+Under 3 minutter
+3-20 minutter
+Over 20 minutter
+DATO FOR UPLOAD
+I dag
+Denne uge
+Denne måned
+I år
+EGENSKABER
+Live
+4K
+HD
+Undertekster
+Creative Commons
+360°
+VR180
+3D
+HDR
+Lokation
+Købt
+PRIORITER
+Relevans
+Popularitet
+========================================
+2026-02-11 17:50:16.931 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] getLangAttribute() - locating <html> and reading lang property
+2026-02-11 17:50:16.950 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] Language attribute read: da-DK
+2026-02-11 17:50:16.951 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] Clicking settings ellipses button...
+2026-02-11 17:50:16.951 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-02-11 17:50:16.976 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-02-11 17:50:19.054 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] Clicking language dropdown...
+2026-02-11 17:50:19.054 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Trying to find element: By.xpath: (//div[@id='content-icon'])[2]
+2026-02-11 17:50:19.082 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Element found and ready (attempt 1): By.xpath: (//div[@id='content-icon'])[2]
+2026-02-11 17:50:22.410 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] Looking for language element with name: Deutsch
+2026-02-11 17:50:22.410 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Trying to find element: By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Deutsch']
+2026-02-11 17:50:22.439 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Element found and ready (attempt 1): By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Deutsch']
+2026-02-11 17:50:24.870 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] Clicking settings ellipses button...
+2026-02-11 17:50:24.870 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-02-11 17:50:25.985 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-02-11 17:50:26.435 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] Looking for language element with name: Deutsch
+2026-02-11 17:50:26.435 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Waiting until element is visible in viewport
+2026-02-11 17:50:36.673 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Capturing screenshot: Filter Applied is Deutsch__2026-02-11_175036.png
+2026-02-11 17:50:36.886 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Screenshot saved at: test-output/screenshots/Run_2026-02-11_17-46-50/verifyingGlobalFilterLandingPageLingua/Filter Applied is Deutsch__2026-02-11_175036.png
+2026-02-11 17:50:36.887 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] Clicking settings ellipses button...
+2026-02-11 17:50:36.887 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-02-11 17:50:36.910 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-02-11 17:50:38.968 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] Clicking on global filter button in landing page..
+2026-02-11 17:50:38.968 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Trying to click element: By.xpath: //div[@id='filter-button']
+2026-02-11 17:50:39.150 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Clicked successfully (attempt 1): By.xpath: //div[@id='filter-button']
+2026-02-11 17:50:39.401 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Waiting until element is visible in viewport
+2026-02-11 17:50:39.428 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Capturing screenshot: Filter Applied is Deutsch__2026-02-11_175039.png
+2026-02-11 17:50:39.640 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Screenshot saved at: test-output/screenshots/Run_2026-02-11_17-46-50/verifyingGlobalFilterLandingPageLingua/Filter Applied is Deutsch__2026-02-11_175039.png
+2026-02-11 17:50:39.640 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] Fetching the data from the global filter in landing page
+2026-02-11 17:50:39.640 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Trying to find element: By.xpath: //ytd-search-filter-options-dialog-renderer[@class='style-scope ytd-popup-container']
+2026-02-11 17:50:39.665 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Element found and ready (attempt 1): By.xpath: //ytd-search-filter-options-dialog-renderer[@class='style-scope ytd-popup-container']
+2026-02-11 17:50:39.690 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] Closing the global filter pop-up in landing page..
+2026-02-11 17:50:39.690 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Trying to find element: By.xpath: //yt-icon[@icon='close']
+2026-02-11 17:50:39.713 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Element found and ready (attempt 1): By.xpath: //yt-icon[@icon='close']
+2026-02-11 17:50:39.779 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] 
+========== LANGUAGE DETECTION ==========
+Detected Language : GERMAN
+Input Text        : Suchfilter
+TYP
+Videos
+Shorts
+Kanäle
+Playlists
+Filme
+DAUER
+Kürzer als 3 Minuten
+3–20 Minuten
+Länger als 20 Minuten
+HOCHLADEDATUM
+Heute
+Diese Woche
+Dieser Monat
+Dieses Jahr
+EIGENSCHAFTEN
+Live
+4K
+HD
+Untertitel/CC
+Creative Commons
+360°
+VR180
+3D
+HDR
+Standort
+Gekauft
+PRIORISIEREN
+Relevanz
+Beliebtheit
+========================================
+2026-02-11 17:50:39.781 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] getLangAttribute() - locating <html> and reading lang property
+2026-02-11 17:50:39.800 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] Language attribute read: de-DE
+2026-02-11 17:50:39.800 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] Clicking settings ellipses button...
+2026-02-11 17:50:39.800 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-02-11 17:50:39.829 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-02-11 17:50:41.904 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] Clicking language dropdown...
+2026-02-11 17:50:41.904 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Trying to find element: By.xpath: (//div[@id='content-icon'])[2]
+2026-02-11 17:50:41.932 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Element found and ready (attempt 1): By.xpath: (//div[@id='content-icon'])[2]
+2026-02-11 17:50:45.222 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] Looking for language element with name: Eesti
+2026-02-11 17:50:45.222 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Trying to find element: By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Eesti']
+2026-02-11 17:50:45.249 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Element found and ready (attempt 1): By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Eesti']
+2026-02-11 17:50:47.742 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] Clicking settings ellipses button...
+2026-02-11 17:50:47.742 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-02-11 17:50:49.175 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-02-11 17:50:49.484 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] Looking for language element with name: Eesti
+2026-02-11 17:50:49.484 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Waiting until element is visible in viewport
+2026-02-11 17:50:59.731 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Capturing screenshot: Filter Applied is Eesti__2026-02-11_175059.png
+2026-02-11 17:50:59.937 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Screenshot saved at: test-output/screenshots/Run_2026-02-11_17-46-50/verifyingGlobalFilterLandingPageLingua/Filter Applied is Eesti__2026-02-11_175059.png
+2026-02-11 17:50:59.937 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] Clicking settings ellipses button...
+2026-02-11 17:50:59.937 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-02-11 17:50:59.960 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-02-11 17:51:02.020 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] Clicking on global filter button in landing page..
+2026-02-11 17:51:02.020 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Trying to click element: By.xpath: //div[@id='filter-button']
+2026-02-11 17:51:02.203 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Clicked successfully (attempt 1): By.xpath: //div[@id='filter-button']
+2026-02-11 17:51:02.456 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Waiting until element is visible in viewport
+2026-02-11 17:51:02.486 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Capturing screenshot: Filter Applied is Eesti__2026-02-11_175102.png
+2026-02-11 17:51:02.689 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Screenshot saved at: test-output/screenshots/Run_2026-02-11_17-46-50/verifyingGlobalFilterLandingPageLingua/Filter Applied is Eesti__2026-02-11_175102.png
+2026-02-11 17:51:02.689 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] Fetching the data from the global filter in landing page
+2026-02-11 17:51:02.689 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Trying to find element: By.xpath: //ytd-search-filter-options-dialog-renderer[@class='style-scope ytd-popup-container']
+2026-02-11 17:51:02.714 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Element found and ready (attempt 1): By.xpath: //ytd-search-filter-options-dialog-renderer[@class='style-scope ytd-popup-container']
+2026-02-11 17:51:02.741 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] Closing the global filter pop-up in landing page..
+2026-02-11 17:51:02.741 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Trying to find element: By.xpath: //yt-icon[@icon='close']
+2026-02-11 17:51:02.761 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Element found and ready (attempt 1): By.xpath: //yt-icon[@icon='close']
+2026-02-11 17:51:02.826 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] 
+========== LANGUAGE DETECTION ==========
+Detected Language : ESTONIAN
+Input Text        : Otsingufiltrid
+TÜÜP
+Videod
+Lühivideod
+Kanalid
+Esitusloendid
+Filmid
+KESTUS
+Alla 3 minuti
+3–20 minutit
+Üle 20 minuti
+ÜLESLAADIMISE KUUPÄEV
+Täna
+See nädal
+See kuu
+See aasta
+FUNKTSIOONID
+Reaalajas
+4K
+HD
+Subtiitrid
+Creative Commons
+360°
+VR180
+3D
+HDR
+Asukoht
+Ostetud
+PRIORITEETSUS
+Asjakohasus
+Populaarsus
+========================================
+2026-02-11 17:51:02.827 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] getLangAttribute() - locating <html> and reading lang property
+2026-02-11 17:51:02.847 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] Language attribute read: et-EE
+2026-02-11 17:51:02.847 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] Clicking settings ellipses button...
+2026-02-11 17:51:02.847 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-02-11 17:51:02.875 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-02-11 17:51:04.936 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] Clicking language dropdown...
+2026-02-11 17:51:04.936 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Trying to find element: By.xpath: (//div[@id='content-icon'])[2]
+2026-02-11 17:51:04.963 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Element found and ready (attempt 1): By.xpath: (//div[@id='content-icon'])[2]
+2026-02-11 17:51:08.326 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] Looking for language element with name: English (India)
+2026-02-11 17:51:08.326 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Trying to find element: By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='English (India)']
+2026-02-11 17:51:08.355 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Element found and ready (attempt 1): By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='English (India)']
+2026-02-11 17:51:10.756 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] Clicking settings ellipses button...
+2026-02-11 17:51:10.757 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-02-11 17:51:12.387 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-02-11 17:51:12.480 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] Looking for language element with name: English (India)
+2026-02-11 17:51:12.480 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Waiting until element is visible in viewport
+2026-02-11 17:51:22.732 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Capturing screenshot: Filter Applied is English (India)__2026-02-11_175122.png
+2026-02-11 17:51:22.974 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Screenshot saved at: test-output/screenshots/Run_2026-02-11_17-46-50/verifyingGlobalFilterLandingPageLingua/Filter Applied is English (India)__2026-02-11_175122.png
+2026-02-11 17:51:22.974 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] Clicking settings ellipses button...
+2026-02-11 17:51:22.974 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-02-11 17:51:23.002 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+2026-02-11 17:51:25.077 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] Clicking on global filter button in landing page..
+2026-02-11 17:51:25.077 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Trying to click element: By.xpath: //div[@id='filter-button']
+2026-02-11 17:51:25.278 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Clicked successfully (attempt 1): By.xpath: //div[@id='filter-button']
+2026-02-11 17:51:25.529 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Waiting until element is visible in viewport
+2026-02-11 17:51:25.556 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Capturing screenshot: Filter Applied is English (India)__2026-02-11_175125.png
+2026-02-11 17:51:25.762 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Screenshot saved at: test-output/screenshots/Run_2026-02-11_17-46-50/verifyingGlobalFilterLandingPageLingua/Filter Applied is English (India)__2026-02-11_175125.png
+2026-02-11 17:51:25.763 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] Fetching the data from the global filter in landing page
+2026-02-11 17:51:25.763 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Trying to find element: By.xpath: //ytd-search-filter-options-dialog-renderer[@class='style-scope ytd-popup-container']
+2026-02-11 17:51:25.789 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Element found and ready (attempt 1): By.xpath: //ytd-search-filter-options-dialog-renderer[@class='style-scope ytd-popup-container']
+2026-02-11 17:51:25.816 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] Closing the global filter pop-up in landing page..
+2026-02-11 17:51:25.816 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Trying to find element: By.xpath: //yt-icon[@icon='close']
+2026-02-11 17:51:25.840 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Element found and ready (attempt 1): By.xpath: //yt-icon[@icon='close']
+2026-02-11 17:51:25.906 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] 
+========== LANGUAGE DETECTION ==========
+Detected Language : ENGLISH
+Input Text        : Search filters
+TYPE
+Videos
+Shorts
+Channels
+Playlists
+Movies
+DURATION
+Under 3 minutes
+3–20 minutes
+Over 20 minutes
+UPLOAD DATE
+Today
+This week
+This month
+This year
+FEATURES
+Live
+4K
+HD
+Subtitles/CC
+Creative Commons
+360°
+VR180
+3D
+HDR
+Location
+Purchased
+PRIORITISE
+Relevance
+Popularity
+========================================
+2026-02-11 17:51:25.906 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] getLangAttribute() - locating <html> and reading lang property
+2026-02-11 17:51:25.926 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] Language attribute read: en-IN
+2026-02-11 17:51:25.930 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] [verifyingGlobalFilterLandingPageLingua] Not retrying test 'verifyingGlobalFilterLandingPageLingua'. Retry count: 0, Cause: The following asserts failed:
+	Language detection mismatch for language=Bosanski expected [CROATIAN] but found [BOSNIAN]
+2026-02-11 17:51:25.957 [TestNG-test-Yt Master Tests-1] ERROR [verifyingGlobalFilterLandingPageLingua] Test FAILED: verifyingGlobalFilterLandingPageLingua - java.lang.AssertionError: The following asserts failed:
+	Language detection mismatch for language=Bosanski expected [CROATIAN] but found [BOSNIAN]
+2026-02-11 17:51:25.957 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] Closing WebDriver for thread: 31
+2026-02-11 17:51:26.371 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] WebDriver instance removed from ThreadLocal for thread: 31
+2026-02-11 17:51:26.371 [TestNG-test-Yt Master Tests-1] INFO  [verifyingGlobalFilterLandingPageLingua] Driver closed for test: verifyingGlobalFilterLandingPageLingua
