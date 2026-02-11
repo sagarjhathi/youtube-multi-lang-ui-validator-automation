@@ -175,7 +175,7 @@ jobs:
           if [ -d "logs" ]; then
             cp -r logs artifacts/extent/logs
           fi
-          echo "<html><body><h3>Artifacts</h3><ul><li><a href='ExtentReports/ExtentReport.html'>Open Extent Report</a></li></ul></body></html>" > artifacts/extent/index.html
+          echo "<html><body><h3></h3><ul><li><a href='ExtentReports/ExtentReport.html'></a></li></ul></body></html>" > artifacts/extent/index.html
 
 
    
