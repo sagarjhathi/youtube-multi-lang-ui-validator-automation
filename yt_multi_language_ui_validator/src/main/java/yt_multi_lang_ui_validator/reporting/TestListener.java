@@ -198,7 +198,7 @@ public class TestListener implements ITestListener {
             if (!pagesHref.isEmpty()) {
                 html.append("<div><a href='").append(pagesHref).append("' target='_blank'>Open (GitHub Pages)</a></div>");
             }
-            html.append("<div><a href='").append(hrefDot).append("' target='_blank'>Open (index.html)</a></div>");
+            html.append("<div><a href='").append(hrefDot).append("' target='_blank'>Open (artifact root / index.html)</a></div>");
             html.append("<div><a href='").append(hrefUp1).append("' target='_blank'>Open (report one level deep)</a></div>");
             html.append("<div><a href='").append(hrefUp2).append("' target='_blank'>Open (report inside ExtentReports/test-output)</a></div>");
             html.append("<div style='margin-top:6px;color:#666;font-size:0.9em;'>Detected log on disk: ");
