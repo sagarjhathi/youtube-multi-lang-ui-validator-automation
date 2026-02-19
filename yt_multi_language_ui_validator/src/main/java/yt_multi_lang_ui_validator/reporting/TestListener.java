@@ -6,6 +6,7 @@ import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.markuputils.ExtentColor;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
 
+import main.java.yt_multi_lang_ui_validator.config.ConfigManager;
 import main.java.yt_multi_lang_ui_validator.logger.LoggerUtility;
 
 import org.testng.ITestContext;
@@ -220,11 +221,12 @@ public class TestListener implements ITestListener {
   
     
     private void attachScreenshotFolder(ITestResult result) {
+    	
         try {
             String testName = result.getMethod().getMethodName();
             String runTs = ExtentManager.RUN_TIMESTAMP;
             String relFolder = "screenshots/Run_" + runTs + "/" + testName;
-
+            
             // Absolute folder where screenshots are written during the run
             Path absFolder = Paths.get(System.getProperty("user.dir"))
                     .resolve("test-output").resolve(relFolder).normalize();
@@ -243,9 +245,14 @@ public class TestListener implements ITestListener {
 
             StringBuilder html = new StringBuilder();
             html.append("<details><summary>Screenshots for ").append(testName).append("</summary>");
-
+           
+           
             try (Stream<Path> files = java.nio.file.Files.list(absFolder)) {
-                files.filter(p -> p.getFileName().toString().toLowerCase().endsWith(".jpg"))
+            	//String screenShotFormat;
+            	
+            	
+                     
+                files.filter(p -> p.getFileName().toString().toLowerCase().endsWith(ConfigManager.get("screenshotFormat")))
                      .sorted()
                      .forEach(p -> {
                          String fileName = p.getFileName().toString();

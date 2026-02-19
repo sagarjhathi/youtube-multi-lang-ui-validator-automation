@@ -79,9 +79,17 @@ public class ScreenshotUtil {
         String folderPath = "test-output/screenshots/Run_" + ExtentManager.RUN_TIMESTAMP + "/" + testName;
         new File(folderPath).mkdirs();
 
+        String screenShotFormat;
+       try {
+    	 screenShotFormat =ConfigManager.get("screenshotFormat");
+       }catch(Exception e) {
+    	   
+      	 screenShotFormat="jpg";
+      	 log.info("[{}] failed to fetch the screenshot format , adding the hardcoded default format}", ThreadContext.get("testName"));
+       }
         String fileName = (customName != null && !customName.isEmpty())
-                ? customName + "__" + timestamp + ".jpg"
-                : testName + "__" + timestamp + ".jpg";
+                ? customName + "__" + timestamp + screenShotFormat
+                : testName + "__" + timestamp + screenShotFormat;
 
         String fullPath = folderPath + "/" + fileName;
         WebDriver driver = DriverManager.getDriver();
