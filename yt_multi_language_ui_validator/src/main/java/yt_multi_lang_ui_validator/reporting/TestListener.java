@@ -245,7 +245,7 @@ public class TestListener implements ITestListener {
             html.append("<details><summary>Screenshots for ").append(testName).append("</summary>");
 
             try (Stream<Path> files = java.nio.file.Files.list(absFolder)) {
-                files.filter(p -> p.getFileName().toString().toLowerCase().endsWith(".png"))
+                files.filter(p -> p.getFileName().toString().toLowerCase().endsWith(".jpg"))
                      .sorted()
                      .forEach(p -> {
                          String fileName = p.getFileName().toString();
