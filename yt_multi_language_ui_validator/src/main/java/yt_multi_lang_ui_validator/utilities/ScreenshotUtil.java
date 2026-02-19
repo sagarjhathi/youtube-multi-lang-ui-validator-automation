@@ -12,6 +12,7 @@ import org.openqa.selenium.WebDriverException;
 import main.java.yt_multi_lang_ui_validator.driverManager.DriverManager;
 import main.java.yt_multi_lang_ui_validator.logger.LoggerUtility;
 import main.java.yt_multi_lang_ui_validator.reporting.ExtentManager;
+import net.coobird.thumbnailator.Thumbnails;
 
 import java.io.File;
 import java.io.IOException;
@@ -78,8 +79,8 @@ public class ScreenshotUtil {
         new File(folderPath).mkdirs();
 
         String fileName = (customName != null && !customName.isEmpty())
-                ? customName + "__" + timestamp + ".png"
-                : testName + "__" + timestamp + ".png";
+                ? customName + "__" + timestamp + ".jpg"
+                : testName + "__" + timestamp + ".jpg";
 
         String fullPath = folderPath + "/" + fileName;
         WebDriver driver = DriverManager.getDriver();
@@ -95,14 +96,22 @@ public class ScreenshotUtil {
             }
 
             File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-            FileUtils.copyFile(src, new File(fullPath));
+            
+            
+            
+            
+//            Thumbnails.of(src)
+//            .scale(1)
+//            .outputQuality(0.5)
+//            .toFile(new File(fullPath));
+              
+            ImageCompressor.compressImage(src, fullPath,0.5);
+            
+          //  FileUtils.copyFile(src, new File(fullPath));
 
             log.info("[{}] Screenshot saved at: {}", ThreadContext.get("testName"), fullPath);
         } catch (WebDriverException we) {
             log.error("[{}] WebDriverException during screenshot: {}", ThreadContext.get("testName"), we.getMessage());
-            return null;
-        } catch (IOException ioe) {
-            log.error("[{}] IOException while saving screenshot: {}", ThreadContext.get("testName"), ioe.getMessage());
             return null;
         } catch (Exception e) {
             log.error("[{}] Unexpected exception while capturing screenshot: {}", ThreadContext.get("testName"), e.getMessage());
