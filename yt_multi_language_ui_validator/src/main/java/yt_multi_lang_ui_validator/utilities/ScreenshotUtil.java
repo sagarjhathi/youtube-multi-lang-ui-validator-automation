@@ -9,6 +9,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriverException;
 
+import main.java.yt_multi_lang_ui_validator.config.ConfigManager;
 import main.java.yt_multi_lang_ui_validator.driverManager.DriverManager;
 import main.java.yt_multi_lang_ui_validator.logger.LoggerUtility;
 import main.java.yt_multi_lang_ui_validator.reporting.ExtentManager;
@@ -97,17 +98,18 @@ public class ScreenshotUtil {
 
             File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
             
-            
-            
-            
-//            Thumbnails.of(src)
-//            .scale(1)
-//            .outputQuality(0.5)
-//            .toFile(new File(fullPath));
-              
-            ImageCompressor.compressImage(src, fullPath,0.5);
-            
-          //  FileUtils.copyFile(src, new File(fullPath));
+              if(ConfigManager.getBoolean("compressImage", false)) {
+            	  try{
+            		double imageQuality=ConfigManager.getInt("imageCompressionQuality");
+            		ImageCompressor.compressImage(src, fullPath,imageQuality);
+            	  }catch(Exception e) {
+            		  log.warn("[{}] compression quality / compressImage method failed, handling it the default way[No compression].", ThreadContext.get("testName"));
+            		  FileUtils.copyFile(src, new File(fullPath));
+            	  }
+            	  
+              }
+           
+          
 
             log.info("[{}] Screenshot saved at: {}", ThreadContext.get("testName"), fullPath);
         } catch (WebDriverException we) {
