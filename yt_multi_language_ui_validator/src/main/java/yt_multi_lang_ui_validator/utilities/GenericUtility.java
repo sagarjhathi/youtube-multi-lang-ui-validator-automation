@@ -110,12 +110,12 @@ public class GenericUtility extends BasePage {
     	
 		log.info("[{}] Within scrollByPixel method", ThreadContext.get("testName"));
         ((JavascriptExecutor) driver).executeScript("window.scrollBy(arguments[0], arguments[1]);", x, y);
-        try {
-            Thread.sleep(2000); // Wait to allow scroll animation to complete
-        } catch (InterruptedException e) {
-            Thread.currentThread().interrupt(); // Best practice to preserve interrupt status
-            e.printStackTrace();
-        }
+//        try {
+//            Thread.sleep(2000); // Wait to allow scroll animation to complete
+//        } catch (InterruptedException e) {
+//            Thread.currentThread().interrupt(); // Best practice to preserve interrupt status
+//            e.printStackTrace();
+//        }
     }
  
  

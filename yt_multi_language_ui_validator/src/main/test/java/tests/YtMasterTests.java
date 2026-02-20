@@ -42,9 +42,9 @@ public class YtMasterTests extends BaseTest{
 
 		landingPage.openingLandingPage();
 		landingPage.clickingSettingEllipsesButton();
-		Thread.sleep(2000);
+		//Thread.sleep(2000);
 		landingPage.clickingLanguageDropdownButton();
-		Thread.sleep(2000);
+		//Thread.sleep(2000);
 		String testName = ThreadContext.get("logFileName");
 		int LanguagesRowCount= verifyingSideMenuLanguageAsInSettingsDataReader.getRowCount();
 
@@ -87,7 +87,7 @@ public class YtMasterTests extends BaseTest{
 			System.out.println(langText+" lang text from the sheet   "+languageIndex);
 
 			ScreenshotUtil.capture(testName, langText);
-			Thread.sleep(1000);
+			//Thread.sleep(1000);
 
 			landingPage.getLanguageElementByName(langText).click();	
 			
@@ -126,7 +126,7 @@ public class YtMasterTests extends BaseTest{
 			
 
 			landingPage.clickingSettingEllipsesButton();
-			Thread.sleep(2000);
+		//	Thread.sleep(2000);
 			landingPage.clickingLanguageDropdownButton();
 			Thread.sleep(2000);
 
@@ -168,9 +168,9 @@ public class YtMasterTests extends BaseTest{
 
 		landingPage.openingLandingPage();
 		landingPage.clickingSettingEllipsesButton();
-		Thread.sleep(2000);
+	//	Thread.sleep(2000);
 		landingPage.clickingLanguageDropdownButton();
-		Thread.sleep(2000);
+	//	Thread.sleep(2000);
 		String testName = ThreadContext.get("logFileName");
 		int LanguagesRowCount= applicableExpectedLangReader.getRowCount();
 
@@ -212,7 +212,7 @@ public class YtMasterTests extends BaseTest{
 			String langText=applicableExpectedLangReader.getCellValue(languageIndex, 0);
 			System.out.println(langText+" lang text from the sheet   "+languageIndex);
 
-			Thread.sleep(1000);
+		//	Thread.sleep(1000);
 
 		
 			
@@ -224,7 +224,7 @@ public class YtMasterTests extends BaseTest{
 			ScreenshotUtil.capture(testName, langText);
 			landingPage.clickingSettingEllipsesButton();
 
-			Thread.sleep(2000);
+		//	Thread.sleep(2000);
 			List<WebElement> listOfSideMenu=landingPage.gettingSideMenuExpandedList();
 
 			StringBuilder sideMenuItems=new StringBuilder();
@@ -258,9 +258,9 @@ public class YtMasterTests extends BaseTest{
 
 
 			landingPage.clickingSettingEllipsesButton();
-			Thread.sleep(2000);
+		//	Thread.sleep(2000);
 			landingPage.clickingLanguageDropdownButton();
-			Thread.sleep(2000);
+		//	Thread.sleep(2000);
 
 		}
 
@@ -300,15 +300,15 @@ public class YtMasterTests extends BaseTest{
 		List<Integer> sizes=genericUtility.getWindowHeightWidth();
 		if(sizes.get(1)==1552) {
 			landingPage.clickingLeftEllipses();
-			Thread.sleep(2000);
+			//Thread.sleep(2000);
 		}
 
 
 		landingPage.clickingSettingEllipsesButton();
-		Thread.sleep(2000);
+	//	Thread.sleep(2000);
 
 		landingPage.clickingLanguageDropdownButton();
-		Thread.sleep(2000);
+	//	Thread.sleep(2000);
 
 		boolean isCron = Boolean.parseBoolean(System.getenv("IS_CRON"));
 		if(isCron) {
@@ -347,7 +347,7 @@ public class YtMasterTests extends BaseTest{
 
 			String langText=verifyingSideMenuCollapsedLangAsInSettingsDataReader.getCellValue(languageIndex, 0);
 			System.out.println(langText+"    "+languageIndex);
-			Thread.sleep(1000);
+		//	Thread.sleep(1000);
 
 			landingPage.getLanguageElementByName(langText).click();	
 			
@@ -357,7 +357,7 @@ public class YtMasterTests extends BaseTest{
 			landingPage.clickingSettingEllipsesButton();
 			
 			genericUtility.getLangAttribute();
-			Thread.sleep(2000);
+		//	Thread.sleep(2000);
 			List<WebElement> listOfSideMenu=landingPage.gettingSideMenuCollapsedList();
 
 			StringBuilder sideMenuItems=new StringBuilder();
@@ -378,9 +378,9 @@ public class YtMasterTests extends BaseTest{
 
 
 			landingPage.clickingSettingEllipsesButton();
-			Thread.sleep(2000);
+		//	Thread.sleep(2000);
 			landingPage.clickingLanguageDropdownButton();
-			Thread.sleep(2000);
+		//	Thread.sleep(2000);
 		}
 
 
@@ -429,15 +429,15 @@ public class YtMasterTests extends BaseTest{
 		List<Integer> sizes=genericUtility.getWindowHeightWidth();
 		if(sizes.get(1)==1552) {
 			landingPage.clickingLeftEllipses();
-			Thread.sleep(2000);
+		//	Thread.sleep(2000);
 		}
 
 
 		landingPage.clickingSettingEllipsesButton();
-		Thread.sleep(2000);
+	//	Thread.sleep(2000);
 
 		landingPage.clickingLanguageDropdownButton();
-		Thread.sleep(2000);
+	//	Thread.sleep(2000);
 
 
 		boolean isCron = Boolean.parseBoolean(System.getenv("IS_CRON"));
@@ -476,7 +476,7 @@ public class YtMasterTests extends BaseTest{
 
 			String langText=applicableExpectedReader.getCellValue(languageIndex, 0);
 			System.out.println(langText+"    "+languageIndex);
-			Thread.sleep(1000);
+		//	Thread.sleep(1000);
 
 			landingPage.getLanguageElementByName(langText).click();	
 			
@@ -486,7 +486,7 @@ public class YtMasterTests extends BaseTest{
 			landingPage.clickingSettingEllipsesButton();
 			
 			genericUtility.getLangAttribute();
-			Thread.sleep(2000);
+		//	Thread.sleep(2000);
 			List<WebElement> listOfSideMenu=landingPage.gettingSideMenuCollapsedList();
 
 			StringBuilder sideMenuItems=new StringBuilder();
@@ -521,9 +521,9 @@ public class YtMasterTests extends BaseTest{
 
 
 			landingPage.clickingSettingEllipsesButton();
-			Thread.sleep(2000);
+		//	Thread.sleep(2000);
 			landingPage.clickingLanguageDropdownButton();
-			Thread.sleep(2000);
+		//	Thread.sleep(2000);
 		}
 
 
@@ -558,9 +558,9 @@ public class YtMasterTests extends BaseTest{
 		
 		landingPage.openingLandingPage();
 		landingPage.clickingSettingEllipsesButton();
-		Thread.sleep(1000);
+	//	Thread.sleep(1000);
 		landingPage.clickingLanguageDropdownButton();
-		Thread.sleep(1000);
+	//	Thread.sleep(1000);
 
 
 
@@ -601,7 +601,7 @@ public class YtMasterTests extends BaseTest{
 			String langText=applicableExpectedLangReader.getCellValue(languageIndex, 0);
 			System.out.println(langText+"    "+languageIndex);
 
-			Thread.sleep(1000);
+		//	Thread.sleep(1000);
 			landingPage.getLanguageElementByName(langText).click();	
 			
 			landingPage.clickingSettingEllipsesButton();
@@ -609,10 +609,10 @@ public class YtMasterTests extends BaseTest{
 			ScreenshotUtil.capture(testName, langText);
 			landingPage.clickingSettingEllipsesButton();
 
-			Thread.sleep(2000);
+		//	Thread.sleep(2000);
 
 			landingPage.clickingSettingEllipsesButton();
-			Thread.sleep(1000);
+		//	Thread.sleep(1000);
 			String languageFromSettings=landingPage.getsettingEllipsesOptionsListLandingPage();
 			landingPage.clickingSettingEllipsesButton();
 
@@ -633,9 +633,9 @@ public class YtMasterTests extends BaseTest{
 
 
 			landingPage.clickingSettingEllipsesButton();
-			Thread.sleep(2000);
+		//	Thread.sleep(2000);
 			landingPage.clickingLanguageDropdownButton();
-			Thread.sleep(2000);
+		//	Thread.sleep(2000);
 
 		}
 
@@ -660,11 +660,11 @@ public class YtMasterTests extends BaseTest{
 
 
 		landingPage.openingLandingPage();
-		Thread.sleep(2000);
+	//	Thread.sleep(2000);
 		landingPage.clickingSettingEllipsesButton();
-		Thread.sleep(2000);
+	//	Thread.sleep(2000);
 		landingPage.clickingLocationDropdownUnderSettings();
-		Thread.sleep(2000);
+	//	Thread.sleep(2000);
 
 
 
@@ -721,7 +721,7 @@ public class YtMasterTests extends BaseTest{
 			System.out.println(locationTextFromSheet+"  location text from sheet  "+locationIndex);
 
 
-			Thread.sleep(1000);
+		//	Thread.sleep(1000);
 			
 			locationList.get(locationIndex).click();
 			
@@ -729,7 +729,7 @@ public class YtMasterTests extends BaseTest{
 			genericUtility.isElementInViewport(landingPage.getLanguageElementByNameBy(locationText));
 			ScreenshotUtil.capture(testName, locationText);
 			landingPage.clickingSettingEllipsesButton();
-			Thread.sleep(1000);
+		//	Thread.sleep(1000);
 
 
 			String applicableLocation=locationText;
@@ -740,9 +740,9 @@ public class YtMasterTests extends BaseTest{
 			softAssert.assertEquals(detectedCountryCode, expectedCountryCode,"Country code mismacth for location="+locationText);
 
 			landingPage.clickingSettingEllipsesButton();
-			Thread.sleep(2000);
+		//	Thread.sleep(2000);
 			landingPage.clickingLocationDropdownUnderSettings();
-			Thread.sleep(2000);
+		//	Thread.sleep(2000);
 
 
 		}
@@ -812,14 +812,14 @@ public class YtMasterTests extends BaseTest{
 		for(int languageIndex=1;languageIndex<LanguagesRowCount;languageIndex++) {
 
 			landingPage.clickingSettingEllipsesButton();
-			Thread.sleep(2000);
+		//	Thread.sleep(2000);
 			landingPage.clickingLanguageDropdownButton();
-			Thread.sleep(2000);
+		//	Thread.sleep(2000);
 
 			String langText=verifyingGlobalFilterLandingPageDataReader.getCellValue(languageIndex, 0);
 			System.out.println(langText+"    "+languageIndex);
 
-			Thread.sleep(1000);
+	//		Thread.sleep(1000);
 			landingPage.getLanguageElementByName(langText).click();	
 			
 			landingPage.clickingSettingEllipsesButton();
@@ -827,7 +827,7 @@ public class YtMasterTests extends BaseTest{
 			ScreenshotUtil.capture(testName, langText);
 			landingPage.clickingSettingEllipsesButton();
 
-			Thread.sleep(2000);
+		//	Thread.sleep(2000);
 
 			landingPage.clickingGlobalFilterButton();
 			genericUtility.isElementInViewport(landingPage.globalFilterButton);
@@ -925,14 +925,14 @@ public class YtMasterTests extends BaseTest{
 		for(int languageIndex=1;languageIndex<LanguagesRowCount;languageIndex++) {
 
 			landingPage.clickingSettingEllipsesButton();
-			Thread.sleep(2000);
+		//	Thread.sleep(2000);
 			landingPage.clickingLanguageDropdownButton();
-			Thread.sleep(2000);
+		//	Thread.sleep(2000);
 
 			String langText=applicableExpectedLangReader.getCellValue(languageIndex, 0);
 			System.out.println(langText+"    "+languageIndex);
 
-			Thread.sleep(1000);
+		//	Thread.sleep(1000);
 			landingPage.getLanguageElementByName(langText).click();	
 			
 			landingPage.clickingSettingEllipsesButton();
@@ -940,7 +940,7 @@ public class YtMasterTests extends BaseTest{
 			ScreenshotUtil.capture(testName, langText);
 			landingPage.clickingSettingEllipsesButton();
 
-			Thread.sleep(2000);
+		//	Thread.sleep(2000);
 
 			landingPage.clickingGlobalFilterButton();
 			genericUtility.isElementInViewport(landingPage.globalFilterButton);
