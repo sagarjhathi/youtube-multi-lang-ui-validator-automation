@@ -108,16 +108,27 @@ public class ScreenshotUtil {
             
               if(ConfigManager.getBoolean("compressImage", false)) {
             	  try{
-            		double imageQuality=ConfigManager.getInt("imageCompressionQuality");
-            		ImageCompressor.compressImage(src, fullPath,imageQuality);
+            		String imageQuality=ConfigManager.get("imageCompressionQuality");
+            		System.out.println(imageQuality);
+            		
+            		double parseImageQuality=Double.parseDouble(imageQuality);
+            		System.out.println(parseImageQuality);
+            		ImageCompressor.compressImage(src, fullPath,parseImageQuality);
             	  }catch(Exception e) {
             		  log.warn("[{}] compression quality / compressImage method failed, handling it the default way[No compression].", ThreadContext.get("testName"));
             		  FileUtils.copyFile(src, new File(fullPath));
             	  }
             	  
+              }else {
+            	  log.warn("[{}] handling it the default way[No compression].", ThreadContext.get("testName"));
+        		  FileUtils.copyFile(src, new File(fullPath));
               }
+              
+              
+              
            
-          
+        
+              
 
             log.info("[{}] Screenshot saved at: {}", ThreadContext.get("testName"), fullPath);
         } catch (WebDriverException we) {
