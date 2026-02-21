@@ -205,9 +205,6 @@ public class SafeActions{
 	                             ThreadContext.get("testName"));
 	                }
 
-	            } catch (InterruptedException ie) {
-	                Thread.currentThread().interrupt();
-	                log.error("[{}] Interrupted while waiting after refresh.", ThreadContext.get("testName"));
 	            } catch (Exception e) {
 	                log.error("[{}] Unexpected error during refresh (attempt {}): {}", 
 	                          ThreadContext.get("testName"), attempt, e.toString());
