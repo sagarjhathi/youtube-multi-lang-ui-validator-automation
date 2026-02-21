@@ -123,7 +123,7 @@ public class SafeActions{
 	                        // Try the normal native click first
 	                        element.click();
 	                        log.info("[{}] Clicked successfully (attempt {}): {}", ThreadContext.get("testName"), attempt, locator);
-	                      //  Thread.sleep(250); // small buffer for SPA stability
+	                     
 	                        return true;
 
 	                    } catch ( WebDriverException e) {
@@ -135,7 +135,7 @@ public class SafeActions{
 	                        try {
 	                            log.info("[{}] Trying JS click fallback for: {}", ThreadContext.get("testName"), locator);
 	                            ((JavascriptExecutor) driver).executeScript("arguments[0].click();", element);
-	                        //    Thread.sleep(200);
+	                        
 	                            return true;
 	                        } catch (Exception jsEx) {
 	                            log.error("[{}] JS click fallback failed (attempt {}): {} -> {}", 
@@ -183,7 +183,7 @@ public class SafeActions{
 	                log.info("[{}] Page refreshed successfully.", ThreadContext.get("testName"));
 
 	                // wait briefly for the DOM to reload and stabilize
-	             //   Thread.sleep(1500);
+	            
 
 	                // optional: verify the page is ready again via JS readiness check
 	                boolean pageReady = false;
