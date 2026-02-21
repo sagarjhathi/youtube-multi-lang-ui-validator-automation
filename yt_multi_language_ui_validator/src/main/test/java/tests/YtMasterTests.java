@@ -92,7 +92,7 @@ public class YtMasterTests extends BaseTest{
 			landingPage.getLanguageElementByName(langText).click();	
 			
 			landingPage.clickingSettingEllipsesButton();
-			genericUtility.isElementInViewport(landingPage.getLanguageElementByNameBy(langText));
+			genericUtility.isElementInViewport(landingPage.languageDropdownUnderSettings);
 			ScreenshotUtil.capture(testName, langText);
 			landingPage.clickingSettingEllipsesButton();
 
@@ -128,7 +128,7 @@ public class YtMasterTests extends BaseTest{
 			landingPage.clickingSettingEllipsesButton();
 		//	Thread.sleep(2000);
 			landingPage.clickingLanguageDropdownButton();
-			Thread.sleep(2000);
+		//	Thread.sleep(2000);
 
 		}
 
@@ -220,7 +220,7 @@ public class YtMasterTests extends BaseTest{
 			landingPage.getLanguageElementByName(langText).click();	
 			
 			landingPage.clickingSettingEllipsesButton();
-			genericUtility.isElementInViewport(landingPage.getLanguageElementByNameBy(langText));
+			genericUtility.isElementInViewport(landingPage.languageDropdownUnderSettings);
 			ScreenshotUtil.capture(testName, langText);
 			landingPage.clickingSettingEllipsesButton();
 
@@ -352,7 +352,7 @@ public class YtMasterTests extends BaseTest{
 			landingPage.getLanguageElementByName(langText).click();	
 			
 			landingPage.clickingSettingEllipsesButton();
-			genericUtility.isElementInViewport(landingPage.getLanguageElementByNameBy(langText));
+			genericUtility.isElementInViewport(landingPage.languageDropdownUnderSettings);
 			ScreenshotUtil.capture(testName, langText);
 			landingPage.clickingSettingEllipsesButton();
 			
@@ -481,7 +481,7 @@ public class YtMasterTests extends BaseTest{
 			landingPage.getLanguageElementByName(langText).click();	
 			
 			landingPage.clickingSettingEllipsesButton();
-			genericUtility.isElementInViewport(landingPage.getLanguageElementByNameBy(langText));
+			genericUtility.isElementInViewport(landingPage.languageDropdownUnderSettings);
 			ScreenshotUtil.capture(testName, langText);
 			landingPage.clickingSettingEllipsesButton();
 			
@@ -605,7 +605,7 @@ public class YtMasterTests extends BaseTest{
 			landingPage.getLanguageElementByName(langText).click();	
 			
 			landingPage.clickingSettingEllipsesButton();
-			genericUtility.isElementInViewport(landingPage.getLanguageElementByNameBy(langText));
+			genericUtility.isElementInViewport(landingPage.languageDropdownUnderSettings);
 			ScreenshotUtil.capture(testName, langText);
 			landingPage.clickingSettingEllipsesButton();
 
@@ -726,7 +726,7 @@ public class YtMasterTests extends BaseTest{
 			locationList.get(locationIndex).click();
 			
 			landingPage.clickingSettingEllipsesButton();
-			genericUtility.isElementInViewport(landingPage.getLanguageElementByNameBy(locationText));
+			genericUtility.isElementInViewport(landingPage.locationDropdownUnderSettings);
 			ScreenshotUtil.capture(testName, locationText);
 			landingPage.clickingSettingEllipsesButton();
 		//	Thread.sleep(1000);
@@ -820,6 +820,7 @@ public class YtMasterTests extends BaseTest{
 			System.out.println(langText+"    "+languageIndex);
 
 	//		Thread.sleep(1000);
+			genericUtility.smoothScrollToElement(landingPage.getLanguageElementByNameBy(langText));
 			landingPage.getLanguageElementByName(langText).click();	
 			
 			landingPage.clickingSettingEllipsesButton();
