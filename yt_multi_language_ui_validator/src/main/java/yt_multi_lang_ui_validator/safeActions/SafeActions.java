@@ -56,6 +56,8 @@ public class SafeActions{
 	        for (int attempt = 1; attempt <= attempts; attempt++) {
 	            try {
 	                WebElement element = wait.until(ExpectedConditions.presenceOfElementLocated(locator));
+	                element = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+	                element = wait.until(ExpectedConditions.elementToBeClickable(locator));
 
 	                if (isReady(element)) {
 	                    log.info("[{}] Element found and ready (attempt {}): {}", ThreadContext.get("testName"), attempt, locator);

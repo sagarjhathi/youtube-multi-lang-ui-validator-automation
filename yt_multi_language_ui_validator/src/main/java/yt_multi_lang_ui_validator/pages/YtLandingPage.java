@@ -80,22 +80,21 @@ public class YtLandingPage  extends BasePage{
 		By locator=By.xpath("//yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='" + name + "']");
 		log.info("Looking for language element with name: {}", name);
 		WebElement safeElement = safeAct.safeFindElement(locator);
+		System.out.println(locator);
 		return safeElement;
 	}
 	
 	
 	public By getLanguageElementByNameBy(String name) {
 		By locator=By.xpath("//yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='" + name + "']");
+		WebElement safeElement = safeAct.safeFindElement(locator);
 		log.info("Looking for language element with name: {}", name);
 		return locator;
 	}
 	
 	
 
-	
-	
-	
-	
+		
 
 	public void clickingUnderSearchInput() {
 		log.info("Clicking into the search bar...");
@@ -158,7 +157,6 @@ public class YtLandingPage  extends BasePage{
 	public void clickingLanguageDropdownButton() throws InterruptedException {
 		log.info("Clicking language dropdown...");
 		safeAct.safeFindElement(languageDropdownUnderSettings).click();
-
 	}
 
 	public List<WebElement> gettingLanguageList() throws InterruptedException{
