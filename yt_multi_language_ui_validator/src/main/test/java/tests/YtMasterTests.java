@@ -823,14 +823,14 @@ public class YtMasterTests extends BaseTest{
 			landingPage.getLanguageElementByName(langText).click();	
 			
 			landingPage.clickingSettingEllipsesButton();
-			genericUtility.isElementInViewport(landingPage.getLanguageElementByNameBy(langText));
+			genericUtility.isElementInViewport(landingPage.languageDropdownUnderSettings);
 			ScreenshotUtil.capture(testName, langText);
 			landingPage.clickingSettingEllipsesButton();
 
 		//	Thread.sleep(2000);
 
 			landingPage.clickingGlobalFilterButton();
-			genericUtility.isElementInViewport(landingPage.globalFilterButton);
+			genericUtility.isElementInViewport(landingPage.globalFilterData);
 			ScreenshotUtil.capture(testName, langText);
 			String globalSettingText=landingPage.getDataFromGlobalFilterPopup();
 			landingPage.closeGlobalFilterPopup();
@@ -848,10 +848,10 @@ public class YtMasterTests extends BaseTest{
 
 		softAssert.assertAll();	
 
-		landingPage.clickingGlobalFilterButton();
-		String globalSettingText=landingPage.getDataFromGlobalFilterPopup();
-		System.out.println(globalSettingText);
-		landingPage.closeGlobalFilterPopup();
+//		landingPage.clickingGlobalFilterButton();
+//		String globalSettingText=landingPage.getDataFromGlobalFilterPopup();
+//		System.out.println(globalSettingText);
+//		landingPage.closeGlobalFilterPopup();
 
 	}
 
@@ -936,18 +936,18 @@ public class YtMasterTests extends BaseTest{
 			landingPage.getLanguageElementByName(langText).click();	
 			
 			landingPage.clickingSettingEllipsesButton();
-			genericUtility.isElementInViewport(landingPage.getLanguageElementByNameBy(langText));
+			genericUtility.isElementInViewport(landingPage.languageDropdownUnderSettings);
 			ScreenshotUtil.capture(testName, langText);
 			landingPage.clickingSettingEllipsesButton();
 
 		//	Thread.sleep(2000);
 
 			landingPage.clickingGlobalFilterButton();
-			genericUtility.isElementInViewport(landingPage.globalFilterButton);
+			genericUtility.isElementInViewport(landingPage.globalFilterData);
 			ScreenshotUtil.capture(testName, langText);
 			String globalSettingText=landingPage.getDataFromGlobalFilterPopup();
 			landingPage.closeGlobalFilterPopup();
-
+	
 		
 		
 
@@ -971,10 +971,10 @@ public class YtMasterTests extends BaseTest{
 
 		softAssert.assertAll();	
 
-		landingPage.clickingGlobalFilterButton();
-		String globalSettingText=landingPage.getDataFromGlobalFilterPopup();
-		System.out.println(globalSettingText);
-		landingPage.closeGlobalFilterPopup();
+//		landingPage.clickingGlobalFilterButton();
+//		String globalSettingText=landingPage.getDataFromGlobalFilterPopup();
+//		System.out.println(globalSettingText);
+//		landingPage.closeGlobalFilterPopup();
 
 	}
 
