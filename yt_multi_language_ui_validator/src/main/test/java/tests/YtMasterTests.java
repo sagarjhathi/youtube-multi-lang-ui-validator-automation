@@ -1,11 +1,14 @@
 package main.test.java.tests;
 
 import java.io.IOException;
+import java.time.Duration;
 import java.util.List;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.ThreadContext;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 import main.test.java.retry.*;
@@ -350,7 +353,10 @@ public class YtMasterTests extends BaseTest{
 		
 
 			landingPage.getLanguageElementByName(langText).click();	
-			
+			new WebDriverWait(driver, Duration.ofSeconds(10))
+		    .until(ExpectedConditions.presenceOfElementLocated(
+		        landingPage.sideMenuCollapsedList
+		    ));
 			landingPage.clickingSettingEllipsesButton();
 			genericUtility.isElementInViewport(landingPage.languageDropdownUnderSettings);
 			ScreenshotUtil.capture(testName, langText);
