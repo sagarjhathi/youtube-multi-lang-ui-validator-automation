@@ -175,8 +175,7 @@ jobs:
           if [ -d "logs" ]; then
             cp -r logs artifacts/extent/logs
           fi
-          echo "<html><body><h3>Artifacts</h3><ul><li><a href='ExtentReports/ExtentReport.html'>Open Extent Report</a></li></ul></body></html>" > artifacts/extent/index.html
-
+          echo "<html><head><meta http-equiv='refresh' content='0; url=ExtentReports/ExtentReport.html' /></head><body>Redirecting to Extent Report...</body></html>" > artifacts/extent/index.html
    
       - name: Prepare self-contained artifact (safe copy + patch)
         if: always()

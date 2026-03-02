@@ -44,6 +44,7 @@ public class YtMasterTests extends BaseTest{
 
 
 		landingPage.openingLandingPage();
+		genericUtility.maximizeDisplay();
 		landingPage.clickingSettingEllipsesButton();
 	
 		landingPage.clickingLanguageDropdownButton();
@@ -170,6 +171,7 @@ public class YtMasterTests extends BaseTest{
 	
 
 		landingPage.openingLandingPage();
+		genericUtility.maximizeDisplay();
 		landingPage.clickingSettingEllipsesButton();
 	
 		landingPage.clickingLanguageDropdownButton();
