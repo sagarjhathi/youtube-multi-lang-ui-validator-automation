@@ -44,7 +44,7 @@ public class YtMasterTests extends BaseTest{
 
 
 		landingPage.openingLandingPage();
-		landingPage.clickingLeftEllipses();
+		
 
 		landingPage.clickingSettingEllipsesButton();
 	

@@ -152,14 +152,6 @@ public class DriverManager {
 					if(windowSize!=null) {
 						options.addArguments(windowSize);
 					}
-					
-//					   boolean isHeadless = ConfigManager.getBoolean("chrome.headless", true);
-//		                String windowSize = ConfigManager.get("chrome.window-size", "1920,1080");
-//
-//		                if (isHeadless) {
-//		                    options.addArguments("--headless=new");
-//		                    options.addArguments("--window-size=" + windowSize);
-//		                }
 
 					if (ConfigManager.getBoolean("chrome.arg.start_maximized", true)) {
 						options.addArguments("--start-maximized");
