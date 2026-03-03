@@ -148,10 +148,18 @@ public class DriverManager {
 					org.openqa.selenium.chrome.ChromeOptions options = new org.openqa.selenium.chrome.ChromeOptions();
 
 
-					String windowSize= ConfigManager.get("chrome.window-size");
-					if(windowSize!=null) {
-						options.addArguments(windowSize);
-					}
+//					String windowSize= ConfigManager.get("chrome.window-size");
+//					if(windowSize!=null) {
+//						options.addArguments(windowSize);
+//					}
+					
+					   boolean isHeadless = ConfigManager.getBoolean("chrome.headless", false);
+		                String windowSize = ConfigManager.get("chrome.window-size", "1920,1080");
+
+		                if (isHeadless) {
+		                    options.addArguments("--headless=new");
+		                    options.addArguments("--window-size=" + windowSize);
+		                }
 
 					if (ConfigManager.getBoolean("chrome.arg.start_maximized", true)) {
 						options.addArguments("--start-maximized");
@@ -177,7 +185,7 @@ public class DriverManager {
 
 					}
 					
-					options.addArguments("--window-size=1920,1080");
+					
 
 
 					try {
