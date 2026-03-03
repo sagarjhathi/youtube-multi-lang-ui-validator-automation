@@ -153,9 +153,9 @@ public class DriverManager {
 						options.addArguments(windowSize);
 					}
 
-					if (ConfigManager.getBoolean("chrome.arg.start_maximized", true)) {
-						options.addArguments("--start-maximized");
-					}
+//					if (ConfigManager.getBoolean("chrome.arg.start_maximized", true)) {
+//						options.addArguments("--start-maximized");
+//					}
 					if (ConfigManager.getBoolean("chrome.arg.disable_gpu", true)) {
 						options.addArguments("--disable-gpu");
 					}
@@ -173,8 +173,9 @@ public class DriverManager {
 
 					}
 					if (ConfigManager.getBoolean("chrome.headless", false)) {
-						options.addArguments("--window-size=1920,1080");
 						options.addArguments("--headless");
+						options.addArguments("--window-size=1920,1080");
+						
 					}
 					
 					

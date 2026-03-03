@@ -302,7 +302,7 @@ public class YtMasterTests extends BaseTest{
 
 		int LanguagesRowCount= verifyingSideMenuCollapsedLangAsInSettingsDataReader.getRowCount();
 		String testName = ThreadContext.get("logFileName");
-		genericUtility.maximizeDisplay();
+	
 		landingPage.openingLandingPage();
 		landingPage.clickingLeftEllipses();
 
@@ -311,9 +311,9 @@ public class YtMasterTests extends BaseTest{
 //			landingPage.clickingLeftEllipses();
 //		}
 
-
-		landingPage.clickingSettingEllipsesButton();
 	
+	
+		landingPage.clickingSettingEllipsesButton();
 
 		landingPage.clickingLanguageDropdownButton();
 	
@@ -358,7 +358,7 @@ public class YtMasterTests extends BaseTest{
 		
 
 			landingPage.getLanguageElementByName(langText).click();	
-			new WebDriverWait(driver, Duration.ofSeconds(10))
+			new WebDriverWait(driver, Duration.ofSeconds(15))
 		    .until(ExpectedConditions.presenceOfElementLocated(
 		        landingPage.sideMenuCollapsedList
 		    ));

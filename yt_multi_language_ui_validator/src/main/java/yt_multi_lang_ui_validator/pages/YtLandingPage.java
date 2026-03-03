@@ -152,6 +152,10 @@ public class YtLandingPage  extends BasePage{
 
 	public void clickingSettingEllipsesButton() throws InterruptedException {
 		log.info("Clicking settings ellipses button...");
+		new WebDriverWait(driver, Duration.ofSeconds(10))
+	    .until(ExpectedConditions.elementToBeClickable(
+	        settingEllipsesButton
+	    ));
 		safeAct.safeFindElement(settingEllipsesButton).click();
 	}
 
