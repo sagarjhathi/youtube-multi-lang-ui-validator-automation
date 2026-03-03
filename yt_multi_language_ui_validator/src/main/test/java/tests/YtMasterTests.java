@@ -304,13 +304,12 @@ public class YtMasterTests extends BaseTest{
 		String testName = ThreadContext.get("logFileName");
 		genericUtility.maximizeDisplay();
 		landingPage.openingLandingPage();
+		landingPage.clickingLeftEllipses();
 
-
-		List<Integer> sizes=genericUtility.getWindowHeightWidth();
-		if(sizes.get(1)==1552) {
-			landingPage.clickingLeftEllipses();
-			
-		}
+//		List<Integer> sizes=genericUtility.getWindowHeightWidth();
+//		if(sizes.get(1)==1552) {
+//			landingPage.clickingLeftEllipses();
+//		}
 
 
 		landingPage.clickingSettingEllipsesButton();
