@@ -430,7 +430,7 @@ public class YtMasterTests extends BaseTest{
 		
 		int LanguagesRowCount= applicableExpectedReader.getRowCount();
 		String testName = ThreadContext.get("logFileName");
-		genericUtility.maximizeDisplay();
+//		genericUtility.maximizeDisplay();
 		landingPage.openingLandingPage();
 		
 		
