@@ -430,7 +430,6 @@ public class YtMasterTests extends BaseTest{
 		
 		int LanguagesRowCount= applicableExpectedReader.getRowCount();
 		String testName = ThreadContext.get("logFileName");
-//		genericUtility.maximizeDisplay();
 		landingPage.openingLandingPage();
 		
 		
@@ -438,10 +437,7 @@ public class YtMasterTests extends BaseTest{
 
 
 		List<Integer> sizes=genericUtility.getWindowHeightWidth();
-		if(sizes.get(1)==1552) {
-			landingPage.clickingLeftEllipses();
-		
-		}
+		landingPage.clickingLeftEllipses();
 
 
 		landingPage.clickingSettingEllipsesButton();
@@ -508,7 +504,6 @@ public class YtMasterTests extends BaseTest{
 					sideMenuItems.append(" ");
 				}
 			}
-
 
 
 

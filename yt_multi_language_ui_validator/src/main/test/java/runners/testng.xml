@@ -13,7 +13,6 @@
  		
  		<methods>
  		<exclude name="verifyingSideMenuCollapsedLangAsInSettings"></exclude>
- 		
  		</methods>
       </class>
       
