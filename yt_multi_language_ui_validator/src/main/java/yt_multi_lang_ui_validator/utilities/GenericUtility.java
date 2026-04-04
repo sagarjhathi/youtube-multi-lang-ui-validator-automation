@@ -1,6 +1,6 @@
 package main.java.yt_multi_lang_ui_validator.utilities;
 
-import java.time.Duration;
+import java.time.Duration; 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -20,7 +20,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import main.java.yt_multi_lang_ui_validator.base.BasePage;
 import main.java.yt_multi_lang_ui_validator.logger.LoggerUtility;
 import main.java.yt_multi_lang_ui_validator.pages.YtLandingPage;
-import main.java.yt_multi_lang_ui_validator.reporting.TestListener;
 import main.java.yt_multi_lang_ui_validator.safeActions.SafeActions;
 
 public class GenericUtility extends BasePage {

@@ -1,6 +1,6 @@
 package main.test.java.tests;
 
-import java.io.IOException;
+import java.io.IOException; 
 import java.time.Duration;
 import java.util.List;
 import org.apache.logging.log4j.Logger;
@@ -20,7 +20,7 @@ import main.java.yt_multi_lang_ui_validator.lingua.LinguaHelper;
 import main.java.yt_multi_lang_ui_validator.logger.LoggerUtility;
 import main.java.yt_multi_lang_ui_validator.pages.YtLandingPage;
 import main.java.yt_multi_lang_ui_validator.utilities.GenericUtility;
-import main.java.yt_multi_lang_ui_validator.utilities.ScreenshotUtil;
+import main.java.yt_multi_lang_ui_validator.utilities.ScreenshotUtilUpdated;
 
 
 
@@ -91,14 +91,14 @@ public class YtMasterTests extends BaseTest{
 			String langText=verifyingSideMenuLanguageAsInSettingsDataReader.getCellValue(languageIndex, 0);
 			System.out.println(langText+" lang text from the sheet   "+languageIndex);
 
-			ScreenshotUtil.capture(testName, langText);
+			ScreenshotUtilUpdated.capture(testName, langText);
 			
 
 			landingPage.getLanguageElementByName(langText).click();	
 			
 			landingPage.clickingSettingEllipsesButton();
 			genericUtility.isElementInViewport(landingPage.languageDropdownUnderSettings);
-			ScreenshotUtil.capture(testName, langText);
+			ScreenshotUtilUpdated.capture(testName, langText);
 			landingPage.clickingSettingEllipsesButton();
 
 			
@@ -230,7 +230,7 @@ public class YtMasterTests extends BaseTest{
 			
 			landingPage.clickingSettingEllipsesButton();
 			genericUtility.isElementInViewport(landingPage.languageDropdownUnderSettings);
-			ScreenshotUtil.capture(testName, langText);
+			ScreenshotUtilUpdated.capture(testName, langText);
 			landingPage.clickingSettingEllipsesButton();
 
 		
@@ -364,7 +364,7 @@ public class YtMasterTests extends BaseTest{
 		    ));
 			landingPage.clickingSettingEllipsesButton();
 			genericUtility.isElementInViewport(landingPage.languageDropdownUnderSettings);
-			ScreenshotUtil.capture(testName, langText);
+			ScreenshotUtilUpdated.capture(testName, langText);
 			landingPage.clickingSettingEllipsesButton();
 			
 			genericUtility.getLangAttribute();
@@ -489,7 +489,7 @@ public class YtMasterTests extends BaseTest{
 			
 			landingPage.clickingSettingEllipsesButton();
 			genericUtility.isElementInViewport(landingPage.languageDropdownUnderSettings);
-			ScreenshotUtil.capture(testName, langText);
+			ScreenshotUtilUpdated.capture(testName, langText);
 			landingPage.clickingSettingEllipsesButton();
 			
 			genericUtility.getLangAttribute();
@@ -612,7 +612,7 @@ public class YtMasterTests extends BaseTest{
 			
 			landingPage.clickingSettingEllipsesButton();
 			genericUtility.isElementInViewport(landingPage.languageDropdownUnderSettings);
-			ScreenshotUtil.capture(testName, langText);
+			ScreenshotUtilUpdated.capture(testName, langText);
 			landingPage.clickingSettingEllipsesButton();
 
 		
@@ -733,7 +733,7 @@ public class YtMasterTests extends BaseTest{
 			
 			landingPage.clickingSettingEllipsesButton();
 			genericUtility.isElementInViewport(landingPage.locationDropdownUnderSettings);
-			ScreenshotUtil.capture(testName, locationText);
+			ScreenshotUtilUpdated.capture(testName, locationText);
 			landingPage.clickingSettingEllipsesButton();
 		
 
@@ -831,14 +831,14 @@ public class YtMasterTests extends BaseTest{
 			
 			landingPage.clickingSettingEllipsesButton();
 			genericUtility.isElementInViewport(landingPage.languageDropdownUnderSettings);
-			ScreenshotUtil.capture(testName, langText);
+			ScreenshotUtilUpdated.capture(testName, langText);
 			landingPage.clickingSettingEllipsesButton();
 
 		
 
 			landingPage.clickingGlobalFilterButton();
 			genericUtility.isElementInViewport(landingPage.globalFilterData);
-			ScreenshotUtil.capture(testName, langText);
+			ScreenshotUtilUpdated.capture(testName, langText);
 			String globalSettingText=landingPage.getDataFromGlobalFilterPopup();
 			landingPage.closeGlobalFilterPopup();
 
@@ -941,14 +941,14 @@ public class YtMasterTests extends BaseTest{
 			
 			landingPage.clickingSettingEllipsesButton();
 			genericUtility.isElementInViewport(landingPage.languageDropdownUnderSettings);
-			ScreenshotUtil.capture(testName, langText);
+			ScreenshotUtilUpdated.capture(testName, langText);
 			landingPage.clickingSettingEllipsesButton();
 
 		
 
 			landingPage.clickingGlobalFilterButton();
 			genericUtility.isElementInViewport(landingPage.globalFilterData);
-			ScreenshotUtil.capture(testName, langText);
+			ScreenshotUtilUpdated.capture(testName, langText);
 			String globalSettingText=landingPage.getDataFromGlobalFilterPopup();
 			landingPage.closeGlobalFilterPopup();
 	

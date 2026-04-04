@@ -22,3 +22,5 @@ Thumbs.db
 
 # Compiled classes and build outputs
 target/
+
+run_*/

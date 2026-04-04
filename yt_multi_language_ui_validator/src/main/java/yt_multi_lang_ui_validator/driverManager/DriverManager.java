@@ -223,16 +223,16 @@ public class DriverManager {
 
 		if (currentDriver != null) {
 			try {
-				log.info("Closing WebDriver for thread: {}", Thread.currentThread().threadId());
+		//		log.info("Closing WebDriver for thread: {}", Thread.currentThread().threadId());
 				currentDriver.quit();
 			} catch (Exception e) {
-				log.error("Error while quitting WebDriver for thread {}: {}", Thread.currentThread().threadId(), e.getMessage());
+			//	log.error("Error while quitting WebDriver for thread {}: {}", Thread.currentThread().threadId(), e.getMessage());
 			} finally {
 				driver.remove();
-				log.info("WebDriver instance removed from ThreadLocal for thread: {}", Thread.currentThread().threadId());
+		//		log.info("WebDriver instance removed from ThreadLocal for thread: {}", Thread.currentThread().threadId());
 			}
 		} else {
-			log.warn("quitDriver() called but no WebDriver was found for thread: {}", Thread.currentThread().threadId());
+		//	log.warn("quitDriver() called but no WebDriver was found for thread: {}", Thread.currentThread().threadId());
 		}
 	}
 
