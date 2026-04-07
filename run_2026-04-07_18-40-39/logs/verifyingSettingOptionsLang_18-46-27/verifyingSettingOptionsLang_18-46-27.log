@@ -1,0 +1,44 @@
+18:46:27 [TestNG-test-Yt Master Tests-2] INFO  verifyingSettingOptionsLang_18-46-27 - No existing WebDriver found for current thread. Initializing a new ChromeDriver...
+18:46:27 [TestNG-test-Yt Master Tests-2] INFO  verifyingSettingOptionsLang_18-46-27 - WebDriverManager: chromedriver setup OK
+18:46:29 [TestNG-test-Yt Master Tests-2] INFO  verifyingSettingOptionsLang_18-46-27 - ChromeDriver initialized successfully for thread: 35
+18:46:29 [TestNG-test-Yt Master Tests-2] INFO  verifyingSettingOptionsLang_18-46-27 - SafeActions initialized with driver ChromeDriver: chrome on windows (8bcf38b25f075054fa1578ead29c7d88)
+18:46:29 [TestNG-test-Yt Master Tests-2] INFO  verifyingSettingOptionsLang_18-46-27 - Initialized YtLandingPage with driver: ChromeDriver: chrome on windows (8bcf38b25f075054fa1578ead29c7d88)
+18:46:29 [TestNG-test-Yt Master Tests-2] INFO  verifyingSettingOptionsLang_18-46-27 - SafeActions initialized with driver ChromeDriver: chrome on windows (8bcf38b25f075054fa1578ead29c7d88)
+18:46:31 [TestNG-test-Yt Master Tests-2] INFO  verifyingSettingOptionsLang_18-46-27 - Opened YouTube landing page.
+18:46:31 [TestNG-test-Yt Master Tests-2] INFO  verifyingSettingOptionsLang_18-46-27 - Clicking settings ellipses button...
+18:46:32 [TestNG-test-Yt Master Tests-2] INFO  verifyingSettingOptionsLang_18-46-27 - [verifyingSettingOptionsLang_18-46-27] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:46:32 [TestNG-test-Yt Master Tests-2] INFO  verifyingSettingOptionsLang_18-46-27 - [verifyingSettingOptionsLang_18-46-27] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:46:32 [TestNG-test-Yt Master Tests-2] INFO  verifyingSettingOptionsLang_18-46-27 - Clicking language dropdown...
+18:46:32 [TestNG-test-Yt Master Tests-2] INFO  verifyingSettingOptionsLang_18-46-27 - [verifyingSettingOptionsLang_18-46-27] Trying to find element: By.xpath: (//div[@id='content-icon'])[2]
+18:46:32 [TestNG-test-Yt Master Tests-2] INFO  verifyingSettingOptionsLang_18-46-27 - [verifyingSettingOptionsLang_18-46-27] Element found and ready (attempt 1): By.xpath: (//div[@id='content-icon'])[2]
+18:46:33 [TestNG-test-Yt Master Tests-2] INFO  verifyingSettingOptionsLang_18-46-27 - [verifyingSettingOptionsLang_18-46-27] Execution is scheduled type /CRON Job on CI Hence refering to CI keys from UtilData
+18:46:33 [TestNG-test-Yt Master Tests-2] INFO  verifyingSettingOptionsLang_18-46-27 - Looking for language element with name: Afrikaans
+18:46:33 [TestNG-test-Yt Master Tests-2] INFO  verifyingSettingOptionsLang_18-46-27 - [verifyingSettingOptionsLang_18-46-27] Trying to find element: By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Afrikaans']
+18:46:33 [TestNG-test-Yt Master Tests-2] INFO  verifyingSettingOptionsLang_18-46-27 - [verifyingSettingOptionsLang_18-46-27] Element found and ready (attempt 1): By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Afrikaans']
+18:46:33 [TestNG-test-Yt Master Tests-2] INFO  verifyingSettingOptionsLang_18-46-27 - [verifyingSettingOptionsLang_18-46-27] Trying to find element: By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Afrikaans']
+18:46:33 [TestNG-test-Yt Master Tests-2] INFO  verifyingSettingOptionsLang_18-46-27 - [verifyingSettingOptionsLang_18-46-27] Element found and ready (attempt 1): By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Afrikaans']
+18:46:33 [TestNG-test-Yt Master Tests-2] INFO  verifyingSettingOptionsLang_18-46-27 - Clicking settings ellipses button...
+18:46:33 [TestNG-test-Yt Master Tests-2] INFO  verifyingSettingOptionsLang_18-46-27 - [verifyingSettingOptionsLang_18-46-27] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:46:33 [TestNG-test-Yt Master Tests-2] INFO  verifyingSettingOptionsLang_18-46-27 - [verifyingSettingOptionsLang_18-46-27] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:46:33 [TestNG-test-Yt Master Tests-2] INFO  verifyingSettingOptionsLang_18-46-27 - [verifyingSettingOptionsLang_18-46-27] Waiting until element is visible in viewport
+18:46:44 [TestNG-test-Yt Master Tests-2] INFO  verifyingSettingOptionsLang_18-46-27 - Clicking settings ellipses button...
+18:46:44 [TestNG-test-Yt Master Tests-2] INFO  verifyingSettingOptionsLang_18-46-27 - [verifyingSettingOptionsLang_18-46-27] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:46:44 [TestNG-test-Yt Master Tests-2] INFO  verifyingSettingOptionsLang_18-46-27 - [verifyingSettingOptionsLang_18-46-27] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:46:44 [TestNG-test-Yt Master Tests-2] INFO  verifyingSettingOptionsLang_18-46-27 - Clicking settings ellipses button...
+18:46:44 [TestNG-test-Yt Master Tests-2] INFO  verifyingSettingOptionsLang_18-46-27 - [verifyingSettingOptionsLang_18-46-27] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:46:44 [TestNG-test-Yt Master Tests-2] INFO  verifyingSettingOptionsLang_18-46-27 - [verifyingSettingOptionsLang_18-46-27] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:46:44 [TestNG-test-Yt Master Tests-2] INFO  verifyingSettingOptionsLang_18-46-27 - Getting the setting ellipses options
+18:46:44 [TestNG-test-Yt Master Tests-2] INFO  verifyingSettingOptionsLang_18-46-27 - [verifyingSettingOptionsLang_18-46-27] Trying to find element: By.xpath: //ytd-multi-page-menu-renderer
+18:46:54 [TestNG-test-Yt Master Tests-2] WARN  verifyingSettingOptionsLang_18-46-27 - [verifyingSettingOptionsLang_18-46-27] Timeout finding element (attempt 1): By.xpath: //ytd-multi-page-menu-renderer
+18:47:05 [TestNG-test-Yt Master Tests-2] WARN  verifyingSettingOptionsLang_18-46-27 - [verifyingSettingOptionsLang_18-46-27] Timeout finding element (attempt 2): By.xpath: //ytd-multi-page-menu-renderer
+18:47:05 [TestNG-test-Yt Master Tests-2] WARN  verifyingSettingOptionsLang_18-46-27 - [verifyingSettingOptionsLang_18-46-27] Attempt 2 failed — refreshing the page to recover...
+18:47:05 [TestNG-test-Yt Master Tests-2] INFO  verifyingSettingOptionsLang_18-46-27 - [verifyingSettingOptionsLang_18-46-27] Current URL before refresh: https://www.youtube.com/
+18:47:07 [TestNG-test-Yt Master Tests-2] INFO  verifyingSettingOptionsLang_18-46-27 - [verifyingSettingOptionsLang_18-46-27] Page refreshed successfully.
+18:47:07 [TestNG-test-Yt Master Tests-2] INFO  verifyingSettingOptionsLang_18-46-27 - [verifyingSettingOptionsLang_18-46-27] Page fully loaded after refresh.
+18:47:18 [TestNG-test-Yt Master Tests-2] WARN  verifyingSettingOptionsLang_18-46-27 - [verifyingSettingOptionsLang_18-46-27] Timeout finding element (attempt 3): By.xpath: //ytd-multi-page-menu-renderer
+18:47:18 [TestNG-test-Yt Master Tests-2] WARN  verifyingSettingOptionsLang_18-46-27 - [verifyingSettingOptionsLang_18-46-27] Attempt 3 failed — refreshing the page to recover...
+18:47:18 [TestNG-test-Yt Master Tests-2] INFO  verifyingSettingOptionsLang_18-46-27 - [verifyingSettingOptionsLang_18-46-27] Current URL before refresh: https://www.youtube.com/
+18:47:18 [TestNG-test-Yt Master Tests-2] INFO  verifyingSettingOptionsLang_18-46-27 - [verifyingSettingOptionsLang_18-46-27] Page refreshed successfully.
+18:47:19 [TestNG-test-Yt Master Tests-2] INFO  verifyingSettingOptionsLang_18-46-27 - [verifyingSettingOptionsLang_18-46-27] Page fully loaded after refresh.
+18:47:19 [TestNG-test-Yt Master Tests-2] ERROR verifyingSettingOptionsLang_18-46-27 - [verifyingSettingOptionsLang_18-46-27] Element not found after 3 attempts: By.xpath: //ytd-multi-page-menu-renderer
+18:47:19 [TestNG-test-Yt Master Tests-2] INFO  verifyingSettingOptionsLang_18-46-27 - [verifyingSettingOptionsLang_18-46-27] Not retrying test 'verifyingSettingOptionsLang'. Retry count: 1, Cause: Cannot invoke "org.openqa.selenium.WebElement.getText()" because the return value of "main.java.yt_multi_lang_ui_validator.safeActions.SafeActions.safeFindElement(org.openqa.selenium.By)" is null
