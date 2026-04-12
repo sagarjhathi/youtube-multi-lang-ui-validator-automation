@@ -136,7 +136,8 @@ public class YtMasterTests extends BaseTest{
 		
 
 		}
-
+		
+		verifyingSideMenuLanguageAsInSettingsDataReader.closeWorkbook();
 
 
 		softAssert.assertAll();
@@ -272,6 +273,8 @@ public class YtMasterTests extends BaseTest{
 		
 
 		}
+		applicableExpectedLangReader.closeWorkbook();
+		applicableExpectedAttributeReader.closeWorkbook();
 
 		softAssert.assertAll();
 	}
@@ -306,13 +309,8 @@ public class YtMasterTests extends BaseTest{
 		landingPage.openingLandingPage();
 		landingPage.clickingLeftEllipses();
 
-//		List<Integer> sizes=genericUtility.getWindowHeightWidth();
-//		if(sizes.get(1)==1552) {
-//			landingPage.clickingLeftEllipses();
-//		}
 
-	
-	
+		
 		landingPage.clickingSettingEllipsesButton();
 
 		landingPage.clickingLanguageDropdownButton();
@@ -394,6 +392,8 @@ public class YtMasterTests extends BaseTest{
 		
 		}
 
+		verifyingSideMenuCollapsedLangAsInSettingsDataReader.closeWorkbook();
+		applicableExpectedReader.closeWorkbook();
 
 
 		softAssert.assertAll();	
@@ -531,6 +531,8 @@ public class YtMasterTests extends BaseTest{
 			landingPage.clickingLanguageDropdownButton();
 		
 		}
+		applicableExpectedReader.closeWorkbook();
+		applicableExpectedAttributeReader.closeWorkbook();
 
 
 
@@ -644,6 +646,9 @@ public class YtMasterTests extends BaseTest{
 		
 
 		}
+		
+		applicableExpectedLangReader.closeWorkbook();
+		applicableExpectedAttributeReader.closeWorkbook();
 
 		softAssert.assertAll();	
 	}
@@ -752,6 +757,7 @@ public class YtMasterTests extends BaseTest{
 
 
 		}
+		reader.closeWorkbook();
 		softAssert.assertAll();
 	}
 
@@ -852,6 +858,8 @@ public class YtMasterTests extends BaseTest{
 
 
 		}
+		
+		verifyingGlobalFilterLandingPageDataReader.closeWorkbook();
 
 		softAssert.assertAll();	
 
@@ -972,6 +980,10 @@ public class YtMasterTests extends BaseTest{
 
 
 		}
+		
+		applicableExpectedLangReader.closeWorkbook();
+		applicableExpectedAttributeReader.closeWorkbook();
+		
 
 		softAssert.assertAll();	
 
