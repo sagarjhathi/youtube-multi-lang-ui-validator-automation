@@ -18,21 +18,38 @@ public class FileReader {
 
 	
 	     private Workbook workbook;
+	     private java.io.FileInputStream fis;
 	     private Sheet sheet;
 	     /**
+	      * 
 	      * Load Excel workbook by file name (relative path)
 	      */
+//	     public void loadWorkbook(String fileName) {
+//	         try {
+//	             File file = find(fileName);
+//	             if (file == null || !file.exists()) {
+//	                 throw new RuntimeException("❌ Excel file not found: " + fileName);
+//	             }
+//	             workbook = WorkbookFactory.create(file);
+//	         } catch (IOException e) {
+//	             throw new RuntimeException("❌ Failed to load Excel file: " + fileName, e);
+//	         }
+//	     }
+	     
 	     public void loadWorkbook(String fileName) {
-	         try {
-	             File file = find(fileName);
-	             if (file == null || !file.exists()) {
-	                 throw new RuntimeException("❌ Excel file not found: " + fileName);
-	             }
-	             workbook = WorkbookFactory.create(file);
-	         } catch (IOException e) {
-	             throw new RuntimeException("❌ Failed to load Excel file: " + fileName, e);
-	         }
-	     }
+	    	    try {
+	    	        File file = find(fileName);
+	    	        if (file == null || !file.exists()) {
+	    	            throw new RuntimeException("❌ Excel file not found: " + fileName);
+	    	        }
+
+	    	        fis = new java.io.FileInputStream(file);
+	    	        workbook = WorkbookFactory.create(fis);
+
+	    	    } catch (IOException e) {
+	    	        throw new RuntimeException("❌ Failed to load Excel file: " + fileName, e);
+	    	    }
+	    	}
 
 	     /**
 	      * Select the sheet by name
@@ -92,13 +109,22 @@ public class FileReader {
 	     /**
 	      * Close the workbook safely
 	      */
+//	     public void closeWorkbook() {
+//	         try {
+//	             if (workbook != null) workbook.close();
+//	         } catch (IOException e) {
+//	             System.err.println("⚠️ Failed to close workbook: " + e.getMessage());
+//	         }
+//	     }
+	     
 	     public void closeWorkbook() {
-	         try {
-	             if (workbook != null) workbook.close();
-	         } catch (IOException e) {
-	             System.err.println("⚠️ Failed to close workbook: " + e.getMessage());
-	         }
-	     }
+	    	    try {
+	    	        if (workbook != null) workbook.close();
+	    	        if (fis != null) fis.close();
+	    	    } catch (IOException e) {
+	    	        System.err.println("⚠️ Failed to close workbook: " + e.getMessage());
+	    	    }
+	    	}
 	 
 	     
 	  
