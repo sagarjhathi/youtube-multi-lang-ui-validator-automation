@@ -20,9 +20,7 @@
      
       <class name="main.test.java.tests.YtMasterTests">
       
-      <methods>
-      <include name="verifyCountryCodeAsBasedOnRegion"></include>
-      </methods>
+     
  		
       </class>
       
