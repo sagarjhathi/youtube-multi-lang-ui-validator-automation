@@ -725,12 +725,8 @@ public class YtMasterTests extends BaseTest{
 
 		for(int locationIndex=1;locationIndex<locationListSize;locationIndex++) {
 			locationList=landingPage.getLocationList();
-			String locationText = null;
-			if(locationIndex<locationListSize) {
-				locationText=locationList.get(locationIndex).getText();
-			}else {
-				return;
-			}
+			String locationText = locationList.get(locationIndex).getText();
+			
 			
 			System.out.println(locationText+"    "+locationIndex);
 
