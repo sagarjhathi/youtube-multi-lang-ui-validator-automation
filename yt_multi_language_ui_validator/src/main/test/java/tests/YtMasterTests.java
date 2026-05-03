@@ -1,6 +1,6 @@
 package main.test.java.tests;
 
-import java.io.IOException; 
+import java.io.IOException;  
 import java.time.Duration;
 import java.util.List;
 import org.apache.logging.log4j.Logger;
@@ -28,11 +28,11 @@ public class YtMasterTests extends BaseTest{
 
 	private static final  Logger log=LoggerUtility.getLogger(YtMasterTests.class);
 
-	@Test(retryAnalyzer = RetryFailedTest.class)
+	@Test
 	public void verifyingSideMenuLanguageAsInSettings() throws InterruptedException {
 
-
-
+		
+		
 		YtLandingPage landingPage=new YtLandingPage();
 		SoftAssert softAssert = new SoftAssert();
 		GenericUtility genericUtility= new GenericUtility();
@@ -151,7 +151,7 @@ public class YtMasterTests extends BaseTest{
 
 
 
-	@Test(retryAnalyzer = RetryFailedTest.class,groups = {"lingua"})
+	@Test(groups = {"lingua"})
 	public void verifyingSideMenuLanguageAsInSettingsLingua() throws InterruptedException {
 
 
@@ -283,7 +283,7 @@ public class YtMasterTests extends BaseTest{
 
 
 
-	@Test(retryAnalyzer = RetryFailedTest.class)
+	@Test
 	public void verifyingSideMenuCollapsedLangAsInSettings() throws InterruptedException, InvalidFormatException, IOException {
 
 
@@ -407,7 +407,7 @@ public class YtMasterTests extends BaseTest{
 
 
 
-	@Test(retryAnalyzer = RetryFailedTest.class,groups = {"lingua"})
+	@Test(groups = {"lingua"})
 	public void verifyingSideMenuCollapsedLangAsInSettingsLingua() throws InterruptedException, InvalidFormatException, IOException {
 
 
@@ -540,7 +540,7 @@ public class YtMasterTests extends BaseTest{
 	}
 
 
-	@Test(retryAnalyzer = RetryFailedTest.class)
+	@Test
 	public void verifyingSettingOptionsLang() throws InterruptedException {
 
 
@@ -656,7 +656,7 @@ public class YtMasterTests extends BaseTest{
 
 
 
-	@Test(retryAnalyzer = RetryFailedTest.class)
+	@Test
 	public void verifyCountryCodeAsBasedOnRegion() throws InterruptedException {
 
 
@@ -765,7 +765,7 @@ public class YtMasterTests extends BaseTest{
 
 
 
-	@Test(retryAnalyzer = RetryFailedTest.class)
+	@Test
 	public void verifyingGlobalFilterLandingPage() throws InterruptedException {
 
 		
@@ -874,7 +874,7 @@ public class YtMasterTests extends BaseTest{
 
 
 
-	@Test(retryAnalyzer = RetryFailedTest.class,groups = {"lingua"})
+	@Test(groups = {"lingua"})
 	public void verifyingGlobalFilterLandingPageLingua() throws InterruptedException {
 
 
