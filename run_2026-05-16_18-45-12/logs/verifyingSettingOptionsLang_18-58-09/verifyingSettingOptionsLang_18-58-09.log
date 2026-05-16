@@ -1,0 +1,1258 @@
+18:58:09 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - No existing WebDriver found for current thread. Initializing a new ChromeDriver...
+18:58:09 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - WebDriverManager: chromedriver setup OK
+18:58:11 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - ChromeDriver initialized successfully for thread: 36
+18:58:11 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - SafeActions initialized with driver ChromeDriver: chrome on windows (ccd74deee1f636e34e110458c1203dee)
+18:58:11 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Initialized YtLandingPage with driver: ChromeDriver: chrome on windows (ccd74deee1f636e34e110458c1203dee)
+18:58:11 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - SafeActions initialized with driver ChromeDriver: chrome on windows (ccd74deee1f636e34e110458c1203dee)
+18:58:13 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Opened YouTube landing page.
+18:58:13 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+18:58:14 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:58:14 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:58:14 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking language dropdown...
+18:58:14 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: (//div[@id='content-icon'])[2]
+18:58:15 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: (//div[@id='content-icon'])[2]
+18:58:15 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Execution is scheduled type /CRON Job on CI Hence refering to CI keys from UtilData
+18:58:15 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Looking for language element with name: Afrikaans
+18:58:15 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Afrikaans']
+18:58:16 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Afrikaans']
+18:58:16 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Afrikaans']
+18:58:16 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Afrikaans']
+18:58:19 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+18:58:19 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:58:19 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:58:19 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Waiting until element is visible in viewport
+18:58:20 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+18:58:20 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:58:20 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:58:20 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+18:58:20 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:58:20 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:58:20 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Getting the setting ellipses options
+18:58:20 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-multi-page-menu-renderer
+18:58:20 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-multi-page-menu-renderer
+18:58:21 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+18:58:21 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:58:21 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:58:21 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - 
+========== LANGUAGE DETECTION ==========
+Detected Language : AFRIKAANS
+Input Text        : Jou data in YouTube
+Voorkoms: Lig
+Vertoontaal:
+Afrikaans
+Beperkmodus: Af
+Ligging:
+Verenigde State
+Kortpadsleutels
+Instellings
+Hulp
+Stuur terugvoer
+========================================
+18:58:21 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - getLangAttribute() - locating <html> and reading lang property
+18:58:21 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Language attribute read: af-ZA
+18:58:21 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+18:58:21 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:58:21 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:58:21 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking language dropdown...
+18:58:21 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: (//div[@id='content-icon'])[2]
+18:58:21 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: (//div[@id='content-icon'])[2]
+18:58:22 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Looking for language element with name: Azərbaycan
+18:58:22 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Azərbaycan']
+18:58:22 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Azərbaycan']
+18:58:22 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Azərbaycan']
+18:58:22 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Azərbaycan']
+18:58:23 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+18:58:24 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:58:24 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:58:24 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Waiting until element is visible in viewport
+18:58:25 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+18:58:25 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:58:25 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:58:25 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+18:58:25 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:58:25 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:58:25 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Getting the setting ellipses options
+18:58:25 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-multi-page-menu-renderer
+18:58:25 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-multi-page-menu-renderer
+18:58:25 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+18:58:25 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:58:26 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:58:26 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - 
+========== LANGUAGE DETECTION ==========
+Detected Language : AZERBAIJANI
+Input Text        : YouTube Datanız
+Görünüş: Açıq
+Displey dili:
+azərbaycan
+Limitli Rejim: Deaktiv
+Məkan:
+Amerika Birləşmiş Ştatları
+Klaviatura qısayolları
+Ayarlar
+Yardım
+Rəy göndərin
+========================================
+18:58:26 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - getLangAttribute() - locating <html> and reading lang property
+18:58:26 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Language attribute read: az-Latn-AZ
+18:58:26 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+18:58:26 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:58:26 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:58:26 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking language dropdown...
+18:58:26 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: (//div[@id='content-icon'])[2]
+18:58:26 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: (//div[@id='content-icon'])[2]
+18:58:27 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Looking for language element with name: Bahasa Indonesia
+18:58:27 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Bahasa Indonesia']
+18:58:27 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Bahasa Indonesia']
+18:58:27 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Bahasa Indonesia']
+18:58:27 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Bahasa Indonesia']
+18:58:28 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+18:58:28 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:58:29 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:58:29 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Waiting until element is visible in viewport
+18:58:29 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+18:58:29 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:58:30 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:58:30 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+18:58:30 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:58:30 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:58:30 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Getting the setting ellipses options
+18:58:30 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-multi-page-menu-renderer
+18:58:30 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-multi-page-menu-renderer
+18:58:30 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+18:58:30 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:58:30 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:58:30 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - 
+========== LANGUAGE DETECTION ==========
+Detected Language : INDONESIAN
+Input Text        : Data Anda di YouTube
+Tampilan: Terang
+Bahasa tampilan:
+Indonesia
+Mode Terbatas: Nonaktif
+Lokasi:
+Amerika Serikat
+Pintasan keyboard
+Setelan
+Bantuan
+Kirim masukan
+========================================
+18:58:30 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - getLangAttribute() - locating <html> and reading lang property
+18:58:30 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Language attribute read: id-ID
+18:58:30 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+18:58:30 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:58:30 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:58:30 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking language dropdown...
+18:58:30 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: (//div[@id='content-icon'])[2]
+18:58:31 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: (//div[@id='content-icon'])[2]
+18:58:32 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Looking for language element with name: Bosanski
+18:58:32 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Bosanski']
+18:58:32 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Bosanski']
+18:58:32 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Bosanski']
+18:58:32 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Bosanski']
+18:58:36 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+18:58:36 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:58:37 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:58:38 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Waiting until element is visible in viewport
+18:58:38 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+18:58:38 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:58:38 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:58:39 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+18:58:39 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:58:39 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:58:39 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Getting the setting ellipses options
+18:58:39 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-multi-page-menu-renderer
+18:58:39 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-multi-page-menu-renderer
+18:58:39 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+18:58:39 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:58:39 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:58:39 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - 
+========== LANGUAGE DETECTION ==========
+Detected Language : BOSNIAN
+Input Text        : Vaši podaci na YouTubeu
+Izgled: svijetla tema
+Jezik prikaza:
+bosanski
+Ograničeni način rada: isključeno
+Lokacija:
+Sjedinjene Američke Države
+Prečice na tastaturi
+Postavke
+Pomoć
+Pošaljite povratne informacije
+========================================
+18:58:39 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - getLangAttribute() - locating <html> and reading lang property
+18:58:39 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Language attribute read: bs-Latn-BA
+18:58:39 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+18:58:39 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:58:39 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:58:39 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking language dropdown...
+18:58:39 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: (//div[@id='content-icon'])[2]
+18:58:40 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: (//div[@id='content-icon'])[2]
+18:58:40 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Looking for language element with name: Català
+18:58:40 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Català']
+18:58:41 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Català']
+18:58:41 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Català']
+18:58:41 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Català']
+18:58:42 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+18:58:42 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:58:43 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:58:43 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Waiting until element is visible in viewport
+18:58:43 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+18:58:43 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:58:43 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:58:44 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+18:58:44 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:58:44 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:58:44 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Getting the setting ellipses options
+18:58:44 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-multi-page-menu-renderer
+18:58:45 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-multi-page-menu-renderer
+18:58:45 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+18:58:45 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:58:45 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:58:45 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - 
+========== LANGUAGE DETECTION ==========
+Detected Language : CATALAN
+Input Text        : Les teves dades a YouTube
+Aparença: clar
+Idioma visible:
+català
+Mode restringit: desactivat
+Ubicació:
+Estats Units
+Tecles de drecera
+Configuració
+Ajuda
+Envia suggeriments
+========================================
+18:58:45 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - getLangAttribute() - locating <html> and reading lang property
+18:58:45 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Language attribute read: ca-ES
+18:58:45 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+18:58:45 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:58:45 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:58:45 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking language dropdown...
+18:58:45 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: (//div[@id='content-icon'])[2]
+18:58:46 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: (//div[@id='content-icon'])[2]
+18:58:46 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Looking for language element with name: Dansk
+18:58:46 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Dansk']
+18:58:46 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Dansk']
+18:58:46 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Dansk']
+18:58:47 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Dansk']
+18:58:47 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+18:58:48 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:58:48 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:58:49 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Waiting until element is visible in viewport
+18:58:50 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+18:58:50 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:58:50 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:58:50 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+18:58:50 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:58:50 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:58:51 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Getting the setting ellipses options
+18:58:51 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-multi-page-menu-renderer
+18:58:51 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-multi-page-menu-renderer
+18:58:52 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+18:58:52 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:58:52 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:58:52 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - 
+========== LANGUAGE DETECTION ==========
+Detected Language : DANISH
+Input Text        : Dine data på YouTube
+Udseende: Lyst
+Visningssprog:
+dansk
+Begrænset tilstand: Fra
+Lokation:
+USA
+Tastaturgenveje
+Indstillinger
+Hjælp
+Send feedback
+========================================
+18:58:52 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - getLangAttribute() - locating <html> and reading lang property
+18:58:52 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Language attribute read: da-DK
+18:58:52 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+18:58:53 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:58:53 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:58:53 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking language dropdown...
+18:58:53 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: (//div[@id='content-icon'])[2]
+18:58:53 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: (//div[@id='content-icon'])[2]
+18:58:54 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Looking for language element with name: Deutsch
+18:58:54 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Deutsch']
+18:58:54 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Deutsch']
+18:58:54 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Deutsch']
+18:58:54 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Deutsch']
+18:58:56 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+18:58:56 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:58:56 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:58:56 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Waiting until element is visible in viewport
+18:58:57 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+18:58:57 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:58:57 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:58:57 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+18:58:57 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:58:57 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:58:57 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Getting the setting ellipses options
+18:58:57 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-multi-page-menu-renderer
+18:58:57 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-multi-page-menu-renderer
+18:58:58 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+18:58:58 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:58:58 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:58:58 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - 
+========== LANGUAGE DETECTION ==========
+Detected Language : GERMAN
+Input Text        : Meine Daten auf YouTube
+Darstellung: Hell
+Anzeigesprache:
+Deutsch
+Eingeschränkter Modus: Deaktiviert
+Ort:
+USA
+Tastenkombinationen
+Einstellungen
+Hilfe
+Feedback senden
+========================================
+18:58:58 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - getLangAttribute() - locating <html> and reading lang property
+18:58:58 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Language attribute read: de-DE
+18:58:58 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+18:58:58 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:58:58 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:58:58 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking language dropdown...
+18:58:58 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: (//div[@id='content-icon'])[2]
+18:58:59 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: (//div[@id='content-icon'])[2]
+18:59:00 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Looking for language element with name: Eesti
+18:59:00 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Eesti']
+18:59:00 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Eesti']
+18:59:00 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Eesti']
+18:59:00 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Eesti']
+18:59:01 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+18:59:02 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:59:02 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:59:03 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Waiting until element is visible in viewport
+18:59:05 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+18:59:05 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:59:05 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:59:05 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+18:59:05 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:59:06 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:59:06 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Getting the setting ellipses options
+18:59:06 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-multi-page-menu-renderer
+18:59:06 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-multi-page-menu-renderer
+18:59:06 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+18:59:06 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:59:06 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:59:06 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - 
+========== LANGUAGE DETECTION ==========
+Detected Language : ESTONIAN
+Input Text        : Teie andmed YouTube'is
+Välimus: hele
+Kuvamiskeel:
+eesti
+Piiratud režiim: väljas
+Asukoht:
+Ameerika Ühendriigid
+Klaviatuuri otseteed
+Seaded
+Abi
+Tagasiside saatmine
+========================================
+18:59:06 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - getLangAttribute() - locating <html> and reading lang property
+18:59:06 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Language attribute read: et-EE
+18:59:06 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+18:59:07 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:59:07 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:59:07 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking language dropdown...
+18:59:07 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: (//div[@id='content-icon'])[2]
+18:59:08 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: (//div[@id='content-icon'])[2]
+18:59:08 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Looking for language element with name: English (India)
+18:59:08 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='English (India)']
+18:59:08 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='English (India)']
+18:59:08 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='English (India)']
+18:59:09 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='English (India)']
+18:59:10 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+18:59:11 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:59:11 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:59:12 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Waiting until element is visible in viewport
+18:59:13 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+18:59:13 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:59:13 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:59:13 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+18:59:13 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:59:13 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:59:14 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Getting the setting ellipses options
+18:59:14 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-multi-page-menu-renderer
+18:59:14 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-multi-page-menu-renderer
+18:59:14 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+18:59:14 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:59:14 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:59:14 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - 
+========== LANGUAGE DETECTION ==========
+Detected Language : ENGLISH
+Input Text        : Your data in YouTube
+Appearance: Light
+Display language:
+English (India)
+Restricted Mode: Off
+Location:
+United States
+Keyboard shortcuts
+Settings
+Help
+Send feedback
+========================================
+18:59:14 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - getLangAttribute() - locating <html> and reading lang property
+18:59:14 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Language attribute read: en-IN
+18:59:14 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+18:59:14 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:59:14 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:59:14 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking language dropdown...
+18:59:14 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: (//div[@id='content-icon'])[2]
+18:59:15 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: (//div[@id='content-icon'])[2]
+18:59:16 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Looking for language element with name: English (UK)
+18:59:16 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='English (UK)']
+18:59:16 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='English (UK)']
+18:59:16 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='English (UK)']
+18:59:16 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='English (UK)']
+18:59:18 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+18:59:19 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:59:19 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:59:20 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Waiting until element is visible in viewport
+18:59:20 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+18:59:20 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:59:20 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:59:21 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+18:59:21 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:59:21 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:59:21 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Getting the setting ellipses options
+18:59:21 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-multi-page-menu-renderer
+18:59:22 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-multi-page-menu-renderer
+18:59:22 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+18:59:22 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:59:22 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:59:22 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - 
+========== LANGUAGE DETECTION ==========
+Detected Language : ENGLISH
+Input Text        : Your data in YouTube
+Appearance: Light
+Display language:
+British English
+Restricted Mode: Off
+Location:
+United States
+Keyboard shortcuts
+Settings
+Help
+Send feedback
+========================================
+18:59:22 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - getLangAttribute() - locating <html> and reading lang property
+18:59:22 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Language attribute read: en-GB
+18:59:22 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+18:59:22 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:59:23 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:59:23 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking language dropdown...
+18:59:23 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: (//div[@id='content-icon'])[2]
+18:59:23 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: (//div[@id='content-icon'])[2]
+18:59:24 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Looking for language element with name: English (US)
+18:59:24 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='English (US)']
+18:59:24 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='English (US)']
+18:59:24 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='English (US)']
+18:59:24 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='English (US)']
+18:59:26 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+18:59:26 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:59:26 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:59:27 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Waiting until element is visible in viewport
+18:59:27 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+18:59:27 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:59:27 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:59:27 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+18:59:27 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:59:27 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:59:27 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Getting the setting ellipses options
+18:59:27 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-multi-page-menu-renderer
+18:59:28 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-multi-page-menu-renderer
+18:59:28 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+18:59:28 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:59:28 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:59:28 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - 
+========== LANGUAGE DETECTION ==========
+Detected Language : ENGLISH
+Input Text        : Your data in YouTube
+Appearance: Light
+Display language:
+English
+Restricted Mode: Off
+Location:
+United States
+Keyboard shortcuts
+Settings
+Help
+Send feedback
+========================================
+18:59:28 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - getLangAttribute() - locating <html> and reading lang property
+18:59:28 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Language attribute read: en
+18:59:28 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+18:59:28 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:59:28 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:59:28 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking language dropdown...
+18:59:28 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: (//div[@id='content-icon'])[2]
+18:59:29 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: (//div[@id='content-icon'])[2]
+18:59:29 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Looking for language element with name: Español (España)
+18:59:29 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Español (España)']
+18:59:30 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Español (España)']
+18:59:30 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Español (España)']
+18:59:30 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Español (España)']
+18:59:32 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+18:59:32 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:59:33 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:59:33 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Waiting until element is visible in viewport
+18:59:34 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+18:59:34 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:59:34 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:59:34 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+18:59:34 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:59:34 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:59:35 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Getting the setting ellipses options
+18:59:35 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-multi-page-menu-renderer
+18:59:35 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-multi-page-menu-renderer
+18:59:35 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+18:59:35 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:59:35 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:59:35 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - 
+========== LANGUAGE DETECTION ==========
+Detected Language : SPANISH
+Input Text        : Tus datos en YouTube
+Aspecto: claro
+Idioma de visualización:
+Español
+Modo Restringido: desactivado
+Ubicación:
+Estados Unidos
+Combinaciones de teclas
+Configuración
+Ayuda
+Enviar sugerencias
+========================================
+18:59:35 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - getLangAttribute() - locating <html> and reading lang property
+18:59:35 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Language attribute read: es-ES
+18:59:35 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+18:59:35 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:59:36 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:59:36 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking language dropdown...
+18:59:36 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: (//div[@id='content-icon'])[2]
+18:59:36 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: (//div[@id='content-icon'])[2]
+18:59:37 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Looking for language element with name: Español (Latinoamérica)
+18:59:37 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Español (Latinoamérica)']
+18:59:37 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Español (Latinoamérica)']
+18:59:37 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Español (Latinoamérica)']
+18:59:37 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Español (Latinoamérica)']
+18:59:39 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+18:59:39 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:59:40 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:59:40 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Waiting until element is visible in viewport
+18:59:40 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+18:59:41 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:59:41 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:59:41 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+18:59:41 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:59:41 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:59:41 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Getting the setting ellipses options
+18:59:41 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-multi-page-menu-renderer
+18:59:41 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-multi-page-menu-renderer
+18:59:41 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+18:59:41 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:59:41 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:59:42 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - 
+========== LANGUAGE DETECTION ==========
+Detected Language : SPANISH
+Input Text        : Tus datos en YouTube
+Aspecto: Claro
+Idioma de visualización:
+Español latinoamericano
+Modo restringido: desactivado
+Ubicación:
+Estados Unidos
+Combinaciones de teclas
+Configuración
+Ayuda
+Enviar comentarios
+========================================
+18:59:42 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - getLangAttribute() - locating <html> and reading lang property
+18:59:42 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Language attribute read: es-419
+18:59:42 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+18:59:42 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:59:42 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:59:42 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking language dropdown...
+18:59:42 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: (//div[@id='content-icon'])[2]
+18:59:43 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: (//div[@id='content-icon'])[2]
+18:59:44 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Looking for language element with name: Español (US)
+18:59:44 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Español (US)']
+18:59:44 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Español (US)']
+18:59:44 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Español (US)']
+18:59:45 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Español (US)']
+18:59:46 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+18:59:47 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:59:47 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:59:47 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Waiting until element is visible in viewport
+18:59:48 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+18:59:48 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:59:48 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:59:49 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+18:59:49 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:59:49 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:59:49 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Getting the setting ellipses options
+18:59:49 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-multi-page-menu-renderer
+18:59:50 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-multi-page-menu-renderer
+18:59:50 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+18:59:50 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:59:50 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:59:50 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - 
+========== LANGUAGE DETECTION ==========
+Detected Language : SPANISH
+Input Text        : Tus datos en YouTube
+Aspecto: Claro
+Idioma de visualización:
+Español (Estados Unidos)
+Modo restringido: desactivado
+Ubicación:
+Estados Unidos
+Combinaciones de teclas
+Configuración
+Ayuda
+Enviar comentarios
+========================================
+18:59:50 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - getLangAttribute() - locating <html> and reading lang property
+18:59:50 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Language attribute read: es-US
+18:59:50 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+18:59:50 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:59:50 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:59:51 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking language dropdown...
+18:59:51 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: (//div[@id='content-icon'])[2]
+18:59:51 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: (//div[@id='content-icon'])[2]
+18:59:51 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Looking for language element with name: Euskara
+18:59:51 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Euskara']
+18:59:52 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Euskara']
+18:59:52 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Euskara']
+18:59:52 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Euskara']
+18:59:53 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+18:59:54 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:59:54 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:59:54 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Waiting until element is visible in viewport
+18:59:56 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+18:59:56 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:59:56 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:59:56 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+18:59:56 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:59:57 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:59:57 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Getting the setting ellipses options
+18:59:57 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-multi-page-menu-renderer
+18:59:58 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-multi-page-menu-renderer
+18:59:58 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+18:59:58 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:59:58 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:59:58 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - 
+========== LANGUAGE DETECTION ==========
+Detected Language : BASQUE
+Input Text        : YouTube-n dituzun datuak
+Itxura: argia
+Bistaratzeko hizkuntza:
+euskara
+Modu murriztua: desaktibatuta
+Kokapena:
+Ameriketako Estatu Batuak
+Lasterbideak
+Ezarpenak
+Laguntza
+Bidali oharrak
+========================================
+18:59:58 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - getLangAttribute() - locating <html> and reading lang property
+18:59:58 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Language attribute read: eu-ES
+18:59:58 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+18:59:58 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:59:58 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+18:59:58 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking language dropdown...
+18:59:58 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: (//div[@id='content-icon'])[2]
+18:59:59 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: (//div[@id='content-icon'])[2]
+18:59:59 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Looking for language element with name: Français
+18:59:59 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Français']
+19:00:00 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Français']
+19:00:00 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Français']
+19:00:00 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Français']
+19:00:02 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+19:00:02 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:00:02 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:00:03 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Waiting until element is visible in viewport
+19:00:03 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+19:00:03 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:00:03 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:00:03 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+19:00:04 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:00:04 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:00:04 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Getting the setting ellipses options
+19:00:04 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-multi-page-menu-renderer
+19:00:04 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-multi-page-menu-renderer
+19:00:04 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+19:00:04 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:00:04 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:00:04 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - 
+========== LANGUAGE DETECTION ==========
+Detected Language : FRENCH
+Input Text        : Vos données dans YouTube
+Apparence : thème clair
+Langue d'affichage :
+français
+Mode restreint : désactivé
+Pays :
+États-Unis
+Raccourcis clavier
+Paramètres
+Aide
+Envoyer des commentaires
+========================================
+19:00:04 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - getLangAttribute() - locating <html> and reading lang property
+19:00:04 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Language attribute read: fr-FR
+19:00:04 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+19:00:04 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:00:05 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:00:05 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking language dropdown...
+19:00:05 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: (//div[@id='content-icon'])[2]
+19:00:05 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: (//div[@id='content-icon'])[2]
+19:00:06 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Looking for language element with name: Français (Canada)
+19:00:06 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Français (Canada)']
+19:00:06 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Français (Canada)']
+19:00:06 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Français (Canada)']
+19:00:06 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Français (Canada)']
+19:00:08 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+19:00:08 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:00:09 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:00:09 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Waiting until element is visible in viewport
+19:00:10 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+19:00:10 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:00:10 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:00:11 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+19:00:11 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:00:11 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:00:11 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Getting the setting ellipses options
+19:00:11 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-multi-page-menu-renderer
+19:00:11 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-multi-page-menu-renderer
+19:00:11 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+19:00:11 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:00:12 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:00:12 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - 
+========== LANGUAGE DETECTION ==========
+Detected Language : FRENCH
+Input Text        : Vos données dans YouTube
+Apparence : clair
+Langue d'affichage :
+français canadien
+Mode restreint : désactivé
+Lieu :
+États-Unis
+Raccourcis clavier
+Paramètres
+Aide
+Envoyer des commentaires
+========================================
+19:00:12 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - getLangAttribute() - locating <html> and reading lang property
+19:00:12 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Language attribute read: fr-CA
+19:00:12 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+19:00:12 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:00:12 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:00:13 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking language dropdown...
+19:00:13 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: (//div[@id='content-icon'])[2]
+19:00:13 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: (//div[@id='content-icon'])[2]
+19:00:14 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Looking for language element with name: Hrvatski
+19:00:14 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Hrvatski']
+19:00:14 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Hrvatski']
+19:00:14 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Hrvatski']
+19:00:14 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Hrvatski']
+19:00:16 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+19:00:16 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:00:16 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:00:17 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Waiting until element is visible in viewport
+19:00:17 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+19:00:17 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:00:18 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:00:18 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+19:00:18 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:00:18 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:00:18 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Getting the setting ellipses options
+19:00:18 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-multi-page-menu-renderer
+19:00:19 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-multi-page-menu-renderer
+19:00:19 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+19:00:19 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:00:19 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:00:19 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - 
+========== LANGUAGE DETECTION ==========
+Detected Language : CROATIAN
+Input Text        : Vaši podaci na YouTubeu
+Izgled: svijetla tema
+Jezik za prikaz:
+Hrvatski
+Ograničeni način rada: isključen
+Lokacija:
+Sjedinjene Američke Države
+Tipkovni prečaci
+Postavke
+Pomoć
+Slanje povratnih informacija
+========================================
+19:00:19 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - getLangAttribute() - locating <html> and reading lang property
+19:00:19 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Language attribute read: hr-HR
+19:00:19 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+19:00:19 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:00:19 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:00:19 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking language dropdown...
+19:00:19 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: (//div[@id='content-icon'])[2]
+19:00:20 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: (//div[@id='content-icon'])[2]
+19:00:20 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Looking for language element with name: Íslenska
+19:00:20 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Íslenska']
+19:00:21 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Íslenska']
+19:00:21 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Íslenska']
+19:00:21 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Íslenska']
+19:00:22 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+19:00:23 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:00:23 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:00:24 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Waiting until element is visible in viewport
+19:00:25 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+19:00:25 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:00:26 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:00:26 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+19:00:26 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:00:26 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:00:26 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Getting the setting ellipses options
+19:00:26 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-multi-page-menu-renderer
+19:00:27 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-multi-page-menu-renderer
+19:00:27 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+19:00:27 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:00:27 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:00:27 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - 
+========== LANGUAGE DETECTION ==========
+Detected Language : ICELANDIC
+Input Text        : Gögn þín á YouTube
+Útlit: ljóst
+Birtingartungumál:
+íslenska
+Takmörkuð stilling: slökkt
+Staðsetning:
+Bandaríkin
+Flýtilyklar
+Stillingar
+Hjálp
+Senda inn ábendingu
+========================================
+19:00:27 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - getLangAttribute() - locating <html> and reading lang property
+19:00:27 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Language attribute read: is-IS
+19:00:27 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+19:00:27 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:00:27 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:00:28 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking language dropdown...
+19:00:28 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: (//div[@id='content-icon'])[2]
+19:00:28 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: (//div[@id='content-icon'])[2]
+19:00:29 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Looking for language element with name: Italiano
+19:00:29 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Italiano']
+19:00:29 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Italiano']
+19:00:29 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Italiano']
+19:00:29 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Italiano']
+19:00:31 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+19:00:31 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:00:31 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:00:32 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Waiting until element is visible in viewport
+19:00:32 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+19:00:32 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:00:32 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:00:32 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+19:00:32 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:00:32 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:00:33 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Getting the setting ellipses options
+19:00:33 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-multi-page-menu-renderer
+19:00:33 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-multi-page-menu-renderer
+19:00:33 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+19:00:33 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:00:33 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:00:33 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - 
+========== LANGUAGE DETECTION ==========
+Detected Language : ITALIAN
+Input Text        : I tuoi dati su YouTube
+Aspetto: tema chiaro
+Lingua di visualizzazione:
+Italiano
+Modalità con restrizioni: non attiva
+Località:
+Stati Uniti
+Scorciatoie da tastiera
+Impostazioni
+Guida
+Invia feedback
+========================================
+19:00:33 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - getLangAttribute() - locating <html> and reading lang property
+19:00:33 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Language attribute read: it-IT
+19:00:33 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+19:00:33 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:00:33 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:00:34 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking language dropdown...
+19:00:34 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: (//div[@id='content-icon'])[2]
+19:00:34 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: (//div[@id='content-icon'])[2]
+19:00:35 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Looking for language element with name: Latviešu valoda
+19:00:35 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Latviešu valoda']
+19:00:35 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Latviešu valoda']
+19:00:35 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Latviešu valoda']
+19:00:35 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Latviešu valoda']
+19:00:38 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+19:00:38 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:00:38 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:00:38 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Waiting until element is visible in viewport
+19:00:39 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+19:00:39 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:00:39 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:00:39 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+19:00:39 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:00:39 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:00:40 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Getting the setting ellipses options
+19:00:40 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-multi-page-menu-renderer
+19:00:40 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-multi-page-menu-renderer
+19:00:40 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+19:00:40 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:00:40 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:00:40 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - 
+========== LANGUAGE DETECTION ==========
+Detected Language : LATVIAN
+Input Text        : Jūsu dati pakalpojumā YouTube
+Izskats: gaišs
+Interfeisa valoda:
+latviešu
+Ierobežotais režīms: izslēgts
+Atrašanās vieta:
+Amerikas Savienotās Valstis
+Īsinājumtaustiņi
+Iestatījumi
+Palīdzība
+Sūtīt atsauksmes
+========================================
+19:00:40 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - getLangAttribute() - locating <html> and reading lang property
+19:00:41 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Language attribute read: lv-LV
+19:00:41 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+19:00:41 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:00:41 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:00:41 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking language dropdown...
+19:00:41 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: (//div[@id='content-icon'])[2]
+19:00:42 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: (//div[@id='content-icon'])[2]
+19:00:42 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Looking for language element with name: Lietuvių
+19:00:42 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Lietuvių']
+19:00:43 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Lietuvių']
+19:00:43 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Lietuvių']
+19:00:43 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Lietuvių']
+19:00:44 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+19:00:45 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:00:45 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:00:45 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Waiting until element is visible in viewport
+19:00:46 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+19:00:46 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:00:46 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:00:46 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+19:00:46 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:00:46 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:00:46 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Getting the setting ellipses options
+19:00:46 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-multi-page-menu-renderer
+19:00:47 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-multi-page-menu-renderer
+19:00:47 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+19:00:47 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:00:47 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:00:47 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - 
+========== LANGUAGE DETECTION ==========
+Detected Language : LITHUANIAN
+Input Text        : Jūsų duomenys sistemoje „YouTube“
+Išvaizda: šviesioji
+Rodymo kalba:
+lietuvių
+Ribotas režimas: išjungtas
+Vietovė:
+Jungtinės Amerikos Valstijos
+Spartieji klavišai
+Nustatymai
+Pagalba
+Siųsti atsiliepimą
+========================================
+19:00:47 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - getLangAttribute() - locating <html> and reading lang property
+19:00:47 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Language attribute read: lt-LT
+19:00:47 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+19:00:47 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:00:47 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:00:47 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking language dropdown...
+19:00:47 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: (//div[@id='content-icon'])[2]
+19:00:48 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: (//div[@id='content-icon'])[2]
+19:00:49 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Looking for language element with name: Magyar
+19:00:49 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Magyar']
+19:00:50 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Magyar']
+19:00:50 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Magyar']
+19:00:50 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Magyar']
+19:00:52 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+19:00:53 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:00:53 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:00:53 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Waiting until element is visible in viewport
+19:00:54 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+19:00:54 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:00:54 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:00:54 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+19:00:54 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:00:54 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:00:54 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Getting the setting ellipses options
+19:00:54 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-multi-page-menu-renderer
+19:00:54 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-multi-page-menu-renderer
+19:00:54 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+19:00:54 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:00:55 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:00:55 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - 
+========== LANGUAGE DETECTION ==========
+Detected Language : HUNGARIAN
+Input Text        : Adataid a YouTube szolgáltatásban
+Megjelenés: világos
+Megjelenítési nyelv:
+magyar
+Korlátozott mód: kikapcsolva
+Hely:
+Egyesült Államok
+Billentyűparancsok
+Beállítások
+Súgó
+Visszajelzés küldése
+========================================
+19:00:55 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - getLangAttribute() - locating <html> and reading lang property
+19:00:55 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Language attribute read: hu-HU
+19:00:55 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+19:00:55 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:00:55 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:00:55 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking language dropdown...
+19:00:55 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: (//div[@id='content-icon'])[2]
+19:00:56 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: (//div[@id='content-icon'])[2]
+19:00:56 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Looking for language element with name: Nederlands
+19:00:56 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Nederlands']
+19:00:57 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Nederlands']
+19:00:57 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Nederlands']
+19:00:57 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Nederlands']
+19:00:58 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+19:00:59 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:00:59 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:00:59 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Waiting until element is visible in viewport
+19:01:00 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+19:01:00 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:01:00 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:01:01 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+19:01:01 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:01:02 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:01:02 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Getting the setting ellipses options
+19:01:02 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-multi-page-menu-renderer
+19:01:03 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-multi-page-menu-renderer
+19:01:03 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+19:01:03 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:01:03 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:01:03 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - 
+========== LANGUAGE DETECTION ==========
+Detected Language : DUTCH
+Input Text        : Je gegevens in YouTube
+Weergave: Licht
+Taalinstelling:
+Nederlands
+Beperkte modus: uit
+Locatie:
+Verenigde Staten
+Sneltoetsen
+Instellingen
+Hulp
+Feedback sturen
+========================================
+19:01:03 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - getLangAttribute() - locating <html> and reading lang property
+19:01:03 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Language attribute read: nl-NL
+19:01:03 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+19:01:03 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:01:03 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:01:03 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking language dropdown...
+19:01:03 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: (//div[@id='content-icon'])[2]
+19:01:04 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: (//div[@id='content-icon'])[2]
+19:01:04 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Looking for language element with name: Polski
+19:01:04 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Polski']
+19:01:04 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Polski']
+19:01:04 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Polski']
+19:01:05 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Polski']
+19:01:06 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+19:01:07 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:01:07 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:01:07 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Waiting until element is visible in viewport
+19:01:08 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+19:01:08 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:01:08 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:01:08 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+19:01:08 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:01:08 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:01:08 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Getting the setting ellipses options
+19:01:08 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-multi-page-menu-renderer
+19:01:08 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-multi-page-menu-renderer
+19:01:08 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+19:01:08 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:01:09 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:01:09 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - 
+========== LANGUAGE DETECTION ==========
+Detected Language : POLISH
+Input Text        : Twoje dane na YouTube
+Wygląd: jasny
+Język wyświetlania:
+polski
+Tryb ograniczonego dostępu: wyłączony
+Lokalizacja:
+Stany Zjednoczone
+Skróty klawiszowe
+Ustawienia
+Pomoc
+Prześlij opinię
+========================================
+19:01:09 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - getLangAttribute() - locating <html> and reading lang property
+19:01:09 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Language attribute read: pl-PL
+19:01:09 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+19:01:09 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:01:09 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:01:09 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking language dropdown...
+19:01:09 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: (//div[@id='content-icon'])[2]
+19:01:09 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: (//div[@id='content-icon'])[2]
+19:01:10 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Looking for language element with name: Português
+19:01:10 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Português']
+19:01:10 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Português']
+19:01:10 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Português']
+19:01:10 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Português']
+19:01:13 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+19:01:14 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:01:14 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:01:15 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Waiting until element is visible in viewport
+19:01:15 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+19:01:15 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:01:15 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:01:16 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+19:01:16 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:01:16 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:01:16 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Getting the setting ellipses options
+19:01:16 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-multi-page-menu-renderer
+19:01:16 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-multi-page-menu-renderer
+19:01:16 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+19:01:16 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:01:16 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:01:17 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - 
+========== LANGUAGE DETECTION ==========
+Detected Language : PORTUGUESE
+Input Text        : Os seus dados no YouTube
+Aspeto: claro
+Idioma de apresentação:
+Português europeu
+Modo restrito: desativado
+Localização:
+Estados Unidos
+Atalhos de teclado
+Definições
+Ajuda
+Enviar feedback
+========================================
+19:01:17 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - getLangAttribute() - locating <html> and reading lang property
+19:01:17 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Language attribute read: pt-PT
+19:01:17 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+19:01:17 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:01:17 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:01:17 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking language dropdown...
+19:01:17 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: (//div[@id='content-icon'])[2]
+19:01:17 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: (//div[@id='content-icon'])[2]
+19:01:18 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Looking for language element with name: Português (Brasil)
+19:01:18 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Português (Brasil)']
+19:01:18 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Português (Brasil)']
+19:01:18 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Português (Brasil)']
+19:01:18 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Português (Brasil)']
+19:01:20 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+19:01:21 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:01:21 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:01:21 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Waiting until element is visible in viewport
+19:01:21 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+19:01:22 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:01:22 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:01:22 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+19:01:22 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:01:22 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:01:22 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Getting the setting ellipses options
+19:01:22 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-multi-page-menu-renderer
+19:01:22 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-multi-page-menu-renderer
+19:01:22 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+19:01:22 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:01:22 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:01:22 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - 
+========== LANGUAGE DETECTION ==========
+Detected Language : PORTUGUESE
+Input Text        : Seus dados no YouTube
+Aparência: claro
+Idioma de exibição:
+Português
+Modo restrito: desativado
+Local:
+Estados Unidos
+Atalhos do teclado
+Configurações
+Ajuda
+Enviar feedback
+========================================
+19:01:22 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - getLangAttribute() - locating <html> and reading lang property
+19:01:22 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Language attribute read: pt-BR
+19:01:22 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+19:01:22 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:01:22 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:01:23 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking language dropdown...
+19:01:23 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: (//div[@id='content-icon'])[2]
+19:01:23 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: (//div[@id='content-icon'])[2]
+19:01:24 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Looking for language element with name: Shqip
+19:01:24 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Shqip']
+19:01:24 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Shqip']
+19:01:24 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Shqip']
+19:01:24 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Shqip']
+19:01:26 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+19:01:26 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:01:27 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:01:27 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Waiting until element is visible in viewport
+19:01:28 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+19:01:28 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:01:28 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:01:29 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+19:01:29 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:01:29 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:01:29 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Getting the setting ellipses options
+19:01:29 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-multi-page-menu-renderer
+19:01:30 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-multi-page-menu-renderer
+19:01:30 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+19:01:30 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:01:30 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:01:31 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - 
+========== LANGUAGE DETECTION ==========
+Detected Language : ALBANIAN
+Input Text        : Të dhënat e tua në YouTube
+Paraqitja: E çelur
+Gjuha e shfaqjes:
+shqip
+Modaliteti i kufizuar: Joaktiv
+Vendndodhja:
+Shtetet e Bashkuara
+Shkurtoret e tastierës
+Cilësimet
+Ndihmë
+Dërgo koment
+========================================
+19:01:31 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - getLangAttribute() - locating <html> and reading lang property
+19:01:31 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Language attribute read: sq-AL
+19:01:31 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+19:01:31 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:01:31 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default']
+19:01:31 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking language dropdown...
+19:01:31 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: (//div[@id='content-icon'])[2]
+19:01:32 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: (//div[@id='content-icon'])[2]
+19:01:32 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Looking for language element with name: Slovenščina
+19:01:32 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Slovenščina']
+19:01:32 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Slovenščina']
+19:01:32 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Trying to find element: By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Slovenščina']
+19:01:33 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Element found and ready (attempt 1): By.xpath: //yt-multi-page-menu-section-renderer[@class='style-scope ytd-multi-page-menu-renderer']//yt-formatted-string[@id='label' and text()='Slovenščina']
+19:01:34 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - Clicking settings ellipses button...
+19:01:44 [TestNG-test-Yt Master Tests-3] INFO  verifyingSettingOptionsLang_18-58-09 - [verifyingSettingOptionsLang_18-58-09] Not retrying test 'verifyingSettingOptionsLang'. Retry count: 1, Cause: Expected condition failed: waiting for element to be clickable: By.xpath: //ytd-topbar-menu-button-renderer[@class='style-scope ytd-masthead style-default'] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows Server 2025', os.arch: 'amd64', os.version: '10.0', java.version: '24.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.97, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61477}, goog:processID: 10772, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61477/devtoo..., se:cdpVersion: 148.0.7778.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ccd74deee1f636e34e110458c1203dee
