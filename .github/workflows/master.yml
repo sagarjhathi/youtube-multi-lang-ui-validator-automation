@@ -121,7 +121,7 @@ jobs:
         shell: pwsh
         run: |
           $tempPath = "$env:RUNNER_TEMP\artifacts"
-          $run = $env:RUN_FOLDER
+          $run = $env:RUN_FOLDER+yt_multi_language_ui_validator
       
           New-Item -ItemType Directory -Path $tempPath -Force
           Remove-Item -Recurse -Force "$tempPath/$run" -ErrorAction SilentlyContinue
