@@ -112,7 +112,7 @@ jobs:
       - name: Upload test artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: run-${{ env.RUN_FOLDER }}
+          name: run-${{ env.RUN_FOLDER }}_yt_multi_language_ui_validator
           path: ${{ env.WORKDIR }}/${{ env.RUN_FOLDER }}
           retention-days: 30
 
