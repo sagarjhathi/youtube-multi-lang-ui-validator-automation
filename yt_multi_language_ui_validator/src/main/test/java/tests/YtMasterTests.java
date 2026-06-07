@@ -31,12 +31,12 @@ public class YtMasterTests extends BaseTest{
 	@Test
 	public void verifyingSideMenuLanguageAsInSettings() throws InterruptedException {
 
-		
-		
+
+
 		YtLandingPage landingPage=new YtLandingPage();
 		SoftAssert softAssert = new SoftAssert();
 		GenericUtility genericUtility= new GenericUtility();
-		
+
 
 		FileReader verifyingSideMenuLanguageAsInSettingsDataReader=new FileReader();
 		verifyingSideMenuLanguageAsInSettingsDataReader.loadWorkbook("data/verifyingSideMenuLanguageAsInSettings.xlsx");
@@ -44,12 +44,12 @@ public class YtMasterTests extends BaseTest{
 
 
 		landingPage.openingLandingPage();
-		
+
 
 		landingPage.clickingSettingEllipsesButton();
-	
+
 		landingPage.clickingLanguageDropdownButton();
-		
+
 		String testName = ThreadContext.get("logFileName");
 		int LanguagesRowCount= verifyingSideMenuLanguageAsInSettingsDataReader.getRowCount();
 
@@ -92,23 +92,23 @@ public class YtMasterTests extends BaseTest{
 			System.out.println(langText+" lang text from the sheet   "+languageIndex);
 
 			ScreenshotUtilUpdated.capture(testName, langText);
-			
+
 
 			landingPage.getLanguageElementByName(langText).click();	
-			
+
 			landingPage.clickingSettingEllipsesButton();
 			genericUtility.isElementInViewport(landingPage.languageDropdownUnderSettings);
 			ScreenshotUtilUpdated.capture(testName, langText);
 			landingPage.clickingSettingEllipsesButton();
 
-			
+
 			List<WebElement> listOfSideMenu=landingPage.gettingSideMenuExpandedList();
 
 			StringBuilder sideMenuItems=new StringBuilder();
 			for(int sideMenuItem=0;sideMenuItem<listOfSideMenu.size();sideMenuItem++) {
 				System.out.println(listOfSideMenu.get(sideMenuItem).getText());
 				sideMenuItems.append(listOfSideMenu.get(sideMenuItem).getText());
-				
+
 				if(sideMenuItem!=listOfSideMenu.size()-1) {
 					sideMenuItems.append(" ");
 				}
@@ -120,23 +120,23 @@ public class YtMasterTests extends BaseTest{
 
 			String expectedData=verifyingSideMenuLanguageAsInSettingsDataReader.getCellValue(languageIndex, 1).trim();
 			String actualData=sideMenuItems.toString();
-			
-			
+
+
 			if(sideMenuItems.toString().trim().equals(expectedData.trim())) {
 				System.out.println("Checking if both data are true here    ");
 			}
 
 			System.out.println("========="+expectedData+" =====  Expected data from the sheet");
 			softAssert.assertEquals(actualData.trim(),expectedData.trim(),"Mismatch in the Actual and Expected data for language="+langText);
-			
+
 
 			landingPage.clickingSettingEllipsesButton();
-		
+
 			landingPage.clickingLanguageDropdownButton();
-		
+
 
 		}
-		
+
 		verifyingSideMenuLanguageAsInSettingsDataReader.closeWorkbook();
 
 
@@ -159,28 +159,28 @@ public class YtMasterTests extends BaseTest{
 		YtLandingPage landingPage=new YtLandingPage();
 		GenericUtility genericUtility=new GenericUtility();
 		SoftAssert softAssert = new SoftAssert();
-		
-		
+
+
 		FileReader applicableExpectedLangReader=new FileReader();
 		applicableExpectedLangReader.loadWorkbook("data/ApplicableLanguageExpectedLanguage.xlsx");
 		applicableExpectedLangReader.loadSheet("AppVExpectLanguages");
-		
+
 		FileReader applicableExpectedAttributeReader=new FileReader();
 		applicableExpectedAttributeReader.loadWorkbook("data/ApplicableLanguageExpectedAttibute.xlsx");
 		applicableExpectedAttributeReader.loadSheet("Attribute");
-		
-		
-	
+
+
+
 
 		landingPage.openingLandingPage();
-		
-		
-		
-		
+
+
+
+
 		landingPage.clickingSettingEllipsesButton();
-	
+
 		landingPage.clickingLanguageDropdownButton();
-	
+
 		String testName = ThreadContext.get("logFileName");
 		int LanguagesRowCount= applicableExpectedLangReader.getRowCount();
 
@@ -222,19 +222,19 @@ public class YtMasterTests extends BaseTest{
 			String langText=applicableExpectedLangReader.getCellValue(languageIndex, 0);
 			System.out.println(langText+" lang text from the sheet   "+languageIndex);
 
-		
 
-		
-			
-			
+
+
+
+
 			landingPage.getLanguageElementByName(langText).click();	
-			
+
 			landingPage.clickingSettingEllipsesButton();
 			genericUtility.isElementInViewport(landingPage.languageDropdownUnderSettings);
 			ScreenshotUtilUpdated.capture(testName, langText);
 			landingPage.clickingSettingEllipsesButton();
 
-		
+
 			List<WebElement> listOfSideMenu=landingPage.gettingSideMenuExpandedList();
 
 			StringBuilder sideMenuItems=new StringBuilder();
@@ -254,7 +254,7 @@ public class YtMasterTests extends BaseTest{
 			String detectedLanguage=LinguaHelper.detectLanguage(sideMenuItems.toString());
 			String expectedLanguage=applicableExpectedLangReader.getCellValue(languageIndex, 1);
 
-			
+
 			String expectedLanguageAttribute=applicableExpectedAttributeReader.getCellValue(languageIndex, 1);
 			String detectedLanguageAttribute=genericUtility.getLangAttribute();
 
@@ -268,9 +268,9 @@ public class YtMasterTests extends BaseTest{
 
 
 			landingPage.clickingSettingEllipsesButton();
-		
+
 			landingPage.clickingLanguageDropdownButton();
-		
+
 
 		}
 		applicableExpectedLangReader.closeWorkbook();
@@ -305,16 +305,16 @@ public class YtMasterTests extends BaseTest{
 
 		int LanguagesRowCount= verifyingSideMenuCollapsedLangAsInSettingsDataReader.getRowCount();
 		String testName = ThreadContext.get("logFileName");
-	
+
 		landingPage.openingLandingPage();
 		landingPage.clickingLeftEllipses();
 
 
-		
+
 		landingPage.clickingSettingEllipsesButton();
 
 		landingPage.clickingLanguageDropdownButton();
-	
+
 
 		boolean isCron = Boolean.parseBoolean(System.getenv("IS_CRON"));
 		if(isCron) {
@@ -353,27 +353,27 @@ public class YtMasterTests extends BaseTest{
 
 			String langText=verifyingSideMenuCollapsedLangAsInSettingsDataReader.getCellValue(languageIndex, 0);
 			System.out.println(langText+"    "+languageIndex);
-		
+
 
 			landingPage.getLanguageElementByName(langText).click();	
 			new WebDriverWait(driver, Duration.ofSeconds(15))
-		    .until(ExpectedConditions.presenceOfElementLocated(
-		        landingPage.sideMenuCollapsedList
-		    ));
+			.until(ExpectedConditions.presenceOfElementLocated(
+					landingPage.sideMenuCollapsedList
+					));
 			landingPage.clickingSettingEllipsesButton();
 			genericUtility.isElementInViewport(landingPage.languageDropdownUnderSettings);
 			ScreenshotUtilUpdated.capture(testName, langText);
 			landingPage.clickingSettingEllipsesButton();
-			
+
 			genericUtility.getLangAttribute();
-		
+
 			List<WebElement> listOfSideMenu=landingPage.gettingSideMenuCollapsedList();
 
 			StringBuilder sideMenuItems=new StringBuilder();
 			for(int sideMenuItem=0;sideMenuItem<listOfSideMenu.size();sideMenuItem++) {
 				System.out.println(listOfSideMenu.get(sideMenuItem).getText());
 				sideMenuItems.append(listOfSideMenu.get(sideMenuItem).getText());
-				
+
 				if(sideMenuItem!=listOfSideMenu.size()-1) {
 					sideMenuItems.append(" ");
 				}
@@ -387,9 +387,9 @@ public class YtMasterTests extends BaseTest{
 
 
 			landingPage.clickingSettingEllipsesButton();
-		
+
 			landingPage.clickingLanguageDropdownButton();
-		
+
 		}
 
 		verifyingSideMenuCollapsedLangAsInSettingsDataReader.closeWorkbook();
@@ -423,17 +423,17 @@ public class YtMasterTests extends BaseTest{
 		applicableExpectedReader.loadSheet("AppVExpectLanguages");
 
 
-		
+
 		FileReader applicableExpectedAttributeReader=new FileReader();
 		applicableExpectedAttributeReader.loadWorkbook("data/ApplicableLanguageExpectedAttibute.xlsx");
 		applicableExpectedAttributeReader.loadSheet("Attribute");
-		
+
 		int LanguagesRowCount= applicableExpectedReader.getRowCount();
 		String testName = ThreadContext.get("logFileName");
 		landingPage.openingLandingPage();
-		
-		
-		
+
+
+
 
 
 		List<Integer> sizes=genericUtility.getWindowHeightWidth();
@@ -441,10 +441,10 @@ public class YtMasterTests extends BaseTest{
 
 
 		landingPage.clickingSettingEllipsesButton();
-	
+
 
 		landingPage.clickingLanguageDropdownButton();
-	
+
 
 
 		boolean isCron = Boolean.parseBoolean(System.getenv("IS_CRON"));
@@ -483,17 +483,17 @@ public class YtMasterTests extends BaseTest{
 
 			String langText=applicableExpectedReader.getCellValue(languageIndex, 0);
 			System.out.println(langText+"    "+languageIndex);
-	
+
 
 			landingPage.getLanguageElementByName(langText).click();	
-			
+
 			landingPage.clickingSettingEllipsesButton();
 			genericUtility.isElementInViewport(landingPage.languageDropdownUnderSettings);
 			ScreenshotUtilUpdated.capture(testName, langText);
 			landingPage.clickingSettingEllipsesButton();
-			
+
 			genericUtility.getLangAttribute();
-		
+
 			List<WebElement> listOfSideMenu=landingPage.gettingSideMenuCollapsedList();
 
 			StringBuilder sideMenuItems=new StringBuilder();
@@ -527,9 +527,9 @@ public class YtMasterTests extends BaseTest{
 
 
 			landingPage.clickingSettingEllipsesButton();
-		
+
 			landingPage.clickingLanguageDropdownButton();
-		
+
 		}
 		applicableExpectedReader.closeWorkbook();
 		applicableExpectedAttributeReader.closeWorkbook();
@@ -544,13 +544,13 @@ public class YtMasterTests extends BaseTest{
 	public void verifyingSettingOptionsLang() throws InterruptedException {
 
 
-		
+
 		YtLandingPage landingPage=new YtLandingPage();
 		GenericUtility genericUtility=new GenericUtility();
 		SoftAssert softAssert=new SoftAssert();
-		
-		
-		
+
+
+
 		FileReader applicableExpectedLangReader=new FileReader();
 		applicableExpectedLangReader.loadWorkbook("data/ApplicableLanguageExpectedLanguage.xlsx");
 		applicableExpectedLangReader.loadSheet("AppVExpectLanguages");
@@ -563,12 +563,12 @@ public class YtMasterTests extends BaseTest{
 
 
 		int LanguagesRowCount= applicableExpectedLangReader.getRowCount();
-		
+
 		landingPage.openingLandingPage();
 		landingPage.clickingSettingEllipsesButton();
-	
+
 		landingPage.clickingLanguageDropdownButton();
-	
+
 
 
 
@@ -609,18 +609,18 @@ public class YtMasterTests extends BaseTest{
 			String langText=applicableExpectedLangReader.getCellValue(languageIndex, 0);
 			System.out.println(langText+"    "+languageIndex);
 
-		
+
 			landingPage.getLanguageElementByName(langText).click();	
-			
+
 			landingPage.clickingSettingEllipsesButton();
 			genericUtility.isElementInViewport(landingPage.languageDropdownUnderSettings);
 			ScreenshotUtilUpdated.capture(testName, langText);
 			landingPage.clickingSettingEllipsesButton();
 
-		
+
 
 			landingPage.clickingSettingEllipsesButton();
-		
+
 			String languageFromSettings=landingPage.getsettingEllipsesOptionsListLandingPage();
 			landingPage.clickingSettingEllipsesButton();
 
@@ -641,12 +641,12 @@ public class YtMasterTests extends BaseTest{
 
 
 			landingPage.clickingSettingEllipsesButton();
-		
+
 			landingPage.clickingLanguageDropdownButton();
-		
+
 
 		}
-		
+
 		applicableExpectedLangReader.closeWorkbook();
 		applicableExpectedAttributeReader.closeWorkbook();
 
@@ -671,11 +671,11 @@ public class YtMasterTests extends BaseTest{
 
 
 		landingPage.openingLandingPage();
-	
+
 		landingPage.clickingSettingEllipsesButton();
-	
+
 		landingPage.clickingLocationDropdownUnderSettings();
-	
+
 
 
 
@@ -726,23 +726,23 @@ public class YtMasterTests extends BaseTest{
 		for(int locationIndex=1;locationIndex<locationListSize;locationIndex++) {
 			locationList=landingPage.getLocationList();
 			String locationText = locationList.get(locationIndex).getText();
-			
-			
+
+
 			System.out.println(locationText+"    "+locationIndex);
 
 			String locationTextFromSheet=reader.getCellValue(locationIndex, 0);
 			System.out.println(locationTextFromSheet+"  location text from sheet  "+locationIndex);
 
 
-		
-			
+
+
 			locationList.get(locationIndex).click();
-			
+
 			landingPage.clickingSettingEllipsesButton();
 			genericUtility.isElementInViewport(landingPage.locationDropdownUnderSettings);
 			ScreenshotUtilUpdated.capture(testName, locationText);
 			landingPage.clickingSettingEllipsesButton();
-		
+
 
 
 			String applicableLocation=locationText;
@@ -753,9 +753,9 @@ public class YtMasterTests extends BaseTest{
 			softAssert.assertEquals(detectedCountryCode, expectedCountryCode,"Country code mismacth for location="+locationText);
 
 			landingPage.clickingSettingEllipsesButton();
-		
+
 			landingPage.clickingLocationDropdownUnderSettings();
-		
+
 
 
 		}
@@ -768,7 +768,7 @@ public class YtMasterTests extends BaseTest{
 	@Test
 	public void verifyingGlobalFilterLandingPage() throws InterruptedException {
 
-		
+
 		GenericUtility genericUtility=new GenericUtility();
 		YtLandingPage landingPage=new YtLandingPage();
 		SoftAssert softAssert =new SoftAssert();
@@ -790,7 +790,7 @@ public class YtMasterTests extends BaseTest{
 
 		String testName= ThreadContext.get("testName");
 
-		
+
 		boolean isCron = Boolean.parseBoolean(System.getenv("IS_CRON"));
 		if(isCron) {
 
@@ -826,23 +826,23 @@ public class YtMasterTests extends BaseTest{
 		for(int languageIndex=1;languageIndex<LanguagesRowCount;languageIndex++) {
 
 			landingPage.clickingSettingEllipsesButton();
-		
+
 			landingPage.clickingLanguageDropdownButton();
-		
+
 
 			String langText=verifyingGlobalFilterLandingPageDataReader.getCellValue(languageIndex, 0);
 			System.out.println(langText+"    "+languageIndex);
 
-	
+
 			genericUtility.smoothScrollToElement(landingPage.getLanguageElementByNameBy(langText));
 			landingPage.getLanguageElementByName(langText).click();	
-			
+
 			landingPage.clickingSettingEllipsesButton();
 			genericUtility.isElementInViewport(landingPage.languageDropdownUnderSettings);
 			ScreenshotUtilUpdated.capture(testName, langText);
 			landingPage.clickingSettingEllipsesButton();
 
-		
+
 
 			landingPage.clickingGlobalFilterButton();
 			genericUtility.isElementInViewport(landingPage.globalFilterData);
@@ -860,7 +860,7 @@ public class YtMasterTests extends BaseTest{
 
 
 		}
-		
+
 		verifyingGlobalFilterLandingPageDataReader.closeWorkbook();
 
 		softAssert.assertAll();	
@@ -882,15 +882,15 @@ public class YtMasterTests extends BaseTest{
 		YtLandingPage landingPage=new YtLandingPage();
 		SoftAssert softAssert =new SoftAssert();
 
-		
+
 		FileReader applicableExpectedLangReader=new FileReader();
 		applicableExpectedLangReader.loadWorkbook("data/ApplicableLanguageExpectedLanguage.xlsx");
 		applicableExpectedLangReader.loadSheet("AppVExpectLanguages");
-		
+
 		FileReader applicableExpectedAttributeReader=new FileReader();
 		applicableExpectedAttributeReader.loadWorkbook("data/ApplicableLanguageExpectedAttibute.xlsx");
 		applicableExpectedAttributeReader.loadSheet("Attribute");
-		
+
 		int LanguagesRowCount= applicableExpectedLangReader.getRowCount();
 
 
@@ -939,31 +939,31 @@ public class YtMasterTests extends BaseTest{
 		for(int languageIndex=1;languageIndex<LanguagesRowCount;languageIndex++) {
 
 			landingPage.clickingSettingEllipsesButton();
-		
+
 			landingPage.clickingLanguageDropdownButton();
-		
+
 
 			String langText=applicableExpectedLangReader.getCellValue(languageIndex, 0);
 			System.out.println(langText+"    "+languageIndex);
 
-		
+
 			landingPage.getLanguageElementByName(langText).click();	
-			
+
 			landingPage.clickingSettingEllipsesButton();
 			genericUtility.isElementInViewport(landingPage.languageDropdownUnderSettings);
 			ScreenshotUtilUpdated.capture(testName, langText);
 			landingPage.clickingSettingEllipsesButton();
 
-		
+
 
 			landingPage.clickingGlobalFilterButton();
 			genericUtility.isElementInViewport(landingPage.globalFilterData);
 			ScreenshotUtilUpdated.capture(testName, langText);
 			String globalSettingText=landingPage.getDataFromGlobalFilterPopup();
 			landingPage.closeGlobalFilterPopup();
-	
-		
-		
+
+
+
 
 			String applicableLanguage=applicableExpectedLangReader.getCellValue(languageIndex, 0);
 			String detectedLanguage=LinguaHelper.detectLanguage(globalSettingText);
@@ -978,14 +978,14 @@ public class YtMasterTests extends BaseTest{
 
 			softAssert.assertEquals(detectedLanguage, expectedLanguage, "Language detection mismatch for language="+langText);
 			softAssert.assertEquals(detectedLanguageAttribute, expectedLanguageAttribute, "Language attributr mismatch for language"+langText);
-			
+
 
 
 		}
-		
+
 		applicableExpectedLangReader.closeWorkbook();
 		applicableExpectedAttributeReader.closeWorkbook();
-		
+
 
 		softAssert.assertAll();	
 
