@@ -40,25 +40,14 @@ public class ScreenshotUtilUpdated {
 	        	// create folder
 	        	File folder = new File(screenShotPath);
 	        	folder.mkdirs();
-
-	        	// unique filename
-	        	String fileName = testName + "_" +
-	        	        LocalDateTime.now().format(DateTimeFormatter.ofPattern("HH-mm-ss-SSS")) +
-	        	        "_" + System.nanoTime() + ".png";
-
-	        	
-	        	String finalPath= screenShotPath + File.separator + ThreadContext.get("testNameShort")+System.nanoTime()+".png";
+	
+	        	String finalPath= screenShotPath + File.separator + ThreadContext.get("testNameShort")+System.nanoTime()+names+".png";
 	        		System.out.println(finalPath+"   -->> final path if param exist");
 	        	
-	        //	String finalPath = screenShotPath + File.separator + fileName;
-	        	
-	        	
-	       
+	
 	        	// capture
 	        	File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-	        	File dest = new File(finalPath);
-
-
+	       
 				 if(ConfigManager.getBoolean("compressImage", false)) {
 	                  	try{
 	                  		String imageQuality=ConfigManager.get("imageCompressionQuality");
@@ -77,7 +66,6 @@ public class ScreenshotUtilUpdated {
 	            		  FileUtils.copyFile(src, new File(finalPath));
 	                  }
 
-	        //	Files.copy(src.toPath(), dest.toPath());
 
 	        	return finalPath;
 
