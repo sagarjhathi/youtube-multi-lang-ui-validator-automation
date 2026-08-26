@@ -28,11 +28,7 @@ public class Attachers {
 	                  String relativePath =
 	                          "../logs/" + testName + "/" + log.getName();
 
-//	                  ReportManager.getTest().info(
-//	                      "📄 <a href='" + relativePath + "'>" + log.getName() + "</a>"
-//	                  );
-	                
-	                  
+	               	                  
 	                  ReportManager.getTest().info(
 	                		    "📄 <a href='" + relativePath + "' target='_blank'>" + log.getName() + "</a>"
 	                		);

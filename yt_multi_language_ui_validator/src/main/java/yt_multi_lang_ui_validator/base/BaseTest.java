@@ -86,7 +86,6 @@ public class BaseTest {
 	      String path = PathManager.getRunFolderPath()
 	              + File.separator + testName;
 
-	      PathManager.setTestFolderPath(path);
 	  }
 	    
 	  
@@ -105,7 +104,6 @@ public class BaseTest {
 	     
 	      
 	      ThreadContext.clearAll();
-	      PathManager.clearTestFolder();
 	      DriverManager.quitDriver();
 	  }
 
