@@ -24,17 +24,7 @@ public class FileReader {
 	      * 
 	      * Load Excel workbook by file name (relative path)
 	      */
-//	     public void loadWorkbook(String fileName) {
-//	         try {
-//	             File file = find(fileName);
-//	             if (file == null || !file.exists()) {
-//	                 throw new RuntimeException("❌ Excel file not found: " + fileName);
-//	             }
-//	             workbook = WorkbookFactory.create(file);
-//	         } catch (IOException e) {
-//	             throw new RuntimeException("❌ Failed to load Excel file: " + fileName, e);
-//	         }
-//	     }
+
 	     
 	     public void loadWorkbook(String fileName) {
 	    	    try {
@@ -106,16 +96,7 @@ public class FileReader {
 	         return (row != null) ? row.getPhysicalNumberOfCells() : 0;
 	     }
 
-	     /**
-	      * Close the workbook safely
-	      */
-//	     public void closeWorkbook() {
-//	         try {
-//	             if (workbook != null) workbook.close();
-//	         } catch (IOException e) {
-//	             System.err.println("⚠️ Failed to close workbook: " + e.getMessage());
-//	         }
-//	     }
+	 
 	     
 	     public void closeWorkbook() {
 	    	    try {
@@ -127,35 +108,55 @@ public class FileReader {
 	    	}
 	 
 	     
-	  
+	     
 	     public static File find(String fileName) {
-		        try {
-		            // 1️⃣ Try direct path (handles absolute or relative)
-		            File f = new File(fileName);
-		            if (f.exists()) return f.getAbsoluteFile();
+	         // 1. Try as a direct/absolute/relative-to-cwd path
+	         File f = new File(fileName);
+	         if (f.exists()) {
+	             return f.getAbsoluteFile();
+	         }
 
-		            // 2️⃣ Try relative to project root (user.dir)
-		            Path baseDir = Paths.get(System.getProperty("user.dir"));
-		            f = baseDir.resolve(fileName).toFile();
-		            if (f.exists()) return f.getAbsoluteFile();
+	         // 2. Fall back to classpath (covers files bundled in resources/)
+	         URL resource = FileReader.class.getClassLoader().getResource(fileName);
+	         if (resource != null) {
+	             return new File(resource.getPath());
+	         }
 
-		            // 3️⃣ Try classpath (resources in target/classes or JAR)
-		            URL resource = Thread.currentThread()
-		                                 .getContextClassLoader()
-		                                 .getResource(fileName);
-		            if (resource != null) {
-		                return new File(Objects.requireNonNull(resource.getPath()));
-		            }
-
-		            // ❌ Not found anywhere
-		            System.err.println("File not found: " + fileName);
-		            return null;
-
-		        } catch (Exception e) {
-		            e.printStackTrace();
-		            return null;
-		        }
-		    }
+	         System.err.println("File not found: " + fileName);
+	         return null;
+	     }
+	     
+	     
+	     
+	  
+//	     public static File find(String fileName) {
+//		        try {
+//		            // 1️⃣ Try direct path (handles absolute or relative)
+//		            File f = new File(fileName);
+//		            if (f.exists()) return f.getAbsoluteFile();
+//
+//		            // 2️⃣ Try relative to project root (user.dir)
+//		            Path baseDir = Paths.get(System.getProperty("user.dir"));
+//		            f = baseDir.resolve(fileName).toFile();
+//		            if (f.exists()) return f.getAbsoluteFile();
+//
+//		            // 3️⃣ Try classpath (resources in target/classes or JAR)
+//		            URL resource = Thread.currentThread()
+//		                                 .getContextClassLoader()
+//		                                 .getResource(fileName);
+//		            if (resource != null) {
+//		                return new File(Objects.requireNonNull(resource.getPath()));
+//		            }
+//
+//		            // ❌ Not found anywhere
+//		            System.err.println("File not found: " + fileName);
+//		            return null;
+//
+//		        } catch (Exception e) {
+//		            e.printStackTrace();
+//		            return null;
+//		        }
+//		    }
 		 
 
 }
