@@ -30,7 +30,7 @@ public class ScreenshotUtilUpdated {
 	
 	 public static String capture(String... names) {
 	        WebDriver driver = DriverManager.getDriver(); // ✅ get from ThreadLocal
-	        String inputNames=String.join("_", names);
+	     //   String inputNames=String.join("_", names);
 	        try {
 	
 	        	String testName = ThreadContext.get("testName");
@@ -41,7 +41,7 @@ public class ScreenshotUtilUpdated {
 	        	File folder = new File(screenShotPath);
 	        	folder.mkdirs();
 	
-	        	String finalPath= screenShotPath + File.separator + ThreadContext.get("testNameShort")+System.nanoTime()+inputNames+".png";
+	        	String finalPath= screenShotPath + File.separator + ThreadContext.get("testNameShort")+System.nanoTime()+".png";
 	        		System.out.println(finalPath+"   -->> final path if param exist");
 	        	
 	
