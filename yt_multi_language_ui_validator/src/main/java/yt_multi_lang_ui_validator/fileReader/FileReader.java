@@ -129,34 +129,6 @@ public class FileReader {
 	     
 	     
 	  
-//	     public static File find(String fileName) {
-//		        try {
-//		            // 1️⃣ Try direct path (handles absolute or relative)
-//		            File f = new File(fileName);
-//		            if (f.exists()) return f.getAbsoluteFile();
-//
-//		            // 2️⃣ Try relative to project root (user.dir)
-//		            Path baseDir = Paths.get(System.getProperty("user.dir"));
-//		            f = baseDir.resolve(fileName).toFile();
-//		            if (f.exists()) return f.getAbsoluteFile();
-//
-//		            // 3️⃣ Try classpath (resources in target/classes or JAR)
-//		            URL resource = Thread.currentThread()
-//		                                 .getContextClassLoader()
-//		                                 .getResource(fileName);
-//		            if (resource != null) {
-//		                return new File(Objects.requireNonNull(resource.getPath()));
-//		            }
-//
-//		            // ❌ Not found anywhere
-//		            System.err.println("File not found: " + fileName);
-//		            return null;
-//
-//		        } catch (Exception e) {
-//		            e.printStackTrace();
-//		            return null;
-//		        }
-//		    }
 		 
 
 }
