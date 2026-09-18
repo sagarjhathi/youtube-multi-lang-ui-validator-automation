@@ -145,8 +145,8 @@ public class GenericUtility extends BasePage {
 
 	/** Row-count override for the language-driven tests (masterdata.properties: runForAllLanguages / overideLanguageCount*). */
 	public int resolveLanguageIterationCount(int fullRowCount) {
-    	// boolean isCron = Boolean.parseBoolean(System.getenv("IS_CRON"));
-		boolean isCron = true;
+    	 boolean isCron = Boolean.parseBoolean(System.getenv("IS_CRON"));
+		
 		
 		String suffix = isCron ? "CI" : "";
 
@@ -159,8 +159,8 @@ public class GenericUtility extends BasePage {
 
 	/** Row-count override for the country-driven tests (masterdata.properties: runForAllCountries / overideCountriesCount*). */
 	public int resolveCountryIterationCount(int fullRowCount) {
-	//	boolean isCron = Boolean.parseBoolean(System.getenv("IS_CRON"));
-	boolean isCron = true;
+		boolean isCron = Boolean.parseBoolean(System.getenv("IS_CRON"));
+	
 		String suffix = isCron ? "CI" : "";
 
 		boolean runForAllCountries = ConfigManager.getBoolean("runForAllCountries" + suffix, false);
