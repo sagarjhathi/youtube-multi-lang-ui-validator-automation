@@ -1,0 +1,1985 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title></title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ce8b10435bcbae260c334c0d0c6b61d2c19b6168/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa -report dark">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary"></span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Sep 18, 2026 03:28:21 PM</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="fail" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">verifyingSideMenuLanguageAsInSettings_15-28-21</p>
+            <p class="text-sm">
+              <span>3:28:33 PM</span> / <span>00:04:30:544</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">verifyingSideMenuLanguageAsInSettings_15-28-21</h5>
+<span class='badge badge-success'>09.18.2026 3:28:33 PM</span>
+<span class='badge badge-danger'>09.18.2026 3:33:04 PM</span>
+<span class='badge badge-default'>00:04:30:544</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>3:33:04 PM</td>
+        <td>
+          <textarea readonly class="code-block">java.lang.AssertionError: The following asserts failed:
+	Mismatch in the Actual and Expected data for language=Afrikaans expected [Tuis Kortvideo's Intekeninge Myne Geskiedenis Musiek Flieks Regstreeks YouTube Premium YouTube Music YouTube Kids Instellings Aangeegeskiedenis Hulp Stuur terugvoer] but found [Tuis Kortvideo's Intekeninge Myne Geskiedenis Musiek Flieks en TV Regstreeks YouTube Premium YouTube TV YouTube Music YouTube Kids Aangeegeskiedenis],
+	Mismatch in the Actual and Expected data for language=Azərbaycan expected [Ev Shorts Abunəliklər Siz Tarixçə Musiqi Filmlər Canlı YouTube Premium YouTube Music YouTube Kids Ayarlar Xəbər tarixçəsi Yardım Rəy göndərin] but found [Ev Shorts Abunəliklər Siz Tarixçə Musiqi Film və TV Canlı YouTube Premium YouTube TV YouTube Music YouTube Kids Xəbər tarixçəsi],
+	Mismatch in the Actual and Expected data for language=Bahasa Indonesia expected [Beranda Shorts Subscription Anda Histori Musik Film Live YouTube Premium YouTube Music YouTube Kids Setelan Histori laporan Bantuan Kirim masukan] but found [Beranda Shorts Subscription Anda Histori Musik Film & TV Live YouTube Premium YouTube TV YouTube Music YouTube Kids Histori laporan],
+	Mismatch in the Actual and Expected data for language=Bosanski expected [Početna stranica Shorts Pretplate Vi Hi‪storija Muzika Filmovi Uživo YouTube Premium YouTube Music YouTube Kids Postavke Historija prijava Pomoć Pošaljite povratne informacije] but found [Početna stranica Shorts Pretplate Vi Hi‪storija Muzika Filmovi i TV Uživo YouTube Premium YouTube TV YouTube Music YouTube Kids Historija prijava],
+	Mismatch in the Actual and Expected data for language=Català expected [Inici YouTube Shorts Subscripcions Tu Historial Música Pel·lícules En directe YouTube Premium YouTube Music YouTube Kids Configuració Historial d'informes Ajuda Envia suggeriments] but found [Inici Shorts Subscripcions Tu Historial Música Pel·lícules i televisió En directe YouTube Premium YouTube TV YouTube Music YouTube Kids Historial d'informes],
+	Mismatch in the Actual and Expected data for language=Dansk expected [Start Shorts Abonnementer Dig Historik Musik Film Live YouTube Premium YouTube Music YouTube Kids Indstillinger Rapporteringshistorik Hjælp Send feedback] but found [Start Shorts Abonnementer Dig Historik Musik Film og tv Live YouTube Premium YouTube TV YouTube Music YouTube Kids Rapporteringshistorik],
+	Mismatch in the Actual and Expected data for language=Deutsch expected [Startseite Shorts Abos Mein YouTube Verlauf Musik Filme Live YouTube Premium YouTube Music YouTube Kids Einstellungen Meldeverlauf Hilfe Feedback senden] but found [Startseite Shorts Abos Mein YouTube Verlauf Musik Filme & Shows Live YouTube Premium YouTube TV YouTube Music YouTube Kids Meldeverlauf],
+	Mismatch in the Actual and Expected data for language=Eesti expected [Avaleht Shorts Tellimused Teie Ajalugu Muusika Filmid Otse YouTube Premium YouTube Music YouTube Kids Seaded Teavituste ajalugu Abi Tagasiside saatmine] but found [Avaleht Shorts Tellimused Teie Ajalugu Muusika Filmid ja telesarjad Otse YouTube Premium YouTube TV YouTube Music YouTube Kids Teavituste ajalugu],
+	Mismatch in the Actual and Expected data for language=English (India) expected [Home Shorts Subscriptions You History Shopping Music Films YouTube Premium YouTube Music YouTube Kids Settings Report history Help Send feedback] but found [Home Shorts Subscriptions You History Shopping Music Movies & TV YouTube Premium YouTube TV YouTube Music YouTube Kids Report history],
+	Mismatch in the Actual and Expected data for language=English (UK) expected [Home Shorts Subscriptions You History Shopping Music Films YouTube Premium YouTube Music YouTube Kids Settings Report history Help Send feedback] but found [Home Shorts Subscriptions You History Shopping Music Movies & TV YouTube Premium YouTube TV YouTube Music YouTube Kids Report history],
+	Mismatch in the Actual and Expected data for language=English (US) expected [Home Shorts Subscriptions You History Shopping Music Movies YouTube Premium YouTube Music YouTube Kids Settings Report history Help Send feedback] but found [Home Shorts Subscriptions You History Shopping Music Movies & TV YouTube Premium YouTube TV YouTube Music YouTube Kids Report history],
+	Mismatch in the Actual and Expected data for language=Español (España) expected [Inicio Shorts Suscripciones Tú Historial Música Películas En directo YouTube Premium YouTube Music YouTube Kids Configuración Historial de denuncias Ayuda Enviar sugerencias] but found [Inicio Shorts Suscripciones Tú Historial Música Películas y series En directo YouTube Premium YouTube TV YouTube Music YouTube Kids Historial de denuncias],
+	Mismatch in the Actual and Expected data for language=Español (Latinoamérica) expected [Principal Shorts Suscripciones Tú Historial Música Películas En vivo YouTube Premium YouTube Music YouTube Kids Configuración Historial de denuncias Ayuda Enviar comentarios] but found [Principal Shorts Suscripciones Tú Historial Música Películas y TV En vivo YouTube Premium YouTube TV YouTube Music YouTube Kids Historial de denuncias],
+	Mismatch in the Actual and Expected data for language=Español (US) expected [Principal Shorts Suscripciones Tú Historial Música Películas En vivo YouTube Premium YouTube Music YouTube Kids Configuración Historial de denuncias Ayuda Enviar comentarios] but found [Principal Shorts Suscripciones Tú Historial Música Películas y TV En vivo YouTube Premium YouTube TV YouTube Music YouTube Kids Historial de denuncias],
+	Mismatch in the Actual and Expected data for language=Euskara expected [Orri nagusia Shorts Harpidetzak Zu Historia Musika Filmak Zuzenean YouTube Premium YouTube Music YouTube Kids Ezarpenak Salaketa-historia Laguntza Bidali oharrak] but found [Orri nagusia Shorts Harpidetzak Zu Historia Musika Filmak eta saioak Zuzenean YouTube Premium YouTube TV YouTube Music YouTube Kids Salaketa-historia],
+	Mismatch in the Actual and Expected data for language=Français expected [Accueil Shorts Abonnements Vous Historique Musique Films Direct YouTube Premium YouTube Music YouTube Kids Paramètres Historique des signalements Aide Envoyer des commentaires] but found [Accueil Shorts Abonnements Vous Historique Musique Films et séries TV Direct YouTube Premium YouTube TV YouTube Music YouTube Kids Signalements],
+	Mismatch in the Actual and Expected data for language=Français (Canada) expected [Accueil Shorts Abonnements Vous Historique Musique Films Jeux vidéo YouTube Premium YouTube Music YouTube Kids Paramètres Historique des rapports Aide Envoyer des commentaires] but found [Accueil Shorts Abonnements Vous Historique Musique Films et émissions de télévision Jeux vidéo YouTube Premium YouTube TV YouTube Music YouTube Kids Historique des rapports],
+	Mismatch in the Actual and Expected data for language=Hrvatski expected [Početna Shorts Pretplate Moje Povijest Glazba Filmovi Uživo YouTube Premium YouTube Music YouTube Kids Postavke Povijest prijava Pomoć Slanje povratnih informacija] but found [Početna Shorts Pretplate Moje Povijest Glazba Filmovi i televizija Uživo YouTube Premium YouTube TV YouTube Music YouTube Kids Povijest prijava],
+	Mismatch in the Actual and Expected data for language=Íslenska expected [Heim Shorts Áskriftir Þú Ferill Tónlist Kvikmyndir Í beinni YouTube Premium YouTube Music YouTube Kids Stillingar Tilkynningaferill Hjálp Senda inn ábendingu] but found [Heim Shorts Áskriftir Þú Ferill Tónlist Kvikmyndir og sjónvarpsefni Í beinni YouTube Premium YouTube TV YouTube Music YouTube Kids Tilkynningaferill],
+	Mismatch in the Actual and Expected data for language=Italiano expected [Home Shorts Iscrizioni Tu Cronologia Musica Film Live YouTube Premium YouTube Music YouTube Kids Impostazioni Cronologia segnalazioni Guida Invia feedback] but found [Home Shorts Iscrizioni Tu Cronologia Musica Film e TV Live YouTube Premium YouTube TV YouTube Music YouTube Kids Segnalazioni],
+	Mismatch in the Actual and Expected data for language=Latviešu valoda expected [Sākums Shorts Abonementi Jūs Vēsture Mūzika Filmas Tiešraide YouTube Premium YouTube Music YouTube Kids Iestatījumi Ziņošanas vēsture Palīdzība Sūtīt atsauksmes] but found [Sākums Shorts Abonementi Jūs Vēsture Mūzika Filmas un TV pārraides Tiešraide YouTube Premium YouTube TV YouTube Music YouTube Kids Ziņošanas vēsture],
+	Mismatch in the Actual and Expected data for language=Lietuvių expected [Pagrindinis Shorts Prenumeratos Jūs Istorija Muzika Filmai Tiesiogiai YouTube Premium YouTube Music YouTube Kids Nustatymai Pranešimų istorija Pagalba Siųsti atsiliepimą] but found [Pagrindinis Shorts Prenumeratos Jūs Istorija Muzika Filmai ir TV Tiesiogiai YouTube Premium YouTube TV YouTube Music YouTube Kids Pranešimų istorija],
+	Mismatch in the Actual and Expected data for language=Magyar expected [Kezdőlap Shorts Feliratkozások Te Előzmények Zene Filmek Élő YouTube Premium YouTube Music YouTube Kids Beállítások Bejelentési előzmények Súgó Visszajelzés küldése] but found [Kezdőlap Shorts Feliratkozások Te Előzmények Zene Film és tévé Élő YouTube Premium YouTube TV YouTube Music YouTube Kids Bejelentési előzmények],
+	Mismatch in the Actual and Expected data for language=Nederlands expected [Home Shorts Abonnementen Jij Geschiedenis Muziek Films Live YouTube Premium YouTube Music YouTube Kids Instellingen Rapportagegeschiedenis Hulp Feedback sturen] but found [Home Shorts Abonnementen Jij Geschiedenis Muziek Films en tv Live YouTube Premium YouTube TV YouTube Music YouTube Kids Rapportagegeschiedenis],
+	Mismatch in the Actual and Expected data for language=Polski expected [Główna Shorts Subskrypcje Ty Historia Muzyka Filmy Na żywo YouTube Premium YouTube Music YouTube Kids Ustawienia Historia zgłoszeń Pomoc Prześlij opinię] but found [Główna Shorts Subskrypcje Ty Historia Muzyka Filmy i TV Na żywo YouTube Premium YouTube TV YouTube Music YouTube Kids Historia zgłoszeń],
+	Mismatch in the Actual and Expected data for language=Português expected [Início Shorts Subscrições Eu Histórico Música Filmes Em direto YouTube Premium YouTube Music YouTube Kids Definições Histórico de denúncias Ajuda Enviar feedback] but found [Início Shorts Subscrições Eu Histórico Música Filmes e TV Em direto YouTube Premium YouTube TV YouTube Music YouTube Kids Histórico de denúncias],
+	Mismatch in the Actual and Expected data for language=Português (Brasil) expected [Início Shorts Inscrições Você Histórico Música Filmes Ao vivo YouTube Premium YouTube Music YouTube Kids Configurações Histórico de denúncias Ajuda Enviar feedback] but found [Início Shorts Inscrições Você Histórico Música Filmes e TV Ao vivo YouTube Premium YouTube TV YouTube Music YouTube Kids Histórico de denúncias],
+	Mismatch in the Actual and Expected data for language=Shqip expected [Faqja e parë Shorts Abonimet Ti Historiku Muzikë Filma Drejtpërdrejt YouTube Premium YouTube Music YouTube Kids Cilësimet Historiku i raportimeve Ndihmë Dërgo koment] but found [Faqja e parë Shorts Abonimet Ti Historiku Muzikë Filmat dhe televizioni Drejtpërdrejt YouTube Premium YouTube TV YouTube Music YouTube Kids Historiku i raportimeve],
+	Mismatch in the Actual and Expected data for language=Slovenščina expected [Domača stran Kratki videoposnetki Naročnine Vi Zgodovina Glasba Filmi V živo YouTube Premium YouTube Music YouTube Kids Nastavitve Zgodovina poročil Pomoč Pošlji povratne informacije] but found [Domača stran Kratki videoposnetki Naročnine Vi Zgodovina Glasba Filmi in TV V živo YouTube Premium YouTube TV YouTube Music YouTube Kids Zgodovina poročil],
+	Mismatch in the Actual and Expected data for language=Suomi expected [Koti Shorts Tilaukset Sinä Historia Musiikki Elokuvat Livetapahtumat YouTube Premium YouTube Music YouTube Kids Asetukset Ilmoitushistoria Ohje Lähetä palautetta] but found [Koti Shorts Tilaukset Sinä Historia Musiikki Elokuvat ja TV Livetapahtumat YouTube Premium YouTube TV YouTube Music YouTube Kids Ilmoitushistoria],
+	Mismatch in the Actual and Expected data for language=Svenska expected [Hem Shorts Prenumerationer Ditt YouTube Historik Musik Filmer Live YouTube Premium YouTube Music YouTube Kids Inställningar Rapporthistorik Hjälp Skicka feedback] but found [Hem Shorts Prenumerationer Ditt YouTube Historik Musik Filmer och tv Live YouTube Premium YouTube TV YouTube Music YouTube Kids Rapporthistorik],
+	Mismatch in the Actual and Expected data for language=Tiếng Việt expected [Trang chủ Shorts Kênh đăng ký Bạn Video đã xem Âm nhạc Phim ảnh Trực tiếp YouTube Premium YouTube Music YouTube Kids Cài đặt Nhật ký báo cáo Trợ giúp Gửi ý kiến phản hồi] but found [Trang chủ Shorts Kênh đăng ký Bạn Video đã xem Âm nhạc Phim và truyền hình Trực tiếp YouTube Premium YouTube TV YouTube Music YouTube Kids Nhật ký báo cáo],
+	Mismatch in the Actual and Expected data for language=Türkçe expected [Ana Sayfa Shorts Abonelikler Siz Geçmiş Müzik Filmler Canlı YouTube Premium YouTube Music YouTube Kids Ayarlar İçerik bildirme geçmişi Yardım Geri bildirim gönder] but found [Ana Sayfa Shorts Abonelikler Siz Geçmiş Müzik Filmler ve TV Canlı YouTube Premium YouTube TV YouTube Music YouTube Kids İçerik bildirme geçmişi],
+	Mismatch in the Actual and Expected data for language=Беларуская expected [Галоўная старонка Shorts Падпіскі Вы Гісторыя Музыка Фільмы У жывым эфіры YouTube Premium YouTube Music YouTube Kids Налады Гісторыя скаргаў Даведка Адправіць водгук] but found [Галоўная старонка Shorts Падпіскі Вы Гісторыя Музыка Фільмы і тэлеперадачы У жывым эфіры YouTube Premium YouTube TV YouTube Music YouTube Kids Гісторыя скаргаў],
+	Mismatch in the Actual and Expected data for language=Български expected [Начало Shorts Абонаменти Вие История Музика Филми На живо YouTube Premium YouTube Music YouTube Kids Настройки Подадени сигнали Помощ Изпращане на отзиви] but found [Начало Shorts Абонаменти Вие История Музика Филми и телевизионни предавания На живо YouTube Premium YouTube TV YouTube Music YouTube Kids Подадени сигнали],
+	Mismatch in the Actual and Expected data for language=Русский expected [Главная Shorts Подписки Вы История Музыка Фильмы Трансляции YouTube Premium YouTube Music YouTube Детям Настройки Жалобы Справка Отправить отзыв] but found [Главная Shorts Подписки Вы История Музыка Фильмы и сериалы Трансляции YouTube Premium YouTube TV YouTube Music YouTube Детям Жалобы],
+	Mismatch in the Actual and Expected data for language=Українська expected [Головна YouTube Shorts Підписки Ви Історія Музика Фільми Прямі трансляції YouTube Premium YouTube Music YouTube Kids Налаштування Історія скарг Довідка Надіслати відгук] but found [Головна YouTube Shorts Підписки Ви Історія Музика Фільми й серіали Прямі трансляції YouTube Premium YouTube TV YouTube Music YouTube Kids Історія скарг],
+	Mismatch in the Actual and Expected data for language=Ελληνικά expected [Αρχική Shorts Εγγραφές Εσείς Ιστορικό Μουσική Ταινίες Live YouTube Premium YouTube Music YouTube Kids Ρυθμίσεις Ιστορικό αναφορών Βοήθεια Αποστολή σχολίων] but found [Αρχική Shorts Εγγραφές Εσείς Ιστορικό Μουσική Ταινίες και τηλεοπτικές εκπομπές Live YouTube Premium YouTube TV YouTube Music YouTube Kids Ιστορικό αναφορών],
+	Mismatch in the Actual and Expected data for language=Հայերեն expected [Սկիզբ Shorts Հետևում եմ Դուք Պատմություն Երաժշտություն Ֆիլմեր Ուղիղ հեռարձակում YouTube Premium YouTube Music YouTube Kids Կարգավորումներ Բողոքների պատմություն Օգնություն Կարծիք հայտնել] but found [Սկիզբ Shorts Հետևում եմ Դուք Պատմություն Երաժշտություն Ֆիլմեր և սերիալներ Ուղիղ հեռարձակում YouTube Premium YouTube TV YouTube Music YouTube Kids Բողոքների պատմություն],
+	Mismatch in the Actual and Expected data for language=עברית expected [דף הבית Shorts מינויים הדף שלי היסטוריה מוזיקה סרטים בשידור חי YouTube Premium YouTube Music YouTube Kids הגדרות היסטוריית הדיווחים עזרה שליחת משוב] but found [דף הבית Shorts מינויים הדף שלי היסטוריה מוזיקה סרטים ותוכניות טלוויזיה בשידור חי YouTube Premium YouTube TV YouTube Music YouTube Kids היסטוריית הדיווחים],
+	Mismatch in the Actual and Expected data for language=العربية expected [الصفحة الرئيسية Shorts الاشتراكات أنت السجلّ موسيقى أفلام بث مباشر YouTube Premium YouTube Music YouTube Kids الإعدادات سجلّ الإبلاغ عن المحتوى مساعدة إرسال ملاحظات] but found [الصفحة الرئيسية Shorts الاشتراكات أنت السجلّ موسيقى أفلام وبرامج تلفزيونية بث مباشر YouTube Premium YouTube TV YouTube Music YouTube Kids سجلّ الإبلاغ عن المحتوى],
+	Mismatch in the Actual and Expected data for language=فارسی expected [صفحه اصلی کوته‌ویدیوهای YouTube اشتراک‌ها شما سابقه موسیقی فیلم‌ها زنده YouTube Premium YouTube Music YouTube Kids تنظیمات سابقه گزارش راهنما ارسال بازخورد] but found [صفحه اصلی کوته‌ویدیوها اشتراک‌ها شما سابقه موسیقی فیلم و تلویزیون زنده YouTube Premium YouTube TV YouTube Music YouTube Kids سابقه گزارش],
+	Mismatch in the Actual and Expected data for language=हिन्दी expected [होम पेज Shorts सदस्यता आप देखे गए वीडियो संगीत फ़िल्में लाइव YouTube Premium YouTube Music YouTube Kids सेटिंग शिकायत करने का डेटा सहायता सुझाव भेजें] but found [होम पेज Shorts सदस्यता आप देखे गए वीडियो संगीत फ़िल्में और टीवी शो लाइव YouTube Premium YouTube TV YouTube Music YouTube Kids शिकायतों का डेटा],
+	Mismatch in the Actual and Expected data for language=বাংলা expected [হোম Shorts সাবস্ক্রিপশন আপনি ইতিহাস মিউজিক সিনেমা লাইভ YouTube Premium YouTube Music YouTube Kids সেটিংস অভিযোগ জানানোর ইতিহাস সহায়তা মতামত জানান] but found [হোম Shorts সাবস্ক্রিপশন আপনি ইতিহাস মিউজিক সিনেমা ও টিভি লাইভ YouTube Premium YouTube TV YouTube Music YouTube Kids অভিযোগ জানানোর ইতিহাস],
+	Mismatch in the Actual and Expected data for language=ਪੰਜਾਬੀ expected [ਹੋਮ Shorts ਸਬਸਕ੍ਰਿਪਸ਼ਨਾਂ ਤੁਸੀਂ ਇਤਿਹਾਸ ਸੰਗੀਤ ਫ਼ਿਲਮਾਂ ਲਾਈਵ YouTube Premium YouTube Music YouTube Kids ਸੈਟਿੰਗਾਂ ਰਿਪੋਰਟ ਸੰਬੰਧੀ ਇਤਿਹਾਸ ਮਦਦ ਵਿਚਾਰ ਭੇਜੋ] but found [ਹੋਮ Shorts ਸਬਸਕ੍ਰਿਪਸ਼ਨਾਂ ਤੁਸੀਂ ਇਤਿਹਾਸ ਸੰਗੀਤ ਫ਼ਿਲਮਾਂ ਅਤੇ ਟੀਵੀ ਲਾਈਵ YouTube Premium YouTube TV YouTube Music YouTube Kids ਰਿਪੋਰਟ ਸੰਬੰਧੀ ਇਤਿਹਾਸ],
+	Mismatch in the Actual and Expected data for language=ગુજરાતી expected [હોમ Shorts સબ્સ્ક્રિપ્શન તમે ઇતિહાસ સંગીત મૂવી લાઇવ YouTube Premium YouTube Music YouTube Kids સેટિંગ રિપોર્ટનો ઇતિહાસ સહાય પ્રતિસાદ મોકલો] but found [હોમ Shorts સબ્સ્ક્રિપ્શન તમે ઇતિહાસ સંગીત મૂવી અને ટીવી લાઇવ YouTube Premium YouTube TV YouTube Music YouTube Kids રિપોર્ટનો ઇતિહાસ],
+	Mismatch in the Actual and Expected data for language=தமிழ் expected [முகப்பு Shorts சந்தாக்கள் நீங்கள் இதுவரை பார்த்தவை இசை திரைப்படங்கள் நேரலை YouTube Premium YouTube Music YouTube Kids அமைப்புகள் புகார் வரலாறு உதவி கருத்து தெரிவி] but found [முகப்பு Shorts சந்தாக்கள் நீங்கள் இதுவரை பார்த்தவை இசை திரைப்படங்கள் & டிவி நிகழ்ச்சிகள் நேரலை YouTube Premium YouTube TV YouTube Music YouTube Kids புகார் வரலாறு],
+	Mismatch in the Actual and Expected data for language=తెలుగు expected [మొదటి ట్యాబ్ Shorts సబ్‌స్క్రిప్షన్‌లు ఖాతా హిస్టరీ మ్యూజిక్ సినిమాలు లైవ్ YouTube Premium YouTube Music YouTube Kids సెట్టింగ్‌లు రిపోర్టుల హిస్టరీ సహాయం ఫీడ్‌బ్యాక్ పంపండి] but found [మొదటి ట్యాబ్ Shorts సబ్‌స్క్రిప్షన్‌లు ఖాతా హిస్టరీ మ్యూజిక్ సినిమాలు & టీవీ లైవ్ YouTube Premium YouTube TV YouTube Music YouTube Kids రిపోర్టుల హిస్టరీ],
+	Mismatch in the Actual and Expected data for language=中文 (简体) expected [首页 Shorts 订阅 我 历史记录 音乐 电影 直播 YouTube Premium YouTube Music YouTube Kids 设置 举报记录 帮助 发送反馈] but found [首页 Shorts 订阅 我 历史记录 音乐 影视 直播 YouTube Premium YouTube TV YouTube Music YouTube Kids 举报记录],
+	Mismatch in the Actual and Expected data for language=中文 (繁體) expected [首頁 Shorts 訂閱內容 個人中心 觀看記錄 音樂 電影 直播 YouTube Premium YouTube Music YouTube Kids 設定 檢舉記錄 說明 提供意見] but found [首頁 Shorts 訂閱內容 個人中心 觀看記錄 音樂 電影與電視節目 直播 YouTube Premium YouTube TV YouTube Music YouTube Kids 檢舉記錄],
+	Mismatch in the Actual and Expected data for language=中文 (香港) expected [主頁 Shorts 訂閱項目 個人中心 記錄 音樂 電影 直播 YouTube Premium YouTube Music YouTube Kids 設定 舉報記錄 說明 傳送意見] but found [主頁 Shorts 訂閱項目 個人中心 記錄 音樂 電影和電視節目 直播 YouTube Premium YouTube TV YouTube Music YouTube Kids 舉報記錄],
+	Mismatch in the Actual and Expected data for language=日本語 expected [ホーム ショート 登録チャンネル マイページ 履歴 音楽 映画 ライブ YouTube Premium YouTube Music YouTube Kids 設定 報告履歴 ヘルプ フィードバックを送信] but found [ホーム ショート 登録チャンネル マイページ 履歴 音楽 映画とテレビ番組 ライブ YouTube Premium YouTube TV YouTube Music YouTube Kids 報告履歴],
+	Mismatch in the Actual and Expected data for language=한국어 expected [홈 Shorts 구독 내 페이지 기록 음악 영화 라이브 YouTube Premium YouTube Music YouTube Kids 설정 신고 기록 고객센터 의견 보내기] but found [홈 Shorts 구독 내 페이지 기록 음악 영화 및 TV 라이브 YouTube Premium YouTube TV YouTube Music YouTube Kids 신고 기록]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at main.test.java.tests.YtMasterTests.verifyingSideMenuLanguageAsInSettings(YtMasterTests.java:146)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+</textarea>
+          
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:33:04 PM</td>
+        <td>
+          📂 Logs:
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:33:04 PM</td>
+        <td>
+          📄 <a href='../logs/verifyingSideMenuLanguageAsInSettings_15-28-21/verifyingSideMenuLanguageAsInSettings_15-28-21.log' target='_blank'>verifyingSideMenuLanguageAsInSettings_15-28-21.log</a>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:33:04 PM</td>
+        <td>
+          📸 Screenshots:
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:33:04 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/271289297900.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/271289297900.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:33:04 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/275050008300.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/275050008300.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:33:04 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/277931379600.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/277931379600.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:33:04 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/280855387600.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/280855387600.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:33:04 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/282793887600.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/282793887600.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:33:04 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/285577490900.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/285577490900.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:33:04 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/287457391000.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/287457391000.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:33:04 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/290198542700.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/290198542700.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:33:04 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/292140214600.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/292140214600.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:33:04 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/294820753600.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/294820753600.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:33:04 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/296731637800.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/296731637800.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:33:04 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/299384122700.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/299384122700.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:33:04 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/301295864600.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/301295864600.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:33:04 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/304129444700.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/304129444700.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:33:04 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/306022638600.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/306022638600.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:33:04 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/308774261000.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/308774261000.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:33:04 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/310655173600.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/310655173600.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:33:04 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/313349836500.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/313349836500.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:33:04 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/315212507900.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/315212507900.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:33:04 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/317544759100.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/317544759100.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:33:04 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/319564380000.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/319564380000.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:33:04 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/322467780500.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/322467780500.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:33:04 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/324345413800.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/324345413800.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:33:04 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/327078508700.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/327078508700.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:33:04 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/328935305500.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/328935305500.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:33:04 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/332150649000.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/332150649000.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:33:04 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/334019007600.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/334019007600.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:33:04 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/336732168300.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/336732168300.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:33:04 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/338581104200.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/338581104200.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:33:04 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/340902357700.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/340902357700.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:33:04 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/342919227400.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/342919227400.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:33:04 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/345784208900.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/345784208900.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:33:04 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/347701247500.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/347701247500.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:33:04 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/350380032800.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/350380032800.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:33:04 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/352273493700.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/352273493700.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:33:04 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/355038641200.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/355038641200.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:33:04 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/356895072100.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/356895072100.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:33:04 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/359516537200.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/359516537200.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:33:04 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/361337565700.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/361337565700.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:33:04 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/364184728600.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/364184728600.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:33:04 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/366033421900.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/366033421900.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:33:04 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/368704328100.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/368704328100.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:33:04 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/370622160800.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/370622160800.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:33:04 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/373364673000.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/373364673000.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:33:04 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/375250499800.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/375250499800.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:33:04 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/378090891000.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/378090891000.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:33:04 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/380029435600.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/380029435600.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:33:04 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/382822822500.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/382822822500.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:33:04 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/384697215900.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/384697215900.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:33:04 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/388591029200.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/388591029200.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:33:04 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/390481678100.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/390481678100.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:33:04 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/393421672700.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/393421672700.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:33:04 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/395336058900.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/395336058900.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:33:04 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/398121779100.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/398121779100.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:33:04 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/400063033500.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/400063033500.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:33:04 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/402428758500.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/402428758500.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:33:04 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/404344812500.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/404344812500.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:33:04 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/407415623200.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/407415623200.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:33:04 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/409272182900.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/409272182900.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:33:04 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/412055925800.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/412055925800.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:33:04 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/413916563700.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/413916563700.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:33:04 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/416630573900.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/416630573900.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:33:04 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/418524637900.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/418524637900.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:33:04 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/421439863900.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/421439863900.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:33:04 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/423309085700.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/423309085700.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:33:04 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/426085218900.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/426085218900.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:33:04 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/427983597400.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/427983597400.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:33:04 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/430777138000.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/430777138000.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:33:04 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/432643719300.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/432643719300.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:33:04 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/434868253700.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/434868253700.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:33:04 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/436857668800.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/436857668800.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:33:04 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/440307275000.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/440307275000.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:33:04 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/442146405400.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/442146405400.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:33:04 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/444899000900.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/444899000900.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:33:04 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/446713288500.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/446713288500.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:33:04 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/449511706600.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/449511706600.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:33:04 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/451356275100.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/451356275100.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:33:04 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/454236777400.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/454236777400.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:33:04 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/456077414800.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/456077414800.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:33:04 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/459005128400.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/459005128400.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:33:04 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/460813731000.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/460813731000.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:33:04 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/463563368100.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/463563368100.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:33:04 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/465390208100.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/465390208100.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:33:04 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/467553280000.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/467553280000.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:33:04 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/469502292000.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/469502292000.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:33:04 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/472455673200.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/472455673200.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:33:04 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/474406746500.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/474406746500.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:33:04 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/477648704600.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/477648704600.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:33:04 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/479505063900.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/479505063900.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:33:04 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/481842515600.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/481842515600.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:33:04 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/483801147300.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/483801147300.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:33:04 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/486927128700.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/486927128700.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:33:04 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/488735133300.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/488735133300.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:33:04 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/491314761600.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/491314761600.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:33:04 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/495064344900.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/495064344900.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:33:04 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/498895259800.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/498895259800.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:33:04 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/500791422400.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/500791422400.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:33:04 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/503963981100.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/503963981100.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:33:04 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/505911919700.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/505911919700.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:33:04 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/518164542100.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/518164542100.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:33:04 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/520179493200.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/520179493200.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:33:04 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/523513904500.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/523513904500.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:33:04 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/525437816400.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/525437816400.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:33:04 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/529003254300.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/529003254300.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:33:04 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/531079624300.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/531079624300.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:33:04 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/534078126000.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_15-28-21/534078126000.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">java.lang.AssertionError</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>java.lang.AssertionError</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:28:33 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='1'>verifyingSideMenuLanguageAsInSettings_15-28-21</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Sep 18, 2026 03:28:21 PM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Sep 18, 2026 03:33:05 PM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Tests Passed</p>
+<h3>0</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Tests Failed</p>
+<h3>1</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Tests</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='0%'>
+<b>0</b> tests passed
+</small>
+</div>
+<div>
+<small data-tooltip='100%'><b>1</b> tests failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Log events</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='events-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='0%'><b>0</b> events passed</small></div>
+<div>
+<small data-tooltip='0%'><b>1</b> events failed,
+<b data-tooltip='%'>109</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"verifyingSideMenuLanguageAsInSettings_15-28-21":270.544
+};
+</script>
+<div class="row">
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 0,
+failParent: 1,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 0,
+failChild: 0,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 0,
+failGrandChild: 0,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+passEvents: 0,
+failEvents: 1,
+warningEvents: 0,
+skipEvents: 0,
+infoEvents: 109
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@c05cd28cde1617b9d0c05a831daff6cb97fd9fd5/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>
