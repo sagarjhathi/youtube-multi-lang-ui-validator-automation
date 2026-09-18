@@ -145,8 +145,8 @@ public class GenericUtility extends BasePage {
 
 	/** Row-count override for the language-driven tests (masterdata.properties: runForAllLanguages / overideLanguageCount*). */
 	public int resolveLanguageIterationCount(int fullRowCount) {
-//		boolean isCron = Boolean.parseBoolean(System.getenv("IS_CRON"));
-		boolean isCron = true;
+    	boolean isCron = Boolean.parseBoolean(System.getenv("IS_CRON"));
+		
 		String suffix = isCron ? "CI" : "";
 
 		boolean runForAllLanguages = ConfigManager.getBoolean("runForAllLanguages" + suffix, false);
