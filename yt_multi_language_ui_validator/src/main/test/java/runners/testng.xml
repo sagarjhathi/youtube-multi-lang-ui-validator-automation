@@ -13,6 +13,9 @@
      
       <class name="main.test.java.tests.YtMasterTests">
     
+    <methods>
+    <include name="verifyingSideMenuLanguageAsInSettings"></include>
+    </methods>
       </class>
       
       

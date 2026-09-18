@@ -18,6 +18,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import main.java.yt_multi_lang_ui_validator.base.BasePage;
+import main.java.yt_multi_lang_ui_validator.config.ConfigManager;
 import main.java.yt_multi_lang_ui_validator.logger.LoggerUtility;
 import main.java.yt_multi_lang_ui_validator.pages.YtLandingPage;
 import main.java.yt_multi_lang_ui_validator.safeActions.SafeActions;
@@ -139,6 +140,50 @@ public class GenericUtility extends BasePage {
 	    } catch (Exception e) {
 	        return false;
 	    }
+	}
+
+
+	/** Row-count override for the language-driven tests (masterdata.properties: runForAllLanguages / overideLanguageCount*). */
+	public int resolveLanguageIterationCount(int fullRowCount) {
+		boolean isCron = Boolean.parseBoolean(System.getenv("IS_CRON"));
+		String suffix = isCron ? "CI" : "";
+
+		boolean runForAllLanguages = ConfigManager.getBoolean("runForAllLanguages" + suffix, false);
+		int defaultLanguageCount = ConfigManager.getInt("overideLanguageCountDefault" + suffix);
+		int overrideLanguageCount = ConfigManager.getInt("overideLanguageCount" + suffix, defaultLanguageCount);
+
+		return resolveIterationCount(isCron, runForAllLanguages, overrideLanguageCount, fullRowCount);
+	}
+
+	/** Row-count override for the country-driven tests (masterdata.properties: runForAllCountries / overideCountriesCount*). */
+	public int resolveCountryIterationCount(int fullRowCount) {
+		boolean isCron = Boolean.parseBoolean(System.getenv("IS_CRON"));
+		String suffix = isCron ? "CI" : "";
+
+		boolean runForAllCountries = ConfigManager.getBoolean("runForAllCountries" + suffix, false);
+		int defaultCountriesCount = ConfigManager.getInt("overideCountriesCountDefault" + suffix);
+		int overrideCountriesCount = ConfigManager.getInt("overideCountriesCount" + suffix, defaultCountriesCount);
+
+		return resolveIterationCount(isCron, runForAllCountries, overrideCountriesCount, fullRowCount);
+	}
+
+	/**
+	 * Applies the "run for all" override toggle to an already-resolved count. The caller
+	 * fetches and names its own isCron/runForAll/override values so it's clear at each call
+	 * site exactly which masterdata.properties keys were read.
+	 */
+	private int resolveIterationCount(boolean isCron, boolean runForAll, int overrideCount, int fullRowCount) {
+		log.info("[{}] Execution is {} Hence referring to {} keys from UtilData",
+				ThreadContext.get("testName"),
+				isCron ? "scheduled type /CRON Job on CI" : "Not CRON Job",
+				isCron ? "CI" : "normal");
+
+		if (runForAll) {
+			return fullRowCount;
+		}
+
+		log.info("[{}] Row count is == {}", ThreadContext.get("testName"), overrideCount);
+		return overrideCount;
 	}
 
 }
