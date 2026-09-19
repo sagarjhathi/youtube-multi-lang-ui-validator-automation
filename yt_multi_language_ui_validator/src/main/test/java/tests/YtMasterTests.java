@@ -1,14 +1,11 @@
 package main.test.java.tests;
 
-import java.io.IOException;  
-import java.time.Duration;
+import java.io.IOException;
 import java.util.List;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.ThreadContext;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 import main.test.java.retry.*;
@@ -21,6 +18,7 @@ import main.java.yt_multi_lang_ui_validator.logger.LoggerUtility;
 import main.java.yt_multi_lang_ui_validator.pages.YtLandingPage;
 import main.java.yt_multi_lang_ui_validator.utilities.GenericUtility;
 import main.java.yt_multi_lang_ui_validator.utilities.ScreenshotUtilUpdated;
+import main.java.yt_multi_lang_ui_validator.utilities.WaitUtility;
 
 
 
@@ -294,6 +292,7 @@ public class YtMasterTests extends BaseTest{
 
 		YtLandingPage landingPage=new YtLandingPage();
 		GenericUtility genericUtility=new GenericUtility();
+		WaitUtility waitUtility=new WaitUtility();
 		SoftAssert softAssert = new SoftAssert();
 
 
@@ -362,11 +361,8 @@ public class YtMasterTests extends BaseTest{
 			System.out.println(langText+"    "+languageIndex);
 
 
-			landingPage.getLanguageElementByName(langText).click();	
-			new WebDriverWait(driver, Duration.ofSeconds(15))
-			.until(ExpectedConditions.presenceOfElementLocated(
-					landingPage.sideMenuCollapsedList
-					));
+			landingPage.getLanguageElementByName(langText).click();
+			waitUtility.waitForElementReady(landingPage.sideMenuCollapsedList);
 			landingPage.clickingSettingEllipsesButton();
 			genericUtility.isElementInViewport(landingPage.languageDropdownUnderSettings);
 			ScreenshotUtilUpdated.capture(testName, langText);
