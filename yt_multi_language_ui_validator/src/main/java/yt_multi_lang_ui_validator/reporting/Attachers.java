@@ -1,9 +1,16 @@
 package main.java.yt_multi_lang_ui_validator.reporting;
 
 import java.io.File;
+import java.io.InputStream;
 
+import java.io.File;
+import java.io.InputStream;
+import java.nio.file.Files;
+import java.util.Arrays;
+import java.util.Comparator;
 import com.aventstack.extentreports.MediaEntityBuilder;
 
+import io.qameta.allure.Allure;
 import main.java.yt_multi_lang_ui_validator.pathManager.PathManager;
 
 public class Attachers {
@@ -33,6 +40,11 @@ public class Attachers {
 	                		    "📄 <a href='" + relativePath + "' target='_blank'>" + log.getName() + "</a>"
 	                		);
 	                  
+							    try {
+                        Allure.addAttachment(log.getName(), "text/plain", Files.readString(log.toPath()));
+                    } catch (Exception e) {
+                        System.err.println("Allure log attach failed for " + log.getName() + ": " + e.getMessage());
+                    }
 	                  
 	              }
 	          }
@@ -64,6 +76,13 @@ public class Attachers {
 	                          .createScreenCaptureFromPath(relativeImgPath)
 	                          .build()
 	                  );
+
+					        // Allure: copies the image into allure-results
+                    try (InputStream in = Files.newInputStream(img.toPath())) {
+                        Allure.addAttachment(img.getName(), "image/png", in, "png");
+                    } catch (Exception e) {
+                        System.err.println("Allure image attach failed for " + img.getName() + ": " + e.getMessage());
+                    }
 	              }
 	          }
 	      }	

@@ -4,7 +4,12 @@
   <artifactId>yt_multi_language_ui_validator</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   
-  
+
+    <properties>
+  <allure.version>2.29.0</allure.version>
+</properties>
+
+
    <dependencies> 
   
    <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
@@ -21,6 +26,11 @@
     <version>5.1.2</version>
 </dependency>
 
+<dependency>
+  <groupId>io.qameta.allure</groupId>
+  <artifactId>allure-testng</artifactId>
+  <version>${allure.version}</version>
+</dependency>
 
 <!-- Source: https://mvnrepository.com/artifact/net.coobird/thumbnailator -->
 <dependency>
@@ -168,6 +178,9 @@
   <artifactId>maven-surefire-plugin</artifactId>
   <version>3.0.0-M5</version>
   <configuration>
+     <systemPropertyVariables>
+      <allure.results.directory>${project.build.directory}/allure-results</allure.results.directory>
+    </systemPropertyVariables>
     <suiteXmlFiles>
       <suiteXmlFile>src/main/test/java/runners/testng.xml</suiteXmlFile>
     </suiteXmlFiles>
@@ -219,6 +232,7 @@
             <artifactId>maven-surefire-plugin</artifactId>
             <version>3.0.0-M5</version>
             <configuration>
+         
               <suiteXmlFiles>
                 <suiteXmlFile>src/main/test/java/runners/lingua.xml</suiteXmlFile>
               </suiteXmlFiles>
