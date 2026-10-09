@@ -195,7 +195,11 @@ jobs:
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
-      
-          git add .
-          git commit -m "Update report" || echo "No changes"
-          git push origin gh-pages --force
+
+          # Reset gh-pages to a single fresh commit each run instead of committing on top
+          # of prior history - otherwise every run's report/screenshots pile up forever
+          # even though only the latest commit is ever actually served.
+          git checkout --orphan gh-pages-deploy
+          git add -A
+          git commit -m "Update report"
+          git push origin gh-pages-deploy:gh-pages --force
