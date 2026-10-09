@@ -24,3 +24,19 @@ Thumbs.db
 target/
 
 run_*/
+
+# Test artifacts
+allure-results/
+allure-report/
+logs/
+test-output/
+
+# IDE / editor
+.vscode/
+.apt_generated/
+bin/
+
+# Secrets
+.env
+*.pem
+*.key

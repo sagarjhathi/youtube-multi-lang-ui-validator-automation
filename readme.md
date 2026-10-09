@@ -52,6 +52,8 @@ This project demonstrates:
 - Engineering Decisions Explained
 - Extending the Framework
 - Troubleshooting
+- Disclaimers
+- License
 
 ---
 
@@ -449,4 +451,26 @@ This project reflects real-world automation engineering:
 - Resilient
 - CI-native
 - Debug-friendly
+
+---
+
+## ⚠️ Disclaimers
+
+- **Not affiliated with YouTube or Google.** YouTube, Google, and related marks are trademarks of Google LLC. This is an independent project and is not endorsed, sponsored, or approved by Google.
+- **Terms of Service.** This framework drives YouTube's public web UI through an automated browser. Automated access may conflict with [YouTube's Terms of Service](https://www.youtube.com/t/terms). You are solely responsible for ensuring your use complies with them and with applicable laws.
+- **Educational and testing purposes only.** Intended for learning, demonstration, and QA research. Do not use it for scraping, bulk data collection, traffic generation, or any activity that disrupts the service.
+- **Fragile by nature.** YouTube's DOM, locators, and UI text change frequently and without notice. Test failures may indicate a UI change, A/B experiment, or CAPTCHA rather than a localization defect.
+- **No guarantee of language-detection accuracy.** Language detection (Lingua) is probabilistic. Short strings, brand names, and mixed-script text can produce false positives or negatives, so results should be reviewed by a human.
+- **Region and account variability.** Content and UI can differ by IP location, account, cookies, consent dialogs, and experiments. Results may not be reproducible across machines or networks.
+- **Use rate limits responsibly.** Running tests in parallel or at high frequency can trigger CAPTCHAs or temporary blocks. You are responsible for any resulting consequences.
+- **Credentials and secrets.** Never commit Discord webhook URLs, tokens, or account credentials. Supply them via environment variables or CI secrets.
+- **Public reports.** Reports, logs, and screenshots may be published to GitHub Pages. Ensure they contain no personal or sensitive information before publishing.
+- **Third-party software.** This project depends on third-party libraries (Selenium, TestNG, Lingua, Apache POI, Allure, ExtentReports, Log4j, etc.), each governed by its own license.
+- **No warranty.** Provided "as is" under the MIT License, without warranty of any kind. The author is not liable for any damages arising from its use.
+
+---
+
+## 📄 License
+
+Released under the [MIT License](LICENSE). Copyright (c) 2026 Sagar Jhathi.
 
