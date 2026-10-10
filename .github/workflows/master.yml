@@ -121,19 +121,6 @@ jobs:
           retention-days: 30
 
 
-      - name: Save artifacts
-        shell: pwsh
-        run: |
-          $tempPath = "$env:RUNNER_TEMP\artifacts"
-          $run = $env:RUN_FOLDER
-      
-          New-Item -ItemType Directory -Path $tempPath -Force
-          Remove-Item -Recurse -Force "$tempPath/$run" -ErrorAction SilentlyContinue
-      
-          Copy-Item -Recurse -Force "${{ env.WORKDIR }}/$run" "$tempPath/"
-
-
-
       - name: Upload Allure results
         if: always()
         uses: actions/upload-artifact@v4
