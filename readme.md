@@ -45,6 +45,7 @@ This project demonstrates:
 - Architecture Diagrams
 - Execution Flow
 - Language Intelligence (Lingua)
+- Test Grouping
 - CI & Reporting Intelligence
 - Discord Notifications
 - Folder Structure
@@ -75,6 +76,7 @@ This project demonstrates:
   - Retry analyzers
   - Custom listeners
   - Suite-based execution
+  - Test groups (`lingua` / `non-lingua`)
 
 ### Data & Configuration
 - **Apache POI** (Excel-driven tests)
@@ -108,6 +110,9 @@ This project demonstrates:
   - Linked logs
   - Failure stack traces
   - Public hosting compatible
+- **Allure Report**
+  - Results collected per shard
+  - Merged into one combined dashboard in CI
 
 ### CI/CD & DevOps
 - **GitHub Actions**
@@ -115,8 +120,9 @@ This project demonstrates:
   - Pull Request
   - Manual dispatch
   - Nightly CRON
+  - Parallel shards (`lingua`, `non-lingua`) + a single `publish` job
 - Artifact storage
-- GitHub Pages hosting
+- GitHub Pages hosting (report hub)
 
 ### Notifications
 - **Discord Webhooks**
@@ -130,13 +136,16 @@ This project demonstrates:
 
 ### 🧾 Fully Isolated Per-Run Artifacts
 
-Each execution produces clean, timestamped artifacts:
+Each execution produces one clean, timestamped run folder:
 
 ```
-logs/run_<timestamp>/<testName>.log
-
-test-output/screenshots/Run_<timestamp>/<testName>/<step>.png
+run_<timestamp>/
+  reports/ExtentReport.html
+  logs/<testName>/<testName>.log
+  screenshots/<testName>/<step>.png
 ```
+
+Allure raw results are written separately to `target/allure-results/`.
 
 No log mixing. No ambiguity.
 
@@ -177,7 +186,9 @@ This catches:
 
 ### 🌐 Public GitHub Pages Reports
 
-The latest execution report is always browser-accessible:
+The latest execution report is always browser-accessible through a report hub page:
+- Merged Allure dashboard (both shards)
+- Separate Extent report per shard (`lingua`, `non-lingua`)
 - No downloads
 - Shareable links
 - Embedded screenshots and logs
@@ -250,12 +261,17 @@ sequenceDiagram
 
 ```mermaid
 flowchart LR
-    A[GitHub Action Trigger] --> B[Maven Test Run]
-    B --> C[Logs + Screenshots]
-    B --> D[Extent Report]
-    D --> E[GitHub Pages]
-    B --> F[Artifacts Upload]
-    B --> G[Discord Webhook]
+    A[GitHub Action Trigger] --> B1[Shard: lingua]
+    A --> B2[Shard: non-lingua]
+    B1 --> C[Artifacts: Extent run folder + Allure results]
+    B2 --> C
+    B1 --> G[Discord Webhook]
+    B2 --> G
+    C --> P[Publish job]
+    P --> M[Merged Allure Report]
+    P --> D[Per-shard Extent Reports]
+    M --> E[GitHub Pages report hub]
+    D --> E
 ```
 
 ---
@@ -305,57 +321,55 @@ This approach is far stronger than string comparison.
 
 ---
 
+## 🗂 Test Grouping
+
+Every `@Test` in `YtMasterTests` carries a TestNG group, which is also how CI splits the suite into shards:
+
+| Group | Tests |
+|---|---|
+| `lingua` | `verifyingSideMenuLanguageAsInSettingsLingua`, `verifyingSideMenuCollapsedLangAsInSettingsLingua`, `verifyingGlobalFilterLandingPageLingua` |
+| `non-lingua` | `verifyingSideMenuLanguageAsInSettings`, `verifyingSideMenuCollapsedLangAsInSettings`, `verifyingSettingOptionsLang`, `verifyCountryCodeAsBasedOnRegion`, `verifyingGlobalFilterLandingPage` |
+
+The `groups` Maven property (empty by default = run everything) is passed to surefire, so a group is selected with `-Dgroups=<group>`.
+
+A new test needs a `groups = {...}` tag, otherwise it will not run in any CI shard.
+
+---
+
 ## 📦 Folder Structure
 
 ```bash
 yt_multi_language_ui_validator/
 │
-├── base/
-│   ├── BaseTest.java
-│   └── BasePage.java
-│
-├── driverManager/
-│   └── DriverManager.java
-│
-├── config/
-│   └── ConfigManager.java
-│
-├── pages/
-│   ├── YtLandingPage.java
-│   └── YtInnerPage.java
-│
-├── safeActions/
-│   └── SafeActions.java
-│
-├── utilities/
-│   ├── GenericUtility.java
-│   ├── WaitUtility.java
-│   └── ScreenshotUtil.java
-│
-├── lingua/
-│   └── LinguaHelper.java
-│
-├── reporting/
-│   ├── ExtentManager.java
-│   ├── ExtentTestManager.java
-│   └── TestListener.java
-│
-├── logger/
-│   ├── LogFolderSetup.java
-│   └── LoggerUtility.java
-│
-├── test/
-│   ├── tests/
-│   │   └── YtMasterTests.java
-│   ├── retry/
-│   │   └── RetryFailedTest.java
-│   └── runners/
-│
-├── resources/
-│   ├── data/*.xlsx
-│   └── masterdata.properties
-│
-└── .github/workflows/master.yml
+├── pom.xml
+└── src/
+    ├── main/
+    │   ├── java/yt_multi_lang_ui_validator/
+    │   │   ├── base/            BaseTest, BasePage
+    │   │   ├── driverManager/   DriverManager
+    │   │   ├── config/          ConfigManager
+    │   │   ├── pages/           YtLandingPage, YtInnerPage
+    │   │   ├── safeActions/     SafeActions
+    │   │   ├── utilities/       GenericUtility, WaitUtility,
+    │   │   │                    ScreenshotUtilUpdated, ImageCompressor
+    │   │   ├── lingua/          LinguaHelper
+    │   │   ├── reporting/       ReportManager, Attachers, TestListenerUpdated
+    │   │   ├── logger/          LoggerUtility
+    │   │   ├── pathManager/     PathManager
+    │   │   ├── fileReader/      FileReader
+    │   │   ├── fileWriter/      ExcelFileWriter
+    │   │   └── seleniumGrid/    GlobalGridUtility
+    │   ├── resources/
+    │   │   ├── data/*.xlsx
+    │   │   └── log4j2.xml
+    │   └── test/java/
+    │       ├── tests/           YtMasterTests
+    │       ├── retry/           RetryFailedTest, RetryListener
+    │       └── runners/         testng.xml, lingua.xml
+    └── test/resources/
+        └── masterdata.properties
+
+.github/workflows/master.yml
 ```
 
 ---
@@ -380,6 +394,15 @@ mvn clean test -DrunForAllLanguages=false
 mvn clean test -DrunForAllLanguages=true
 ```
 
+### Run a Single Group
+
+```bash
+mvn clean test -Dgroups=lingua
+mvn clean test -Dgroups=non-lingua
+```
+
+Run these from the `yt_multi_language_ui_validator/` folder. CI runs the same two commands as parallel shards.
+
 ---
 
 ## 🧩 Engineering Decisions Explained
@@ -402,12 +425,11 @@ Chosen for:
 - Listener ecosystem
 - Suite flexibility
 
-### ExtentReports Over Allure
+### ExtentReports + Allure
 
-- Self-contained HTML
-- CI-friendly
-- Screenshot-first debugging
-- Easy GitHub Pages hosting
+- Extent: self-contained HTML, screenshot-first debugging, one report per shard
+- Allure: results from all shards merged into a single dashboard
+- Both hosted together on GitHub Pages
 
 ### Log4j2 Routing
 
