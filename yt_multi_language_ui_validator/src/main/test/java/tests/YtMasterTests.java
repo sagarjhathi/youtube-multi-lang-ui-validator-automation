@@ -26,7 +26,7 @@ public class YtMasterTests extends BaseTest{
 
 	private static final  Logger log=LoggerUtility.getLogger(YtMasterTests.class);
 
-	@Test
+	@Test(groups = {"non-lingua"})
 	public void verifyingSideMenuLanguageAsInSettings() throws InterruptedException {
 
 
@@ -286,7 +286,7 @@ public class YtMasterTests extends BaseTest{
 
 
 
-	@Test
+	@Test(groups = {"non-lingua"})
 	public void verifyingSideMenuCollapsedLangAsInSettings() throws InterruptedException, InvalidFormatException, IOException {
 
 
@@ -545,7 +545,7 @@ public class YtMasterTests extends BaseTest{
 	}
 
 
-	@Test
+	@Test(groups = {"non-lingua"})
 	public void verifyingSettingOptionsLang() throws InterruptedException {
 
 
@@ -663,7 +663,7 @@ public class YtMasterTests extends BaseTest{
 
 
 
-	@Test
+	@Test(groups = {"non-lingua"})
 	public void verifyCountryCodeAsBasedOnRegion() throws InterruptedException {
 
 
@@ -776,7 +776,7 @@ public class YtMasterTests extends BaseTest{
 
 
 
-	@Test
+	@Test(groups = {"non-lingua"})
 	public void verifyingGlobalFilterLandingPage() throws InterruptedException {
 
 

@@ -7,6 +7,8 @@
 
     <properties>
   <allure.version>2.29.0</allure.version>
+    <groups></groups>  <!-- empty by default = no filter = run everything -->
+
 </properties>
 
 
@@ -184,6 +186,7 @@
     <suiteXmlFiles>
       <suiteXmlFile>src/main/test/java/runners/testng.xml</suiteXmlFile>
     </suiteXmlFiles>
+    <groups>${groups}</groups>
   </configuration>
 </plugin>
 
