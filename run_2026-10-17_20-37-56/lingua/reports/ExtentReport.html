@@ -1,0 +1,4527 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title></title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ce8b10435bcbae260c334c0d0c6b61d2c19b6168/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa -report dark">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary"></span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Oct 17, 2026 08:27:28 PM</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="fail" test-id="2"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">verifyingSideMenuLanguageAsInSettings_20-27-28</p>
+            <p class="text-sm">
+              <span>8:27:41 PM</span> / <span>00:07:11:889</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">verifyingSideMenuLanguageAsInSettings_20-27-28</h5>
+<span class='badge badge-success'>10.17.2026 8:27:41 PM</span>
+<span class='badge badge-danger'>10.17.2026 8:34:53 PM</span>
+<span class='badge badge-default'>00:07:11:889</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>8:34:53 PM</td>
+        <td>
+          <textarea readonly class="code-block">java.lang.AssertionError: The following asserts failed:
+	Mismatch in the Actual and Expected data for language=Afrikaans expected [Tuis Kortvideo's Intekeninge Myne Geskiedenis Musiek Flieks en TV Ophef YouTube Premium YouTube Kids Aangeegeskiedenis] but found [Tuis Kortvideo's Intekeninge Myne Geskiedenis Musiek Flieks en TV Ophef YouTube Premium YouTube TV YouTube Kids Aangeegeskiedenis],
+	Mismatch in the Actual and Expected data for language=Azərbaycan expected [Ev Shorts Abunəliklər Siz Tarixçə Musiqi Film və TV Hayp YouTube Premium YouTube Kids Xəbər tarixçəsi] but found [Ev Shorts Abunəliklər Siz Tarixçə Musiqi Film və TV Hayp YouTube Premium YouTube TV YouTube Kids Xəbər tarixçəsi],
+	Mismatch in the Actual and Expected data for language=Bahasa Indonesia expected [Beranda Shorts Subscription Anda Histori Musik Film & TV Beri hype YouTube Premium YouTube Kids Histori laporan] but found [Beranda Shorts Subscription Anda Histori Musik Film & TV Beri hype YouTube Premium YouTube TV YouTube Kids Histori laporan],
+	Mismatch in the Actual and Expected data for language=Bosanski expected [Početna stranica Shorts Pretplate Vi Historija Muzika Filmovi i TV Poticanje interesovanja YouTube Premium YouTube Kids Historija prijava] but found [Početna stranica Shorts Pretplate Vi Historija Muzika Filmovi i TV Poticanje interesovanja YouTube Premium YouTube TV YouTube Kids Historija prijava],
+	Mismatch in the Actual and Expected data for language=Català expected [Inici Shorts Subscripcions Tu Historial Música Pel·lícules i televisió Hype YouTube Premium YouTube Kids Historial d'informes] but found [Inici Shorts Subscripcions Tu Historial Música Pel·lícules i televisió Hype YouTube Premium YouTube TV YouTube Kids Historial d'informes],
+	Mismatch in the Actual and Expected data for language=Dansk expected [Start Shorts Abonnementer Dig Historik Musik Film og tv Hype YouTube Premium YouTube Kids Rapporteringshistorik] but found [Start Shorts Abonnementer Dig Historik Musik Film og tv Hype YouTube Premium YouTube TV YouTube Kids Rapporteringshistorik],
+	Mismatch in the Actual and Expected data for language=Deutsch expected [Startseite Shorts Abos Mein YouTube Verlauf Musik Filme & Shows Hype YouTube Premium YouTube Kids Meldeverlauf] but found [Startseite Shorts Abos Mein YouTube Verlauf Musik Filme & Shows Hype YouTube Premium YouTube TV YouTube Kids Meldeverlauf],
+	Mismatch in the Actual and Expected data for language=Eesti expected [Avaleht Shorts Tellimused Teie Ajalugu Muusika Filmid ja telesarjad Haipimine YouTube Premium YouTube Kids Teavituste ajalugu] but found [Avaleht Shorts Tellimused Teie Ajalugu Muusika Filmid ja telesarjad Haipimine YouTube Premium YouTube TV YouTube Kids Teavituste ajalugu],
+	Mismatch in the Actual and Expected data for language=English (India) expected [Home Shorts Subscriptions You History Music Movies & TV Hype YouTube Premium YouTube Kids Report history] but found [Home Shorts Subscriptions You History Music Movies & TV Hype YouTube Premium YouTube TV YouTube Kids Report history],
+	Mismatch in the Actual and Expected data for language=English (UK) expected [Home Shorts Subscriptions You History Music Movies & TV Hype YouTube Premium YouTube Kids Report history] but found [Home Shorts Subscriptions You History Music Movies & TV Hype YouTube Premium YouTube TV YouTube Kids Report history],
+	Mismatch in the Actual and Expected data for language=English (US) expected [Home Shorts Subscriptions You History Music Movies & TV Hype YouTube Premium YouTube Kids Report history] but found [Home Shorts Subscriptions You History Music Movies & TV Hype YouTube Premium YouTube TV YouTube Kids Report history],
+	Mismatch in the Actual and Expected data for language=Español (España) expected [Inicio Shorts Suscripciones Tú Historial Música Películas y series Hype YouTube Premium YouTube Kids Historial de denuncias] but found [Inicio Shorts Suscripciones Tú Historial Música Películas y series Hype YouTube Premium YouTube TV YouTube Kids Historial de denuncias],
+	Mismatch in the Actual and Expected data for language=Español (Latinoamérica) expected [Principal Shorts Suscripciones Tú Historial Música Películas y TV Hype YouTube Premium YouTube Kids Historial de denuncias] but found [Principal Shorts Suscripciones Tú Historial Música Películas y TV Hype YouTube Premium YouTube TV YouTube Kids Historial de denuncias],
+	Mismatch in the Actual and Expected data for language=Español (US) expected [Principal Shorts Suscripciones Tú Historial Música Películas y TV Hype YouTube Premium YouTube Kids Historial de denuncias] but found [Principal Shorts Suscripciones Tú Historial Música Películas y TV Hype YouTube Premium YouTube TV YouTube Kids Historial de denuncias],
+	Mismatch in the Actual and Expected data for language=Euskara expected [Orri nagusia Shorts Harpidetzak Zu Historia Musika Filmak eta saioak Ikusmin-adierazpenak YouTube Premium YouTube Kids Salaketa-historia] but found [Orri nagusia Shorts Harpidetzak Zu Historia Musika Filmak eta saioak Ikusmin-adierazpenak YouTube Premium YouTube TV YouTube Kids Salaketa-historia],
+	Mismatch in the Actual and Expected data for language=Français expected [Accueil Shorts Abonnements Vous Historique Musique Films et séries TV Boost YouTube Premium YouTube Kids Signalements] but found [Accueil Shorts Abonnements Vous Historique Musique Films et séries TV Boost YouTube Premium YouTube TV YouTube Kids Signalements],
+	Mismatch in the Actual and Expected data for language=Français (Canada) expected [Accueil Shorts Abonnements Vous Historique Musique Films et émissions de télévision Applaudissement YouTube Premium YouTube Kids Historique des rapports] but found [Accueil Shorts Abonnements Vous Historique Musique Films et émissions de télévision Applaudissement YouTube Premium YouTube TV YouTube Kids Historique des rapports],
+	Mismatch in the Actual and Expected data for language=Hrvatski expected [Početna Shorts Pretplate Moje Povijest Glazba Filmovi i televizija Razglašavanje YouTube Premium YouTube Kids Povijest prijava] but found [Početna Shorts Pretplate Moje Povijest Glazba Filmovi i televizija Razglašavanje YouTube Premium YouTube TV YouTube Kids Povijest prijava],
+	Mismatch in the Actual and Expected data for language=Íslenska expected [Heim Shorts Áskriftir Þú Ferill Tónlist Kvikmyndir og sjónvarpsefni Upphefja YouTube Premium YouTube Kids Tilkynningaferill] but found [Heim Shorts Áskriftir Þú Ferill Tónlist Kvikmyndir og sjónvarpsefni Upphefja YouTube Premium YouTube TV YouTube Kids Tilkynningaferill],
+	Mismatch in the Actual and Expected data for language=Italiano expected [Home Shorts Iscrizioni Tu Cronologia Musica Film e TV Hype YouTube Premium YouTube Kids Segnalazioni] but found [Home Shorts Iscrizioni Tu Cronologia Musica Film e TV Hype YouTube Premium YouTube TV YouTube Kids Segnalazioni],
+	Mismatch in the Actual and Expected data for language=Latviešu valoda expected [Sākums Shorts Abonementi Jūs Vēsture Mūzika Filmas un TV pārraides Popularizēšana YouTube Premium YouTube Kids Ziņošanas vēsture] but found [Sākums Shorts Abonementi Jūs Vēsture Mūzika Filmas un TV pārraides Popularizēšana YouTube Premium YouTube TV YouTube Kids Ziņošanas vēsture],
+	Mismatch in the Actual and Expected data for language=Lietuvių expected [Pagrindinis Shorts Prenumeratos Jūs Istorija Muzika Filmai ir TV Pagyrimai YouTube Premium YouTube Kids Pranešimų istorija] but found [Pagrindinis Shorts Prenumeratos Jūs Istorija Muzika Filmai ir TV Pagyrimai YouTube Premium YouTube TV YouTube Kids Pranešimų istorija],
+	Mismatch in the Actual and Expected data for language=Magyar expected [Kezdőlap Shorts Feliratkozások Te Előzmények Zene Film és tévé Hájpolás YouTube Premium YouTube Kids Bejelentési előzmények] but found [Kezdőlap Shorts Feliratkozások Te Előzmények Zene Film és tévé Hájpolás YouTube Premium YouTube TV YouTube Kids Bejelentési előzmények],
+	Mismatch in the Actual and Expected data for language=Nederlands expected [Home Shorts Abonnementen Jij Geschiedenis Muziek Films en tv Hype YouTube Premium YouTube Kids Rapportagegeschiedenis] but found [Home Shorts Abonnementen Jij Geschiedenis Muziek Films en tv Hype YouTube Premium YouTube TV YouTube Kids Rapportagegeschiedenis],
+	Mismatch in the Actual and Expected data for language=Polski expected [Główna Shorts Subskrypcje Ty Historia Muzyka Filmy i TV Podbijanie YouTube Premium YouTube Kids Historia zgłoszeń] but found [Główna Shorts Subskrypcje Ty Historia Muzyka Filmy i TV Podbijanie YouTube Premium YouTube TV YouTube Kids Historia zgłoszeń],
+	Mismatch in the Actual and Expected data for language=Português expected [Início Shorts Subscrições Eu Histórico Música Filmes e TV Hype YouTube Premium YouTube Kids Histórico de denúncias] but found [Início Shorts Subscrições Eu Histórico Música Filmes e TV Hype YouTube Premium YouTube TV YouTube Kids Histórico de denúncias],
+	Mismatch in the Actual and Expected data for language=Português (Brasil) expected [Início Shorts Inscrições Você Histórico Música Filmes e TV Hype YouTube Premium YouTube Kids Histórico de denúncias] but found [Início Shorts Inscrições Você Histórico Música Filmes e TV Hype YouTube Premium YouTube TV YouTube Kids Histórico de denúncias],
+	Mismatch in the Actual and Expected data for language=Shqip expected [Faqja e parë Shorts Abonimet Ti Historiku Muzikë Filmat dhe televizioni Popullarizo YouTube Premium YouTube Kids Historiku i raportimeve] but found [Faqja e parë Shorts Abonimet Ti Historiku Muzikë Filmat dhe televizioni Popullarizo YouTube Premium YouTube TV YouTube Kids Historiku i raportimeve],
+	Mismatch in the Actual and Expected data for language=Slovenščina expected [Domača stran Kratki videoposnetki Naročnine Vi Zgodovina Glasba Filmi in TV Izražanje navdušenja YouTube Premium YouTube Kids Zgodovina poročil] but found [Domača stran Kratki videoposnetki Naročnine Vi Zgodovina Glasba Filmi in TV Izražanje navdušenja YouTube Premium YouTube TV YouTube Kids Zgodovina poročil],
+	Mismatch in the Actual and Expected data for language=Suomi expected [Koti Shorts Tilaukset Sinä Historia Musiikki Elokuvat ja TV Hypetys YouTube Premium YouTube Kids Ilmoitushistoria] but found [Koti Shorts Tilaukset Sinä Historia Musiikki Elokuvat ja TV Hypetys YouTube Premium YouTube TV YouTube Kids Ilmoitushistoria],
+	Mismatch in the Actual and Expected data for language=Svenska expected [Hem Shorts Prenumerationer Ditt YouTube Historik Musik Filmer och tv Hajp YouTube Premium YouTube Kids Rapporthistorik] but found [Hem Shorts Prenumerationer Ditt YouTube Historik Musik Filmer och tv Hajp YouTube Premium YouTube TV YouTube Kids Rapporthistorik],
+	Mismatch in the Actual and Expected data for language=Tiếng Việt expected [Trang chủ Shorts Kênh đăng ký Bạn Video đã xem Âm nhạc Phim và truyền hình Khuấy động YouTube Premium YouTube Kids Nhật ký báo cáo] but found [Trang chủ Shorts Kênh đăng ký Bạn Video đã xem Âm nhạc Phim và truyền hình Khuấy động YouTube Premium YouTube TV YouTube Kids Nhật ký báo cáo],
+	Mismatch in the Actual and Expected data for language=Türkçe expected [Ana Sayfa Shorts Abonelikler Siz Geçmiş Müzik Filmler ve TV Hype YouTube Premium YouTube Kids Içerik bildirme geçmişi] but found [Ana Sayfa Shorts Abonelikler Siz Geçmiş Müzik Filmler ve TV Hype YouTube Premium YouTube TV YouTube Kids Içerik bildirme geçmişi],
+	Mismatch in the Actual and Expected data for language=Беларуская expected [Галоўная старонка Shorts Падпіскі Вы Гісторыя Музыка Фільмы і тэлеперадачы Галасаванне YouTube Premium YouTube Kids Гісторыя скаргаў] but found [Галоўная старонка Shorts Падпіскі Вы Гісторыя Музыка Фільмы і тэлеперадачы Галасаванне YouTube Premium YouTube TV YouTube Kids Гісторыя скаргаў],
+	Mismatch in the Actual and Expected data for language=Български expected [Начало Shorts Абонаменти Вие История Музика Филми и телевизионни предавания Хайп YouTube Premium YouTube Kids Подадени сигнали] but found [Начало Shorts Абонаменти Вие История Музика Филми и телевизионни предавания Хайп YouTube Premium YouTube TV YouTube Kids Подадени сигнали],
+	Mismatch in the Actual and Expected data for language=Русский expected [Главная Shorts Подписки Вы История Музыка Фильмы и сериалы Хайп YouTube Premium YouTube Детям Жалобы] but found [Главная Shorts Подписки Вы История Музыка Фильмы и сериалы Хайп YouTube Premium YouTube TV YouTube Детям Жалобы],
+	Mismatch in the Actual and Expected data for language=Українська expected [Головна YouTube Shorts Підписки Ви Історія Музика Фільми й серіали Голосування YouTube Premium YouTube Kids Історія скарг] but found [Головна YouTube Shorts Підписки Ви Історія Музика Фільми й серіали Голосування YouTube Premium YouTube TV YouTube Kids Історія скарг],
+	Mismatch in the Actual and Expected data for language=Ελληνικά expected [Αρχικη Shorts Εγγραφες Εσεις Ιστορικο Μουσικη Ταινιες και τηλεοπτικες εκπομπες Hype YouTube Premium YouTube Kids Ιστορικο αναφορων] but found [Αρχικη Shorts Εγγραφες Εσεις Ιστορικο Μουσικη Ταινιες και τηλεοπτικες εκπομπες Hype YouTube Premium YouTube TV YouTube Kids Ιστορικο αναφορων],
+	Mismatch in the Actual and Expected data for language=Հայերեն expected [Սկիզբ Shorts Հետևում եմ Դուք Պատմություն Երաժշտություն Ֆիլմեր և սերիալներ Հայփել YouTube Premium YouTube Kids Բողոքների պատմություն] but found [Սկիզբ Shorts Հետևում եմ Դուք Պատմություն Երաժշտություն Ֆիլմեր և սերիալներ Հայփել YouTube Premium YouTube TV YouTube Kids Բողոքների պատմություն],
+	Mismatch in the Actual and Expected data for language=עברית expected [דף הבית Shorts מינויים הדף שלי היסטוריה מוזיקה סרטים ותוכניות טלוויזיה הייפ YouTube Premium YouTube Kids היסטוריית הדיווחים] but found [דף הבית Shorts מינויים הדף שלי היסטוריה מוזיקה סרטים ותוכניות טלוויזיה הייפ YouTube Premium YouTube TV YouTube Kids היסטוריית הדיווחים],
+	Mismatch in the Actual and Expected data for language=العربية expected [الصفحة الرئيسية Shorts الاشتراكات أنت السجلّ موسيقى أفلام وبرامج تلفزيونية التشجيع YouTube Premium YouTube Kids سجلّ الإبلاغ عن المحتوى] but found [الصفحة الرئيسية Shorts الاشتراكات أنت السجلّ موسيقى أفلام وبرامج تلفزيونية التشجيع YouTube Premium YouTube TV YouTube Kids سجلّ الإبلاغ عن المحتوى],
+	Mismatch in the Actual and Expected data for language=فارسی expected [صفحه اصلی کوتهویدیوها اشتراکها شما سابقه موسیقی فیلم و تلویزیون هیجانافزایی YouTube Premium YouTube Kids سابقه گزارش] but found [صفحه اصلی کوتهویدیوها اشتراکها شما سابقه موسیقی فیلم و تلویزیون هیجانافزایی YouTube Premium YouTube TV YouTube Kids سابقه گزارش],
+	Mismatch in the Actual and Expected data for language=हिन्दी expected [होम पेज Shorts सदस्यता आप देखे गए वीडियो संगीत फ़िल्में और टीवी शो हाइप YouTube Premium YouTube Kids शिकायतों का डेटा] but found [होम पेज Shorts सदस्यता आप देखे गए वीडियो संगीत फ़िल्में और टीवी शो हाइप YouTube Premium YouTube TV YouTube Kids शिकायतों का डेटा],
+	Mismatch in the Actual and Expected data for language=বাংলা expected [হোম Shorts সাবস্ক্রিপশন আপনি ইতিহাস মিউজিক সিনেমা ও টিভি হাইপ YouTube Premium YouTube Kids অভিযোগ জানানোর ইতিহাস] but found [হোম Shorts সাবস্ক্রিপশন আপনি ইতিহাস মিউজিক সিনেমা ও টিভি হাইপ YouTube Premium YouTube TV YouTube Kids অভিযোগ জানানোর ইতিহাস],
+	Mismatch in the Actual and Expected data for language=ਪੰਜਾਬੀ expected [ਹੋਮ Shorts ਸਬਸਕ੍ਰਿਪਸ਼ਨਾਂ ਤੁਸੀਂ ਇਤਿਹਾਸ ਸੰਗੀਤ ਫ਼ਿਲਮਾਂ ਅਤੇ ਟੀਵੀ ਹਾਈਪ ਕਰੋ YouTube Premium YouTube Kids ਰਿਪੋਰਟ ਸੰਬੰਧੀ ਇਤਿਹਾਸ] but found [ਹੋਮ Shorts ਸਬਸਕ੍ਰਿਪਸ਼ਨਾਂ ਤੁਸੀਂ ਇਤਿਹਾਸ ਸੰਗੀਤ ਫ਼ਿਲਮਾਂ ਅਤੇ ਟੀਵੀ ਹਾਈਪ ਕਰੋ YouTube Premium YouTube TV YouTube Kids ਰਿਪੋਰਟ ਸੰਬੰਧੀ ਇਤਿਹਾਸ],
+	Mismatch in the Actual and Expected data for language=ગુજરાતી expected [હોમ Shorts સબ્સ્ક્રિપ્શન તમે ઇતિહાસ સંગીત મૂવી અને ટીવી હાઇપ YouTube Premium YouTube Kids રિપોર્ટનો ઇતિહાસ] but found [હોમ Shorts સબ્સ્ક્રિપ્શન તમે ઇતિહાસ સંગીત મૂવી અને ટીવી હાઇપ YouTube Premium YouTube TV YouTube Kids રિપોર્ટનો ઇતિહાસ],
+	Mismatch in the Actual and Expected data for language=தமிழ் expected [முகப்பு Shorts சந்தாக்கள் நீங்கள் இதுவரை பார்த்தவை இசை திரைப்படங்கள் & டிவி நிகழ்ச்சிகள் ஹைப் YouTube Premium YouTube Kids புகார் வரலாறு] but found [முகப்பு Shorts சந்தாக்கள் நீங்கள் இதுவரை பார்த்தவை இசை திரைப்படங்கள் & டிவி நிகழ்ச்சிகள் ஹைப் YouTube Premium YouTube TV YouTube Kids புகார் வரலாறு],
+	Mismatch in the Actual and Expected data for language=తెలుగు expected [మొదటి ట్యాబ్ Shorts సబ్స్క్రిప్షన్లు ఖాతా హిస్టరీ మ్యూజిక్ సినిమాలు & టీవీ హైప్ YouTube Premium YouTube Kids రిపోర్టుల హిస్టరీ] but found [మొదటి ట్యాబ్ Shorts సబ్స్క్రిప్షన్లు ఖాతా హిస్టరీ మ్యూజిక్ సినిమాలు & టీవీ హైప్ YouTube Premium YouTube TV YouTube Kids రిపోర్టుల హిస్టరీ],
+	Mismatch in the Actual and Expected data for language=中文 (简体) expected [首页 Shorts 订阅 我 历史记录 音乐 影视 粉丝热推 YouTube Premium YouTube Kids 举报记录] but found [首页 Shorts 订阅 我 历史记录 音乐 影视 粉丝热推 YouTube Premium YouTube TV YouTube Kids 举报记录],
+	Mismatch in the Actual and Expected data for language=中文 (繁體) expected [首頁 Shorts 訂閱內容 個人中心 觀看記錄 音樂 電影與電視節目 粉絲熱推 YouTube Premium YouTube Kids 檢舉記錄] but found [首頁 Shorts 訂閱內容 個人中心 觀看記錄 音樂 電影與電視節目 粉絲熱推 YouTube Premium YouTube TV YouTube Kids 檢舉記錄],
+	Mismatch in the Actual and Expected data for language=中文 (香港) expected [主頁 Shorts 訂閱項目 個人中心 記錄 音樂 電影和電視節目 粉絲推介 YouTube Premium YouTube Kids 舉報記錄] but found [主頁 Shorts 訂閱項目 個人中心 記錄 音樂 電影和電視節目 粉絲推介 YouTube Premium YouTube TV YouTube Kids 舉報記錄],
+	Mismatch in the Actual and Expected data for language=日本語 expected [ホーム ショート 登録チャンネル マイページ 履歴 音楽 映画とテレビ番組 ハイプ YouTube Premium YouTube Kids 報告履歴] but found [ホーム ショート 登録チャンネル マイページ 履歴 音楽 映画とテレビ番組 ハイプ YouTube Premium YouTube TV YouTube Kids 報告履歴],
+	Mismatch in the Actual and Expected data for language=한국어 expected [홈 Shorts 구독 내 페이지 기록 음악 영화 및 TV 하이프 YouTube Premium YouTube Kids 신고 기록] but found [홈 Shorts 구독 내 페이지 기록 음악 영화 및 TV 하이프 YouTube Premium YouTube TV YouTube Kids 신고 기록]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at main.test.java.tests.YtMasterTests.verifyingSideMenuLanguageAsInSettings(YtMasterTests.java:144)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+</textarea>
+          
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:53 PM</td>
+        <td>
+          📂 Logs:
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:53 PM</td>
+        <td>
+          📄 <a href='../logs/verifyingSideMenuLanguageAsInSettings_20-27-28/verifyingSideMenuLanguageAsInSettings_20-27-28.log' target='_blank'>verifyingSideMenuLanguageAsInSettings_20-27-28.log</a>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:53 PM</td>
+        <td>
+          📸 Screenshots:
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:53 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/253859649400.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/253859649400.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:53 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/262326944200.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/262326944200.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:53 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/266021505000.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/266021505000.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:53 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/269932651800.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/269932651800.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:53 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/273428599200.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/273428599200.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:53 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/279893973900.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/279893973900.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:53 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/283358978100.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/283358978100.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:53 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/288265545800.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/288265545800.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:53 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/292140680200.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/292140680200.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:53 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/295760751200.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/295760751200.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:53 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/299490639000.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/299490639000.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:53 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/304894781700.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/304894781700.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:53 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/309508556000.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/309508556000.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:53 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/313224453700.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/313224453700.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:53 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/317268814600.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/317268814600.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:53 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/321604306500.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/321604306500.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:53 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/325396285400.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/325396285400.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:53 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/329168081900.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/329168081900.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:53 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/332237642700.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/332237642700.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:53 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/336259449900.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/336259449900.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:53 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/340465355800.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/340465355800.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:53 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/344900783400.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/344900783400.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:53 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/348283922400.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/348283922400.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:53 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/353462787600.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/353462787600.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:53 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/356918729400.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/356918729400.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:53 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/360677694600.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/360677694600.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:53 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/365185804000.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/365185804000.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:53 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/369487531900.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/369487531900.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:53 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/372164338900.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/372164338900.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:53 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/376119653500.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/376119653500.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:53 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/379193339300.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/379193339300.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:53 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/383832366000.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/383832366000.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:53 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/387391315000.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/387391315000.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:53 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/391459259600.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/391459259600.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:53 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/394413150800.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/394413150800.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:53 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/398887306200.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/398887306200.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:53 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/401579023900.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/401579023900.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:53 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/405923540700.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/405923540700.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:53 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/409118206600.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/409118206600.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:53 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/414817685400.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/414817685400.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:53 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/418170742900.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/418170742900.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:53 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/422499550300.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/422499550300.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:53 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/426384129100.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/426384129100.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:53 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/431037175500.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/431037175500.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:53 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/436299493900.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/436299493900.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:53 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/440210554900.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/440210554900.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:53 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/443731940300.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/443731940300.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:53 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/447958945600.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/447958945600.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:53 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/452966245200.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/452966245200.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:53 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/457430849800.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/457430849800.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:53 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/461055849500.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/461055849500.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:53 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/464947588900.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/464947588900.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:53 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/467624943200.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/467624943200.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:53 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/471300930500.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/471300930500.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:53 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/475465420500.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/475465420500.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:53 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/478794891100.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/478794891100.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:53 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/482328753300.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/482328753300.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:53 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/486472083200.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/486472083200.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:53 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/489610633400.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/489610633400.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:53 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/493838185700.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/493838185700.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:53 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/497836747100.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/497836747100.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:53 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/501527902500.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/501527902500.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:53 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/505122554400.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/505122554400.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:53 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/509342082000.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/509342082000.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:53 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/512662028400.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/512662028400.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:53 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/517513166400.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/517513166400.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:53 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/521345619700.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/521345619700.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:53 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/525194999200.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/525194999200.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:53 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/528561536000.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/528561536000.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:53 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/532365163500.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/532365163500.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:53 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/535794004900.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/535794004900.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:53 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/541092038100.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/541092038100.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:53 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/545806311800.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/545806311800.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:53 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/551724274300.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/551724274300.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:53 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/555283150800.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/555283150800.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:53 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/560067066100.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/560067066100.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:53 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/562805217500.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/562805217500.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:53 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/567991787400.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/567991787400.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:53 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/570657989900.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/570657989900.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:53 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/574989443800.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/574989443800.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:53 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/578251603200.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/578251603200.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:53 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/582653378300.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/582653378300.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:53 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/585539195800.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/585539195800.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:53 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/589829645600.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/589829645600.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:53 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/592762865300.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/592762865300.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:53 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/596625341600.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/596625341600.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:53 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/600501706900.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/600501706900.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:53 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/604743780000.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/604743780000.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:53 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/607700773300.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/607700773300.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:53 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/611544360700.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/611544360700.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:53 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/614128807400.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/614128807400.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:53 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/618549326500.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/618549326500.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:53 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/621501260900.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/621501260900.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:53 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/626728715200.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/626728715200.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:53 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/629577822000.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/629577822000.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:53 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/634282220000.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/634282220000.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:53 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/636854517600.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/636854517600.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:53 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/640885262700.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/640885262700.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:53 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/643977044800.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/643977044800.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:53 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/648543002800.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/648543002800.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:53 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/652080902000.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/652080902000.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:53 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/656648184000.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/656648184000.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:53 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/659672281500.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/659672281500.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:53 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/665890894600.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/665890894600.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:53 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/669737566100.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/669737566100.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:53 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/673509709000.png' src="../screenshots/verifyingSideMenuLanguageAsInSettings_20-27-28/673509709000.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">verifyingSettingOptionsLang_20-27-28</p>
+            <p class="text-sm">
+              <span>8:27:41 PM</span> / <span>00:06:53:643</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">verifyingSettingOptionsLang_20-27-28</h5>
+<span class='badge badge-success'>10.17.2026 8:27:41 PM</span>
+<span class='badge badge-danger'>10.17.2026 8:34:35 PM</span>
+<span class='badge badge-default'>00:06:53:643</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>8:34:35 PM</td>
+        <td>
+          <textarea readonly class="code-block">java.lang.AssertionError: The following asserts failed:
+	Language detection mismatch for language=Latviešu valoda expected [LATVIAN] but found [Unknown],
+	Language detection mismatch for language=Magyar expected [HUNGARIAN] but found [Unknown],
+	Language detection mismatch for language=Русский expected [RUSSIAN] but found [Unknown],
+	Language detection mismatch for language=Հայերեն expected [ARMENIAN] but found [Unknown]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at main.test.java.tests.YtMasterTests.verifyingSettingOptionsLang(YtMasterTests.java:672)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+</textarea>
+          
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:35 PM</td>
+        <td>
+          📂 Logs:
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:35 PM</td>
+        <td>
+          📄 <a href='../logs/verifyingSettingOptionsLang_20-27-28/verifyingSettingOptionsLang_20-27-28.log' target='_blank'>verifyingSettingOptionsLang_20-27-28.log</a>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:35 PM</td>
+        <td>
+          📸 Screenshots:
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:35 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSettingOptionsLang_20-27-28/261539139300.png' src="../screenshots/verifyingSettingOptionsLang_20-27-28/261539139300.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:35 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSettingOptionsLang_20-27-28/270799038100.png' src="../screenshots/verifyingSettingOptionsLang_20-27-28/270799038100.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:35 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSettingOptionsLang_20-27-28/279893317500.png' src="../screenshots/verifyingSettingOptionsLang_20-27-28/279893317500.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:35 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSettingOptionsLang_20-27-28/287822628100.png' src="../screenshots/verifyingSettingOptionsLang_20-27-28/287822628100.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:35 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSettingOptionsLang_20-27-28/295458089000.png' src="../screenshots/verifyingSettingOptionsLang_20-27-28/295458089000.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:35 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSettingOptionsLang_20-27-28/304894781700.png' src="../screenshots/verifyingSettingOptionsLang_20-27-28/304894781700.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:35 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSettingOptionsLang_20-27-28/312895671400.png' src="../screenshots/verifyingSettingOptionsLang_20-27-28/312895671400.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:35 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSettingOptionsLang_20-27-28/320157816300.png' src="../screenshots/verifyingSettingOptionsLang_20-27-28/320157816300.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:35 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSettingOptionsLang_20-27-28/327687811100.png' src="../screenshots/verifyingSettingOptionsLang_20-27-28/327687811100.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:35 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSettingOptionsLang_20-27-28/334631452900.png' src="../screenshots/verifyingSettingOptionsLang_20-27-28/334631452900.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:35 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSettingOptionsLang_20-27-28/341913112700.png' src="../screenshots/verifyingSettingOptionsLang_20-27-28/341913112700.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:35 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSettingOptionsLang_20-27-28/348257649200.png' src="../screenshots/verifyingSettingOptionsLang_20-27-28/348257649200.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:35 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSettingOptionsLang_20-27-28/355828611000.png' src="../screenshots/verifyingSettingOptionsLang_20-27-28/355828611000.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:35 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSettingOptionsLang_20-27-28/363569013100.png' src="../screenshots/verifyingSettingOptionsLang_20-27-28/363569013100.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:35 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSettingOptionsLang_20-27-28/369998559900.png' src="../screenshots/verifyingSettingOptionsLang_20-27-28/369998559900.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:35 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSettingOptionsLang_20-27-28/377323932100.png' src="../screenshots/verifyingSettingOptionsLang_20-27-28/377323932100.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:35 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSettingOptionsLang_20-27-28/385126421400.png' src="../screenshots/verifyingSettingOptionsLang_20-27-28/385126421400.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:35 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSettingOptionsLang_20-27-28/390684264600.png' src="../screenshots/verifyingSettingOptionsLang_20-27-28/390684264600.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:35 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSettingOptionsLang_20-27-28/397560966200.png' src="../screenshots/verifyingSettingOptionsLang_20-27-28/397560966200.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:35 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSettingOptionsLang_20-27-28/405168888100.png' src="../screenshots/verifyingSettingOptionsLang_20-27-28/405168888100.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:35 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSettingOptionsLang_20-27-28/412496471600.png' src="../screenshots/verifyingSettingOptionsLang_20-27-28/412496471600.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:35 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSettingOptionsLang_20-27-28/421328764000.png' src="../screenshots/verifyingSettingOptionsLang_20-27-28/421328764000.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:35 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSettingOptionsLang_20-27-28/428277040200.png' src="../screenshots/verifyingSettingOptionsLang_20-27-28/428277040200.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:35 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSettingOptionsLang_20-27-28/436427140100.png' src="../screenshots/verifyingSettingOptionsLang_20-27-28/436427140100.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:35 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSettingOptionsLang_20-27-28/444434974900.png' src="../screenshots/verifyingSettingOptionsLang_20-27-28/444434974900.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:35 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSettingOptionsLang_20-27-28/452263123900.png' src="../screenshots/verifyingSettingOptionsLang_20-27-28/452263123900.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:35 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSettingOptionsLang_20-27-28/459899244800.png' src="../screenshots/verifyingSettingOptionsLang_20-27-28/459899244800.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:35 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSettingOptionsLang_20-27-28/468440602600.png' src="../screenshots/verifyingSettingOptionsLang_20-27-28/468440602600.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:35 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSettingOptionsLang_20-27-28/475390724600.png' src="../screenshots/verifyingSettingOptionsLang_20-27-28/475390724600.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:35 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSettingOptionsLang_20-27-28/483769208500.png' src="../screenshots/verifyingSettingOptionsLang_20-27-28/483769208500.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:35 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSettingOptionsLang_20-27-28/491405580700.png' src="../screenshots/verifyingSettingOptionsLang_20-27-28/491405580700.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:35 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSettingOptionsLang_20-27-28/498530205500.png' src="../screenshots/verifyingSettingOptionsLang_20-27-28/498530205500.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:35 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSettingOptionsLang_20-27-28/505152840600.png' src="../screenshots/verifyingSettingOptionsLang_20-27-28/505152840600.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:35 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSettingOptionsLang_20-27-28/512062532000.png' src="../screenshots/verifyingSettingOptionsLang_20-27-28/512062532000.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:35 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSettingOptionsLang_20-27-28/519492104500.png' src="../screenshots/verifyingSettingOptionsLang_20-27-28/519492104500.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:35 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSettingOptionsLang_20-27-28/526563689600.png' src="../screenshots/verifyingSettingOptionsLang_20-27-28/526563689600.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:35 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSettingOptionsLang_20-27-28/534114752500.png' src="../screenshots/verifyingSettingOptionsLang_20-27-28/534114752500.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:35 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSettingOptionsLang_20-27-28/544439609400.png' src="../screenshots/verifyingSettingOptionsLang_20-27-28/544439609400.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:35 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSettingOptionsLang_20-27-28/552881040000.png' src="../screenshots/verifyingSettingOptionsLang_20-27-28/552881040000.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:35 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSettingOptionsLang_20-27-28/560326711500.png' src="../screenshots/verifyingSettingOptionsLang_20-27-28/560326711500.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:35 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSettingOptionsLang_20-27-28/568015091600.png' src="../screenshots/verifyingSettingOptionsLang_20-27-28/568015091600.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:35 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSettingOptionsLang_20-27-28/575143842900.png' src="../screenshots/verifyingSettingOptionsLang_20-27-28/575143842900.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:35 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSettingOptionsLang_20-27-28/582284594200.png' src="../screenshots/verifyingSettingOptionsLang_20-27-28/582284594200.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:35 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSettingOptionsLang_20-27-28/588400115000.png' src="../screenshots/verifyingSettingOptionsLang_20-27-28/588400115000.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:35 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSettingOptionsLang_20-27-28/595356789500.png' src="../screenshots/verifyingSettingOptionsLang_20-27-28/595356789500.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:35 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSettingOptionsLang_20-27-28/602207712100.png' src="../screenshots/verifyingSettingOptionsLang_20-27-28/602207712100.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:35 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSettingOptionsLang_20-27-28/608990273400.png' src="../screenshots/verifyingSettingOptionsLang_20-27-28/608990273400.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:35 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSettingOptionsLang_20-27-28/616299171900.png' src="../screenshots/verifyingSettingOptionsLang_20-27-28/616299171900.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:35 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSettingOptionsLang_20-27-28/622946380900.png' src="../screenshots/verifyingSettingOptionsLang_20-27-28/622946380900.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:35 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSettingOptionsLang_20-27-28/632777026300.png' src="../screenshots/verifyingSettingOptionsLang_20-27-28/632777026300.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:35 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSettingOptionsLang_20-27-28/639815978900.png' src="../screenshots/verifyingSettingOptionsLang_20-27-28/639815978900.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:35 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSettingOptionsLang_20-27-28/647199521900.png' src="../screenshots/verifyingSettingOptionsLang_20-27-28/647199521900.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:34:35 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingSettingOptionsLang_20-27-28/654053710600.png' src="../screenshots/verifyingSettingOptionsLang_20-27-28/654053710600.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="3"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">verifyingGlobalFilterLandingPage_20-27-28</p>
+            <p class="text-sm">
+              <span>8:27:42 PM</span> / <span>00:09:09:006</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">verifyingGlobalFilterLandingPage_20-27-28</h5>
+<span class='badge badge-success'>10.17.2026 8:27:42 PM</span>
+<span class='badge badge-danger'>10.17.2026 8:36:51 PM</span>
+<span class='badge badge-default'>00:09:09:006</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>8:36:50 PM</td>
+        <td>
+          Test Passed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:36:50 PM</td>
+        <td>
+          📂 Logs:
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:36:50 PM</td>
+        <td>
+          📄 <a href='../logs/verifyingGlobalFilterLandingPage_20-27-28/verifyingGlobalFilterLandingPage_20-27-28.log' target='_blank'>verifyingGlobalFilterLandingPage_20-27-28.log</a>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:36:50 PM</td>
+        <td>
+          📸 Screenshots:
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:36:50 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingGlobalFilterLandingPage_20-27-28/265596761100.png' src="../screenshots/verifyingGlobalFilterLandingPage_20-27-28/265596761100.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:36:50 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingGlobalFilterLandingPage_20-27-28/268432493200.png' src="../screenshots/verifyingGlobalFilterLandingPage_20-27-28/268432493200.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:36:50 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingGlobalFilterLandingPage_20-27-28/279943184300.png' src="../screenshots/verifyingGlobalFilterLandingPage_20-27-28/279943184300.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:36:50 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingGlobalFilterLandingPage_20-27-28/282206899000.png' src="../screenshots/verifyingGlobalFilterLandingPage_20-27-28/282206899000.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:36:50 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingGlobalFilterLandingPage_20-27-28/292480516300.png' src="../screenshots/verifyingGlobalFilterLandingPage_20-27-28/292480516300.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:36:50 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingGlobalFilterLandingPage_20-27-28/295449809500.png' src="../screenshots/verifyingGlobalFilterLandingPage_20-27-28/295449809500.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:36:50 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingGlobalFilterLandingPage_20-27-28/306218872500.png' src="../screenshots/verifyingGlobalFilterLandingPage_20-27-28/306218872500.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:36:50 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingGlobalFilterLandingPage_20-27-28/309573631000.png' src="../screenshots/verifyingGlobalFilterLandingPage_20-27-28/309573631000.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:36:50 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingGlobalFilterLandingPage_20-27-28/319936234900.png' src="../screenshots/verifyingGlobalFilterLandingPage_20-27-28/319936234900.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:36:50 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingGlobalFilterLandingPage_20-27-28/322168081800.png' src="../screenshots/verifyingGlobalFilterLandingPage_20-27-28/322168081800.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:36:50 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingGlobalFilterLandingPage_20-27-28/330990999100.png' src="../screenshots/verifyingGlobalFilterLandingPage_20-27-28/330990999100.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:36:50 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingGlobalFilterLandingPage_20-27-28/333076848600.png' src="../screenshots/verifyingGlobalFilterLandingPage_20-27-28/333076848600.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:36:50 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingGlobalFilterLandingPage_20-27-28/341915810200.png' src="../screenshots/verifyingGlobalFilterLandingPage_20-27-28/341915810200.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:36:50 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingGlobalFilterLandingPage_20-27-28/344014546500.png' src="../screenshots/verifyingGlobalFilterLandingPage_20-27-28/344014546500.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:36:50 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingGlobalFilterLandingPage_20-27-28/352625590500.png' src="../screenshots/verifyingGlobalFilterLandingPage_20-27-28/352625590500.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:36:50 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingGlobalFilterLandingPage_20-27-28/355078979600.png' src="../screenshots/verifyingGlobalFilterLandingPage_20-27-28/355078979600.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:36:50 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingGlobalFilterLandingPage_20-27-28/363009733000.png' src="../screenshots/verifyingGlobalFilterLandingPage_20-27-28/363009733000.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:36:50 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingGlobalFilterLandingPage_20-27-28/365228196700.png' src="../screenshots/verifyingGlobalFilterLandingPage_20-27-28/365228196700.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:36:50 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingGlobalFilterLandingPage_20-27-28/374535890300.png' src="../screenshots/verifyingGlobalFilterLandingPage_20-27-28/374535890300.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:36:50 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingGlobalFilterLandingPage_20-27-28/376834208000.png' src="../screenshots/verifyingGlobalFilterLandingPage_20-27-28/376834208000.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:36:50 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingGlobalFilterLandingPage_20-27-28/385126421400.png' src="../screenshots/verifyingGlobalFilterLandingPage_20-27-28/385126421400.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:36:51 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingGlobalFilterLandingPage_20-27-28/387330931000.png' src="../screenshots/verifyingGlobalFilterLandingPage_20-27-28/387330931000.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:36:51 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingGlobalFilterLandingPage_20-27-28/396529628900.png' src="../screenshots/verifyingGlobalFilterLandingPage_20-27-28/396529628900.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:36:51 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingGlobalFilterLandingPage_20-27-28/398889382000.png' src="../screenshots/verifyingGlobalFilterLandingPage_20-27-28/398889382000.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:36:51 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingGlobalFilterLandingPage_20-27-28/407056235000.png' src="../screenshots/verifyingGlobalFilterLandingPage_20-27-28/407056235000.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:36:51 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingGlobalFilterLandingPage_20-27-28/408262747300.png' src="../screenshots/verifyingGlobalFilterLandingPage_20-27-28/408262747300.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:36:51 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingGlobalFilterLandingPage_20-27-28/417123129500.png' src="../screenshots/verifyingGlobalFilterLandingPage_20-27-28/417123129500.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:36:51 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingGlobalFilterLandingPage_20-27-28/420300443900.png' src="../screenshots/verifyingGlobalFilterLandingPage_20-27-28/420300443900.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:36:51 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingGlobalFilterLandingPage_20-27-28/429074209200.png' src="../screenshots/verifyingGlobalFilterLandingPage_20-27-28/429074209200.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:36:51 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingGlobalFilterLandingPage_20-27-28/431483630300.png' src="../screenshots/verifyingGlobalFilterLandingPage_20-27-28/431483630300.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:36:51 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingGlobalFilterLandingPage_20-27-28/441525978900.png' src="../screenshots/verifyingGlobalFilterLandingPage_20-27-28/441525978900.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:36:51 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingGlobalFilterLandingPage_20-27-28/444111412000.png' src="../screenshots/verifyingGlobalFilterLandingPage_20-27-28/444111412000.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:36:51 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingGlobalFilterLandingPage_20-27-28/454121197100.png' src="../screenshots/verifyingGlobalFilterLandingPage_20-27-28/454121197100.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:36:51 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingGlobalFilterLandingPage_20-27-28/456534469400.png' src="../screenshots/verifyingGlobalFilterLandingPage_20-27-28/456534469400.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:36:51 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingGlobalFilterLandingPage_20-27-28/464964892000.png' src="../screenshots/verifyingGlobalFilterLandingPage_20-27-28/464964892000.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:36:51 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingGlobalFilterLandingPage_20-27-28/467710116100.png' src="../screenshots/verifyingGlobalFilterLandingPage_20-27-28/467710116100.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:36:51 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingGlobalFilterLandingPage_20-27-28/475883941000.png' src="../screenshots/verifyingGlobalFilterLandingPage_20-27-28/475883941000.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:36:51 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingGlobalFilterLandingPage_20-27-28/478153223400.png' src="../screenshots/verifyingGlobalFilterLandingPage_20-27-28/478153223400.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:36:51 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingGlobalFilterLandingPage_20-27-28/486137959300.png' src="../screenshots/verifyingGlobalFilterLandingPage_20-27-28/486137959300.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:36:51 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingGlobalFilterLandingPage_20-27-28/487530214200.png' src="../screenshots/verifyingGlobalFilterLandingPage_20-27-28/487530214200.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:36:51 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingGlobalFilterLandingPage_20-27-28/496869173700.png' src="../screenshots/verifyingGlobalFilterLandingPage_20-27-28/496869173700.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:36:51 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingGlobalFilterLandingPage_20-27-28/498821260900.png' src="../screenshots/verifyingGlobalFilterLandingPage_20-27-28/498821260900.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:36:51 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingGlobalFilterLandingPage_20-27-28/508494473600.png' src="../screenshots/verifyingGlobalFilterLandingPage_20-27-28/508494473600.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:36:51 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingGlobalFilterLandingPage_20-27-28/510599393700.png' src="../screenshots/verifyingGlobalFilterLandingPage_20-27-28/510599393700.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:36:51 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingGlobalFilterLandingPage_20-27-28/519465892500.png' src="../screenshots/verifyingGlobalFilterLandingPage_20-27-28/519465892500.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:36:51 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingGlobalFilterLandingPage_20-27-28/521426013000.png' src="../screenshots/verifyingGlobalFilterLandingPage_20-27-28/521426013000.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:36:51 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingGlobalFilterLandingPage_20-27-28/530125770200.png' src="../screenshots/verifyingGlobalFilterLandingPage_20-27-28/530125770200.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:36:51 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingGlobalFilterLandingPage_20-27-28/532620157500.png' src="../screenshots/verifyingGlobalFilterLandingPage_20-27-28/532620157500.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:36:51 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingGlobalFilterLandingPage_20-27-28/544965266100.png' src="../screenshots/verifyingGlobalFilterLandingPage_20-27-28/544965266100.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:36:51 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingGlobalFilterLandingPage_20-27-28/546583396800.png' src="../screenshots/verifyingGlobalFilterLandingPage_20-27-28/546583396800.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:36:51 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingGlobalFilterLandingPage_20-27-28/557697354200.png' src="../screenshots/verifyingGlobalFilterLandingPage_20-27-28/557697354200.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:36:51 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingGlobalFilterLandingPage_20-27-28/560342672900.png' src="../screenshots/verifyingGlobalFilterLandingPage_20-27-28/560342672900.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:36:51 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingGlobalFilterLandingPage_20-27-28/568837272600.png' src="../screenshots/verifyingGlobalFilterLandingPage_20-27-28/568837272600.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:36:51 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingGlobalFilterLandingPage_20-27-28/570795257600.png' src="../screenshots/verifyingGlobalFilterLandingPage_20-27-28/570795257600.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:36:51 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingGlobalFilterLandingPage_20-27-28/580226793600.png' src="../screenshots/verifyingGlobalFilterLandingPage_20-27-28/580226793600.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:36:51 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingGlobalFilterLandingPage_20-27-28/582355544800.png' src="../screenshots/verifyingGlobalFilterLandingPage_20-27-28/582355544800.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:36:51 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingGlobalFilterLandingPage_20-27-28/590883893100.png' src="../screenshots/verifyingGlobalFilterLandingPage_20-27-28/590883893100.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:36:51 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingGlobalFilterLandingPage_20-27-28/592452296500.png' src="../screenshots/verifyingGlobalFilterLandingPage_20-27-28/592452296500.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:36:51 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingGlobalFilterLandingPage_20-27-28/602207712000.png' src="../screenshots/verifyingGlobalFilterLandingPage_20-27-28/602207712000.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:36:51 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingGlobalFilterLandingPage_20-27-28/604328003200.png' src="../screenshots/verifyingGlobalFilterLandingPage_20-27-28/604328003200.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:36:51 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingGlobalFilterLandingPage_20-27-28/612532186300.png' src="../screenshots/verifyingGlobalFilterLandingPage_20-27-28/612532186300.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:36:51 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingGlobalFilterLandingPage_20-27-28/614671953400.png' src="../screenshots/verifyingGlobalFilterLandingPage_20-27-28/614671953400.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:36:51 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingGlobalFilterLandingPage_20-27-28/623906152100.png' src="../screenshots/verifyingGlobalFilterLandingPage_20-27-28/623906152100.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:36:51 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingGlobalFilterLandingPage_20-27-28/626099669600.png' src="../screenshots/verifyingGlobalFilterLandingPage_20-27-28/626099669600.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:36:51 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingGlobalFilterLandingPage_20-27-28/635216144600.png' src="../screenshots/verifyingGlobalFilterLandingPage_20-27-28/635216144600.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:36:51 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingGlobalFilterLandingPage_20-27-28/636894740900.png' src="../screenshots/verifyingGlobalFilterLandingPage_20-27-28/636894740900.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:36:51 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingGlobalFilterLandingPage_20-27-28/647197083600.png' src="../screenshots/verifyingGlobalFilterLandingPage_20-27-28/647197083600.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:36:51 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingGlobalFilterLandingPage_20-27-28/649265798100.png' src="../screenshots/verifyingGlobalFilterLandingPage_20-27-28/649265798100.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:36:51 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingGlobalFilterLandingPage_20-27-28/658140275900.png' src="../screenshots/verifyingGlobalFilterLandingPage_20-27-28/658140275900.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:36:51 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingGlobalFilterLandingPage_20-27-28/659422175300.png' src="../screenshots/verifyingGlobalFilterLandingPage_20-27-28/659422175300.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:36:51 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingGlobalFilterLandingPage_20-27-28/670181711500.png' src="../screenshots/verifyingGlobalFilterLandingPage_20-27-28/670181711500.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:36:51 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingGlobalFilterLandingPage_20-27-28/672281338400.png' src="../screenshots/verifyingGlobalFilterLandingPage_20-27-28/672281338400.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:36:51 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingGlobalFilterLandingPage_20-27-28/679255297200.png' src="../screenshots/verifyingGlobalFilterLandingPage_20-27-28/679255297200.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:36:51 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingGlobalFilterLandingPage_20-27-28/680200666500.png' src="../screenshots/verifyingGlobalFilterLandingPage_20-27-28/680200666500.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:36:51 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingGlobalFilterLandingPage_20-27-28/686207982800.png' src="../screenshots/verifyingGlobalFilterLandingPage_20-27-28/686207982800.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:36:51 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingGlobalFilterLandingPage_20-27-28/687044600100.png' src="../screenshots/verifyingGlobalFilterLandingPage_20-27-28/687044600100.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:36:51 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingGlobalFilterLandingPage_20-27-28/693861738600.png' src="../screenshots/verifyingGlobalFilterLandingPage_20-27-28/693861738600.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:36:51 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingGlobalFilterLandingPage_20-27-28/694667907600.png' src="../screenshots/verifyingGlobalFilterLandingPage_20-27-28/694667907600.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:36:51 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingGlobalFilterLandingPage_20-27-28/700831727500.png' src="../screenshots/verifyingGlobalFilterLandingPage_20-27-28/700831727500.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:36:51 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingGlobalFilterLandingPage_20-27-28/701617917900.png' src="../screenshots/verifyingGlobalFilterLandingPage_20-27-28/701617917900.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:36:51 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingGlobalFilterLandingPage_20-27-28/708014382300.png' src="../screenshots/verifyingGlobalFilterLandingPage_20-27-28/708014382300.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:36:51 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingGlobalFilterLandingPage_20-27-28/709455488800.png' src="../screenshots/verifyingGlobalFilterLandingPage_20-27-28/709455488800.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:36:51 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingGlobalFilterLandingPage_20-27-28/715774672100.png' src="../screenshots/verifyingGlobalFilterLandingPage_20-27-28/715774672100.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:36:51 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingGlobalFilterLandingPage_20-27-28/716347846000.png' src="../screenshots/verifyingGlobalFilterLandingPage_20-27-28/716347846000.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:36:51 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingGlobalFilterLandingPage_20-27-28/722252858400.png' src="../screenshots/verifyingGlobalFilterLandingPage_20-27-28/722252858400.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:36:51 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingGlobalFilterLandingPage_20-27-28/722863074800.png' src="../screenshots/verifyingGlobalFilterLandingPage_20-27-28/722863074800.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:36:51 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingGlobalFilterLandingPage_20-27-28/728655341100.png' src="../screenshots/verifyingGlobalFilterLandingPage_20-27-28/728655341100.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:36:51 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingGlobalFilterLandingPage_20-27-28/729395597700.png' src="../screenshots/verifyingGlobalFilterLandingPage_20-27-28/729395597700.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:36:51 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingGlobalFilterLandingPage_20-27-28/736368463400.png' src="../screenshots/verifyingGlobalFilterLandingPage_20-27-28/736368463400.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:36:51 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingGlobalFilterLandingPage_20-27-28/737923945300.png' src="../screenshots/verifyingGlobalFilterLandingPage_20-27-28/737923945300.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:36:51 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingGlobalFilterLandingPage_20-27-28/744127997400.png' src="../screenshots/verifyingGlobalFilterLandingPage_20-27-28/744127997400.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:36:51 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingGlobalFilterLandingPage_20-27-28/744779184800.png' src="../screenshots/verifyingGlobalFilterLandingPage_20-27-28/744779184800.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:36:51 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingGlobalFilterLandingPage_20-27-28/750432454400.png' src="../screenshots/verifyingGlobalFilterLandingPage_20-27-28/750432454400.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:36:51 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingGlobalFilterLandingPage_20-27-28/751074650100.png' src="../screenshots/verifyingGlobalFilterLandingPage_20-27-28/751074650100.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:36:51 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingGlobalFilterLandingPage_20-27-28/756832455700.png' src="../screenshots/verifyingGlobalFilterLandingPage_20-27-28/756832455700.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:36:51 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingGlobalFilterLandingPage_20-27-28/757497226000.png' src="../screenshots/verifyingGlobalFilterLandingPage_20-27-28/757497226000.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:36:51 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingGlobalFilterLandingPage_20-27-28/763163485000.png' src="../screenshots/verifyingGlobalFilterLandingPage_20-27-28/763163485000.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:36:51 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingGlobalFilterLandingPage_20-27-28/763807659500.png' src="../screenshots/verifyingGlobalFilterLandingPage_20-27-28/763807659500.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:36:51 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingGlobalFilterLandingPage_20-27-28/769582140800.png' src="../screenshots/verifyingGlobalFilterLandingPage_20-27-28/769582140800.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:36:51 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingGlobalFilterLandingPage_20-27-28/770261162300.png' src="../screenshots/verifyingGlobalFilterLandingPage_20-27-28/770261162300.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:36:51 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingGlobalFilterLandingPage_20-27-28/776248605800.png' src="../screenshots/verifyingGlobalFilterLandingPage_20-27-28/776248605800.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:36:51 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingGlobalFilterLandingPage_20-27-28/777768316300.png' src="../screenshots/verifyingGlobalFilterLandingPage_20-27-28/777768316300.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:36:51 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingGlobalFilterLandingPage_20-27-28/784389795100.png' src="../screenshots/verifyingGlobalFilterLandingPage_20-27-28/784389795100.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:36:51 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingGlobalFilterLandingPage_20-27-28/785214591800.png' src="../screenshots/verifyingGlobalFilterLandingPage_20-27-28/785214591800.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:36:51 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingGlobalFilterLandingPage_20-27-28/791298079700.png' src="../screenshots/verifyingGlobalFilterLandingPage_20-27-28/791298079700.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:36:51 PM</td>
+        <td>
+          
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='../screenshots/verifyingGlobalFilterLandingPage_20-27-28/792007090200.png' src="../screenshots/verifyingGlobalFilterLandingPage_20-27-28/792007090200.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>2</span>
+</span>
+<p class="name">java.lang.AssertionError</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>java.lang.AssertionError</h4>
+<span status="fail" class='badge log badge-danger'>2 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>20:27:41 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='1'>verifyingSettingOptionsLang_20-27-28</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>20:27:41 PM</td>
+<td>
+<a href="#" class="linked" test-id='2' id='2'>verifyingSideMenuLanguageAsInSettings_20-27-28</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Oct 17, 2026 08:27:28 PM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Oct 17, 2026 08:36:52 PM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Tests Passed</p>
+<h3>1</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Tests Failed</p>
+<h3>2</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Tests</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='33%'>
+<b>1</b> tests passed
+</small>
+</div>
+<div>
+<small data-tooltip='66%'><b>2</b> tests failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Log events</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='events-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='0%'><b>1</b> events passed</small></div>
+<div>
+<small data-tooltip='0%'><b>2</b> events failed,
+<b data-tooltip='%'>274</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"verifyingSideMenuLanguageAsInSettings_20-27-28":431.889,"verifyingSettingOptionsLang_20-27-28":413.643,"verifyingGlobalFilterLandingPage_20-27-28":549.006
+};
+</script>
+<div class="row">
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 1,
+failParent: 2,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 0,
+failChild: 0,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 0,
+failGrandChild: 0,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+passEvents: 1,
+failEvents: 2,
+warningEvents: 0,
+skipEvents: 0,
+infoEvents: 274
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@c05cd28cde1617b9d0c05a831daff6cb97fd9fd5/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>

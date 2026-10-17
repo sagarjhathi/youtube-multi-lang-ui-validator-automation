@@ -1,0 +1,4 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","580100","verifyingGlobalFilterLandingPage","Suite","2026-10-17","passed","2026-10-17","main.test.java.tests.YtMasterTests","Yt Master Tests","main.test.java.tests.YtMasterTests","verifyingGlobalFilterLandingPage"
+"","449362","verifyingSideMenuLanguageAsInSettings","Suite","2026-10-17","failed","2026-10-17","main.test.java.tests.YtMasterTests","Yt Master Tests","main.test.java.tests.YtMasterTests","verifyingSideMenuLanguageAsInSettings"
+"","429882","verifyingSettingOptionsLang","Suite","2026-10-17","passed","2026-10-17","main.test.java.tests.YtMasterTests","Yt Master Tests","main.test.java.tests.YtMasterTests","verifyingSettingOptionsLang"
