@@ -198,9 +198,13 @@ public class GenericUtility extends BasePage {
 		if (text == null) {
 			return "";
 		}
-		return text.replaceAll("\\h", " ")
+		String cleaned = text.replaceAll("\\h", " ")
 				.replaceAll("\\p{Cf}", "")
 				.replace((char) 0x130, 'I');
+		// The page renders uppercase Greek with the tonos accent (e.g. TYPOS shown with an accented Y); the sheet has none.
+		String decomposed = java.text.Normalizer.normalize(cleaned, java.text.Normalizer.Form.NFD)
+				.replaceAll("(?<=\\p{IsGreek})\\u0301", "");
+		return java.text.Normalizer.normalize(decomposed, java.text.Normalizer.Form.NFC);
 	}
 
 	/**
