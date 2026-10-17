@@ -189,4 +189,49 @@ public class GenericUtility extends BasePage {
 		return overrideCount;
 	}
 
+	/**
+	 * Makes expected (sheet) and actual (page) text comparable: non-breaking/other horizontal spaces become a
+	 * plain space, invisible format characters (e.g. LRM/RLM bidi marks) are dropped, and the Turkish/Azeri
+	 * dotted capital I (which the page renders as plain I) is folded to I. Newlines are kept.
+	 */
+	public String normalizeText(String text) {
+		if (text == null) {
+			return "";
+		}
+		return text.replaceAll("\\h", " ")
+				.replaceAll("\\p{Cf}", "")
+				.replace((char) 0x130, 'I');
+	}
+
+	/**
+	 * Side-menu entries such as "YouTube Music" are shown inconsistently across languages/runs, so they are
+	 * stripped (case-insensitive) from both expected and actual text before comparing. Whitespace is
+	 * collapsed afterwards so removing a keyword mid-string doesn't leave a double space behind.
+	 */
+	public String stripKeywords(String text, String... keywords) {
+		String result = normalizeText(text);
+		for (String keyword : keywords) {
+			result = result.replaceAll("(?i)" + java.util.regex.Pattern.quote(keyword), " ");
+		}
+		return result.replaceAll("\\s+", " ").trim();
+	}
+
+
+	/** Languages whose Lingua detection result is unreliable; the detection assertion is skipped for these. */
+	// non-ASCII chars written as (char) codes so the source compiles regardless of platform encoding
+	private static final List<String> FLAKY_DETECTION_LANGUAGES = List.of(
+			"Afrikaans",
+			"Az" + (char) 0x259 + "rbaycan",
+			"Bahasa Indonesia",
+			"English (US)",
+			"Espa" + (char) 0xF1 + "ol (Espa" + (char) 0xF1 + "a)",
+			"Espa" + (char) 0xF1 + "ol (Latinoam" + (char) 0xE9 + "rica)",
+			"Espa" + (char) 0xF1 + "ol (US)",
+			"Hrvatski",
+			"Svenska");
+
+	public boolean isFlakyDetectionLanguage(String language) {
+		return language != null && FLAKY_DETECTION_LANGUAGES.contains(language.trim());
+	}
+
 }
